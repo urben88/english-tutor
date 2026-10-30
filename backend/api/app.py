@@ -145,6 +145,8 @@ def create_app(services: Services | None = None, static_dir: Path | str | None =
 
     @app.post("/api/explain")
     def explain_endpoint(body: ExplainBody) -> dict[str, Any]:
+        if not body.text.strip():
+            raise HTTPException(400, "text is empty")
         s = svc()
         with lock:
             try:

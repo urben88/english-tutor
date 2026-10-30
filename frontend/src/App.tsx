@@ -28,7 +28,7 @@ export function App(props: Props) {
     recorder,
     onAudio: tutor.sendVoice,
     onError: tutor.setError,
-    disabled: !tutor.ready,
+    disabled: !tutor.ready || tutor.busy,
   });
 
   return (

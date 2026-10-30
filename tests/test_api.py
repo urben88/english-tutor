@@ -188,3 +188,9 @@ def test_serves_built_frontend_with_spa_fallback(parts, tmp_path):
 
 def test_no_frontend_dir_means_no_root(client):
     assert client.get("/").status_code == 404
+
+
+def test_explain_empty_text_400(client, parts):
+    r = client.post("/api/explain", json={"text": "  ", "context": "hello there"})
+    assert r.status_code == 400
+    assert "empty" in r.json()["detail"]
