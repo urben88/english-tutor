@@ -28,3 +28,10 @@ Humanist sans, system stack (no web font download): `"Segoe UI Variable Text","S
 ## Space, radius, motion
 
 Spacing 4px base: 4, 8, 12, 16, 24, 40. Radius: 8 (controls), 16 (panels, dock), 999 (pills/stage). Hierarchy: stage > subtitles > dock > panels > header. Motion: `--ease: cubic-bezier(.2,.8,.2,1)`, 160 ms hover, 240 ms drawer, 4 s breathing on the stage. Elevation: drawer and dock only.
+
+## Controls added with study sessions
+
+- **Voice ball** (`.voice-orb`, 5.5 rem): the one control for talk / mute. Terracotta idle (4 s breathing), green listening (halo scale follows `--orb-level`, written from a ref, never state), amber thinking (rotating highlight ring), terracotta speaking (0.95 s pulse + ripple), grey dimmed with a slash when muted. Reduced motion: static states.
+- **Icon buttons** (`.icon-btn`, 2.25 rem, inline SVG, `aria-label` + `title`): muted ink, accent on hover/focus. Used for message actions (read, explain, simpler, analyze), delete and settings.
+- **Dialogs** (`.dialog`, 36 rem max): paper surface with grain, scrim, focus trap, Escape closes, focus returns. Confirmations use `alertdialog` with focus on Cancel and a danger Delete.
+- **Analysis tokens**: left accent rule per word, chips for part of speech and tense (amber), translation in accent.

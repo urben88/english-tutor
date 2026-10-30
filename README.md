@@ -130,10 +130,15 @@ uv run uvicorn backend.api.app:app --port 8765 # open http://127.0.0.1:8765
 - **Hands-free** (default): the mic stays open. Just talk; after about 1 s of silence the phrase is sent. Phrases
   shorter than 0.3 s are ignored. The mic is paused while the tutor thinks and speaks, and listens again when the
   reply ends. If the mic is denied or missing, a message is shown and the text box still works.
-- **Hold to talk**: hold the on-screen button (or the Space key, outside the text box), release to send.
+- **Hold to talk**: hold the voice ball (or the Space key, outside the text box), release to send.
 
 The status pill is always visible (Listening, Hearing you, Thinking, Speaking, Muted) with a live mic level.
-**Mute** (button or the `M` key, outside the text box) stops all recording; muting mid-phrase discards it.
+The **voice ball** in the dock is the control for all of it: it breathes when idle, its halo follows your voice while
+listening, it swirls while the tutor thinks, pulses while it speaks, and is dimmed with a slash when muted (static
+when the system asks for reduced motion). In hands-free mode tapping it mutes; in hold-to-talk mode you hold it (a
+separate Mute button stays next to Stop).
+**Mute** (the ball, the `M` key outside the text box) stops all recording; muting mid-phrase discards it. It only
+silences the mic: a reply in progress keeps playing.
 **Stop** cuts the tutor's reply; in hands-free mode listening resumes right away.
 
 **Study.** Click a word in the tutor's text (or select a phrase and press "Listen") to hear it. Press
@@ -143,6 +148,16 @@ Every word or phrase you listen to or explain is saved in the SQLite store with 
 came from, and listed in the Study panel: each item can be played (normal or slow), explained again, and "Jump to
 message" opens the transcript on the original message. Each tutor message also has "Read again" (replays its
 speech) and "Explain again". Explanations are not added to the conversation history.
+
+**Session roles, history and settings.** "New session" asks for an optional role or topic (at most 200 characters,
+e.g. "waiter at a restaurant"); it is shown in the session list and next to it for the open session, and the tutor
+uses it for that session. The bin next to the list deletes the open session after a confirmation (its studied words
+are kept); the bin on each studied word removes just that word after a confirmation. The sliders button opens
+Settings: answer length (Short / Medium / Long) and the context budget (Automatic, or 256-131072 tokens), saved on
+the server. Each tutor message has four icon buttons with tooltips: Read again, Explain again, Explain simpler and
+Analyze. Analyze opens a popup (Escape closes it) with the sentence structure and, for each word or chunk, its
+translation, part of speech, tense when it has one, explanation and notes; it shows a loading state and the error
+message if the analysis fails. The Analyze and Settings popups load on first use.
 
 | Endpoint | Purpose |
 |---|---|

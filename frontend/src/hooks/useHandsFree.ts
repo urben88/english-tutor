@@ -23,6 +23,8 @@ export function useHandsFree({ mic, enabled, muted, paused, onAudio, onError }: 
   const [level, setLevel] = useState(0);
   const [processing, setProcessing] = useState(false);
   const [micError, setMicError] = useState<string | null>(null);
+  /** Raw mic level, updated on every audio frame without re-rendering (the orb animates from it). */
+  const levelRef = useRef(0);
 
   const vad = useRef<Vad | null>(null);
   const deaf = useRef(false); // muted, paused or processing
@@ -39,6 +41,7 @@ export function useHandsFree({ mic, enabled, muted, paused, onAudio, onError }: 
     if (deaf.current) {
       setHearing(false);
       setLevel(0);
+      levelRef.current = 0;
     }
   };
 
@@ -58,6 +61,7 @@ export function useHandsFree({ mic, enabled, muted, paused, onAudio, onError }: 
         const v = vad.current;
         if (!v || deaf.current) return;
         const r = v.push(frame);
+        levelRef.current = r.level;
         setLevel(Math.round(r.level * 120) / 120); // coarse steps: no re-render per audio frame
         setHearing(r.speaking);
         if (!r.utterance) return;
@@ -105,9 +109,10 @@ export function useHandsFree({ mic, enabled, muted, paused, onAudio, onError }: 
       mic.stop();
       setHearing(false);
       setLevel(0);
+      levelRef.current = 0;
       setProcessing(false);
     };
   }, [mic, enabled]);
 
-  return { hearing, level, processing, micError };
+  return { hearing, level, levelRef, processing, micError };
 }

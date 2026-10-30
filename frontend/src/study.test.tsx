@@ -50,6 +50,11 @@ function fakeApi(over: Partial<TutorApi> = {}): TutorApi {
     listStudy: vi.fn().mockResolvedValue([]),
     saveStudy: vi.fn().mockImplementation(async (d) => item({ ...d, id: d.text === "old" ? 2 : d.text === "world" ? 1 : 7 })),
     updateStudy: vi.fn(),
+    deleteSession: vi.fn().mockResolvedValue(undefined),
+    deleteStudy: vi.fn().mockResolvedValue(undefined),
+    getSettings: vi.fn().mockResolvedValue({ answer_length: "medium", context_tokens: 0 }),
+    saveSettings: vi.fn().mockImplementation(async (p) => ({ answer_length: "medium", context_tokens: 0, ...p })),
+    analyze: vi.fn().mockResolvedValue({ text: "", message_id: null, structure: "", tokens: [] }),
     ...over,
   };
 }
@@ -262,7 +267,7 @@ describe("study panel", () => {
 });
 
 describe("StudyPanel (presentational)", () => {
-  const handlers = { onPlay: vi.fn(), onExplain: vi.fn(), onJump: vi.fn() };
+  const handlers = { onPlay: vi.fn(), onExplain: vi.fn(), onJump: vi.fn(), onDelete: vi.fn() };
 
   it("shows the empty state", () => {
     render(<StudyPanel items={[]} {...handlers} />);

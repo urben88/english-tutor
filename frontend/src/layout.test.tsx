@@ -32,6 +32,11 @@ function fakeApi(): TutorApi {
     listStudy: vi.fn().mockResolvedValue([]),
     saveStudy: vi.fn().mockResolvedValue({}),
     updateStudy: vi.fn(),
+    deleteSession: vi.fn().mockResolvedValue(undefined),
+    deleteStudy: vi.fn().mockResolvedValue(undefined),
+    getSettings: vi.fn().mockResolvedValue({ answer_length: "medium", context_tokens: 0 }),
+    saveSettings: vi.fn().mockImplementation(async (p) => ({ answer_length: "medium", context_tokens: 0, ...p })),
+    analyze: vi.fn().mockResolvedValue({ text: "", message_id: null, structure: "", tokens: [] }),
   };
 }
 const recorder: Recorder = { start: vi.fn(), stop: vi.fn(), cancel: vi.fn() };
@@ -76,7 +81,7 @@ describe("CharacterStage", () => {
 describe("StudyPanel", () => {
   it("shows an empty state and a slot for the explanation", () => {
     render(
-      <StudyPanel items={[]} onPlay={vi.fn()} onExplain={vi.fn()} onJump={vi.fn()}>
+      <StudyPanel items={[]} onPlay={vi.fn()} onExplain={vi.fn()} onJump={vi.fn()} onDelete={vi.fn()}>
         <p>current explanation</p>
       </StudyPanel>,
     );
@@ -87,7 +92,7 @@ describe("StudyPanel", () => {
 
   it("lists items given by the caller", () => {
     const it = { id: 1, text: "world", source_text: "Hello, world!", session_id: 1, message_id: 2, translation: "mundo", explanation: "", examples: [], listen_count: 1, created_at: 0, updated_at: 0 };
-    render(<StudyPanel items={[it]} onPlay={vi.fn()} onExplain={vi.fn()} onJump={vi.fn()} />);
+    render(<StudyPanel items={[it]} onPlay={vi.fn()} onExplain={vi.fn()} onJump={vi.fn()} onDelete={vi.fn()} />);
     expect(screen.getByText("world")).toBeInTheDocument();
     expect(screen.queryByText(/words you study will appear here/i)).not.toBeInTheDocument();
   });

@@ -2,6 +2,7 @@ import { useState, type ReactNode } from "react";
 import type { StudyItem } from "../../api/types";
 import { SLOW } from "../../hooks/useStudy";
 import { Button } from "../atoms/Button";
+import { IconButton } from "../atoms/IconButton";
 import { ExplanationTabs } from "../molecules/ExplanationTabs";
 
 interface Props {
@@ -9,12 +10,13 @@ interface Props {
   onPlay: (item: StudyItem, speed: number) => void;
   onExplain: (item: StudyItem) => void;
   onJump: (item: StudyItem) => void;
+  onDelete: (item: StudyItem) => void;
   /** Current word and explanation, shown above the list. */
   children?: ReactNode;
 }
 
 /** Right panel: current word/explanation + the words studied so far. */
-export function StudyPanel({ items, onPlay, onExplain, onJump, children }: Props) {
+export function StudyPanel({ items, onPlay, onExplain, onJump, onDelete, children }: Props) {
   return (
     <aside className="panel study" aria-label="Study">
       <h2>Study</h2>
@@ -40,6 +42,7 @@ export function StudyPanel({ items, onPlay, onExplain, onJump, children }: Props
                 <Button aria-label={`Explain ${it.text} again`} onClick={() => onExplain(it)}>
                   Explain
                 </Button>
+                <IconButton icon="trash" label={`Delete ${it.text}`} onClick={() => onDelete(it)} />
                 {it.message_id != null && (
                   <Button aria-label={`Go to message of ${it.text}`} onClick={() => onJump(it)}>
                     Go to message

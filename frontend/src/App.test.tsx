@@ -30,6 +30,11 @@ function fakeApi(overrides: Partial<TutorApi> = {}): TutorApi {
     listStudy: vi.fn().mockResolvedValue([]),
     saveStudy: vi.fn().mockResolvedValue({}),
     updateStudy: vi.fn(),
+    deleteSession: vi.fn().mockResolvedValue(undefined),
+    deleteStudy: vi.fn().mockResolvedValue(undefined),
+    getSettings: vi.fn().mockResolvedValue({ answer_length: "medium", context_tokens: 0 }),
+    saveSettings: vi.fn().mockImplementation(async (p) => ({ answer_length: "medium", context_tokens: 0, ...p })),
+    analyze: vi.fn().mockResolvedValue({ text: "", message_id: null, structure: "", tokens: [] }),
     ...overrides,
   };
 }

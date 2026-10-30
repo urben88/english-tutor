@@ -1,15 +1,17 @@
-import type { TalkState } from "../../hooks/useHoldToTalk";
+import type { MutableRefObject } from "react";
 import type { VoiceMode } from "../../hooks/useVoiceMode";
 import { MuteButton } from "../molecules/MuteButton";
 import { StatusIndicator, type VoiceStatus } from "../molecules/StatusIndicator";
 import { StopButton } from "../molecules/StopButton";
-import { TalkButton } from "../molecules/TalkButton";
 import { TextComposer } from "../molecules/TextComposer";
+import { VoiceOrb } from "../molecules/VoiceOrb";
+import type { TalkState } from "../../hooks/useHoldToTalk";
 
 interface Props {
   mode: VoiceMode;
   status: VoiceStatus;
   level: number;
+  levelRef: MutableRefObject<number>;
   muted: boolean;
   canStop: boolean;
   micError: string | null;
@@ -29,7 +31,7 @@ export function Controls(p: Props) {
       <div className="controls-bar">
         <StatusIndicator status={p.status} level={p.level} showMeter={handsFree && !p.micError} />
         <div className="controls-actions">
-          <MuteButton muted={p.muted} onToggle={p.onToggleMute} />
+          {!handsFree && <MuteButton muted={p.muted} onToggle={p.onToggleMute} />}
           <StopButton disabled={!p.canStop} onStop={p.onStop} />
         </div>
       </div>
@@ -38,14 +40,21 @@ export function Controls(p: Props) {
           {p.micError}
         </p>
       )}
-      {!handsFree && (
-        <TalkButton
-          state={p.talkState}
+      <div className="orb-row">
+        <VoiceOrb
+          mode={p.mode}
+          status={p.status}
+          muted={p.muted}
           disabled={p.disabled || p.muted}
+          levelRef={p.levelRef}
+          onToggleMute={p.onToggleMute}
           onPress={p.onPress}
           onRelease={p.onRelease}
         />
-      )}
+        <p className="orb-hint muted" aria-hidden="true">
+          {handsFree ? (p.muted ? "Tap to unmute" : "Tap to mute") : "Hold to talk"}
+        </p>
+      </div>
       <TextComposer disabled={p.disabled || p.talkState !== "idle"} onSend={p.onSendText} />
     </div>
   );

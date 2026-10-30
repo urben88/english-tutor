@@ -2,6 +2,7 @@ import { useRef, useState } from "react";
 import type { Message } from "../../api/types";
 import { cleanWord, tokenize } from "../../text/tokenize";
 import { Button } from "../atoms/Button";
+import { IconButton } from "../atoms/IconButton";
 import { Word } from "../atoms/Word";
 
 export interface MessageActions {
@@ -11,6 +12,8 @@ export interface MessageActions {
   onExplain: (text: string, message: Message, simpler?: boolean) => void;
   /** Replay the speech of a whole message. */
   onReadAgain: (message: Message) => void;
+  /** Open the sentence structure popup for a whole message. */
+  onAnalyze: (message: Message) => void;
 }
 
 interface Props extends MessageActions {
@@ -21,7 +24,7 @@ interface Props extends MessageActions {
   highlighted?: boolean;
 }
 
-export function MessageBubble({ message, variant = "bubble", highlighted, onListen, onExplain, onReadAgain }: Props) {
+export function MessageBubble({ message, variant = "bubble", highlighted, onListen, onExplain, onReadAgain, onAnalyze }: Props) {
   const ref = useRef<HTMLDivElement>(null);
   const [phrase, setPhrase] = useState<string | null>(null);
 
@@ -81,15 +84,15 @@ export function MessageBubble({ message, variant = "bubble", highlighted, onList
       )}
       {message.role === "assistant" && (
         <div className="message-actions">
-          <Button className="explain-btn" onClick={() => onReadAgain(message)}>
-            Read again
-          </Button>
-          <Button className="explain-btn" onClick={() => onExplain(message.content, message)}>
-            Explain again
-          </Button>
-          <Button className="explain-btn" onClick={() => onExplain(message.content, message, true)}>
-            Explain simpler
-          </Button>
+          <IconButton className="explain-btn" icon="speaker" label="Read again" onClick={() => onReadAgain(message)} />
+          <IconButton className="explain-btn" icon="bulb" label="Explain again" onClick={() => onExplain(message.content, message)} />
+          <IconButton
+            className="explain-btn"
+            icon="simpler"
+            label="Explain simpler"
+            onClick={() => onExplain(message.content, message, true)}
+          />
+          <IconButton className="explain-btn" icon="analyze" label="Analyze" onClick={() => onAnalyze(message)} />
         </div>
       )}
     </div>

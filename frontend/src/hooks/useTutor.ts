@@ -47,15 +47,36 @@ export function useTutor(api: TutorApi, player: Player) {
     }
   }, [api]);
 
-  const newSession = useCallback(async () => {
+  const newSession = useCallback(async (role?: string) => {
     try {
       setError(null);
-      await open((await api.createSession()).id);
+      await open((await api.createSession(role?.trim() || undefined)).id);
       void refreshSessions();
     } catch (e) {
       setError(errMsg(e));
     }
   }, [api, open, refreshSessions]);
+
+  /** Deletes a session; when it is the open one, moves to the next session (or a new one). */
+  const removeSession = useCallback(
+    async (id: Id) => {
+      try {
+        setError(null);
+        await api.deleteSession(id);
+        const list = await api.listSessions();
+        setSessions(list);
+        if (String(id) !== String(sessionId)) return;
+        if (list.length > 0) await open(list[0].id);
+        else {
+          await open((await api.createSession()).id);
+          void refreshSessions();
+        }
+      } catch (e) {
+        setError(errMsg(e));
+      }
+    },
+    [api, sessionId, open, refreshSessions],
+  );
 
   const openSession = useCallback(
     async (id: Id) => {
@@ -134,5 +155,5 @@ export function useTutor(api: TutorApi, player: Player) {
     [api, sessionId, finishTurn],
   );
 
-  return { messages, sessions, sessionId, openSession, busy, error, setError, newSession, sendText, sendVoice, speak, speaking, stopSpeaking, ready: sessionId !== null };
+  return { messages, sessions, sessionId, openSession, removeSession, busy, error, setError, newSession, sendText, sendVoice, speak, speaking, stopSpeaking, ready: sessionId !== null };
 }

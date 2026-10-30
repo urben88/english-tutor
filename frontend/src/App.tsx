@@ -1,11 +1,13 @@
 import { lazy, Suspense, useCallback, useEffect, useMemo, useRef, useState } from "react";
 import type { ConversationalAssistant } from "../../3d/conversational-assistant/src/types";
 import { createApi, type TutorApi } from "./api/client";
-import type { Id, StudyItem } from "./api/types";
+import type { Id, SessionSummary, StudyItem } from "./api/types";
 import { createBrowserMic, type Mic } from "./audio/mic";
 import { createBrowserPlayer, type Player } from "./audio/player";
 import { createBrowserRecorder, type Recorder } from "./audio/recorder";
 import { Button } from "./components/atoms/Button";
+import { IconButton } from "./components/atoms/IconButton";
+import { ConfirmDialog } from "./components/molecules/ConfirmDialog";
 import type { MessageActions } from "./components/molecules/MessageBubble";
 import { MobileTabs, type Area } from "./components/molecules/MobileTabs";
 import { ModeSwitch } from "./components/molecules/ModeSwitch";
@@ -16,6 +18,7 @@ import { Controls } from "./components/organisms/Controls";
 import { ExplanationPanel } from "./components/organisms/ExplanationPanel";
 import { StudyPanel } from "./components/organisms/StudyPanel";
 import { TranscriptDrawer } from "./components/organisms/TranscriptDrawer";
+import { useAnalysis } from "./hooks/useAnalysis";
 import { useDrawer } from "./hooks/useDrawer";
 import { useExplain } from "./hooks/useExplain";
 import { itemTarget, useStudy } from "./hooks/useStudy";
@@ -29,6 +32,11 @@ import { supportsWebGL } from "./webgl";
 
 // three + the model are code-split: they download after the first paint, behind the placeholder.
 const Avatar3D = lazy(() => import("./components/organisms/Avatar3D"));
+// the popups load on first use, so they stay out of the initial bundle.
+const AnalysisDialog = lazy(() => import("./components/organisms/AnalysisDialog"));
+const SettingsDialog = lazy(() => import("./components/organisms/SettingsDialog"));
+
+type Doomed = { kind: "session"; session: SessionSummary } | { kind: "word"; item: StudyItem };
 
 interface Props {
   api?: TutorApi;
@@ -53,6 +61,9 @@ export function App(props: Props) {
   const tutor = useTutor(api, player);
   const study = useStudy(api, tutor.speak);
   const explain = useExplain(api, study.remember);
+  const analysis = useAnalysis(api);
+  const [settingsOpen, setSettingsOpen] = useState(false);
+  const [doomed, setDoomed] = useState<Doomed | null>(null);
   const [highlight, setHighlight] = useState<Id | null>(null);
   const { mode, setMode } = useVoiceMode();
   const { muted, toggle: toggleMute } = useMute();
@@ -109,6 +120,21 @@ export function App(props: Props) {
       );
     },
     onReadAgain: (message) => void tutor.speak(message.content),
+    onAnalyze: (message) => void analysis.analyze(message.content, message.id),
+  };
+
+  const confirmDelete = async () => {
+    const target = doomed;
+    setDoomed(null);
+    if (!target) return;
+    if (target.kind === "session") {
+      await tutor.removeSession(target.session.id);
+      study.reload(); // its words stay, detached from the deleted session
+    } else {
+      await study
+        .remove(target.item.id)
+        .catch((e: unknown) => tutor.setError(e instanceof Error ? e.message : "Could not delete the word."));
+    }
   };
 
   /** Study list -> original message: open its session if needed, then the transcript on that message. */
@@ -138,8 +164,10 @@ export function App(props: Props) {
           sessions={tutor.sessions}
           current={tutor.sessionId}
           onSelect={tutor.openSession}
-          onNew={tutor.newSession}
+          onNew={(role) => void tutor.newSession(role)}
+          onDelete={(session) => setDoomed({ kind: "session", session })}
         />
+        <IconButton icon="sliders" label="Settings" onClick={() => setSettingsOpen(true)} />
         <ModeSwitch mode={mode} onChange={setMode} />
       </header>
       {tutor.error && (
@@ -163,6 +191,7 @@ export function App(props: Props) {
             mode={mode}
             status={status}
             level={free.level}
+            levelRef={free.levelRef}
             muted={muted}
             canStop={tutor.speaking}
             micError={handsFreeMode ? free.micError : null}
@@ -180,6 +209,7 @@ export function App(props: Props) {
           onPlay={(item, speed) => study.replay(itemTarget(item), speed)}
           onExplain={(item) => void explain.explain(itemTarget(item))}
           onJump={(item) => void jumpTo(item)}
+          onDelete={(item) => setDoomed({ kind: "word", item })}
         >
           <ExplanationPanel
             state={explain.state}
@@ -197,6 +227,22 @@ export function App(props: Props) {
         <TranscriptDrawer messages={tutor.messages} highlightId={highlight} onClose={closeTranscript} {...actions} />
       )}
       <MobileTabs area={area} onChange={setArea} />
+      {doomed && (
+        <ConfirmDialog
+          title={doomed.kind === "session" ? "Delete this session?" : "Delete this word?"}
+          message={
+            doomed.kind === "session"
+              ? `The conversation${doomed.session.role ? ` "${doomed.session.role}"` : ""} and its messages will be deleted. Words you studied from it are kept.`
+              : `"${doomed.item.text}" will be removed from your studied words.`
+          }
+          onConfirm={() => void confirmDelete()}
+          onCancel={() => setDoomed(null)}
+        />
+      )}
+      <Suspense fallback={null}>
+        {analysis.state.status !== "idle" && <AnalysisDialog state={analysis.state} onClose={analysis.close} />}
+        {settingsOpen && <SettingsDialog api={api} onClose={() => setSettingsOpen(false)} />}
+      </Suspense>
     </div>
   );
 }

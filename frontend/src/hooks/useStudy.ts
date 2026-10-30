@@ -23,7 +23,7 @@ export function useStudy(api: TutorApi, speak: (text: string, speed?: number) =>
   const [items, setItems] = useState<StudyItem[]>([]);
   const [focus, setFocus] = useState<StudyTarget | null>(null);
 
-  useEffect(() => {
+  const reload = useCallback(() => {
     let alive = true;
     api
       .listStudy()
@@ -33,6 +33,17 @@ export function useStudy(api: TutorApi, speak: (text: string, speed?: number) =>
       alive = false;
     };
   }, [api]);
+
+  useEffect(() => reload(), [reload]);
+
+  /** Deletes one studied word. Throws when the server refuses, leaving the list as it was. */
+  const remove = useCallback(
+    async (id: Id) => {
+      await api.deleteStudy(id);
+      setItems((prev) => prev.filter((i) => i.id !== id));
+    },
+    [api],
+  );
 
   const save = useCallback(
     async (draft: StudyDraft) => {
@@ -82,5 +93,5 @@ export function useStudy(api: TutorApi, speak: (text: string, speed?: number) =>
     [save],
   );
 
-  return { items, focus, setFocus, listen, replay, remember };
+  return { items, focus, setFocus, listen, replay, remember, remove, reload };
 }

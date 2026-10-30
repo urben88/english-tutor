@@ -1,9 +1,11 @@
 import type {
+  Analysis,
   Explanation,
   Id,
   Message,
   Persona,
   SessionSummary,
+  Settings,
   SpeechResponse,
   StudyDraft,
   StudyItem,
@@ -13,7 +15,9 @@ import type {
 export interface TutorApi {
   persona(): Promise<Persona>;
   listSessions(): Promise<SessionSummary[]>;
-  createSession(): Promise<{ id: Id }>;
+  /** `role`: optional free-text topic (at most 200 characters) stored with the session. */
+  createSession(role?: string): Promise<{ id: Id }>;
+  deleteSession(id: Id): Promise<void>;
   messages(sessionId: Id): Promise<Message[]>;
   voiceTurn(sessionId: Id, wav: Blob): Promise<TurnResponse>;
   textTurn(sessionId: Id, text: string): Promise<TurnResponse>;
@@ -24,6 +28,11 @@ export interface TutorApi {
   /** Adds the item, or counts another listen; given explanation fields replace the saved ones. */
   saveStudy(draft: StudyDraft): Promise<StudyItem>;
   updateStudy(id: Id, explanation: Pick<StudyItem, "translation" | "explanation" | "examples">): Promise<StudyItem>;
+  deleteStudy(id: Id): Promise<void>;
+  getSettings(): Promise<Settings>;
+  saveSettings(patch: Partial<Settings>): Promise<Settings>;
+  /** Sentence structure with a translation and explanation per word (502 when the model fails). */
+  analyze(text: string, messageId?: Id): Promise<Analysis>;
 }
 
 export class ApiError extends Error {}
@@ -54,8 +63,12 @@ export function createApi(fetchFn: Fetch = (...a) => fetch(...a)): TutorApi {
   return {
     persona: () => fetchFn("/api/persona").then((r) => parse<Persona>(r)),
     listSessions: () => fetchFn("/api/sessions").then((r) => parse<SessionSummary[]>(r)),
-    createSession: () =>
-      fetchFn("/api/sessions", { method: "POST" }).then((r) => parse<{ id: Id }>(r)),
+    createSession: (role) =>
+      fetchFn("/api/sessions", role?.trim() ? json({ role: role.trim() }) : { method: "POST" }).then((r) =>
+        parse<{ id: Id }>(r),
+      ),
+    deleteSession: (id) =>
+      fetchFn(`/api/sessions/${sid(id)}`, { method: "DELETE" }).then((r) => parse<unknown>(r).then(() => undefined)),
     messages: (id) => fetchFn(`/api/sessions/${sid(id)}/messages`).then((r) => parse<Message[]>(r)),
     voiceTurn: (id, wav) =>
       fetchFn(`/api/sessions/${sid(id)}/turn`, {
@@ -78,6 +91,14 @@ export function createApi(fetchFn: Fetch = (...a) => fetch(...a)): TutorApi {
     updateStudy: (id, explanation) =>
       fetchFn(`/api/study/${sid(id)}`, { ...json(explanation), method: "PATCH" }).then((r) =>
         parse<StudyItem>(r),
+      ),
+    deleteStudy: (id) =>
+      fetchFn(`/api/study/${sid(id)}`, { method: "DELETE" }).then((r) => parse<unknown>(r).then(() => undefined)),
+    getSettings: () => fetchFn("/api/settings").then((r) => parse<Settings>(r)),
+    saveSettings: (patch) => fetchFn("/api/settings", { ...json(patch), method: "PUT" }).then((r) => parse<Settings>(r)),
+    analyze: (text, messageId) =>
+      fetchFn("/api/analyze", json(messageId === undefined ? { text } : { text, message_id: messageId })).then((r) =>
+        parse<Analysis>(r),
       ),
   };
 }
