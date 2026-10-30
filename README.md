@@ -5,7 +5,8 @@ and text-to-speech are swappable ports, so a local model can later be replaced b
 without touching the core.
 
 Phase 1: ports, local adapters, config-driven selection, latency benchmark.
-Phase 2 (this repo state): terminal voice loop with a persona, SQLite history and token-budgeted context.
+Phase 2: terminal voice loop with a persona, SQLite history and token-budgeted context.
+Phase 3 (this repo state): web API and browser UI with click-to-explain.
 
 | Port | Local adapter | Engine |
 |---|---|---|
@@ -52,7 +53,7 @@ CPU fallback: in `config.yaml` set the `stt` block to `adapter: whisper_cpp` (se
 uv run python -m backend.bench                 # latency table for TTS, STT and LLM
 uv run pytest -m "not integration"             # unit tests, no models needed
 uv run pytest -m integration                   # real adapters; skipped if a model/service is missing
-uv run uvicorn backend.api.app:app             # empty API, GET /health
+uv run uvicorn backend.api.app:app             # web API (see Web UI), GET /health
 ```
 
 ## Voice loop (terminal)
@@ -81,6 +82,33 @@ system prompt, the running summary (if any), the most recent turns that fit, and
 turns that no longer fit are folded into the summary by one extra LLM call, made after the reply has been
 spoken so normal turns pay no extra latency.
 
+## Web UI
+
+Prerequisites as for the voice loop (whisper-server optional: without it text turns and explanations still work).
+
+```
+# dev: API on :8000 + Vite dev server (proxies /api and /health to 127.0.0.1:8000)
+uv run uvicorn backend.api.app:app
+cd frontend && npm install && npm run dev
+
+# prod: build once, then uvicorn serves frontend/dist at /
+cd frontend && npm run build
+uv run uvicorn backend.api.app:app             # open http://127.0.0.1:8000
+```
+
+Hold the on-screen button (or the Space key, outside the text box) to talk, release to send. Click any word,
+or select a phrase and press "Explain", to get a translation, an explanation and examples in a side panel.
+Explanations are in Spanish; the examples are English. They are not saved to the conversation history.
+
+| Endpoint | Purpose |
+|---|---|
+| `GET /api/persona` | active persona `{name, stem}` |
+| `GET /api/sessions`, `POST /api/sessions` | list sessions (newest first) / create one |
+| `GET /api/sessions/{id}/messages` | conversation `[{id, role, content}]` (404 if unknown) |
+| `POST /api/sessions/{id}/turn` | body: WAV (`audio/wav`, 16-bit PCM) -> `{user_text, reply_text, audio (base64 WAV), sample_rate}` |
+| `POST /api/sessions/{id}/turn/text` | body `{text}` -> same response |
+| `POST /api/explain` | body `{text, context}` -> `{text, translation, explanation, examples}` |
+
 ## Swap an adapter
 
 `config.yaml` selects one adapter per port by name and passes its `params` to the constructor:
@@ -103,7 +131,8 @@ backend/core/       models, ports, context policy, persona loader, use cases (no
 backend/adapters/   stt/ llm/ tts/ store/ and registry.py
 backend/graph/      LangGraph turn graph over the ports
 backend/cli.py      terminal hold-to-talk loop
-backend/api/        FastAPI app
+backend/api/        FastAPI app (+ serves frontend/dist)
+frontend/           React + Vite + TypeScript browser UI
 personas/           tutor personas (YAML)
 data/               conversation history (git-ignored)
 tests/

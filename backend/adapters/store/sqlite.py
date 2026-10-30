@@ -37,7 +37,8 @@ class SQLiteStore:
     def __init__(self, path: str = "data/history.db") -> None:
         if path != ":memory:":
             Path(path).parent.mkdir(parents=True, exist_ok=True)
-        self._db = sqlite3.connect(path)
+        # check_same_thread=False: the web API calls from worker threads (it holds one lock)
+        self._db = sqlite3.connect(path, check_same_thread=False)
         self._db.executescript(_SCHEMA)
 
     def close(self) -> None:

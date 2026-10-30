@@ -83,3 +83,21 @@ def test_registry_unknown_store_lists_options():
     with pytest.raises(ValueError) as e:
         registry.build("store", AdapterSelection("nope"))
     assert "nope" in str(e.value) and "sqlite" in str(e.value)
+
+
+def test_usable_from_another_thread(store):
+    import threading
+    sid = store.create_session("emma")
+    out = {}
+
+    def work():
+        try:
+            store.append_message(sid, "user", "from thread")
+            out["n"] = len(store.load_messages(sid))
+        except Exception as e:  # noqa: BLE001
+            out["err"] = e
+
+    t = threading.Thread(target=work)
+    t.start()
+    t.join()
+    assert out == {"n": 1}
