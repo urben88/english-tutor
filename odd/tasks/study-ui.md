@@ -19,7 +19,7 @@ Branch: `feat/study-ui`, stacked on `feat/voice-ux` (unpushed) · Delivery: ask-
 |---|---|---|---|---|
 | T0 | S1 | inline | done (kit installed, uncommitted — see L3) | |
 | T1 | S1, S2 | delegated (resolutor), direction answered by the user | done (visual check pending) | design docs + layout: see L5 |
-| T2 | S3, S4, S5, S7 | delegated (resolutor) after T1 fixes the layout | pending | |
+| T2 | S3, S4, S5, S7 | delegated (resolutor) after T1 fixes the layout | done | 8b81d7c (backend), ab97dbc (frontend) |
 | T3 | S6 | inline or redactor | pending | |
 
 ## Log
@@ -29,3 +29,5 @@ Branch: `feat/study-ui`, stacked on `feat/voice-ux` (unpushed) · Delivery: ask-
 - **L3 (2026-10-30):** Installer reviewed before running (writes only into the target, removes only its own folders; installs 3 external design skills via `npx skills add`, configures Playwright + Excalidraw MCP). Ran `node install.mjs --target <repo>` from the reviewed clone. New untracked files: `.agents/`, `.claude/`, `.mcp.json`, `AGENTS.md`, `ai-frontend-guide-kit/`, `ai-frontend-output/`, `skills-lock.json`. Not committed yet: decide whether the kit (large catalog) goes into git or `.gitignore`.
 - **L4 (2026-10-30, user answers, kit direction phase):** personality "Cálida y cercana"; theme "Ambos, sigue el sistema (Recomendado)"; motion "Moderado (Recomendado)"; devices "Ordenador y móvil por igual"; direction "Videollamada + subtítulos (Recomendado)". Brief: `ai-frontend-output/ux/EXPERIENCE-BRIEF.md` (gate passed). T1 delegated to resolutor (context backstop).
 - **L5 (2026-10-30, T1):** UX-SPEC, DESIGN, PRODUCT and selection memory written in `ai-frontend-output/`; layout implemented (header, transcript drawer `T`/Esc, CharacterStage with `state` prop and mount point, subtitles, voice dock, StudyPanel shell, mobile tab bar). New `layout.test.tsx` (11 tests); `npm test` 46/46, `npm run build` ok, `uv run pytest -m "not integration"` 107 passed. Excalidraw MCP not available: `ux-map.excalidraw` not updated. Commits: see `git log` (feat: study-ui layout; docs: design artifacts).
+- **L6 (2026-10-30, user):** "añade lo que falta ya sabes que estoy creando el modelo 3d". Interpreted: the user builds the 3D model; do not install `three` or integrate the 3D now. Continue with T2 then T3.
+- **L7 (2026-10-30, T2):** Backend: `study_items` table + `StudyStore` port, `POST /api/tts` (speed 0.25-2), `GET/POST/PATCH /api/study`, `simpler` flag in `/api/explain`. Frontend: word click listens (and saves), Explain in tabs Translation/Grammar/Examples, Read again / Explain again / Explain simpler, study list with Play/Slow/Explain/Go to message. Slow = TTS speed 0.7 (the port already had `speed`). Checks: `uv run pytest -m "not integration"` 122 passed; `npm test` 68 passed; `npm run build` ok. Note: the commits leave out the concurrent uncommitted 3D hunks (App.tsx, package.json, vite/tsconfig, player.ts).
