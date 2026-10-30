@@ -1,8 +1,8 @@
 # Selection Summary
 
-Generated 2026-10-30T14:53:19.850Z · project `english-tutor`
+Generated 2026-10-30T14:56:05.934Z · project `english-tutor`
 
-- Decisions recorded: **10** (latest per block: 10)
+- Decisions recorded: **13** (latest per block: 10)
 - Blocks covered: 10
 - Combinations saved: 0
 
@@ -31,6 +31,9 @@ shadcn/ui (2)
 
 ## Recent decisions
 
+- 2026-10-30 · console/icon-buttons · build · Custom icon-buttons
+- 2026-10-30 · console/dialog · build · Custom dialog
+- 2026-10-30 · console/voice-orb · build · Custom voice-orb
 - 2026-10-30 · console/dialog · build · Custom dialog
 - 2026-10-30 · console/icon-buttons · build · Custom icon-buttons
 - 2026-10-30 · console/voice-orb · build · Custom voice-orb
@@ -38,6 +41,3 @@ shadcn/ui (2)
 - 2026-10-30 · console/study-panel · build · Custom study-panel
 - 2026-10-30 · console/character-stage · build · Custom character-stage
 - 2026-10-30 · console/voice-status · build · Custom voice-status
-- 2026-10-30 · console/mobile-tabs · adapt · shadcn-navigation-tabs
-- 2026-10-30 · console/transcript-drawer · adapt · shadcn-overlay-drawer
-- 2026-10-30 · experience/direction · adapt · direction:video-call-subtitles
