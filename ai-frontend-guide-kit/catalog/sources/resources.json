@@ -1,0 +1,457 @@
+{
+  "schema_version": "1.0",
+  "source_id": "resources",
+  "source_name": "Curated resources",
+  "source_url": "https://github.com/urben88/ai-frontend-guide-kit",
+  "catalog_url": "https://github.com/urben88/ai-frontend-guide-kit",
+  "license_summary": "Per resource: icon sets MIT/ISC, illustrations with custom terms, paid kits proprietary. See each entry.",
+  "granularity": "curated: icon sets, illustrations, design-tool libraries and paid UI kits (reference level)",
+  "extraction": {
+    "channel": "manual",
+    "method": "Hand-curated list; license evidence linked in manual_steps",
+    "evidence_url": "https://github.com/urben88/ai-frontend-guide-kit/blob/main/tools/extract/resources.mjs"
+  },
+  "generated_at": "2026-10-04",
+  "entries": [
+    {
+      "id": "resources-assets-canva",
+      "name": "Canva",
+      "source": "Curated resources",
+      "entry_type": "design-system",
+      "category": "assets",
+      "description": "Drag-and-drop design tool with templates, graphics, photos and video for marketing visuals, social posts and presentations.",
+      "use_case": "Add icons, illustrations or design kits that keep the visual language consistent.",
+      "search_tags": [
+        "canva",
+        "templates",
+        "graphics",
+        "social",
+        "marketing",
+        "assets",
+        "curated-resources"
+      ],
+      "docs_url": "https://www.canva.com/",
+      "stack": [
+        "web"
+      ],
+      "dependencies": [],
+      "license_type": "proprietary",
+      "commercial_use": "conditional",
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Good for campaign graphics and social images, not for UI components or product screens"
+      ],
+      "install_method": "reference",
+      "manual_steps": [
+        "Docs: https://www.canva.com/",
+        "License evidence: https://www.canva.com/policies/content-license-agreement/"
+      ],
+      "limits": "Canva Content License Agreement: free and Pro content can be used commercially in your designs, but not resold as standalone assets, and Branded/Disney content is restricted to personal use. Check people, logos and trademarks in images.",
+      "extraction_note": "Hand-curated on 2026-10-04: license facts checked against the linked evidence; no machine-readable registry exists.",
+      "quality": 47
+    },
+    {
+      "id": "resources-assets-heroicons",
+      "name": "Heroicons",
+      "source": "Curated resources",
+      "entry_type": "asset",
+      "category": "assets",
+      "description": "Hand-crafted SVG icons from the makers of Tailwind CSS (324 outline icons in the repo tree; outline, solid, mini and micro styles).",
+      "use_case": "Add icons, illustrations or design kits that keep the visual language consistent.",
+      "search_tags": [
+        "icons",
+        "svg",
+        "heroicons",
+        "tailwind",
+        "assets",
+        "curated-resources"
+      ],
+      "docs_url": "https://heroicons.com/",
+      "stack": [
+        "react",
+        "vue",
+        "svg",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Small, consistent set; best with Tailwind projects that need a few dozen icons"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @heroicons/react",
+      "manual_steps": [
+        "Docs: https://heroicons.com/",
+        "License evidence: https://github.com/tailwindlabs/heroicons/blob/master/LICENSE"
+      ],
+      "extraction_note": "Hand-curated on 2026-10-04: license facts checked against the linked evidence; no machine-readable registry exists.",
+      "quality": 87
+    },
+    {
+      "id": "resources-assets-lucide",
+      "name": "Lucide Icons",
+      "source": "Curated resources",
+      "entry_type": "asset",
+      "category": "assets",
+      "description": "Open-source SVG icon set (1,866 icons in the repo tree) with official packages for React, Vue, Svelte, Solid and more; the default icon set of shadcn/ui.",
+      "use_case": "Add icons, illustrations or design kits that keep the visual language consistent.",
+      "search_tags": [
+        "icons",
+        "svg",
+        "lucide",
+        "feather",
+        "shadcn",
+        "assets",
+        "curated-resources"
+      ],
+      "docs_url": "https://lucide.dev/icons/",
+      "stack": [
+        "react",
+        "vue",
+        "svelte",
+        "svg"
+      ],
+      "dependencies": [],
+      "license_type": "custom",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Pick one icon set per project; Lucide is the shadcn default (stroke 2px, 24px grid)"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i lucide-react",
+      "manual_steps": [
+        "Docs: https://lucide.dev/icons/",
+        "License evidence: https://github.com/lucide-icons/lucide/blob/main/LICENSE"
+      ],
+      "limits": "ISC license (Lucide) with portions MIT from Feather; both permissive, keep the copyright notice.",
+      "extraction_note": "Hand-curated on 2026-10-04: license facts checked against the linked evidence; no machine-readable registry exists.",
+      "quality": 75
+    },
+    {
+      "id": "resources-assets-phosphor-icons",
+      "name": "Phosphor Icons",
+      "source": "Curated resources",
+      "entry_type": "asset",
+      "category": "assets",
+      "description": "Flexible icon family (1,512 icons, each in six weights: thin, light, regular, bold, fill, duotone) with official React, Vue and Svelte packages.",
+      "use_case": "Add icons, illustrations or design kits that keep the visual language consistent.",
+      "search_tags": [
+        "icons",
+        "svg",
+        "phosphor",
+        "weights",
+        "duotone",
+        "assets",
+        "curated-resources"
+      ],
+      "docs_url": "https://phosphoricons.com/",
+      "stack": [
+        "react",
+        "vue",
+        "svelte",
+        "svg"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Choose Phosphor when you need weight variants or duotone to express hierarchy"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @phosphor-icons/react",
+      "manual_steps": [
+        "Docs: https://phosphoricons.com/",
+        "License evidence: https://github.com/phosphor-icons/core/blob/main/LICENSE"
+      ],
+      "extraction_note": "Hand-curated on 2026-10-04: license facts checked against the linked evidence; no machine-readable registry exists.",
+      "quality": 87
+    },
+    {
+      "id": "resources-assets-storyset",
+      "name": "Storyset",
+      "source": "Curated resources",
+      "entry_type": "asset",
+      "category": "assets",
+      "description": "Customizable and animated illustration collections (Freepik) with a style, color and animation editor.",
+      "use_case": "Add icons, illustrations or design kits that keep the visual language consistent.",
+      "search_tags": [
+        "illustrations",
+        "animated",
+        "storyset",
+        "freepik",
+        "lottie",
+        "assets",
+        "curated-resources"
+      ],
+      "docs_url": "https://storyset.com/",
+      "stack": [
+        "svg"
+      ],
+      "dependencies": [],
+      "license_type": "custom",
+      "commercial_use": "conditional",
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Plan for the attribution line in the footer or credits page, or budget the subscription"
+      ],
+      "install_method": "reference",
+      "manual_steps": [
+        "Docs: https://storyset.com/",
+        "License evidence: https://storyset.com/terms"
+      ],
+      "limits": "Free use requires crediting Storyset/Freepik; removing attribution needs a Flaticon Premium subscription. Reselling, sublicensing and stock-collection use are prohibited. Read the terms before commercial use.",
+      "extraction_note": "Hand-curated on 2026-10-04: license facts checked against the linked evidence; no machine-readable registry exists.",
+      "quality": 53
+    },
+    {
+      "id": "resources-assets-tabler-icons",
+      "name": "Tabler Icons",
+      "source": "Curated resources",
+      "entry_type": "asset",
+      "category": "assets",
+      "description": "Large free SVG icon set (5,166 outline icons in the repo tree, plus filled variants) with packages for React, Vue, Svelte and webfonts.",
+      "use_case": "Add icons, illustrations or design kits that keep the visual language consistent.",
+      "search_tags": [
+        "icons",
+        "svg",
+        "tabler",
+        "webfont",
+        "assets",
+        "curated-resources"
+      ],
+      "docs_url": "https://tabler.io/icons",
+      "stack": [
+        "react",
+        "vue",
+        "svelte",
+        "svg"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Widest coverage of niche icons; consistent 24px / 2px stroke"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @tabler/icons-react",
+      "manual_steps": [
+        "Docs: https://tabler.io/icons",
+        "License evidence: https://github.com/tabler/tabler-icons/blob/main/LICENSE"
+      ],
+      "extraction_note": "Hand-curated on 2026-10-04: license facts checked against the linked evidence; no machine-readable registry exists.",
+      "quality": 87
+    },
+    {
+      "id": "resources-assets-undraw",
+      "name": "unDraw",
+      "source": "Curated resources",
+      "entry_type": "asset",
+      "category": "assets",
+      "description": "Open-source style SVG illustrations with an on-site color picker, free for commercial use without attribution.",
+      "use_case": "Add icons, illustrations or design kits that keep the visual language consistent.",
+      "search_tags": [
+        "illustrations",
+        "svg",
+        "undraw",
+        "empty-states",
+        "onboarding",
+        "assets",
+        "curated-resources"
+      ],
+      "docs_url": "https://undraw.co/illustrations",
+      "stack": [
+        "svg"
+      ],
+      "dependencies": [],
+      "license_type": "custom",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Recolor to the project accent token; avoid using as the main brand visual (very recognizable)"
+      ],
+      "install_method": "reference",
+      "manual_steps": [
+        "Docs: https://undraw.co/illustrations",
+        "License evidence: https://undraw.co/license"
+      ],
+      "limits": "Own license: commercial use allowed with no attribution; you may not redistribute illustrations in packs, scrape or embed them without consent, sell them as your product, or use them to train AI/ML models.",
+      "extraction_note": "Hand-curated on 2026-10-04: license facts checked against the linked evidence; no machine-readable registry exists.",
+      "quality": 59
+    },
+    {
+      "id": "resources-blocks-sections-flowbite-blocks",
+      "name": "Flowbite Blocks",
+      "source": "Curated resources",
+      "entry_type": "block",
+      "category": "blocks-sections",
+      "description": "Tailwind CSS sections for marketing, application, e-commerce and publisher pages (hero, pricing, contact, dashboards); a free subset under MIT and a larger Pro collection.",
+      "use_case": "Compose complete page sections that combine several components.",
+      "search_tags": [
+        "flowbite",
+        "blocks",
+        "sections",
+        "tailwind",
+        "hero",
+        "pricing",
+        "blocks-sections",
+        "curated-resources"
+      ],
+      "docs_url": "https://flowbite.com/blocks/",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Pair with the Flowbite component source (`--source flowbite`)"
+      ],
+      "install_method": "copy-paste",
+      "manual_steps": [
+        "Docs: https://flowbite.com/blocks/",
+        "License evidence: https://flowbite.com/pro/"
+      ],
+      "limits": "Only the free blocks are MIT; the full collection (Pro, with Figma files) is paid and not indexed. Check the block page for the Pro badge.",
+      "extraction_note": "Hand-curated on 2026-10-04: license facts checked against the linked evidence; no machine-readable registry exists.",
+      "quality": 79
+    },
+    {
+      "id": "resources-blocks-sections-tailwind-plus",
+      "name": "Tailwind Plus (UI Blocks, Templates, Catalyst)",
+      "source": "Curated resources",
+      "entry_type": "design-system",
+      "category": "blocks-sections",
+      "description": "Official Tailwind Labs library of 500+ polished UI blocks, site templates and the Catalyst application UI kit; paid one-time license.",
+      "use_case": "Compose complete page sections that combine several components.",
+      "search_tags": [
+        "tailwind",
+        "tailwind-plus",
+        "ui-blocks",
+        "catalyst",
+        "templates",
+        "paid",
+        "blocks-sections",
+        "curated-resources"
+      ],
+      "docs_url": "https://tailwindcss.com/plus",
+      "stack": [
+        "react",
+        "vue",
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": false,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Highest visual polish of the Tailwind options; only recommend if the user has or will buy a license",
+        "Never copy its code into the kit or a public repo"
+      ],
+      "install_method": "reference",
+      "manual_steps": [
+        "Docs: https://tailwindcss.com/plus",
+        "License evidence: https://tailwindcss.com/plus"
+      ],
+      "limits": "Paid: Personal license $299 one-time (Team $979; single packages $149 at the time of checking). Allowed in your own and client projects as the license permits; redistribution of the code is not allowed. Verify current prices.",
+      "extraction_note": "Hand-curated on 2026-10-04: license facts checked against the linked evidence; no machine-readable registry exists.",
+      "quality": 48
+    },
+    {
+      "id": "resources-design-system-figma-community",
+      "name": "Figma Community",
+      "source": "Curated resources",
+      "entry_type": "design-system",
+      "category": "design-system",
+      "description": "Community-published Figma files: UI kits, design systems, icon libraries and templates (for example the free edition of the Flowbite design system).",
+      "use_case": "Reference a full design system for tokens, components and theming guidance.",
+      "search_tags": [
+        "figma",
+        "ui-kit",
+        "design-system",
+        "templates",
+        "community",
+        "curated-resources"
+      ],
+      "docs_url": "https://www.figma.com/community",
+      "stack": [
+        "figma"
+      ],
+      "dependencies": [],
+      "license_type": "custom",
+      "commercial_use": "conditional",
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Use as a visual and structural reference or starting kit; export tokens into DESIGN.md",
+        "Credit CC BY files in the project credits"
+      ],
+      "install_method": "reference",
+      "manual_steps": [
+        "Docs: https://www.figma.com/community",
+        "License evidence: https://www.figma.com/legal/community-free-resource-license/"
+      ],
+      "limits": "Free community files are published under CC BY 4.0 (commercial use allowed, credit the creator); paid files use the Community Paid Resource License. The license is per file: always check the file page.",
+      "extraction_note": "Hand-curated on 2026-10-04: license facts checked against the linked evidence; no machine-readable registry exists.",
+      "quality": 53
+    },
+    {
+      "id": "resources-design-system-untitled-ui",
+      "name": "Untitled UI React",
+      "source": "Curated resources",
+      "entry_type": "design-system",
+      "category": "design-system",
+      "description": "Large React component library built on Tailwind CSS and React Aria with a free MIT tier (base components, hundreds of application UI components and marketing sections) and a PRO tier.",
+      "use_case": "Reference a full design system for tokens, components and theming guidance.",
+      "search_tags": [
+        "untitled-ui",
+        "react",
+        "tailwind",
+        "react-aria",
+        "design-system",
+        "figma",
+        "curated-resources"
+      ],
+      "docs_url": "https://www.untitledui.com/react",
+      "stack": [
+        "react",
+        "tailwind",
+        "react-aria"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Check each component page for the Free/PRO badge before adopting",
+        "Closest drop-in alternative to shadcn/ui with a stronger visual system"
+      ],
+      "install_method": "npm",
+      "install_command": "npx untitledui@latest add button",
+      "manual_steps": [
+        "Docs: https://www.untitledui.com/react",
+        "License evidence: https://www.untitledui.com/react/docs/cli"
+      ],
+      "limits": "Free components are MIT. PRO (from $349) adds more components, 250+ page examples and Figma sync and requires `npx untitledui@latest login`; PRO code is not MIT.",
+      "extraction_note": "Hand-curated on 2026-10-04: license facts checked against the linked evidence; no machine-readable registry exists.",
+      "quality": 87
+    }
+  ]
+}

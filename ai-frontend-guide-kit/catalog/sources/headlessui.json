@@ -1,0 +1,610 @@
+{
+  "schema_version": "1.0",
+  "source_id": "headlessui",
+  "source_name": "Headless UI",
+  "source_url": "https://headlessui.com",
+  "catalog_url": "https://headlessui.com/react/menu",
+  "license_summary": "MIT",
+  "granularity": "public components of @headlessui/react (docs URLs verified)",
+  "extraction": {
+    "channel": "github-contents",
+    "method": "Component list from the headlessui package with docs URL verification",
+    "evidence_url": "https://github.com/tailwindlabs/headlessui/tree/main/packages/@headlessui-react/src/components"
+  },
+  "generated_at": "2026-10-04",
+  "entries": [
+    {
+      "id": "headlessui-data-display-listbox",
+      "name": "Headless UI Listbox",
+      "source": "Headless UI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Listbox from Headless UI: an unstyled, accessible component from the Tailwind team for React and Vue.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "headlessui",
+        "listbox",
+        "data-display",
+        "headless-ui"
+      ],
+      "docs_url": "https://headlessui.com/react/listbox",
+      "stack": [
+        "react",
+        "vue",
+        "headless"
+      ],
+      "dependencies": [
+        "@headlessui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Headless and Tailwind-friendly; fewer components than Radix/React Aria but a very simple API"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @headlessui/react",
+      "manual_steps": [
+        "Docs: https://headlessui.com/react/listbox"
+      ],
+      "quality": 89
+    },
+    {
+      "id": "headlessui-data-display-textarea",
+      "name": "Headless UI Textarea",
+      "source": "Headless UI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Textarea from Headless UI: an unstyled, accessible component from the Tailwind team for React and Vue.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "headlessui",
+        "textarea",
+        "data-display",
+        "headless-ui"
+      ],
+      "docs_url": "https://headlessui.com/react/textarea",
+      "stack": [
+        "react",
+        "vue",
+        "headless"
+      ],
+      "dependencies": [
+        "@headlessui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Headless and Tailwind-friendly; fewer components than Radix/React Aria but a very simple API"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @headlessui/react",
+      "manual_steps": [
+        "Docs: https://headlessui.com/react/textarea"
+      ],
+      "quality": 89
+    },
+    {
+      "id": "headlessui-data-display-transition",
+      "name": "Headless UI Transition",
+      "source": "Headless UI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Transition from Headless UI: an unstyled, accessible component from the Tailwind team for React and Vue.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "headlessui",
+        "transition",
+        "data-display",
+        "headless-ui"
+      ],
+      "docs_url": "https://headlessui.com/react/transition",
+      "stack": [
+        "react",
+        "vue",
+        "headless"
+      ],
+      "dependencies": [
+        "@headlessui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Headless and Tailwind-friendly; fewer components than Radix/React Aria but a very simple API"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @headlessui/react",
+      "manual_steps": [
+        "Docs: https://headlessui.com/react/transition"
+      ],
+      "quality": 89
+    },
+    {
+      "id": "headlessui-forms-checkbox",
+      "name": "Headless UI Checkbox",
+      "source": "Headless UI",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Checkbox from Headless UI: an unstyled, accessible component from the Tailwind team for React and Vue.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "headlessui",
+        "checkbox",
+        "forms",
+        "headless-ui"
+      ],
+      "docs_url": "https://headlessui.com/react/checkbox",
+      "stack": [
+        "react",
+        "vue",
+        "headless"
+      ],
+      "dependencies": [
+        "@headlessui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Headless and Tailwind-friendly; fewer components than Radix/React Aria but a very simple API"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @headlessui/react",
+      "manual_steps": [
+        "Docs: https://headlessui.com/react/checkbox"
+      ],
+      "quality": 89
+    },
+    {
+      "id": "headlessui-forms-combobox",
+      "name": "Headless UI Combobox",
+      "source": "Headless UI",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Combobox from Headless UI: an unstyled, accessible component from the Tailwind team for React and Vue.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "headlessui",
+        "combobox",
+        "forms",
+        "headless-ui"
+      ],
+      "docs_url": "https://headlessui.com/react/combobox",
+      "stack": [
+        "react",
+        "vue",
+        "headless"
+      ],
+      "dependencies": [
+        "@headlessui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Headless and Tailwind-friendly; fewer components than Radix/React Aria but a very simple API"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @headlessui/react",
+      "manual_steps": [
+        "Docs: https://headlessui.com/react/combobox"
+      ],
+      "quality": 89
+    },
+    {
+      "id": "headlessui-forms-fieldset",
+      "name": "Headless UI Fieldset",
+      "source": "Headless UI",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Fieldset from Headless UI: an unstyled, accessible component from the Tailwind team for React and Vue.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "headlessui",
+        "fieldset",
+        "forms",
+        "headless-ui"
+      ],
+      "docs_url": "https://headlessui.com/react/fieldset",
+      "stack": [
+        "react",
+        "vue",
+        "headless"
+      ],
+      "dependencies": [
+        "@headlessui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Headless and Tailwind-friendly; fewer components than Radix/React Aria but a very simple API"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @headlessui/react",
+      "manual_steps": [
+        "Docs: https://headlessui.com/react/fieldset"
+      ],
+      "quality": 89
+    },
+    {
+      "id": "headlessui-forms-input",
+      "name": "Headless UI Input",
+      "source": "Headless UI",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Input from Headless UI: an unstyled, accessible component from the Tailwind team for React and Vue.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "headlessui",
+        "input",
+        "forms",
+        "headless-ui"
+      ],
+      "docs_url": "https://headlessui.com/react/input",
+      "stack": [
+        "react",
+        "vue",
+        "headless"
+      ],
+      "dependencies": [
+        "@headlessui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Headless and Tailwind-friendly; fewer components than Radix/React Aria but a very simple API"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @headlessui/react",
+      "manual_steps": [
+        "Docs: https://headlessui.com/react/input"
+      ],
+      "quality": 89
+    },
+    {
+      "id": "headlessui-forms-radio-group",
+      "name": "Headless UI Radio Group",
+      "source": "Headless UI",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Radio Group from Headless UI: an unstyled, accessible component from the Tailwind team for React and Vue.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "headlessui",
+        "radio",
+        "group",
+        "forms",
+        "headless-ui"
+      ],
+      "docs_url": "https://headlessui.com/react/radio-group",
+      "stack": [
+        "react",
+        "vue",
+        "headless"
+      ],
+      "dependencies": [
+        "@headlessui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Headless and Tailwind-friendly; fewer components than Radix/React Aria but a very simple API"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @headlessui/react",
+      "manual_steps": [
+        "Docs: https://headlessui.com/react/radio-group"
+      ],
+      "quality": 89
+    },
+    {
+      "id": "headlessui-forms-select",
+      "name": "Headless UI Select",
+      "source": "Headless UI",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Select from Headless UI: an unstyled, accessible component from the Tailwind team for React and Vue.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "headlessui",
+        "select",
+        "forms",
+        "headless-ui"
+      ],
+      "docs_url": "https://headlessui.com/react/select",
+      "stack": [
+        "react",
+        "vue",
+        "headless"
+      ],
+      "dependencies": [
+        "@headlessui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Headless and Tailwind-friendly; fewer components than Radix/React Aria but a very simple API"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @headlessui/react",
+      "manual_steps": [
+        "Docs: https://headlessui.com/react/select"
+      ],
+      "quality": 89
+    },
+    {
+      "id": "headlessui-forms-switch",
+      "name": "Headless UI Switch",
+      "source": "Headless UI",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Switch from Headless UI: an unstyled, accessible component from the Tailwind team for React and Vue.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "headlessui",
+        "switch",
+        "forms",
+        "headless-ui"
+      ],
+      "docs_url": "https://headlessui.com/react/switch",
+      "stack": [
+        "react",
+        "vue",
+        "headless"
+      ],
+      "dependencies": [
+        "@headlessui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Headless and Tailwind-friendly; fewer components than Radix/React Aria but a very simple API"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @headlessui/react",
+      "manual_steps": [
+        "Docs: https://headlessui.com/react/switch"
+      ],
+      "quality": 89
+    },
+    {
+      "id": "headlessui-micro-interactions-button",
+      "name": "Headless UI Button",
+      "source": "Headless UI",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "Button from Headless UI: an unstyled, accessible component from the Tailwind team for React and Vue.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "headlessui",
+        "button",
+        "micro-interactions",
+        "headless-ui"
+      ],
+      "docs_url": "https://headlessui.com/react/button",
+      "stack": [
+        "react",
+        "vue",
+        "headless"
+      ],
+      "dependencies": [
+        "@headlessui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Headless and Tailwind-friendly; fewer components than Radix/React Aria but a very simple API"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @headlessui/react",
+      "manual_steps": [
+        "Docs: https://headlessui.com/react/button"
+      ],
+      "quality": 89
+    },
+    {
+      "id": "headlessui-micro-interactions-disclosure",
+      "name": "Headless UI Disclosure",
+      "source": "Headless UI",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "Disclosure from Headless UI: an unstyled, accessible component from the Tailwind team for React and Vue.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "headlessui",
+        "disclosure",
+        "micro-interactions",
+        "headless-ui"
+      ],
+      "docs_url": "https://headlessui.com/react/disclosure",
+      "stack": [
+        "react",
+        "vue",
+        "headless"
+      ],
+      "dependencies": [
+        "@headlessui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Headless and Tailwind-friendly; fewer components than Radix/React Aria but a very simple API"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @headlessui/react",
+      "manual_steps": [
+        "Docs: https://headlessui.com/react/disclosure"
+      ],
+      "quality": 89
+    },
+    {
+      "id": "headlessui-navigation-tabs",
+      "name": "Headless UI Tabs",
+      "source": "Headless UI",
+      "entry_type": "component",
+      "category": "navigation",
+      "description": "Tabs from Headless UI: an unstyled, accessible component from the Tailwind team for React and Vue.",
+      "use_case": "Build site and app navigation structures that stay clear at any depth.",
+      "search_tags": [
+        "headlessui",
+        "tabs",
+        "navigation",
+        "headless-ui"
+      ],
+      "docs_url": "https://headlessui.com/react/tabs",
+      "stack": [
+        "react",
+        "vue",
+        "headless"
+      ],
+      "dependencies": [
+        "@headlessui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Headless and Tailwind-friendly; fewer components than Radix/React Aria but a very simple API"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @headlessui/react",
+      "manual_steps": [
+        "Docs: https://headlessui.com/react/tabs"
+      ],
+      "quality": 89
+    },
+    {
+      "id": "headlessui-overlay-dialog",
+      "name": "Headless UI Dialog",
+      "source": "Headless UI",
+      "entry_type": "component",
+      "category": "overlay",
+      "description": "Dialog from Headless UI: an unstyled, accessible component from the Tailwind team for React and Vue.",
+      "use_case": "Present dialogs, drawers and popovers without leaving the page.",
+      "search_tags": [
+        "headlessui",
+        "dialog",
+        "overlay",
+        "headless-ui"
+      ],
+      "docs_url": "https://headlessui.com/react/dialog",
+      "stack": [
+        "react",
+        "vue",
+        "headless"
+      ],
+      "dependencies": [
+        "@headlessui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Headless and Tailwind-friendly; fewer components than Radix/React Aria but a very simple API"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @headlessui/react",
+      "manual_steps": [
+        "Docs: https://headlessui.com/react/dialog"
+      ],
+      "quality": 89
+    },
+    {
+      "id": "headlessui-overlay-menu",
+      "name": "Headless UI Menu",
+      "source": "Headless UI",
+      "entry_type": "component",
+      "category": "overlay",
+      "description": "Menu from Headless UI: an unstyled, accessible component from the Tailwind team for React and Vue.",
+      "use_case": "Present dialogs, drawers and popovers without leaving the page.",
+      "search_tags": [
+        "headlessui",
+        "menu",
+        "overlay",
+        "headless-ui"
+      ],
+      "docs_url": "https://headlessui.com/react/menu",
+      "stack": [
+        "react",
+        "vue",
+        "headless"
+      ],
+      "dependencies": [
+        "@headlessui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Headless and Tailwind-friendly; fewer components than Radix/React Aria but a very simple API"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @headlessui/react",
+      "manual_steps": [
+        "Docs: https://headlessui.com/react/menu"
+      ],
+      "quality": 89
+    },
+    {
+      "id": "headlessui-overlay-popover",
+      "name": "Headless UI Popover",
+      "source": "Headless UI",
+      "entry_type": "component",
+      "category": "overlay",
+      "description": "Popover from Headless UI: an unstyled, accessible component from the Tailwind team for React and Vue.",
+      "use_case": "Present dialogs, drawers and popovers without leaving the page.",
+      "search_tags": [
+        "headlessui",
+        "popover",
+        "overlay",
+        "headless-ui"
+      ],
+      "docs_url": "https://headlessui.com/react/popover",
+      "stack": [
+        "react",
+        "vue",
+        "headless"
+      ],
+      "dependencies": [
+        "@headlessui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Headless and Tailwind-friendly; fewer components than Radix/React Aria but a very simple API"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @headlessui/react",
+      "manual_steps": [
+        "Docs: https://headlessui.com/react/popover"
+      ],
+      "quality": 89
+    }
+  ]
+}

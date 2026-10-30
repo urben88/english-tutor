@@ -1,0 +1,1324 @@
+{
+  "schema_version": "1.0",
+  "source_id": "motionprimitives",
+  "source_name": "Motion Primitives",
+  "source_url": "https://motion-primitives.com",
+  "catalog_url": "https://motion-primitives.com/docs",
+  "license_summary": "MIT (core); Pro sections have a separate paid license",
+  "granularity": "complete (33 components)",
+  "extraction": {
+    "channel": "registry-json",
+    "method": "Node script downloading the official registry JSON",
+    "evidence_url": "https://motion-primitives.com/c/registry.json"
+  },
+  "generated_at": "2026-10-02",
+  "entries": [
+    {
+      "id": "motionprimitives-backgrounds-effects-animated-background",
+      "name": "Motion Primitives Animated Background",
+      "source": "Motion Primitives",
+      "entry_type": "component",
+      "category": "backgrounds-effects",
+      "description": "A component that provides animated background effects for UI elements.",
+      "use_case": "Add decorative depth to a section; use sparingly (1â€“2 per view).",
+      "search_tags": [
+        "motion-primitives",
+        "springs",
+        "animated",
+        "background",
+        "backgrounds-effects"
+      ],
+      "docs_url": "https://motion-primitives.com/docs/animated-background",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion",
+        "clsx",
+        "tailwind-merge"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Built on Motion â€” matches the spring physics rules in 08-PHILOSOPHY"
+      ],
+      "install_method": "npm",
+      "install_command": "npx motion-primitives@latest add animated-background",
+      "manual_steps": [
+        "Or copy the source from https://motion-primitives.com/docs/animated-background"
+      ],
+      "quality": 86
+    },
+    {
+      "id": "motionprimitives-backgrounds-effects-border-trail",
+      "name": "Motion Primitives Border Trail",
+      "source": "Motion Primitives",
+      "entry_type": "component",
+      "category": "backgrounds-effects",
+      "description": "An effect that creates animated border trails around elements on interaction.",
+      "use_case": "Add decorative depth to a section; use sparingly (1â€“2 per view).",
+      "search_tags": [
+        "motion-primitives",
+        "springs",
+        "border",
+        "trail",
+        "backgrounds-effects"
+      ],
+      "docs_url": "https://motion-primitives.com/docs/border-trail",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion",
+        "clsx",
+        "tailwind-merge"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Built on Motion â€” matches the spring physics rules in 08-PHILOSOPHY"
+      ],
+      "install_method": "npm",
+      "install_command": "npx motion-primitives@latest add border-trail",
+      "manual_steps": [
+        "Or copy the source from https://motion-primitives.com/docs/border-trail"
+      ],
+      "quality": 86
+    },
+    {
+      "id": "motionprimitives-backgrounds-effects-glow-effect",
+      "name": "Motion Primitives Glow Effect",
+      "source": "Motion Primitives",
+      "entry_type": "component",
+      "category": "backgrounds-effects",
+      "description": "A component that creates a glowing effect on elements based on cursor movement.",
+      "use_case": "Add decorative depth to a section; use sparingly (1â€“2 per view).",
+      "search_tags": [
+        "motion-primitives",
+        "springs",
+        "glow",
+        "effect",
+        "backgrounds-effects"
+      ],
+      "docs_url": "https://motion-primitives.com/docs/glow-effect",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion",
+        "clsx",
+        "tailwind-merge"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Built on Motion â€” matches the spring physics rules in 08-PHILOSOPHY"
+      ],
+      "install_method": "npm",
+      "install_command": "npx motion-primitives@latest add glow-effect",
+      "manual_steps": [
+        "Or copy the source from https://motion-primitives.com/docs/glow-effect"
+      ],
+      "quality": 86
+    },
+    {
+      "id": "motionprimitives-backgrounds-effects-progressive-blur",
+      "name": "Motion Primitives Progressive Blur",
+      "source": "Motion Primitives",
+      "entry_type": "component",
+      "category": "backgrounds-effects",
+      "description": "A component that applies progressive blur effects to elements.",
+      "use_case": "Add decorative depth to a section; use sparingly (1â€“2 per view).",
+      "search_tags": [
+        "motion-primitives",
+        "springs",
+        "progressive",
+        "blur",
+        "backgrounds-effects"
+      ],
+      "docs_url": "https://motion-primitives.com/docs/progressive-blur",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion",
+        "clsx",
+        "tailwind-merge"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Built on Motion â€” matches the spring physics rules in 08-PHILOSOPHY"
+      ],
+      "install_method": "npm",
+      "install_command": "npx motion-primitives@latest add progressive-blur",
+      "manual_steps": [
+        "Or copy the source from https://motion-primitives.com/docs/progressive-blur"
+      ],
+      "quality": 86
+    },
+    {
+      "id": "motionprimitives-backgrounds-effects-spotlight",
+      "name": "Motion Primitives Spotlight",
+      "source": "Motion Primitives",
+      "entry_type": "component",
+      "category": "backgrounds-effects",
+      "description": "A component that creates a spotlight effect following cursor movement.",
+      "use_case": "Add decorative depth to a section; use sparingly (1â€“2 per view).",
+      "search_tags": [
+        "motion-primitives",
+        "springs",
+        "spotlight",
+        "backgrounds-effects"
+      ],
+      "docs_url": "https://motion-primitives.com/docs/spotlight",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion",
+        "clsx",
+        "tailwind-merge"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Built on Motion â€” matches the spring physics rules in 08-PHILOSOPHY"
+      ],
+      "install_method": "npm",
+      "install_command": "npx motion-primitives@latest add spotlight",
+      "manual_steps": [
+        "Or copy the source from https://motion-primitives.com/docs/spotlight"
+      ],
+      "quality": 86
+    },
+    {
+      "id": "motionprimitives-feedback-scroll-progress",
+      "name": "Motion Primitives Scroll Progress",
+      "source": "Motion Primitives",
+      "entry_type": "component",
+      "category": "feedback",
+      "description": "A component that visualizes scroll progress with animated indicators.",
+      "use_case": "Communicate system status: alerts, loaders, progress and notifications.",
+      "search_tags": [
+        "motion-primitives",
+        "springs",
+        "scroll",
+        "progress",
+        "feedback"
+      ],
+      "docs_url": "https://motion-primitives.com/docs/scroll-progress",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion",
+        "clsx",
+        "tailwind-merge"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Built on Motion â€” matches the spring physics rules in 08-PHILOSOPHY"
+      ],
+      "install_method": "npm",
+      "install_command": "npx motion-primitives@latest add scroll-progress",
+      "manual_steps": [
+        "Or copy the source from https://motion-primitives.com/docs/scroll-progress"
+      ],
+      "quality": 86
+    },
+    {
+      "id": "motionprimitives-media-carousel",
+      "name": "Motion Primitives Carousel",
+      "source": "Motion Primitives",
+      "entry_type": "component",
+      "category": "media",
+      "description": "A component for cycling through elements with smooth transitions.",
+      "use_case": "Display images, video, carousels and device mockups.",
+      "search_tags": [
+        "motion-primitives",
+        "springs",
+        "carousel",
+        "media"
+      ],
+      "docs_url": "https://motion-primitives.com/docs/carousel",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion",
+        "clsx",
+        "tailwind-merge"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Built on Motion â€” matches the spring physics rules in 08-PHILOSOPHY"
+      ],
+      "install_method": "npm",
+      "install_command": "npx motion-primitives@latest add carousel",
+      "manual_steps": [
+        "Or copy the source from https://motion-primitives.com/docs/carousel"
+      ],
+      "quality": 86
+    },
+    {
+      "id": "motionprimitives-media-image-comparison",
+      "name": "Motion Primitives Image Comparison",
+      "source": "Motion Primitives",
+      "entry_type": "component",
+      "category": "media",
+      "description": "A component for comparing two images with an interactive slider.",
+      "use_case": "Display images, video, carousels and device mockups.",
+      "search_tags": [
+        "motion-primitives",
+        "springs",
+        "image",
+        "comparison",
+        "media"
+      ],
+      "docs_url": "https://motion-primitives.com/docs/image-comparison",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion",
+        "clsx",
+        "tailwind-merge"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Built on Motion â€” matches the spring physics rules in 08-PHILOSOPHY"
+      ],
+      "install_method": "npm",
+      "install_command": "npx motion-primitives@latest add image-comparison",
+      "manual_steps": [
+        "Or copy the source from https://motion-primitives.com/docs/image-comparison"
+      ],
+      "quality": 86
+    },
+    {
+      "id": "motionprimitives-media-infinite-slider",
+      "name": "Motion Primitives Infinite Slider",
+      "source": "Motion Primitives",
+      "entry_type": "component",
+      "category": "media",
+      "description": "A slider component that loops infinitely through its content.",
+      "use_case": "Display images, video, carousels and device mockups.",
+      "search_tags": [
+        "motion-primitives",
+        "springs",
+        "infinite",
+        "slider",
+        "media"
+      ],
+      "docs_url": "https://motion-primitives.com/docs/infinite-slider",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion",
+        "react-use-measure",
+        "clsx",
+        "tailwind-merge"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Built on Motion â€” matches the spring physics rules in 08-PHILOSOPHY"
+      ],
+      "install_method": "npm",
+      "install_command": "npx motion-primitives@latest add infinite-slider",
+      "manual_steps": [
+        "Or copy the source from https://motion-primitives.com/docs/infinite-slider"
+      ],
+      "quality": 86
+    },
+    {
+      "id": "motionprimitives-micro-interactions-accordion",
+      "name": "Motion Primitives Accordion",
+      "source": "Motion Primitives",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "A collapsible content component with smooth animations for showing and hiding content.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "motion-primitives",
+        "springs",
+        "accordion",
+        "micro-interactions"
+      ],
+      "docs_url": "https://motion-primitives.com/docs/accordion",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion",
+        "clsx",
+        "tailwind-merge"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Built on Motion â€” matches the spring physics rules in 08-PHILOSOPHY"
+      ],
+      "install_method": "npm",
+      "install_command": "npx motion-primitives@latest add accordion",
+      "manual_steps": [
+        "Or copy the source from https://motion-primitives.com/docs/accordion"
+      ],
+      "quality": 86
+    },
+    {
+      "id": "motionprimitives-micro-interactions-animated-group",
+      "name": "Motion Primitives Animated Group",
+      "source": "Motion Primitives",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "A container component that applies coordinated animations to a group of child elements.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "motion-primitives",
+        "springs",
+        "animated",
+        "group",
+        "micro-interactions"
+      ],
+      "docs_url": "https://motion-primitives.com/docs/animated-group",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion",
+        "clsx",
+        "tailwind-merge"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Built on Motion â€” matches the spring physics rules in 08-PHILOSOPHY"
+      ],
+      "install_method": "npm",
+      "install_command": "npx motion-primitives@latest add animated-group",
+      "manual_steps": [
+        "Or copy the source from https://motion-primitives.com/docs/animated-group"
+      ],
+      "quality": 86
+    },
+    {
+      "id": "motionprimitives-micro-interactions-cursor",
+      "name": "Motion Primitives Cursor",
+      "source": "Motion Primitives",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "A custom cursor component with animated effects and interactions.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "motion-primitives",
+        "springs",
+        "cursor",
+        "micro-interactions"
+      ],
+      "docs_url": "https://motion-primitives.com/docs/cursor",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion",
+        "clsx",
+        "tailwind-merge"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Built on Motion â€” matches the spring physics rules in 08-PHILOSOPHY"
+      ],
+      "install_method": "npm",
+      "install_command": "npx motion-primitives@latest add cursor",
+      "manual_steps": [
+        "Or copy the source from https://motion-primitives.com/docs/cursor"
+      ],
+      "quality": 86
+    },
+    {
+      "id": "motionprimitives-micro-interactions-disclosure",
+      "name": "Motion Primitives Disclosure",
+      "source": "Motion Primitives",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "A component that shows and hides content with animated transitions.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "motion-primitives",
+        "springs",
+        "disclosure",
+        "micro-interactions"
+      ],
+      "docs_url": "https://motion-primitives.com/docs/disclosure",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion",
+        "clsx",
+        "tailwind-merge"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Built on Motion â€” matches the spring physics rules in 08-PHILOSOPHY"
+      ],
+      "install_method": "npm",
+      "install_command": "npx motion-primitives@latest add disclosure",
+      "manual_steps": [
+        "Or copy the source from https://motion-primitives.com/docs/disclosure"
+      ],
+      "quality": 86
+    },
+    {
+      "id": "motionprimitives-micro-interactions-in-view",
+      "name": "Motion Primitives In View",
+      "source": "Motion Primitives",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "A component that triggers animations when elements enter the viewport.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "motion-primitives",
+        "springs",
+        "in",
+        "view",
+        "micro-interactions"
+      ],
+      "docs_url": "https://motion-primitives.com/docs/in-view",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion",
+        "clsx",
+        "tailwind-merge"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Built on Motion â€” matches the spring physics rules in 08-PHILOSOPHY"
+      ],
+      "install_method": "npm",
+      "install_command": "npx motion-primitives@latest add in-view",
+      "manual_steps": [
+        "Or copy the source from https://motion-primitives.com/docs/in-view"
+      ],
+      "quality": 86
+    },
+    {
+      "id": "motionprimitives-micro-interactions-magnetic",
+      "name": "Motion Primitives Magnetic",
+      "source": "Motion Primitives",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "A component that creates a magnetic attraction effect on hover.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "motion-primitives",
+        "springs",
+        "magnetic",
+        "micro-interactions"
+      ],
+      "docs_url": "https://motion-primitives.com/docs/magnetic",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion",
+        "clsx",
+        "tailwind-merge"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Built on Motion â€” matches the spring physics rules in 08-PHILOSOPHY"
+      ],
+      "install_method": "npm",
+      "install_command": "npx motion-primitives@latest add magnetic",
+      "manual_steps": [
+        "Or copy the source from https://motion-primitives.com/docs/magnetic"
+      ],
+      "quality": 86
+    },
+    {
+      "id": "motionprimitives-micro-interactions-tilt",
+      "name": "Motion Primitives Tilt",
+      "source": "Motion Primitives",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "A component that applies 3D tilt effects to elements based on cursor position.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "motion-primitives",
+        "springs",
+        "tilt",
+        "micro-interactions"
+      ],
+      "docs_url": "https://motion-primitives.com/docs/tilt",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion",
+        "clsx",
+        "tailwind-merge"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Built on Motion â€” matches the spring physics rules in 08-PHILOSOPHY"
+      ],
+      "install_method": "npm",
+      "install_command": "npx motion-primitives@latest add tilt",
+      "manual_steps": [
+        "Or copy the source from https://motion-primitives.com/docs/tilt"
+      ],
+      "quality": 86
+    },
+    {
+      "id": "motionprimitives-micro-interactions-transition-panel",
+      "name": "Motion Primitives Transition Panel",
+      "source": "Motion Primitives",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "A panel component with smooth transitions between different states.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "motion-primitives",
+        "springs",
+        "transition",
+        "panel",
+        "micro-interactions"
+      ],
+      "docs_url": "https://motion-primitives.com/docs/transition-panel",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion",
+        "clsx",
+        "tailwind-merge"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Built on Motion â€” matches the spring physics rules in 08-PHILOSOPHY"
+      ],
+      "install_method": "npm",
+      "install_command": "npx motion-primitives@latest add transition-panel",
+      "manual_steps": [
+        "Or copy the source from https://motion-primitives.com/docs/transition-panel"
+      ],
+      "quality": 86
+    },
+    {
+      "id": "motionprimitives-navigation-dock",
+      "name": "Motion Primitives Dock",
+      "source": "Motion Primitives",
+      "entry_type": "component",
+      "category": "navigation",
+      "description": "A macOS-style dock component with scaling and movement effects.",
+      "use_case": "Build site and app navigation structures that stay clear at any depth.",
+      "search_tags": [
+        "motion-primitives",
+        "springs",
+        "dock",
+        "navigation"
+      ],
+      "docs_url": "https://motion-primitives.com/docs/dock",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion",
+        "clsx",
+        "tailwind-merge"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Built on Motion â€” matches the spring physics rules in 08-PHILOSOPHY"
+      ],
+      "install_method": "npm",
+      "install_command": "npx motion-primitives@latest add dock",
+      "manual_steps": [
+        "Or copy the source from https://motion-primitives.com/docs/dock"
+      ],
+      "quality": 86
+    },
+    {
+      "id": "motionprimitives-navigation-toolbar-dynamic",
+      "name": "Motion Primitives Toolbar Dynamic",
+      "source": "Motion Primitives",
+      "entry_type": "component",
+      "category": "navigation",
+      "description": "A toolbar component with dynamic appearance based on user interaction.",
+      "use_case": "Build site and app navigation structures that stay clear at any depth.",
+      "search_tags": [
+        "motion-primitives",
+        "springs",
+        "toolbar",
+        "dynamic",
+        "navigation"
+      ],
+      "docs_url": "https://motion-primitives.com/docs/toolbar-dynamic",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion",
+        "clsx",
+        "tailwind-merge"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Built on Motion â€” matches the spring physics rules in 08-PHILOSOPHY"
+      ],
+      "install_method": "npm",
+      "install_command": "npx motion-primitives@latest add toolbar-dynamic",
+      "manual_steps": [
+        "Or copy the source from https://motion-primitives.com/docs/toolbar-dynamic"
+      ],
+      "quality": 86
+    },
+    {
+      "id": "motionprimitives-navigation-toolbar-expandable",
+      "name": "Motion Primitives Toolbar Expandable",
+      "source": "Motion Primitives",
+      "entry_type": "component",
+      "category": "navigation",
+      "description": "An expandable toolbar that reveals additional options with animations.",
+      "use_case": "Build site and app navigation structures that stay clear at any depth.",
+      "search_tags": [
+        "motion-primitives",
+        "springs",
+        "toolbar",
+        "expandable",
+        "navigation"
+      ],
+      "docs_url": "https://motion-primitives.com/docs/toolbar-expandable",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion",
+        "react-use-measure",
+        "clsx",
+        "tailwind-merge"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Built on Motion â€” matches the spring physics rules in 08-PHILOSOPHY"
+      ],
+      "install_method": "npm",
+      "install_command": "npx motion-primitives@latest add toolbar-expandable",
+      "manual_steps": [
+        "Or copy the source from https://motion-primitives.com/docs/toolbar-expandable"
+      ],
+      "quality": 86
+    },
+    {
+      "id": "motionprimitives-overlay-dialog",
+      "name": "Motion Primitives Dialog",
+      "source": "Motion Primitives",
+      "entry_type": "component",
+      "category": "overlay",
+      "description": "A modal dialog component with smooth entrance and exit animations.",
+      "use_case": "Present dialogs, drawers and popovers without leaving the page.",
+      "search_tags": [
+        "motion-primitives",
+        "springs",
+        "dialog",
+        "overlay"
+      ],
+      "docs_url": "https://motion-primitives.com/docs/dialog",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion",
+        "clsx",
+        "tailwind-merge"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Built on Motion â€” matches the spring physics rules in 08-PHILOSOPHY"
+      ],
+      "install_method": "npm",
+      "install_command": "npx motion-primitives@latest add dialog",
+      "manual_steps": [
+        "Or copy the source from https://motion-primitives.com/docs/dialog"
+      ],
+      "quality": 86
+    },
+    {
+      "id": "motionprimitives-overlay-morphing-dialog",
+      "name": "Motion Primitives Morphing Dialog",
+      "source": "Motion Primitives",
+      "entry_type": "component",
+      "category": "overlay",
+      "description": "A dialog that morphs from its trigger element with smooth transitions.",
+      "use_case": "Present dialogs, drawers and popovers without leaving the page.",
+      "search_tags": [
+        "motion-primitives",
+        "springs",
+        "morphing",
+        "dialog",
+        "overlay"
+      ],
+      "docs_url": "https://motion-primitives.com/docs/morphing-dialog",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion",
+        "clsx",
+        "tailwind-merge"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Built on Motion â€” matches the spring physics rules in 08-PHILOSOPHY"
+      ],
+      "install_method": "npm",
+      "install_command": "npx motion-primitives@latest add morphing-dialog",
+      "manual_steps": [
+        "Or copy the source from https://motion-primitives.com/docs/morphing-dialog"
+      ],
+      "quality": 86
+    },
+    {
+      "id": "motionprimitives-overlay-morphing-popover",
+      "name": "Motion Primitives Morphing Popover",
+      "source": "Motion Primitives",
+      "entry_type": "component",
+      "category": "overlay",
+      "description": "A popover component that morphs from its trigger with fluid animations.",
+      "use_case": "Present dialogs, drawers and popovers without leaving the page.",
+      "search_tags": [
+        "motion-primitives",
+        "springs",
+        "morphing",
+        "popover",
+        "overlay"
+      ],
+      "docs_url": "https://motion-primitives.com/docs/morphing-popover",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion",
+        "clsx",
+        "tailwind-merge"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Built on Motion â€” matches the spring physics rules in 08-PHILOSOPHY"
+      ],
+      "install_method": "npm",
+      "install_command": "npx motion-primitives@latest add morphing-popover",
+      "manual_steps": [
+        "Or copy the source from https://motion-primitives.com/docs/morphing-popover"
+      ],
+      "quality": 86
+    },
+    {
+      "id": "motionprimitives-text-animated-number",
+      "name": "Motion Primitives Animated Number",
+      "source": "Motion Primitives",
+      "entry_type": "component",
+      "category": "text",
+      "description": "A component that animates number changes with smooth transitions.",
+      "use_case": "Animate or emphasize typography for key messages.",
+      "search_tags": [
+        "motion-primitives",
+        "springs",
+        "animated",
+        "number",
+        "text"
+      ],
+      "docs_url": "https://motion-primitives.com/docs/animated-number",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion",
+        "clsx",
+        "tailwind-merge"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Built on Motion â€” matches the spring physics rules in 08-PHILOSOPHY"
+      ],
+      "install_method": "npm",
+      "install_command": "npx motion-primitives@latest add animated-number",
+      "manual_steps": [
+        "Or copy the source from https://motion-primitives.com/docs/animated-number"
+      ],
+      "quality": 86
+    },
+    {
+      "id": "motionprimitives-text-sliding-number",
+      "name": "Motion Primitives Sliding Number",
+      "source": "Motion Primitives",
+      "entry_type": "component",
+      "category": "text",
+      "description": "A component that transitions between numbers with a sliding animation.",
+      "use_case": "Animate or emphasize typography for key messages.",
+      "search_tags": [
+        "motion-primitives",
+        "springs",
+        "sliding",
+        "number",
+        "text"
+      ],
+      "docs_url": "https://motion-primitives.com/docs/sliding-number",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion",
+        "react-use-measure",
+        "clsx",
+        "tailwind-merge"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Built on Motion â€” matches the spring physics rules in 08-PHILOSOPHY"
+      ],
+      "install_method": "npm",
+      "install_command": "npx motion-primitives@latest add sliding-number",
+      "manual_steps": [
+        "Or copy the source from https://motion-primitives.com/docs/sliding-number"
+      ],
+      "quality": 86
+    },
+    {
+      "id": "motionprimitives-text-spinning-text",
+      "name": "Motion Primitives Spinning Text",
+      "source": "Motion Primitives",
+      "entry_type": "component",
+      "category": "text",
+      "description": "A component that animates text with a spinning rotation effect.",
+      "use_case": "Animate or emphasize typography for key messages.",
+      "search_tags": [
+        "motion-primitives",
+        "springs",
+        "spinning",
+        "text"
+      ],
+      "docs_url": "https://motion-primitives.com/docs/spinning-text",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion",
+        "clsx",
+        "tailwind-merge"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Built on Motion â€” matches the spring physics rules in 08-PHILOSOPHY"
+      ],
+      "install_method": "npm",
+      "install_command": "npx motion-primitives@latest add spinning-text",
+      "manual_steps": [
+        "Or copy the source from https://motion-primitives.com/docs/spinning-text"
+      ],
+      "quality": 86
+    },
+    {
+      "id": "motionprimitives-text-text-effect",
+      "name": "Motion Primitives Text Effect",
+      "source": "Motion Primitives",
+      "entry_type": "component",
+      "category": "text",
+      "description": "A component that applies animated effects to text content.",
+      "use_case": "Animate or emphasize typography for key messages.",
+      "search_tags": [
+        "motion-primitives",
+        "springs",
+        "text",
+        "effect"
+      ],
+      "docs_url": "https://motion-primitives.com/docs/text-effect",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion",
+        "clsx",
+        "tailwind-merge"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Built on Motion â€” matches the spring physics rules in 08-PHILOSOPHY"
+      ],
+      "install_method": "npm",
+      "install_command": "npx motion-primitives@latest add text-effect",
+      "manual_steps": [
+        "Or copy the source from https://motion-primitives.com/docs/text-effect"
+      ],
+      "quality": 81
+    },
+    {
+      "id": "motionprimitives-text-text-loop",
+      "name": "Motion Primitives Text Loop",
+      "source": "Motion Primitives",
+      "entry_type": "component",
+      "category": "text",
+      "description": "A component that cycles through different text phrases with animations.",
+      "use_case": "Animate or emphasize typography for key messages.",
+      "search_tags": [
+        "motion-primitives",
+        "springs",
+        "text",
+        "loop"
+      ],
+      "docs_url": "https://motion-primitives.com/docs/text-loop",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion",
+        "clsx",
+        "tailwind-merge"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Built on Motion â€” matches the spring physics rules in 08-PHILOSOPHY"
+      ],
+      "install_method": "npm",
+      "install_command": "npx motion-primitives@latest add text-loop",
+      "manual_steps": [
+        "Or copy the source from https://motion-primitives.com/docs/text-loop"
+      ],
+      "quality": 86
+    },
+    {
+      "id": "motionprimitives-text-text-morph",
+      "name": "Motion Primitives Text Morph",
+      "source": "Motion Primitives",
+      "entry_type": "component",
+      "category": "text",
+      "description": "A component that morphs between different text strings with smooth transitions.",
+      "use_case": "Animate or emphasize typography for key messages.",
+      "search_tags": [
+        "motion-primitives",
+        "springs",
+        "text",
+        "morph"
+      ],
+      "docs_url": "https://motion-primitives.com/docs/text-morph",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion",
+        "clsx",
+        "tailwind-merge"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Built on Motion â€” matches the spring physics rules in 08-PHILOSOPHY"
+      ],
+      "install_method": "npm",
+      "install_command": "npx motion-primitives@latest add text-morph",
+      "manual_steps": [
+        "Or copy the source from https://motion-primitives.com/docs/text-morph"
+      ],
+      "quality": 86
+    },
+    {
+      "id": "motionprimitives-text-text-roll",
+      "name": "Motion Primitives Text Roll",
+      "source": "Motion Primitives",
+      "entry_type": "component",
+      "category": "text",
+      "description": "A component that animates text with a rolling effect.",
+      "use_case": "Animate or emphasize typography for key messages.",
+      "search_tags": [
+        "motion-primitives",
+        "springs",
+        "text",
+        "roll"
+      ],
+      "docs_url": "https://motion-primitives.com/docs/text-roll",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion",
+        "clsx",
+        "tailwind-merge"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Built on Motion â€” matches the spring physics rules in 08-PHILOSOPHY"
+      ],
+      "install_method": "npm",
+      "install_command": "npx motion-primitives@latest add text-roll",
+      "manual_steps": [
+        "Or copy the source from https://motion-primitives.com/docs/text-roll"
+      ],
+      "quality": 81
+    },
+    {
+      "id": "motionprimitives-text-text-scramble",
+      "name": "Motion Primitives Text Scramble",
+      "source": "Motion Primitives",
+      "entry_type": "component",
+      "category": "text",
+      "description": "A component that creates a scrambling text effect during transitions.",
+      "use_case": "Animate or emphasize typography for key messages.",
+      "search_tags": [
+        "motion-primitives",
+        "springs",
+        "text",
+        "scramble"
+      ],
+      "docs_url": "https://motion-primitives.com/docs/text-scramble",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion",
+        "clsx",
+        "tailwind-merge"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Built on Motion â€” matches the spring physics rules in 08-PHILOSOPHY"
+      ],
+      "install_method": "npm",
+      "install_command": "npx motion-primitives@latest add text-scramble",
+      "manual_steps": [
+        "Or copy the source from https://motion-primitives.com/docs/text-scramble"
+      ],
+      "quality": 86
+    },
+    {
+      "id": "motionprimitives-text-text-shimmer",
+      "name": "Motion Primitives Text Shimmer",
+      "source": "Motion Primitives",
+      "entry_type": "component",
+      "category": "text",
+      "description": "A component that applies a shimmering effect to text.",
+      "use_case": "Animate or emphasize typography for key messages.",
+      "search_tags": [
+        "motion-primitives",
+        "springs",
+        "text",
+        "shimmer"
+      ],
+      "docs_url": "https://motion-primitives.com/docs/text-shimmer",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion",
+        "clsx",
+        "tailwind-merge"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Built on Motion â€” matches the spring physics rules in 08-PHILOSOPHY"
+      ],
+      "install_method": "npm",
+      "install_command": "npx motion-primitives@latest add text-shimmer",
+      "manual_steps": [
+        "Or copy the source from https://motion-primitives.com/docs/text-shimmer"
+      ],
+      "quality": 81
+    },
+    {
+      "id": "motionprimitives-text-text-shimmer-wave",
+      "name": "Motion Primitives Text Shimmer Wave",
+      "source": "Motion Primitives",
+      "entry_type": "component",
+      "category": "text",
+      "description": "A component that creates a wave-like shimmer effect on text.",
+      "use_case": "Animate or emphasize typography for key messages.",
+      "search_tags": [
+        "motion-primitives",
+        "springs",
+        "text",
+        "shimmer",
+        "wave"
+      ],
+      "docs_url": "https://motion-primitives.com/docs/text-shimmer-wave",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion",
+        "clsx",
+        "tailwind-merge"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Built on Motion â€” matches the spring physics rules in 08-PHILOSOPHY"
+      ],
+      "install_method": "npm",
+      "install_command": "npx motion-primitives@latest add text-shimmer-wave",
+      "manual_steps": [
+        "Or copy the source from https://motion-primitives.com/docs/text-shimmer-wave"
+      ],
+      "quality": 86
+    }
+  ]
+}

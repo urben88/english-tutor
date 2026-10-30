@@ -1,0 +1,871 @@
+{
+  "schema_version": "1.0",
+  "source_id": "mantineui",
+  "source_name": "Mantine UI",
+  "source_url": "https://ui.mantine.dev",
+  "catalog_url": "https://ui.mantine.dev",
+  "license_summary": "MIT",
+  "granularity": "one entry per category (about 120 variants inside)",
+  "extraction": {
+    "channel": "github-contents",
+    "method": "Category list from data/categories.ts of the ui.mantine.dev repository",
+    "evidence_url": "https://github.com/mantinedev/ui.mantine.dev/blob/master/data/categories.ts"
+  },
+  "generated_at": "2026-10-04",
+  "entries": [
+    {
+      "id": "mantineui-blocks-sections-article-cards",
+      "name": "Mantine UI Article cards",
+      "source": "Mantine UI",
+      "entry_type": "block",
+      "category": "blocks-sections",
+      "description": "Collection of ready article cards examples built on Mantine, with copy-paste code.",
+      "use_case": "Compose complete page sections that combine several components.",
+      "search_tags": [
+        "mantine",
+        "mantine-ui",
+        "article",
+        "cards",
+        "blocks-sections"
+      ],
+      "docs_url": "https://ui.mantine.dev/category/article-cards/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Requires Mantine (@mantine/core); one entry per category, each page holds several variants"
+      ],
+      "install_method": "copy-paste",
+      "manual_steps": [
+        "Open https://ui.mantine.dev/category/article-cards/ and copy the variant you need."
+      ],
+      "quality": 79
+    },
+    {
+      "id": "mantineui-cta-banners",
+      "name": "Mantine UI Banners",
+      "source": "Mantine UI",
+      "entry_type": "block",
+      "category": "cta",
+      "description": "Collection of ready banners examples built on Mantine, with copy-paste code.",
+      "use_case": "Prompt the next user action with focused, high-contrast sections.",
+      "search_tags": [
+        "mantine",
+        "mantine-ui",
+        "banners",
+        "cta"
+      ],
+      "docs_url": "https://ui.mantine.dev/category/banners/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Requires Mantine (@mantine/core); one entry per category, each page holds several variants"
+      ],
+      "install_method": "copy-paste",
+      "manual_steps": [
+        "Open https://ui.mantine.dev/category/banners/ and copy the variant you need."
+      ],
+      "quality": 79
+    },
+    {
+      "id": "mantineui-data-display-app-cards",
+      "name": "Mantine UI Application cards",
+      "source": "Mantine UI",
+      "entry_type": "block",
+      "category": "data-display",
+      "description": "Collection of ready application cards examples built on Mantine, with copy-paste code.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "mantine",
+        "mantine-ui",
+        "application",
+        "cards",
+        "data-display"
+      ],
+      "docs_url": "https://ui.mantine.dev/category/app-cards/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Requires Mantine (@mantine/core); one entry per category, each page holds several variants"
+      ],
+      "install_method": "copy-paste",
+      "manual_steps": [
+        "Open https://ui.mantine.dev/category/app-cards/ and copy the variant you need."
+      ],
+      "quality": 79
+    },
+    {
+      "id": "mantineui-data-display-comments",
+      "name": "Mantine UI Comments",
+      "source": "Mantine UI",
+      "entry_type": "block",
+      "category": "data-display",
+      "description": "Collection of ready comments examples built on Mantine, with copy-paste code.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "mantine",
+        "mantine-ui",
+        "comments",
+        "data-display"
+      ],
+      "docs_url": "https://ui.mantine.dev/category/comments/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Requires Mantine (@mantine/core); one entry per category, each page holds several variants"
+      ],
+      "install_method": "copy-paste",
+      "manual_steps": [
+        "Open https://ui.mantine.dev/category/comments/ and copy the variant you need."
+      ],
+      "quality": 79
+    },
+    {
+      "id": "mantineui-data-display-stats",
+      "name": "Mantine UI Stats",
+      "source": "Mantine UI",
+      "entry_type": "block",
+      "category": "data-display",
+      "description": "Collection of ready stats examples built on Mantine, with copy-paste code.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "mantine",
+        "mantine-ui",
+        "stats",
+        "data-display"
+      ],
+      "docs_url": "https://ui.mantine.dev/category/stats/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Requires Mantine (@mantine/core); one entry per category, each page holds several variants"
+      ],
+      "install_method": "copy-paste",
+      "manual_steps": [
+        "Open https://ui.mantine.dev/category/stats/ and copy the variant you need."
+      ],
+      "quality": 79
+    },
+    {
+      "id": "mantineui-data-display-tables",
+      "name": "Mantine UI Tables",
+      "source": "Mantine UI",
+      "entry_type": "block",
+      "category": "data-display",
+      "description": "Collection of ready tables examples built on Mantine, with copy-paste code.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "mantine",
+        "mantine-ui",
+        "tables",
+        "data-display"
+      ],
+      "docs_url": "https://ui.mantine.dev/category/tables/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Requires Mantine (@mantine/core); one entry per category, each page holds several variants"
+      ],
+      "install_method": "copy-paste",
+      "manual_steps": [
+        "Open https://ui.mantine.dev/category/tables/ and copy the variant you need."
+      ],
+      "quality": 79
+    },
+    {
+      "id": "mantineui-data-display-users",
+      "name": "Mantine UI User info and controls",
+      "source": "Mantine UI",
+      "entry_type": "block",
+      "category": "data-display",
+      "description": "Collection of ready user info and controls examples built on Mantine, with copy-paste code.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "mantine",
+        "mantine-ui",
+        "user",
+        "info",
+        "and",
+        "controls",
+        "data-display"
+      ],
+      "docs_url": "https://ui.mantine.dev/category/users/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Requires Mantine (@mantine/core); one entry per category, each page holds several variants"
+      ],
+      "install_method": "copy-paste",
+      "manual_steps": [
+        "Open https://ui.mantine.dev/category/users/ and copy the variant you need."
+      ],
+      "quality": 79
+    },
+    {
+      "id": "mantineui-faq-faq",
+      "name": "Mantine UI Frequently asked questions",
+      "source": "Mantine UI",
+      "entry_type": "block",
+      "category": "faq",
+      "description": "Collection of ready frequently asked questions examples built on Mantine, with copy-paste code.",
+      "use_case": "Answer recurring questions and reduce support friction.",
+      "search_tags": [
+        "mantine",
+        "mantine-ui",
+        "frequently",
+        "asked",
+        "questions",
+        "faq"
+      ],
+      "docs_url": "https://ui.mantine.dev/category/faq/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Requires Mantine (@mantine/core); one entry per category, each page holds several variants"
+      ],
+      "install_method": "copy-paste",
+      "manual_steps": [
+        "Open https://ui.mantine.dev/category/faq/ and copy the variant you need."
+      ],
+      "quality": 79
+    },
+    {
+      "id": "mantineui-features-features",
+      "name": "Mantine UI Features section",
+      "source": "Mantine UI",
+      "entry_type": "block",
+      "category": "features",
+      "description": "Collection of ready features section examples built on Mantine, with copy-paste code.",
+      "use_case": "Explain product capabilities with structured, scannable sections.",
+      "search_tags": [
+        "mantine",
+        "mantine-ui",
+        "features",
+        "section"
+      ],
+      "docs_url": "https://ui.mantine.dev/category/features/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Requires Mantine (@mantine/core); one entry per category, each page holds several variants"
+      ],
+      "install_method": "copy-paste",
+      "manual_steps": [
+        "Open https://ui.mantine.dev/category/features/ and copy the variant you need."
+      ],
+      "quality": 79
+    },
+    {
+      "id": "mantineui-forms-authentication",
+      "name": "Mantine UI Authentication",
+      "source": "Mantine UI",
+      "entry_type": "block",
+      "category": "forms",
+      "description": "Collection of ready authentication examples built on Mantine, with copy-paste code.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "mantine",
+        "mantine-ui",
+        "authentication",
+        "forms"
+      ],
+      "docs_url": "https://ui.mantine.dev/category/authentication/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Requires Mantine (@mantine/core); one entry per category, each page holds several variants"
+      ],
+      "install_method": "copy-paste",
+      "manual_steps": [
+        "Open https://ui.mantine.dev/category/authentication/ and copy the variant you need."
+      ],
+      "quality": 79
+    },
+    {
+      "id": "mantineui-forms-contact",
+      "name": "Mantine UI Contact us section",
+      "source": "Mantine UI",
+      "entry_type": "block",
+      "category": "forms",
+      "description": "Collection of ready contact us section examples built on Mantine, with copy-paste code.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "mantine",
+        "mantine-ui",
+        "contact",
+        "us",
+        "section",
+        "forms"
+      ],
+      "docs_url": "https://ui.mantine.dev/category/contact/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Requires Mantine (@mantine/core); one entry per category, each page holds several variants"
+      ],
+      "install_method": "copy-paste",
+      "manual_steps": [
+        "Open https://ui.mantine.dev/category/contact/ and copy the variant you need."
+      ],
+      "quality": 79
+    },
+    {
+      "id": "mantineui-forms-dropzones",
+      "name": "Mantine UI Dropzones",
+      "source": "Mantine UI",
+      "entry_type": "block",
+      "category": "forms",
+      "description": "Collection of ready dropzones examples built on Mantine, with copy-paste code.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "mantine",
+        "mantine-ui",
+        "dropzones",
+        "forms"
+      ],
+      "docs_url": "https://ui.mantine.dev/category/dropzones/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Requires Mantine (@mantine/core); one entry per category, each page holds several variants"
+      ],
+      "install_method": "copy-paste",
+      "manual_steps": [
+        "Open https://ui.mantine.dev/category/dropzones/ and copy the variant you need."
+      ],
+      "quality": 79
+    },
+    {
+      "id": "mantineui-forms-inputs",
+      "name": "Mantine UI Inputs",
+      "source": "Mantine UI",
+      "entry_type": "block",
+      "category": "forms",
+      "description": "Collection of ready inputs examples built on Mantine, with copy-paste code.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "mantine",
+        "mantine-ui",
+        "inputs",
+        "forms"
+      ],
+      "docs_url": "https://ui.mantine.dev/category/inputs/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Requires Mantine (@mantine/core); one entry per category, each page holds several variants"
+      ],
+      "install_method": "copy-paste",
+      "manual_steps": [
+        "Open https://ui.mantine.dev/category/inputs/ and copy the variant you need."
+      ],
+      "quality": 79
+    },
+    {
+      "id": "mantineui-hero-hero",
+      "name": "Mantine UI Hero headers",
+      "source": "Mantine UI",
+      "entry_type": "block",
+      "category": "hero",
+      "description": "Collection of ready hero headers examples built on Mantine, with copy-paste code.",
+      "use_case": "Create above-the-fold sections that communicate the value proposition immediately.",
+      "search_tags": [
+        "mantine",
+        "mantine-ui",
+        "hero",
+        "headers"
+      ],
+      "docs_url": "https://ui.mantine.dev/category/hero/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Requires Mantine (@mantine/core); one entry per category, each page holds several variants"
+      ],
+      "install_method": "copy-paste",
+      "manual_steps": [
+        "Open https://ui.mantine.dev/category/hero/ and copy the variant you need."
+      ],
+      "quality": 79
+    },
+    {
+      "id": "mantineui-layout-error-pages",
+      "name": "Mantine UI Error pages",
+      "source": "Mantine UI",
+      "entry_type": "block",
+      "category": "layout",
+      "description": "Collection of ready error pages examples built on Mantine, with copy-paste code.",
+      "use_case": "Structure the page: dividers, footers, headers and empty states.",
+      "search_tags": [
+        "mantine",
+        "mantine-ui",
+        "error",
+        "pages",
+        "layout"
+      ],
+      "docs_url": "https://ui.mantine.dev/category/error-pages/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Requires Mantine (@mantine/core); one entry per category, each page holds several variants"
+      ],
+      "install_method": "copy-paste",
+      "manual_steps": [
+        "Open https://ui.mantine.dev/category/error-pages/ and copy the variant you need."
+      ],
+      "quality": 79
+    },
+    {
+      "id": "mantineui-layout-footers",
+      "name": "Mantine UI Footers",
+      "source": "Mantine UI",
+      "entry_type": "block",
+      "category": "layout",
+      "description": "Collection of ready footers examples built on Mantine, with copy-paste code.",
+      "use_case": "Structure the page: dividers, footers, headers and empty states.",
+      "search_tags": [
+        "mantine",
+        "mantine-ui",
+        "footers",
+        "layout"
+      ],
+      "docs_url": "https://ui.mantine.dev/category/footers/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Requires Mantine (@mantine/core); one entry per category, each page holds several variants"
+      ],
+      "install_method": "copy-paste",
+      "manual_steps": [
+        "Open https://ui.mantine.dev/category/footers/ and copy the variant you need."
+      ],
+      "quality": 79
+    },
+    {
+      "id": "mantineui-layout-grids",
+      "name": "Mantine UI Grids",
+      "source": "Mantine UI",
+      "entry_type": "block",
+      "category": "layout",
+      "description": "Collection of ready grids examples built on Mantine, with copy-paste code.",
+      "use_case": "Structure the page: dividers, footers, headers and empty states.",
+      "search_tags": [
+        "mantine",
+        "mantine-ui",
+        "grids",
+        "layout"
+      ],
+      "docs_url": "https://ui.mantine.dev/category/grids/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Requires Mantine (@mantine/core); one entry per category, each page holds several variants"
+      ],
+      "install_method": "copy-paste",
+      "manual_steps": [
+        "Open https://ui.mantine.dev/category/grids/ and copy the variant you need."
+      ],
+      "quality": 79
+    },
+    {
+      "id": "mantineui-media-carousels",
+      "name": "Mantine UI Carousels",
+      "source": "Mantine UI",
+      "entry_type": "block",
+      "category": "media",
+      "description": "Collection of ready carousels examples built on Mantine, with copy-paste code.",
+      "use_case": "Display images, video, carousels and device mockups.",
+      "search_tags": [
+        "mantine",
+        "mantine-ui",
+        "carousels",
+        "media"
+      ],
+      "docs_url": "https://ui.mantine.dev/category/carousels/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Requires Mantine (@mantine/core); one entry per category, each page holds several variants"
+      ],
+      "install_method": "copy-paste",
+      "manual_steps": [
+        "Open https://ui.mantine.dev/category/carousels/ and copy the variant you need."
+      ],
+      "quality": 79
+    },
+    {
+      "id": "mantineui-media-sliders",
+      "name": "Mantine UI Sliders",
+      "source": "Mantine UI",
+      "entry_type": "block",
+      "category": "media",
+      "description": "Collection of ready sliders examples built on Mantine, with copy-paste code.",
+      "use_case": "Display images, video, carousels and device mockups.",
+      "search_tags": [
+        "mantine",
+        "mantine-ui",
+        "sliders",
+        "media"
+      ],
+      "docs_url": "https://ui.mantine.dev/category/sliders/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Requires Mantine (@mantine/core); one entry per category, each page holds several variants"
+      ],
+      "install_method": "copy-paste",
+      "manual_steps": [
+        "Open https://ui.mantine.dev/category/sliders/ and copy the variant you need."
+      ],
+      "quality": 79
+    },
+    {
+      "id": "mantineui-micro-interactions-buttons",
+      "name": "Mantine UI Buttons",
+      "source": "Mantine UI",
+      "entry_type": "block",
+      "category": "micro-interactions",
+      "description": "Collection of ready buttons examples built on Mantine, with copy-paste code.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "mantine",
+        "mantine-ui",
+        "buttons",
+        "micro-interactions"
+      ],
+      "docs_url": "https://ui.mantine.dev/category/buttons/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Requires Mantine (@mantine/core); one entry per category, each page holds several variants"
+      ],
+      "install_method": "copy-paste",
+      "manual_steps": [
+        "Open https://ui.mantine.dev/category/buttons/ and copy the variant you need."
+      ],
+      "quality": 79
+    },
+    {
+      "id": "mantineui-micro-interactions-dnd",
+      "name": "Mantine UI Drag'n'Drop",
+      "source": "Mantine UI",
+      "entry_type": "block",
+      "category": "micro-interactions",
+      "description": "Collection of ready drag'n'drop examples built on Mantine, with copy-paste code.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "mantine",
+        "mantine-ui",
+        "drag",
+        "n",
+        "drop",
+        "micro-interactions"
+      ],
+      "docs_url": "https://ui.mantine.dev/category/dnd/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Requires Mantine (@mantine/core); one entry per category, each page holds several variants"
+      ],
+      "install_method": "copy-paste",
+      "manual_steps": [
+        "Open https://ui.mantine.dev/category/dnd/ and copy the variant you need."
+      ],
+      "quality": 79
+    },
+    {
+      "id": "mantineui-navigation-headers",
+      "name": "Mantine UI Headers",
+      "source": "Mantine UI",
+      "entry_type": "block",
+      "category": "navigation",
+      "description": "Collection of ready headers examples built on Mantine, with copy-paste code.",
+      "use_case": "Build site and app navigation structures that stay clear at any depth.",
+      "search_tags": [
+        "mantine",
+        "mantine-ui",
+        "headers",
+        "navigation"
+      ],
+      "docs_url": "https://ui.mantine.dev/category/headers/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Requires Mantine (@mantine/core); one entry per category, each page holds several variants"
+      ],
+      "install_method": "copy-paste",
+      "manual_steps": [
+        "Open https://ui.mantine.dev/category/headers/ and copy the variant you need."
+      ],
+      "quality": 79
+    },
+    {
+      "id": "mantineui-navigation-navbars",
+      "name": "Mantine UI Navbars",
+      "source": "Mantine UI",
+      "entry_type": "block",
+      "category": "navigation",
+      "description": "Collection of ready navbars examples built on Mantine, with copy-paste code.",
+      "use_case": "Build site and app navigation structures that stay clear at any depth.",
+      "search_tags": [
+        "mantine",
+        "mantine-ui",
+        "navbars",
+        "navigation"
+      ],
+      "docs_url": "https://ui.mantine.dev/category/navbars/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Requires Mantine (@mantine/core); one entry per category, each page holds several variants"
+      ],
+      "install_method": "copy-paste",
+      "manual_steps": [
+        "Open https://ui.mantine.dev/category/navbars/ and copy the variant you need."
+      ],
+      "quality": 79
+    },
+    {
+      "id": "mantineui-navigation-toc",
+      "name": "Mantine UI Table of contents",
+      "source": "Mantine UI",
+      "entry_type": "block",
+      "category": "navigation",
+      "description": "Collection of ready table of contents examples built on Mantine, with copy-paste code.",
+      "use_case": "Build site and app navigation structures that stay clear at any depth.",
+      "search_tags": [
+        "mantine",
+        "mantine-ui",
+        "table",
+        "of",
+        "contents",
+        "navigation"
+      ],
+      "docs_url": "https://ui.mantine.dev/category/toc/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Requires Mantine (@mantine/core); one entry per category, each page holds several variants"
+      ],
+      "install_method": "copy-paste",
+      "manual_steps": [
+        "Open https://ui.mantine.dev/category/toc/ and copy the variant you need."
+      ],
+      "quality": 79
+    }
+  ]
+}

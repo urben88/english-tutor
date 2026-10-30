@@ -1,0 +1,1141 @@
+{
+  "schema_version": "1.0",
+  "source_id": "radix",
+  "source_name": "Radix Primitives",
+  "source_url": "https://www.radix-ui.com/primitives",
+  "catalog_url": "https://www.radix-ui.com/primitives/docs/overview/introduction",
+  "license_summary": "MIT",
+  "granularity": "public primitives of Radix (docs URLs verified)",
+  "extraction": {
+    "channel": "github-contents",
+    "method": "Directory listing of packages/react filtered to public primitives with docs URL verification",
+    "evidence_url": "https://github.com/radix-ui/primitives/tree/main/packages/react"
+  },
+  "generated_at": "2026-10-04",
+  "entries": [
+    {
+      "id": "radix-data-display-avatar",
+      "name": "Radix Primitives Avatar",
+      "source": "Radix Primitives",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Avatar from Radix Primitives: an unstyled, accessible React primitive that owns behavior and focus management; you bring the styles.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "radix",
+        "avatar",
+        "data-display",
+        "radix-primitives"
+      ],
+      "docs_url": "https://www.radix-ui.com/primitives/docs/components/avatar",
+      "stack": [
+        "react",
+        "headless"
+      ],
+      "dependencies": [
+        "radix-ui"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Headless: pairs with Tailwind or CSS; the foundation of shadcn/ui",
+        "Best when the design system must own every visual detail"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i radix-ui",
+      "manual_steps": [
+        "Docs: https://www.radix-ui.com/primitives/docs/components/avatar"
+      ],
+      "quality": 91
+    },
+    {
+      "id": "radix-data-display-collapsible",
+      "name": "Radix Primitives Collapsible",
+      "source": "Radix Primitives",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Collapsible from Radix Primitives: an unstyled, accessible React primitive that owns behavior and focus management; you bring the styles.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "radix",
+        "collapsible",
+        "data-display",
+        "radix-primitives"
+      ],
+      "docs_url": "https://www.radix-ui.com/primitives/docs/components/collapsible",
+      "stack": [
+        "react",
+        "headless"
+      ],
+      "dependencies": [
+        "radix-ui"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Headless: pairs with Tailwind or CSS; the foundation of shadcn/ui",
+        "Best when the design system must own every visual detail"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i radix-ui",
+      "manual_steps": [
+        "Docs: https://www.radix-ui.com/primitives/docs/components/collapsible"
+      ],
+      "quality": 91
+    },
+    {
+      "id": "radix-data-display-label",
+      "name": "Radix Primitives Label",
+      "source": "Radix Primitives",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Label from Radix Primitives: an unstyled, accessible React primitive that owns behavior and focus management; you bring the styles.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "radix",
+        "label",
+        "data-display",
+        "radix-primitives"
+      ],
+      "docs_url": "https://www.radix-ui.com/primitives/docs/components/label",
+      "stack": [
+        "react",
+        "headless"
+      ],
+      "dependencies": [
+        "radix-ui"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Headless: pairs with Tailwind or CSS; the foundation of shadcn/ui",
+        "Best when the design system must own every visual detail"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i radix-ui",
+      "manual_steps": [
+        "Docs: https://www.radix-ui.com/primitives/docs/components/label"
+      ],
+      "quality": 91
+    },
+    {
+      "id": "radix-feedback-progress",
+      "name": "Radix Primitives Progress",
+      "source": "Radix Primitives",
+      "entry_type": "component",
+      "category": "feedback",
+      "description": "Progress from Radix Primitives: an unstyled, accessible React primitive that owns behavior and focus management; you bring the styles.",
+      "use_case": "Communicate system status: alerts, loaders, progress and notifications.",
+      "search_tags": [
+        "radix",
+        "progress",
+        "feedback",
+        "radix-primitives"
+      ],
+      "docs_url": "https://www.radix-ui.com/primitives/docs/components/progress",
+      "stack": [
+        "react",
+        "headless"
+      ],
+      "dependencies": [
+        "radix-ui"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Headless: pairs with Tailwind or CSS; the foundation of shadcn/ui",
+        "Best when the design system must own every visual detail"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i radix-ui",
+      "manual_steps": [
+        "Docs: https://www.radix-ui.com/primitives/docs/components/progress"
+      ],
+      "quality": 91
+    },
+    {
+      "id": "radix-feedback-toast",
+      "name": "Radix Primitives Toast",
+      "source": "Radix Primitives",
+      "entry_type": "component",
+      "category": "feedback",
+      "description": "Toast from Radix Primitives: an unstyled, accessible React primitive that owns behavior and focus management; you bring the styles.",
+      "use_case": "Communicate system status: alerts, loaders, progress and notifications.",
+      "search_tags": [
+        "radix",
+        "toast",
+        "feedback",
+        "radix-primitives"
+      ],
+      "docs_url": "https://www.radix-ui.com/primitives/docs/components/toast",
+      "stack": [
+        "react",
+        "headless"
+      ],
+      "dependencies": [
+        "radix-ui"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Headless: pairs with Tailwind or CSS; the foundation of shadcn/ui",
+        "Best when the design system must own every visual detail"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i radix-ui",
+      "manual_steps": [
+        "Docs: https://www.radix-ui.com/primitives/docs/components/toast"
+      ],
+      "quality": 91
+    },
+    {
+      "id": "radix-forms-checkbox",
+      "name": "Radix Primitives Checkbox",
+      "source": "Radix Primitives",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Checkbox from Radix Primitives: an unstyled, accessible React primitive that owns behavior and focus management; you bring the styles.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "radix",
+        "checkbox",
+        "forms",
+        "radix-primitives"
+      ],
+      "docs_url": "https://www.radix-ui.com/primitives/docs/components/checkbox",
+      "stack": [
+        "react",
+        "headless"
+      ],
+      "dependencies": [
+        "radix-ui"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Headless: pairs with Tailwind or CSS; the foundation of shadcn/ui",
+        "Best when the design system must own every visual detail"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i radix-ui",
+      "manual_steps": [
+        "Docs: https://www.radix-ui.com/primitives/docs/components/checkbox"
+      ],
+      "quality": 91
+    },
+    {
+      "id": "radix-forms-form",
+      "name": "Radix Primitives Form",
+      "source": "Radix Primitives",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Form from Radix Primitives: an unstyled, accessible React primitive that owns behavior and focus management; you bring the styles.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "radix",
+        "form",
+        "forms",
+        "radix-primitives"
+      ],
+      "docs_url": "https://www.radix-ui.com/primitives/docs/components/form",
+      "stack": [
+        "react",
+        "headless"
+      ],
+      "dependencies": [
+        "radix-ui"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Headless: pairs with Tailwind or CSS; the foundation of shadcn/ui",
+        "Best when the design system must own every visual detail"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i radix-ui",
+      "manual_steps": [
+        "Docs: https://www.radix-ui.com/primitives/docs/components/form"
+      ],
+      "quality": 91
+    },
+    {
+      "id": "radix-forms-one-time-password-field",
+      "name": "Radix Primitives One Time Password Field",
+      "source": "Radix Primitives",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "One Time Password Field from Radix Primitives: an unstyled, accessible React primitive that owns behavior and focus management; you bring the styles.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "radix",
+        "one",
+        "time",
+        "password",
+        "field",
+        "forms",
+        "radix-primitives"
+      ],
+      "docs_url": "https://www.radix-ui.com/primitives/docs/components/one-time-password-field",
+      "stack": [
+        "react",
+        "headless"
+      ],
+      "dependencies": [
+        "radix-ui"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Headless: pairs with Tailwind or CSS; the foundation of shadcn/ui",
+        "Best when the design system must own every visual detail"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i radix-ui",
+      "manual_steps": [
+        "Docs: https://www.radix-ui.com/primitives/docs/components/one-time-password-field"
+      ],
+      "quality": 91
+    },
+    {
+      "id": "radix-forms-radio-group",
+      "name": "Radix Primitives Radio Group",
+      "source": "Radix Primitives",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Radio Group from Radix Primitives: an unstyled, accessible React primitive that owns behavior and focus management; you bring the styles.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "radix",
+        "radio",
+        "group",
+        "forms",
+        "radix-primitives"
+      ],
+      "docs_url": "https://www.radix-ui.com/primitives/docs/components/radio-group",
+      "stack": [
+        "react",
+        "headless"
+      ],
+      "dependencies": [
+        "radix-ui"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Headless: pairs with Tailwind or CSS; the foundation of shadcn/ui",
+        "Best when the design system must own every visual detail"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i radix-ui",
+      "manual_steps": [
+        "Docs: https://www.radix-ui.com/primitives/docs/components/radio-group"
+      ],
+      "quality": 91
+    },
+    {
+      "id": "radix-forms-select",
+      "name": "Radix Primitives Select",
+      "source": "Radix Primitives",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Select from Radix Primitives: an unstyled, accessible React primitive that owns behavior and focus management; you bring the styles.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "radix",
+        "select",
+        "forms",
+        "radix-primitives"
+      ],
+      "docs_url": "https://www.radix-ui.com/primitives/docs/components/select",
+      "stack": [
+        "react",
+        "headless"
+      ],
+      "dependencies": [
+        "radix-ui"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Headless: pairs with Tailwind or CSS; the foundation of shadcn/ui",
+        "Best when the design system must own every visual detail"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i radix-ui",
+      "manual_steps": [
+        "Docs: https://www.radix-ui.com/primitives/docs/components/select"
+      ],
+      "quality": 91
+    },
+    {
+      "id": "radix-forms-slider",
+      "name": "Radix Primitives Slider",
+      "source": "Radix Primitives",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Slider from Radix Primitives: an unstyled, accessible React primitive that owns behavior and focus management; you bring the styles.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "radix",
+        "slider",
+        "forms",
+        "radix-primitives"
+      ],
+      "docs_url": "https://www.radix-ui.com/primitives/docs/components/slider",
+      "stack": [
+        "react",
+        "headless"
+      ],
+      "dependencies": [
+        "radix-ui"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Headless: pairs with Tailwind or CSS; the foundation of shadcn/ui",
+        "Best when the design system must own every visual detail"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i radix-ui",
+      "manual_steps": [
+        "Docs: https://www.radix-ui.com/primitives/docs/components/slider"
+      ],
+      "quality": 91
+    },
+    {
+      "id": "radix-forms-switch",
+      "name": "Radix Primitives Switch",
+      "source": "Radix Primitives",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Switch from Radix Primitives: an unstyled, accessible React primitive that owns behavior and focus management; you bring the styles.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "radix",
+        "switch",
+        "forms",
+        "radix-primitives"
+      ],
+      "docs_url": "https://www.radix-ui.com/primitives/docs/components/switch",
+      "stack": [
+        "react",
+        "headless"
+      ],
+      "dependencies": [
+        "radix-ui"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Headless: pairs with Tailwind or CSS; the foundation of shadcn/ui",
+        "Best when the design system must own every visual detail"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i radix-ui",
+      "manual_steps": [
+        "Docs: https://www.radix-ui.com/primitives/docs/components/switch"
+      ],
+      "quality": 91
+    },
+    {
+      "id": "radix-layout-scroll-area",
+      "name": "Radix Primitives Scroll Area",
+      "source": "Radix Primitives",
+      "entry_type": "component",
+      "category": "layout",
+      "description": "Scroll Area from Radix Primitives: an unstyled, accessible React primitive that owns behavior and focus management; you bring the styles.",
+      "use_case": "Structure the page: dividers, footers, headers and empty states.",
+      "search_tags": [
+        "radix",
+        "scroll",
+        "area",
+        "layout",
+        "radix-primitives"
+      ],
+      "docs_url": "https://www.radix-ui.com/primitives/docs/components/scroll-area",
+      "stack": [
+        "react",
+        "headless"
+      ],
+      "dependencies": [
+        "radix-ui"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Headless: pairs with Tailwind or CSS; the foundation of shadcn/ui",
+        "Best when the design system must own every visual detail"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i radix-ui",
+      "manual_steps": [
+        "Docs: https://www.radix-ui.com/primitives/docs/components/scroll-area"
+      ],
+      "quality": 91
+    },
+    {
+      "id": "radix-layout-separator",
+      "name": "Radix Primitives Separator",
+      "source": "Radix Primitives",
+      "entry_type": "component",
+      "category": "layout",
+      "description": "Separator from Radix Primitives: an unstyled, accessible React primitive that owns behavior and focus management; you bring the styles.",
+      "use_case": "Structure the page: dividers, footers, headers and empty states.",
+      "search_tags": [
+        "radix",
+        "separator",
+        "layout",
+        "radix-primitives"
+      ],
+      "docs_url": "https://www.radix-ui.com/primitives/docs/components/separator",
+      "stack": [
+        "react",
+        "headless"
+      ],
+      "dependencies": [
+        "radix-ui"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Headless: pairs with Tailwind or CSS; the foundation of shadcn/ui",
+        "Best when the design system must own every visual detail"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i radix-ui",
+      "manual_steps": [
+        "Docs: https://www.radix-ui.com/primitives/docs/components/separator"
+      ],
+      "quality": 91
+    },
+    {
+      "id": "radix-media-aspect-ratio",
+      "name": "Radix Primitives Aspect Ratio",
+      "source": "Radix Primitives",
+      "entry_type": "component",
+      "category": "media",
+      "description": "Aspect Ratio from Radix Primitives: an unstyled, accessible React primitive that owns behavior and focus management; you bring the styles.",
+      "use_case": "Display images, video, carousels and device mockups.",
+      "search_tags": [
+        "radix",
+        "aspect",
+        "ratio",
+        "media",
+        "radix-primitives"
+      ],
+      "docs_url": "https://www.radix-ui.com/primitives/docs/components/aspect-ratio",
+      "stack": [
+        "react",
+        "headless"
+      ],
+      "dependencies": [
+        "radix-ui"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Headless: pairs with Tailwind or CSS; the foundation of shadcn/ui",
+        "Best when the design system must own every visual detail"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i radix-ui",
+      "manual_steps": [
+        "Docs: https://www.radix-ui.com/primitives/docs/components/aspect-ratio"
+      ],
+      "quality": 91
+    },
+    {
+      "id": "radix-micro-interactions-accordion",
+      "name": "Radix Primitives Accordion",
+      "source": "Radix Primitives",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "Accordion from Radix Primitives: an unstyled, accessible React primitive that owns behavior and focus management; you bring the styles.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "radix",
+        "accordion",
+        "micro-interactions",
+        "radix-primitives"
+      ],
+      "docs_url": "https://www.radix-ui.com/primitives/docs/components/accordion",
+      "stack": [
+        "react",
+        "headless"
+      ],
+      "dependencies": [
+        "radix-ui"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Headless: pairs with Tailwind or CSS; the foundation of shadcn/ui",
+        "Best when the design system must own every visual detail"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i radix-ui",
+      "manual_steps": [
+        "Docs: https://www.radix-ui.com/primitives/docs/components/accordion"
+      ],
+      "quality": 91
+    },
+    {
+      "id": "radix-micro-interactions-password-toggle-field",
+      "name": "Radix Primitives Password Toggle Field",
+      "source": "Radix Primitives",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "Password Toggle Field from Radix Primitives: an unstyled, accessible React primitive that owns behavior and focus management; you bring the styles.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "radix",
+        "password",
+        "toggle",
+        "field",
+        "micro-interactions",
+        "radix-primitives"
+      ],
+      "docs_url": "https://www.radix-ui.com/primitives/docs/components/password-toggle-field",
+      "stack": [
+        "react",
+        "headless"
+      ],
+      "dependencies": [
+        "radix-ui"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Headless: pairs with Tailwind or CSS; the foundation of shadcn/ui",
+        "Best when the design system must own every visual detail"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i radix-ui",
+      "manual_steps": [
+        "Docs: https://www.radix-ui.com/primitives/docs/components/password-toggle-field"
+      ],
+      "quality": 91
+    },
+    {
+      "id": "radix-micro-interactions-toggle",
+      "name": "Radix Primitives Toggle",
+      "source": "Radix Primitives",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "Toggle from Radix Primitives: an unstyled, accessible React primitive that owns behavior and focus management; you bring the styles.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "radix",
+        "toggle",
+        "micro-interactions",
+        "radix-primitives"
+      ],
+      "docs_url": "https://www.radix-ui.com/primitives/docs/components/toggle",
+      "stack": [
+        "react",
+        "headless"
+      ],
+      "dependencies": [
+        "radix-ui"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Headless: pairs with Tailwind or CSS; the foundation of shadcn/ui",
+        "Best when the design system must own every visual detail"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i radix-ui",
+      "manual_steps": [
+        "Docs: https://www.radix-ui.com/primitives/docs/components/toggle"
+      ],
+      "quality": 91
+    },
+    {
+      "id": "radix-micro-interactions-toggle-group",
+      "name": "Radix Primitives Toggle Group",
+      "source": "Radix Primitives",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "Toggle Group from Radix Primitives: an unstyled, accessible React primitive that owns behavior and focus management; you bring the styles.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "radix",
+        "toggle",
+        "group",
+        "micro-interactions",
+        "radix-primitives"
+      ],
+      "docs_url": "https://www.radix-ui.com/primitives/docs/components/toggle-group",
+      "stack": [
+        "react",
+        "headless"
+      ],
+      "dependencies": [
+        "radix-ui"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Headless: pairs with Tailwind or CSS; the foundation of shadcn/ui",
+        "Best when the design system must own every visual detail"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i radix-ui",
+      "manual_steps": [
+        "Docs: https://www.radix-ui.com/primitives/docs/components/toggle-group"
+      ],
+      "quality": 91
+    },
+    {
+      "id": "radix-navigation-tabs",
+      "name": "Radix Primitives Tabs",
+      "source": "Radix Primitives",
+      "entry_type": "component",
+      "category": "navigation",
+      "description": "Tabs from Radix Primitives: an unstyled, accessible React primitive that owns behavior and focus management; you bring the styles.",
+      "use_case": "Build site and app navigation structures that stay clear at any depth.",
+      "search_tags": [
+        "radix",
+        "tabs",
+        "navigation",
+        "radix-primitives"
+      ],
+      "docs_url": "https://www.radix-ui.com/primitives/docs/components/tabs",
+      "stack": [
+        "react",
+        "headless"
+      ],
+      "dependencies": [
+        "radix-ui"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Headless: pairs with Tailwind or CSS; the foundation of shadcn/ui",
+        "Best when the design system must own every visual detail"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i radix-ui",
+      "manual_steps": [
+        "Docs: https://www.radix-ui.com/primitives/docs/components/tabs"
+      ],
+      "quality": 91
+    },
+    {
+      "id": "radix-navigation-toolbar",
+      "name": "Radix Primitives Toolbar",
+      "source": "Radix Primitives",
+      "entry_type": "component",
+      "category": "navigation",
+      "description": "Toolbar from Radix Primitives: an unstyled, accessible React primitive that owns behavior and focus management; you bring the styles.",
+      "use_case": "Build site and app navigation structures that stay clear at any depth.",
+      "search_tags": [
+        "radix",
+        "toolbar",
+        "navigation",
+        "radix-primitives"
+      ],
+      "docs_url": "https://www.radix-ui.com/primitives/docs/components/toolbar",
+      "stack": [
+        "react",
+        "headless"
+      ],
+      "dependencies": [
+        "radix-ui"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Headless: pairs with Tailwind or CSS; the foundation of shadcn/ui",
+        "Best when the design system must own every visual detail"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i radix-ui",
+      "manual_steps": [
+        "Docs: https://www.radix-ui.com/primitives/docs/components/toolbar"
+      ],
+      "quality": 91
+    },
+    {
+      "id": "radix-overlay-alert-dialog",
+      "name": "Radix Primitives Alert Dialog",
+      "source": "Radix Primitives",
+      "entry_type": "component",
+      "category": "overlay",
+      "description": "Alert Dialog from Radix Primitives: an unstyled, accessible React primitive that owns behavior and focus management; you bring the styles.",
+      "use_case": "Present dialogs, drawers and popovers without leaving the page.",
+      "search_tags": [
+        "radix",
+        "alert",
+        "dialog",
+        "overlay",
+        "radix-primitives"
+      ],
+      "docs_url": "https://www.radix-ui.com/primitives/docs/components/alert-dialog",
+      "stack": [
+        "react",
+        "headless"
+      ],
+      "dependencies": [
+        "radix-ui"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Headless: pairs with Tailwind or CSS; the foundation of shadcn/ui",
+        "Best when the design system must own every visual detail"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i radix-ui",
+      "manual_steps": [
+        "Docs: https://www.radix-ui.com/primitives/docs/components/alert-dialog"
+      ],
+      "quality": 91
+    },
+    {
+      "id": "radix-overlay-context-menu",
+      "name": "Radix Primitives Context Menu",
+      "source": "Radix Primitives",
+      "entry_type": "component",
+      "category": "overlay",
+      "description": "Context Menu from Radix Primitives: an unstyled, accessible React primitive that owns behavior and focus management; you bring the styles.",
+      "use_case": "Present dialogs, drawers and popovers without leaving the page.",
+      "search_tags": [
+        "radix",
+        "context",
+        "menu",
+        "overlay",
+        "radix-primitives"
+      ],
+      "docs_url": "https://www.radix-ui.com/primitives/docs/components/context-menu",
+      "stack": [
+        "react",
+        "headless"
+      ],
+      "dependencies": [
+        "radix-ui"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Headless: pairs with Tailwind or CSS; the foundation of shadcn/ui",
+        "Best when the design system must own every visual detail"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i radix-ui",
+      "manual_steps": [
+        "Docs: https://www.radix-ui.com/primitives/docs/components/context-menu"
+      ],
+      "quality": 91
+    },
+    {
+      "id": "radix-overlay-dialog",
+      "name": "Radix Primitives Dialog",
+      "source": "Radix Primitives",
+      "entry_type": "component",
+      "category": "overlay",
+      "description": "Dialog from Radix Primitives: an unstyled, accessible React primitive that owns behavior and focus management; you bring the styles.",
+      "use_case": "Present dialogs, drawers and popovers without leaving the page.",
+      "search_tags": [
+        "radix",
+        "dialog",
+        "overlay",
+        "radix-primitives"
+      ],
+      "docs_url": "https://www.radix-ui.com/primitives/docs/components/dialog",
+      "stack": [
+        "react",
+        "headless"
+      ],
+      "dependencies": [
+        "radix-ui"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Headless: pairs with Tailwind or CSS; the foundation of shadcn/ui",
+        "Best when the design system must own every visual detail"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i radix-ui",
+      "manual_steps": [
+        "Docs: https://www.radix-ui.com/primitives/docs/components/dialog"
+      ],
+      "quality": 91
+    },
+    {
+      "id": "radix-overlay-dropdown-menu",
+      "name": "Radix Primitives Dropdown Menu",
+      "source": "Radix Primitives",
+      "entry_type": "component",
+      "category": "overlay",
+      "description": "Dropdown Menu from Radix Primitives: an unstyled, accessible React primitive that owns behavior and focus management; you bring the styles.",
+      "use_case": "Present dialogs, drawers and popovers without leaving the page.",
+      "search_tags": [
+        "radix",
+        "dropdown",
+        "menu",
+        "overlay",
+        "radix-primitives"
+      ],
+      "docs_url": "https://www.radix-ui.com/primitives/docs/components/dropdown-menu",
+      "stack": [
+        "react",
+        "headless"
+      ],
+      "dependencies": [
+        "radix-ui"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Headless: pairs with Tailwind or CSS; the foundation of shadcn/ui",
+        "Best when the design system must own every visual detail"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i radix-ui",
+      "manual_steps": [
+        "Docs: https://www.radix-ui.com/primitives/docs/components/dropdown-menu"
+      ],
+      "quality": 91
+    },
+    {
+      "id": "radix-overlay-hover-card",
+      "name": "Radix Primitives Hover Card",
+      "source": "Radix Primitives",
+      "entry_type": "component",
+      "category": "overlay",
+      "description": "Hover Card from Radix Primitives: an unstyled, accessible React primitive that owns behavior and focus management; you bring the styles.",
+      "use_case": "Present dialogs, drawers and popovers without leaving the page.",
+      "search_tags": [
+        "radix",
+        "hover",
+        "card",
+        "overlay",
+        "radix-primitives"
+      ],
+      "docs_url": "https://www.radix-ui.com/primitives/docs/components/hover-card",
+      "stack": [
+        "react",
+        "headless"
+      ],
+      "dependencies": [
+        "radix-ui"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Headless: pairs with Tailwind or CSS; the foundation of shadcn/ui",
+        "Best when the design system must own every visual detail"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i radix-ui",
+      "manual_steps": [
+        "Docs: https://www.radix-ui.com/primitives/docs/components/hover-card"
+      ],
+      "quality": 91
+    },
+    {
+      "id": "radix-overlay-menubar",
+      "name": "Radix Primitives Menubar",
+      "source": "Radix Primitives",
+      "entry_type": "component",
+      "category": "overlay",
+      "description": "Menubar from Radix Primitives: an unstyled, accessible React primitive that owns behavior and focus management; you bring the styles.",
+      "use_case": "Present dialogs, drawers and popovers without leaving the page.",
+      "search_tags": [
+        "radix",
+        "menubar",
+        "overlay",
+        "radix-primitives"
+      ],
+      "docs_url": "https://www.radix-ui.com/primitives/docs/components/menubar",
+      "stack": [
+        "react",
+        "headless"
+      ],
+      "dependencies": [
+        "radix-ui"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Headless: pairs with Tailwind or CSS; the foundation of shadcn/ui",
+        "Best when the design system must own every visual detail"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i radix-ui",
+      "manual_steps": [
+        "Docs: https://www.radix-ui.com/primitives/docs/components/menubar"
+      ],
+      "quality": 91
+    },
+    {
+      "id": "radix-overlay-navigation-menu",
+      "name": "Radix Primitives Navigation Menu",
+      "source": "Radix Primitives",
+      "entry_type": "component",
+      "category": "overlay",
+      "description": "Navigation Menu from Radix Primitives: an unstyled, accessible React primitive that owns behavior and focus management; you bring the styles.",
+      "use_case": "Present dialogs, drawers and popovers without leaving the page.",
+      "search_tags": [
+        "radix",
+        "navigation",
+        "menu",
+        "overlay",
+        "radix-primitives"
+      ],
+      "docs_url": "https://www.radix-ui.com/primitives/docs/components/navigation-menu",
+      "stack": [
+        "react",
+        "headless"
+      ],
+      "dependencies": [
+        "radix-ui"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Headless: pairs with Tailwind or CSS; the foundation of shadcn/ui",
+        "Best when the design system must own every visual detail"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i radix-ui",
+      "manual_steps": [
+        "Docs: https://www.radix-ui.com/primitives/docs/components/navigation-menu"
+      ],
+      "quality": 91
+    },
+    {
+      "id": "radix-overlay-popover",
+      "name": "Radix Primitives Popover",
+      "source": "Radix Primitives",
+      "entry_type": "component",
+      "category": "overlay",
+      "description": "Popover from Radix Primitives: an unstyled, accessible React primitive that owns behavior and focus management; you bring the styles.",
+      "use_case": "Present dialogs, drawers and popovers without leaving the page.",
+      "search_tags": [
+        "radix",
+        "popover",
+        "overlay",
+        "radix-primitives"
+      ],
+      "docs_url": "https://www.radix-ui.com/primitives/docs/components/popover",
+      "stack": [
+        "react",
+        "headless"
+      ],
+      "dependencies": [
+        "radix-ui"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Headless: pairs with Tailwind or CSS; the foundation of shadcn/ui",
+        "Best when the design system must own every visual detail"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i radix-ui",
+      "manual_steps": [
+        "Docs: https://www.radix-ui.com/primitives/docs/components/popover"
+      ],
+      "quality": 91
+    },
+    {
+      "id": "radix-overlay-tooltip",
+      "name": "Radix Primitives Tooltip",
+      "source": "Radix Primitives",
+      "entry_type": "component",
+      "category": "overlay",
+      "description": "Tooltip from Radix Primitives: an unstyled, accessible React primitive that owns behavior and focus management; you bring the styles.",
+      "use_case": "Present dialogs, drawers and popovers without leaving the page.",
+      "search_tags": [
+        "radix",
+        "tooltip",
+        "overlay",
+        "radix-primitives"
+      ],
+      "docs_url": "https://www.radix-ui.com/primitives/docs/components/tooltip",
+      "stack": [
+        "react",
+        "headless"
+      ],
+      "dependencies": [
+        "radix-ui"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Headless: pairs with Tailwind or CSS; the foundation of shadcn/ui",
+        "Best when the design system must own every visual detail"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i radix-ui",
+      "manual_steps": [
+        "Docs: https://www.radix-ui.com/primitives/docs/components/tooltip"
+      ],
+      "quality": 91
+    }
+  ]
+}

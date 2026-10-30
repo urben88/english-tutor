@@ -1,0 +1,2084 @@
+{
+  "schema_version": "1.0",
+  "source_id": "tailblocks",
+  "source_name": "Tailblocks",
+  "source_url": "https://github.com/mertJF/tailblocks",
+  "catalog_url": "https://tailblocks.cc",
+  "license_summary": "MIT",
+  "granularity": "complete (all 63 free blocks)",
+  "extraction": {
+    "channel": "github-raw",
+    "method": "Node script parsing src/blocks/index.js from the official repository",
+    "evidence_url": "https://raw.githubusercontent.com/mertJF/tailblocks/master/src/blocks/index.js"
+  },
+  "generated_at": "2026-10-02",
+  "entries": [
+    {
+      "id": "tailblocks-blocks-sections-blog-a",
+      "name": "Tailblocks Blog A",
+      "source": "Tailblocks",
+      "entry_type": "block",
+      "category": "blocks-sections",
+      "description": "Free Tailwind landing block: Blog section variant A (light and dark available).",
+      "use_case": "Compose complete page sections that combine several components.",
+      "search_tags": [
+        "tailblocks",
+        "blog",
+        "landing",
+        "block",
+        "blocks-sections"
+      ],
+      "docs_url": "https://github.com/mertJF/tailblocks/blob/master/src/blocks/blog/light/a.js",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "subcategory": "blog",
+      "install_method": "copy-paste",
+      "manual_steps": [
+        "Open https://tailblocks.cc, pick \"Blog\" block A, choose colors/theme and click View Code.",
+        "Or copy the raw JSX source from https://raw.githubusercontent.com/mertJF/tailblocks/master/src/blocks/blog/light/a.js"
+      ],
+      "quality": 77
+    },
+    {
+      "id": "tailblocks-blocks-sections-blog-b",
+      "name": "Tailblocks Blog B",
+      "source": "Tailblocks",
+      "entry_type": "block",
+      "category": "blocks-sections",
+      "description": "Free Tailwind landing block: Blog section variant B (light and dark available).",
+      "use_case": "Compose complete page sections that combine several components.",
+      "search_tags": [
+        "tailblocks",
+        "blog",
+        "landing",
+        "block",
+        "blocks-sections"
+      ],
+      "docs_url": "https://github.com/mertJF/tailblocks/blob/master/src/blocks/blog/light/b.js",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "subcategory": "blog",
+      "install_method": "copy-paste",
+      "manual_steps": [
+        "Open https://tailblocks.cc, pick \"Blog\" block B, choose colors/theme and click View Code.",
+        "Or copy the raw JSX source from https://raw.githubusercontent.com/mertJF/tailblocks/master/src/blocks/blog/light/b.js"
+      ],
+      "quality": 77
+    },
+    {
+      "id": "tailblocks-blocks-sections-blog-c",
+      "name": "Tailblocks Blog C",
+      "source": "Tailblocks",
+      "entry_type": "block",
+      "category": "blocks-sections",
+      "description": "Free Tailwind landing block: Blog section variant C (light and dark available).",
+      "use_case": "Compose complete page sections that combine several components.",
+      "search_tags": [
+        "tailblocks",
+        "blog",
+        "landing",
+        "block",
+        "blocks-sections"
+      ],
+      "docs_url": "https://github.com/mertJF/tailblocks/blob/master/src/blocks/blog/light/c.js",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "subcategory": "blog",
+      "install_method": "copy-paste",
+      "manual_steps": [
+        "Open https://tailblocks.cc, pick \"Blog\" block C, choose colors/theme and click View Code.",
+        "Or copy the raw JSX source from https://raw.githubusercontent.com/mertJF/tailblocks/master/src/blocks/blog/light/c.js"
+      ],
+      "quality": 77
+    },
+    {
+      "id": "tailblocks-blocks-sections-blog-d",
+      "name": "Tailblocks Blog D",
+      "source": "Tailblocks",
+      "entry_type": "block",
+      "category": "blocks-sections",
+      "description": "Free Tailwind landing block: Blog section variant D (light and dark available).",
+      "use_case": "Compose complete page sections that combine several components.",
+      "search_tags": [
+        "tailblocks",
+        "blog",
+        "landing",
+        "block",
+        "blocks-sections"
+      ],
+      "docs_url": "https://github.com/mertJF/tailblocks/blob/master/src/blocks/blog/light/d.js",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "subcategory": "blog",
+      "install_method": "copy-paste",
+      "manual_steps": [
+        "Open https://tailblocks.cc, pick \"Blog\" block D, choose colors/theme and click View Code.",
+        "Or copy the raw JSX source from https://raw.githubusercontent.com/mertJF/tailblocks/master/src/blocks/blog/light/d.js"
+      ],
+      "quality": 77
+    },
+    {
+      "id": "tailblocks-blocks-sections-blog-e",
+      "name": "Tailblocks Blog E",
+      "source": "Tailblocks",
+      "entry_type": "block",
+      "category": "blocks-sections",
+      "description": "Free Tailwind landing block: Blog section variant E (light and dark available).",
+      "use_case": "Compose complete page sections that combine several components.",
+      "search_tags": [
+        "tailblocks",
+        "blog",
+        "landing",
+        "block",
+        "blocks-sections"
+      ],
+      "docs_url": "https://github.com/mertJF/tailblocks/blob/master/src/blocks/blog/light/e.js",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "subcategory": "blog",
+      "install_method": "copy-paste",
+      "manual_steps": [
+        "Open https://tailblocks.cc, pick \"Blog\" block E, choose colors/theme and click View Code.",
+        "Or copy the raw JSX source from https://raw.githubusercontent.com/mertJF/tailblocks/master/src/blocks/blog/light/e.js"
+      ],
+      "quality": 77
+    },
+    {
+      "id": "tailblocks-blocks-sections-content-a",
+      "name": "Tailblocks Content A",
+      "source": "Tailblocks",
+      "entry_type": "block",
+      "category": "blocks-sections",
+      "description": "Free Tailwind landing block: Content section variant A (light and dark available).",
+      "use_case": "Compose complete page sections that combine several components.",
+      "search_tags": [
+        "tailblocks",
+        "content",
+        "landing",
+        "block",
+        "blocks-sections"
+      ],
+      "docs_url": "https://github.com/mertJF/tailblocks/blob/master/src/blocks/content/light/a.js",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "subcategory": "content",
+      "install_method": "copy-paste",
+      "manual_steps": [
+        "Open https://tailblocks.cc, pick \"Content\" block A, choose colors/theme and click View Code.",
+        "Or copy the raw JSX source from https://raw.githubusercontent.com/mertJF/tailblocks/master/src/blocks/content/light/a.js"
+      ],
+      "quality": 77
+    },
+    {
+      "id": "tailblocks-blocks-sections-content-b",
+      "name": "Tailblocks Content B",
+      "source": "Tailblocks",
+      "entry_type": "block",
+      "category": "blocks-sections",
+      "description": "Free Tailwind landing block: Content section variant B (light and dark available).",
+      "use_case": "Compose complete page sections that combine several components.",
+      "search_tags": [
+        "tailblocks",
+        "content",
+        "landing",
+        "block",
+        "blocks-sections"
+      ],
+      "docs_url": "https://github.com/mertJF/tailblocks/blob/master/src/blocks/content/light/b.js",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "subcategory": "content",
+      "install_method": "copy-paste",
+      "manual_steps": [
+        "Open https://tailblocks.cc, pick \"Content\" block B, choose colors/theme and click View Code.",
+        "Or copy the raw JSX source from https://raw.githubusercontent.com/mertJF/tailblocks/master/src/blocks/content/light/b.js"
+      ],
+      "quality": 77
+    },
+    {
+      "id": "tailblocks-blocks-sections-content-c",
+      "name": "Tailblocks Content C",
+      "source": "Tailblocks",
+      "entry_type": "block",
+      "category": "blocks-sections",
+      "description": "Free Tailwind landing block: Content section variant C (light and dark available).",
+      "use_case": "Compose complete page sections that combine several components.",
+      "search_tags": [
+        "tailblocks",
+        "content",
+        "landing",
+        "block",
+        "blocks-sections"
+      ],
+      "docs_url": "https://github.com/mertJF/tailblocks/blob/master/src/blocks/content/light/c.js",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "subcategory": "content",
+      "install_method": "copy-paste",
+      "manual_steps": [
+        "Open https://tailblocks.cc, pick \"Content\" block C, choose colors/theme and click View Code.",
+        "Or copy the raw JSX source from https://raw.githubusercontent.com/mertJF/tailblocks/master/src/blocks/content/light/c.js"
+      ],
+      "quality": 77
+    },
+    {
+      "id": "tailblocks-blocks-sections-content-d",
+      "name": "Tailblocks Content D",
+      "source": "Tailblocks",
+      "entry_type": "block",
+      "category": "blocks-sections",
+      "description": "Free Tailwind landing block: Content section variant D (light and dark available).",
+      "use_case": "Compose complete page sections that combine several components.",
+      "search_tags": [
+        "tailblocks",
+        "content",
+        "landing",
+        "block",
+        "blocks-sections"
+      ],
+      "docs_url": "https://github.com/mertJF/tailblocks/blob/master/src/blocks/content/light/d.js",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "subcategory": "content",
+      "install_method": "copy-paste",
+      "manual_steps": [
+        "Open https://tailblocks.cc, pick \"Content\" block D, choose colors/theme and click View Code.",
+        "Or copy the raw JSX source from https://raw.githubusercontent.com/mertJF/tailblocks/master/src/blocks/content/light/d.js"
+      ],
+      "quality": 77
+    },
+    {
+      "id": "tailblocks-blocks-sections-content-e",
+      "name": "Tailblocks Content E",
+      "source": "Tailblocks",
+      "entry_type": "block",
+      "category": "blocks-sections",
+      "description": "Free Tailwind landing block: Content section variant E (light and dark available).",
+      "use_case": "Compose complete page sections that combine several components.",
+      "search_tags": [
+        "tailblocks",
+        "content",
+        "landing",
+        "block",
+        "blocks-sections"
+      ],
+      "docs_url": "https://github.com/mertJF/tailblocks/blob/master/src/blocks/content/light/e.js",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "subcategory": "content",
+      "install_method": "copy-paste",
+      "manual_steps": [
+        "Open https://tailblocks.cc, pick \"Content\" block E, choose colors/theme and click View Code.",
+        "Or copy the raw JSX source from https://raw.githubusercontent.com/mertJF/tailblocks/master/src/blocks/content/light/e.js"
+      ],
+      "quality": 77
+    },
+    {
+      "id": "tailblocks-blocks-sections-content-f",
+      "name": "Tailblocks Content F",
+      "source": "Tailblocks",
+      "entry_type": "block",
+      "category": "blocks-sections",
+      "description": "Free Tailwind landing block: Content section variant F (light and dark available).",
+      "use_case": "Compose complete page sections that combine several components.",
+      "search_tags": [
+        "tailblocks",
+        "content",
+        "landing",
+        "block",
+        "blocks-sections"
+      ],
+      "docs_url": "https://github.com/mertJF/tailblocks/blob/master/src/blocks/content/light/f.js",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "subcategory": "content",
+      "install_method": "copy-paste",
+      "manual_steps": [
+        "Open https://tailblocks.cc, pick \"Content\" block F, choose colors/theme and click View Code.",
+        "Or copy the raw JSX source from https://raw.githubusercontent.com/mertJF/tailblocks/master/src/blocks/content/light/f.js"
+      ],
+      "quality": 77
+    },
+    {
+      "id": "tailblocks-blocks-sections-content-g",
+      "name": "Tailblocks Content G",
+      "source": "Tailblocks",
+      "entry_type": "block",
+      "category": "blocks-sections",
+      "description": "Free Tailwind landing block: Content section variant G (light and dark available).",
+      "use_case": "Compose complete page sections that combine several components.",
+      "search_tags": [
+        "tailblocks",
+        "content",
+        "landing",
+        "block",
+        "blocks-sections"
+      ],
+      "docs_url": "https://github.com/mertJF/tailblocks/blob/master/src/blocks/content/light/g.js",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "subcategory": "content",
+      "install_method": "copy-paste",
+      "manual_steps": [
+        "Open https://tailblocks.cc, pick \"Content\" block G, choose colors/theme and click View Code.",
+        "Or copy the raw JSX source from https://raw.githubusercontent.com/mertJF/tailblocks/master/src/blocks/content/light/g.js"
+      ],
+      "quality": 77
+    },
+    {
+      "id": "tailblocks-blocks-sections-content-h",
+      "name": "Tailblocks Content H",
+      "source": "Tailblocks",
+      "entry_type": "block",
+      "category": "blocks-sections",
+      "description": "Free Tailwind landing block: Content section variant H (light and dark available).",
+      "use_case": "Compose complete page sections that combine several components.",
+      "search_tags": [
+        "tailblocks",
+        "content",
+        "landing",
+        "block",
+        "blocks-sections"
+      ],
+      "docs_url": "https://github.com/mertJF/tailblocks/blob/master/src/blocks/content/light/h.js",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "subcategory": "content",
+      "install_method": "copy-paste",
+      "manual_steps": [
+        "Open https://tailblocks.cc, pick \"Content\" block H, choose colors/theme and click View Code.",
+        "Or copy the raw JSX source from https://raw.githubusercontent.com/mertJF/tailblocks/master/src/blocks/content/light/h.js"
+      ],
+      "quality": 77
+    },
+    {
+      "id": "tailblocks-blocks-sections-ecommerce-a",
+      "name": "Tailblocks Ecommerce A",
+      "source": "Tailblocks",
+      "entry_type": "block",
+      "category": "blocks-sections",
+      "description": "Free Tailwind landing block: Ecommerce section variant A (light and dark available).",
+      "use_case": "Compose complete page sections that combine several components.",
+      "search_tags": [
+        "tailblocks",
+        "ecommerce",
+        "landing",
+        "block",
+        "blocks-sections"
+      ],
+      "docs_url": "https://github.com/mertJF/tailblocks/blob/master/src/blocks/ecommerce/light/a.js",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "subcategory": "ecommerce",
+      "install_method": "copy-paste",
+      "manual_steps": [
+        "Open https://tailblocks.cc, pick \"Ecommerce\" block A, choose colors/theme and click View Code.",
+        "Or copy the raw JSX source from https://raw.githubusercontent.com/mertJF/tailblocks/master/src/blocks/ecommerce/light/a.js"
+      ],
+      "quality": 77
+    },
+    {
+      "id": "tailblocks-blocks-sections-ecommerce-b",
+      "name": "Tailblocks Ecommerce B",
+      "source": "Tailblocks",
+      "entry_type": "block",
+      "category": "blocks-sections",
+      "description": "Free Tailwind landing block: Ecommerce section variant B (light and dark available).",
+      "use_case": "Compose complete page sections that combine several components.",
+      "search_tags": [
+        "tailblocks",
+        "ecommerce",
+        "landing",
+        "block",
+        "blocks-sections"
+      ],
+      "docs_url": "https://github.com/mertJF/tailblocks/blob/master/src/blocks/ecommerce/light/b.js",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "subcategory": "ecommerce",
+      "install_method": "copy-paste",
+      "manual_steps": [
+        "Open https://tailblocks.cc, pick \"Ecommerce\" block B, choose colors/theme and click View Code.",
+        "Or copy the raw JSX source from https://raw.githubusercontent.com/mertJF/tailblocks/master/src/blocks/ecommerce/light/b.js"
+      ],
+      "quality": 77
+    },
+    {
+      "id": "tailblocks-blocks-sections-ecommerce-c",
+      "name": "Tailblocks Ecommerce C",
+      "source": "Tailblocks",
+      "entry_type": "block",
+      "category": "blocks-sections",
+      "description": "Free Tailwind landing block: Ecommerce section variant C (light and dark available).",
+      "use_case": "Compose complete page sections that combine several components.",
+      "search_tags": [
+        "tailblocks",
+        "ecommerce",
+        "landing",
+        "block",
+        "blocks-sections"
+      ],
+      "docs_url": "https://github.com/mertJF/tailblocks/blob/master/src/blocks/ecommerce/light/c.js",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "subcategory": "ecommerce",
+      "install_method": "copy-paste",
+      "manual_steps": [
+        "Open https://tailblocks.cc, pick \"Ecommerce\" block C, choose colors/theme and click View Code.",
+        "Or copy the raw JSX source from https://raw.githubusercontent.com/mertJF/tailblocks/master/src/blocks/ecommerce/light/c.js"
+      ],
+      "quality": 77
+    },
+    {
+      "id": "tailblocks-blocks-sections-team-a",
+      "name": "Tailblocks Team A",
+      "source": "Tailblocks",
+      "entry_type": "block",
+      "category": "blocks-sections",
+      "description": "Free Tailwind landing block: Team section variant A (light and dark available).",
+      "use_case": "Compose complete page sections that combine several components.",
+      "search_tags": [
+        "tailblocks",
+        "team",
+        "landing",
+        "block",
+        "blocks-sections"
+      ],
+      "docs_url": "https://github.com/mertJF/tailblocks/blob/master/src/blocks/team/light/a.js",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "subcategory": "team",
+      "install_method": "copy-paste",
+      "manual_steps": [
+        "Open https://tailblocks.cc, pick \"Team\" block A, choose colors/theme and click View Code.",
+        "Or copy the raw JSX source from https://raw.githubusercontent.com/mertJF/tailblocks/master/src/blocks/team/light/a.js"
+      ],
+      "quality": 77
+    },
+    {
+      "id": "tailblocks-blocks-sections-team-b",
+      "name": "Tailblocks Team B",
+      "source": "Tailblocks",
+      "entry_type": "block",
+      "category": "blocks-sections",
+      "description": "Free Tailwind landing block: Team section variant B (light and dark available).",
+      "use_case": "Compose complete page sections that combine several components.",
+      "search_tags": [
+        "tailblocks",
+        "team",
+        "landing",
+        "block",
+        "blocks-sections"
+      ],
+      "docs_url": "https://github.com/mertJF/tailblocks/blob/master/src/blocks/team/light/b.js",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "subcategory": "team",
+      "install_method": "copy-paste",
+      "manual_steps": [
+        "Open https://tailblocks.cc, pick \"Team\" block B, choose colors/theme and click View Code.",
+        "Or copy the raw JSX source from https://raw.githubusercontent.com/mertJF/tailblocks/master/src/blocks/team/light/b.js"
+      ],
+      "quality": 77
+    },
+    {
+      "id": "tailblocks-blocks-sections-team-c",
+      "name": "Tailblocks Team C",
+      "source": "Tailblocks",
+      "entry_type": "block",
+      "category": "blocks-sections",
+      "description": "Free Tailwind landing block: Team section variant C (light and dark available).",
+      "use_case": "Compose complete page sections that combine several components.",
+      "search_tags": [
+        "tailblocks",
+        "team",
+        "landing",
+        "block",
+        "blocks-sections"
+      ],
+      "docs_url": "https://github.com/mertJF/tailblocks/blob/master/src/blocks/team/light/c.js",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "subcategory": "team",
+      "install_method": "copy-paste",
+      "manual_steps": [
+        "Open https://tailblocks.cc, pick \"Team\" block C, choose colors/theme and click View Code.",
+        "Or copy the raw JSX source from https://raw.githubusercontent.com/mertJF/tailblocks/master/src/blocks/team/light/c.js"
+      ],
+      "quality": 77
+    },
+    {
+      "id": "tailblocks-cta-cta-a",
+      "name": "Tailblocks Cta A",
+      "source": "Tailblocks",
+      "entry_type": "block",
+      "category": "cta",
+      "description": "Free Tailwind landing block: Cta section variant A (light and dark available).",
+      "use_case": "Prompt the next user action with focused, high-contrast sections.",
+      "search_tags": [
+        "tailblocks",
+        "cta",
+        "landing",
+        "block"
+      ],
+      "docs_url": "https://github.com/mertJF/tailblocks/blob/master/src/blocks/cta/light/a.js",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "subcategory": "cta",
+      "install_method": "copy-paste",
+      "manual_steps": [
+        "Open https://tailblocks.cc, pick \"Cta\" block A, choose colors/theme and click View Code.",
+        "Or copy the raw JSX source from https://raw.githubusercontent.com/mertJF/tailblocks/master/src/blocks/cta/light/a.js"
+      ],
+      "quality": 77
+    },
+    {
+      "id": "tailblocks-cta-cta-b",
+      "name": "Tailblocks Cta B",
+      "source": "Tailblocks",
+      "entry_type": "block",
+      "category": "cta",
+      "description": "Free Tailwind landing block: Cta section variant B (light and dark available).",
+      "use_case": "Prompt the next user action with focused, high-contrast sections.",
+      "search_tags": [
+        "tailblocks",
+        "cta",
+        "landing",
+        "block"
+      ],
+      "docs_url": "https://github.com/mertJF/tailblocks/blob/master/src/blocks/cta/light/b.js",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "subcategory": "cta",
+      "install_method": "copy-paste",
+      "manual_steps": [
+        "Open https://tailblocks.cc, pick \"Cta\" block B, choose colors/theme and click View Code.",
+        "Or copy the raw JSX source from https://raw.githubusercontent.com/mertJF/tailblocks/master/src/blocks/cta/light/b.js"
+      ],
+      "quality": 77
+    },
+    {
+      "id": "tailblocks-cta-cta-c",
+      "name": "Tailblocks Cta C",
+      "source": "Tailblocks",
+      "entry_type": "block",
+      "category": "cta",
+      "description": "Free Tailwind landing block: Cta section variant C (light and dark available).",
+      "use_case": "Prompt the next user action with focused, high-contrast sections.",
+      "search_tags": [
+        "tailblocks",
+        "cta",
+        "landing",
+        "block"
+      ],
+      "docs_url": "https://github.com/mertJF/tailblocks/blob/master/src/blocks/cta/light/c.js",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "subcategory": "cta",
+      "install_method": "copy-paste",
+      "manual_steps": [
+        "Open https://tailblocks.cc, pick \"Cta\" block C, choose colors/theme and click View Code.",
+        "Or copy the raw JSX source from https://raw.githubusercontent.com/mertJF/tailblocks/master/src/blocks/cta/light/c.js"
+      ],
+      "quality": 77
+    },
+    {
+      "id": "tailblocks-cta-cta-d",
+      "name": "Tailblocks Cta D",
+      "source": "Tailblocks",
+      "entry_type": "block",
+      "category": "cta",
+      "description": "Free Tailwind landing block: Cta section variant D (light and dark available).",
+      "use_case": "Prompt the next user action with focused, high-contrast sections.",
+      "search_tags": [
+        "tailblocks",
+        "cta",
+        "landing",
+        "block"
+      ],
+      "docs_url": "https://github.com/mertJF/tailblocks/blob/master/src/blocks/cta/light/d.js",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "subcategory": "cta",
+      "install_method": "copy-paste",
+      "manual_steps": [
+        "Open https://tailblocks.cc, pick \"Cta\" block D, choose colors/theme and click View Code.",
+        "Or copy the raw JSX source from https://raw.githubusercontent.com/mertJF/tailblocks/master/src/blocks/cta/light/d.js"
+      ],
+      "quality": 77
+    },
+    {
+      "id": "tailblocks-data-display-statistic-a",
+      "name": "Tailblocks Statistic A",
+      "source": "Tailblocks",
+      "entry_type": "block",
+      "category": "data-display",
+      "description": "Free Tailwind landing block: Statistic section variant A (light and dark available).",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "tailblocks",
+        "statistic",
+        "landing",
+        "block",
+        "data-display"
+      ],
+      "docs_url": "https://github.com/mertJF/tailblocks/blob/master/src/blocks/statistic/light/a.js",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "subcategory": "statistic",
+      "install_method": "copy-paste",
+      "manual_steps": [
+        "Open https://tailblocks.cc, pick \"Statistic\" block A, choose colors/theme and click View Code.",
+        "Or copy the raw JSX source from https://raw.githubusercontent.com/mertJF/tailblocks/master/src/blocks/statistic/light/a.js"
+      ],
+      "quality": 77
+    },
+    {
+      "id": "tailblocks-data-display-statistic-b",
+      "name": "Tailblocks Statistic B",
+      "source": "Tailblocks",
+      "entry_type": "block",
+      "category": "data-display",
+      "description": "Free Tailwind landing block: Statistic section variant B (light and dark available).",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "tailblocks",
+        "statistic",
+        "landing",
+        "block",
+        "data-display"
+      ],
+      "docs_url": "https://github.com/mertJF/tailblocks/blob/master/src/blocks/statistic/light/b.js",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "subcategory": "statistic",
+      "install_method": "copy-paste",
+      "manual_steps": [
+        "Open https://tailblocks.cc, pick \"Statistic\" block B, choose colors/theme and click View Code.",
+        "Or copy the raw JSX source from https://raw.githubusercontent.com/mertJF/tailblocks/master/src/blocks/statistic/light/b.js"
+      ],
+      "quality": 77
+    },
+    {
+      "id": "tailblocks-data-display-statistic-c",
+      "name": "Tailblocks Statistic C",
+      "source": "Tailblocks",
+      "entry_type": "block",
+      "category": "data-display",
+      "description": "Free Tailwind landing block: Statistic section variant C (light and dark available).",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "tailblocks",
+        "statistic",
+        "landing",
+        "block",
+        "data-display"
+      ],
+      "docs_url": "https://github.com/mertJF/tailblocks/blob/master/src/blocks/statistic/light/c.js",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "subcategory": "statistic",
+      "install_method": "copy-paste",
+      "manual_steps": [
+        "Open https://tailblocks.cc, pick \"Statistic\" block C, choose colors/theme and click View Code.",
+        "Or copy the raw JSX source from https://raw.githubusercontent.com/mertJF/tailblocks/master/src/blocks/statistic/light/c.js"
+      ],
+      "quality": 77
+    },
+    {
+      "id": "tailblocks-features-feature-a",
+      "name": "Tailblocks Feature A",
+      "source": "Tailblocks",
+      "entry_type": "block",
+      "category": "features",
+      "description": "Free Tailwind landing block: Feature section variant A (light and dark available).",
+      "use_case": "Explain product capabilities with structured, scannable sections.",
+      "search_tags": [
+        "tailblocks",
+        "feature",
+        "landing",
+        "block",
+        "features"
+      ],
+      "docs_url": "https://github.com/mertJF/tailblocks/blob/master/src/blocks/feature/light/a.js",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "subcategory": "feature",
+      "install_method": "copy-paste",
+      "manual_steps": [
+        "Open https://tailblocks.cc, pick \"Feature\" block A, choose colors/theme and click View Code.",
+        "Or copy the raw JSX source from https://raw.githubusercontent.com/mertJF/tailblocks/master/src/blocks/feature/light/a.js"
+      ],
+      "quality": 77
+    },
+    {
+      "id": "tailblocks-features-feature-b",
+      "name": "Tailblocks Feature B",
+      "source": "Tailblocks",
+      "entry_type": "block",
+      "category": "features",
+      "description": "Free Tailwind landing block: Feature section variant B (light and dark available).",
+      "use_case": "Explain product capabilities with structured, scannable sections.",
+      "search_tags": [
+        "tailblocks",
+        "feature",
+        "landing",
+        "block",
+        "features"
+      ],
+      "docs_url": "https://github.com/mertJF/tailblocks/blob/master/src/blocks/feature/light/b.js",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "subcategory": "feature",
+      "install_method": "copy-paste",
+      "manual_steps": [
+        "Open https://tailblocks.cc, pick \"Feature\" block B, choose colors/theme and click View Code.",
+        "Or copy the raw JSX source from https://raw.githubusercontent.com/mertJF/tailblocks/master/src/blocks/feature/light/b.js"
+      ],
+      "quality": 77
+    },
+    {
+      "id": "tailblocks-features-feature-c",
+      "name": "Tailblocks Feature C",
+      "source": "Tailblocks",
+      "entry_type": "block",
+      "category": "features",
+      "description": "Free Tailwind landing block: Feature section variant C (light and dark available).",
+      "use_case": "Explain product capabilities with structured, scannable sections.",
+      "search_tags": [
+        "tailblocks",
+        "feature",
+        "landing",
+        "block",
+        "features"
+      ],
+      "docs_url": "https://github.com/mertJF/tailblocks/blob/master/src/blocks/feature/light/c.js",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "subcategory": "feature",
+      "install_method": "copy-paste",
+      "manual_steps": [
+        "Open https://tailblocks.cc, pick \"Feature\" block C, choose colors/theme and click View Code.",
+        "Or copy the raw JSX source from https://raw.githubusercontent.com/mertJF/tailblocks/master/src/blocks/feature/light/c.js"
+      ],
+      "quality": 77
+    },
+    {
+      "id": "tailblocks-features-feature-d",
+      "name": "Tailblocks Feature D",
+      "source": "Tailblocks",
+      "entry_type": "block",
+      "category": "features",
+      "description": "Free Tailwind landing block: Feature section variant D (light and dark available).",
+      "use_case": "Explain product capabilities with structured, scannable sections.",
+      "search_tags": [
+        "tailblocks",
+        "feature",
+        "landing",
+        "block",
+        "features"
+      ],
+      "docs_url": "https://github.com/mertJF/tailblocks/blob/master/src/blocks/feature/light/d.js",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "subcategory": "feature",
+      "install_method": "copy-paste",
+      "manual_steps": [
+        "Open https://tailblocks.cc, pick \"Feature\" block D, choose colors/theme and click View Code.",
+        "Or copy the raw JSX source from https://raw.githubusercontent.com/mertJF/tailblocks/master/src/blocks/feature/light/d.js"
+      ],
+      "quality": 77
+    },
+    {
+      "id": "tailblocks-features-feature-e",
+      "name": "Tailblocks Feature E",
+      "source": "Tailblocks",
+      "entry_type": "block",
+      "category": "features",
+      "description": "Free Tailwind landing block: Feature section variant E (light and dark available).",
+      "use_case": "Explain product capabilities with structured, scannable sections.",
+      "search_tags": [
+        "tailblocks",
+        "feature",
+        "landing",
+        "block",
+        "features"
+      ],
+      "docs_url": "https://github.com/mertJF/tailblocks/blob/master/src/blocks/feature/light/e.js",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "subcategory": "feature",
+      "install_method": "copy-paste",
+      "manual_steps": [
+        "Open https://tailblocks.cc, pick \"Feature\" block E, choose colors/theme and click View Code.",
+        "Or copy the raw JSX source from https://raw.githubusercontent.com/mertJF/tailblocks/master/src/blocks/feature/light/e.js"
+      ],
+      "quality": 77
+    },
+    {
+      "id": "tailblocks-features-feature-f",
+      "name": "Tailblocks Feature F",
+      "source": "Tailblocks",
+      "entry_type": "block",
+      "category": "features",
+      "description": "Free Tailwind landing block: Feature section variant F (light and dark available).",
+      "use_case": "Explain product capabilities with structured, scannable sections.",
+      "search_tags": [
+        "tailblocks",
+        "feature",
+        "landing",
+        "block",
+        "features"
+      ],
+      "docs_url": "https://github.com/mertJF/tailblocks/blob/master/src/blocks/feature/light/f.js",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "subcategory": "feature",
+      "install_method": "copy-paste",
+      "manual_steps": [
+        "Open https://tailblocks.cc, pick \"Feature\" block F, choose colors/theme and click View Code.",
+        "Or copy the raw JSX source from https://raw.githubusercontent.com/mertJF/tailblocks/master/src/blocks/feature/light/f.js"
+      ],
+      "quality": 77
+    },
+    {
+      "id": "tailblocks-features-feature-g",
+      "name": "Tailblocks Feature G",
+      "source": "Tailblocks",
+      "entry_type": "block",
+      "category": "features",
+      "description": "Free Tailwind landing block: Feature section variant G (light and dark available).",
+      "use_case": "Explain product capabilities with structured, scannable sections.",
+      "search_tags": [
+        "tailblocks",
+        "feature",
+        "landing",
+        "block",
+        "features"
+      ],
+      "docs_url": "https://github.com/mertJF/tailblocks/blob/master/src/blocks/feature/light/g.js",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "subcategory": "feature",
+      "install_method": "copy-paste",
+      "manual_steps": [
+        "Open https://tailblocks.cc, pick \"Feature\" block G, choose colors/theme and click View Code.",
+        "Or copy the raw JSX source from https://raw.githubusercontent.com/mertJF/tailblocks/master/src/blocks/feature/light/g.js"
+      ],
+      "quality": 77
+    },
+    {
+      "id": "tailblocks-features-feature-h",
+      "name": "Tailblocks Feature H",
+      "source": "Tailblocks",
+      "entry_type": "block",
+      "category": "features",
+      "description": "Free Tailwind landing block: Feature section variant H (light and dark available).",
+      "use_case": "Explain product capabilities with structured, scannable sections.",
+      "search_tags": [
+        "tailblocks",
+        "feature",
+        "landing",
+        "block",
+        "features"
+      ],
+      "docs_url": "https://github.com/mertJF/tailblocks/blob/master/src/blocks/feature/light/h.js",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "subcategory": "feature",
+      "install_method": "copy-paste",
+      "manual_steps": [
+        "Open https://tailblocks.cc, pick \"Feature\" block H, choose colors/theme and click View Code.",
+        "Or copy the raw JSX source from https://raw.githubusercontent.com/mertJF/tailblocks/master/src/blocks/feature/light/h.js"
+      ],
+      "quality": 77
+    },
+    {
+      "id": "tailblocks-features-step-a",
+      "name": "Tailblocks Step A",
+      "source": "Tailblocks",
+      "entry_type": "block",
+      "category": "features",
+      "description": "Free Tailwind landing block: Step section variant A (light and dark available).",
+      "use_case": "Explain product capabilities with structured, scannable sections.",
+      "search_tags": [
+        "tailblocks",
+        "step",
+        "landing",
+        "block",
+        "features"
+      ],
+      "docs_url": "https://github.com/mertJF/tailblocks/blob/master/src/blocks/step/light/a.js",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "subcategory": "step",
+      "install_method": "copy-paste",
+      "manual_steps": [
+        "Open https://tailblocks.cc, pick \"Step\" block A, choose colors/theme and click View Code.",
+        "Or copy the raw JSX source from https://raw.githubusercontent.com/mertJF/tailblocks/master/src/blocks/step/light/a.js"
+      ],
+      "quality": 77
+    },
+    {
+      "id": "tailblocks-features-step-b",
+      "name": "Tailblocks Step B",
+      "source": "Tailblocks",
+      "entry_type": "block",
+      "category": "features",
+      "description": "Free Tailwind landing block: Step section variant B (light and dark available).",
+      "use_case": "Explain product capabilities with structured, scannable sections.",
+      "search_tags": [
+        "tailblocks",
+        "step",
+        "landing",
+        "block",
+        "features"
+      ],
+      "docs_url": "https://github.com/mertJF/tailblocks/blob/master/src/blocks/step/light/b.js",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "subcategory": "step",
+      "install_method": "copy-paste",
+      "manual_steps": [
+        "Open https://tailblocks.cc, pick \"Step\" block B, choose colors/theme and click View Code.",
+        "Or copy the raw JSX source from https://raw.githubusercontent.com/mertJF/tailblocks/master/src/blocks/step/light/b.js"
+      ],
+      "quality": 77
+    },
+    {
+      "id": "tailblocks-features-step-c",
+      "name": "Tailblocks Step C",
+      "source": "Tailblocks",
+      "entry_type": "block",
+      "category": "features",
+      "description": "Free Tailwind landing block: Step section variant C (light and dark available).",
+      "use_case": "Explain product capabilities with structured, scannable sections.",
+      "search_tags": [
+        "tailblocks",
+        "step",
+        "landing",
+        "block",
+        "features"
+      ],
+      "docs_url": "https://github.com/mertJF/tailblocks/blob/master/src/blocks/step/light/c.js",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "subcategory": "step",
+      "install_method": "copy-paste",
+      "manual_steps": [
+        "Open https://tailblocks.cc, pick \"Step\" block C, choose colors/theme and click View Code.",
+        "Or copy the raw JSX source from https://raw.githubusercontent.com/mertJF/tailblocks/master/src/blocks/step/light/c.js"
+      ],
+      "quality": 77
+    },
+    {
+      "id": "tailblocks-forms-contact-a",
+      "name": "Tailblocks Contact A",
+      "source": "Tailblocks",
+      "entry_type": "block",
+      "category": "forms",
+      "description": "Free Tailwind landing block: Contact section variant A (light and dark available).",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "tailblocks",
+        "contact",
+        "landing",
+        "block",
+        "forms"
+      ],
+      "docs_url": "https://github.com/mertJF/tailblocks/blob/master/src/blocks/contact/light/a.js",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "subcategory": "contact",
+      "install_method": "copy-paste",
+      "manual_steps": [
+        "Open https://tailblocks.cc, pick \"Contact\" block A, choose colors/theme and click View Code.",
+        "Or copy the raw JSX source from https://raw.githubusercontent.com/mertJF/tailblocks/master/src/blocks/contact/light/a.js"
+      ],
+      "quality": 77
+    },
+    {
+      "id": "tailblocks-forms-contact-b",
+      "name": "Tailblocks Contact B",
+      "source": "Tailblocks",
+      "entry_type": "block",
+      "category": "forms",
+      "description": "Free Tailwind landing block: Contact section variant B (light and dark available).",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "tailblocks",
+        "contact",
+        "landing",
+        "block",
+        "forms"
+      ],
+      "docs_url": "https://github.com/mertJF/tailblocks/blob/master/src/blocks/contact/light/b.js",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "subcategory": "contact",
+      "install_method": "copy-paste",
+      "manual_steps": [
+        "Open https://tailblocks.cc, pick \"Contact\" block B, choose colors/theme and click View Code.",
+        "Or copy the raw JSX source from https://raw.githubusercontent.com/mertJF/tailblocks/master/src/blocks/contact/light/b.js"
+      ],
+      "quality": 77
+    },
+    {
+      "id": "tailblocks-forms-contact-c",
+      "name": "Tailblocks Contact C",
+      "source": "Tailblocks",
+      "entry_type": "block",
+      "category": "forms",
+      "description": "Free Tailwind landing block: Contact section variant C (light and dark available).",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "tailblocks",
+        "contact",
+        "landing",
+        "block",
+        "forms"
+      ],
+      "docs_url": "https://github.com/mertJF/tailblocks/blob/master/src/blocks/contact/light/c.js",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "subcategory": "contact",
+      "install_method": "copy-paste",
+      "manual_steps": [
+        "Open https://tailblocks.cc, pick \"Contact\" block C, choose colors/theme and click View Code.",
+        "Or copy the raw JSX source from https://raw.githubusercontent.com/mertJF/tailblocks/master/src/blocks/contact/light/c.js"
+      ],
+      "quality": 77
+    },
+    {
+      "id": "tailblocks-hero-hero-a",
+      "name": "Tailblocks Hero A",
+      "source": "Tailblocks",
+      "entry_type": "block",
+      "category": "hero",
+      "description": "Free Tailwind landing block: Hero section variant A (light and dark available).",
+      "use_case": "Create above-the-fold sections that communicate the value proposition immediately.",
+      "search_tags": [
+        "tailblocks",
+        "hero",
+        "landing",
+        "block"
+      ],
+      "docs_url": "https://github.com/mertJF/tailblocks/blob/master/src/blocks/hero/light/a.js",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "subcategory": "hero",
+      "install_method": "copy-paste",
+      "manual_steps": [
+        "Open https://tailblocks.cc, pick \"Hero\" block A, choose colors/theme and click View Code.",
+        "Or copy the raw JSX source from https://raw.githubusercontent.com/mertJF/tailblocks/master/src/blocks/hero/light/a.js"
+      ],
+      "quality": 77
+    },
+    {
+      "id": "tailblocks-hero-hero-b",
+      "name": "Tailblocks Hero B",
+      "source": "Tailblocks",
+      "entry_type": "block",
+      "category": "hero",
+      "description": "Free Tailwind landing block: Hero section variant B (light and dark available).",
+      "use_case": "Create above-the-fold sections that communicate the value proposition immediately.",
+      "search_tags": [
+        "tailblocks",
+        "hero",
+        "landing",
+        "block"
+      ],
+      "docs_url": "https://github.com/mertJF/tailblocks/blob/master/src/blocks/hero/light/b.js",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "subcategory": "hero",
+      "install_method": "copy-paste",
+      "manual_steps": [
+        "Open https://tailblocks.cc, pick \"Hero\" block B, choose colors/theme and click View Code.",
+        "Or copy the raw JSX source from https://raw.githubusercontent.com/mertJF/tailblocks/master/src/blocks/hero/light/b.js"
+      ],
+      "quality": 77
+    },
+    {
+      "id": "tailblocks-hero-hero-c",
+      "name": "Tailblocks Hero C",
+      "source": "Tailblocks",
+      "entry_type": "block",
+      "category": "hero",
+      "description": "Free Tailwind landing block: Hero section variant C (light and dark available).",
+      "use_case": "Create above-the-fold sections that communicate the value proposition immediately.",
+      "search_tags": [
+        "tailblocks",
+        "hero",
+        "landing",
+        "block"
+      ],
+      "docs_url": "https://github.com/mertJF/tailblocks/blob/master/src/blocks/hero/light/c.js",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "subcategory": "hero",
+      "install_method": "copy-paste",
+      "manual_steps": [
+        "Open https://tailblocks.cc, pick \"Hero\" block C, choose colors/theme and click View Code.",
+        "Or copy the raw JSX source from https://raw.githubusercontent.com/mertJF/tailblocks/master/src/blocks/hero/light/c.js"
+      ],
+      "quality": 77
+    },
+    {
+      "id": "tailblocks-hero-hero-d",
+      "name": "Tailblocks Hero D",
+      "source": "Tailblocks",
+      "entry_type": "block",
+      "category": "hero",
+      "description": "Free Tailwind landing block: Hero section variant D (light and dark available).",
+      "use_case": "Create above-the-fold sections that communicate the value proposition immediately.",
+      "search_tags": [
+        "tailblocks",
+        "hero",
+        "landing",
+        "block"
+      ],
+      "docs_url": "https://github.com/mertJF/tailblocks/blob/master/src/blocks/hero/light/d.js",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "subcategory": "hero",
+      "install_method": "copy-paste",
+      "manual_steps": [
+        "Open https://tailblocks.cc, pick \"Hero\" block D, choose colors/theme and click View Code.",
+        "Or copy the raw JSX source from https://raw.githubusercontent.com/mertJF/tailblocks/master/src/blocks/hero/light/d.js"
+      ],
+      "quality": 77
+    },
+    {
+      "id": "tailblocks-hero-hero-e",
+      "name": "Tailblocks Hero E",
+      "source": "Tailblocks",
+      "entry_type": "block",
+      "category": "hero",
+      "description": "Free Tailwind landing block: Hero section variant E (light and dark available).",
+      "use_case": "Create above-the-fold sections that communicate the value proposition immediately.",
+      "search_tags": [
+        "tailblocks",
+        "hero",
+        "landing",
+        "block"
+      ],
+      "docs_url": "https://github.com/mertJF/tailblocks/blob/master/src/blocks/hero/light/e.js",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "subcategory": "hero",
+      "install_method": "copy-paste",
+      "manual_steps": [
+        "Open https://tailblocks.cc, pick \"Hero\" block E, choose colors/theme and click View Code.",
+        "Or copy the raw JSX source from https://raw.githubusercontent.com/mertJF/tailblocks/master/src/blocks/hero/light/e.js"
+      ],
+      "quality": 77
+    },
+    {
+      "id": "tailblocks-hero-hero-f",
+      "name": "Tailblocks Hero F",
+      "source": "Tailblocks",
+      "entry_type": "block",
+      "category": "hero",
+      "description": "Free Tailwind landing block: Hero section variant F (light and dark available).",
+      "use_case": "Create above-the-fold sections that communicate the value proposition immediately.",
+      "search_tags": [
+        "tailblocks",
+        "hero",
+        "landing",
+        "block"
+      ],
+      "docs_url": "https://github.com/mertJF/tailblocks/blob/master/src/blocks/hero/light/f.js",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "subcategory": "hero",
+      "install_method": "copy-paste",
+      "manual_steps": [
+        "Open https://tailblocks.cc, pick \"Hero\" block F, choose colors/theme and click View Code.",
+        "Or copy the raw JSX source from https://raw.githubusercontent.com/mertJF/tailblocks/master/src/blocks/hero/light/f.js"
+      ],
+      "quality": 77
+    },
+    {
+      "id": "tailblocks-layout-footer-a",
+      "name": "Tailblocks Footer A",
+      "source": "Tailblocks",
+      "entry_type": "block",
+      "category": "layout",
+      "description": "Free Tailwind landing block: Footer section variant A (light and dark available).",
+      "use_case": "Structure the page: dividers, footers, headers and empty states.",
+      "search_tags": [
+        "tailblocks",
+        "footer",
+        "landing",
+        "block",
+        "layout"
+      ],
+      "docs_url": "https://github.com/mertJF/tailblocks/blob/master/src/blocks/footer/light/a.js",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "subcategory": "footer",
+      "install_method": "copy-paste",
+      "manual_steps": [
+        "Open https://tailblocks.cc, pick \"Footer\" block A, choose colors/theme and click View Code.",
+        "Or copy the raw JSX source from https://raw.githubusercontent.com/mertJF/tailblocks/master/src/blocks/footer/light/a.js"
+      ],
+      "quality": 77
+    },
+    {
+      "id": "tailblocks-layout-footer-b",
+      "name": "Tailblocks Footer B",
+      "source": "Tailblocks",
+      "entry_type": "block",
+      "category": "layout",
+      "description": "Free Tailwind landing block: Footer section variant B (light and dark available).",
+      "use_case": "Structure the page: dividers, footers, headers and empty states.",
+      "search_tags": [
+        "tailblocks",
+        "footer",
+        "landing",
+        "block",
+        "layout"
+      ],
+      "docs_url": "https://github.com/mertJF/tailblocks/blob/master/src/blocks/footer/light/b.js",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "subcategory": "footer",
+      "install_method": "copy-paste",
+      "manual_steps": [
+        "Open https://tailblocks.cc, pick \"Footer\" block B, choose colors/theme and click View Code.",
+        "Or copy the raw JSX source from https://raw.githubusercontent.com/mertJF/tailblocks/master/src/blocks/footer/light/b.js"
+      ],
+      "quality": 77
+    },
+    {
+      "id": "tailblocks-layout-footer-c",
+      "name": "Tailblocks Footer C",
+      "source": "Tailblocks",
+      "entry_type": "block",
+      "category": "layout",
+      "description": "Free Tailwind landing block: Footer section variant C (light and dark available).",
+      "use_case": "Structure the page: dividers, footers, headers and empty states.",
+      "search_tags": [
+        "tailblocks",
+        "footer",
+        "landing",
+        "block",
+        "layout"
+      ],
+      "docs_url": "https://github.com/mertJF/tailblocks/blob/master/src/blocks/footer/light/c.js",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "subcategory": "footer",
+      "install_method": "copy-paste",
+      "manual_steps": [
+        "Open https://tailblocks.cc, pick \"Footer\" block C, choose colors/theme and click View Code.",
+        "Or copy the raw JSX source from https://raw.githubusercontent.com/mertJF/tailblocks/master/src/blocks/footer/light/c.js"
+      ],
+      "quality": 77
+    },
+    {
+      "id": "tailblocks-layout-footer-d",
+      "name": "Tailblocks Footer D",
+      "source": "Tailblocks",
+      "entry_type": "block",
+      "category": "layout",
+      "description": "Free Tailwind landing block: Footer section variant D (light and dark available).",
+      "use_case": "Structure the page: dividers, footers, headers and empty states.",
+      "search_tags": [
+        "tailblocks",
+        "footer",
+        "landing",
+        "block",
+        "layout"
+      ],
+      "docs_url": "https://github.com/mertJF/tailblocks/blob/master/src/blocks/footer/light/d.js",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "subcategory": "footer",
+      "install_method": "copy-paste",
+      "manual_steps": [
+        "Open https://tailblocks.cc, pick \"Footer\" block D, choose colors/theme and click View Code.",
+        "Or copy the raw JSX source from https://raw.githubusercontent.com/mertJF/tailblocks/master/src/blocks/footer/light/d.js"
+      ],
+      "quality": 77
+    },
+    {
+      "id": "tailblocks-layout-footer-e",
+      "name": "Tailblocks Footer E",
+      "source": "Tailblocks",
+      "entry_type": "block",
+      "category": "layout",
+      "description": "Free Tailwind landing block: Footer section variant E (light and dark available).",
+      "use_case": "Structure the page: dividers, footers, headers and empty states.",
+      "search_tags": [
+        "tailblocks",
+        "footer",
+        "landing",
+        "block",
+        "layout"
+      ],
+      "docs_url": "https://github.com/mertJF/tailblocks/blob/master/src/blocks/footer/light/e.js",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "subcategory": "footer",
+      "install_method": "copy-paste",
+      "manual_steps": [
+        "Open https://tailblocks.cc, pick \"Footer\" block E, choose colors/theme and click View Code.",
+        "Or copy the raw JSX source from https://raw.githubusercontent.com/mertJF/tailblocks/master/src/blocks/footer/light/e.js"
+      ],
+      "quality": 77
+    },
+    {
+      "id": "tailblocks-media-gallery-a",
+      "name": "Tailblocks Gallery A",
+      "source": "Tailblocks",
+      "entry_type": "block",
+      "category": "media",
+      "description": "Free Tailwind landing block: Gallery section variant A (light and dark available).",
+      "use_case": "Display images, video, carousels and device mockups.",
+      "search_tags": [
+        "tailblocks",
+        "gallery",
+        "landing",
+        "block",
+        "media"
+      ],
+      "docs_url": "https://github.com/mertJF/tailblocks/blob/master/src/blocks/gallery/light/a.js",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "subcategory": "gallery",
+      "install_method": "copy-paste",
+      "manual_steps": [
+        "Open https://tailblocks.cc, pick \"Gallery\" block A, choose colors/theme and click View Code.",
+        "Or copy the raw JSX source from https://raw.githubusercontent.com/mertJF/tailblocks/master/src/blocks/gallery/light/a.js"
+      ],
+      "quality": 77
+    },
+    {
+      "id": "tailblocks-media-gallery-b",
+      "name": "Tailblocks Gallery B",
+      "source": "Tailblocks",
+      "entry_type": "block",
+      "category": "media",
+      "description": "Free Tailwind landing block: Gallery section variant B (light and dark available).",
+      "use_case": "Display images, video, carousels and device mockups.",
+      "search_tags": [
+        "tailblocks",
+        "gallery",
+        "landing",
+        "block",
+        "media"
+      ],
+      "docs_url": "https://github.com/mertJF/tailblocks/blob/master/src/blocks/gallery/light/b.js",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "subcategory": "gallery",
+      "install_method": "copy-paste",
+      "manual_steps": [
+        "Open https://tailblocks.cc, pick \"Gallery\" block B, choose colors/theme and click View Code.",
+        "Or copy the raw JSX source from https://raw.githubusercontent.com/mertJF/tailblocks/master/src/blocks/gallery/light/b.js"
+      ],
+      "quality": 77
+    },
+    {
+      "id": "tailblocks-media-gallery-c",
+      "name": "Tailblocks Gallery C",
+      "source": "Tailblocks",
+      "entry_type": "block",
+      "category": "media",
+      "description": "Free Tailwind landing block: Gallery section variant C (light and dark available).",
+      "use_case": "Display images, video, carousels and device mockups.",
+      "search_tags": [
+        "tailblocks",
+        "gallery",
+        "landing",
+        "block",
+        "media"
+      ],
+      "docs_url": "https://github.com/mertJF/tailblocks/blob/master/src/blocks/gallery/light/c.js",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "subcategory": "gallery",
+      "install_method": "copy-paste",
+      "manual_steps": [
+        "Open https://tailblocks.cc, pick \"Gallery\" block C, choose colors/theme and click View Code.",
+        "Or copy the raw JSX source from https://raw.githubusercontent.com/mertJF/tailblocks/master/src/blocks/gallery/light/c.js"
+      ],
+      "quality": 77
+    },
+    {
+      "id": "tailblocks-navigation-header-a",
+      "name": "Tailblocks Header A",
+      "source": "Tailblocks",
+      "entry_type": "block",
+      "category": "navigation",
+      "description": "Free Tailwind landing block: Header section variant A (light and dark available).",
+      "use_case": "Build site and app navigation structures that stay clear at any depth.",
+      "search_tags": [
+        "tailblocks",
+        "header",
+        "landing",
+        "block",
+        "navigation"
+      ],
+      "docs_url": "https://github.com/mertJF/tailblocks/blob/master/src/blocks/header/light/a.js",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "subcategory": "header",
+      "install_method": "copy-paste",
+      "manual_steps": [
+        "Open https://tailblocks.cc, pick \"Header\" block A, choose colors/theme and click View Code.",
+        "Or copy the raw JSX source from https://raw.githubusercontent.com/mertJF/tailblocks/master/src/blocks/header/light/a.js"
+      ],
+      "quality": 77
+    },
+    {
+      "id": "tailblocks-navigation-header-b",
+      "name": "Tailblocks Header B",
+      "source": "Tailblocks",
+      "entry_type": "block",
+      "category": "navigation",
+      "description": "Free Tailwind landing block: Header section variant B (light and dark available).",
+      "use_case": "Build site and app navigation structures that stay clear at any depth.",
+      "search_tags": [
+        "tailblocks",
+        "header",
+        "landing",
+        "block",
+        "navigation"
+      ],
+      "docs_url": "https://github.com/mertJF/tailblocks/blob/master/src/blocks/header/light/b.js",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "subcategory": "header",
+      "install_method": "copy-paste",
+      "manual_steps": [
+        "Open https://tailblocks.cc, pick \"Header\" block B, choose colors/theme and click View Code.",
+        "Or copy the raw JSX source from https://raw.githubusercontent.com/mertJF/tailblocks/master/src/blocks/header/light/b.js"
+      ],
+      "quality": 77
+    },
+    {
+      "id": "tailblocks-navigation-header-c",
+      "name": "Tailblocks Header C",
+      "source": "Tailblocks",
+      "entry_type": "block",
+      "category": "navigation",
+      "description": "Free Tailwind landing block: Header section variant C (light and dark available).",
+      "use_case": "Build site and app navigation structures that stay clear at any depth.",
+      "search_tags": [
+        "tailblocks",
+        "header",
+        "landing",
+        "block",
+        "navigation"
+      ],
+      "docs_url": "https://github.com/mertJF/tailblocks/blob/master/src/blocks/header/light/c.js",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "subcategory": "header",
+      "install_method": "copy-paste",
+      "manual_steps": [
+        "Open https://tailblocks.cc, pick \"Header\" block C, choose colors/theme and click View Code.",
+        "Or copy the raw JSX source from https://raw.githubusercontent.com/mertJF/tailblocks/master/src/blocks/header/light/c.js"
+      ],
+      "quality": 77
+    },
+    {
+      "id": "tailblocks-navigation-header-d",
+      "name": "Tailblocks Header D",
+      "source": "Tailblocks",
+      "entry_type": "block",
+      "category": "navigation",
+      "description": "Free Tailwind landing block: Header section variant D (light and dark available).",
+      "use_case": "Build site and app navigation structures that stay clear at any depth.",
+      "search_tags": [
+        "tailblocks",
+        "header",
+        "landing",
+        "block",
+        "navigation"
+      ],
+      "docs_url": "https://github.com/mertJF/tailblocks/blob/master/src/blocks/header/light/d.js",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "subcategory": "header",
+      "install_method": "copy-paste",
+      "manual_steps": [
+        "Open https://tailblocks.cc, pick \"Header\" block D, choose colors/theme and click View Code.",
+        "Or copy the raw JSX source from https://raw.githubusercontent.com/mertJF/tailblocks/master/src/blocks/header/light/d.js"
+      ],
+      "quality": 77
+    },
+    {
+      "id": "tailblocks-pricing-pricing-a",
+      "name": "Tailblocks Pricing A",
+      "source": "Tailblocks",
+      "entry_type": "block",
+      "category": "pricing",
+      "description": "Free Tailwind landing block: Pricing section variant A (light and dark available).",
+      "use_case": "Present plans and comparisons to drive conversion decisions.",
+      "search_tags": [
+        "tailblocks",
+        "pricing",
+        "landing",
+        "block"
+      ],
+      "docs_url": "https://github.com/mertJF/tailblocks/blob/master/src/blocks/pricing/light/a.js",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "subcategory": "pricing",
+      "install_method": "copy-paste",
+      "manual_steps": [
+        "Open https://tailblocks.cc, pick \"Pricing\" block A, choose colors/theme and click View Code.",
+        "Or copy the raw JSX source from https://raw.githubusercontent.com/mertJF/tailblocks/master/src/blocks/pricing/light/a.js"
+      ],
+      "quality": 77
+    },
+    {
+      "id": "tailblocks-pricing-pricing-b",
+      "name": "Tailblocks Pricing B",
+      "source": "Tailblocks",
+      "entry_type": "block",
+      "category": "pricing",
+      "description": "Free Tailwind landing block: Pricing section variant B (light and dark available).",
+      "use_case": "Present plans and comparisons to drive conversion decisions.",
+      "search_tags": [
+        "tailblocks",
+        "pricing",
+        "landing",
+        "block"
+      ],
+      "docs_url": "https://github.com/mertJF/tailblocks/blob/master/src/blocks/pricing/light/b.js",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "subcategory": "pricing",
+      "install_method": "copy-paste",
+      "manual_steps": [
+        "Open https://tailblocks.cc, pick \"Pricing\" block B, choose colors/theme and click View Code.",
+        "Or copy the raw JSX source from https://raw.githubusercontent.com/mertJF/tailblocks/master/src/blocks/pricing/light/b.js"
+      ],
+      "quality": 77
+    },
+    {
+      "id": "tailblocks-testimonials-testimonial-a",
+      "name": "Tailblocks Testimonial A",
+      "source": "Tailblocks",
+      "entry_type": "block",
+      "category": "testimonials",
+      "description": "Free Tailwind landing block: Testimonial section variant A (light and dark available).",
+      "use_case": "Reinforce trust with social proof from customers and partners.",
+      "search_tags": [
+        "tailblocks",
+        "testimonial",
+        "landing",
+        "block",
+        "testimonials"
+      ],
+      "docs_url": "https://github.com/mertJF/tailblocks/blob/master/src/blocks/testimonial/light/a.js",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "subcategory": "testimonial",
+      "install_method": "copy-paste",
+      "manual_steps": [
+        "Open https://tailblocks.cc, pick \"Testimonial\" block A, choose colors/theme and click View Code.",
+        "Or copy the raw JSX source from https://raw.githubusercontent.com/mertJF/tailblocks/master/src/blocks/testimonial/light/a.js"
+      ],
+      "quality": 77
+    },
+    {
+      "id": "tailblocks-testimonials-testimonial-b",
+      "name": "Tailblocks Testimonial B",
+      "source": "Tailblocks",
+      "entry_type": "block",
+      "category": "testimonials",
+      "description": "Free Tailwind landing block: Testimonial section variant B (light and dark available).",
+      "use_case": "Reinforce trust with social proof from customers and partners.",
+      "search_tags": [
+        "tailblocks",
+        "testimonial",
+        "landing",
+        "block",
+        "testimonials"
+      ],
+      "docs_url": "https://github.com/mertJF/tailblocks/blob/master/src/blocks/testimonial/light/b.js",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "subcategory": "testimonial",
+      "install_method": "copy-paste",
+      "manual_steps": [
+        "Open https://tailblocks.cc, pick \"Testimonial\" block B, choose colors/theme and click View Code.",
+        "Or copy the raw JSX source from https://raw.githubusercontent.com/mertJF/tailblocks/master/src/blocks/testimonial/light/b.js"
+      ],
+      "quality": 77
+    },
+    {
+      "id": "tailblocks-testimonials-testimonial-c",
+      "name": "Tailblocks Testimonial C",
+      "source": "Tailblocks",
+      "entry_type": "block",
+      "category": "testimonials",
+      "description": "Free Tailwind landing block: Testimonial section variant C (light and dark available).",
+      "use_case": "Reinforce trust with social proof from customers and partners.",
+      "search_tags": [
+        "tailblocks",
+        "testimonial",
+        "landing",
+        "block",
+        "testimonials"
+      ],
+      "docs_url": "https://github.com/mertJF/tailblocks/blob/master/src/blocks/testimonial/light/c.js",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "subcategory": "testimonial",
+      "install_method": "copy-paste",
+      "manual_steps": [
+        "Open https://tailblocks.cc, pick \"Testimonial\" block C, choose colors/theme and click View Code.",
+        "Or copy the raw JSX source from https://raw.githubusercontent.com/mertJF/tailblocks/master/src/blocks/testimonial/light/c.js"
+      ],
+      "quality": 77
+    }
+  ]
+}

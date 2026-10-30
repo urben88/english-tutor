@@ -1,0 +1,1005 @@
+{
+  "schema_version": "1.0",
+  "source_id": "dsr",
+  "source_name": "Design Systems Repo",
+  "source_url": "https://designsystemsrepo.ai",
+  "catalog_url": "https://designsystemsrepo.ai/design-systems",
+  "license_summary": "Directory has no declared content license; each indexed system keeps its own",
+  "granularity": "complete (26 design systems)",
+  "extraction": {
+    "channel": "docs-structured",
+    "method": "Single low-frequency GET to the public CMS endpoint; raw payload cached locally, minimal metadata published",
+    "evidence_url": "https://designsystemsrepo.ai/design-systems",
+    "note": "Machine Mode Markdown is the human-facing fallback; do not redistribute the dataset."
+  },
+  "generated_at": "2026-10-02",
+  "entries": [
+    {
+      "id": "dsr-design-system-activecampaign-design-system",
+      "name": "ActiveCampaign Design System",
+      "source": "Design Systems Repo (designsystemsrepo.ai)",
+      "entry_type": "design-system",
+      "category": "design-system",
+      "description": "ActiveCampaign Design System design system by ActiveCampaign.",
+      "use_case": "Reference a full design system for tokens, component guidance, Figma kits and theming before choosing individual components.",
+      "search_tags": [
+        "design-system",
+        "design-systems-repo",
+        "activecampaign",
+        "design",
+        "system",
+        "design-systems-repo-(designsystemsrepo.ai)"
+      ],
+      "docs_url": "https://www.activecampaign.design/docs/patterns/ai",
+      "stack": [
+        "design-tokens"
+      ],
+      "dependencies": [],
+      "license_type": "unknown",
+      "commercial_use": "conditional",
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Licenses are not captured by the directory; verify on the design system site before use."
+      ],
+      "install_method": "reference",
+      "manual_steps": [
+        "Open https://www.activecampaign.design/docs/patterns/ai to read the system documentation and tokens.",
+        "Look for a Figma kit or token export on the system site."
+      ],
+      "limits": "The directory does not expose licenses; each design system keeps its own license.",
+      "extraction_note": "Metadata only (name, company, links, badges); no component code stored. Credit designsystemsrepo.ai (Shift+R, non-profit).",
+      "quality": 37
+    },
+    {
+      "id": "dsr-design-system-ant-design-x",
+      "name": "Ant Design X",
+      "source": "Design Systems Repo (designsystemsrepo.ai)",
+      "entry_type": "design-system",
+      "category": "design-system",
+      "description": "Ant Design X design system by Ant Design.",
+      "use_case": "Reference a full design system for tokens, component guidance, Figma kits and theming before choosing individual components.",
+      "search_tags": [
+        "design-system",
+        "design-systems-repo",
+        "ant",
+        "design",
+        "x",
+        "design-systems-repo-(designsystemsrepo.ai)"
+      ],
+      "docs_url": "https://x.ant.design/",
+      "stack": [
+        "design-tokens"
+      ],
+      "dependencies": [],
+      "license_type": "unknown",
+      "commercial_use": "conditional",
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Licenses are not captured by the directory; verify on the design system site before use.",
+        "Figma kit: https://www.figma.com/community/file/1501193060829090060/ant-design-x-community-design-system-for-ai-products"
+      ],
+      "install_method": "reference",
+      "manual_steps": [
+        "Open https://x.ant.design/ to read the system documentation and tokens.",
+        "Figma kit: https://www.figma.com/community/file/1501193060829090060/ant-design-x-community-design-system-for-ai-products"
+      ],
+      "limits": "The directory does not expose licenses; each design system keeps its own license.",
+      "extraction_note": "Metadata only (name, company, links, badges); no component code stored. Credit designsystemsrepo.ai (Shift+R, non-profit).",
+      "quality": 32
+    },
+    {
+      "id": "dsr-design-system-apps-sdk-ui",
+      "name": "Apps SDK UI (OpenAI)",
+      "source": "Design Systems Repo (designsystemsrepo.ai)",
+      "entry_type": "design-system",
+      "category": "design-system",
+      "description": "Apps SDK UI design system by OpenAI [new].",
+      "use_case": "Reference a full design system for tokens, component guidance, Figma kits and theming before choosing individual components.",
+      "search_tags": [
+        "design-system",
+        "design-systems-repo",
+        "apps",
+        "sdk",
+        "ui",
+        "new",
+        "design-systems-repo-(designsystemsrepo.ai)"
+      ],
+      "docs_url": "https://developers.openai.com/apps-sdk",
+      "stack": [
+        "design-tokens"
+      ],
+      "dependencies": [],
+      "license_type": "unknown",
+      "commercial_use": "conditional",
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Licenses are not captured by the directory; verify on the design system site before use.",
+        "Figma kit: https://www.figma.com/community/file/1560064615791108827/apps-in-chatgpt-components-templates"
+      ],
+      "install_method": "reference",
+      "manual_steps": [
+        "Open https://developers.openai.com/apps-sdk to read the system documentation and tokens.",
+        "Figma kit: https://www.figma.com/community/file/1560064615791108827/apps-in-chatgpt-components-templates"
+      ],
+      "limits": "The directory does not expose licenses; each design system keeps its own license.",
+      "extraction_note": "Metadata only (name, company, links, badges); no component code stored. Credit designsystemsrepo.ai (Shift+R, non-profit).",
+      "quality": 32
+    },
+    {
+      "id": "dsr-design-system-atlassian-design-system",
+      "name": "Atlassian Design System",
+      "source": "Design Systems Repo (designsystemsrepo.ai)",
+      "entry_type": "design-system",
+      "category": "design-system",
+      "description": "Atlassian Design System design system by Atlassian.",
+      "use_case": "Reference a full design system for tokens, component guidance, Figma kits and theming before choosing individual components.",
+      "search_tags": [
+        "design-system",
+        "design-systems-repo",
+        "atlassian",
+        "design",
+        "system",
+        "design-systems-repo-(designsystemsrepo.ai)"
+      ],
+      "docs_url": "https://atlassian.design/patterns/ai-rovo#rovo-brand-and-ai-experiences",
+      "stack": [
+        "design-tokens"
+      ],
+      "dependencies": [],
+      "license_type": "unknown",
+      "commercial_use": "conditional",
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Licenses are not captured by the directory; verify on the design system site before use."
+      ],
+      "install_method": "reference",
+      "manual_steps": [
+        "Open https://atlassian.design/patterns/ai-rovo#rovo-brand-and-ai-experiences to read the system documentation and tokens.",
+        "Look for a Figma kit or token export on the system site."
+      ],
+      "limits": "The directory does not expose licenses; each design system keeps its own license.",
+      "extraction_note": "Metadata only (name, company, links, badges); no component code stored. Credit designsystemsrepo.ai (Shift+R, non-profit).",
+      "quality": 32
+    },
+    {
+      "id": "dsr-design-system-backbase-design-system",
+      "name": "Backbase Design System",
+      "source": "Design Systems Repo (designsystemsrepo.ai)",
+      "entry_type": "design-system",
+      "category": "design-system",
+      "description": "Backbase Design System design system by Backbase.",
+      "use_case": "Reference a full design system for tokens, component guidance, Figma kits and theming before choosing individual components.",
+      "search_tags": [
+        "design-system",
+        "design-systems-repo",
+        "backbase",
+        "design",
+        "system",
+        "design-systems-repo-(designsystemsrepo.ai)"
+      ],
+      "docs_url": "https://designsystem.backbase.com/latest/guides/beta-ui-ang-with-cursor-f9fdjG0s",
+      "stack": [
+        "design-tokens"
+      ],
+      "dependencies": [],
+      "license_type": "unknown",
+      "commercial_use": "conditional",
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Licenses are not captured by the directory; verify on the design system site before use."
+      ],
+      "install_method": "reference",
+      "manual_steps": [
+        "Open https://designsystem.backbase.com/latest/guides/beta-ui-ang-with-cursor-f9fdjG0s to read the system documentation and tokens.",
+        "Look for a Figma kit or token export on the system site."
+      ],
+      "limits": "The directory does not expose licenses; each design system keeps its own license.",
+      "extraction_note": "Metadata only (name, company, links, badges); no component code stored. Credit designsystemsrepo.ai (Shift+R, non-profit).",
+      "quality": 32
+    },
+    {
+      "id": "dsr-design-system-blade-design-system",
+      "name": "Blade Design System (Razorpay)",
+      "source": "Design Systems Repo (designsystemsrepo.ai)",
+      "entry_type": "design-system",
+      "category": "design-system",
+      "description": "Blade Design System design system by Razorpay [mcp-support].",
+      "use_case": "Reference a full design system for tokens, component guidance, Figma kits and theming before choosing individual components.",
+      "search_tags": [
+        "design-system",
+        "design-systems-repo",
+        "blade",
+        "design",
+        "system",
+        "mcp-support",
+        "design-systems-repo-(designsystemsrepo.ai)"
+      ],
+      "docs_url": "https://blade.razorpay.com/?path=/docs/guides-blade-mcp--docs",
+      "stack": [
+        "design-tokens"
+      ],
+      "dependencies": [],
+      "license_type": "unknown",
+      "commercial_use": "conditional",
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Licenses are not captured by the directory; verify on the design system site before use.",
+        "Provides MCP support according to the directory."
+      ],
+      "install_method": "reference",
+      "manual_steps": [
+        "Open https://blade.razorpay.com/?path=/docs/guides-blade-mcp--docs to read the system documentation and tokens.",
+        "Look for a Figma kit or token export on the system site."
+      ],
+      "limits": "The directory does not expose licenses; each design system keeps its own license.",
+      "extraction_note": "Metadata only (name, company, links, badges); no component code stored. Credit designsystemsrepo.ai (Shift+R, non-profit).",
+      "quality": 37
+    },
+    {
+      "id": "dsr-design-system-canvas-design-system",
+      "name": "Canvas Design System (Workday)",
+      "source": "Design Systems Repo (designsystemsrepo.ai)",
+      "entry_type": "design-system",
+      "category": "design-system",
+      "description": "Canvas Design System design system by Workday.",
+      "use_case": "Reference a full design system for tokens, component guidance, Figma kits and theming before choosing individual components.",
+      "search_tags": [
+        "design-system",
+        "design-systems-repo",
+        "canvas",
+        "design",
+        "system",
+        "design-systems-repo-(designsystemsrepo.ai)"
+      ],
+      "docs_url": "https://canvas.workday.com/guidelines/ai-guidance/ai-experience-guidelines",
+      "stack": [
+        "design-tokens"
+      ],
+      "dependencies": [],
+      "license_type": "unknown",
+      "commercial_use": "conditional",
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Licenses are not captured by the directory; verify on the design system site before use."
+      ],
+      "install_method": "reference",
+      "manual_steps": [
+        "Open https://canvas.workday.com/guidelines/ai-guidance/ai-experience-guidelines to read the system documentation and tokens.",
+        "Look for a Figma kit or token export on the system site."
+      ],
+      "limits": "The directory does not expose licenses; each design system keeps its own license.",
+      "extraction_note": "Metadata only (name, company, links, badges); no component code stored. Credit designsystemsrepo.ai (Shift+R, non-profit).",
+      "quality": 32
+    },
+    {
+      "id": "dsr-design-system-carbon-design-system",
+      "name": "Carbon Design System (IBM)",
+      "source": "Design Systems Repo (designsystemsrepo.ai)",
+      "entry_type": "design-system",
+      "category": "design-system",
+      "description": "Carbon Design System design system by IBM.",
+      "use_case": "Reference a full design system for tokens, component guidance, Figma kits and theming before choosing individual components.",
+      "search_tags": [
+        "design-system",
+        "design-systems-repo",
+        "carbon",
+        "design",
+        "system",
+        "design-systems-repo-(designsystemsrepo.ai)"
+      ],
+      "docs_url": "https://carbondesignsystem.com/guidelines/carbon-for-ai/",
+      "stack": [
+        "design-tokens"
+      ],
+      "dependencies": [],
+      "license_type": "unknown",
+      "commercial_use": "conditional",
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Licenses are not captured by the directory; verify on the design system site before use."
+      ],
+      "install_method": "reference",
+      "manual_steps": [
+        "Open https://carbondesignsystem.com/guidelines/carbon-for-ai/ to read the system documentation and tokens.",
+        "Look for a Figma kit or token export on the system site."
+      ],
+      "limits": "The directory does not expose licenses; each design system keeps its own license.",
+      "extraction_note": "Metadata only (name, company, links, badges); no component code stored. Credit designsystemsrepo.ai (Shift+R, non-profit).",
+      "quality": 32
+    },
+    {
+      "id": "dsr-design-system-chakra-ui-pro",
+      "name": "Chakra-UI Pro  (UI kit)",
+      "source": "Design Systems Repo (designsystemsrepo.ai)",
+      "entry_type": "design-system",
+      "category": "design-system",
+      "description": "Chakra-UI Pro design system by UI kit [new, mcp-support].",
+      "use_case": "Reference a full design system for tokens, component guidance, Figma kits and theming before choosing individual components.",
+      "search_tags": [
+        "design-system",
+        "design-systems-repo",
+        "chakra",
+        "ui",
+        "pro",
+        "new",
+        "mcp-support",
+        "design-systems-repo-(designsystemsrepo.ai)"
+      ],
+      "docs_url": "https://pro.chakra-ui.com/blocks/ai",
+      "stack": [
+        "design-tokens"
+      ],
+      "dependencies": [],
+      "license_type": "unknown",
+      "commercial_use": "conditional",
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Licenses are not captured by the directory; verify on the design system site before use.",
+        "Provides MCP support according to the directory."
+      ],
+      "install_method": "reference",
+      "manual_steps": [
+        "Open https://pro.chakra-ui.com/blocks/ai to read the system documentation and tokens.",
+        "Look for a Figma kit or token export on the system site."
+      ],
+      "limits": "The directory does not expose licenses; each design system keeps its own license.",
+      "extraction_note": "Metadata only (name, company, links, badges); no component code stored. Credit designsystemsrepo.ai (Shift+R, non-profit).",
+      "quality": 32
+    },
+    {
+      "id": "dsr-design-system-claude-ai-unofficial",
+      "name": "Claude AI (unofficial) (Anthropic)",
+      "source": "Design Systems Repo (designsystemsrepo.ai)",
+      "entry_type": "design-system",
+      "category": "design-system",
+      "description": "Claude AI (unofficial) design system by Anthropic [new].",
+      "use_case": "Reference a full design system for tokens, component guidance, Figma kits and theming before choosing individual components.",
+      "search_tags": [
+        "design-system",
+        "design-systems-repo",
+        "claude",
+        "ai",
+        "unofficial",
+        "new",
+        "design-systems-repo-(designsystemsrepo.ai)"
+      ],
+      "docs_url": "https://geist.co/work/anthropic",
+      "stack": [
+        "design-tokens"
+      ],
+      "dependencies": [],
+      "license_type": "unknown",
+      "commercial_use": "conditional",
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Licenses are not captured by the directory; verify on the design system site before use.",
+        "Figma kit: https://www.figma.com/community/file/1445575023384366559"
+      ],
+      "install_method": "reference",
+      "manual_steps": [
+        "Open https://geist.co/work/anthropic to read the system documentation and tokens.",
+        "Figma kit: https://www.figma.com/community/file/1445575023384366559"
+      ],
+      "limits": "The directory does not expose licenses; each design system keeps its own license.",
+      "extraction_note": "Metadata only (name, company, links, badges); no component code stored. Credit designsystemsrepo.ai (Shift+R, non-profit).",
+      "quality": 32
+    },
+    {
+      "id": "dsr-design-system-claude-mcp-apps",
+      "name": "Claude MCP Apps (Anthropic)",
+      "source": "Design Systems Repo (designsystemsrepo.ai)",
+      "entry_type": "design-system",
+      "category": "design-system",
+      "description": "Claude MCP Apps design system by Anthropic [new, mcp-support].",
+      "use_case": "Reference a full design system for tokens, component guidance, Figma kits and theming before choosing individual components.",
+      "search_tags": [
+        "design-system",
+        "design-systems-repo",
+        "claude",
+        "mcp",
+        "apps",
+        "new",
+        "mcp-support",
+        "design-systems-repo-(designsystemsrepo.ai)"
+      ],
+      "docs_url": "https://claude.com/blog/interactive-tools-in-claude",
+      "stack": [
+        "design-tokens"
+      ],
+      "dependencies": [],
+      "license_type": "unknown",
+      "commercial_use": "conditional",
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Licenses are not captured by the directory; verify on the design system site before use.",
+        "Figma kit: https://www.figma.com/community/file/1597641111449594397/mcp-apps-for-claude",
+        "Provides MCP support according to the directory."
+      ],
+      "install_method": "reference",
+      "manual_steps": [
+        "Open https://claude.com/blog/interactive-tools-in-claude to read the system documentation and tokens.",
+        "Figma kit: https://www.figma.com/community/file/1597641111449594397/mcp-apps-for-claude"
+      ],
+      "limits": "The directory does not expose licenses; each design system keeps its own license.",
+      "extraction_note": "Metadata only (name, company, links, badges); no component code stored. Credit designsystemsrepo.ai (Shift+R, non-profit).",
+      "quality": 37
+    },
+    {
+      "id": "dsr-design-system-cloudscape-design-system",
+      "name": "Cloudscape Design System (Amazon)",
+      "source": "Design Systems Repo (designsystemsrepo.ai)",
+      "entry_type": "design-system",
+      "category": "design-system",
+      "description": "Cloudscape Design System design system by Amazon.",
+      "use_case": "Reference a full design system for tokens, component guidance, Figma kits and theming before choosing individual components.",
+      "search_tags": [
+        "design-system",
+        "design-systems-repo",
+        "cloudscape",
+        "design",
+        "system",
+        "design-systems-repo-(designsystemsrepo.ai)"
+      ],
+      "docs_url": "https://cloudscape.design/get-started/for-developers/ai-tools-support/",
+      "stack": [
+        "design-tokens"
+      ],
+      "dependencies": [],
+      "license_type": "unknown",
+      "commercial_use": "conditional",
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Licenses are not captured by the directory; verify on the design system site before use.",
+        "Figma kit: https://www.figma.com/community/file/1585292872561164967/cds-component-library-2-0-3"
+      ],
+      "install_method": "reference",
+      "manual_steps": [
+        "Open https://cloudscape.design/get-started/for-developers/ai-tools-support/ to read the system documentation and tokens.",
+        "Figma kit: https://www.figma.com/community/file/1585292872561164967/cds-component-library-2-0-3"
+      ],
+      "limits": "The directory does not expose licenses; each design system keeps its own license.",
+      "extraction_note": "Metadata only (name, company, links, badges); no component code stored. Credit designsystemsrepo.ai (Shift+R, non-profit).",
+      "quality": 32
+    },
+    {
+      "id": "dsr-design-system-content-design-system",
+      "name": "Content Design System (Intuit)",
+      "source": "Design Systems Repo (designsystemsrepo.ai)",
+      "entry_type": "design-system",
+      "category": "design-system",
+      "description": "Content Design System design system by Intuit.",
+      "use_case": "Reference a full design system for tokens, component guidance, Figma kits and theming before choosing individual components.",
+      "search_tags": [
+        "design-system",
+        "design-systems-repo",
+        "content",
+        "design",
+        "system",
+        "design-systems-repo-(designsystemsrepo.ai)"
+      ],
+      "docs_url": "https://contentdesign.intuit.com/ai/",
+      "stack": [
+        "design-tokens"
+      ],
+      "dependencies": [],
+      "license_type": "unknown",
+      "commercial_use": "conditional",
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Licenses are not captured by the directory; verify on the design system site before use."
+      ],
+      "install_method": "reference",
+      "manual_steps": [
+        "Open https://contentdesign.intuit.com/ai/ to read the system documentation and tokens.",
+        "Look for a Figma kit or token export on the system site."
+      ],
+      "limits": "The directory does not expose licenses; each design system keeps its own license.",
+      "extraction_note": "Metadata only (name, company, links, badges); no component code stored. Credit designsystemsrepo.ai (Shift+R, non-profit).",
+      "quality": 32
+    },
+    {
+      "id": "dsr-design-system-dialtone",
+      "name": "Dialtone (Dialpad)",
+      "source": "Design Systems Repo (designsystemsrepo.ai)",
+      "entry_type": "design-system",
+      "category": "design-system",
+      "description": "Dialtone design system by Dialpad [new, mcp-support].",
+      "use_case": "Reference a full design system for tokens, component guidance, Figma kits and theming before choosing individual components.",
+      "search_tags": [
+        "design-system",
+        "design-systems-repo",
+        "dialtone",
+        "new",
+        "mcp-support",
+        "design-systems-repo-(designsystemsrepo.ai)"
+      ],
+      "docs_url": "https://dialtone.dialpad.com/guides/mcp-server/",
+      "stack": [
+        "design-tokens"
+      ],
+      "dependencies": [],
+      "license_type": "unknown",
+      "commercial_use": "conditional",
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Licenses are not captured by the directory; verify on the design system site before use.",
+        "Provides MCP support according to the directory."
+      ],
+      "install_method": "reference",
+      "manual_steps": [
+        "Open https://dialtone.dialpad.com/guides/mcp-server/ to read the system documentation and tokens.",
+        "Look for a Figma kit or token export on the system site."
+      ],
+      "limits": "The directory does not expose licenses; each design system keeps its own license.",
+      "extraction_note": "Metadata only (name, company, links, badges); no component code stored. Credit designsystemsrepo.ai (Shift+R, non-profit).",
+      "quality": 32
+    },
+    {
+      "id": "dsr-design-system-ethos-design-system",
+      "name": "Ethos Design System (GE HealthCare)",
+      "source": "Design Systems Repo (designsystemsrepo.ai)",
+      "entry_type": "design-system",
+      "category": "design-system",
+      "description": "Ethos Design System design system by GE HealthCare.",
+      "use_case": "Reference a full design system for tokens, component guidance, Figma kits and theming before choosing individual components.",
+      "search_tags": [
+        "design-system",
+        "design-systems-repo",
+        "ethos",
+        "design",
+        "system",
+        "design-systems-repo-(designsystemsrepo.ai)"
+      ],
+      "docs_url": "https://www.ethosdesignsystem.com/style-guides/artificial-intelligence",
+      "stack": [
+        "design-tokens"
+      ],
+      "dependencies": [],
+      "license_type": "unknown",
+      "commercial_use": "conditional",
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Licenses are not captured by the directory; verify on the design system site before use."
+      ],
+      "install_method": "reference",
+      "manual_steps": [
+        "Open https://www.ethosdesignsystem.com/style-guides/artificial-intelligence to read the system documentation and tokens.",
+        "Look for a Figma kit or token export on the system site."
+      ],
+      "limits": "The directory does not expose licenses; each design system keeps its own license.",
+      "extraction_note": "Metadata only (name, company, links, badges); no component code stored. Credit designsystemsrepo.ai (Shift+R, non-profit).",
+      "quality": 32
+    },
+    {
+      "id": "dsr-design-system-fury-design-system",
+      "name": "Fury Design System (Mercado Libre)",
+      "source": "Design Systems Repo (designsystemsrepo.ai)",
+      "entry_type": "design-system",
+      "category": "design-system",
+      "description": "Fury Design System design system by Mercado Libre [ai-accessibility].",
+      "use_case": "Reference a full design system for tokens, component guidance, Figma kits and theming before choosing individual components.",
+      "search_tags": [
+        "design-system",
+        "design-systems-repo",
+        "fury",
+        "design",
+        "system",
+        "ai-accessibility",
+        "design-systems-repo-(designsystemsrepo.ai)"
+      ],
+      "docs_url": "https://medium.com/mercadolibre-tech/how-we-are-using-ai-in-mercado-libres-accessibility-team-e960b83283a9",
+      "stack": [
+        "design-tokens"
+      ],
+      "dependencies": [],
+      "license_type": "unknown",
+      "commercial_use": "conditional",
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Licenses are not captured by the directory; verify on the design system site before use."
+      ],
+      "install_method": "reference",
+      "manual_steps": [
+        "Open https://medium.com/mercadolibre-tech/how-we-are-using-ai-in-mercado-libres-accessibility-team-e960b83283a9 to read the system documentation and tokens.",
+        "Look for a Figma kit or token export on the system site."
+      ],
+      "limits": "The directory does not expose licenses; each design system keeps its own license.",
+      "extraction_note": "Metadata only (name, company, links, badges); no component code stored. Credit designsystemsrepo.ai (Shift+R, non-profit).",
+      "quality": 37
+    },
+    {
+      "id": "dsr-design-system-geist-design-system",
+      "name": "Geist Design System (Vercel)",
+      "source": "Design Systems Repo (designsystemsrepo.ai)",
+      "entry_type": "design-system",
+      "category": "design-system",
+      "description": "Geist Design System design system by Vercel.",
+      "use_case": "Reference a full design system for tokens, component guidance, Figma kits and theming before choosing individual components.",
+      "search_tags": [
+        "design-system",
+        "design-systems-repo",
+        "geist",
+        "design",
+        "system",
+        "design-systems-repo-(designsystemsrepo.ai)"
+      ],
+      "docs_url": "https://vercel.com/design",
+      "stack": [
+        "design-tokens"
+      ],
+      "dependencies": [],
+      "license_type": "unknown",
+      "commercial_use": "conditional",
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Licenses are not captured by the directory; verify on the design system site before use.",
+        "Figma kit: https://www.figma.com/community/file/1555856339129556457/ai-elements-vercel"
+      ],
+      "install_method": "reference",
+      "manual_steps": [
+        "Open https://vercel.com/design to read the system documentation and tokens.",
+        "Figma kit: https://www.figma.com/community/file/1555856339129556457/ai-elements-vercel"
+      ],
+      "limits": "The directory does not expose licenses; each design system keeps its own license.",
+      "extraction_note": "Metadata only (name, company, links, badges); no component code stored. Credit designsystemsrepo.ai (Shift+R, non-profit).",
+      "quality": 32
+    },
+    {
+      "id": "dsr-design-system-gemini",
+      "name": "Gemini (Google)",
+      "source": "Design Systems Repo (designsystemsrepo.ai)",
+      "entry_type": "design-system",
+      "category": "design-system",
+      "description": "Gemini design system by Google [new].",
+      "use_case": "Reference a full design system for tokens, component guidance, Figma kits and theming before choosing individual components.",
+      "search_tags": [
+        "design-system",
+        "design-systems-repo",
+        "gemini",
+        "new",
+        "design-systems-repo-(designsystemsrepo.ai)"
+      ],
+      "docs_url": "https://design.google/library/gemini-ai-visual-design",
+      "stack": [
+        "design-tokens"
+      ],
+      "dependencies": [],
+      "license_type": "unknown",
+      "commercial_use": "conditional",
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Licenses are not captured by the directory; verify on the design system site before use."
+      ],
+      "install_method": "reference",
+      "manual_steps": [
+        "Open https://design.google/library/gemini-ai-visual-design to read the system documentation and tokens.",
+        "Look for a Figma kit or token export on the system site."
+      ],
+      "limits": "The directory does not expose licenses; each design system keeps its own license.",
+      "extraction_note": "Metadata only (name, company, links, badges); no component code stored. Credit designsystemsrepo.ai (Shift+R, non-profit).",
+      "quality": 32
+    },
+    {
+      "id": "dsr-design-system-horizon-design-system",
+      "name": "Horizon Design System (ServiceNow)",
+      "source": "Design Systems Repo (designsystemsrepo.ai)",
+      "entry_type": "design-system",
+      "category": "design-system",
+      "description": "Horizon Design System design system by ServiceNow.",
+      "use_case": "Reference a full design system for tokens, component guidance, Figma kits and theming before choosing individual components.",
+      "search_tags": [
+        "design-system",
+        "design-systems-repo",
+        "horizon",
+        "design",
+        "system",
+        "design-systems-repo-(designsystemsrepo.ai)"
+      ],
+      "docs_url": "https://horizon.servicenow.com/getting-started/ai",
+      "stack": [
+        "design-tokens"
+      ],
+      "dependencies": [],
+      "license_type": "unknown",
+      "commercial_use": "conditional",
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Licenses are not captured by the directory; verify on the design system site before use."
+      ],
+      "install_method": "reference",
+      "manual_steps": [
+        "Open https://horizon.servicenow.com/getting-started/ai to read the system documentation and tokens.",
+        "Look for a Figma kit or token export on the system site."
+      ],
+      "limits": "The directory does not expose licenses; each design system keeps its own license.",
+      "extraction_note": "Metadata only (name, company, links, badges); no component code stored. Credit designsystemsrepo.ai (Shift+R, non-profit).",
+      "quality": 32
+    },
+    {
+      "id": "dsr-design-system-lightning-design-system",
+      "name": "Lightning Design System (Salesforce)",
+      "source": "Design Systems Repo (designsystemsrepo.ai)",
+      "entry_type": "design-system",
+      "category": "design-system",
+      "description": "Lightning Design System design system by Salesforce [ai-accessibility].",
+      "use_case": "Reference a full design system for tokens, component guidance, Figma kits and theming before choosing individual components.",
+      "search_tags": [
+        "design-system",
+        "design-systems-repo",
+        "lightning",
+        "design",
+        "system",
+        "ai-accessibility",
+        "design-systems-repo-(designsystemsrepo.ai)"
+      ],
+      "docs_url": "https://www.lightningdesignsystem.com/2e1ef8501/p/52a7c7-ai-and-slds-2",
+      "stack": [
+        "design-tokens"
+      ],
+      "dependencies": [],
+      "license_type": "unknown",
+      "commercial_use": "conditional",
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Licenses are not captured by the directory; verify on the design system site before use.",
+        "Figma kit: https://www.figma.com/community/file/1478970084463860424/slds-2-pattern-agentic-experiences"
+      ],
+      "install_method": "reference",
+      "manual_steps": [
+        "Open https://www.lightningdesignsystem.com/2e1ef8501/p/52a7c7-ai-and-slds-2 to read the system documentation and tokens.",
+        "Figma kit: https://www.figma.com/community/file/1478970084463860424/slds-2-pattern-agentic-experiences"
+      ],
+      "limits": "The directory does not expose licenses; each design system keeps its own license.",
+      "extraction_note": "Metadata only (name, company, links, badges); no component code stored. Credit designsystemsrepo.ai (Shift+R, non-profit).",
+      "quality": 37
+    },
+    {
+      "id": "dsr-design-system-pajamas-design-system",
+      "name": "Pajamas Design System (GitLab)",
+      "source": "Design Systems Repo (designsystemsrepo.ai)",
+      "entry_type": "design-system",
+      "category": "design-system",
+      "description": "Pajamas Design System design system by GitLab.",
+      "use_case": "Reference a full design system for tokens, component guidance, Figma kits and theming before choosing individual components.",
+      "search_tags": [
+        "design-system",
+        "design-systems-repo",
+        "pajamas",
+        "design",
+        "system",
+        "design-systems-repo-(designsystemsrepo.ai)"
+      ],
+      "docs_url": "https://design.gitlab.com/patterns/ai-human-interaction",
+      "stack": [
+        "design-tokens"
+      ],
+      "dependencies": [],
+      "license_type": "unknown",
+      "commercial_use": "conditional",
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Licenses are not captured by the directory; verify on the design system site before use."
+      ],
+      "install_method": "reference",
+      "manual_steps": [
+        "Open https://design.gitlab.com/patterns/ai-human-interaction to read the system documentation and tokens.",
+        "Look for a Figma kit or token export on the system site."
+      ],
+      "limits": "The directory does not expose licenses; each design system keeps its own license.",
+      "extraction_note": "Metadata only (name, company, links, badges); no component code stored. Credit designsystemsrepo.ai (Shift+R, non-profit).",
+      "quality": 32
+    },
+    {
+      "id": "dsr-design-system-patternfly-design-system",
+      "name": "Patternfly Design System (Red Hat)",
+      "source": "Design Systems Repo (designsystemsrepo.ai)",
+      "entry_type": "design-system",
+      "category": "design-system",
+      "description": "Patternfly Design System design system by Red Hat.",
+      "use_case": "Reference a full design system for tokens, component guidance, Figma kits and theming before choosing individual components.",
+      "search_tags": [
+        "design-system",
+        "design-systems-repo",
+        "patternfly",
+        "design",
+        "system",
+        "design-systems-repo-(designsystemsrepo.ai)"
+      ],
+      "docs_url": "https://www.patternfly.org/patternfly-ai/principles-and-guidelines",
+      "stack": [
+        "design-tokens"
+      ],
+      "dependencies": [],
+      "license_type": "unknown",
+      "commercial_use": "conditional",
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Licenses are not captured by the directory; verify on the design system site before use."
+      ],
+      "install_method": "reference",
+      "manual_steps": [
+        "Open https://www.patternfly.org/patternfly-ai/principles-and-guidelines to read the system documentation and tokens.",
+        "Look for a Figma kit or token export on the system site."
+      ],
+      "limits": "The directory does not expose licenses; each design system keeps its own license.",
+      "extraction_note": "Metadata only (name, company, links, badges); no component code stored. Credit designsystemsrepo.ai (Shift+R, non-profit).",
+      "quality": 32
+    },
+    {
+      "id": "dsr-design-system-seeds-design-system",
+      "name": "Seeds Design System (SproutSocial)",
+      "source": "Design Systems Repo (designsystemsrepo.ai)",
+      "entry_type": "design-system",
+      "category": "design-system",
+      "description": "Seeds Design System design system by SproutSocial [mcp-support].",
+      "use_case": "Reference a full design system for tokens, component guidance, Figma kits and theming before choosing individual components.",
+      "search_tags": [
+        "design-system",
+        "design-systems-repo",
+        "seeds",
+        "design",
+        "system",
+        "mcp-support",
+        "design-systems-repo-(designsystemsrepo.ai)"
+      ],
+      "docs_url": "https://seeds.sproutsocial.com/components/mcp-server/",
+      "stack": [
+        "design-tokens"
+      ],
+      "dependencies": [],
+      "license_type": "unknown",
+      "commercial_use": "conditional",
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Licenses are not captured by the directory; verify on the design system site before use.",
+        "Provides MCP support according to the directory."
+      ],
+      "install_method": "reference",
+      "manual_steps": [
+        "Open https://seeds.sproutsocial.com/components/mcp-server/ to read the system documentation and tokens.",
+        "Look for a Figma kit or token export on the system site."
+      ],
+      "limits": "The directory does not expose licenses; each design system keeps its own license.",
+      "extraction_note": "Metadata only (name, company, links, badges); no component code stored. Credit designsystemsrepo.ai (Shift+R, non-profit).",
+      "quality": 37
+    },
+    {
+      "id": "dsr-design-system-shadcn-ui",
+      "name": "Shadcn UI",
+      "source": "Design Systems Repo (designsystemsrepo.ai)",
+      "entry_type": "design-system",
+      "category": "design-system",
+      "description": "Shadcn UI design system by Shadcn [mcp-support].",
+      "use_case": "Reference a full design system for tokens, component guidance, Figma kits and theming before choosing individual components.",
+      "search_tags": [
+        "design-system",
+        "design-systems-repo",
+        "shadcn",
+        "ui",
+        "mcp-support",
+        "design-systems-repo-(designsystemsrepo.ai)"
+      ],
+      "docs_url": "https://ui.shadcn.com/docs/mcp",
+      "stack": [
+        "design-tokens"
+      ],
+      "dependencies": [],
+      "license_type": "unknown",
+      "commercial_use": "conditional",
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Licenses are not captured by the directory; verify on the design system site before use.",
+        "Figma kit: https://shadcnstudio.com/figma",
+        "Provides MCP support according to the directory."
+      ],
+      "install_method": "reference",
+      "manual_steps": [
+        "Open https://ui.shadcn.com/docs/mcp to read the system documentation and tokens.",
+        "Figma kit: https://shadcnstudio.com/figma"
+      ],
+      "limits": "The directory does not expose licenses; each design system keeps its own license.",
+      "extraction_note": "Metadata only (name, company, links, badges); no component code stored. Credit designsystemsrepo.ai (Shift+R, non-profit).",
+      "quality": 32
+    },
+    {
+      "id": "dsr-design-system-soul-design-system",
+      "name": "Soul Design System (Emplifi)",
+      "source": "Design Systems Repo (designsystemsrepo.ai)",
+      "entry_type": "design-system",
+      "category": "design-system",
+      "description": "Soul Design System design system by Emplifi.",
+      "use_case": "Reference a full design system for tokens, component guidance, Figma kits and theming before choosing individual components.",
+      "search_tags": [
+        "design-system",
+        "design-systems-repo",
+        "soul",
+        "design",
+        "system",
+        "design-systems-repo-(designsystemsrepo.ai)"
+      ],
+      "docs_url": "https://soul.emplifi.io/latest/patterns/patterns/ai-guidelines/patterns-oahsQIli",
+      "stack": [
+        "design-tokens"
+      ],
+      "dependencies": [],
+      "license_type": "unknown",
+      "commercial_use": "conditional",
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Licenses are not captured by the directory; verify on the design system site before use."
+      ],
+      "install_method": "reference",
+      "manual_steps": [
+        "Open https://soul.emplifi.io/latest/patterns/patterns/ai-guidelines/patterns-oahsQIli to read the system documentation and tokens.",
+        "Look for a Figma kit or token export on the system site."
+      ],
+      "limits": "The directory does not expose licenses; each design system keeps its own license.",
+      "extraction_note": "Metadata only (name, company, links, badges); no component code stored. Credit designsystemsrepo.ai (Shift+R, non-profit).",
+      "quality": 32
+    },
+    {
+      "id": "dsr-design-system-vibe-design-system",
+      "name": "Vibe Design System (Monday)",
+      "source": "Design Systems Repo (designsystemsrepo.ai)",
+      "entry_type": "design-system",
+      "category": "design-system",
+      "description": "Vibe Design System design system by Monday [mcp-support].",
+      "use_case": "Reference a full design system for tokens, component guidance, Figma kits and theming before choosing individual components.",
+      "search_tags": [
+        "design-system",
+        "design-systems-repo",
+        "vibe",
+        "design",
+        "system",
+        "mcp-support",
+        "design-systems-repo-(designsystemsrepo.ai)"
+      ],
+      "docs_url": "https://vibe.monday.com/?path=/docs/mcp-new--docs",
+      "stack": [
+        "design-tokens"
+      ],
+      "dependencies": [],
+      "license_type": "unknown",
+      "commercial_use": "conditional",
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Licenses are not captured by the directory; verify on the design system site before use.",
+        "Provides MCP support according to the directory."
+      ],
+      "install_method": "reference",
+      "manual_steps": [
+        "Open https://vibe.monday.com/?path=/docs/mcp-new--docs to read the system documentation and tokens.",
+        "Look for a Figma kit or token export on the system site."
+      ],
+      "limits": "The directory does not expose licenses; each design system keeps its own license.",
+      "extraction_note": "Metadata only (name, company, links, badges); no component code stored. Credit designsystemsrepo.ai (Shift+R, non-profit).",
+      "quality": 32
+    }
+  ]
+}

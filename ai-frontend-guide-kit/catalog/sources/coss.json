@@ -1,0 +1,2592 @@
+{
+  "schema_version": "1.0",
+  "source_id": "coss",
+  "source_name": "coss ui / Origin UI",
+  "source_url": "https://coss.com/ui",
+  "catalog_url": "https://coss.com/ui",
+  "license_summary": "MIT for component directories (apps/ui and apps/origin); AGPL elsewhere in the repo",
+  "granularity": "coss ui complete; legacy Origin indexed at base-component level (30 categories, ~604 variants upstream)",
+  "extraction": {
+    "channel": "registry-json",
+    "method": "Node script downloading the coss registry and probing legacy Origin registry items",
+    "evidence_url": "https://coss.com/ui/r/registry.json"
+  },
+  "generated_at": "2026-10-02",
+  "entries": [
+    {
+      "id": "coss-data-display-avatar",
+      "name": "coss ui Avatar",
+      "source": "coss ui",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Avatar primitive from coss ui (formerly Origin UI), built on Base UI.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "coss",
+        "origin-ui",
+        "base-ui",
+        "avatar",
+        "data-display",
+        "coss-ui"
+      ],
+      "docs_url": "https://coss.com/ui/docs/components/avatar",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "registry_url": "https://coss.com/ui/r/avatar.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @coss/avatar",
+      "extraction_note": "MIT applies to the component directories (apps/ui, apps/origin); the rest of the coss repo is AGPL.",
+      "quality": 90
+    },
+    {
+      "id": "coss-data-display-badge",
+      "name": "coss ui Badge",
+      "source": "coss ui",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Badge primitive from coss ui (formerly Origin UI), built on Base UI.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "coss",
+        "origin-ui",
+        "base-ui",
+        "badge",
+        "data-display",
+        "coss-ui"
+      ],
+      "docs_url": "https://coss.com/ui/docs/components/badge",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "registry_url": "https://coss.com/ui/r/badge.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @coss/badge",
+      "extraction_note": "MIT applies to the component directories (apps/ui, apps/origin); the rest of the coss repo is AGPL.",
+      "quality": 90
+    },
+    {
+      "id": "coss-data-display-card",
+      "name": "coss ui Card",
+      "source": "coss ui",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Card primitive from coss ui (formerly Origin UI), built on Base UI.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "coss",
+        "origin-ui",
+        "base-ui",
+        "card",
+        "data-display",
+        "coss-ui"
+      ],
+      "docs_url": "https://coss.com/ui/docs/components/card",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "registry_url": "https://coss.com/ui/r/card.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @coss/card",
+      "extraction_note": "MIT applies to the component directories (apps/ui, apps/origin); the rest of the coss repo is AGPL.",
+      "quality": 90
+    },
+    {
+      "id": "coss-data-display-kbd",
+      "name": "coss ui Kbd",
+      "source": "coss ui",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Kbd primitive from coss ui (formerly Origin UI), built on Base UI.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "coss",
+        "origin-ui",
+        "base-ui",
+        "kbd",
+        "data-display",
+        "coss-ui"
+      ],
+      "docs_url": "https://coss.com/ui/docs/components/kbd",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "registry_url": "https://coss.com/ui/r/kbd.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @coss/kbd",
+      "extraction_note": "MIT applies to the component directories (apps/ui, apps/origin); the rest of the coss repo is AGPL.",
+      "quality": 90
+    },
+    {
+      "id": "coss-data-display-table",
+      "name": "coss ui Table",
+      "source": "coss ui",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Table primitive from coss ui (formerly Origin UI), built on Base UI.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "coss",
+        "origin-ui",
+        "base-ui",
+        "table",
+        "data-display",
+        "coss-ui"
+      ],
+      "docs_url": "https://coss.com/ui/docs/components/table",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "registry_url": "https://coss.com/ui/r/table.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @coss/table",
+      "extraction_note": "MIT applies to the component directories (apps/ui, apps/origin); the rest of the coss repo is AGPL.",
+      "quality": 90
+    },
+    {
+      "id": "coss-feedback-alert",
+      "name": "coss ui Alert",
+      "source": "coss ui",
+      "entry_type": "component",
+      "category": "feedback",
+      "description": "Alert primitive from coss ui (formerly Origin UI), built on Base UI.",
+      "use_case": "Communicate system status: alerts, loaders, progress and notifications.",
+      "search_tags": [
+        "coss",
+        "origin-ui",
+        "base-ui",
+        "alert",
+        "feedback",
+        "coss-ui"
+      ],
+      "docs_url": "https://coss.com/ui/docs/components/alert",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "registry_url": "https://coss.com/ui/r/alert.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @coss/alert",
+      "extraction_note": "MIT applies to the component directories (apps/ui, apps/origin); the rest of the coss repo is AGPL.",
+      "quality": 90
+    },
+    {
+      "id": "coss-feedback-progress",
+      "name": "coss ui Progress",
+      "source": "coss ui",
+      "entry_type": "component",
+      "category": "feedback",
+      "description": "Progress primitive from coss ui (formerly Origin UI), built on Base UI.",
+      "use_case": "Communicate system status: alerts, loaders, progress and notifications.",
+      "search_tags": [
+        "coss",
+        "origin-ui",
+        "base-ui",
+        "progress",
+        "feedback",
+        "coss-ui"
+      ],
+      "docs_url": "https://coss.com/ui/docs/components/progress",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "registry_url": "https://coss.com/ui/r/progress.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @coss/progress",
+      "extraction_note": "MIT applies to the component directories (apps/ui, apps/origin); the rest of the coss repo is AGPL.",
+      "quality": 90
+    },
+    {
+      "id": "coss-feedback-skeleton",
+      "name": "coss ui Skeleton",
+      "source": "coss ui",
+      "entry_type": "component",
+      "category": "feedback",
+      "description": "Skeleton primitive from coss ui (formerly Origin UI), built on Base UI.",
+      "use_case": "Communicate system status: alerts, loaders, progress and notifications.",
+      "search_tags": [
+        "coss",
+        "origin-ui",
+        "base-ui",
+        "skeleton",
+        "feedback",
+        "coss-ui"
+      ],
+      "docs_url": "https://coss.com/ui/docs/components/skeleton",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "registry_url": "https://coss.com/ui/r/skeleton.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @coss/skeleton",
+      "extraction_note": "MIT applies to the component directories (apps/ui, apps/origin); the rest of the coss repo is AGPL.",
+      "quality": 90
+    },
+    {
+      "id": "coss-feedback-spinner",
+      "name": "coss ui Spinner",
+      "source": "coss ui",
+      "entry_type": "component",
+      "category": "feedback",
+      "description": "Spinner primitive from coss ui (formerly Origin UI), built on Base UI.",
+      "use_case": "Communicate system status: alerts, loaders, progress and notifications.",
+      "search_tags": [
+        "coss",
+        "origin-ui",
+        "base-ui",
+        "spinner",
+        "feedback",
+        "coss-ui"
+      ],
+      "docs_url": "https://coss.com/ui/docs/components/spinner",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "registry_url": "https://coss.com/ui/r/spinner.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @coss/spinner",
+      "extraction_note": "MIT applies to the component directories (apps/ui, apps/origin); the rest of the coss repo is AGPL.",
+      "quality": 90
+    },
+    {
+      "id": "coss-feedback-toast",
+      "name": "coss ui Toast",
+      "source": "coss ui",
+      "entry_type": "component",
+      "category": "feedback",
+      "description": "Toast primitive from coss ui (formerly Origin UI), built on Base UI.",
+      "use_case": "Communicate system status: alerts, loaders, progress and notifications.",
+      "search_tags": [
+        "coss",
+        "origin-ui",
+        "base-ui",
+        "toast",
+        "feedback",
+        "coss-ui"
+      ],
+      "docs_url": "https://coss.com/ui/docs/components/toast",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "registry_url": "https://coss.com/ui/r/toast.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @coss/toast",
+      "extraction_note": "MIT applies to the component directories (apps/ui, apps/origin); the rest of the coss repo is AGPL.",
+      "quality": 90
+    },
+    {
+      "id": "coss-feedback-tooltip",
+      "name": "coss ui Tooltip",
+      "source": "coss ui",
+      "entry_type": "component",
+      "category": "feedback",
+      "description": "Tooltip primitive from coss ui (formerly Origin UI), built on Base UI.",
+      "use_case": "Communicate system status: alerts, loaders, progress and notifications.",
+      "search_tags": [
+        "coss",
+        "origin-ui",
+        "base-ui",
+        "tooltip",
+        "feedback",
+        "coss-ui"
+      ],
+      "docs_url": "https://coss.com/ui/docs/components/tooltip",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "registry_url": "https://coss.com/ui/r/tooltip.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @coss/tooltip",
+      "extraction_note": "MIT applies to the component directories (apps/ui, apps/origin); the rest of the coss repo is AGPL.",
+      "quality": 90
+    },
+    {
+      "id": "coss-forms-calendar",
+      "name": "coss ui Calendar",
+      "source": "coss ui",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Calendar primitive from coss ui (formerly Origin UI), built on Base UI.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "coss",
+        "origin-ui",
+        "base-ui",
+        "calendar",
+        "forms",
+        "coss-ui"
+      ],
+      "docs_url": "https://coss.com/ui/docs/components/calendar",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "@daypicker/react",
+        "lucide-react",
+        "@base-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "registry_url": "https://coss.com/ui/r/calendar.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @coss/calendar",
+      "extraction_note": "MIT applies to the component directories (apps/ui, apps/origin); the rest of the coss repo is AGPL.",
+      "quality": 87
+    },
+    {
+      "id": "coss-forms-checkbox",
+      "name": "coss ui Checkbox",
+      "source": "coss ui",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Checkbox primitive from coss ui (formerly Origin UI), built on Base UI.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "coss",
+        "origin-ui",
+        "base-ui",
+        "checkbox",
+        "forms",
+        "coss-ui"
+      ],
+      "docs_url": "https://coss.com/ui/docs/components/checkbox",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "registry_url": "https://coss.com/ui/r/checkbox.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @coss/checkbox",
+      "extraction_note": "MIT applies to the component directories (apps/ui, apps/origin); the rest of the coss repo is AGPL.",
+      "quality": 90
+    },
+    {
+      "id": "coss-forms-checkbox-group",
+      "name": "coss ui Checkbox Group",
+      "source": "coss ui",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Checkbox Group primitive from coss ui (formerly Origin UI), built on Base UI.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "coss",
+        "origin-ui",
+        "base-ui",
+        "checkbox",
+        "group",
+        "forms",
+        "coss-ui"
+      ],
+      "docs_url": "https://coss.com/ui/docs/components/checkbox-group",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "registry_url": "https://coss.com/ui/r/checkbox-group.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @coss/checkbox-group",
+      "extraction_note": "MIT applies to the component directories (apps/ui, apps/origin); the rest of the coss repo is AGPL.",
+      "quality": 90
+    },
+    {
+      "id": "coss-forms-combobox",
+      "name": "coss ui Combobox",
+      "source": "coss ui",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Combobox primitive from coss ui (formerly Origin UI), built on Base UI.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "coss",
+        "origin-ui",
+        "base-ui",
+        "combobox",
+        "forms",
+        "coss-ui"
+      ],
+      "docs_url": "https://coss.com/ui/docs/components/combobox",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "registry_url": "https://coss.com/ui/r/combobox.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @coss/combobox",
+      "extraction_note": "MIT applies to the component directories (apps/ui, apps/origin); the rest of the coss repo is AGPL.",
+      "quality": 90
+    },
+    {
+      "id": "coss-forms-field",
+      "name": "coss ui Field",
+      "source": "coss ui",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Field primitive from coss ui (formerly Origin UI), built on Base UI.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "coss",
+        "origin-ui",
+        "base-ui",
+        "field",
+        "forms",
+        "coss-ui"
+      ],
+      "docs_url": "https://coss.com/ui/docs/components/field",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "registry_url": "https://coss.com/ui/r/field.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @coss/field",
+      "extraction_note": "MIT applies to the component directories (apps/ui, apps/origin); the rest of the coss repo is AGPL.",
+      "quality": 90
+    },
+    {
+      "id": "coss-forms-fieldset",
+      "name": "coss ui Fieldset",
+      "source": "coss ui",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Fieldset primitive from coss ui (formerly Origin UI), built on Base UI.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "coss",
+        "origin-ui",
+        "base-ui",
+        "fieldset",
+        "forms",
+        "coss-ui"
+      ],
+      "docs_url": "https://coss.com/ui/docs/components/fieldset",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "registry_url": "https://coss.com/ui/r/fieldset.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @coss/fieldset",
+      "extraction_note": "MIT applies to the component directories (apps/ui, apps/origin); the rest of the coss repo is AGPL.",
+      "quality": 90
+    },
+    {
+      "id": "coss-forms-form",
+      "name": "coss ui Form",
+      "source": "coss ui",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Form primitive from coss ui (formerly Origin UI), built on Base UI.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "coss",
+        "origin-ui",
+        "base-ui",
+        "form",
+        "forms",
+        "coss-ui"
+      ],
+      "docs_url": "https://coss.com/ui/docs/components/form",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "registry_url": "https://coss.com/ui/r/form.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @coss/form",
+      "extraction_note": "MIT applies to the component directories (apps/ui, apps/origin); the rest of the coss repo is AGPL.",
+      "quality": 90
+    },
+    {
+      "id": "coss-forms-input",
+      "name": "coss ui Input",
+      "source": "coss ui",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Input primitive from coss ui (formerly Origin UI), built on Base UI.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "coss",
+        "origin-ui",
+        "base-ui",
+        "input",
+        "forms",
+        "coss-ui"
+      ],
+      "docs_url": "https://coss.com/ui/docs/components/input",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "registry_url": "https://coss.com/ui/r/input.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @coss/input",
+      "extraction_note": "MIT applies to the component directories (apps/ui, apps/origin); the rest of the coss repo is AGPL.",
+      "quality": 90
+    },
+    {
+      "id": "coss-forms-input-group",
+      "name": "coss ui Input Group",
+      "source": "coss ui",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Input Group primitive from coss ui (formerly Origin UI), built on Base UI.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "coss",
+        "origin-ui",
+        "base-ui",
+        "input",
+        "group",
+        "forms",
+        "coss-ui"
+      ],
+      "docs_url": "https://coss.com/ui/docs/components/input-group",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "registry_url": "https://coss.com/ui/r/input-group.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @coss/input-group",
+      "extraction_note": "MIT applies to the component directories (apps/ui, apps/origin); the rest of the coss repo is AGPL.",
+      "quality": 90
+    },
+    {
+      "id": "coss-forms-label",
+      "name": "coss ui Label",
+      "source": "coss ui",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Label primitive from coss ui (formerly Origin UI), built on Base UI.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "coss",
+        "origin-ui",
+        "base-ui",
+        "label",
+        "forms",
+        "coss-ui"
+      ],
+      "docs_url": "https://coss.com/ui/docs/components/label",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "registry_url": "https://coss.com/ui/r/label.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @coss/label",
+      "extraction_note": "MIT applies to the component directories (apps/ui, apps/origin); the rest of the coss repo is AGPL.",
+      "quality": 90
+    },
+    {
+      "id": "coss-forms-number-field",
+      "name": "coss ui Number Field",
+      "source": "coss ui",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Number Field primitive from coss ui (formerly Origin UI), built on Base UI.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "coss",
+        "origin-ui",
+        "base-ui",
+        "number",
+        "field",
+        "forms",
+        "coss-ui"
+      ],
+      "docs_url": "https://coss.com/ui/docs/components/number-field",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "registry_url": "https://coss.com/ui/r/number-field.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @coss/number-field",
+      "extraction_note": "MIT applies to the component directories (apps/ui, apps/origin); the rest of the coss repo is AGPL.",
+      "quality": 90
+    },
+    {
+      "id": "coss-forms-otp-field",
+      "name": "coss ui Otp Field",
+      "source": "coss ui",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Otp Field primitive from coss ui (formerly Origin UI), built on Base UI.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "coss",
+        "origin-ui",
+        "base-ui",
+        "otp",
+        "field",
+        "forms",
+        "coss-ui"
+      ],
+      "docs_url": "https://coss.com/ui/docs/components/otp-field",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "registry_url": "https://coss.com/ui/r/otp-field.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @coss/otp-field",
+      "extraction_note": "MIT applies to the component directories (apps/ui, apps/origin); the rest of the coss repo is AGPL.",
+      "quality": 90
+    },
+    {
+      "id": "coss-forms-radio-group",
+      "name": "coss ui Radio Group",
+      "source": "coss ui",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Radio Group primitive from coss ui (formerly Origin UI), built on Base UI.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "coss",
+        "origin-ui",
+        "base-ui",
+        "radio",
+        "group",
+        "forms",
+        "coss-ui"
+      ],
+      "docs_url": "https://coss.com/ui/docs/components/radio-group",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "registry_url": "https://coss.com/ui/r/radio-group.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @coss/radio-group",
+      "extraction_note": "MIT applies to the component directories (apps/ui, apps/origin); the rest of the coss repo is AGPL.",
+      "quality": 90
+    },
+    {
+      "id": "coss-forms-select",
+      "name": "coss ui Select",
+      "source": "coss ui",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Select primitive from coss ui (formerly Origin UI), built on Base UI.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "coss",
+        "origin-ui",
+        "base-ui",
+        "select",
+        "forms",
+        "coss-ui"
+      ],
+      "docs_url": "https://coss.com/ui/docs/components/select",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "registry_url": "https://coss.com/ui/r/select.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @coss/select",
+      "extraction_note": "MIT applies to the component directories (apps/ui, apps/origin); the rest of the coss repo is AGPL.",
+      "quality": 90
+    },
+    {
+      "id": "coss-forms-slider",
+      "name": "coss ui Slider",
+      "source": "coss ui",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Slider primitive from coss ui (formerly Origin UI), built on Base UI.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "coss",
+        "origin-ui",
+        "base-ui",
+        "slider",
+        "forms",
+        "coss-ui"
+      ],
+      "docs_url": "https://coss.com/ui/docs/components/slider",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "registry_url": "https://coss.com/ui/r/slider.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @coss/slider",
+      "extraction_note": "MIT applies to the component directories (apps/ui, apps/origin); the rest of the coss repo is AGPL.",
+      "quality": 90
+    },
+    {
+      "id": "coss-forms-switch",
+      "name": "coss ui Switch",
+      "source": "coss ui",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Switch primitive from coss ui (formerly Origin UI), built on Base UI.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "coss",
+        "origin-ui",
+        "base-ui",
+        "switch",
+        "forms",
+        "coss-ui"
+      ],
+      "docs_url": "https://coss.com/ui/docs/components/switch",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "registry_url": "https://coss.com/ui/r/switch.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @coss/switch",
+      "extraction_note": "MIT applies to the component directories (apps/ui, apps/origin); the rest of the coss repo is AGPL.",
+      "quality": 90
+    },
+    {
+      "id": "coss-forms-textarea",
+      "name": "coss ui Textarea",
+      "source": "coss ui",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Textarea primitive from coss ui (formerly Origin UI), built on Base UI.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "coss",
+        "origin-ui",
+        "base-ui",
+        "textarea",
+        "forms",
+        "coss-ui"
+      ],
+      "docs_url": "https://coss.com/ui/docs/components/textarea",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "registry_url": "https://coss.com/ui/r/textarea.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @coss/textarea",
+      "extraction_note": "MIT applies to the component directories (apps/ui, apps/origin); the rest of the coss repo is AGPL.",
+      "quality": 90
+    },
+    {
+      "id": "coss-forms-toggle",
+      "name": "coss ui Toggle",
+      "source": "coss ui",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Toggle primitive from coss ui (formerly Origin UI), built on Base UI.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "coss",
+        "origin-ui",
+        "base-ui",
+        "toggle",
+        "forms",
+        "coss-ui"
+      ],
+      "docs_url": "https://coss.com/ui/docs/components/toggle",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "registry_url": "https://coss.com/ui/r/toggle.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @coss/toggle",
+      "extraction_note": "MIT applies to the component directories (apps/ui, apps/origin); the rest of the coss repo is AGPL.",
+      "quality": 90
+    },
+    {
+      "id": "coss-forms-toggle-group",
+      "name": "coss ui Toggle Group",
+      "source": "coss ui",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Toggle Group primitive from coss ui (formerly Origin UI), built on Base UI.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "coss",
+        "origin-ui",
+        "base-ui",
+        "toggle",
+        "group",
+        "forms",
+        "coss-ui"
+      ],
+      "docs_url": "https://coss.com/ui/docs/components/toggle-group",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "registry_url": "https://coss.com/ui/r/toggle-group.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @coss/toggle-group",
+      "extraction_note": "MIT applies to the component directories (apps/ui, apps/origin); the rest of the coss repo is AGPL.",
+      "quality": 90
+    },
+    {
+      "id": "coss-layout-empty",
+      "name": "coss ui Empty",
+      "source": "coss ui",
+      "entry_type": "component",
+      "category": "layout",
+      "description": "Empty primitive from coss ui (formerly Origin UI), built on Base UI.",
+      "use_case": "Structure the page: dividers, footers, headers and empty states.",
+      "search_tags": [
+        "coss",
+        "origin-ui",
+        "base-ui",
+        "empty",
+        "layout",
+        "coss-ui"
+      ],
+      "docs_url": "https://coss.com/ui/docs/components/empty",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "registry_url": "https://coss.com/ui/r/empty.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @coss/empty",
+      "extraction_note": "MIT applies to the component directories (apps/ui, apps/origin); the rest of the coss repo is AGPL.",
+      "quality": 90
+    },
+    {
+      "id": "coss-layout-scroll-area",
+      "name": "coss ui Scroll Area",
+      "source": "coss ui",
+      "entry_type": "component",
+      "category": "layout",
+      "description": "Scroll Area primitive from coss ui (formerly Origin UI), built on Base UI.",
+      "use_case": "Structure the page: dividers, footers, headers and empty states.",
+      "search_tags": [
+        "coss",
+        "origin-ui",
+        "base-ui",
+        "scroll",
+        "area",
+        "layout",
+        "coss-ui"
+      ],
+      "docs_url": "https://coss.com/ui/docs/components/scroll-area",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "registry_url": "https://coss.com/ui/r/scroll-area.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @coss/scroll-area",
+      "extraction_note": "MIT applies to the component directories (apps/ui, apps/origin); the rest of the coss repo is AGPL.",
+      "quality": 90
+    },
+    {
+      "id": "coss-layout-separator",
+      "name": "coss ui Separator",
+      "source": "coss ui",
+      "entry_type": "component",
+      "category": "layout",
+      "description": "Separator primitive from coss ui (formerly Origin UI), built on Base UI.",
+      "use_case": "Structure the page: dividers, footers, headers and empty states.",
+      "search_tags": [
+        "coss",
+        "origin-ui",
+        "base-ui",
+        "separator",
+        "layout",
+        "coss-ui"
+      ],
+      "docs_url": "https://coss.com/ui/docs/components/separator",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "registry_url": "https://coss.com/ui/r/separator.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @coss/separator",
+      "extraction_note": "MIT applies to the component directories (apps/ui, apps/origin); the rest of the coss repo is AGPL.",
+      "quality": 90
+    },
+    {
+      "id": "coss-micro-interactions-accordion",
+      "name": "coss ui Accordion",
+      "source": "coss ui",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "Accordion primitive from coss ui (formerly Origin UI), built on Base UI.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "coss",
+        "origin-ui",
+        "base-ui",
+        "accordion",
+        "micro-interactions",
+        "coss-ui"
+      ],
+      "docs_url": "https://coss.com/ui/docs/components/accordion",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "registry_url": "https://coss.com/ui/r/accordion.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @coss/accordion",
+      "extraction_note": "MIT applies to the component directories (apps/ui, apps/origin); the rest of the coss repo is AGPL.",
+      "quality": 90
+    },
+    {
+      "id": "coss-micro-interactions-autocomplete",
+      "name": "coss ui Autocomplete",
+      "source": "coss ui",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "Autocomplete primitive from coss ui (formerly Origin UI), built on Base UI.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "coss",
+        "origin-ui",
+        "base-ui",
+        "autocomplete",
+        "micro-interactions",
+        "coss-ui"
+      ],
+      "docs_url": "https://coss.com/ui/docs/components/autocomplete",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "registry_url": "https://coss.com/ui/r/autocomplete.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @coss/autocomplete",
+      "extraction_note": "MIT applies to the component directories (apps/ui, apps/origin); the rest of the coss repo is AGPL.",
+      "quality": 90
+    },
+    {
+      "id": "coss-micro-interactions-button",
+      "name": "coss ui Button",
+      "source": "coss ui",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "Button primitive from coss ui (formerly Origin UI), built on Base UI.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "coss",
+        "origin-ui",
+        "base-ui",
+        "button",
+        "micro-interactions",
+        "coss-ui"
+      ],
+      "docs_url": "https://coss.com/ui/docs/components/button",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "registry_url": "https://coss.com/ui/r/button.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @coss/button",
+      "extraction_note": "MIT applies to the component directories (apps/ui, apps/origin); the rest of the coss repo is AGPL.",
+      "quality": 90
+    },
+    {
+      "id": "coss-micro-interactions-collapsible",
+      "name": "coss ui Collapsible",
+      "source": "coss ui",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "Collapsible primitive from coss ui (formerly Origin UI), built on Base UI.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "coss",
+        "origin-ui",
+        "base-ui",
+        "collapsible",
+        "micro-interactions",
+        "coss-ui"
+      ],
+      "docs_url": "https://coss.com/ui/docs/components/collapsible",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "registry_url": "https://coss.com/ui/r/collapsible.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @coss/collapsible",
+      "extraction_note": "MIT applies to the component directories (apps/ui, apps/origin); the rest of the coss repo is AGPL.",
+      "quality": 90
+    },
+    {
+      "id": "coss-micro-interactions-fonts",
+      "name": "coss ui Fonts",
+      "source": "coss ui",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "Fonts primitive from coss ui (formerly Origin UI), built on Base UI.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "coss",
+        "origin-ui",
+        "base-ui",
+        "fonts",
+        "micro-interactions",
+        "coss-ui"
+      ],
+      "docs_url": "https://coss.com/ui/docs/components/fonts",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "registry_url": "https://coss.com/ui/r/fonts.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @coss/fonts",
+      "extraction_note": "MIT applies to the component directories (apps/ui, apps/origin); the rest of the coss repo is AGPL.",
+      "quality": 90
+    },
+    {
+      "id": "coss-micro-interactions-frame",
+      "name": "coss ui Frame",
+      "source": "coss ui",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "Frame primitive from coss ui (formerly Origin UI), built on Base UI.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "coss",
+        "origin-ui",
+        "base-ui",
+        "frame",
+        "micro-interactions",
+        "coss-ui"
+      ],
+      "docs_url": "https://coss.com/ui/docs/components/frame",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "registry_url": "https://coss.com/ui/r/frame.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @coss/frame",
+      "extraction_note": "MIT applies to the component directories (apps/ui, apps/origin); the rest of the coss repo is AGPL.",
+      "quality": 90
+    },
+    {
+      "id": "coss-micro-interactions-group",
+      "name": "coss ui Group",
+      "source": "coss ui",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "Group primitive from coss ui (formerly Origin UI), built on Base UI.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "coss",
+        "origin-ui",
+        "base-ui",
+        "group",
+        "micro-interactions",
+        "coss-ui"
+      ],
+      "docs_url": "https://coss.com/ui/docs/components/group",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "registry_url": "https://coss.com/ui/r/group.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @coss/group",
+      "extraction_note": "MIT applies to the component directories (apps/ui, apps/origin); the rest of the coss repo is AGPL.",
+      "quality": 90
+    },
+    {
+      "id": "coss-micro-interactions-meter",
+      "name": "coss ui Meter",
+      "source": "coss ui",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "Meter primitive from coss ui (formerly Origin UI), built on Base UI.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "coss",
+        "origin-ui",
+        "base-ui",
+        "meter",
+        "micro-interactions",
+        "coss-ui"
+      ],
+      "docs_url": "https://coss.com/ui/docs/components/meter",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "registry_url": "https://coss.com/ui/r/meter.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @coss/meter",
+      "extraction_note": "MIT applies to the component directories (apps/ui, apps/origin); the rest of the coss repo is AGPL.",
+      "quality": 90
+    },
+    {
+      "id": "coss-micro-interactions-preview-card",
+      "name": "coss ui Preview Card",
+      "source": "coss ui",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "Preview Card primitive from coss ui (formerly Origin UI), built on Base UI.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "coss",
+        "origin-ui",
+        "base-ui",
+        "preview",
+        "card",
+        "micro-interactions",
+        "coss-ui"
+      ],
+      "docs_url": "https://coss.com/ui/docs/components/preview-card",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "registry_url": "https://coss.com/ui/r/preview-card.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @coss/preview-card",
+      "extraction_note": "MIT applies to the component directories (apps/ui, apps/origin); the rest of the coss repo is AGPL.",
+      "quality": 90
+    },
+    {
+      "id": "coss-micro-interactions-toolbar",
+      "name": "coss ui Toolbar",
+      "source": "coss ui",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "Toolbar primitive from coss ui (formerly Origin UI), built on Base UI.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "coss",
+        "origin-ui",
+        "base-ui",
+        "toolbar",
+        "micro-interactions",
+        "coss-ui"
+      ],
+      "docs_url": "https://coss.com/ui/docs/components/toolbar",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "registry_url": "https://coss.com/ui/r/toolbar.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @coss/toolbar",
+      "extraction_note": "MIT applies to the component directories (apps/ui, apps/origin); the rest of the coss repo is AGPL.",
+      "quality": 90
+    },
+    {
+      "id": "coss-navigation-breadcrumb",
+      "name": "coss ui Breadcrumb",
+      "source": "coss ui",
+      "entry_type": "component",
+      "category": "navigation",
+      "description": "Breadcrumb primitive from coss ui (formerly Origin UI), built on Base UI.",
+      "use_case": "Build site and app navigation structures that stay clear at any depth.",
+      "search_tags": [
+        "coss",
+        "origin-ui",
+        "base-ui",
+        "breadcrumb",
+        "navigation",
+        "coss-ui"
+      ],
+      "docs_url": "https://coss.com/ui/docs/components/breadcrumb",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "registry_url": "https://coss.com/ui/r/breadcrumb.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @coss/breadcrumb",
+      "extraction_note": "MIT applies to the component directories (apps/ui, apps/origin); the rest of the coss repo is AGPL.",
+      "quality": 90
+    },
+    {
+      "id": "coss-navigation-menu",
+      "name": "coss ui Menu",
+      "source": "coss ui",
+      "entry_type": "component",
+      "category": "navigation",
+      "description": "Menu primitive from coss ui (formerly Origin UI), built on Base UI.",
+      "use_case": "Build site and app navigation structures that stay clear at any depth.",
+      "search_tags": [
+        "coss",
+        "origin-ui",
+        "base-ui",
+        "menu",
+        "navigation",
+        "coss-ui"
+      ],
+      "docs_url": "https://coss.com/ui/docs/components/menu",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "registry_url": "https://coss.com/ui/r/menu.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @coss/menu",
+      "extraction_note": "MIT applies to the component directories (apps/ui, apps/origin); the rest of the coss repo is AGPL.",
+      "quality": 90
+    },
+    {
+      "id": "coss-navigation-pagination",
+      "name": "coss ui Pagination",
+      "source": "coss ui",
+      "entry_type": "component",
+      "category": "navigation",
+      "description": "Pagination primitive from coss ui (formerly Origin UI), built on Base UI.",
+      "use_case": "Build site and app navigation structures that stay clear at any depth.",
+      "search_tags": [
+        "coss",
+        "origin-ui",
+        "base-ui",
+        "pagination",
+        "navigation",
+        "coss-ui"
+      ],
+      "docs_url": "https://coss.com/ui/docs/components/pagination",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "registry_url": "https://coss.com/ui/r/pagination.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @coss/pagination",
+      "extraction_note": "MIT applies to the component directories (apps/ui, apps/origin); the rest of the coss repo is AGPL.",
+      "quality": 90
+    },
+    {
+      "id": "coss-navigation-sidebar",
+      "name": "coss ui Sidebar",
+      "source": "coss ui",
+      "entry_type": "component",
+      "category": "navigation",
+      "description": "Sidebar primitive from coss ui (formerly Origin UI), built on Base UI.",
+      "use_case": "Build site and app navigation structures that stay clear at any depth.",
+      "search_tags": [
+        "coss",
+        "origin-ui",
+        "base-ui",
+        "sidebar",
+        "navigation",
+        "coss-ui"
+      ],
+      "docs_url": "https://coss.com/ui/docs/components/sidebar",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "registry_url": "https://coss.com/ui/r/sidebar.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @coss/sidebar",
+      "extraction_note": "MIT applies to the component directories (apps/ui, apps/origin); the rest of the coss repo is AGPL.",
+      "quality": 90
+    },
+    {
+      "id": "coss-navigation-tabs",
+      "name": "coss ui Tabs",
+      "source": "coss ui",
+      "entry_type": "component",
+      "category": "navigation",
+      "description": "Tabs primitive from coss ui (formerly Origin UI), built on Base UI.",
+      "use_case": "Build site and app navigation structures that stay clear at any depth.",
+      "search_tags": [
+        "coss",
+        "origin-ui",
+        "base-ui",
+        "tabs",
+        "navigation",
+        "coss-ui"
+      ],
+      "docs_url": "https://coss.com/ui/docs/components/tabs",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "registry_url": "https://coss.com/ui/r/tabs.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @coss/tabs",
+      "extraction_note": "MIT applies to the component directories (apps/ui, apps/origin); the rest of the coss repo is AGPL.",
+      "quality": 90
+    },
+    {
+      "id": "coss-overlay-alert-dialog",
+      "name": "coss ui Alert Dialog",
+      "source": "coss ui",
+      "entry_type": "component",
+      "category": "overlay",
+      "description": "Alert Dialog primitive from coss ui (formerly Origin UI), built on Base UI.",
+      "use_case": "Present dialogs, drawers and popovers without leaving the page.",
+      "search_tags": [
+        "coss",
+        "origin-ui",
+        "base-ui",
+        "alert",
+        "dialog",
+        "overlay",
+        "coss-ui"
+      ],
+      "docs_url": "https://coss.com/ui/docs/components/alert-dialog",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "registry_url": "https://coss.com/ui/r/alert-dialog.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @coss/alert-dialog",
+      "extraction_note": "MIT applies to the component directories (apps/ui, apps/origin); the rest of the coss repo is AGPL.",
+      "quality": 90
+    },
+    {
+      "id": "coss-overlay-command",
+      "name": "coss ui Command",
+      "source": "coss ui",
+      "entry_type": "component",
+      "category": "overlay",
+      "description": "Command primitive from coss ui (formerly Origin UI), built on Base UI.",
+      "use_case": "Present dialogs, drawers and popovers without leaving the page.",
+      "search_tags": [
+        "coss",
+        "origin-ui",
+        "base-ui",
+        "command",
+        "overlay",
+        "coss-ui"
+      ],
+      "docs_url": "https://coss.com/ui/docs/components/command",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "registry_url": "https://coss.com/ui/r/command.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @coss/command",
+      "extraction_note": "MIT applies to the component directories (apps/ui, apps/origin); the rest of the coss repo is AGPL.",
+      "quality": 90
+    },
+    {
+      "id": "coss-overlay-context-menu",
+      "name": "coss ui Context Menu",
+      "source": "coss ui",
+      "entry_type": "component",
+      "category": "overlay",
+      "description": "Context Menu primitive from coss ui (formerly Origin UI), built on Base UI.",
+      "use_case": "Present dialogs, drawers and popovers without leaving the page.",
+      "search_tags": [
+        "coss",
+        "origin-ui",
+        "base-ui",
+        "context",
+        "menu",
+        "overlay",
+        "coss-ui"
+      ],
+      "docs_url": "https://coss.com/ui/docs/components/context-menu",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "registry_url": "https://coss.com/ui/r/context-menu.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @coss/context-menu",
+      "extraction_note": "MIT applies to the component directories (apps/ui, apps/origin); the rest of the coss repo is AGPL.",
+      "quality": 90
+    },
+    {
+      "id": "coss-overlay-dialog",
+      "name": "coss ui Dialog",
+      "source": "coss ui",
+      "entry_type": "component",
+      "category": "overlay",
+      "description": "Dialog primitive from coss ui (formerly Origin UI), built on Base UI.",
+      "use_case": "Present dialogs, drawers and popovers without leaving the page.",
+      "search_tags": [
+        "coss",
+        "origin-ui",
+        "base-ui",
+        "dialog",
+        "overlay",
+        "coss-ui"
+      ],
+      "docs_url": "https://coss.com/ui/docs/components/dialog",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "registry_url": "https://coss.com/ui/r/dialog.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @coss/dialog",
+      "extraction_note": "MIT applies to the component directories (apps/ui, apps/origin); the rest of the coss repo is AGPL.",
+      "quality": 90
+    },
+    {
+      "id": "coss-overlay-drawer",
+      "name": "coss ui Drawer",
+      "source": "coss ui",
+      "entry_type": "component",
+      "category": "overlay",
+      "description": "Drawer primitive from coss ui (formerly Origin UI), built on Base UI.",
+      "use_case": "Present dialogs, drawers and popovers without leaving the page.",
+      "search_tags": [
+        "coss",
+        "origin-ui",
+        "base-ui",
+        "drawer",
+        "overlay",
+        "coss-ui"
+      ],
+      "docs_url": "https://coss.com/ui/docs/components/drawer",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "registry_url": "https://coss.com/ui/r/drawer.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @coss/drawer",
+      "extraction_note": "MIT applies to the component directories (apps/ui, apps/origin); the rest of the coss repo is AGPL.",
+      "quality": 90
+    },
+    {
+      "id": "coss-overlay-popover",
+      "name": "coss ui Popover",
+      "source": "coss ui",
+      "entry_type": "component",
+      "category": "overlay",
+      "description": "Popover primitive from coss ui (formerly Origin UI), built on Base UI.",
+      "use_case": "Present dialogs, drawers and popovers without leaving the page.",
+      "search_tags": [
+        "coss",
+        "origin-ui",
+        "base-ui",
+        "popover",
+        "overlay",
+        "coss-ui"
+      ],
+      "docs_url": "https://coss.com/ui/docs/components/popover",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "registry_url": "https://coss.com/ui/r/popover.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @coss/popover",
+      "extraction_note": "MIT applies to the component directories (apps/ui, apps/origin); the rest of the coss repo is AGPL.",
+      "quality": 90
+    },
+    {
+      "id": "coss-overlay-sheet",
+      "name": "coss ui Sheet",
+      "source": "coss ui",
+      "entry_type": "component",
+      "category": "overlay",
+      "description": "Sheet primitive from coss ui (formerly Origin UI), built on Base UI.",
+      "use_case": "Present dialogs, drawers and popovers without leaving the page.",
+      "search_tags": [
+        "coss",
+        "origin-ui",
+        "base-ui",
+        "sheet",
+        "overlay",
+        "coss-ui"
+      ],
+      "docs_url": "https://coss.com/ui/docs/components/sheet",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "@base-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "registry_url": "https://coss.com/ui/r/sheet.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @coss/sheet",
+      "extraction_note": "MIT applies to the component directories (apps/ui, apps/origin); the rest of the coss repo is AGPL.",
+      "quality": 90
+    },
+    {
+      "id": "origin-data-display-avatar",
+      "name": "Origin UI (legacy) Avatar",
+      "source": "Origin UI (legacy)",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Legacy Origin UI base component for Avatar (Radix-based, shadcn-style). The legacy catalog holds ~604 variants across 30 categories.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "origin-ui",
+        "legacy",
+        "avatar",
+        "data-display",
+        "origin-ui-(legacy)"
+      ],
+      "docs_url": "https://coss.com/origin/avatar",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "radix-ui"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "registry_url": "https://coss.com/origin/r/avatar.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://coss.com/origin/r/avatar.json",
+      "extraction_note": "Legacy Origin UI is a frozen snapshot superseded by coss ui; browse all variants at https://coss.com/origin",
+      "quality": 90
+    },
+    {
+      "id": "origin-data-display-badge",
+      "name": "Origin UI (legacy) Badge",
+      "source": "Origin UI (legacy)",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Legacy Origin UI base component for Badge (Radix-based, shadcn-style). The legacy catalog holds ~604 variants across 30 categories.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "origin-ui",
+        "legacy",
+        "badge",
+        "data-display",
+        "origin-ui-(legacy)"
+      ],
+      "docs_url": "https://coss.com/origin/badge",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "radix-ui"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "registry_url": "https://coss.com/origin/r/badge.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://coss.com/origin/r/badge.json",
+      "extraction_note": "Legacy Origin UI is a frozen snapshot superseded by coss ui; browse all variants at https://coss.com/origin",
+      "quality": 90
+    },
+    {
+      "id": "origin-data-display-table",
+      "name": "Origin UI (legacy) Table",
+      "source": "Origin UI (legacy)",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Legacy Origin UI base component for Table (Radix-based, shadcn-style). The legacy catalog holds ~604 variants across 30 categories.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "origin-ui",
+        "legacy",
+        "table",
+        "data-display",
+        "origin-ui-(legacy)"
+      ],
+      "docs_url": "https://coss.com/origin/table",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "radix-ui"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "registry_url": "https://coss.com/origin/r/table.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://coss.com/origin/r/table.json",
+      "extraction_note": "Legacy Origin UI is a frozen snapshot superseded by coss ui; browse all variants at https://coss.com/origin",
+      "quality": 90
+    },
+    {
+      "id": "origin-data-display-timeline",
+      "name": "Origin UI (legacy) Timeline",
+      "source": "Origin UI (legacy)",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Legacy Origin UI base component for Timeline (Radix-based, shadcn-style). The legacy catalog holds ~604 variants across 30 categories.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "origin-ui",
+        "legacy",
+        "timeline",
+        "data-display",
+        "origin-ui-(legacy)"
+      ],
+      "docs_url": "https://coss.com/origin/timeline",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "radix-ui"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "registry_url": "https://coss.com/origin/r/timeline.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://coss.com/origin/r/timeline.json",
+      "extraction_note": "Legacy Origin UI is a frozen snapshot superseded by coss ui; browse all variants at https://coss.com/origin",
+      "quality": 90
+    },
+    {
+      "id": "origin-feedback-tooltip",
+      "name": "Origin UI (legacy) Tooltip",
+      "source": "Origin UI (legacy)",
+      "entry_type": "component",
+      "category": "feedback",
+      "description": "Legacy Origin UI base component for Tooltip (Radix-based, shadcn-style). The legacy catalog holds ~604 variants across 30 categories.",
+      "use_case": "Communicate system status: alerts, loaders, progress and notifications.",
+      "search_tags": [
+        "origin-ui",
+        "legacy",
+        "tooltip",
+        "feedback",
+        "origin-ui-(legacy)"
+      ],
+      "docs_url": "https://coss.com/origin/tooltip",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "radix-ui"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "registry_url": "https://coss.com/origin/r/tooltip.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://coss.com/origin/r/tooltip.json",
+      "extraction_note": "Legacy Origin UI is a frozen snapshot superseded by coss ui; browse all variants at https://coss.com/origin",
+      "quality": 90
+    },
+    {
+      "id": "origin-forms-calendar",
+      "name": "Origin UI (legacy) Calendar",
+      "source": "Origin UI (legacy)",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Legacy Origin UI base component for Calendar (Radix-based, shadcn-style). The legacy catalog holds ~604 variants across 30 categories.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "origin-ui",
+        "legacy",
+        "calendar",
+        "forms",
+        "origin-ui-(legacy)"
+      ],
+      "docs_url": "https://coss.com/origin/calendar",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "radix-ui"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "registry_url": "https://coss.com/origin/r/calendar.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://coss.com/origin/r/calendar.json",
+      "extraction_note": "Legacy Origin UI is a frozen snapshot superseded by coss ui; browse all variants at https://coss.com/origin",
+      "quality": 90
+    },
+    {
+      "id": "origin-forms-checkbox",
+      "name": "Origin UI (legacy) Checkbox",
+      "source": "Origin UI (legacy)",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Legacy Origin UI base component for Checkbox (Radix-based, shadcn-style). The legacy catalog holds ~604 variants across 30 categories.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "origin-ui",
+        "legacy",
+        "checkbox",
+        "forms",
+        "origin-ui-(legacy)"
+      ],
+      "docs_url": "https://coss.com/origin/checkbox",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "radix-ui"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "registry_url": "https://coss.com/origin/r/checkbox.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://coss.com/origin/r/checkbox.json",
+      "extraction_note": "Legacy Origin UI is a frozen snapshot superseded by coss ui; browse all variants at https://coss.com/origin",
+      "quality": 90
+    },
+    {
+      "id": "origin-forms-input",
+      "name": "Origin UI (legacy) Input",
+      "source": "Origin UI (legacy)",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Legacy Origin UI base component for Input (Radix-based, shadcn-style). The legacy catalog holds ~604 variants across 30 categories.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "origin-ui",
+        "legacy",
+        "input",
+        "forms",
+        "origin-ui-(legacy)"
+      ],
+      "docs_url": "https://coss.com/origin/input",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "radix-ui"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "registry_url": "https://coss.com/origin/r/input.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://coss.com/origin/r/input.json",
+      "extraction_note": "Legacy Origin UI is a frozen snapshot superseded by coss ui; browse all variants at https://coss.com/origin",
+      "quality": 90
+    },
+    {
+      "id": "origin-forms-select",
+      "name": "Origin UI (legacy) Select",
+      "source": "Origin UI (legacy)",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Legacy Origin UI base component for Select (Radix-based, shadcn-style). The legacy catalog holds ~604 variants across 30 categories.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "origin-ui",
+        "legacy",
+        "select",
+        "forms",
+        "origin-ui-(legacy)"
+      ],
+      "docs_url": "https://coss.com/origin/select",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "radix-ui"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "registry_url": "https://coss.com/origin/r/select.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://coss.com/origin/r/select.json",
+      "extraction_note": "Legacy Origin UI is a frozen snapshot superseded by coss ui; browse all variants at https://coss.com/origin",
+      "quality": 90
+    },
+    {
+      "id": "origin-forms-slider",
+      "name": "Origin UI (legacy) Slider",
+      "source": "Origin UI (legacy)",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Legacy Origin UI base component for Slider (Radix-based, shadcn-style). The legacy catalog holds ~604 variants across 30 categories.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "origin-ui",
+        "legacy",
+        "slider",
+        "forms",
+        "origin-ui-(legacy)"
+      ],
+      "docs_url": "https://coss.com/origin/slider",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "radix-ui"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "registry_url": "https://coss.com/origin/r/slider.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://coss.com/origin/r/slider.json",
+      "extraction_note": "Legacy Origin UI is a frozen snapshot superseded by coss ui; browse all variants at https://coss.com/origin",
+      "quality": 90
+    },
+    {
+      "id": "origin-forms-switch",
+      "name": "Origin UI (legacy) Switch",
+      "source": "Origin UI (legacy)",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Legacy Origin UI base component for Switch (Radix-based, shadcn-style). The legacy catalog holds ~604 variants across 30 categories.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "origin-ui",
+        "legacy",
+        "switch",
+        "forms",
+        "origin-ui-(legacy)"
+      ],
+      "docs_url": "https://coss.com/origin/switch",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "radix-ui"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "registry_url": "https://coss.com/origin/r/switch.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://coss.com/origin/r/switch.json",
+      "extraction_note": "Legacy Origin UI is a frozen snapshot superseded by coss ui; browse all variants at https://coss.com/origin",
+      "quality": 90
+    },
+    {
+      "id": "origin-forms-textarea",
+      "name": "Origin UI (legacy) Textarea",
+      "source": "Origin UI (legacy)",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Legacy Origin UI base component for Textarea (Radix-based, shadcn-style). The legacy catalog holds ~604 variants across 30 categories.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "origin-ui",
+        "legacy",
+        "textarea",
+        "forms",
+        "origin-ui-(legacy)"
+      ],
+      "docs_url": "https://coss.com/origin/textarea",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "radix-ui"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "registry_url": "https://coss.com/origin/r/textarea.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://coss.com/origin/r/textarea.json",
+      "extraction_note": "Legacy Origin UI is a frozen snapshot superseded by coss ui; browse all variants at https://coss.com/origin",
+      "quality": 90
+    },
+    {
+      "id": "origin-micro-interactions-accordion",
+      "name": "Origin UI (legacy) Accordion",
+      "source": "Origin UI (legacy)",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "Legacy Origin UI base component for Accordion (Radix-based, shadcn-style). The legacy catalog holds ~604 variants across 30 categories.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "origin-ui",
+        "legacy",
+        "accordion",
+        "micro-interactions",
+        "origin-ui-(legacy)"
+      ],
+      "docs_url": "https://coss.com/origin/accordion",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "radix-ui"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "registry_url": "https://coss.com/origin/r/accordion.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://coss.com/origin/r/accordion.json",
+      "extraction_note": "Legacy Origin UI is a frozen snapshot superseded by coss ui; browse all variants at https://coss.com/origin",
+      "quality": 90
+    },
+    {
+      "id": "origin-micro-interactions-button",
+      "name": "Origin UI (legacy) Button",
+      "source": "Origin UI (legacy)",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "Legacy Origin UI base component for Button (Radix-based, shadcn-style). The legacy catalog holds ~604 variants across 30 categories.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "origin-ui",
+        "legacy",
+        "button",
+        "micro-interactions",
+        "origin-ui-(legacy)"
+      ],
+      "docs_url": "https://coss.com/origin/button",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "radix-ui"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "registry_url": "https://coss.com/origin/r/button.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://coss.com/origin/r/button.json",
+      "extraction_note": "Legacy Origin UI is a frozen snapshot superseded by coss ui; browse all variants at https://coss.com/origin",
+      "quality": 90
+    },
+    {
+      "id": "origin-micro-interactions-tree",
+      "name": "Origin UI (legacy) Tree",
+      "source": "Origin UI (legacy)",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "Legacy Origin UI base component for Tree (Radix-based, shadcn-style). The legacy catalog holds ~604 variants across 30 categories.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "origin-ui",
+        "legacy",
+        "tree",
+        "micro-interactions",
+        "origin-ui-(legacy)"
+      ],
+      "docs_url": "https://coss.com/origin/tree",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "radix-ui"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "registry_url": "https://coss.com/origin/r/tree.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://coss.com/origin/r/tree.json",
+      "extraction_note": "Legacy Origin UI is a frozen snapshot superseded by coss ui; browse all variants at https://coss.com/origin",
+      "quality": 90
+    },
+    {
+      "id": "origin-navigation-breadcrumb",
+      "name": "Origin UI (legacy) Breadcrumb",
+      "source": "Origin UI (legacy)",
+      "entry_type": "component",
+      "category": "navigation",
+      "description": "Legacy Origin UI base component for Breadcrumb (Radix-based, shadcn-style). The legacy catalog holds ~604 variants across 30 categories.",
+      "use_case": "Build site and app navigation structures that stay clear at any depth.",
+      "search_tags": [
+        "origin-ui",
+        "legacy",
+        "breadcrumb",
+        "navigation",
+        "origin-ui-(legacy)"
+      ],
+      "docs_url": "https://coss.com/origin/breadcrumb",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "radix-ui"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "registry_url": "https://coss.com/origin/r/breadcrumb.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://coss.com/origin/r/breadcrumb.json",
+      "extraction_note": "Legacy Origin UI is a frozen snapshot superseded by coss ui; browse all variants at https://coss.com/origin",
+      "quality": 90
+    },
+    {
+      "id": "origin-navigation-pagination",
+      "name": "Origin UI (legacy) Pagination",
+      "source": "Origin UI (legacy)",
+      "entry_type": "component",
+      "category": "navigation",
+      "description": "Legacy Origin UI base component for Pagination (Radix-based, shadcn-style). The legacy catalog holds ~604 variants across 30 categories.",
+      "use_case": "Build site and app navigation structures that stay clear at any depth.",
+      "search_tags": [
+        "origin-ui",
+        "legacy",
+        "pagination",
+        "navigation",
+        "origin-ui-(legacy)"
+      ],
+      "docs_url": "https://coss.com/origin/pagination",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "radix-ui"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "registry_url": "https://coss.com/origin/r/pagination.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://coss.com/origin/r/pagination.json",
+      "extraction_note": "Legacy Origin UI is a frozen snapshot superseded by coss ui; browse all variants at https://coss.com/origin",
+      "quality": 90
+    },
+    {
+      "id": "origin-navigation-stepper",
+      "name": "Origin UI (legacy) Stepper",
+      "source": "Origin UI (legacy)",
+      "entry_type": "component",
+      "category": "navigation",
+      "description": "Legacy Origin UI base component for Stepper (Radix-based, shadcn-style). The legacy catalog holds ~604 variants across 30 categories.",
+      "use_case": "Build site and app navigation structures that stay clear at any depth.",
+      "search_tags": [
+        "origin-ui",
+        "legacy",
+        "stepper",
+        "navigation",
+        "origin-ui-(legacy)"
+      ],
+      "docs_url": "https://coss.com/origin/stepper",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "radix-ui"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "registry_url": "https://coss.com/origin/r/stepper.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://coss.com/origin/r/stepper.json",
+      "extraction_note": "Legacy Origin UI is a frozen snapshot superseded by coss ui; browse all variants at https://coss.com/origin",
+      "quality": 90
+    },
+    {
+      "id": "origin-navigation-tabs",
+      "name": "Origin UI (legacy) Tabs",
+      "source": "Origin UI (legacy)",
+      "entry_type": "component",
+      "category": "navigation",
+      "description": "Legacy Origin UI base component for Tabs (Radix-based, shadcn-style). The legacy catalog holds ~604 variants across 30 categories.",
+      "use_case": "Build site and app navigation structures that stay clear at any depth.",
+      "search_tags": [
+        "origin-ui",
+        "legacy",
+        "tabs",
+        "navigation",
+        "origin-ui-(legacy)"
+      ],
+      "docs_url": "https://coss.com/origin/tabs",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "radix-ui"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "registry_url": "https://coss.com/origin/r/tabs.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://coss.com/origin/r/tabs.json",
+      "extraction_note": "Legacy Origin UI is a frozen snapshot superseded by coss ui; browse all variants at https://coss.com/origin",
+      "quality": 90
+    },
+    {
+      "id": "origin-overlay-dialog",
+      "name": "Origin UI (legacy) Dialog",
+      "source": "Origin UI (legacy)",
+      "entry_type": "component",
+      "category": "overlay",
+      "description": "Legacy Origin UI base component for Dialog (Radix-based, shadcn-style). The legacy catalog holds ~604 variants across 30 categories.",
+      "use_case": "Present dialogs, drawers and popovers without leaving the page.",
+      "search_tags": [
+        "origin-ui",
+        "legacy",
+        "dialog",
+        "overlay",
+        "origin-ui-(legacy)"
+      ],
+      "docs_url": "https://coss.com/origin/dialog",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "radix-ui"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "registry_url": "https://coss.com/origin/r/dialog.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://coss.com/origin/r/dialog.json",
+      "extraction_note": "Legacy Origin UI is a frozen snapshot superseded by coss ui; browse all variants at https://coss.com/origin",
+      "quality": 90
+    },
+    {
+      "id": "origin-overlay-popover",
+      "name": "Origin UI (legacy) Popover",
+      "source": "Origin UI (legacy)",
+      "entry_type": "component",
+      "category": "overlay",
+      "description": "Legacy Origin UI base component for Popover (Radix-based, shadcn-style). The legacy catalog holds ~604 variants across 30 categories.",
+      "use_case": "Present dialogs, drawers and popovers without leaving the page.",
+      "search_tags": [
+        "origin-ui",
+        "legacy",
+        "popover",
+        "overlay",
+        "origin-ui-(legacy)"
+      ],
+      "docs_url": "https://coss.com/origin/popover",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "radix-ui"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "registry_url": "https://coss.com/origin/r/popover.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://coss.com/origin/r/popover.json",
+      "extraction_note": "Legacy Origin UI is a frozen snapshot superseded by coss ui; browse all variants at https://coss.com/origin",
+      "quality": 90
+    }
+  ]
+}

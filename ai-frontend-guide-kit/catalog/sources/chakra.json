@@ -1,0 +1,3075 @@
+{
+  "schema_version": "1.0",
+  "source_id": "chakra",
+  "source_name": "Chakra UI",
+  "source_url": "https://chakra-ui.com",
+  "catalog_url": "https://chakra-ui.com/docs/components/concepts/overview",
+  "license_summary": "MIT",
+  "granularity": "components of @chakra-ui/react v3 (docs URLs verified)",
+  "extraction": {
+    "channel": "github-contents",
+    "method": "Directory listing of packages/react/src/components with docs URL verification",
+    "evidence_url": "https://github.com/chakra-ui/chakra-ui/tree/main/packages/react/src/components"
+  },
+  "generated_at": "2026-10-04",
+  "entries": [
+    {
+      "id": "chakra-data-display-action-bar",
+      "name": "Chakra UI Action Bar",
+      "source": "Chakra UI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Action Bar from Chakra UI: an accessible React component styled through Chakra theme tokens and style props.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "chakra",
+        "action",
+        "bar",
+        "data-display",
+        "chakra-ui"
+      ],
+      "docs_url": "https://chakra-ui.com/docs/components/action-bar",
+      "stack": [
+        "react",
+        "emotion"
+      ],
+      "dependencies": [
+        "@chakra-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own style system (tokens, recipes), not Tailwind; v3 uses Ark UI primitives",
+        "Good when a theme-token-driven system is wanted"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @chakra-ui/react @emotion/react",
+      "manual_steps": [
+        "Docs: https://chakra-ui.com/docs/components/action-bar"
+      ],
+      "quality": 89
+    },
+    {
+      "id": "chakra-data-display-avatar",
+      "name": "Chakra UI Avatar",
+      "source": "Chakra UI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Avatar from Chakra UI: an accessible React component styled through Chakra theme tokens and style props.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "chakra",
+        "avatar",
+        "data-display",
+        "chakra-ui"
+      ],
+      "docs_url": "https://chakra-ui.com/docs/components/avatar",
+      "stack": [
+        "react",
+        "emotion"
+      ],
+      "dependencies": [
+        "@chakra-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own style system (tokens, recipes), not Tailwind; v3 uses Ark UI primitives",
+        "Good when a theme-token-driven system is wanted"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @chakra-ui/react @emotion/react",
+      "manual_steps": [
+        "Docs: https://chakra-ui.com/docs/components/avatar"
+      ],
+      "quality": 89
+    },
+    {
+      "id": "chakra-data-display-badge",
+      "name": "Chakra UI Badge",
+      "source": "Chakra UI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Badge from Chakra UI: an accessible React component styled through Chakra theme tokens and style props.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "chakra",
+        "badge",
+        "data-display",
+        "chakra-ui"
+      ],
+      "docs_url": "https://chakra-ui.com/docs/components/badge",
+      "stack": [
+        "react",
+        "emotion"
+      ],
+      "dependencies": [
+        "@chakra-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own style system (tokens, recipes), not Tailwind; v3 uses Ark UI primitives",
+        "Good when a theme-token-driven system is wanted"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @chakra-ui/react @emotion/react",
+      "manual_steps": [
+        "Docs: https://chakra-ui.com/docs/components/badge"
+      ],
+      "quality": 89
+    },
+    {
+      "id": "chakra-data-display-blockquote",
+      "name": "Chakra UI Blockquote",
+      "source": "Chakra UI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Blockquote from Chakra UI: an accessible React component styled through Chakra theme tokens and style props.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "chakra",
+        "blockquote",
+        "data-display",
+        "chakra-ui"
+      ],
+      "docs_url": "https://chakra-ui.com/docs/components/blockquote",
+      "stack": [
+        "react",
+        "emotion"
+      ],
+      "dependencies": [
+        "@chakra-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own style system (tokens, recipes), not Tailwind; v3 uses Ark UI primitives",
+        "Good when a theme-token-driven system is wanted"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @chakra-ui/react @emotion/react",
+      "manual_steps": [
+        "Docs: https://chakra-ui.com/docs/components/blockquote"
+      ],
+      "quality": 89
+    },
+    {
+      "id": "chakra-data-display-card",
+      "name": "Chakra UI Card",
+      "source": "Chakra UI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Card from Chakra UI: an accessible React component styled through Chakra theme tokens and style props.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "chakra",
+        "card",
+        "data-display",
+        "chakra-ui"
+      ],
+      "docs_url": "https://chakra-ui.com/docs/components/card",
+      "stack": [
+        "react",
+        "emotion"
+      ],
+      "dependencies": [
+        "@chakra-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own style system (tokens, recipes), not Tailwind; v3 uses Ark UI primitives",
+        "Good when a theme-token-driven system is wanted"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @chakra-ui/react @emotion/react",
+      "manual_steps": [
+        "Docs: https://chakra-ui.com/docs/components/card"
+      ],
+      "quality": 89
+    },
+    {
+      "id": "chakra-data-display-checkbox-card",
+      "name": "Chakra UI Checkbox Card",
+      "source": "Chakra UI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Checkbox Card from Chakra UI: an accessible React component styled through Chakra theme tokens and style props.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "chakra",
+        "checkbox",
+        "card",
+        "data-display",
+        "chakra-ui"
+      ],
+      "docs_url": "https://chakra-ui.com/docs/components/checkbox-card",
+      "stack": [
+        "react",
+        "emotion"
+      ],
+      "dependencies": [
+        "@chakra-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own style system (tokens, recipes), not Tailwind; v3 uses Ark UI primitives",
+        "Good when a theme-token-driven system is wanted"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @chakra-ui/react @emotion/react",
+      "manual_steps": [
+        "Docs: https://chakra-ui.com/docs/components/checkbox-card"
+      ],
+      "quality": 89
+    },
+    {
+      "id": "chakra-data-display-checkmark",
+      "name": "Chakra UI Checkmark",
+      "source": "Chakra UI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Checkmark from Chakra UI: an accessible React component styled through Chakra theme tokens and style props.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "chakra",
+        "checkmark",
+        "data-display",
+        "chakra-ui"
+      ],
+      "docs_url": "https://chakra-ui.com/docs/components/checkmark",
+      "stack": [
+        "react",
+        "emotion"
+      ],
+      "dependencies": [
+        "@chakra-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own style system (tokens, recipes), not Tailwind; v3 uses Ark UI primitives",
+        "Good when a theme-token-driven system is wanted"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @chakra-ui/react @emotion/react",
+      "manual_steps": [
+        "Docs: https://chakra-ui.com/docs/components/checkmark"
+      ],
+      "quality": 89
+    },
+    {
+      "id": "chakra-data-display-clipboard",
+      "name": "Chakra UI Clipboard",
+      "source": "Chakra UI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Clipboard from Chakra UI: an accessible React component styled through Chakra theme tokens and style props.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "chakra",
+        "clipboard",
+        "data-display",
+        "chakra-ui"
+      ],
+      "docs_url": "https://chakra-ui.com/docs/components/clipboard",
+      "stack": [
+        "react",
+        "emotion"
+      ],
+      "dependencies": [
+        "@chakra-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own style system (tokens, recipes), not Tailwind; v3 uses Ark UI primitives",
+        "Good when a theme-token-driven system is wanted"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @chakra-ui/react @emotion/react",
+      "manual_steps": [
+        "Docs: https://chakra-ui.com/docs/components/clipboard"
+      ],
+      "quality": 89
+    },
+    {
+      "id": "chakra-data-display-code",
+      "name": "Chakra UI Code",
+      "source": "Chakra UI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Code from Chakra UI: an accessible React component styled through Chakra theme tokens and style props.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "chakra",
+        "code",
+        "data-display",
+        "chakra-ui"
+      ],
+      "docs_url": "https://chakra-ui.com/docs/components/code",
+      "stack": [
+        "react",
+        "emotion"
+      ],
+      "dependencies": [
+        "@chakra-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own style system (tokens, recipes), not Tailwind; v3 uses Ark UI primitives",
+        "Good when a theme-token-driven system is wanted"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @chakra-ui/react @emotion/react",
+      "manual_steps": [
+        "Docs: https://chakra-ui.com/docs/components/code"
+      ],
+      "quality": 89
+    },
+    {
+      "id": "chakra-data-display-code-block",
+      "name": "Chakra UI Code Block",
+      "source": "Chakra UI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Code Block from Chakra UI: an accessible React component styled through Chakra theme tokens and style props.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "chakra",
+        "code",
+        "block",
+        "data-display",
+        "chakra-ui"
+      ],
+      "docs_url": "https://chakra-ui.com/docs/components/code-block",
+      "stack": [
+        "react",
+        "emotion"
+      ],
+      "dependencies": [
+        "@chakra-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own style system (tokens, recipes), not Tailwind; v3 uses Ark UI primitives",
+        "Good when a theme-token-driven system is wanted"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @chakra-ui/react @emotion/react",
+      "manual_steps": [
+        "Docs: https://chakra-ui.com/docs/components/code-block"
+      ],
+      "quality": 89
+    },
+    {
+      "id": "chakra-data-display-collapsible",
+      "name": "Chakra UI Collapsible",
+      "source": "Chakra UI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Collapsible from Chakra UI: an accessible React component styled through Chakra theme tokens and style props.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "chakra",
+        "collapsible",
+        "data-display",
+        "chakra-ui"
+      ],
+      "docs_url": "https://chakra-ui.com/docs/components/collapsible",
+      "stack": [
+        "react",
+        "emotion"
+      ],
+      "dependencies": [
+        "@chakra-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own style system (tokens, recipes), not Tailwind; v3 uses Ark UI primitives",
+        "Good when a theme-token-driven system is wanted"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @chakra-ui/react @emotion/react",
+      "manual_steps": [
+        "Docs: https://chakra-ui.com/docs/components/collapsible"
+      ],
+      "quality": 89
+    },
+    {
+      "id": "chakra-data-display-color-swatch",
+      "name": "Chakra UI Color Swatch",
+      "source": "Chakra UI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Color Swatch from Chakra UI: an accessible React component styled through Chakra theme tokens and style props.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "chakra",
+        "color",
+        "swatch",
+        "data-display",
+        "chakra-ui"
+      ],
+      "docs_url": "https://chakra-ui.com/docs/components/color-swatch",
+      "stack": [
+        "react",
+        "emotion"
+      ],
+      "dependencies": [
+        "@chakra-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own style system (tokens, recipes), not Tailwind; v3 uses Ark UI primitives",
+        "Good when a theme-token-driven system is wanted"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @chakra-ui/react @emotion/react",
+      "manual_steps": [
+        "Docs: https://chakra-ui.com/docs/components/color-swatch"
+      ],
+      "quality": 89
+    },
+    {
+      "id": "chakra-data-display-data-list",
+      "name": "Chakra UI Data List",
+      "source": "Chakra UI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Data List from Chakra UI: an accessible React component styled through Chakra theme tokens and style props.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "chakra",
+        "data",
+        "list",
+        "data-display",
+        "chakra-ui"
+      ],
+      "docs_url": "https://chakra-ui.com/docs/components/data-list",
+      "stack": [
+        "react",
+        "emotion"
+      ],
+      "dependencies": [
+        "@chakra-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own style system (tokens, recipes), not Tailwind; v3 uses Ark UI primitives",
+        "Good when a theme-token-driven system is wanted"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @chakra-ui/react @emotion/react",
+      "manual_steps": [
+        "Docs: https://chakra-ui.com/docs/components/data-list"
+      ],
+      "quality": 89
+    },
+    {
+      "id": "chakra-data-display-editable",
+      "name": "Chakra UI Editable",
+      "source": "Chakra UI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Editable from Chakra UI: an accessible React component styled through Chakra theme tokens and style props.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "chakra",
+        "editable",
+        "data-display",
+        "chakra-ui"
+      ],
+      "docs_url": "https://chakra-ui.com/docs/components/editable",
+      "stack": [
+        "react",
+        "emotion"
+      ],
+      "dependencies": [
+        "@chakra-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own style system (tokens, recipes), not Tailwind; v3 uses Ark UI primitives",
+        "Good when a theme-token-driven system is wanted"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @chakra-ui/react @emotion/react",
+      "manual_steps": [
+        "Docs: https://chakra-ui.com/docs/components/editable"
+      ],
+      "quality": 89
+    },
+    {
+      "id": "chakra-data-display-empty-state",
+      "name": "Chakra UI Empty State",
+      "source": "Chakra UI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Empty State from Chakra UI: an accessible React component styled through Chakra theme tokens and style props.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "chakra",
+        "empty",
+        "state",
+        "data-display",
+        "chakra-ui"
+      ],
+      "docs_url": "https://chakra-ui.com/docs/components/empty-state",
+      "stack": [
+        "react",
+        "emotion"
+      ],
+      "dependencies": [
+        "@chakra-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own style system (tokens, recipes), not Tailwind; v3 uses Ark UI primitives",
+        "Good when a theme-token-driven system is wanted"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @chakra-ui/react @emotion/react",
+      "manual_steps": [
+        "Docs: https://chakra-ui.com/docs/components/empty-state"
+      ],
+      "quality": 89
+    },
+    {
+      "id": "chakra-data-display-file-upload",
+      "name": "Chakra UI File Upload",
+      "source": "Chakra UI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "File Upload from Chakra UI: an accessible React component styled through Chakra theme tokens and style props.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "chakra",
+        "file",
+        "upload",
+        "data-display",
+        "chakra-ui"
+      ],
+      "docs_url": "https://chakra-ui.com/docs/components/file-upload",
+      "stack": [
+        "react",
+        "emotion"
+      ],
+      "dependencies": [
+        "@chakra-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own style system (tokens, recipes), not Tailwind; v3 uses Ark UI primitives",
+        "Good when a theme-token-driven system is wanted"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @chakra-ui/react @emotion/react",
+      "manual_steps": [
+        "Docs: https://chakra-ui.com/docs/components/file-upload"
+      ],
+      "quality": 89
+    },
+    {
+      "id": "chakra-data-display-floating-panel",
+      "name": "Chakra UI Floating Panel",
+      "source": "Chakra UI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Floating Panel from Chakra UI: an accessible React component styled through Chakra theme tokens and style props.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "chakra",
+        "floating",
+        "panel",
+        "data-display",
+        "chakra-ui"
+      ],
+      "docs_url": "https://chakra-ui.com/docs/components/floating-panel",
+      "stack": [
+        "react",
+        "emotion"
+      ],
+      "dependencies": [
+        "@chakra-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own style system (tokens, recipes), not Tailwind; v3 uses Ark UI primitives",
+        "Good when a theme-token-driven system is wanted"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @chakra-ui/react @emotion/react",
+      "manual_steps": [
+        "Docs: https://chakra-ui.com/docs/components/floating-panel"
+      ],
+      "quality": 89
+    },
+    {
+      "id": "chakra-data-display-heading",
+      "name": "Chakra UI Heading",
+      "source": "Chakra UI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Heading from Chakra UI: an accessible React component styled through Chakra theme tokens and style props.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "chakra",
+        "heading",
+        "data-display",
+        "chakra-ui"
+      ],
+      "docs_url": "https://chakra-ui.com/docs/components/heading",
+      "stack": [
+        "react",
+        "emotion"
+      ],
+      "dependencies": [
+        "@chakra-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own style system (tokens, recipes), not Tailwind; v3 uses Ark UI primitives",
+        "Good when a theme-token-driven system is wanted"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @chakra-ui/react @emotion/react",
+      "manual_steps": [
+        "Docs: https://chakra-ui.com/docs/components/heading"
+      ],
+      "quality": 89
+    },
+    {
+      "id": "chakra-data-display-highlight",
+      "name": "Chakra UI Highlight",
+      "source": "Chakra UI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Highlight from Chakra UI: an accessible React component styled through Chakra theme tokens and style props.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "chakra",
+        "highlight",
+        "data-display",
+        "chakra-ui"
+      ],
+      "docs_url": "https://chakra-ui.com/docs/components/highlight",
+      "stack": [
+        "react",
+        "emotion"
+      ],
+      "dependencies": [
+        "@chakra-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own style system (tokens, recipes), not Tailwind; v3 uses Ark UI primitives",
+        "Good when a theme-token-driven system is wanted"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @chakra-ui/react @emotion/react",
+      "manual_steps": [
+        "Docs: https://chakra-ui.com/docs/components/highlight"
+      ],
+      "quality": 89
+    },
+    {
+      "id": "chakra-data-display-icon",
+      "name": "Chakra UI Icon",
+      "source": "Chakra UI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Icon from Chakra UI: an accessible React component styled through Chakra theme tokens and style props.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "chakra",
+        "icon",
+        "data-display",
+        "chakra-ui"
+      ],
+      "docs_url": "https://chakra-ui.com/docs/components/icon",
+      "stack": [
+        "react",
+        "emotion"
+      ],
+      "dependencies": [
+        "@chakra-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own style system (tokens, recipes), not Tailwind; v3 uses Ark UI primitives",
+        "Good when a theme-token-driven system is wanted"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @chakra-ui/react @emotion/react",
+      "manual_steps": [
+        "Docs: https://chakra-ui.com/docs/components/icon"
+      ],
+      "quality": 89
+    },
+    {
+      "id": "chakra-data-display-image",
+      "name": "Chakra UI Image",
+      "source": "Chakra UI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Image from Chakra UI: an accessible React component styled through Chakra theme tokens and style props.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "chakra",
+        "image",
+        "data-display",
+        "chakra-ui"
+      ],
+      "docs_url": "https://chakra-ui.com/docs/components/image",
+      "stack": [
+        "react",
+        "emotion"
+      ],
+      "dependencies": [
+        "@chakra-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own style system (tokens, recipes), not Tailwind; v3 uses Ark UI primitives",
+        "Good when a theme-token-driven system is wanted"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @chakra-ui/react @emotion/react",
+      "manual_steps": [
+        "Docs: https://chakra-ui.com/docs/components/image"
+      ],
+      "quality": 89
+    },
+    {
+      "id": "chakra-data-display-kbd",
+      "name": "Chakra UI Kbd",
+      "source": "Chakra UI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Kbd from Chakra UI: an accessible React component styled through Chakra theme tokens and style props.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "chakra",
+        "kbd",
+        "data-display",
+        "chakra-ui"
+      ],
+      "docs_url": "https://chakra-ui.com/docs/components/kbd",
+      "stack": [
+        "react",
+        "emotion"
+      ],
+      "dependencies": [
+        "@chakra-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own style system (tokens, recipes), not Tailwind; v3 uses Ark UI primitives",
+        "Good when a theme-token-driven system is wanted"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @chakra-ui/react @emotion/react",
+      "manual_steps": [
+        "Docs: https://chakra-ui.com/docs/components/kbd"
+      ],
+      "quality": 89
+    },
+    {
+      "id": "chakra-data-display-list",
+      "name": "Chakra UI List",
+      "source": "Chakra UI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "List from Chakra UI: an accessible React component styled through Chakra theme tokens and style props.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "chakra",
+        "list",
+        "data-display",
+        "chakra-ui"
+      ],
+      "docs_url": "https://chakra-ui.com/docs/components/list",
+      "stack": [
+        "react",
+        "emotion"
+      ],
+      "dependencies": [
+        "@chakra-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own style system (tokens, recipes), not Tailwind; v3 uses Ark UI primitives",
+        "Good when a theme-token-driven system is wanted"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @chakra-ui/react @emotion/react",
+      "manual_steps": [
+        "Docs: https://chakra-ui.com/docs/components/list"
+      ],
+      "quality": 89
+    },
+    {
+      "id": "chakra-data-display-listbox",
+      "name": "Chakra UI Listbox",
+      "source": "Chakra UI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Listbox from Chakra UI: an accessible React component styled through Chakra theme tokens and style props.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "chakra",
+        "listbox",
+        "data-display",
+        "chakra-ui"
+      ],
+      "docs_url": "https://chakra-ui.com/docs/components/listbox",
+      "stack": [
+        "react",
+        "emotion"
+      ],
+      "dependencies": [
+        "@chakra-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own style system (tokens, recipes), not Tailwind; v3 uses Ark UI primitives",
+        "Good when a theme-token-driven system is wanted"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @chakra-ui/react @emotion/react",
+      "manual_steps": [
+        "Docs: https://chakra-ui.com/docs/components/listbox"
+      ],
+      "quality": 89
+    },
+    {
+      "id": "chakra-data-display-marquee",
+      "name": "Chakra UI Marquee",
+      "source": "Chakra UI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Marquee from Chakra UI: an accessible React component styled through Chakra theme tokens and style props.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "chakra",
+        "marquee",
+        "data-display",
+        "chakra-ui"
+      ],
+      "docs_url": "https://chakra-ui.com/docs/components/marquee",
+      "stack": [
+        "react",
+        "emotion"
+      ],
+      "dependencies": [
+        "@chakra-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own style system (tokens, recipes), not Tailwind; v3 uses Ark UI primitives",
+        "Good when a theme-token-driven system is wanted"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @chakra-ui/react @emotion/react",
+      "manual_steps": [
+        "Docs: https://chakra-ui.com/docs/components/marquee"
+      ],
+      "quality": 89
+    },
+    {
+      "id": "chakra-data-display-qr-code",
+      "name": "Chakra UI Qr Code",
+      "source": "Chakra UI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Qr Code from Chakra UI: an accessible React component styled through Chakra theme tokens and style props.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "chakra",
+        "qr",
+        "code",
+        "data-display",
+        "chakra-ui"
+      ],
+      "docs_url": "https://chakra-ui.com/docs/components/qr-code",
+      "stack": [
+        "react",
+        "emotion"
+      ],
+      "dependencies": [
+        "@chakra-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own style system (tokens, recipes), not Tailwind; v3 uses Ark UI primitives",
+        "Good when a theme-token-driven system is wanted"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @chakra-ui/react @emotion/react",
+      "manual_steps": [
+        "Docs: https://chakra-ui.com/docs/components/qr-code"
+      ],
+      "quality": 89
+    },
+    {
+      "id": "chakra-data-display-radio-card",
+      "name": "Chakra UI Radio Card",
+      "source": "Chakra UI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Radio Card from Chakra UI: an accessible React component styled through Chakra theme tokens and style props.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "chakra",
+        "radio",
+        "card",
+        "data-display",
+        "chakra-ui"
+      ],
+      "docs_url": "https://chakra-ui.com/docs/components/radio-card",
+      "stack": [
+        "react",
+        "emotion"
+      ],
+      "dependencies": [
+        "@chakra-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own style system (tokens, recipes), not Tailwind; v3 uses Ark UI primitives",
+        "Good when a theme-token-driven system is wanted"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @chakra-ui/react @emotion/react",
+      "manual_steps": [
+        "Docs: https://chakra-ui.com/docs/components/radio-card"
+      ],
+      "quality": 89
+    },
+    {
+      "id": "chakra-data-display-radiomark",
+      "name": "Chakra UI Radiomark",
+      "source": "Chakra UI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Radiomark from Chakra UI: an accessible React component styled through Chakra theme tokens and style props.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "chakra",
+        "radiomark",
+        "data-display",
+        "chakra-ui"
+      ],
+      "docs_url": "https://chakra-ui.com/docs/components/radiomark",
+      "stack": [
+        "react",
+        "emotion"
+      ],
+      "dependencies": [
+        "@chakra-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own style system (tokens, recipes), not Tailwind; v3 uses Ark UI primitives",
+        "Good when a theme-token-driven system is wanted"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @chakra-ui/react @emotion/react",
+      "manual_steps": [
+        "Docs: https://chakra-ui.com/docs/components/radiomark"
+      ],
+      "quality": 89
+    },
+    {
+      "id": "chakra-data-display-stat",
+      "name": "Chakra UI Stat",
+      "source": "Chakra UI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Stat from Chakra UI: an accessible React component styled through Chakra theme tokens and style props.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "chakra",
+        "stat",
+        "data-display",
+        "chakra-ui"
+      ],
+      "docs_url": "https://chakra-ui.com/docs/components/stat",
+      "stack": [
+        "react",
+        "emotion"
+      ],
+      "dependencies": [
+        "@chakra-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own style system (tokens, recipes), not Tailwind; v3 uses Ark UI primitives",
+        "Good when a theme-token-driven system is wanted"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @chakra-ui/react @emotion/react",
+      "manual_steps": [
+        "Docs: https://chakra-ui.com/docs/components/stat"
+      ],
+      "quality": 89
+    },
+    {
+      "id": "chakra-data-display-steps",
+      "name": "Chakra UI Steps",
+      "source": "Chakra UI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Steps from Chakra UI: an accessible React component styled through Chakra theme tokens and style props.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "chakra",
+        "steps",
+        "data-display",
+        "chakra-ui"
+      ],
+      "docs_url": "https://chakra-ui.com/docs/components/steps",
+      "stack": [
+        "react",
+        "emotion"
+      ],
+      "dependencies": [
+        "@chakra-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own style system (tokens, recipes), not Tailwind; v3 uses Ark UI primitives",
+        "Good when a theme-token-driven system is wanted"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @chakra-ui/react @emotion/react",
+      "manual_steps": [
+        "Docs: https://chakra-ui.com/docs/components/steps"
+      ],
+      "quality": 89
+    },
+    {
+      "id": "chakra-data-display-table",
+      "name": "Chakra UI Table",
+      "source": "Chakra UI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Table from Chakra UI: an accessible React component styled through Chakra theme tokens and style props.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "chakra",
+        "table",
+        "data-display",
+        "chakra-ui"
+      ],
+      "docs_url": "https://chakra-ui.com/docs/components/table",
+      "stack": [
+        "react",
+        "emotion"
+      ],
+      "dependencies": [
+        "@chakra-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own style system (tokens, recipes), not Tailwind; v3 uses Ark UI primitives",
+        "Good when a theme-token-driven system is wanted"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @chakra-ui/react @emotion/react",
+      "manual_steps": [
+        "Docs: https://chakra-ui.com/docs/components/table"
+      ],
+      "quality": 89
+    },
+    {
+      "id": "chakra-data-display-tag",
+      "name": "Chakra UI Tag",
+      "source": "Chakra UI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Tag from Chakra UI: an accessible React component styled through Chakra theme tokens and style props.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "chakra",
+        "tag",
+        "data-display",
+        "chakra-ui"
+      ],
+      "docs_url": "https://chakra-ui.com/docs/components/tag",
+      "stack": [
+        "react",
+        "emotion"
+      ],
+      "dependencies": [
+        "@chakra-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own style system (tokens, recipes), not Tailwind; v3 uses Ark UI primitives",
+        "Good when a theme-token-driven system is wanted"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @chakra-ui/react @emotion/react",
+      "manual_steps": [
+        "Docs: https://chakra-ui.com/docs/components/tag"
+      ],
+      "quality": 89
+    },
+    {
+      "id": "chakra-data-display-tags-input",
+      "name": "Chakra UI Tags Input",
+      "source": "Chakra UI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Tags Input from Chakra UI: an accessible React component styled through Chakra theme tokens and style props.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "chakra",
+        "tags",
+        "input",
+        "data-display",
+        "chakra-ui"
+      ],
+      "docs_url": "https://chakra-ui.com/docs/components/tags-input",
+      "stack": [
+        "react",
+        "emotion"
+      ],
+      "dependencies": [
+        "@chakra-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own style system (tokens, recipes), not Tailwind; v3 uses Ark UI primitives",
+        "Good when a theme-token-driven system is wanted"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @chakra-ui/react @emotion/react",
+      "manual_steps": [
+        "Docs: https://chakra-ui.com/docs/components/tags-input"
+      ],
+      "quality": 89
+    },
+    {
+      "id": "chakra-data-display-text",
+      "name": "Chakra UI Text",
+      "source": "Chakra UI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Text from Chakra UI: an accessible React component styled through Chakra theme tokens and style props.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "chakra",
+        "text",
+        "data-display",
+        "chakra-ui"
+      ],
+      "docs_url": "https://chakra-ui.com/docs/components/text",
+      "stack": [
+        "react",
+        "emotion"
+      ],
+      "dependencies": [
+        "@chakra-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own style system (tokens, recipes), not Tailwind; v3 uses Ark UI primitives",
+        "Good when a theme-token-driven system is wanted"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @chakra-ui/react @emotion/react",
+      "manual_steps": [
+        "Docs: https://chakra-ui.com/docs/components/text"
+      ],
+      "quality": 89
+    },
+    {
+      "id": "chakra-data-display-textarea",
+      "name": "Chakra UI Textarea",
+      "source": "Chakra UI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Textarea from Chakra UI: an accessible React component styled through Chakra theme tokens and style props.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "chakra",
+        "textarea",
+        "data-display",
+        "chakra-ui"
+      ],
+      "docs_url": "https://chakra-ui.com/docs/components/textarea",
+      "stack": [
+        "react",
+        "emotion"
+      ],
+      "dependencies": [
+        "@chakra-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own style system (tokens, recipes), not Tailwind; v3 uses Ark UI primitives",
+        "Good when a theme-token-driven system is wanted"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @chakra-ui/react @emotion/react",
+      "manual_steps": [
+        "Docs: https://chakra-ui.com/docs/components/textarea"
+      ],
+      "quality": 89
+    },
+    {
+      "id": "chakra-data-display-timeline",
+      "name": "Chakra UI Timeline",
+      "source": "Chakra UI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Timeline from Chakra UI: an accessible React component styled through Chakra theme tokens and style props.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "chakra",
+        "timeline",
+        "data-display",
+        "chakra-ui"
+      ],
+      "docs_url": "https://chakra-ui.com/docs/components/timeline",
+      "stack": [
+        "react",
+        "emotion"
+      ],
+      "dependencies": [
+        "@chakra-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own style system (tokens, recipes), not Tailwind; v3 uses Ark UI primitives",
+        "Good when a theme-token-driven system is wanted"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @chakra-ui/react @emotion/react",
+      "manual_steps": [
+        "Docs: https://chakra-ui.com/docs/components/timeline"
+      ],
+      "quality": 89
+    },
+    {
+      "id": "chakra-data-display-tree-view",
+      "name": "Chakra UI Tree View",
+      "source": "Chakra UI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Tree View from Chakra UI: an accessible React component styled through Chakra theme tokens and style props.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "chakra",
+        "tree",
+        "view",
+        "data-display",
+        "chakra-ui"
+      ],
+      "docs_url": "https://chakra-ui.com/docs/components/tree-view",
+      "stack": [
+        "react",
+        "emotion"
+      ],
+      "dependencies": [
+        "@chakra-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own style system (tokens, recipes), not Tailwind; v3 uses Ark UI primitives",
+        "Good when a theme-token-driven system is wanted"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @chakra-ui/react @emotion/react",
+      "manual_steps": [
+        "Docs: https://chakra-ui.com/docs/components/tree-view"
+      ],
+      "quality": 89
+    },
+    {
+      "id": "chakra-feedback-alert",
+      "name": "Chakra UI Alert",
+      "source": "Chakra UI",
+      "entry_type": "component",
+      "category": "feedback",
+      "description": "Alert from Chakra UI: an accessible React component styled through Chakra theme tokens and style props.",
+      "use_case": "Communicate system status: alerts, loaders, progress and notifications.",
+      "search_tags": [
+        "chakra",
+        "alert",
+        "feedback",
+        "chakra-ui"
+      ],
+      "docs_url": "https://chakra-ui.com/docs/components/alert",
+      "stack": [
+        "react",
+        "emotion"
+      ],
+      "dependencies": [
+        "@chakra-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own style system (tokens, recipes), not Tailwind; v3 uses Ark UI primitives",
+        "Good when a theme-token-driven system is wanted"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @chakra-ui/react @emotion/react",
+      "manual_steps": [
+        "Docs: https://chakra-ui.com/docs/components/alert"
+      ],
+      "quality": 89
+    },
+    {
+      "id": "chakra-feedback-progress",
+      "name": "Chakra UI Progress",
+      "source": "Chakra UI",
+      "entry_type": "component",
+      "category": "feedback",
+      "description": "Progress from Chakra UI: an accessible React component styled through Chakra theme tokens and style props.",
+      "use_case": "Communicate system status: alerts, loaders, progress and notifications.",
+      "search_tags": [
+        "chakra",
+        "progress",
+        "feedback",
+        "chakra-ui"
+      ],
+      "docs_url": "https://chakra-ui.com/docs/components/progress",
+      "stack": [
+        "react",
+        "emotion"
+      ],
+      "dependencies": [
+        "@chakra-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own style system (tokens, recipes), not Tailwind; v3 uses Ark UI primitives",
+        "Good when a theme-token-driven system is wanted"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @chakra-ui/react @emotion/react",
+      "manual_steps": [
+        "Docs: https://chakra-ui.com/docs/components/progress"
+      ],
+      "quality": 89
+    },
+    {
+      "id": "chakra-feedback-progress-circle",
+      "name": "Chakra UI Progress Circle",
+      "source": "Chakra UI",
+      "entry_type": "component",
+      "category": "feedback",
+      "description": "Progress Circle from Chakra UI: an accessible React component styled through Chakra theme tokens and style props.",
+      "use_case": "Communicate system status: alerts, loaders, progress and notifications.",
+      "search_tags": [
+        "chakra",
+        "progress",
+        "circle",
+        "feedback",
+        "chakra-ui"
+      ],
+      "docs_url": "https://chakra-ui.com/docs/components/progress-circle",
+      "stack": [
+        "react",
+        "emotion"
+      ],
+      "dependencies": [
+        "@chakra-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own style system (tokens, recipes), not Tailwind; v3 uses Ark UI primitives",
+        "Good when a theme-token-driven system is wanted"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @chakra-ui/react @emotion/react",
+      "manual_steps": [
+        "Docs: https://chakra-ui.com/docs/components/progress-circle"
+      ],
+      "quality": 89
+    },
+    {
+      "id": "chakra-feedback-skeleton",
+      "name": "Chakra UI Skeleton",
+      "source": "Chakra UI",
+      "entry_type": "component",
+      "category": "feedback",
+      "description": "Skeleton from Chakra UI: an accessible React component styled through Chakra theme tokens and style props.",
+      "use_case": "Communicate system status: alerts, loaders, progress and notifications.",
+      "search_tags": [
+        "chakra",
+        "skeleton",
+        "feedback",
+        "chakra-ui"
+      ],
+      "docs_url": "https://chakra-ui.com/docs/components/skeleton",
+      "stack": [
+        "react",
+        "emotion"
+      ],
+      "dependencies": [
+        "@chakra-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own style system (tokens, recipes), not Tailwind; v3 uses Ark UI primitives",
+        "Good when a theme-token-driven system is wanted"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @chakra-ui/react @emotion/react",
+      "manual_steps": [
+        "Docs: https://chakra-ui.com/docs/components/skeleton"
+      ],
+      "quality": 89
+    },
+    {
+      "id": "chakra-feedback-spinner",
+      "name": "Chakra UI Spinner",
+      "source": "Chakra UI",
+      "entry_type": "component",
+      "category": "feedback",
+      "description": "Spinner from Chakra UI: an accessible React component styled through Chakra theme tokens and style props.",
+      "use_case": "Communicate system status: alerts, loaders, progress and notifications.",
+      "search_tags": [
+        "chakra",
+        "spinner",
+        "feedback",
+        "chakra-ui"
+      ],
+      "docs_url": "https://chakra-ui.com/docs/components/spinner",
+      "stack": [
+        "react",
+        "emotion"
+      ],
+      "dependencies": [
+        "@chakra-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own style system (tokens, recipes), not Tailwind; v3 uses Ark UI primitives",
+        "Good when a theme-token-driven system is wanted"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @chakra-ui/react @emotion/react",
+      "manual_steps": [
+        "Docs: https://chakra-ui.com/docs/components/spinner"
+      ],
+      "quality": 89
+    },
+    {
+      "id": "chakra-feedback-status",
+      "name": "Chakra UI Status",
+      "source": "Chakra UI",
+      "entry_type": "component",
+      "category": "feedback",
+      "description": "Status from Chakra UI: an accessible React component styled through Chakra theme tokens and style props.",
+      "use_case": "Communicate system status: alerts, loaders, progress and notifications.",
+      "search_tags": [
+        "chakra",
+        "status",
+        "feedback",
+        "chakra-ui"
+      ],
+      "docs_url": "https://chakra-ui.com/docs/components/status",
+      "stack": [
+        "react",
+        "emotion"
+      ],
+      "dependencies": [
+        "@chakra-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own style system (tokens, recipes), not Tailwind; v3 uses Ark UI primitives",
+        "Good when a theme-token-driven system is wanted"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @chakra-ui/react @emotion/react",
+      "manual_steps": [
+        "Docs: https://chakra-ui.com/docs/components/status"
+      ],
+      "quality": 89
+    },
+    {
+      "id": "chakra-feedback-toast",
+      "name": "Chakra UI Toast",
+      "source": "Chakra UI",
+      "entry_type": "component",
+      "category": "feedback",
+      "description": "Toast from Chakra UI: an accessible React component styled through Chakra theme tokens and style props.",
+      "use_case": "Communicate system status: alerts, loaders, progress and notifications.",
+      "search_tags": [
+        "chakra",
+        "toast",
+        "feedback",
+        "chakra-ui"
+      ],
+      "docs_url": "https://chakra-ui.com/docs/components/toast",
+      "stack": [
+        "react",
+        "emotion"
+      ],
+      "dependencies": [
+        "@chakra-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own style system (tokens, recipes), not Tailwind; v3 uses Ark UI primitives",
+        "Good when a theme-token-driven system is wanted"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @chakra-ui/react @emotion/react",
+      "manual_steps": [
+        "Docs: https://chakra-ui.com/docs/components/toast"
+      ],
+      "quality": 89
+    },
+    {
+      "id": "chakra-forms-checkbox",
+      "name": "Chakra UI Checkbox",
+      "source": "Chakra UI",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Checkbox from Chakra UI: an accessible React component styled through Chakra theme tokens and style props.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "chakra",
+        "checkbox",
+        "forms",
+        "chakra-ui"
+      ],
+      "docs_url": "https://chakra-ui.com/docs/components/checkbox",
+      "stack": [
+        "react",
+        "emotion"
+      ],
+      "dependencies": [
+        "@chakra-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own style system (tokens, recipes), not Tailwind; v3 uses Ark UI primitives",
+        "Good when a theme-token-driven system is wanted"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @chakra-ui/react @emotion/react",
+      "manual_steps": [
+        "Docs: https://chakra-ui.com/docs/components/checkbox"
+      ],
+      "quality": 89
+    },
+    {
+      "id": "chakra-forms-color-picker",
+      "name": "Chakra UI Color Picker",
+      "source": "Chakra UI",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Color Picker from Chakra UI: an accessible React component styled through Chakra theme tokens and style props.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "chakra",
+        "color",
+        "picker",
+        "forms",
+        "chakra-ui"
+      ],
+      "docs_url": "https://chakra-ui.com/docs/components/color-picker",
+      "stack": [
+        "react",
+        "emotion"
+      ],
+      "dependencies": [
+        "@chakra-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own style system (tokens, recipes), not Tailwind; v3 uses Ark UI primitives",
+        "Good when a theme-token-driven system is wanted"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @chakra-ui/react @emotion/react",
+      "manual_steps": [
+        "Docs: https://chakra-ui.com/docs/components/color-picker"
+      ],
+      "quality": 89
+    },
+    {
+      "id": "chakra-forms-combobox",
+      "name": "Chakra UI Combobox",
+      "source": "Chakra UI",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Combobox from Chakra UI: an accessible React component styled through Chakra theme tokens and style props.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "chakra",
+        "combobox",
+        "forms",
+        "chakra-ui"
+      ],
+      "docs_url": "https://chakra-ui.com/docs/components/combobox",
+      "stack": [
+        "react",
+        "emotion"
+      ],
+      "dependencies": [
+        "@chakra-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own style system (tokens, recipes), not Tailwind; v3 uses Ark UI primitives",
+        "Good when a theme-token-driven system is wanted"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @chakra-ui/react @emotion/react",
+      "manual_steps": [
+        "Docs: https://chakra-ui.com/docs/components/combobox"
+      ],
+      "quality": 89
+    },
+    {
+      "id": "chakra-forms-date-input",
+      "name": "Chakra UI Date Input",
+      "source": "Chakra UI",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Date Input from Chakra UI: an accessible React component styled through Chakra theme tokens and style props.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "chakra",
+        "date",
+        "input",
+        "forms",
+        "chakra-ui"
+      ],
+      "docs_url": "https://chakra-ui.com/docs/components/date-input",
+      "stack": [
+        "react",
+        "emotion"
+      ],
+      "dependencies": [
+        "@chakra-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own style system (tokens, recipes), not Tailwind; v3 uses Ark UI primitives",
+        "Good when a theme-token-driven system is wanted"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @chakra-ui/react @emotion/react",
+      "manual_steps": [
+        "Docs: https://chakra-ui.com/docs/components/date-input"
+      ],
+      "quality": 89
+    },
+    {
+      "id": "chakra-forms-date-picker",
+      "name": "Chakra UI Date Picker",
+      "source": "Chakra UI",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Date Picker from Chakra UI: an accessible React component styled through Chakra theme tokens and style props.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "chakra",
+        "date",
+        "picker",
+        "forms",
+        "chakra-ui"
+      ],
+      "docs_url": "https://chakra-ui.com/docs/components/date-picker",
+      "stack": [
+        "react",
+        "emotion"
+      ],
+      "dependencies": [
+        "@chakra-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own style system (tokens, recipes), not Tailwind; v3 uses Ark UI primitives",
+        "Good when a theme-token-driven system is wanted"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @chakra-ui/react @emotion/react",
+      "manual_steps": [
+        "Docs: https://chakra-ui.com/docs/components/date-picker"
+      ],
+      "quality": 89
+    },
+    {
+      "id": "chakra-forms-field",
+      "name": "Chakra UI Field",
+      "source": "Chakra UI",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Field from Chakra UI: an accessible React component styled through Chakra theme tokens and style props.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "chakra",
+        "field",
+        "forms",
+        "chakra-ui"
+      ],
+      "docs_url": "https://chakra-ui.com/docs/components/field",
+      "stack": [
+        "react",
+        "emotion"
+      ],
+      "dependencies": [
+        "@chakra-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own style system (tokens, recipes), not Tailwind; v3 uses Ark UI primitives",
+        "Good when a theme-token-driven system is wanted"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @chakra-ui/react @emotion/react",
+      "manual_steps": [
+        "Docs: https://chakra-ui.com/docs/components/field"
+      ],
+      "quality": 89
+    },
+    {
+      "id": "chakra-forms-fieldset",
+      "name": "Chakra UI Fieldset",
+      "source": "Chakra UI",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Fieldset from Chakra UI: an accessible React component styled through Chakra theme tokens and style props.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "chakra",
+        "fieldset",
+        "forms",
+        "chakra-ui"
+      ],
+      "docs_url": "https://chakra-ui.com/docs/components/fieldset",
+      "stack": [
+        "react",
+        "emotion"
+      ],
+      "dependencies": [
+        "@chakra-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own style system (tokens, recipes), not Tailwind; v3 uses Ark UI primitives",
+        "Good when a theme-token-driven system is wanted"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @chakra-ui/react @emotion/react",
+      "manual_steps": [
+        "Docs: https://chakra-ui.com/docs/components/fieldset"
+      ],
+      "quality": 89
+    },
+    {
+      "id": "chakra-forms-input",
+      "name": "Chakra UI Input",
+      "source": "Chakra UI",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Input from Chakra UI: an accessible React component styled through Chakra theme tokens and style props.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "chakra",
+        "input",
+        "forms",
+        "chakra-ui"
+      ],
+      "docs_url": "https://chakra-ui.com/docs/components/input",
+      "stack": [
+        "react",
+        "emotion"
+      ],
+      "dependencies": [
+        "@chakra-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own style system (tokens, recipes), not Tailwind; v3 uses Ark UI primitives",
+        "Good when a theme-token-driven system is wanted"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @chakra-ui/react @emotion/react",
+      "manual_steps": [
+        "Docs: https://chakra-ui.com/docs/components/input"
+      ],
+      "quality": 89
+    },
+    {
+      "id": "chakra-forms-native-select",
+      "name": "Chakra UI Native Select",
+      "source": "Chakra UI",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Native Select from Chakra UI: an accessible React component styled through Chakra theme tokens and style props.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "chakra",
+        "native",
+        "select",
+        "forms",
+        "chakra-ui"
+      ],
+      "docs_url": "https://chakra-ui.com/docs/components/native-select",
+      "stack": [
+        "react",
+        "emotion"
+      ],
+      "dependencies": [
+        "@chakra-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own style system (tokens, recipes), not Tailwind; v3 uses Ark UI primitives",
+        "Good when a theme-token-driven system is wanted"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @chakra-ui/react @emotion/react",
+      "manual_steps": [
+        "Docs: https://chakra-ui.com/docs/components/native-select"
+      ],
+      "quality": 89
+    },
+    {
+      "id": "chakra-forms-number-input",
+      "name": "Chakra UI Number Input",
+      "source": "Chakra UI",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Number Input from Chakra UI: an accessible React component styled through Chakra theme tokens and style props.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "chakra",
+        "number",
+        "input",
+        "forms",
+        "chakra-ui"
+      ],
+      "docs_url": "https://chakra-ui.com/docs/components/number-input",
+      "stack": [
+        "react",
+        "emotion"
+      ],
+      "dependencies": [
+        "@chakra-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own style system (tokens, recipes), not Tailwind; v3 uses Ark UI primitives",
+        "Good when a theme-token-driven system is wanted"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @chakra-ui/react @emotion/react",
+      "manual_steps": [
+        "Docs: https://chakra-ui.com/docs/components/number-input"
+      ],
+      "quality": 89
+    },
+    {
+      "id": "chakra-forms-pin-input",
+      "name": "Chakra UI Pin Input",
+      "source": "Chakra UI",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Pin Input from Chakra UI: an accessible React component styled through Chakra theme tokens and style props.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "chakra",
+        "pin",
+        "input",
+        "forms",
+        "chakra-ui"
+      ],
+      "docs_url": "https://chakra-ui.com/docs/components/pin-input",
+      "stack": [
+        "react",
+        "emotion"
+      ],
+      "dependencies": [
+        "@chakra-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own style system (tokens, recipes), not Tailwind; v3 uses Ark UI primitives",
+        "Good when a theme-token-driven system is wanted"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @chakra-ui/react @emotion/react",
+      "manual_steps": [
+        "Docs: https://chakra-ui.com/docs/components/pin-input"
+      ],
+      "quality": 89
+    },
+    {
+      "id": "chakra-forms-select",
+      "name": "Chakra UI Select",
+      "source": "Chakra UI",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Select from Chakra UI: an accessible React component styled through Chakra theme tokens and style props.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "chakra",
+        "select",
+        "forms",
+        "chakra-ui"
+      ],
+      "docs_url": "https://chakra-ui.com/docs/components/select",
+      "stack": [
+        "react",
+        "emotion"
+      ],
+      "dependencies": [
+        "@chakra-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own style system (tokens, recipes), not Tailwind; v3 uses Ark UI primitives",
+        "Good when a theme-token-driven system is wanted"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @chakra-ui/react @emotion/react",
+      "manual_steps": [
+        "Docs: https://chakra-ui.com/docs/components/select"
+      ],
+      "quality": 89
+    },
+    {
+      "id": "chakra-forms-slider",
+      "name": "Chakra UI Slider",
+      "source": "Chakra UI",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Slider from Chakra UI: an accessible React component styled through Chakra theme tokens and style props.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "chakra",
+        "slider",
+        "forms",
+        "chakra-ui"
+      ],
+      "docs_url": "https://chakra-ui.com/docs/components/slider",
+      "stack": [
+        "react",
+        "emotion"
+      ],
+      "dependencies": [
+        "@chakra-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own style system (tokens, recipes), not Tailwind; v3 uses Ark UI primitives",
+        "Good when a theme-token-driven system is wanted"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @chakra-ui/react @emotion/react",
+      "manual_steps": [
+        "Docs: https://chakra-ui.com/docs/components/slider"
+      ],
+      "quality": 89
+    },
+    {
+      "id": "chakra-forms-switch",
+      "name": "Chakra UI Switch",
+      "source": "Chakra UI",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Switch from Chakra UI: an accessible React component styled through Chakra theme tokens and style props.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "chakra",
+        "switch",
+        "forms",
+        "chakra-ui"
+      ],
+      "docs_url": "https://chakra-ui.com/docs/components/switch",
+      "stack": [
+        "react",
+        "emotion"
+      ],
+      "dependencies": [
+        "@chakra-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own style system (tokens, recipes), not Tailwind; v3 uses Ark UI primitives",
+        "Good when a theme-token-driven system is wanted"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @chakra-ui/react @emotion/react",
+      "manual_steps": [
+        "Docs: https://chakra-ui.com/docs/components/switch"
+      ],
+      "quality": 89
+    },
+    {
+      "id": "chakra-layout-box",
+      "name": "Chakra UI Box",
+      "source": "Chakra UI",
+      "entry_type": "component",
+      "category": "layout",
+      "description": "Box from Chakra UI: an accessible React component styled through Chakra theme tokens and style props.",
+      "use_case": "Structure the page: dividers, footers, headers and empty states.",
+      "search_tags": [
+        "chakra",
+        "box",
+        "layout",
+        "chakra-ui"
+      ],
+      "docs_url": "https://chakra-ui.com/docs/components/box",
+      "stack": [
+        "react",
+        "emotion"
+      ],
+      "dependencies": [
+        "@chakra-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own style system (tokens, recipes), not Tailwind; v3 uses Ark UI primitives",
+        "Good when a theme-token-driven system is wanted"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @chakra-ui/react @emotion/react",
+      "manual_steps": [
+        "Docs: https://chakra-ui.com/docs/components/box"
+      ],
+      "quality": 89
+    },
+    {
+      "id": "chakra-layout-center",
+      "name": "Chakra UI Center",
+      "source": "Chakra UI",
+      "entry_type": "component",
+      "category": "layout",
+      "description": "Center from Chakra UI: an accessible React component styled through Chakra theme tokens and style props.",
+      "use_case": "Structure the page: dividers, footers, headers and empty states.",
+      "search_tags": [
+        "chakra",
+        "center",
+        "layout",
+        "chakra-ui"
+      ],
+      "docs_url": "https://chakra-ui.com/docs/components/center",
+      "stack": [
+        "react",
+        "emotion"
+      ],
+      "dependencies": [
+        "@chakra-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own style system (tokens, recipes), not Tailwind; v3 uses Ark UI primitives",
+        "Good when a theme-token-driven system is wanted"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @chakra-ui/react @emotion/react",
+      "manual_steps": [
+        "Docs: https://chakra-ui.com/docs/components/center"
+      ],
+      "quality": 89
+    },
+    {
+      "id": "chakra-layout-container",
+      "name": "Chakra UI Container",
+      "source": "Chakra UI",
+      "entry_type": "component",
+      "category": "layout",
+      "description": "Container from Chakra UI: an accessible React component styled through Chakra theme tokens and style props.",
+      "use_case": "Structure the page: dividers, footers, headers and empty states.",
+      "search_tags": [
+        "chakra",
+        "container",
+        "layout",
+        "chakra-ui"
+      ],
+      "docs_url": "https://chakra-ui.com/docs/components/container",
+      "stack": [
+        "react",
+        "emotion"
+      ],
+      "dependencies": [
+        "@chakra-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own style system (tokens, recipes), not Tailwind; v3 uses Ark UI primitives",
+        "Good when a theme-token-driven system is wanted"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @chakra-ui/react @emotion/react",
+      "manual_steps": [
+        "Docs: https://chakra-ui.com/docs/components/container"
+      ],
+      "quality": 89
+    },
+    {
+      "id": "chakra-layout-flex",
+      "name": "Chakra UI Flex",
+      "source": "Chakra UI",
+      "entry_type": "component",
+      "category": "layout",
+      "description": "Flex from Chakra UI: an accessible React component styled through Chakra theme tokens and style props.",
+      "use_case": "Structure the page: dividers, footers, headers and empty states.",
+      "search_tags": [
+        "chakra",
+        "flex",
+        "layout",
+        "chakra-ui"
+      ],
+      "docs_url": "https://chakra-ui.com/docs/components/flex",
+      "stack": [
+        "react",
+        "emotion"
+      ],
+      "dependencies": [
+        "@chakra-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own style system (tokens, recipes), not Tailwind; v3 uses Ark UI primitives",
+        "Good when a theme-token-driven system is wanted"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @chakra-ui/react @emotion/react",
+      "manual_steps": [
+        "Docs: https://chakra-ui.com/docs/components/flex"
+      ],
+      "quality": 89
+    },
+    {
+      "id": "chakra-layout-grid",
+      "name": "Chakra UI Grid",
+      "source": "Chakra UI",
+      "entry_type": "component",
+      "category": "layout",
+      "description": "Grid from Chakra UI: an accessible React component styled through Chakra theme tokens and style props.",
+      "use_case": "Structure the page: dividers, footers, headers and empty states.",
+      "search_tags": [
+        "chakra",
+        "grid",
+        "layout",
+        "chakra-ui"
+      ],
+      "docs_url": "https://chakra-ui.com/docs/components/grid",
+      "stack": [
+        "react",
+        "emotion"
+      ],
+      "dependencies": [
+        "@chakra-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own style system (tokens, recipes), not Tailwind; v3 uses Ark UI primitives",
+        "Good when a theme-token-driven system is wanted"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @chakra-ui/react @emotion/react",
+      "manual_steps": [
+        "Docs: https://chakra-ui.com/docs/components/grid"
+      ],
+      "quality": 89
+    },
+    {
+      "id": "chakra-layout-scroll-area",
+      "name": "Chakra UI Scroll Area",
+      "source": "Chakra UI",
+      "entry_type": "component",
+      "category": "layout",
+      "description": "Scroll Area from Chakra UI: an accessible React component styled through Chakra theme tokens and style props.",
+      "use_case": "Structure the page: dividers, footers, headers and empty states.",
+      "search_tags": [
+        "chakra",
+        "scroll",
+        "area",
+        "layout",
+        "chakra-ui"
+      ],
+      "docs_url": "https://chakra-ui.com/docs/components/scroll-area",
+      "stack": [
+        "react",
+        "emotion"
+      ],
+      "dependencies": [
+        "@chakra-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own style system (tokens, recipes), not Tailwind; v3 uses Ark UI primitives",
+        "Good when a theme-token-driven system is wanted"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @chakra-ui/react @emotion/react",
+      "manual_steps": [
+        "Docs: https://chakra-ui.com/docs/components/scroll-area"
+      ],
+      "quality": 89
+    },
+    {
+      "id": "chakra-layout-separator",
+      "name": "Chakra UI Separator",
+      "source": "Chakra UI",
+      "entry_type": "component",
+      "category": "layout",
+      "description": "Separator from Chakra UI: an accessible React component styled through Chakra theme tokens and style props.",
+      "use_case": "Structure the page: dividers, footers, headers and empty states.",
+      "search_tags": [
+        "chakra",
+        "separator",
+        "layout",
+        "chakra-ui"
+      ],
+      "docs_url": "https://chakra-ui.com/docs/components/separator",
+      "stack": [
+        "react",
+        "emotion"
+      ],
+      "dependencies": [
+        "@chakra-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own style system (tokens, recipes), not Tailwind; v3 uses Ark UI primitives",
+        "Good when a theme-token-driven system is wanted"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @chakra-ui/react @emotion/react",
+      "manual_steps": [
+        "Docs: https://chakra-ui.com/docs/components/separator"
+      ],
+      "quality": 89
+    },
+    {
+      "id": "chakra-layout-simple-grid",
+      "name": "Chakra UI Simple Grid",
+      "source": "Chakra UI",
+      "entry_type": "component",
+      "category": "layout",
+      "description": "Simple Grid from Chakra UI: an accessible React component styled through Chakra theme tokens and style props.",
+      "use_case": "Structure the page: dividers, footers, headers and empty states.",
+      "search_tags": [
+        "chakra",
+        "simple",
+        "grid",
+        "layout",
+        "chakra-ui"
+      ],
+      "docs_url": "https://chakra-ui.com/docs/components/simple-grid",
+      "stack": [
+        "react",
+        "emotion"
+      ],
+      "dependencies": [
+        "@chakra-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own style system (tokens, recipes), not Tailwind; v3 uses Ark UI primitives",
+        "Good when a theme-token-driven system is wanted"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @chakra-ui/react @emotion/react",
+      "manual_steps": [
+        "Docs: https://chakra-ui.com/docs/components/simple-grid"
+      ],
+      "quality": 89
+    },
+    {
+      "id": "chakra-layout-splitter",
+      "name": "Chakra UI Splitter",
+      "source": "Chakra UI",
+      "entry_type": "component",
+      "category": "layout",
+      "description": "Splitter from Chakra UI: an accessible React component styled through Chakra theme tokens and style props.",
+      "use_case": "Structure the page: dividers, footers, headers and empty states.",
+      "search_tags": [
+        "chakra",
+        "splitter",
+        "layout",
+        "chakra-ui"
+      ],
+      "docs_url": "https://chakra-ui.com/docs/components/splitter",
+      "stack": [
+        "react",
+        "emotion"
+      ],
+      "dependencies": [
+        "@chakra-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own style system (tokens, recipes), not Tailwind; v3 uses Ark UI primitives",
+        "Good when a theme-token-driven system is wanted"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @chakra-ui/react @emotion/react",
+      "manual_steps": [
+        "Docs: https://chakra-ui.com/docs/components/splitter"
+      ],
+      "quality": 89
+    },
+    {
+      "id": "chakra-media-aspect-ratio",
+      "name": "Chakra UI Aspect Ratio",
+      "source": "Chakra UI",
+      "entry_type": "component",
+      "category": "media",
+      "description": "Aspect Ratio from Chakra UI: an accessible React component styled through Chakra theme tokens and style props.",
+      "use_case": "Display images, video, carousels and device mockups.",
+      "search_tags": [
+        "chakra",
+        "aspect",
+        "ratio",
+        "media",
+        "chakra-ui"
+      ],
+      "docs_url": "https://chakra-ui.com/docs/components/aspect-ratio",
+      "stack": [
+        "react",
+        "emotion"
+      ],
+      "dependencies": [
+        "@chakra-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own style system (tokens, recipes), not Tailwind; v3 uses Ark UI primitives",
+        "Good when a theme-token-driven system is wanted"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @chakra-ui/react @emotion/react",
+      "manual_steps": [
+        "Docs: https://chakra-ui.com/docs/components/aspect-ratio"
+      ],
+      "quality": 89
+    },
+    {
+      "id": "chakra-media-carousel",
+      "name": "Chakra UI Carousel",
+      "source": "Chakra UI",
+      "entry_type": "component",
+      "category": "media",
+      "description": "Carousel from Chakra UI: an accessible React component styled through Chakra theme tokens and style props.",
+      "use_case": "Display images, video, carousels and device mockups.",
+      "search_tags": [
+        "chakra",
+        "carousel",
+        "media",
+        "chakra-ui"
+      ],
+      "docs_url": "https://chakra-ui.com/docs/components/carousel",
+      "stack": [
+        "react",
+        "emotion"
+      ],
+      "dependencies": [
+        "@chakra-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own style system (tokens, recipes), not Tailwind; v3 uses Ark UI primitives",
+        "Good when a theme-token-driven system is wanted"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @chakra-ui/react @emotion/react",
+      "manual_steps": [
+        "Docs: https://chakra-ui.com/docs/components/carousel"
+      ],
+      "quality": 89
+    },
+    {
+      "id": "chakra-micro-interactions-accordion",
+      "name": "Chakra UI Accordion",
+      "source": "Chakra UI",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "Accordion from Chakra UI: an accessible React component styled through Chakra theme tokens and style props.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "chakra",
+        "accordion",
+        "micro-interactions",
+        "chakra-ui"
+      ],
+      "docs_url": "https://chakra-ui.com/docs/components/accordion",
+      "stack": [
+        "react",
+        "emotion"
+      ],
+      "dependencies": [
+        "@chakra-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own style system (tokens, recipes), not Tailwind; v3 uses Ark UI primitives",
+        "Good when a theme-token-driven system is wanted"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @chakra-ui/react @emotion/react",
+      "manual_steps": [
+        "Docs: https://chakra-ui.com/docs/components/accordion"
+      ],
+      "quality": 89
+    },
+    {
+      "id": "chakra-micro-interactions-button",
+      "name": "Chakra UI Button",
+      "source": "Chakra UI",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "Button from Chakra UI: an accessible React component styled through Chakra theme tokens and style props.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "chakra",
+        "button",
+        "micro-interactions",
+        "chakra-ui"
+      ],
+      "docs_url": "https://chakra-ui.com/docs/components/button",
+      "stack": [
+        "react",
+        "emotion"
+      ],
+      "dependencies": [
+        "@chakra-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own style system (tokens, recipes), not Tailwind; v3 uses Ark UI primitives",
+        "Good when a theme-token-driven system is wanted"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @chakra-ui/react @emotion/react",
+      "manual_steps": [
+        "Docs: https://chakra-ui.com/docs/components/button"
+      ],
+      "quality": 89
+    },
+    {
+      "id": "chakra-navigation-breadcrumb",
+      "name": "Chakra UI Breadcrumb",
+      "source": "Chakra UI",
+      "entry_type": "component",
+      "category": "navigation",
+      "description": "Breadcrumb from Chakra UI: an accessible React component styled through Chakra theme tokens and style props.",
+      "use_case": "Build site and app navigation structures that stay clear at any depth.",
+      "search_tags": [
+        "chakra",
+        "breadcrumb",
+        "navigation",
+        "chakra-ui"
+      ],
+      "docs_url": "https://chakra-ui.com/docs/components/breadcrumb",
+      "stack": [
+        "react",
+        "emotion"
+      ],
+      "dependencies": [
+        "@chakra-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own style system (tokens, recipes), not Tailwind; v3 uses Ark UI primitives",
+        "Good when a theme-token-driven system is wanted"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @chakra-ui/react @emotion/react",
+      "manual_steps": [
+        "Docs: https://chakra-ui.com/docs/components/breadcrumb"
+      ],
+      "quality": 89
+    },
+    {
+      "id": "chakra-navigation-link",
+      "name": "Chakra UI Link",
+      "source": "Chakra UI",
+      "entry_type": "component",
+      "category": "navigation",
+      "description": "Link from Chakra UI: an accessible React component styled through Chakra theme tokens and style props.",
+      "use_case": "Build site and app navigation structures that stay clear at any depth.",
+      "search_tags": [
+        "chakra",
+        "link",
+        "navigation",
+        "chakra-ui"
+      ],
+      "docs_url": "https://chakra-ui.com/docs/components/link",
+      "stack": [
+        "react",
+        "emotion"
+      ],
+      "dependencies": [
+        "@chakra-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own style system (tokens, recipes), not Tailwind; v3 uses Ark UI primitives",
+        "Good when a theme-token-driven system is wanted"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @chakra-ui/react @emotion/react",
+      "manual_steps": [
+        "Docs: https://chakra-ui.com/docs/components/link"
+      ],
+      "quality": 89
+    },
+    {
+      "id": "chakra-navigation-pagination",
+      "name": "Chakra UI Pagination",
+      "source": "Chakra UI",
+      "entry_type": "component",
+      "category": "navigation",
+      "description": "Pagination from Chakra UI: an accessible React component styled through Chakra theme tokens and style props.",
+      "use_case": "Build site and app navigation structures that stay clear at any depth.",
+      "search_tags": [
+        "chakra",
+        "pagination",
+        "navigation",
+        "chakra-ui"
+      ],
+      "docs_url": "https://chakra-ui.com/docs/components/pagination",
+      "stack": [
+        "react",
+        "emotion"
+      ],
+      "dependencies": [
+        "@chakra-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own style system (tokens, recipes), not Tailwind; v3 uses Ark UI primitives",
+        "Good when a theme-token-driven system is wanted"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @chakra-ui/react @emotion/react",
+      "manual_steps": [
+        "Docs: https://chakra-ui.com/docs/components/pagination"
+      ],
+      "quality": 89
+    },
+    {
+      "id": "chakra-navigation-skip-nav",
+      "name": "Chakra UI Skip Nav",
+      "source": "Chakra UI",
+      "entry_type": "component",
+      "category": "navigation",
+      "description": "Skip Nav from Chakra UI: an accessible React component styled through Chakra theme tokens and style props.",
+      "use_case": "Build site and app navigation structures that stay clear at any depth.",
+      "search_tags": [
+        "chakra",
+        "skip",
+        "nav",
+        "navigation",
+        "chakra-ui"
+      ],
+      "docs_url": "https://chakra-ui.com/docs/components/skip-nav",
+      "stack": [
+        "react",
+        "emotion"
+      ],
+      "dependencies": [
+        "@chakra-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own style system (tokens, recipes), not Tailwind; v3 uses Ark UI primitives",
+        "Good when a theme-token-driven system is wanted"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @chakra-ui/react @emotion/react",
+      "manual_steps": [
+        "Docs: https://chakra-ui.com/docs/components/skip-nav"
+      ],
+      "quality": 89
+    },
+    {
+      "id": "chakra-navigation-tabs",
+      "name": "Chakra UI Tabs",
+      "source": "Chakra UI",
+      "entry_type": "component",
+      "category": "navigation",
+      "description": "Tabs from Chakra UI: an accessible React component styled through Chakra theme tokens and style props.",
+      "use_case": "Build site and app navigation structures that stay clear at any depth.",
+      "search_tags": [
+        "chakra",
+        "tabs",
+        "navigation",
+        "chakra-ui"
+      ],
+      "docs_url": "https://chakra-ui.com/docs/components/tabs",
+      "stack": [
+        "react",
+        "emotion"
+      ],
+      "dependencies": [
+        "@chakra-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own style system (tokens, recipes), not Tailwind; v3 uses Ark UI primitives",
+        "Good when a theme-token-driven system is wanted"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @chakra-ui/react @emotion/react",
+      "manual_steps": [
+        "Docs: https://chakra-ui.com/docs/components/tabs"
+      ],
+      "quality": 89
+    },
+    {
+      "id": "chakra-overlay-dialog",
+      "name": "Chakra UI Dialog",
+      "source": "Chakra UI",
+      "entry_type": "component",
+      "category": "overlay",
+      "description": "Dialog from Chakra UI: an accessible React component styled through Chakra theme tokens and style props.",
+      "use_case": "Present dialogs, drawers and popovers without leaving the page.",
+      "search_tags": [
+        "chakra",
+        "dialog",
+        "overlay",
+        "chakra-ui"
+      ],
+      "docs_url": "https://chakra-ui.com/docs/components/dialog",
+      "stack": [
+        "react",
+        "emotion"
+      ],
+      "dependencies": [
+        "@chakra-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own style system (tokens, recipes), not Tailwind; v3 uses Ark UI primitives",
+        "Good when a theme-token-driven system is wanted"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @chakra-ui/react @emotion/react",
+      "manual_steps": [
+        "Docs: https://chakra-ui.com/docs/components/dialog"
+      ],
+      "quality": 89
+    },
+    {
+      "id": "chakra-overlay-drawer",
+      "name": "Chakra UI Drawer",
+      "source": "Chakra UI",
+      "entry_type": "component",
+      "category": "overlay",
+      "description": "Drawer from Chakra UI: an accessible React component styled through Chakra theme tokens and style props.",
+      "use_case": "Present dialogs, drawers and popovers without leaving the page.",
+      "search_tags": [
+        "chakra",
+        "drawer",
+        "overlay",
+        "chakra-ui"
+      ],
+      "docs_url": "https://chakra-ui.com/docs/components/drawer",
+      "stack": [
+        "react",
+        "emotion"
+      ],
+      "dependencies": [
+        "@chakra-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own style system (tokens, recipes), not Tailwind; v3 uses Ark UI primitives",
+        "Good when a theme-token-driven system is wanted"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @chakra-ui/react @emotion/react",
+      "manual_steps": [
+        "Docs: https://chakra-ui.com/docs/components/drawer"
+      ],
+      "quality": 89
+    },
+    {
+      "id": "chakra-overlay-hover-card",
+      "name": "Chakra UI Hover Card",
+      "source": "Chakra UI",
+      "entry_type": "component",
+      "category": "overlay",
+      "description": "Hover Card from Chakra UI: an accessible React component styled through Chakra theme tokens and style props.",
+      "use_case": "Present dialogs, drawers and popovers without leaving the page.",
+      "search_tags": [
+        "chakra",
+        "hover",
+        "card",
+        "overlay",
+        "chakra-ui"
+      ],
+      "docs_url": "https://chakra-ui.com/docs/components/hover-card",
+      "stack": [
+        "react",
+        "emotion"
+      ],
+      "dependencies": [
+        "@chakra-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own style system (tokens, recipes), not Tailwind; v3 uses Ark UI primitives",
+        "Good when a theme-token-driven system is wanted"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @chakra-ui/react @emotion/react",
+      "manual_steps": [
+        "Docs: https://chakra-ui.com/docs/components/hover-card"
+      ],
+      "quality": 89
+    },
+    {
+      "id": "chakra-overlay-menu",
+      "name": "Chakra UI Menu",
+      "source": "Chakra UI",
+      "entry_type": "component",
+      "category": "overlay",
+      "description": "Menu from Chakra UI: an accessible React component styled through Chakra theme tokens and style props.",
+      "use_case": "Present dialogs, drawers and popovers without leaving the page.",
+      "search_tags": [
+        "chakra",
+        "menu",
+        "overlay",
+        "chakra-ui"
+      ],
+      "docs_url": "https://chakra-ui.com/docs/components/menu",
+      "stack": [
+        "react",
+        "emotion"
+      ],
+      "dependencies": [
+        "@chakra-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own style system (tokens, recipes), not Tailwind; v3 uses Ark UI primitives",
+        "Good when a theme-token-driven system is wanted"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @chakra-ui/react @emotion/react",
+      "manual_steps": [
+        "Docs: https://chakra-ui.com/docs/components/menu"
+      ],
+      "quality": 89
+    },
+    {
+      "id": "chakra-overlay-popover",
+      "name": "Chakra UI Popover",
+      "source": "Chakra UI",
+      "entry_type": "component",
+      "category": "overlay",
+      "description": "Popover from Chakra UI: an accessible React component styled through Chakra theme tokens and style props.",
+      "use_case": "Present dialogs, drawers and popovers without leaving the page.",
+      "search_tags": [
+        "chakra",
+        "popover",
+        "overlay",
+        "chakra-ui"
+      ],
+      "docs_url": "https://chakra-ui.com/docs/components/popover",
+      "stack": [
+        "react",
+        "emotion"
+      ],
+      "dependencies": [
+        "@chakra-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own style system (tokens, recipes), not Tailwind; v3 uses Ark UI primitives",
+        "Good when a theme-token-driven system is wanted"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @chakra-ui/react @emotion/react",
+      "manual_steps": [
+        "Docs: https://chakra-ui.com/docs/components/popover"
+      ],
+      "quality": 89
+    },
+    {
+      "id": "chakra-overlay-tooltip",
+      "name": "Chakra UI Tooltip",
+      "source": "Chakra UI",
+      "entry_type": "component",
+      "category": "overlay",
+      "description": "Tooltip from Chakra UI: an accessible React component styled through Chakra theme tokens and style props.",
+      "use_case": "Present dialogs, drawers and popovers without leaving the page.",
+      "search_tags": [
+        "chakra",
+        "tooltip",
+        "overlay",
+        "chakra-ui"
+      ],
+      "docs_url": "https://chakra-ui.com/docs/components/tooltip",
+      "stack": [
+        "react",
+        "emotion"
+      ],
+      "dependencies": [
+        "@chakra-ui/react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own style system (tokens, recipes), not Tailwind; v3 uses Ark UI primitives",
+        "Good when a theme-token-driven system is wanted"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @chakra-ui/react @emotion/react",
+      "manual_steps": [
+        "Docs: https://chakra-ui.com/docs/components/tooltip"
+      ],
+      "quality": 89
+    }
+  ]
+}

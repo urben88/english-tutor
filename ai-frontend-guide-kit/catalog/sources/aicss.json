@@ -1,0 +1,575 @@
+{
+  "schema_version": "1.0",
+  "source_id": "aicss",
+  "source_name": "aicss.dev",
+  "source_url": "https://www.aicss.dev",
+  "catalog_url": "https://www.aicss.dev",
+  "license_summary": "MIT (free components); Pro under a custom one-time license",
+  "granularity": "complete for the 13 free components (Pro excluded by design)",
+  "extraction": {
+    "channel": "docs-structured",
+    "method": "Node script parsing the official llms.txt (sanctioned channel for AI assistants)",
+    "evidence_url": "https://www.aicss.dev/llms.txt"
+  },
+  "generated_at": "2026-10-02",
+  "entries": [
+    {
+      "id": "aicss-ai-surfaces-code-block",
+      "name": "AICSS Code Block",
+      "source": "aicss.dev",
+      "entry_type": "component",
+      "category": "ai-surfaces",
+      "description": "A code block with a language label and one-click copy button.",
+      "use_case": "Build agent/AI conversation interfaces: thinking states, tool calls, streaming text, citations and structured outputs.",
+      "search_tags": [
+        "aicss",
+        "agent-ui",
+        "chat",
+        "code",
+        "block",
+        "ai-surfaces",
+        "aicss.dev"
+      ],
+      "docs_url": "https://www.aicss.dev/components/code-block",
+      "stack": [
+        "react",
+        "vue",
+        "svelte"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Ships React, Vue and Svelte code",
+        "Self-contained CSS (no Tailwind required)"
+      ],
+      "registry_url": "https://www.aicss.dev/r/code-block",
+      "install_method": "npm",
+      "install_command": "npx @aicss/cli add code-block",
+      "manual_steps": [
+        "Alternative: npx shadcn@latest add https://www.aicss.dev/r/code-block",
+        "Or copy the React/Vue/Svelte code from https://www.aicss.dev/components/code-block"
+      ],
+      "limits": "The 5 Pro components ($89 Personal / $299 Enterprise, one-time) are excluded from this catalog; do not reconstruct their source.",
+      "extraction_note": "Indexed from llms.txt, the channel explicitly allowed for AI assistants; /r/ endpoints are disallowed for named AI bots in robots.txt.",
+      "quality": 87
+    },
+    {
+      "id": "aicss-ai-surfaces-comparison-table",
+      "name": "AICSS Comparison Table",
+      "source": "aicss.dev",
+      "entry_type": "component",
+      "category": "ai-surfaces",
+      "description": "A feature-by-plan comparison matrix with checkmarks.",
+      "use_case": "Build agent/AI conversation interfaces: thinking states, tool calls, streaming text, citations and structured outputs.",
+      "search_tags": [
+        "aicss",
+        "agent-ui",
+        "chat",
+        "comparison",
+        "table",
+        "ai-surfaces",
+        "aicss.dev"
+      ],
+      "docs_url": "https://www.aicss.dev/components/comparison-table",
+      "stack": [
+        "react",
+        "vue",
+        "svelte"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Ships React, Vue and Svelte code",
+        "Self-contained CSS (no Tailwind required)"
+      ],
+      "registry_url": "https://www.aicss.dev/r/comparison-table",
+      "install_method": "npm",
+      "install_command": "npx @aicss/cli add comparison-table",
+      "manual_steps": [
+        "Alternative: npx shadcn@latest add https://www.aicss.dev/r/comparison-table",
+        "Or copy the React/Vue/Svelte code from https://www.aicss.dev/components/comparison-table"
+      ],
+      "limits": "The 5 Pro components ($89 Personal / $299 Enterprise, one-time) are excluded from this catalog; do not reconstruct their source.",
+      "extraction_note": "Indexed from llms.txt, the channel explicitly allowed for AI assistants; /r/ endpoints are disallowed for named AI bots in robots.txt.",
+      "quality": 82
+    },
+    {
+      "id": "aicss-ai-surfaces-data-table",
+      "name": "AICSS Data Table",
+      "source": "aicss.dev",
+      "entry_type": "component",
+      "category": "ai-surfaces",
+      "description": "A tidy data table for structured comparisons and results.",
+      "use_case": "Build agent/AI conversation interfaces: thinking states, tool calls, streaming text, citations and structured outputs.",
+      "search_tags": [
+        "aicss",
+        "agent-ui",
+        "chat",
+        "data",
+        "table",
+        "ai-surfaces",
+        "aicss.dev"
+      ],
+      "docs_url": "https://www.aicss.dev/components/data-table",
+      "stack": [
+        "react",
+        "vue",
+        "svelte"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Ships React, Vue and Svelte code",
+        "Self-contained CSS (no Tailwind required)"
+      ],
+      "registry_url": "https://www.aicss.dev/r/data-table",
+      "install_method": "npm",
+      "install_command": "npx @aicss/cli add data-table",
+      "manual_steps": [
+        "Alternative: npx shadcn@latest add https://www.aicss.dev/r/data-table",
+        "Or copy the React/Vue/Svelte code from https://www.aicss.dev/components/data-table"
+      ],
+      "limits": "The 5 Pro components ($89 Personal / $299 Enterprise, one-time) are excluded from this catalog; do not reconstruct their source.",
+      "extraction_note": "Indexed from llms.txt, the channel explicitly allowed for AI assistants; /r/ endpoints are disallowed for named AI bots in robots.txt.",
+      "quality": 82
+    },
+    {
+      "id": "aicss-ai-surfaces-file-diff",
+      "name": "AICSS File Diff",
+      "source": "aicss.dev",
+      "entry_type": "component",
+      "category": "ai-surfaces",
+      "description": "An inline diff card showing the additions and deletions the agent proposes.",
+      "use_case": "Build agent/AI conversation interfaces: thinking states, tool calls, streaming text, citations and structured outputs.",
+      "search_tags": [
+        "aicss",
+        "agent-ui",
+        "chat",
+        "file",
+        "diff",
+        "ai-surfaces",
+        "aicss.dev"
+      ],
+      "docs_url": "https://www.aicss.dev/components/file-diff",
+      "stack": [
+        "react",
+        "vue",
+        "svelte"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Ships React, Vue and Svelte code",
+        "Self-contained CSS (no Tailwind required)"
+      ],
+      "registry_url": "https://www.aicss.dev/r/file-diff",
+      "install_method": "npm",
+      "install_command": "npx @aicss/cli add file-diff",
+      "manual_steps": [
+        "Alternative: npx shadcn@latest add https://www.aicss.dev/r/file-diff",
+        "Or copy the React/Vue/Svelte code from https://www.aicss.dev/components/file-diff"
+      ],
+      "limits": "The 5 Pro components ($89 Personal / $299 Enterprise, one-time) are excluded from this catalog; do not reconstruct their source.",
+      "extraction_note": "Indexed from llms.txt, the channel explicitly allowed for AI assistants; /r/ endpoints are disallowed for named AI bots in robots.txt.",
+      "quality": 87
+    },
+    {
+      "id": "aicss-ai-surfaces-inline-citations",
+      "name": "AICSS Inline Citations",
+      "source": "aicss.dev",
+      "entry_type": "component",
+      "category": "ai-surfaces",
+      "description": "Superscript citation markers with a compact source footer.",
+      "use_case": "Build agent/AI conversation interfaces: thinking states, tool calls, streaming text, citations and structured outputs.",
+      "search_tags": [
+        "aicss",
+        "agent-ui",
+        "chat",
+        "inline",
+        "citations",
+        "ai-surfaces",
+        "aicss.dev"
+      ],
+      "docs_url": "https://www.aicss.dev/components/inline-citations",
+      "stack": [
+        "react",
+        "vue",
+        "svelte"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Ships React, Vue and Svelte code",
+        "Self-contained CSS (no Tailwind required)"
+      ],
+      "registry_url": "https://www.aicss.dev/r/inline-citations",
+      "install_method": "npm",
+      "install_command": "npx @aicss/cli add inline-citations",
+      "manual_steps": [
+        "Alternative: npx shadcn@latest add https://www.aicss.dev/r/inline-citations",
+        "Or copy the React/Vue/Svelte code from https://www.aicss.dev/components/inline-citations"
+      ],
+      "limits": "The 5 Pro components ($89 Personal / $299 Enterprise, one-time) are excluded from this catalog; do not reconstruct their source.",
+      "extraction_note": "Indexed from llms.txt, the channel explicitly allowed for AI assistants; /r/ endpoints are disallowed for named AI bots in robots.txt.",
+      "quality": 82
+    },
+    {
+      "id": "aicss-ai-surfaces-message-actions",
+      "name": "AICSS Message Actions",
+      "source": "aicss.dev",
+      "entry_type": "component",
+      "category": "ai-surfaces",
+      "description": "The action row under an assistant message: good response, bad response, copy, an emoji reaction, reply, and more.",
+      "use_case": "Build agent/AI conversation interfaces: thinking states, tool calls, streaming text, citations and structured outputs.",
+      "search_tags": [
+        "aicss",
+        "agent-ui",
+        "chat",
+        "message",
+        "actions",
+        "ai-surfaces",
+        "aicss.dev"
+      ],
+      "docs_url": "https://www.aicss.dev/components/message-actions",
+      "stack": [
+        "react",
+        "vue",
+        "svelte"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Ships React, Vue and Svelte code",
+        "Self-contained CSS (no Tailwind required)"
+      ],
+      "registry_url": "https://www.aicss.dev/r/message-actions",
+      "install_method": "npm",
+      "install_command": "npx @aicss/cli add message-actions",
+      "manual_steps": [
+        "Alternative: npx shadcn@latest add https://www.aicss.dev/r/message-actions",
+        "Or copy the React/Vue/Svelte code from https://www.aicss.dev/components/message-actions"
+      ],
+      "limits": "The 5 Pro components ($89 Personal / $299 Enterprise, one-time) are excluded from this catalog; do not reconstruct their source.",
+      "extraction_note": "Indexed from llms.txt, the channel explicitly allowed for AI assistants; /r/ endpoints are disallowed for named AI bots in robots.txt.",
+      "quality": 87
+    },
+    {
+      "id": "aicss-ai-surfaces-orbs",
+      "name": "AICSS Orbs",
+      "source": "aicss.dev",
+      "entry_type": "component",
+      "category": "ai-surfaces",
+      "description": "Compact animated activity indicators for agent UIs - discrete DOM and CSS orbs that signal what the agent is doing without blocking the thread.",
+      "use_case": "Build agent/AI conversation interfaces: thinking states, tool calls, streaming text, citations and structured outputs.",
+      "search_tags": [
+        "aicss",
+        "agent-ui",
+        "chat",
+        "orbs",
+        "ai-surfaces",
+        "aicss.dev"
+      ],
+      "docs_url": "https://www.aicss.dev/components/orbs",
+      "stack": [
+        "react",
+        "vue",
+        "svelte"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Ships React, Vue and Svelte code",
+        "Self-contained CSS (no Tailwind required)"
+      ],
+      "registry_url": "https://www.aicss.dev/r/orbs",
+      "install_method": "npm",
+      "install_command": "npx @aicss/cli add orbs",
+      "manual_steps": [
+        "Alternative: npx shadcn@latest add https://www.aicss.dev/r/orbs",
+        "Or copy the React/Vue/Svelte code from https://www.aicss.dev/components/orbs"
+      ],
+      "limits": "The 5 Pro components ($89 Personal / $299 Enterprise, one-time) are excluded from this catalog; do not reconstruct their source.",
+      "extraction_note": "Indexed from llms.txt, the channel explicitly allowed for AI assistants; /r/ endpoints are disallowed for named AI bots in robots.txt.",
+      "quality": 87
+    },
+    {
+      "id": "aicss-ai-surfaces-reasoning-effort",
+      "name": "AICSS Reasoning Effort",
+      "source": "aicss.dev",
+      "entry_type": "component",
+      "category": "ai-surfaces",
+      "description": "A stepped control for how much reasoning a model spends. Low keeps the budget short, Extra High uses the full thinking budget. While you drag, the model and the active level merge out of the track, then fold back on rel…",
+      "use_case": "Build agent/AI conversation interfaces: thinking states, tool calls, streaming text, citations and structured outputs.",
+      "search_tags": [
+        "aicss",
+        "agent-ui",
+        "chat",
+        "reasoning",
+        "effort",
+        "ai-surfaces",
+        "aicss.dev"
+      ],
+      "docs_url": "https://www.aicss.dev/components/reasoning-effort",
+      "stack": [
+        "react",
+        "vue",
+        "svelte"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Ships React, Vue and Svelte code",
+        "Self-contained CSS (no Tailwind required)"
+      ],
+      "registry_url": "https://www.aicss.dev/r/reasoning-effort",
+      "install_method": "npm",
+      "install_command": "npx @aicss/cli add reasoning-effort",
+      "manual_steps": [
+        "Alternative: npx shadcn@latest add https://www.aicss.dev/r/reasoning-effort",
+        "Or copy the React/Vue/Svelte code from https://www.aicss.dev/components/reasoning-effort"
+      ],
+      "limits": "The 5 Pro components ($89 Personal / $299 Enterprise, one-time) are excluded from this catalog; do not reconstruct their source.",
+      "extraction_note": "Indexed from llms.txt, the channel explicitly allowed for AI assistants; /r/ endpoints are disallowed for named AI bots in robots.txt.",
+      "quality": 87
+    },
+    {
+      "id": "aicss-ai-surfaces-secure-input",
+      "name": "AICSS Secure Input",
+      "source": "aicss.dev",
+      "entry_type": "component",
+      "category": "ai-surfaces",
+      "description": "A card the agent sends in chat when it needs a secret for the screen it is driving. The value is handed to that screen, not typed into the thread.",
+      "use_case": "Build agent/AI conversation interfaces: thinking states, tool calls, streaming text, citations and structured outputs.",
+      "search_tags": [
+        "aicss",
+        "agent-ui",
+        "chat",
+        "secure",
+        "input",
+        "ai-surfaces",
+        "aicss.dev"
+      ],
+      "docs_url": "https://www.aicss.dev/components/secure-input",
+      "stack": [
+        "react",
+        "vue",
+        "svelte"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Ships React, Vue and Svelte code",
+        "Self-contained CSS (no Tailwind required)"
+      ],
+      "registry_url": "https://www.aicss.dev/r/secure-input",
+      "install_method": "npm",
+      "install_command": "npx @aicss/cli add secure-input",
+      "manual_steps": [
+        "Alternative: npx shadcn@latest add https://www.aicss.dev/r/secure-input",
+        "Or copy the React/Vue/Svelte code from https://www.aicss.dev/components/secure-input"
+      ],
+      "limits": "The 5 Pro components ($89 Personal / $299 Enterprise, one-time) are excluded from this catalog; do not reconstruct their source.",
+      "extraction_note": "Indexed from llms.txt, the channel explicitly allowed for AI assistants; /r/ endpoints are disallowed for named AI bots in robots.txt.",
+      "quality": 87
+    },
+    {
+      "id": "aicss-ai-surfaces-streaming-text",
+      "name": "AICSS Streaming Text",
+      "source": "aicss.dev",
+      "entry_type": "component",
+      "category": "ai-surfaces",
+      "description": "Typewriter-style streaming text with a blinking caret.",
+      "use_case": "Build agent/AI conversation interfaces: thinking states, tool calls, streaming text, citations and structured outputs.",
+      "search_tags": [
+        "aicss",
+        "agent-ui",
+        "chat",
+        "streaming",
+        "text",
+        "ai-surfaces",
+        "aicss.dev"
+      ],
+      "docs_url": "https://www.aicss.dev/components/streaming-text",
+      "stack": [
+        "react",
+        "vue",
+        "svelte"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Ships React, Vue and Svelte code",
+        "Self-contained CSS (no Tailwind required)"
+      ],
+      "registry_url": "https://www.aicss.dev/r/streaming-text",
+      "install_method": "npm",
+      "install_command": "npx @aicss/cli add streaming-text",
+      "manual_steps": [
+        "Alternative: npx shadcn@latest add https://www.aicss.dev/r/streaming-text",
+        "Or copy the React/Vue/Svelte code from https://www.aicss.dev/components/streaming-text"
+      ],
+      "limits": "The 5 Pro components ($89 Personal / $299 Enterprise, one-time) are excluded from this catalog; do not reconstruct their source.",
+      "extraction_note": "Indexed from llms.txt, the channel explicitly allowed for AI assistants; /r/ endpoints are disallowed for named AI bots in robots.txt.",
+      "quality": 82
+    },
+    {
+      "id": "aicss-ai-surfaces-text-response",
+      "name": "AICSS Text Response",
+      "source": "aicss.dev",
+      "entry_type": "component",
+      "category": "ai-surfaces",
+      "description": "Clean prose styling for a standard assistant answer with inline code.",
+      "use_case": "Build agent/AI conversation interfaces: thinking states, tool calls, streaming text, citations and structured outputs.",
+      "search_tags": [
+        "aicss",
+        "agent-ui",
+        "chat",
+        "text",
+        "response",
+        "ai-surfaces",
+        "aicss.dev"
+      ],
+      "docs_url": "https://www.aicss.dev/components/text-response",
+      "stack": [
+        "react",
+        "vue",
+        "svelte"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Ships React, Vue and Svelte code",
+        "Self-contained CSS (no Tailwind required)"
+      ],
+      "registry_url": "https://www.aicss.dev/r/text-response",
+      "install_method": "npm",
+      "install_command": "npx @aicss/cli add text-response",
+      "manual_steps": [
+        "Alternative: npx shadcn@latest add https://www.aicss.dev/r/text-response",
+        "Or copy the React/Vue/Svelte code from https://www.aicss.dev/components/text-response"
+      ],
+      "limits": "The 5 Pro components ($89 Personal / $299 Enterprise, one-time) are excluded from this catalog; do not reconstruct their source.",
+      "extraction_note": "Indexed from llms.txt, the channel explicitly allowed for AI assistants; /r/ endpoints are disallowed for named AI bots in robots.txt.",
+      "quality": 87
+    },
+    {
+      "id": "aicss-ai-surfaces-thinking-reasoning",
+      "name": "AICSS Thinking + Reasoning",
+      "source": "aicss.dev",
+      "entry_type": "component",
+      "category": "ai-surfaces",
+      "description": "An animated, collapsible thinking block: a shimmering label expands to reveal the agent's reasoning, then folds into a “Thought for Ns” summary.",
+      "use_case": "Build agent/AI conversation interfaces: thinking states, tool calls, streaming text, citations and structured outputs.",
+      "search_tags": [
+        "aicss",
+        "agent-ui",
+        "chat",
+        "thinking",
+        "reasoning",
+        "ai-surfaces",
+        "aicss.dev"
+      ],
+      "docs_url": "https://www.aicss.dev/components/thinking-reasoning",
+      "stack": [
+        "react",
+        "vue",
+        "svelte"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Ships React, Vue and Svelte code",
+        "Self-contained CSS (no Tailwind required)"
+      ],
+      "registry_url": "https://www.aicss.dev/r/thinking-reasoning",
+      "install_method": "npm",
+      "install_command": "npx @aicss/cli add thinking-reasoning",
+      "manual_steps": [
+        "Alternative: npx shadcn@latest add https://www.aicss.dev/r/thinking-reasoning",
+        "Or copy the React/Vue/Svelte code from https://www.aicss.dev/components/thinking-reasoning"
+      ],
+      "limits": "The 5 Pro components ($89 Personal / $299 Enterprise, one-time) are excluded from this catalog; do not reconstruct their source.",
+      "extraction_note": "Indexed from llms.txt, the channel explicitly allowed for AI assistants; /r/ endpoints are disallowed for named AI bots in robots.txt.",
+      "quality": 87
+    },
+    {
+      "id": "aicss-ai-surfaces-thinking-state",
+      "name": "AICSS Thinking State",
+      "source": "aicss.dev",
+      "entry_type": "component",
+      "category": "ai-surfaces",
+      "description": "A minimal shimmering label that signals the agent is processing before it answers.",
+      "use_case": "Build agent/AI conversation interfaces: thinking states, tool calls, streaming text, citations and structured outputs.",
+      "search_tags": [
+        "aicss",
+        "agent-ui",
+        "chat",
+        "thinking",
+        "state",
+        "ai-surfaces",
+        "aicss.dev"
+      ],
+      "docs_url": "https://www.aicss.dev/components/thinking-state",
+      "stack": [
+        "react",
+        "vue",
+        "svelte"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Ships React, Vue and Svelte code",
+        "Self-contained CSS (no Tailwind required)"
+      ],
+      "registry_url": "https://www.aicss.dev/r/thinking-state",
+      "install_method": "npm",
+      "install_command": "npx @aicss/cli add thinking-state",
+      "manual_steps": [
+        "Alternative: npx shadcn@latest add https://www.aicss.dev/r/thinking-state",
+        "Or copy the React/Vue/Svelte code from https://www.aicss.dev/components/thinking-state"
+      ],
+      "limits": "The 5 Pro components ($89 Personal / $299 Enterprise, one-time) are excluded from this catalog; do not reconstruct their source.",
+      "extraction_note": "Indexed from llms.txt, the channel explicitly allowed for AI assistants; /r/ endpoints are disallowed for named AI bots in robots.txt.",
+      "quality": 87
+    }
+  ]
+}

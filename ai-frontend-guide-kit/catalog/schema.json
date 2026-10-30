@@ -1,0 +1,113 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://reutilizables.local/manifest/schema.json",
+  "title": "Component Manifest — source file",
+  "description": "Schema for one source file of the Component Manifest (manifest/sources/<source_id>.json).",
+  "type": "object",
+  "required": ["schema_version", "source_id", "source_name", "source_url", "generated_at", "entries"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": { "const": "1.0" },
+    "source_id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+    "source_name": { "type": "string", "minLength": 1 },
+    "source_url": { "type": "string", "format": "uri" },
+    "catalog_url": { "type": "string", "format": "uri" },
+    "license_summary": { "type": "string" },
+    "granularity": { "type": "string" },
+    "extraction": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "channel": {
+          "enum": ["registry-json", "docs-structured", "github-raw", "github-contents", "agent-research", "manual"]
+        },
+        "method": { "type": "string" },
+        "evidence_url": { "type": "string", "format": "uri" },
+        "note": { "type": "string" }
+      }
+    },
+    "generated_at": { "type": "string", "format": "date" },
+    "entries": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "#/$defs/entry" }
+    }
+  },
+  "$defs": {
+    "category": {
+      "enum": [
+        "navigation",
+        "hero",
+        "features",
+        "pricing",
+        "cta",
+        "testimonials",
+        "faq",
+        "forms",
+        "data-display",
+        "feedback",
+        "overlay",
+        "layout",
+        "backgrounds-effects",
+        "micro-interactions",
+        "text",
+        "media",
+        "blocks-sections",
+        "ai-surfaces",
+        "design-system",
+        "template",
+        "assets"
+      ]
+    },
+    "entry": {
+      "type": "object",
+      "required": [
+        "id",
+        "name",
+        "source",
+        "entry_type",
+        "category",
+        "description",
+        "use_case",
+        "docs_url",
+        "stack",
+        "license_type",
+        "commercial_use",
+        "free",
+        "verified_at"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "id": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" },
+        "name": { "type": "string", "minLength": 1 },
+        "source": { "type": "string", "minLength": 1 },
+        "entry_type": { "enum": ["component", "block", "design-system", "icon", "asset"] },
+        "category": { "$ref": "#/$defs/category" },
+        "subcategory": { "type": "string" },
+        "description": { "type": "string", "minLength": 10 },
+        "use_case": { "type": "string", "minLength": 10 },
+        "decision_hints": { "type": "array", "items": { "type": "string" } },
+        "search_tags": { "type": "array", "items": { "type": "string" } },
+        "docs_url": { "type": "string", "format": "uri" },
+        "registry_url": { "type": "string", "format": "uri" },
+        "stack": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+        "dependencies": { "type": "array", "items": { "type": "string" } },
+        "install_method": {
+          "enum": ["npm", "shadcn-cli", "copy-paste", "cdn", "reference"]
+        },
+        "install_command": { "type": "string" },
+        "manual_steps": { "type": "array", "items": { "type": "string" } },
+        "variants": { "type": "array", "items": { "type": "string" } },
+        "license_type": {
+          "enum": ["MIT", "Apache-2.0", "proprietary", "custom", "non-commercial", "unknown"]
+        },
+        "commercial_use": { "enum": [true, false, "conditional"] },
+        "free": { "type": "boolean" },
+        "limits": { "type": "string" },
+        "extraction_note": { "type": "string" },
+        "quality": { "type": "integer", "minimum": 0, "maximum": 100 },
+        "verified_at": { "type": "string", "format": "date" }
+      }
+    }
+  }
+}

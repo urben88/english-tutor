@@ -1,0 +1,3945 @@
+{
+  "schema_version": "1.0",
+  "source_id": "mantine",
+  "source_name": "Mantine",
+  "source_url": "https://mantine.dev",
+  "catalog_url": "https://mantine.dev/core/getting-started/",
+  "license_summary": "MIT",
+  "granularity": "complete (components of @mantine/core)",
+  "extraction": {
+    "channel": "github-contents",
+    "method": "Directory listing of the @mantine/core components folder",
+    "evidence_url": "https://github.com/mantinedev/mantine/tree/master/packages/@mantine/core/src/components"
+  },
+  "generated_at": "2026-10-04",
+  "entries": [
+    {
+      "id": "mantine-data-display-action-bar",
+      "name": "Mantine Action Bar",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Action Bar from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "mantine",
+        "action",
+        "bar",
+        "data-display"
+      ],
+      "docs_url": "https://mantine.dev/core/action-bar/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/action-bar/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-data-display-avatar",
+      "name": "Mantine Avatar",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Avatar from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "mantine",
+        "avatar",
+        "data-display"
+      ],
+      "docs_url": "https://mantine.dev/core/avatar/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/avatar/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-data-display-background-image",
+      "name": "Mantine Background Image",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Background Image from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "mantine",
+        "background",
+        "image",
+        "data-display"
+      ],
+      "docs_url": "https://mantine.dev/core/background-image/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/background-image/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-data-display-badge",
+      "name": "Mantine Badge",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Badge from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "mantine",
+        "badge",
+        "data-display"
+      ],
+      "docs_url": "https://mantine.dev/core/badge/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/badge/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-data-display-blockquote",
+      "name": "Mantine Blockquote",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Blockquote from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "mantine",
+        "blockquote",
+        "data-display"
+      ],
+      "docs_url": "https://mantine.dev/core/blockquote/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/blockquote/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-data-display-card",
+      "name": "Mantine Card",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Card from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "mantine",
+        "card",
+        "data-display"
+      ],
+      "docs_url": "https://mantine.dev/core/card/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/card/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-data-display-chip",
+      "name": "Mantine Chip",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Chip from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "mantine",
+        "chip",
+        "data-display"
+      ],
+      "docs_url": "https://mantine.dev/core/chip/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/chip/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-data-display-code",
+      "name": "Mantine Code",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Code from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "mantine",
+        "code",
+        "data-display"
+      ],
+      "docs_url": "https://mantine.dev/core/code/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/code/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-data-display-data-list",
+      "name": "Mantine Data List",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Data List from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "mantine",
+        "data",
+        "list",
+        "data-display"
+      ],
+      "docs_url": "https://mantine.dev/core/data-list/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/data-list/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-data-display-empty-state",
+      "name": "Mantine Empty State",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Empty State from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "mantine",
+        "empty",
+        "state",
+        "data-display"
+      ],
+      "docs_url": "https://mantine.dev/core/empty-state/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/empty-state/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-data-display-highlight",
+      "name": "Mantine Highlight",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Highlight from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "mantine",
+        "highlight",
+        "data-display"
+      ],
+      "docs_url": "https://mantine.dev/core/highlight/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/highlight/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-data-display-image",
+      "name": "Mantine Image",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Image from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "mantine",
+        "image",
+        "data-display"
+      ],
+      "docs_url": "https://mantine.dev/core/image/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/image/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-data-display-indicator",
+      "name": "Mantine Indicator",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Indicator from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "mantine",
+        "indicator",
+        "data-display"
+      ],
+      "docs_url": "https://mantine.dev/core/indicator/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/indicator/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-data-display-kbd",
+      "name": "Mantine Kbd",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Kbd from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "mantine",
+        "kbd",
+        "data-display"
+      ],
+      "docs_url": "https://mantine.dev/core/kbd/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/kbd/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-data-display-list",
+      "name": "Mantine List",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "List from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "mantine",
+        "list",
+        "data-display"
+      ],
+      "docs_url": "https://mantine.dev/core/list/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/list/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-data-display-mark",
+      "name": "Mantine Mark",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Mark from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "mantine",
+        "mark",
+        "data-display"
+      ],
+      "docs_url": "https://mantine.dev/core/mark/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/mark/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-data-display-marquee",
+      "name": "Mantine Marquee",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Marquee from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "mantine",
+        "marquee",
+        "data-display"
+      ],
+      "docs_url": "https://mantine.dev/core/marquee/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/marquee/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-data-display-overflow-list",
+      "name": "Mantine Overflow List",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Overflow List from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "mantine",
+        "overflow",
+        "list",
+        "data-display"
+      ],
+      "docs_url": "https://mantine.dev/core/overflow-list/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/overflow-list/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-data-display-pill",
+      "name": "Mantine Pill",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Pill from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "mantine",
+        "pill",
+        "data-display"
+      ],
+      "docs_url": "https://mantine.dev/core/pill/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/pill/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-data-display-scroller",
+      "name": "Mantine Scroller",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Scroller from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "mantine",
+        "scroller",
+        "data-display"
+      ],
+      "docs_url": "https://mantine.dev/core/scroller/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/scroller/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-data-display-table",
+      "name": "Mantine Table",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Table from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "mantine",
+        "table",
+        "data-display"
+      ],
+      "docs_url": "https://mantine.dev/core/table/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/table/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-data-display-table-of-contents",
+      "name": "Mantine Table Of Contents",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Table Of Contents from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "mantine",
+        "table",
+        "of",
+        "contents",
+        "data-display"
+      ],
+      "docs_url": "https://mantine.dev/core/table-of-contents/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/table-of-contents/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-data-display-tags-input",
+      "name": "Mantine Tags Input",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Tags Input from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "mantine",
+        "tags",
+        "input",
+        "data-display"
+      ],
+      "docs_url": "https://mantine.dev/core/tags-input/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/tags-input/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-data-display-text",
+      "name": "Mantine Text",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Text from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "mantine",
+        "text",
+        "data-display"
+      ],
+      "docs_url": "https://mantine.dev/core/text/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/text/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-data-display-text-input",
+      "name": "Mantine Text Input",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Text Input from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "mantine",
+        "text",
+        "input",
+        "data-display"
+      ],
+      "docs_url": "https://mantine.dev/core/text-input/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/text-input/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-data-display-textarea",
+      "name": "Mantine Textarea",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Textarea from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "mantine",
+        "textarea",
+        "data-display"
+      ],
+      "docs_url": "https://mantine.dev/core/textarea/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/textarea/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-data-display-theme-icon",
+      "name": "Mantine Theme Icon",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Theme Icon from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "mantine",
+        "theme",
+        "icon",
+        "data-display"
+      ],
+      "docs_url": "https://mantine.dev/core/theme-icon/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/theme-icon/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-data-display-timeline",
+      "name": "Mantine Timeline",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Timeline from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "mantine",
+        "timeline",
+        "data-display"
+      ],
+      "docs_url": "https://mantine.dev/core/timeline/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/timeline/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-data-display-title",
+      "name": "Mantine Title",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Title from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "mantine",
+        "title",
+        "data-display"
+      ],
+      "docs_url": "https://mantine.dev/core/title/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/title/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-data-display-tour",
+      "name": "Mantine Tour",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Tour from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "mantine",
+        "tour",
+        "data-display"
+      ],
+      "docs_url": "https://mantine.dev/core/tour/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/tour/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-data-display-tree",
+      "name": "Mantine Tree",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Tree from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "mantine",
+        "tree",
+        "data-display"
+      ],
+      "docs_url": "https://mantine.dev/core/tree/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/tree/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-data-display-tree-select",
+      "name": "Mantine Tree Select",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Tree Select from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "mantine",
+        "tree",
+        "select",
+        "data-display"
+      ],
+      "docs_url": "https://mantine.dev/core/tree-select/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/tree-select/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-data-display-typography",
+      "name": "Mantine Typography",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Typography from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "mantine",
+        "typography",
+        "data-display"
+      ],
+      "docs_url": "https://mantine.dev/core/typography/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/typography/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-feedback-alert",
+      "name": "Mantine Alert",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "feedback",
+      "description": "Alert from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Communicate system status: alerts, loaders, progress and notifications.",
+      "search_tags": [
+        "mantine",
+        "alert",
+        "feedback"
+      ],
+      "docs_url": "https://mantine.dev/core/alert/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/alert/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-feedback-loader",
+      "name": "Mantine Loader",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "feedback",
+      "description": "Loader from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Communicate system status: alerts, loaders, progress and notifications.",
+      "search_tags": [
+        "mantine",
+        "loader",
+        "feedback"
+      ],
+      "docs_url": "https://mantine.dev/core/loader/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/loader/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-feedback-notification",
+      "name": "Mantine Notification",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "feedback",
+      "description": "Notification from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Communicate system status: alerts, loaders, progress and notifications.",
+      "search_tags": [
+        "mantine",
+        "notification",
+        "feedback"
+      ],
+      "docs_url": "https://mantine.dev/core/notification/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/notification/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-feedback-progress",
+      "name": "Mantine Progress",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "feedback",
+      "description": "Progress from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Communicate system status: alerts, loaders, progress and notifications.",
+      "search_tags": [
+        "mantine",
+        "progress",
+        "feedback"
+      ],
+      "docs_url": "https://mantine.dev/core/progress/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/progress/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-feedback-ring-progress",
+      "name": "Mantine Ring Progress",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "feedback",
+      "description": "Ring Progress from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Communicate system status: alerts, loaders, progress and notifications.",
+      "search_tags": [
+        "mantine",
+        "ring",
+        "progress",
+        "feedback"
+      ],
+      "docs_url": "https://mantine.dev/core/ring-progress/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/ring-progress/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-feedback-semi-circle-progress",
+      "name": "Mantine Semi Circle Progress",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "feedback",
+      "description": "Semi Circle Progress from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Communicate system status: alerts, loaders, progress and notifications.",
+      "search_tags": [
+        "mantine",
+        "semi",
+        "circle",
+        "progress",
+        "feedback"
+      ],
+      "docs_url": "https://mantine.dev/core/semi-circle-progress/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/semi-circle-progress/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-feedback-skeleton",
+      "name": "Mantine Skeleton",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "feedback",
+      "description": "Skeleton from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Communicate system status: alerts, loaders, progress and notifications.",
+      "search_tags": [
+        "mantine",
+        "skeleton",
+        "feedback"
+      ],
+      "docs_url": "https://mantine.dev/core/skeleton/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/skeleton/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-forms-angle-slider",
+      "name": "Mantine Angle Slider",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Angle Slider from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "mantine",
+        "angle",
+        "slider",
+        "forms"
+      ],
+      "docs_url": "https://mantine.dev/core/angle-slider/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/angle-slider/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-forms-autocomplete",
+      "name": "Mantine Autocomplete",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Autocomplete from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "mantine",
+        "autocomplete",
+        "forms"
+      ],
+      "docs_url": "https://mantine.dev/core/autocomplete/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/autocomplete/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-forms-cascader",
+      "name": "Mantine Cascader",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Cascader from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "mantine",
+        "cascader",
+        "forms"
+      ],
+      "docs_url": "https://mantine.dev/core/cascader/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/cascader/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-forms-checkbox",
+      "name": "Mantine Checkbox",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Checkbox from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "mantine",
+        "checkbox",
+        "forms"
+      ],
+      "docs_url": "https://mantine.dev/core/checkbox/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/checkbox/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-forms-color-input",
+      "name": "Mantine Color Input",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Color Input from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "mantine",
+        "color",
+        "input",
+        "forms"
+      ],
+      "docs_url": "https://mantine.dev/core/color-input/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/color-input/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-forms-color-picker",
+      "name": "Mantine Color Picker",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Color Picker from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "mantine",
+        "color",
+        "picker",
+        "forms"
+      ],
+      "docs_url": "https://mantine.dev/core/color-picker/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/color-picker/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-forms-fieldset",
+      "name": "Mantine Fieldset",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Fieldset from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "mantine",
+        "fieldset",
+        "forms"
+      ],
+      "docs_url": "https://mantine.dev/core/fieldset/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/fieldset/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-forms-file-input",
+      "name": "Mantine File Input",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "File Input from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "mantine",
+        "file",
+        "input",
+        "forms"
+      ],
+      "docs_url": "https://mantine.dev/core/file-input/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/file-input/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-forms-input",
+      "name": "Mantine Input",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Input from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "mantine",
+        "input",
+        "forms"
+      ],
+      "docs_url": "https://mantine.dev/core/input/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/input/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-forms-input-base",
+      "name": "Mantine Input Base",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Input Base from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "mantine",
+        "input",
+        "base",
+        "forms"
+      ],
+      "docs_url": "https://mantine.dev/core/input-base/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/input-base/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-forms-json-input",
+      "name": "Mantine Json Input",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Json Input from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "mantine",
+        "json",
+        "input",
+        "forms"
+      ],
+      "docs_url": "https://mantine.dev/core/json-input/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/json-input/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-forms-mask-input",
+      "name": "Mantine Mask Input",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Mask Input from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "mantine",
+        "mask",
+        "input",
+        "forms"
+      ],
+      "docs_url": "https://mantine.dev/core/mask-input/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/mask-input/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-forms-multi-select",
+      "name": "Mantine Multi Select",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Multi Select from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "mantine",
+        "multi",
+        "select",
+        "forms"
+      ],
+      "docs_url": "https://mantine.dev/core/multi-select/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/multi-select/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-forms-native-select",
+      "name": "Mantine Native Select",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Native Select from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "mantine",
+        "native",
+        "select",
+        "forms"
+      ],
+      "docs_url": "https://mantine.dev/core/native-select/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/native-select/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-forms-number-formatter",
+      "name": "Mantine Number Formatter",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Number Formatter from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "mantine",
+        "number",
+        "formatter",
+        "forms"
+      ],
+      "docs_url": "https://mantine.dev/core/number-formatter/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/number-formatter/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-forms-number-input",
+      "name": "Mantine Number Input",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Number Input from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "mantine",
+        "number",
+        "input",
+        "forms"
+      ],
+      "docs_url": "https://mantine.dev/core/number-input/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/number-input/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-forms-password-input",
+      "name": "Mantine Password Input",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Password Input from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "mantine",
+        "password",
+        "input",
+        "forms"
+      ],
+      "docs_url": "https://mantine.dev/core/password-input/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/password-input/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-forms-pin-input",
+      "name": "Mantine Pin Input",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Pin Input from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "mantine",
+        "pin",
+        "input",
+        "forms"
+      ],
+      "docs_url": "https://mantine.dev/core/pin-input/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/pin-input/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-forms-radio",
+      "name": "Mantine Radio",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Radio from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "mantine",
+        "radio",
+        "forms"
+      ],
+      "docs_url": "https://mantine.dev/core/radio/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/radio/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-forms-rolling-number",
+      "name": "Mantine Rolling Number",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Rolling Number from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "mantine",
+        "rolling",
+        "number",
+        "forms"
+      ],
+      "docs_url": "https://mantine.dev/core/rolling-number/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/rolling-number/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-forms-segmented-control",
+      "name": "Mantine Segmented Control",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Segmented Control from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "mantine",
+        "segmented",
+        "control",
+        "forms"
+      ],
+      "docs_url": "https://mantine.dev/core/segmented-control/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/segmented-control/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-forms-select",
+      "name": "Mantine Select",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Select from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "mantine",
+        "select",
+        "forms"
+      ],
+      "docs_url": "https://mantine.dev/core/select/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/select/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-forms-slider",
+      "name": "Mantine Slider",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Slider from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "mantine",
+        "slider",
+        "forms"
+      ],
+      "docs_url": "https://mantine.dev/core/slider/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/slider/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-forms-switch",
+      "name": "Mantine Switch",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Switch from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "mantine",
+        "switch",
+        "forms"
+      ],
+      "docs_url": "https://mantine.dev/core/switch/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/switch/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-layout-center",
+      "name": "Mantine Center",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "layout",
+      "description": "Center from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Structure the page: dividers, footers, headers and empty states.",
+      "search_tags": [
+        "mantine",
+        "center",
+        "layout"
+      ],
+      "docs_url": "https://mantine.dev/core/center/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/center/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-layout-container",
+      "name": "Mantine Container",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "layout",
+      "description": "Container from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Structure the page: dividers, footers, headers and empty states.",
+      "search_tags": [
+        "mantine",
+        "container",
+        "layout"
+      ],
+      "docs_url": "https://mantine.dev/core/container/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/container/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-layout-divider",
+      "name": "Mantine Divider",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "layout",
+      "description": "Divider from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Structure the page: dividers, footers, headers and empty states.",
+      "search_tags": [
+        "mantine",
+        "divider",
+        "layout"
+      ],
+      "docs_url": "https://mantine.dev/core/divider/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/divider/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-layout-flex",
+      "name": "Mantine Flex",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "layout",
+      "description": "Flex from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Structure the page: dividers, footers, headers and empty states.",
+      "search_tags": [
+        "mantine",
+        "flex",
+        "layout"
+      ],
+      "docs_url": "https://mantine.dev/core/flex/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/flex/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-layout-grid",
+      "name": "Mantine Grid",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "layout",
+      "description": "Grid from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Structure the page: dividers, footers, headers and empty states.",
+      "search_tags": [
+        "mantine",
+        "grid",
+        "layout"
+      ],
+      "docs_url": "https://mantine.dev/core/grid/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/grid/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-layout-group",
+      "name": "Mantine Group",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "layout",
+      "description": "Group from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Structure the page: dividers, footers, headers and empty states.",
+      "search_tags": [
+        "mantine",
+        "group",
+        "layout"
+      ],
+      "docs_url": "https://mantine.dev/core/group/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/group/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-layout-paper",
+      "name": "Mantine Paper",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "layout",
+      "description": "Paper from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Structure the page: dividers, footers, headers and empty states.",
+      "search_tags": [
+        "mantine",
+        "paper",
+        "layout"
+      ],
+      "docs_url": "https://mantine.dev/core/paper/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/paper/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-layout-scroll-area",
+      "name": "Mantine Scroll Area",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "layout",
+      "description": "Scroll Area from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Structure the page: dividers, footers, headers and empty states.",
+      "search_tags": [
+        "mantine",
+        "scroll",
+        "area",
+        "layout"
+      ],
+      "docs_url": "https://mantine.dev/core/scroll-area/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/scroll-area/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-layout-simple-grid",
+      "name": "Mantine Simple Grid",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "layout",
+      "description": "Simple Grid from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Structure the page: dividers, footers, headers and empty states.",
+      "search_tags": [
+        "mantine",
+        "simple",
+        "grid",
+        "layout"
+      ],
+      "docs_url": "https://mantine.dev/core/simple-grid/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/simple-grid/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-layout-space",
+      "name": "Mantine Space",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "layout",
+      "description": "Space from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Structure the page: dividers, footers, headers and empty states.",
+      "search_tags": [
+        "mantine",
+        "space",
+        "layout"
+      ],
+      "docs_url": "https://mantine.dev/core/space/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/space/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-layout-splitter",
+      "name": "Mantine Splitter",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "layout",
+      "description": "Splitter from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Structure the page: dividers, footers, headers and empty states.",
+      "search_tags": [
+        "mantine",
+        "splitter",
+        "layout"
+      ],
+      "docs_url": "https://mantine.dev/core/splitter/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/splitter/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-layout-stack",
+      "name": "Mantine Stack",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "layout",
+      "description": "Stack from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Structure the page: dividers, footers, headers and empty states.",
+      "search_tags": [
+        "mantine",
+        "stack",
+        "layout"
+      ],
+      "docs_url": "https://mantine.dev/core/stack/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/stack/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-media-aspect-ratio",
+      "name": "Mantine Aspect Ratio",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "media",
+      "description": "Aspect Ratio from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Display images, video, carousels and device mockups.",
+      "search_tags": [
+        "mantine",
+        "aspect",
+        "ratio",
+        "media"
+      ],
+      "docs_url": "https://mantine.dev/core/aspect-ratio/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/aspect-ratio/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-micro-interactions-accordion",
+      "name": "Mantine Accordion",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "Accordion from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "mantine",
+        "accordion",
+        "micro-interactions"
+      ],
+      "docs_url": "https://mantine.dev/core/accordion/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/accordion/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-micro-interactions-action-icon",
+      "name": "Mantine Action Icon",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "Action Icon from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "mantine",
+        "action",
+        "icon",
+        "micro-interactions"
+      ],
+      "docs_url": "https://mantine.dev/core/action-icon/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/action-icon/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-micro-interactions-button",
+      "name": "Mantine Button",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "Button from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "mantine",
+        "button",
+        "micro-interactions"
+      ],
+      "docs_url": "https://mantine.dev/core/button/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/button/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-micro-interactions-close-button",
+      "name": "Mantine Close Button",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "Close Button from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "mantine",
+        "close",
+        "button",
+        "micro-interactions"
+      ],
+      "docs_url": "https://mantine.dev/core/close-button/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/close-button/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-micro-interactions-copy-button",
+      "name": "Mantine Copy Button",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "Copy Button from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "mantine",
+        "copy",
+        "button",
+        "micro-interactions"
+      ],
+      "docs_url": "https://mantine.dev/core/copy-button/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/copy-button/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-micro-interactions-file-button",
+      "name": "Mantine File Button",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "File Button from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "mantine",
+        "file",
+        "button",
+        "micro-interactions"
+      ],
+      "docs_url": "https://mantine.dev/core/file-button/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/file-button/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-micro-interactions-rating",
+      "name": "Mantine Rating",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "Rating from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "mantine",
+        "rating",
+        "micro-interactions"
+      ],
+      "docs_url": "https://mantine.dev/core/rating/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/rating/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-micro-interactions-spoiler",
+      "name": "Mantine Spoiler",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "Spoiler from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "mantine",
+        "spoiler",
+        "micro-interactions"
+      ],
+      "docs_url": "https://mantine.dev/core/spoiler/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/spoiler/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-micro-interactions-toggle",
+      "name": "Mantine Toggle",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "Toggle from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "mantine",
+        "toggle",
+        "micro-interactions"
+      ],
+      "docs_url": "https://mantine.dev/core/toggle/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/toggle/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-navigation-affix",
+      "name": "Mantine Affix",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "navigation",
+      "description": "Affix from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Build site and app navigation structures that stay clear at any depth.",
+      "search_tags": [
+        "mantine",
+        "affix",
+        "navigation"
+      ],
+      "docs_url": "https://mantine.dev/core/affix/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/affix/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-navigation-anchor",
+      "name": "Mantine Anchor",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "navigation",
+      "description": "Anchor from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Build site and app navigation structures that stay clear at any depth.",
+      "search_tags": [
+        "mantine",
+        "anchor",
+        "navigation"
+      ],
+      "docs_url": "https://mantine.dev/core/anchor/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/anchor/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-navigation-app-shell",
+      "name": "Mantine App Shell",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "navigation",
+      "description": "App Shell from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Build site and app navigation structures that stay clear at any depth.",
+      "search_tags": [
+        "mantine",
+        "app",
+        "shell",
+        "navigation"
+      ],
+      "docs_url": "https://mantine.dev/core/app-shell/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/app-shell/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-navigation-breadcrumbs",
+      "name": "Mantine Breadcrumbs",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "navigation",
+      "description": "Breadcrumbs from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Build site and app navigation structures that stay clear at any depth.",
+      "search_tags": [
+        "mantine",
+        "breadcrumbs",
+        "navigation"
+      ],
+      "docs_url": "https://mantine.dev/core/breadcrumbs/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/breadcrumbs/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-navigation-burger",
+      "name": "Mantine Burger",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "navigation",
+      "description": "Burger from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Build site and app navigation structures that stay clear at any depth.",
+      "search_tags": [
+        "mantine",
+        "burger",
+        "navigation"
+      ],
+      "docs_url": "https://mantine.dev/core/burger/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/burger/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-navigation-nav-link",
+      "name": "Mantine Nav Link",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "navigation",
+      "description": "Nav Link from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Build site and app navigation structures that stay clear at any depth.",
+      "search_tags": [
+        "mantine",
+        "nav",
+        "link",
+        "navigation"
+      ],
+      "docs_url": "https://mantine.dev/core/nav-link/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/nav-link/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-navigation-pagination",
+      "name": "Mantine Pagination",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "navigation",
+      "description": "Pagination from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Build site and app navigation structures that stay clear at any depth.",
+      "search_tags": [
+        "mantine",
+        "pagination",
+        "navigation"
+      ],
+      "docs_url": "https://mantine.dev/core/pagination/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/pagination/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-navigation-stepper",
+      "name": "Mantine Stepper",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "navigation",
+      "description": "Stepper from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Build site and app navigation structures that stay clear at any depth.",
+      "search_tags": [
+        "mantine",
+        "stepper",
+        "navigation"
+      ],
+      "docs_url": "https://mantine.dev/core/stepper/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/stepper/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-navigation-tabs",
+      "name": "Mantine Tabs",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "navigation",
+      "description": "Tabs from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Build site and app navigation structures that stay clear at any depth.",
+      "search_tags": [
+        "mantine",
+        "tabs",
+        "navigation"
+      ],
+      "docs_url": "https://mantine.dev/core/tabs/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/tabs/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-navigation-toolbar",
+      "name": "Mantine Toolbar",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "navigation",
+      "description": "Toolbar from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Build site and app navigation structures that stay clear at any depth.",
+      "search_tags": [
+        "mantine",
+        "toolbar",
+        "navigation"
+      ],
+      "docs_url": "https://mantine.dev/core/toolbar/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/toolbar/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-overlay-dialog",
+      "name": "Mantine Dialog",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "overlay",
+      "description": "Dialog from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Present dialogs, drawers and popovers without leaving the page.",
+      "search_tags": [
+        "mantine",
+        "dialog",
+        "overlay"
+      ],
+      "docs_url": "https://mantine.dev/core/dialog/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/dialog/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-overlay-drawer",
+      "name": "Mantine Drawer",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "overlay",
+      "description": "Drawer from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Present dialogs, drawers and popovers without leaving the page.",
+      "search_tags": [
+        "mantine",
+        "drawer",
+        "overlay"
+      ],
+      "docs_url": "https://mantine.dev/core/drawer/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/drawer/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-overlay-floating-window",
+      "name": "Mantine Floating Window",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "overlay",
+      "description": "Floating Window from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Present dialogs, drawers and popovers without leaving the page.",
+      "search_tags": [
+        "mantine",
+        "floating",
+        "window",
+        "overlay"
+      ],
+      "docs_url": "https://mantine.dev/core/floating-window/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/floating-window/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-overlay-hover-card",
+      "name": "Mantine Hover Card",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "overlay",
+      "description": "Hover Card from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Present dialogs, drawers and popovers without leaving the page.",
+      "search_tags": [
+        "mantine",
+        "hover",
+        "card",
+        "overlay"
+      ],
+      "docs_url": "https://mantine.dev/core/hover-card/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/hover-card/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-overlay-loading-overlay",
+      "name": "Mantine Loading Overlay",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "overlay",
+      "description": "Loading Overlay from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Present dialogs, drawers and popovers without leaving the page.",
+      "search_tags": [
+        "mantine",
+        "loading",
+        "overlay"
+      ],
+      "docs_url": "https://mantine.dev/core/loading-overlay/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/loading-overlay/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-overlay-menu",
+      "name": "Mantine Menu",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "overlay",
+      "description": "Menu from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Present dialogs, drawers and popovers without leaving the page.",
+      "search_tags": [
+        "mantine",
+        "menu",
+        "overlay"
+      ],
+      "docs_url": "https://mantine.dev/core/menu/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/menu/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-overlay-menubar",
+      "name": "Mantine Menubar",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "overlay",
+      "description": "Menubar from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Present dialogs, drawers and popovers without leaving the page.",
+      "search_tags": [
+        "mantine",
+        "menubar",
+        "overlay"
+      ],
+      "docs_url": "https://mantine.dev/core/menubar/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/menubar/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-overlay-modal",
+      "name": "Mantine Modal",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "overlay",
+      "description": "Modal from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Present dialogs, drawers and popovers without leaving the page.",
+      "search_tags": [
+        "mantine",
+        "modal",
+        "overlay"
+      ],
+      "docs_url": "https://mantine.dev/core/modal/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/modal/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-overlay-modal-base",
+      "name": "Mantine Modal Base",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "overlay",
+      "description": "Modal Base from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Present dialogs, drawers and popovers without leaving the page.",
+      "search_tags": [
+        "mantine",
+        "modal",
+        "base",
+        "overlay"
+      ],
+      "docs_url": "https://mantine.dev/core/modal-base/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/modal-base/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-overlay-overlay",
+      "name": "Mantine Overlay",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "overlay",
+      "description": "Overlay from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Present dialogs, drawers and popovers without leaving the page.",
+      "search_tags": [
+        "mantine",
+        "overlay"
+      ],
+      "docs_url": "https://mantine.dev/core/overlay/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/overlay/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-overlay-popover",
+      "name": "Mantine Popover",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "overlay",
+      "description": "Popover from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Present dialogs, drawers and popovers without leaving the page.",
+      "search_tags": [
+        "mantine",
+        "popover",
+        "overlay"
+      ],
+      "docs_url": "https://mantine.dev/core/popover/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/popover/"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "mantine-overlay-tooltip",
+      "name": "Mantine Tooltip",
+      "source": "Mantine",
+      "entry_type": "component",
+      "category": "overlay",
+      "description": "Tooltip from Mantine: a batteries-included React component with built-in theming and accessibility.",
+      "use_case": "Present dialogs, drawers and popovers without leaving the page.",
+      "search_tags": [
+        "mantine",
+        "tooltip",
+        "overlay"
+      ],
+      "docs_url": "https://mantine.dev/core/tooltip/",
+      "stack": [
+        "react",
+        "css-modules"
+      ],
+      "dependencies": [
+        "@mantine/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Own styling system (CSS variables / PostCSS), not Tailwind-first; adapt tokens through the Mantine theme",
+        "Best for dashboards and data-heavy apps that want ready-made behavior"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i @mantine/core @mantine/hooks",
+      "manual_steps": [
+        "Docs: https://mantine.dev/core/tooltip/"
+      ],
+      "quality": 90
+    }
+  ]
+}

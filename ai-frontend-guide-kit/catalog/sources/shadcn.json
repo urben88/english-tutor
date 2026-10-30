@@ -1,0 +1,5592 @@
+{
+  "schema_version": "1.0",
+  "source_id": "shadcn",
+  "source_name": "shadcn/ui",
+  "source_url": "https://ui.shadcn.com",
+  "catalog_url": "https://ui.shadcn.com/docs/components",
+  "license_summary": "MIT",
+  "granularity": "complete (registry:ui items + official registry:block items)",
+  "extraction": {
+    "channel": "registry-json",
+    "method": "Node script downloading the official registry index and the new-york-v4 style registry (blocks)",
+    "evidence_url": "https://ui.shadcn.com/r/index.json"
+  },
+  "generated_at": "2026-10-04",
+  "entries": [
+    {
+      "id": "shadcn-ai-surfaces-attachment",
+      "name": "shadcn/ui Attachment",
+      "source": "shadcn/ui",
+      "entry_type": "component",
+      "category": "ai-surfaces",
+      "description": "Accessible Attachment primitive from shadcn/ui (copy-source, built on Base UI/Radix).",
+      "use_case": "Build agent and AI conversation interfaces (chat, thinking, tools, streaming).",
+      "search_tags": [
+        "shadcn",
+        "radix",
+        "base-ui",
+        "attachment",
+        "ai-surfaces",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/docs/components/base/attachment",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "class-variance-authority",
+        "lucide-react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "registry_url": "https://ui.shadcn.com/r/styles/base-nova/attachment.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add attachment",
+      "quality": 92
+    },
+    {
+      "id": "shadcn-ai-surfaces-bubble",
+      "name": "shadcn/ui Bubble",
+      "source": "shadcn/ui",
+      "entry_type": "component",
+      "category": "ai-surfaces",
+      "description": "Accessible Bubble primitive from shadcn/ui (copy-source, built on Base UI/Radix).",
+      "use_case": "Build agent and AI conversation interfaces (chat, thinking, tools, streaming).",
+      "search_tags": [
+        "shadcn",
+        "radix",
+        "base-ui",
+        "bubble",
+        "ai-surfaces",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/docs/components/base/bubble",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "class-variance-authority",
+        "lucide-react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "registry_url": "https://ui.shadcn.com/r/styles/base-nova/bubble.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add bubble",
+      "quality": 92
+    },
+    {
+      "id": "shadcn-ai-surfaces-marker",
+      "name": "shadcn/ui Marker",
+      "source": "shadcn/ui",
+      "entry_type": "component",
+      "category": "ai-surfaces",
+      "description": "Accessible Marker primitive from shadcn/ui (copy-source, built on Base UI/Radix).",
+      "use_case": "Build agent and AI conversation interfaces (chat, thinking, tools, streaming).",
+      "search_tags": [
+        "shadcn",
+        "radix",
+        "base-ui",
+        "marker",
+        "ai-surfaces",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/docs/components/base/marker",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "class-variance-authority",
+        "lucide-react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "registry_url": "https://ui.shadcn.com/r/styles/base-nova/marker.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add marker",
+      "quality": 92
+    },
+    {
+      "id": "shadcn-ai-surfaces-message",
+      "name": "shadcn/ui Message",
+      "source": "shadcn/ui",
+      "entry_type": "component",
+      "category": "ai-surfaces",
+      "description": "Accessible Message primitive from shadcn/ui (copy-source, built on Base UI/Radix).",
+      "use_case": "Build agent and AI conversation interfaces (chat, thinking, tools, streaming).",
+      "search_tags": [
+        "shadcn",
+        "radix",
+        "base-ui",
+        "message",
+        "ai-surfaces",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/docs/components/base/message",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "class-variance-authority",
+        "lucide-react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "registry_url": "https://ui.shadcn.com/r/styles/base-nova/message.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add message",
+      "quality": 92
+    },
+    {
+      "id": "shadcn-ai-surfaces-message-scroller",
+      "name": "shadcn/ui Message Scroller",
+      "source": "shadcn/ui",
+      "entry_type": "component",
+      "category": "ai-surfaces",
+      "description": "Accessible Message Scroller primitive from shadcn/ui (copy-source, built on Base UI/Radix).",
+      "use_case": "Build agent and AI conversation interfaces (chat, thinking, tools, streaming).",
+      "search_tags": [
+        "shadcn",
+        "radix",
+        "base-ui",
+        "message",
+        "scroller",
+        "ai-surfaces",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/docs/components/base/message-scroller",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "class-variance-authority",
+        "lucide-react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "registry_url": "https://ui.shadcn.com/r/styles/base-nova/message-scroller.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add message-scroller",
+      "quality": 92
+    },
+    {
+      "id": "shadcn-ai-surfaces-questionnaire",
+      "name": "shadcn/ui Questionnaire",
+      "source": "shadcn/ui",
+      "entry_type": "component",
+      "category": "ai-surfaces",
+      "description": "Accessible Questionnaire primitive from shadcn/ui (copy-source, built on Base UI/Radix).",
+      "use_case": "Build agent and AI conversation interfaces (chat, thinking, tools, streaming).",
+      "search_tags": [
+        "shadcn",
+        "radix",
+        "base-ui",
+        "questionnaire",
+        "ai-surfaces",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/docs/components/base/questionnaire",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "class-variance-authority",
+        "lucide-react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "registry_url": "https://ui.shadcn.com/r/styles/base-nova/questionnaire.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add questionnaire",
+      "quality": 92
+    },
+    {
+      "id": "shadcn-data-display-avatar",
+      "name": "shadcn/ui Avatar",
+      "source": "shadcn/ui",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Accessible Avatar primitive from shadcn/ui (copy-source, built on Base UI/Radix).",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "shadcn",
+        "radix",
+        "base-ui",
+        "avatar",
+        "data-display",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/docs/components/base/avatar",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "class-variance-authority",
+        "lucide-react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "registry_url": "https://ui.shadcn.com/r/styles/base-nova/avatar.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add avatar",
+      "quality": 92
+    },
+    {
+      "id": "shadcn-data-display-badge",
+      "name": "shadcn/ui Badge",
+      "source": "shadcn/ui",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Accessible Badge primitive from shadcn/ui (copy-source, built on Base UI/Radix).",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "shadcn",
+        "radix",
+        "base-ui",
+        "badge",
+        "data-display",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/docs/components/base/badge",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "class-variance-authority",
+        "lucide-react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "registry_url": "https://ui.shadcn.com/r/styles/base-nova/badge.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add badge",
+      "quality": 92
+    },
+    {
+      "id": "shadcn-data-display-card",
+      "name": "shadcn/ui Card",
+      "source": "shadcn/ui",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Accessible Card primitive from shadcn/ui (copy-source, built on Base UI/Radix).",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "shadcn",
+        "radix",
+        "base-ui",
+        "card",
+        "data-display",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/docs/components/base/card",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "class-variance-authority",
+        "lucide-react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "registry_url": "https://ui.shadcn.com/r/styles/base-nova/card.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add card",
+      "quality": 92
+    },
+    {
+      "id": "shadcn-data-display-chart",
+      "name": "shadcn/ui Chart",
+      "source": "shadcn/ui",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Accessible Chart primitive from shadcn/ui (copy-source, built on Base UI/Radix).",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "shadcn",
+        "radix",
+        "base-ui",
+        "chart",
+        "data-display",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/docs/components/base/chart",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "class-variance-authority",
+        "lucide-react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "registry_url": "https://ui.shadcn.com/r/styles/base-nova/chart.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add chart",
+      "quality": 92
+    },
+    {
+      "id": "shadcn-data-display-chart-area-axes",
+      "name": "shadcn/ui Block Chart Area Axes",
+      "source": "shadcn/ui",
+      "entry_type": "block",
+      "category": "data-display",
+      "description": "Chart Area Axes block: a ready composition of shadcn/ui components.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "shadcn",
+        "block",
+        "chart",
+        "area",
+        "axes",
+        "data-display",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/blocks",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Official block: copy and adapt to your tokens; it pulls the shadcn/ui components it needs"
+      ],
+      "registry_url": "https://ui.shadcn.com/r/styles/new-york-v4/chart-area-axes.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add chart-area-axes",
+      "quality": 95
+    },
+    {
+      "id": "shadcn-data-display-chart-area-default",
+      "name": "shadcn/ui Block Chart Area Default",
+      "source": "shadcn/ui",
+      "entry_type": "block",
+      "category": "data-display",
+      "description": "Chart Area Default block: a ready composition of shadcn/ui components.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "shadcn",
+        "block",
+        "chart",
+        "area",
+        "default",
+        "data-display",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/blocks",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Official block: copy and adapt to your tokens; it pulls the shadcn/ui components it needs"
+      ],
+      "registry_url": "https://ui.shadcn.com/r/styles/new-york-v4/chart-area-default.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add chart-area-default",
+      "quality": 95
+    },
+    {
+      "id": "shadcn-data-display-chart-area-gradient",
+      "name": "shadcn/ui Block Chart Area Gradient",
+      "source": "shadcn/ui",
+      "entry_type": "block",
+      "category": "data-display",
+      "description": "Chart Area Gradient block: a ready composition of shadcn/ui components.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "shadcn",
+        "block",
+        "chart",
+        "area",
+        "gradient",
+        "data-display",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/blocks",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Official block: copy and adapt to your tokens; it pulls the shadcn/ui components it needs"
+      ],
+      "registry_url": "https://ui.shadcn.com/r/styles/new-york-v4/chart-area-gradient.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add chart-area-gradient",
+      "quality": 95
+    },
+    {
+      "id": "shadcn-data-display-chart-area-icons",
+      "name": "shadcn/ui Block Chart Area Icons",
+      "source": "shadcn/ui",
+      "entry_type": "block",
+      "category": "data-display",
+      "description": "Chart Area Icons block: a ready composition of shadcn/ui components.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "shadcn",
+        "block",
+        "chart",
+        "area",
+        "icons",
+        "data-display",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/blocks",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Official block: copy and adapt to your tokens; it pulls the shadcn/ui components it needs"
+      ],
+      "registry_url": "https://ui.shadcn.com/r/styles/new-york-v4/chart-area-icons.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add chart-area-icons",
+      "quality": 95
+    },
+    {
+      "id": "shadcn-data-display-chart-area-interactive",
+      "name": "shadcn/ui Block Chart Area Interactive",
+      "source": "shadcn/ui",
+      "entry_type": "block",
+      "category": "data-display",
+      "description": "Chart Area Interactive block: a ready composition of shadcn/ui components.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "shadcn",
+        "block",
+        "chart",
+        "area",
+        "interactive",
+        "data-display",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/blocks",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Official block: copy and adapt to your tokens; it pulls the shadcn/ui components it needs"
+      ],
+      "registry_url": "https://ui.shadcn.com/r/styles/new-york-v4/chart-area-interactive.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add chart-area-interactive",
+      "quality": 95
+    },
+    {
+      "id": "shadcn-data-display-chart-area-legend",
+      "name": "shadcn/ui Block Chart Area Legend",
+      "source": "shadcn/ui",
+      "entry_type": "block",
+      "category": "data-display",
+      "description": "Chart Area Legend block: a ready composition of shadcn/ui components.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "shadcn",
+        "block",
+        "chart",
+        "area",
+        "legend",
+        "data-display",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/blocks",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Official block: copy and adapt to your tokens; it pulls the shadcn/ui components it needs"
+      ],
+      "registry_url": "https://ui.shadcn.com/r/styles/new-york-v4/chart-area-legend.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add chart-area-legend",
+      "quality": 95
+    },
+    {
+      "id": "shadcn-data-display-chart-area-linear",
+      "name": "shadcn/ui Block Chart Area Linear",
+      "source": "shadcn/ui",
+      "entry_type": "block",
+      "category": "data-display",
+      "description": "Chart Area Linear block: a ready composition of shadcn/ui components.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "shadcn",
+        "block",
+        "chart",
+        "area",
+        "linear",
+        "data-display",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/blocks",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Official block: copy and adapt to your tokens; it pulls the shadcn/ui components it needs"
+      ],
+      "registry_url": "https://ui.shadcn.com/r/styles/new-york-v4/chart-area-linear.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add chart-area-linear",
+      "quality": 95
+    },
+    {
+      "id": "shadcn-data-display-chart-area-stacked",
+      "name": "shadcn/ui Block Chart Area Stacked",
+      "source": "shadcn/ui",
+      "entry_type": "block",
+      "category": "data-display",
+      "description": "Chart Area Stacked block: a ready composition of shadcn/ui components.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "shadcn",
+        "block",
+        "chart",
+        "area",
+        "stacked",
+        "data-display",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/blocks",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Official block: copy and adapt to your tokens; it pulls the shadcn/ui components it needs"
+      ],
+      "registry_url": "https://ui.shadcn.com/r/styles/new-york-v4/chart-area-stacked.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add chart-area-stacked",
+      "quality": 95
+    },
+    {
+      "id": "shadcn-data-display-chart-area-stacked-expand",
+      "name": "shadcn/ui Block Chart Area Stacked Expand",
+      "source": "shadcn/ui",
+      "entry_type": "block",
+      "category": "data-display",
+      "description": "Chart Area Stacked Expand block: a ready composition of shadcn/ui components.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "shadcn",
+        "block",
+        "chart",
+        "area",
+        "stacked",
+        "expand",
+        "data-display",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/blocks",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Official block: copy and adapt to your tokens; it pulls the shadcn/ui components it needs"
+      ],
+      "registry_url": "https://ui.shadcn.com/r/styles/new-york-v4/chart-area-stacked-expand.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add chart-area-stacked-expand",
+      "quality": 95
+    },
+    {
+      "id": "shadcn-data-display-chart-area-step",
+      "name": "shadcn/ui Block Chart Area Step",
+      "source": "shadcn/ui",
+      "entry_type": "block",
+      "category": "data-display",
+      "description": "Chart Area Step block: a ready composition of shadcn/ui components.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "shadcn",
+        "block",
+        "chart",
+        "area",
+        "step",
+        "data-display",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/blocks",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Official block: copy and adapt to your tokens; it pulls the shadcn/ui components it needs"
+      ],
+      "registry_url": "https://ui.shadcn.com/r/styles/new-york-v4/chart-area-step.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add chart-area-step",
+      "quality": 95
+    },
+    {
+      "id": "shadcn-data-display-chart-bar-active",
+      "name": "shadcn/ui Block Chart Bar Active",
+      "source": "shadcn/ui",
+      "entry_type": "block",
+      "category": "data-display",
+      "description": "Chart Bar Active block: a ready composition of shadcn/ui components.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "shadcn",
+        "block",
+        "chart",
+        "bar",
+        "active",
+        "data-display",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/blocks",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Official block: copy and adapt to your tokens; it pulls the shadcn/ui components it needs"
+      ],
+      "registry_url": "https://ui.shadcn.com/r/styles/new-york-v4/chart-bar-active.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add chart-bar-active",
+      "quality": 95
+    },
+    {
+      "id": "shadcn-data-display-chart-bar-default",
+      "name": "shadcn/ui Block Chart Bar Default",
+      "source": "shadcn/ui",
+      "entry_type": "block",
+      "category": "data-display",
+      "description": "Chart Bar Default block: a ready composition of shadcn/ui components.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "shadcn",
+        "block",
+        "chart",
+        "bar",
+        "default",
+        "data-display",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/blocks",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Official block: copy and adapt to your tokens; it pulls the shadcn/ui components it needs"
+      ],
+      "registry_url": "https://ui.shadcn.com/r/styles/new-york-v4/chart-bar-default.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add chart-bar-default",
+      "quality": 95
+    },
+    {
+      "id": "shadcn-data-display-chart-bar-horizontal",
+      "name": "shadcn/ui Block Chart Bar Horizontal",
+      "source": "shadcn/ui",
+      "entry_type": "block",
+      "category": "data-display",
+      "description": "Chart Bar Horizontal block: a ready composition of shadcn/ui components.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "shadcn",
+        "block",
+        "chart",
+        "bar",
+        "horizontal",
+        "data-display",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/blocks",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Official block: copy and adapt to your tokens; it pulls the shadcn/ui components it needs"
+      ],
+      "registry_url": "https://ui.shadcn.com/r/styles/new-york-v4/chart-bar-horizontal.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add chart-bar-horizontal",
+      "quality": 95
+    },
+    {
+      "id": "shadcn-data-display-chart-bar-interactive",
+      "name": "shadcn/ui Block Chart Bar Interactive",
+      "source": "shadcn/ui",
+      "entry_type": "block",
+      "category": "data-display",
+      "description": "Chart Bar Interactive block: a ready composition of shadcn/ui components.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "shadcn",
+        "block",
+        "chart",
+        "bar",
+        "interactive",
+        "data-display",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/blocks",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Official block: copy and adapt to your tokens; it pulls the shadcn/ui components it needs"
+      ],
+      "registry_url": "https://ui.shadcn.com/r/styles/new-york-v4/chart-bar-interactive.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add chart-bar-interactive",
+      "quality": 95
+    },
+    {
+      "id": "shadcn-data-display-chart-bar-label",
+      "name": "shadcn/ui Block Chart Bar Label",
+      "source": "shadcn/ui",
+      "entry_type": "block",
+      "category": "data-display",
+      "description": "Chart Bar Label block: a ready composition of shadcn/ui components.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "shadcn",
+        "block",
+        "chart",
+        "bar",
+        "label",
+        "data-display",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/blocks",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Official block: copy and adapt to your tokens; it pulls the shadcn/ui components it needs"
+      ],
+      "registry_url": "https://ui.shadcn.com/r/styles/new-york-v4/chart-bar-label.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add chart-bar-label",
+      "quality": 95
+    },
+    {
+      "id": "shadcn-data-display-chart-bar-label-custom",
+      "name": "shadcn/ui Block Chart Bar Label Custom",
+      "source": "shadcn/ui",
+      "entry_type": "block",
+      "category": "data-display",
+      "description": "Chart Bar Label Custom block: a ready composition of shadcn/ui components.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "shadcn",
+        "block",
+        "chart",
+        "bar",
+        "label",
+        "custom",
+        "data-display",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/blocks",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Official block: copy and adapt to your tokens; it pulls the shadcn/ui components it needs"
+      ],
+      "registry_url": "https://ui.shadcn.com/r/styles/new-york-v4/chart-bar-label-custom.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add chart-bar-label-custom",
+      "quality": 95
+    },
+    {
+      "id": "shadcn-data-display-chart-bar-mixed",
+      "name": "shadcn/ui Block Chart Bar Mixed",
+      "source": "shadcn/ui",
+      "entry_type": "block",
+      "category": "data-display",
+      "description": "Chart Bar Mixed block: a ready composition of shadcn/ui components.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "shadcn",
+        "block",
+        "chart",
+        "bar",
+        "mixed",
+        "data-display",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/blocks",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Official block: copy and adapt to your tokens; it pulls the shadcn/ui components it needs"
+      ],
+      "registry_url": "https://ui.shadcn.com/r/styles/new-york-v4/chart-bar-mixed.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add chart-bar-mixed",
+      "quality": 95
+    },
+    {
+      "id": "shadcn-data-display-chart-bar-multiple",
+      "name": "shadcn/ui Block Chart Bar Multiple",
+      "source": "shadcn/ui",
+      "entry_type": "block",
+      "category": "data-display",
+      "description": "Chart Bar Multiple block: a ready composition of shadcn/ui components.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "shadcn",
+        "block",
+        "chart",
+        "bar",
+        "multiple",
+        "data-display",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/blocks",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Official block: copy and adapt to your tokens; it pulls the shadcn/ui components it needs"
+      ],
+      "registry_url": "https://ui.shadcn.com/r/styles/new-york-v4/chart-bar-multiple.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add chart-bar-multiple",
+      "quality": 95
+    },
+    {
+      "id": "shadcn-data-display-chart-bar-negative",
+      "name": "shadcn/ui Block Chart Bar Negative",
+      "source": "shadcn/ui",
+      "entry_type": "block",
+      "category": "data-display",
+      "description": "Chart Bar Negative block: a ready composition of shadcn/ui components.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "shadcn",
+        "block",
+        "chart",
+        "bar",
+        "negative",
+        "data-display",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/blocks",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Official block: copy and adapt to your tokens; it pulls the shadcn/ui components it needs"
+      ],
+      "registry_url": "https://ui.shadcn.com/r/styles/new-york-v4/chart-bar-negative.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add chart-bar-negative",
+      "quality": 95
+    },
+    {
+      "id": "shadcn-data-display-chart-bar-stacked",
+      "name": "shadcn/ui Block Chart Bar Stacked",
+      "source": "shadcn/ui",
+      "entry_type": "block",
+      "category": "data-display",
+      "description": "Chart Bar Stacked block: a ready composition of shadcn/ui components.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "shadcn",
+        "block",
+        "chart",
+        "bar",
+        "stacked",
+        "data-display",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/blocks",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Official block: copy and adapt to your tokens; it pulls the shadcn/ui components it needs"
+      ],
+      "registry_url": "https://ui.shadcn.com/r/styles/new-york-v4/chart-bar-stacked.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add chart-bar-stacked",
+      "quality": 95
+    },
+    {
+      "id": "shadcn-data-display-chart-line-default",
+      "name": "shadcn/ui Block Chart Line Default",
+      "source": "shadcn/ui",
+      "entry_type": "block",
+      "category": "data-display",
+      "description": "Chart Line Default block: a ready composition of shadcn/ui components.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "shadcn",
+        "block",
+        "chart",
+        "line",
+        "default",
+        "data-display",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/blocks",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Official block: copy and adapt to your tokens; it pulls the shadcn/ui components it needs"
+      ],
+      "registry_url": "https://ui.shadcn.com/r/styles/new-york-v4/chart-line-default.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add chart-line-default",
+      "quality": 95
+    },
+    {
+      "id": "shadcn-data-display-chart-line-dots",
+      "name": "shadcn/ui Block Chart Line Dots",
+      "source": "shadcn/ui",
+      "entry_type": "block",
+      "category": "data-display",
+      "description": "Chart Line Dots block: a ready composition of shadcn/ui components.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "shadcn",
+        "block",
+        "chart",
+        "line",
+        "dots",
+        "data-display",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/blocks",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Official block: copy and adapt to your tokens; it pulls the shadcn/ui components it needs"
+      ],
+      "registry_url": "https://ui.shadcn.com/r/styles/new-york-v4/chart-line-dots.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add chart-line-dots",
+      "quality": 95
+    },
+    {
+      "id": "shadcn-data-display-chart-line-dots-colors",
+      "name": "shadcn/ui Block Chart Line Dots Colors",
+      "source": "shadcn/ui",
+      "entry_type": "block",
+      "category": "data-display",
+      "description": "Chart Line Dots Colors block: a ready composition of shadcn/ui components.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "shadcn",
+        "block",
+        "chart",
+        "line",
+        "dots",
+        "colors",
+        "data-display",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/blocks",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Official block: copy and adapt to your tokens; it pulls the shadcn/ui components it needs"
+      ],
+      "registry_url": "https://ui.shadcn.com/r/styles/new-york-v4/chart-line-dots-colors.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add chart-line-dots-colors",
+      "quality": 95
+    },
+    {
+      "id": "shadcn-data-display-chart-line-dots-custom",
+      "name": "shadcn/ui Block Chart Line Dots Custom",
+      "source": "shadcn/ui",
+      "entry_type": "block",
+      "category": "data-display",
+      "description": "Chart Line Dots Custom block: a ready composition of shadcn/ui components.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "shadcn",
+        "block",
+        "chart",
+        "line",
+        "dots",
+        "custom",
+        "data-display",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/blocks",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Official block: copy and adapt to your tokens; it pulls the shadcn/ui components it needs"
+      ],
+      "registry_url": "https://ui.shadcn.com/r/styles/new-york-v4/chart-line-dots-custom.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add chart-line-dots-custom",
+      "quality": 95
+    },
+    {
+      "id": "shadcn-data-display-chart-line-interactive",
+      "name": "shadcn/ui Block Chart Line Interactive",
+      "source": "shadcn/ui",
+      "entry_type": "block",
+      "category": "data-display",
+      "description": "Chart Line Interactive block: a ready composition of shadcn/ui components.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "shadcn",
+        "block",
+        "chart",
+        "line",
+        "interactive",
+        "data-display",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/blocks",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Official block: copy and adapt to your tokens; it pulls the shadcn/ui components it needs"
+      ],
+      "registry_url": "https://ui.shadcn.com/r/styles/new-york-v4/chart-line-interactive.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add chart-line-interactive",
+      "quality": 95
+    },
+    {
+      "id": "shadcn-data-display-chart-line-label",
+      "name": "shadcn/ui Block Chart Line Label",
+      "source": "shadcn/ui",
+      "entry_type": "block",
+      "category": "data-display",
+      "description": "Chart Line Label block: a ready composition of shadcn/ui components.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "shadcn",
+        "block",
+        "chart",
+        "line",
+        "label",
+        "data-display",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/blocks",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Official block: copy and adapt to your tokens; it pulls the shadcn/ui components it needs"
+      ],
+      "registry_url": "https://ui.shadcn.com/r/styles/new-york-v4/chart-line-label.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add chart-line-label",
+      "quality": 95
+    },
+    {
+      "id": "shadcn-data-display-chart-line-label-custom",
+      "name": "shadcn/ui Block Chart Line Label Custom",
+      "source": "shadcn/ui",
+      "entry_type": "block",
+      "category": "data-display",
+      "description": "Chart Line Label Custom block: a ready composition of shadcn/ui components.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "shadcn",
+        "block",
+        "chart",
+        "line",
+        "label",
+        "custom",
+        "data-display",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/blocks",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Official block: copy and adapt to your tokens; it pulls the shadcn/ui components it needs"
+      ],
+      "registry_url": "https://ui.shadcn.com/r/styles/new-york-v4/chart-line-label-custom.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add chart-line-label-custom",
+      "quality": 95
+    },
+    {
+      "id": "shadcn-data-display-chart-line-linear",
+      "name": "shadcn/ui Block Chart Line Linear",
+      "source": "shadcn/ui",
+      "entry_type": "block",
+      "category": "data-display",
+      "description": "Chart Line Linear block: a ready composition of shadcn/ui components.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "shadcn",
+        "block",
+        "chart",
+        "line",
+        "linear",
+        "data-display",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/blocks",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Official block: copy and adapt to your tokens; it pulls the shadcn/ui components it needs"
+      ],
+      "registry_url": "https://ui.shadcn.com/r/styles/new-york-v4/chart-line-linear.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add chart-line-linear",
+      "quality": 95
+    },
+    {
+      "id": "shadcn-data-display-chart-line-multiple",
+      "name": "shadcn/ui Block Chart Line Multiple",
+      "source": "shadcn/ui",
+      "entry_type": "block",
+      "category": "data-display",
+      "description": "Chart Line Multiple block: a ready composition of shadcn/ui components.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "shadcn",
+        "block",
+        "chart",
+        "line",
+        "multiple",
+        "data-display",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/blocks",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Official block: copy and adapt to your tokens; it pulls the shadcn/ui components it needs"
+      ],
+      "registry_url": "https://ui.shadcn.com/r/styles/new-york-v4/chart-line-multiple.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add chart-line-multiple",
+      "quality": 95
+    },
+    {
+      "id": "shadcn-data-display-chart-line-step",
+      "name": "shadcn/ui Block Chart Line Step",
+      "source": "shadcn/ui",
+      "entry_type": "block",
+      "category": "data-display",
+      "description": "Chart Line Step block: a ready composition of shadcn/ui components.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "shadcn",
+        "block",
+        "chart",
+        "line",
+        "step",
+        "data-display",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/blocks",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Official block: copy and adapt to your tokens; it pulls the shadcn/ui components it needs"
+      ],
+      "registry_url": "https://ui.shadcn.com/r/styles/new-york-v4/chart-line-step.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add chart-line-step",
+      "quality": 95
+    },
+    {
+      "id": "shadcn-data-display-chart-pie-donut",
+      "name": "shadcn/ui Block Chart Pie Donut",
+      "source": "shadcn/ui",
+      "entry_type": "block",
+      "category": "data-display",
+      "description": "Chart Pie Donut block: a ready composition of shadcn/ui components.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "shadcn",
+        "block",
+        "chart",
+        "pie",
+        "donut",
+        "data-display",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/blocks",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Official block: copy and adapt to your tokens; it pulls the shadcn/ui components it needs"
+      ],
+      "registry_url": "https://ui.shadcn.com/r/styles/new-york-v4/chart-pie-donut.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add chart-pie-donut",
+      "quality": 95
+    },
+    {
+      "id": "shadcn-data-display-chart-pie-donut-active",
+      "name": "shadcn/ui Block Chart Pie Donut Active",
+      "source": "shadcn/ui",
+      "entry_type": "block",
+      "category": "data-display",
+      "description": "Chart Pie Donut Active block: a ready composition of shadcn/ui components.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "shadcn",
+        "block",
+        "chart",
+        "pie",
+        "donut",
+        "active",
+        "data-display",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/blocks",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Official block: copy and adapt to your tokens; it pulls the shadcn/ui components it needs"
+      ],
+      "registry_url": "https://ui.shadcn.com/r/styles/new-york-v4/chart-pie-donut-active.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add chart-pie-donut-active",
+      "quality": 95
+    },
+    {
+      "id": "shadcn-data-display-chart-pie-donut-text",
+      "name": "shadcn/ui Block Chart Pie Donut Text",
+      "source": "shadcn/ui",
+      "entry_type": "block",
+      "category": "data-display",
+      "description": "Chart Pie Donut Text block: a ready composition of shadcn/ui components.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "shadcn",
+        "block",
+        "chart",
+        "pie",
+        "donut",
+        "text",
+        "data-display",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/blocks",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Official block: copy and adapt to your tokens; it pulls the shadcn/ui components it needs"
+      ],
+      "registry_url": "https://ui.shadcn.com/r/styles/new-york-v4/chart-pie-donut-text.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add chart-pie-donut-text",
+      "quality": 95
+    },
+    {
+      "id": "shadcn-data-display-chart-pie-interactive",
+      "name": "shadcn/ui Block Chart Pie Interactive",
+      "source": "shadcn/ui",
+      "entry_type": "block",
+      "category": "data-display",
+      "description": "Chart Pie Interactive block: a ready composition of shadcn/ui components.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "shadcn",
+        "block",
+        "chart",
+        "pie",
+        "interactive",
+        "data-display",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/blocks",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Official block: copy and adapt to your tokens; it pulls the shadcn/ui components it needs"
+      ],
+      "registry_url": "https://ui.shadcn.com/r/styles/new-york-v4/chart-pie-interactive.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add chart-pie-interactive",
+      "quality": 95
+    },
+    {
+      "id": "shadcn-data-display-chart-pie-label",
+      "name": "shadcn/ui Block Chart Pie Label",
+      "source": "shadcn/ui",
+      "entry_type": "block",
+      "category": "data-display",
+      "description": "Chart Pie Label block: a ready composition of shadcn/ui components.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "shadcn",
+        "block",
+        "chart",
+        "pie",
+        "label",
+        "data-display",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/blocks",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Official block: copy and adapt to your tokens; it pulls the shadcn/ui components it needs"
+      ],
+      "registry_url": "https://ui.shadcn.com/r/styles/new-york-v4/chart-pie-label.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add chart-pie-label",
+      "quality": 95
+    },
+    {
+      "id": "shadcn-data-display-chart-pie-label-custom",
+      "name": "shadcn/ui Block Chart Pie Label Custom",
+      "source": "shadcn/ui",
+      "entry_type": "block",
+      "category": "data-display",
+      "description": "Chart Pie Label Custom block: a ready composition of shadcn/ui components.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "shadcn",
+        "block",
+        "chart",
+        "pie",
+        "label",
+        "custom",
+        "data-display",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/blocks",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Official block: copy and adapt to your tokens; it pulls the shadcn/ui components it needs"
+      ],
+      "registry_url": "https://ui.shadcn.com/r/styles/new-york-v4/chart-pie-label-custom.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add chart-pie-label-custom",
+      "quality": 95
+    },
+    {
+      "id": "shadcn-data-display-chart-pie-label-list",
+      "name": "shadcn/ui Block Chart Pie Label List",
+      "source": "shadcn/ui",
+      "entry_type": "block",
+      "category": "data-display",
+      "description": "Chart Pie Label List block: a ready composition of shadcn/ui components.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "shadcn",
+        "block",
+        "chart",
+        "pie",
+        "label",
+        "list",
+        "data-display",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/blocks",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Official block: copy and adapt to your tokens; it pulls the shadcn/ui components it needs"
+      ],
+      "registry_url": "https://ui.shadcn.com/r/styles/new-york-v4/chart-pie-label-list.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add chart-pie-label-list",
+      "quality": 95
+    },
+    {
+      "id": "shadcn-data-display-chart-pie-legend",
+      "name": "shadcn/ui Block Chart Pie Legend",
+      "source": "shadcn/ui",
+      "entry_type": "block",
+      "category": "data-display",
+      "description": "Chart Pie Legend block: a ready composition of shadcn/ui components.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "shadcn",
+        "block",
+        "chart",
+        "pie",
+        "legend",
+        "data-display",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/blocks",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Official block: copy and adapt to your tokens; it pulls the shadcn/ui components it needs"
+      ],
+      "registry_url": "https://ui.shadcn.com/r/styles/new-york-v4/chart-pie-legend.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add chart-pie-legend",
+      "quality": 95
+    },
+    {
+      "id": "shadcn-data-display-chart-pie-separator-none",
+      "name": "shadcn/ui Block Chart Pie Separator None",
+      "source": "shadcn/ui",
+      "entry_type": "block",
+      "category": "data-display",
+      "description": "Chart Pie Separator None block: a ready composition of shadcn/ui components.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "shadcn",
+        "block",
+        "chart",
+        "pie",
+        "separator",
+        "none",
+        "data-display",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/blocks",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Official block: copy and adapt to your tokens; it pulls the shadcn/ui components it needs"
+      ],
+      "registry_url": "https://ui.shadcn.com/r/styles/new-york-v4/chart-pie-separator-none.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add chart-pie-separator-none",
+      "quality": 95
+    },
+    {
+      "id": "shadcn-data-display-chart-pie-simple",
+      "name": "shadcn/ui Block Chart Pie Simple",
+      "source": "shadcn/ui",
+      "entry_type": "block",
+      "category": "data-display",
+      "description": "Chart Pie Simple block: a ready composition of shadcn/ui components.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "shadcn",
+        "block",
+        "chart",
+        "pie",
+        "simple",
+        "data-display",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/blocks",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Official block: copy and adapt to your tokens; it pulls the shadcn/ui components it needs"
+      ],
+      "registry_url": "https://ui.shadcn.com/r/styles/new-york-v4/chart-pie-simple.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add chart-pie-simple",
+      "quality": 95
+    },
+    {
+      "id": "shadcn-data-display-chart-pie-stacked",
+      "name": "shadcn/ui Block Chart Pie Stacked",
+      "source": "shadcn/ui",
+      "entry_type": "block",
+      "category": "data-display",
+      "description": "Chart Pie Stacked block: a ready composition of shadcn/ui components.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "shadcn",
+        "block",
+        "chart",
+        "pie",
+        "stacked",
+        "data-display",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/blocks",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Official block: copy and adapt to your tokens; it pulls the shadcn/ui components it needs"
+      ],
+      "registry_url": "https://ui.shadcn.com/r/styles/new-york-v4/chart-pie-stacked.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add chart-pie-stacked",
+      "quality": 95
+    },
+    {
+      "id": "shadcn-data-display-chart-radar-default",
+      "name": "shadcn/ui Block Chart Radar Default",
+      "source": "shadcn/ui",
+      "entry_type": "block",
+      "category": "data-display",
+      "description": "Chart Radar Default block: a ready composition of shadcn/ui components.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "shadcn",
+        "block",
+        "chart",
+        "radar",
+        "default",
+        "data-display",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/blocks",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Official block: copy and adapt to your tokens; it pulls the shadcn/ui components it needs"
+      ],
+      "registry_url": "https://ui.shadcn.com/r/styles/new-york-v4/chart-radar-default.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add chart-radar-default",
+      "quality": 95
+    },
+    {
+      "id": "shadcn-data-display-chart-radar-dots",
+      "name": "shadcn/ui Block Chart Radar Dots",
+      "source": "shadcn/ui",
+      "entry_type": "block",
+      "category": "data-display",
+      "description": "Chart Radar Dots block: a ready composition of shadcn/ui components.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "shadcn",
+        "block",
+        "chart",
+        "radar",
+        "dots",
+        "data-display",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/blocks",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Official block: copy and adapt to your tokens; it pulls the shadcn/ui components it needs"
+      ],
+      "registry_url": "https://ui.shadcn.com/r/styles/new-york-v4/chart-radar-dots.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add chart-radar-dots",
+      "quality": 95
+    },
+    {
+      "id": "shadcn-data-display-chart-radar-grid-circle",
+      "name": "shadcn/ui Block Chart Radar Grid Circle",
+      "source": "shadcn/ui",
+      "entry_type": "block",
+      "category": "data-display",
+      "description": "Chart Radar Grid Circle block: a ready composition of shadcn/ui components.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "shadcn",
+        "block",
+        "chart",
+        "radar",
+        "grid",
+        "circle",
+        "data-display",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/blocks",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Official block: copy and adapt to your tokens; it pulls the shadcn/ui components it needs"
+      ],
+      "registry_url": "https://ui.shadcn.com/r/styles/new-york-v4/chart-radar-grid-circle.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add chart-radar-grid-circle",
+      "quality": 95
+    },
+    {
+      "id": "shadcn-data-display-chart-radar-grid-circle-fill",
+      "name": "shadcn/ui Block Chart Radar Grid Circle Fill",
+      "source": "shadcn/ui",
+      "entry_type": "block",
+      "category": "data-display",
+      "description": "Chart Radar Grid Circle Fill block: a ready composition of shadcn/ui components.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "shadcn",
+        "block",
+        "chart",
+        "radar",
+        "grid",
+        "circle",
+        "fill",
+        "data-display",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/blocks",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Official block: copy and adapt to your tokens; it pulls the shadcn/ui components it needs"
+      ],
+      "registry_url": "https://ui.shadcn.com/r/styles/new-york-v4/chart-radar-grid-circle-fill.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add chart-radar-grid-circle-fill",
+      "quality": 95
+    },
+    {
+      "id": "shadcn-data-display-chart-radar-grid-circle-no-lines",
+      "name": "shadcn/ui Block Chart Radar Grid Circle No Lines",
+      "source": "shadcn/ui",
+      "entry_type": "block",
+      "category": "data-display",
+      "description": "Chart Radar Grid Circle No Lines block: a ready composition of shadcn/ui components.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "shadcn",
+        "block",
+        "chart",
+        "radar",
+        "grid",
+        "circle",
+        "no",
+        "lines",
+        "data-display",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/blocks",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Official block: copy and adapt to your tokens; it pulls the shadcn/ui components it needs"
+      ],
+      "registry_url": "https://ui.shadcn.com/r/styles/new-york-v4/chart-radar-grid-circle-no-lines.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add chart-radar-grid-circle-no-lines",
+      "quality": 95
+    },
+    {
+      "id": "shadcn-data-display-chart-radar-grid-custom",
+      "name": "shadcn/ui Block Chart Radar Grid Custom",
+      "source": "shadcn/ui",
+      "entry_type": "block",
+      "category": "data-display",
+      "description": "Chart Radar Grid Custom block: a ready composition of shadcn/ui components.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "shadcn",
+        "block",
+        "chart",
+        "radar",
+        "grid",
+        "custom",
+        "data-display",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/blocks",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Official block: copy and adapt to your tokens; it pulls the shadcn/ui components it needs"
+      ],
+      "registry_url": "https://ui.shadcn.com/r/styles/new-york-v4/chart-radar-grid-custom.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add chart-radar-grid-custom",
+      "quality": 95
+    },
+    {
+      "id": "shadcn-data-display-chart-radar-grid-fill",
+      "name": "shadcn/ui Block Chart Radar Grid Fill",
+      "source": "shadcn/ui",
+      "entry_type": "block",
+      "category": "data-display",
+      "description": "Chart Radar Grid Fill block: a ready composition of shadcn/ui components.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "shadcn",
+        "block",
+        "chart",
+        "radar",
+        "grid",
+        "fill",
+        "data-display",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/blocks",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Official block: copy and adapt to your tokens; it pulls the shadcn/ui components it needs"
+      ],
+      "registry_url": "https://ui.shadcn.com/r/styles/new-york-v4/chart-radar-grid-fill.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add chart-radar-grid-fill",
+      "quality": 95
+    },
+    {
+      "id": "shadcn-data-display-chart-radar-grid-none",
+      "name": "shadcn/ui Block Chart Radar Grid None",
+      "source": "shadcn/ui",
+      "entry_type": "block",
+      "category": "data-display",
+      "description": "Chart Radar Grid None block: a ready composition of shadcn/ui components.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "shadcn",
+        "block",
+        "chart",
+        "radar",
+        "grid",
+        "none",
+        "data-display",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/blocks",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Official block: copy and adapt to your tokens; it pulls the shadcn/ui components it needs"
+      ],
+      "registry_url": "https://ui.shadcn.com/r/styles/new-york-v4/chart-radar-grid-none.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add chart-radar-grid-none",
+      "quality": 95
+    },
+    {
+      "id": "shadcn-data-display-chart-radar-icons",
+      "name": "shadcn/ui Block Chart Radar Icons",
+      "source": "shadcn/ui",
+      "entry_type": "block",
+      "category": "data-display",
+      "description": "Chart Radar Icons block: a ready composition of shadcn/ui components.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "shadcn",
+        "block",
+        "chart",
+        "radar",
+        "icons",
+        "data-display",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/blocks",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Official block: copy and adapt to your tokens; it pulls the shadcn/ui components it needs"
+      ],
+      "registry_url": "https://ui.shadcn.com/r/styles/new-york-v4/chart-radar-icons.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add chart-radar-icons",
+      "quality": 95
+    },
+    {
+      "id": "shadcn-data-display-chart-radar-label-custom",
+      "name": "shadcn/ui Block Chart Radar Label Custom",
+      "source": "shadcn/ui",
+      "entry_type": "block",
+      "category": "data-display",
+      "description": "Chart Radar Label Custom block: a ready composition of shadcn/ui components.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "shadcn",
+        "block",
+        "chart",
+        "radar",
+        "label",
+        "custom",
+        "data-display",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/blocks",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Official block: copy and adapt to your tokens; it pulls the shadcn/ui components it needs"
+      ],
+      "registry_url": "https://ui.shadcn.com/r/styles/new-york-v4/chart-radar-label-custom.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add chart-radar-label-custom",
+      "quality": 95
+    },
+    {
+      "id": "shadcn-data-display-chart-radar-legend",
+      "name": "shadcn/ui Block Chart Radar Legend",
+      "source": "shadcn/ui",
+      "entry_type": "block",
+      "category": "data-display",
+      "description": "Chart Radar Legend block: a ready composition of shadcn/ui components.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "shadcn",
+        "block",
+        "chart",
+        "radar",
+        "legend",
+        "data-display",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/blocks",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Official block: copy and adapt to your tokens; it pulls the shadcn/ui components it needs"
+      ],
+      "registry_url": "https://ui.shadcn.com/r/styles/new-york-v4/chart-radar-legend.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add chart-radar-legend",
+      "quality": 95
+    },
+    {
+      "id": "shadcn-data-display-chart-radar-lines-only",
+      "name": "shadcn/ui Block Chart Radar Lines Only",
+      "source": "shadcn/ui",
+      "entry_type": "block",
+      "category": "data-display",
+      "description": "Chart Radar Lines Only block: a ready composition of shadcn/ui components.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "shadcn",
+        "block",
+        "chart",
+        "radar",
+        "lines",
+        "only",
+        "data-display",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/blocks",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Official block: copy and adapt to your tokens; it pulls the shadcn/ui components it needs"
+      ],
+      "registry_url": "https://ui.shadcn.com/r/styles/new-york-v4/chart-radar-lines-only.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add chart-radar-lines-only",
+      "quality": 95
+    },
+    {
+      "id": "shadcn-data-display-chart-radar-multiple",
+      "name": "shadcn/ui Block Chart Radar Multiple",
+      "source": "shadcn/ui",
+      "entry_type": "block",
+      "category": "data-display",
+      "description": "Chart Radar Multiple block: a ready composition of shadcn/ui components.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "shadcn",
+        "block",
+        "chart",
+        "radar",
+        "multiple",
+        "data-display",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/blocks",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Official block: copy and adapt to your tokens; it pulls the shadcn/ui components it needs"
+      ],
+      "registry_url": "https://ui.shadcn.com/r/styles/new-york-v4/chart-radar-multiple.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add chart-radar-multiple",
+      "quality": 95
+    },
+    {
+      "id": "shadcn-data-display-chart-radar-radius",
+      "name": "shadcn/ui Block Chart Radar Radius",
+      "source": "shadcn/ui",
+      "entry_type": "block",
+      "category": "data-display",
+      "description": "Chart Radar Radius block: a ready composition of shadcn/ui components.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "shadcn",
+        "block",
+        "chart",
+        "radar",
+        "radius",
+        "data-display",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/blocks",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Official block: copy and adapt to your tokens; it pulls the shadcn/ui components it needs"
+      ],
+      "registry_url": "https://ui.shadcn.com/r/styles/new-york-v4/chart-radar-radius.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add chart-radar-radius",
+      "quality": 95
+    },
+    {
+      "id": "shadcn-data-display-chart-radial-grid",
+      "name": "shadcn/ui Block Chart Radial Grid",
+      "source": "shadcn/ui",
+      "entry_type": "block",
+      "category": "data-display",
+      "description": "Chart Radial Grid block: a ready composition of shadcn/ui components.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "shadcn",
+        "block",
+        "chart",
+        "radial",
+        "grid",
+        "data-display",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/blocks",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Official block: copy and adapt to your tokens; it pulls the shadcn/ui components it needs"
+      ],
+      "registry_url": "https://ui.shadcn.com/r/styles/new-york-v4/chart-radial-grid.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add chart-radial-grid",
+      "quality": 95
+    },
+    {
+      "id": "shadcn-data-display-chart-radial-label",
+      "name": "shadcn/ui Block Chart Radial Label",
+      "source": "shadcn/ui",
+      "entry_type": "block",
+      "category": "data-display",
+      "description": "Chart Radial Label block: a ready composition of shadcn/ui components.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "shadcn",
+        "block",
+        "chart",
+        "radial",
+        "label",
+        "data-display",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/blocks",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Official block: copy and adapt to your tokens; it pulls the shadcn/ui components it needs"
+      ],
+      "registry_url": "https://ui.shadcn.com/r/styles/new-york-v4/chart-radial-label.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add chart-radial-label",
+      "quality": 95
+    },
+    {
+      "id": "shadcn-data-display-chart-radial-shape",
+      "name": "shadcn/ui Block Chart Radial Shape",
+      "source": "shadcn/ui",
+      "entry_type": "block",
+      "category": "data-display",
+      "description": "Chart Radial Shape block: a ready composition of shadcn/ui components.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "shadcn",
+        "block",
+        "chart",
+        "radial",
+        "shape",
+        "data-display",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/blocks",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Official block: copy and adapt to your tokens; it pulls the shadcn/ui components it needs"
+      ],
+      "registry_url": "https://ui.shadcn.com/r/styles/new-york-v4/chart-radial-shape.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add chart-radial-shape",
+      "quality": 95
+    },
+    {
+      "id": "shadcn-data-display-chart-radial-simple",
+      "name": "shadcn/ui Block Chart Radial Simple",
+      "source": "shadcn/ui",
+      "entry_type": "block",
+      "category": "data-display",
+      "description": "Chart Radial Simple block: a ready composition of shadcn/ui components.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "shadcn",
+        "block",
+        "chart",
+        "radial",
+        "simple",
+        "data-display",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/blocks",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Official block: copy and adapt to your tokens; it pulls the shadcn/ui components it needs"
+      ],
+      "registry_url": "https://ui.shadcn.com/r/styles/new-york-v4/chart-radial-simple.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add chart-radial-simple",
+      "quality": 95
+    },
+    {
+      "id": "shadcn-data-display-chart-radial-stacked",
+      "name": "shadcn/ui Block Chart Radial Stacked",
+      "source": "shadcn/ui",
+      "entry_type": "block",
+      "category": "data-display",
+      "description": "Chart Radial Stacked block: a ready composition of shadcn/ui components.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "shadcn",
+        "block",
+        "chart",
+        "radial",
+        "stacked",
+        "data-display",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/blocks",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Official block: copy and adapt to your tokens; it pulls the shadcn/ui components it needs"
+      ],
+      "registry_url": "https://ui.shadcn.com/r/styles/new-york-v4/chart-radial-stacked.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add chart-radial-stacked",
+      "quality": 95
+    },
+    {
+      "id": "shadcn-data-display-chart-radial-text",
+      "name": "shadcn/ui Block Chart Radial Text",
+      "source": "shadcn/ui",
+      "entry_type": "block",
+      "category": "data-display",
+      "description": "Chart Radial Text block: a ready composition of shadcn/ui components.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "shadcn",
+        "block",
+        "chart",
+        "radial",
+        "text",
+        "data-display",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/blocks",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Official block: copy and adapt to your tokens; it pulls the shadcn/ui components it needs"
+      ],
+      "registry_url": "https://ui.shadcn.com/r/styles/new-york-v4/chart-radial-text.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add chart-radial-text",
+      "quality": 95
+    },
+    {
+      "id": "shadcn-data-display-chart-tooltip-advanced",
+      "name": "shadcn/ui Block Chart Tooltip Advanced",
+      "source": "shadcn/ui",
+      "entry_type": "block",
+      "category": "data-display",
+      "description": "Chart Tooltip Advanced block: a ready composition of shadcn/ui components.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "shadcn",
+        "block",
+        "chart",
+        "tooltip",
+        "advanced",
+        "data-display",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/blocks",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Official block: copy and adapt to your tokens; it pulls the shadcn/ui components it needs"
+      ],
+      "registry_url": "https://ui.shadcn.com/r/styles/new-york-v4/chart-tooltip-advanced.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add chart-tooltip-advanced",
+      "quality": 95
+    },
+    {
+      "id": "shadcn-data-display-chart-tooltip-default",
+      "name": "shadcn/ui Block Chart Tooltip Default",
+      "source": "shadcn/ui",
+      "entry_type": "block",
+      "category": "data-display",
+      "description": "Chart Tooltip Default block: a ready composition of shadcn/ui components.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "shadcn",
+        "block",
+        "chart",
+        "tooltip",
+        "default",
+        "data-display",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/blocks",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Official block: copy and adapt to your tokens; it pulls the shadcn/ui components it needs"
+      ],
+      "registry_url": "https://ui.shadcn.com/r/styles/new-york-v4/chart-tooltip-default.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add chart-tooltip-default",
+      "quality": 95
+    },
+    {
+      "id": "shadcn-data-display-chart-tooltip-formatter",
+      "name": "shadcn/ui Block Chart Tooltip Formatter",
+      "source": "shadcn/ui",
+      "entry_type": "block",
+      "category": "data-display",
+      "description": "Chart Tooltip Formatter block: a ready composition of shadcn/ui components.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "shadcn",
+        "block",
+        "chart",
+        "tooltip",
+        "formatter",
+        "data-display",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/blocks",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Official block: copy and adapt to your tokens; it pulls the shadcn/ui components it needs"
+      ],
+      "registry_url": "https://ui.shadcn.com/r/styles/new-york-v4/chart-tooltip-formatter.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add chart-tooltip-formatter",
+      "quality": 95
+    },
+    {
+      "id": "shadcn-data-display-chart-tooltip-icons",
+      "name": "shadcn/ui Block Chart Tooltip Icons",
+      "source": "shadcn/ui",
+      "entry_type": "block",
+      "category": "data-display",
+      "description": "Chart Tooltip Icons block: a ready composition of shadcn/ui components.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "shadcn",
+        "block",
+        "chart",
+        "tooltip",
+        "icons",
+        "data-display",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/blocks",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Official block: copy and adapt to your tokens; it pulls the shadcn/ui components it needs"
+      ],
+      "registry_url": "https://ui.shadcn.com/r/styles/new-york-v4/chart-tooltip-icons.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add chart-tooltip-icons",
+      "quality": 95
+    },
+    {
+      "id": "shadcn-data-display-chart-tooltip-indicator-line",
+      "name": "shadcn/ui Block Chart Tooltip Indicator Line",
+      "source": "shadcn/ui",
+      "entry_type": "block",
+      "category": "data-display",
+      "description": "Chart Tooltip Indicator Line block: a ready composition of shadcn/ui components.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "shadcn",
+        "block",
+        "chart",
+        "tooltip",
+        "indicator",
+        "line",
+        "data-display",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/blocks",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Official block: copy and adapt to your tokens; it pulls the shadcn/ui components it needs"
+      ],
+      "registry_url": "https://ui.shadcn.com/r/styles/new-york-v4/chart-tooltip-indicator-line.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add chart-tooltip-indicator-line",
+      "quality": 95
+    },
+    {
+      "id": "shadcn-data-display-chart-tooltip-indicator-none",
+      "name": "shadcn/ui Block Chart Tooltip Indicator None",
+      "source": "shadcn/ui",
+      "entry_type": "block",
+      "category": "data-display",
+      "description": "Chart Tooltip Indicator None block: a ready composition of shadcn/ui components.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "shadcn",
+        "block",
+        "chart",
+        "tooltip",
+        "indicator",
+        "none",
+        "data-display",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/blocks",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Official block: copy and adapt to your tokens; it pulls the shadcn/ui components it needs"
+      ],
+      "registry_url": "https://ui.shadcn.com/r/styles/new-york-v4/chart-tooltip-indicator-none.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add chart-tooltip-indicator-none",
+      "quality": 95
+    },
+    {
+      "id": "shadcn-data-display-chart-tooltip-label-custom",
+      "name": "shadcn/ui Block Chart Tooltip Label Custom",
+      "source": "shadcn/ui",
+      "entry_type": "block",
+      "category": "data-display",
+      "description": "Chart Tooltip Label Custom block: a ready composition of shadcn/ui components.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "shadcn",
+        "block",
+        "chart",
+        "tooltip",
+        "label",
+        "custom",
+        "data-display",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/blocks",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Official block: copy and adapt to your tokens; it pulls the shadcn/ui components it needs"
+      ],
+      "registry_url": "https://ui.shadcn.com/r/styles/new-york-v4/chart-tooltip-label-custom.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add chart-tooltip-label-custom",
+      "quality": 95
+    },
+    {
+      "id": "shadcn-data-display-chart-tooltip-label-formatter",
+      "name": "shadcn/ui Block Chart Tooltip Label Formatter",
+      "source": "shadcn/ui",
+      "entry_type": "block",
+      "category": "data-display",
+      "description": "Chart Tooltip Label Formatter block: a ready composition of shadcn/ui components.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "shadcn",
+        "block",
+        "chart",
+        "tooltip",
+        "label",
+        "formatter",
+        "data-display",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/blocks",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Official block: copy and adapt to your tokens; it pulls the shadcn/ui components it needs"
+      ],
+      "registry_url": "https://ui.shadcn.com/r/styles/new-york-v4/chart-tooltip-label-formatter.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add chart-tooltip-label-formatter",
+      "quality": 95
+    },
+    {
+      "id": "shadcn-data-display-chart-tooltip-label-none",
+      "name": "shadcn/ui Block Chart Tooltip Label None",
+      "source": "shadcn/ui",
+      "entry_type": "block",
+      "category": "data-display",
+      "description": "Chart Tooltip Label None block: a ready composition of shadcn/ui components.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "shadcn",
+        "block",
+        "chart",
+        "tooltip",
+        "label",
+        "none",
+        "data-display",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/blocks",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Official block: copy and adapt to your tokens; it pulls the shadcn/ui components it needs"
+      ],
+      "registry_url": "https://ui.shadcn.com/r/styles/new-york-v4/chart-tooltip-label-none.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add chart-tooltip-label-none",
+      "quality": 95
+    },
+    {
+      "id": "shadcn-data-display-item",
+      "name": "shadcn/ui Item",
+      "source": "shadcn/ui",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Accessible Item primitive from shadcn/ui (copy-source, built on Base UI/Radix).",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "shadcn",
+        "radix",
+        "base-ui",
+        "item",
+        "data-display",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/docs/components/base/item",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "class-variance-authority",
+        "lucide-react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "registry_url": "https://ui.shadcn.com/r/styles/base-nova/item.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add item",
+      "quality": 92
+    },
+    {
+      "id": "shadcn-data-display-kbd",
+      "name": "shadcn/ui Kbd",
+      "source": "shadcn/ui",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Accessible Kbd primitive from shadcn/ui (copy-source, built on Base UI/Radix).",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "shadcn",
+        "radix",
+        "base-ui",
+        "kbd",
+        "data-display",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/docs/components/base/kbd",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "class-variance-authority",
+        "lucide-react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "registry_url": "https://ui.shadcn.com/r/styles/base-nova/kbd.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add kbd",
+      "quality": 92
+    },
+    {
+      "id": "shadcn-data-display-table",
+      "name": "shadcn/ui Table",
+      "source": "shadcn/ui",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Accessible Table primitive from shadcn/ui (copy-source, built on Base UI/Radix).",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "shadcn",
+        "radix",
+        "base-ui",
+        "table",
+        "data-display",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/docs/components/base/table",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "class-variance-authority",
+        "lucide-react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "registry_url": "https://ui.shadcn.com/r/styles/base-nova/table.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add table",
+      "quality": 92
+    },
+    {
+      "id": "shadcn-feedback-alert",
+      "name": "shadcn/ui Alert",
+      "source": "shadcn/ui",
+      "entry_type": "component",
+      "category": "feedback",
+      "description": "Accessible Alert primitive from shadcn/ui (copy-source, built on Base UI/Radix).",
+      "use_case": "Communicate system status: alerts, loaders, progress and notifications.",
+      "search_tags": [
+        "shadcn",
+        "radix",
+        "base-ui",
+        "alert",
+        "feedback",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/docs/components/base/alert",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "class-variance-authority",
+        "lucide-react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "registry_url": "https://ui.shadcn.com/r/styles/base-nova/alert.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add alert",
+      "quality": 92
+    },
+    {
+      "id": "shadcn-feedback-progress",
+      "name": "shadcn/ui Progress",
+      "source": "shadcn/ui",
+      "entry_type": "component",
+      "category": "feedback",
+      "description": "Accessible Progress primitive from shadcn/ui (copy-source, built on Base UI/Radix).",
+      "use_case": "Communicate system status: alerts, loaders, progress and notifications.",
+      "search_tags": [
+        "shadcn",
+        "radix",
+        "base-ui",
+        "progress",
+        "feedback",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/docs/components/base/progress",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "class-variance-authority",
+        "lucide-react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "registry_url": "https://ui.shadcn.com/r/styles/base-nova/progress.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add progress",
+      "quality": 92
+    },
+    {
+      "id": "shadcn-feedback-skeleton",
+      "name": "shadcn/ui Skeleton",
+      "source": "shadcn/ui",
+      "entry_type": "component",
+      "category": "feedback",
+      "description": "Accessible Skeleton primitive from shadcn/ui (copy-source, built on Base UI/Radix).",
+      "use_case": "Communicate system status: alerts, loaders, progress and notifications.",
+      "search_tags": [
+        "shadcn",
+        "radix",
+        "base-ui",
+        "skeleton",
+        "feedback",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/docs/components/base/skeleton",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "class-variance-authority",
+        "lucide-react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "registry_url": "https://ui.shadcn.com/r/styles/base-nova/skeleton.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add skeleton",
+      "quality": 92
+    },
+    {
+      "id": "shadcn-feedback-sonner",
+      "name": "shadcn/ui Sonner",
+      "source": "shadcn/ui",
+      "entry_type": "component",
+      "category": "feedback",
+      "description": "Accessible Sonner primitive from shadcn/ui (copy-source, built on Base UI/Radix).",
+      "use_case": "Communicate system status: alerts, loaders, progress and notifications.",
+      "search_tags": [
+        "shadcn",
+        "radix",
+        "base-ui",
+        "sonner",
+        "feedback",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/docs/components/base/sonner",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "class-variance-authority",
+        "lucide-react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "registry_url": "https://ui.shadcn.com/r/styles/base-nova/sonner.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add sonner",
+      "quality": 92
+    },
+    {
+      "id": "shadcn-feedback-spinner",
+      "name": "shadcn/ui Spinner",
+      "source": "shadcn/ui",
+      "entry_type": "component",
+      "category": "feedback",
+      "description": "Accessible Spinner primitive from shadcn/ui (copy-source, built on Base UI/Radix).",
+      "use_case": "Communicate system status: alerts, loaders, progress and notifications.",
+      "search_tags": [
+        "shadcn",
+        "radix",
+        "base-ui",
+        "spinner",
+        "feedback",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/docs/components/base/spinner",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "class-variance-authority",
+        "lucide-react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "registry_url": "https://ui.shadcn.com/r/styles/base-nova/spinner.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add spinner",
+      "quality": 92
+    },
+    {
+      "id": "shadcn-feedback-toast",
+      "name": "shadcn/ui Toast",
+      "source": "shadcn/ui",
+      "entry_type": "component",
+      "category": "feedback",
+      "description": "Accessible Toast primitive from shadcn/ui (copy-source, built on Base UI/Radix).",
+      "use_case": "Communicate system status: alerts, loaders, progress and notifications.",
+      "search_tags": [
+        "shadcn",
+        "radix",
+        "base-ui",
+        "toast",
+        "feedback",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/docs/components/base/toast",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "class-variance-authority",
+        "lucide-react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "registry_url": "https://ui.shadcn.com/r/styles/base-nova/toast.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add toast",
+      "quality": 92
+    },
+    {
+      "id": "shadcn-feedback-tooltip",
+      "name": "shadcn/ui Tooltip",
+      "source": "shadcn/ui",
+      "entry_type": "component",
+      "category": "feedback",
+      "description": "Accessible Tooltip primitive from shadcn/ui (copy-source, built on Base UI/Radix).",
+      "use_case": "Communicate system status: alerts, loaders, progress and notifications.",
+      "search_tags": [
+        "shadcn",
+        "radix",
+        "base-ui",
+        "tooltip",
+        "feedback",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/docs/components/base/tooltip",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "class-variance-authority",
+        "lucide-react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "registry_url": "https://ui.shadcn.com/r/styles/base-nova/tooltip.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add tooltip",
+      "quality": 92
+    },
+    {
+      "id": "shadcn-forms-calendar",
+      "name": "shadcn/ui Calendar",
+      "source": "shadcn/ui",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Accessible Calendar primitive from shadcn/ui (copy-source, built on Base UI/Radix).",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "shadcn",
+        "radix",
+        "base-ui",
+        "calendar",
+        "forms",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/docs/components/base/calendar",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "class-variance-authority",
+        "lucide-react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "registry_url": "https://ui.shadcn.com/r/styles/base-nova/calendar.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add calendar",
+      "quality": 92
+    },
+    {
+      "id": "shadcn-forms-checkbox",
+      "name": "shadcn/ui Checkbox",
+      "source": "shadcn/ui",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Accessible Checkbox primitive from shadcn/ui (copy-source, built on Base UI/Radix).",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "shadcn",
+        "radix",
+        "base-ui",
+        "checkbox",
+        "forms",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/docs/components/base/checkbox",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "class-variance-authority",
+        "lucide-react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "registry_url": "https://ui.shadcn.com/r/styles/base-nova/checkbox.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add checkbox",
+      "quality": 92
+    },
+    {
+      "id": "shadcn-forms-combobox",
+      "name": "shadcn/ui Combobox",
+      "source": "shadcn/ui",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Accessible Combobox primitive from shadcn/ui (copy-source, built on Base UI/Radix).",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "shadcn",
+        "radix",
+        "base-ui",
+        "combobox",
+        "forms",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/docs/components/base/combobox",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "class-variance-authority",
+        "lucide-react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "registry_url": "https://ui.shadcn.com/r/styles/base-nova/combobox.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add combobox",
+      "quality": 92
+    },
+    {
+      "id": "shadcn-forms-field",
+      "name": "shadcn/ui Field",
+      "source": "shadcn/ui",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Accessible Field primitive from shadcn/ui (copy-source, built on Base UI/Radix).",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "shadcn",
+        "radix",
+        "base-ui",
+        "field",
+        "forms",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/docs/components/base/field",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "class-variance-authority",
+        "lucide-react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "registry_url": "https://ui.shadcn.com/r/styles/base-nova/field.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add field",
+      "quality": 92
+    },
+    {
+      "id": "shadcn-forms-form",
+      "name": "shadcn/ui Form",
+      "source": "shadcn/ui",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Accessible Form primitive from shadcn/ui (copy-source, built on Base UI/Radix).",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "shadcn",
+        "radix",
+        "base-ui",
+        "form",
+        "forms",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/docs/components/base/form",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "class-variance-authority",
+        "lucide-react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "registry_url": "https://ui.shadcn.com/r/styles/base-nova/form.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add form",
+      "quality": 92
+    },
+    {
+      "id": "shadcn-forms-input",
+      "name": "shadcn/ui Input",
+      "source": "shadcn/ui",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Accessible Input primitive from shadcn/ui (copy-source, built on Base UI/Radix).",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "shadcn",
+        "radix",
+        "base-ui",
+        "input",
+        "forms",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/docs/components/base/input",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "class-variance-authority",
+        "lucide-react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "registry_url": "https://ui.shadcn.com/r/styles/base-nova/input.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add input",
+      "quality": 92
+    },
+    {
+      "id": "shadcn-forms-input-group",
+      "name": "shadcn/ui Input Group",
+      "source": "shadcn/ui",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Accessible Input Group primitive from shadcn/ui (copy-source, built on Base UI/Radix).",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "shadcn",
+        "radix",
+        "base-ui",
+        "input",
+        "group",
+        "forms",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/docs/components/base/input-group",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "class-variance-authority",
+        "lucide-react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "registry_url": "https://ui.shadcn.com/r/styles/base-nova/input-group.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add input-group",
+      "quality": 92
+    },
+    {
+      "id": "shadcn-forms-input-otp",
+      "name": "shadcn/ui Input Otp",
+      "source": "shadcn/ui",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Accessible Input Otp primitive from shadcn/ui (copy-source, built on Base UI/Radix).",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "shadcn",
+        "radix",
+        "base-ui",
+        "input",
+        "otp",
+        "forms",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/docs/components/base/input-otp",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "class-variance-authority",
+        "lucide-react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "registry_url": "https://ui.shadcn.com/r/styles/base-nova/input-otp.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add input-otp",
+      "quality": 92
+    },
+    {
+      "id": "shadcn-forms-label",
+      "name": "shadcn/ui Label",
+      "source": "shadcn/ui",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Accessible Label primitive from shadcn/ui (copy-source, built on Base UI/Radix).",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "shadcn",
+        "radix",
+        "base-ui",
+        "label",
+        "forms",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/docs/components/base/label",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "class-variance-authority",
+        "lucide-react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "registry_url": "https://ui.shadcn.com/r/styles/base-nova/label.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add label",
+      "quality": 92
+    },
+    {
+      "id": "shadcn-forms-login-01",
+      "name": "shadcn/ui Block Login 01",
+      "source": "shadcn/ui",
+      "entry_type": "block",
+      "category": "forms",
+      "description": "A simple login form.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "shadcn",
+        "block",
+        "login",
+        "01",
+        "forms",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/blocks",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "cn"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Official block: copy and adapt to your tokens; it pulls the shadcn/ui components it needs"
+      ],
+      "registry_url": "https://ui.shadcn.com/r/styles/new-york-v4/login-01.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add login-01",
+      "quality": 87
+    },
+    {
+      "id": "shadcn-forms-login-02",
+      "name": "shadcn/ui Block Login 02",
+      "source": "shadcn/ui",
+      "entry_type": "block",
+      "category": "forms",
+      "description": "A two column login page with a cover image.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "shadcn",
+        "block",
+        "login",
+        "02",
+        "forms",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/blocks",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "cn"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Official block: copy and adapt to your tokens; it pulls the shadcn/ui components it needs"
+      ],
+      "registry_url": "https://ui.shadcn.com/r/styles/new-york-v4/login-02.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add login-02",
+      "quality": 87
+    },
+    {
+      "id": "shadcn-forms-login-03",
+      "name": "shadcn/ui Block Login 03",
+      "source": "shadcn/ui",
+      "entry_type": "block",
+      "category": "forms",
+      "description": "A login page with a muted background color.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "shadcn",
+        "block",
+        "login",
+        "03",
+        "forms",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/blocks",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "cn"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Official block: copy and adapt to your tokens; it pulls the shadcn/ui components it needs"
+      ],
+      "registry_url": "https://ui.shadcn.com/r/styles/new-york-v4/login-03.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add login-03",
+      "quality": 87
+    },
+    {
+      "id": "shadcn-forms-login-04",
+      "name": "shadcn/ui Block Login 04",
+      "source": "shadcn/ui",
+      "entry_type": "block",
+      "category": "forms",
+      "description": "A login page with form and image.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "shadcn",
+        "block",
+        "login",
+        "04",
+        "forms",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/blocks",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "cn"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Official block: copy and adapt to your tokens; it pulls the shadcn/ui components it needs"
+      ],
+      "registry_url": "https://ui.shadcn.com/r/styles/new-york-v4/login-04.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add login-04",
+      "quality": 87
+    },
+    {
+      "id": "shadcn-forms-login-05",
+      "name": "shadcn/ui Block Login 05",
+      "source": "shadcn/ui",
+      "entry_type": "block",
+      "category": "forms",
+      "description": "A simple email-only login page.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "shadcn",
+        "block",
+        "login",
+        "05",
+        "forms",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/blocks",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "cn"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Official block: copy and adapt to your tokens; it pulls the shadcn/ui components it needs"
+      ],
+      "registry_url": "https://ui.shadcn.com/r/styles/new-york-v4/login-05.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add login-05",
+      "quality": 87
+    },
+    {
+      "id": "shadcn-forms-native-select",
+      "name": "shadcn/ui Native Select",
+      "source": "shadcn/ui",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Accessible Native Select primitive from shadcn/ui (copy-source, built on Base UI/Radix).",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "shadcn",
+        "radix",
+        "base-ui",
+        "native",
+        "select",
+        "forms",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/docs/components/base/native-select",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "class-variance-authority",
+        "lucide-react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "registry_url": "https://ui.shadcn.com/r/styles/base-nova/native-select.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add native-select",
+      "quality": 92
+    },
+    {
+      "id": "shadcn-forms-radio-group",
+      "name": "shadcn/ui Radio Group",
+      "source": "shadcn/ui",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Accessible Radio Group primitive from shadcn/ui (copy-source, built on Base UI/Radix).",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "shadcn",
+        "radix",
+        "base-ui",
+        "radio",
+        "group",
+        "forms",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/docs/components/base/radio-group",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "class-variance-authority",
+        "lucide-react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "registry_url": "https://ui.shadcn.com/r/styles/base-nova/radio-group.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add radio-group",
+      "quality": 92
+    },
+    {
+      "id": "shadcn-forms-select",
+      "name": "shadcn/ui Select",
+      "source": "shadcn/ui",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Accessible Select primitive from shadcn/ui (copy-source, built on Base UI/Radix).",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "shadcn",
+        "radix",
+        "base-ui",
+        "select",
+        "forms",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/docs/components/base/select",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "class-variance-authority",
+        "lucide-react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "registry_url": "https://ui.shadcn.com/r/styles/base-nova/select.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add select",
+      "quality": 92
+    },
+    {
+      "id": "shadcn-forms-signup-01",
+      "name": "shadcn/ui Block Signup 01",
+      "source": "shadcn/ui",
+      "entry_type": "block",
+      "category": "forms",
+      "description": "A simple signup form.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "shadcn",
+        "block",
+        "signup",
+        "01",
+        "forms",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/blocks",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Official block: copy and adapt to your tokens; it pulls the shadcn/ui components it needs"
+      ],
+      "registry_url": "https://ui.shadcn.com/r/styles/new-york-v4/signup-01.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add signup-01",
+      "quality": 90
+    },
+    {
+      "id": "shadcn-forms-signup-02",
+      "name": "shadcn/ui Block Signup 02",
+      "source": "shadcn/ui",
+      "entry_type": "block",
+      "category": "forms",
+      "description": "A two column signup page with a cover image.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "shadcn",
+        "block",
+        "signup",
+        "02",
+        "forms",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/blocks",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "cn"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Official block: copy and adapt to your tokens; it pulls the shadcn/ui components it needs"
+      ],
+      "registry_url": "https://ui.shadcn.com/r/styles/new-york-v4/signup-02.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add signup-02",
+      "quality": 87
+    },
+    {
+      "id": "shadcn-forms-signup-03",
+      "name": "shadcn/ui Block Signup 03",
+      "source": "shadcn/ui",
+      "entry_type": "block",
+      "category": "forms",
+      "description": "A signup page with a muted background color.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "shadcn",
+        "block",
+        "signup",
+        "03",
+        "forms",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/blocks",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "cn"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Official block: copy and adapt to your tokens; it pulls the shadcn/ui components it needs"
+      ],
+      "registry_url": "https://ui.shadcn.com/r/styles/new-york-v4/signup-03.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add signup-03",
+      "quality": 87
+    },
+    {
+      "id": "shadcn-forms-signup-04",
+      "name": "shadcn/ui Block Signup 04",
+      "source": "shadcn/ui",
+      "entry_type": "block",
+      "category": "forms",
+      "description": "A signup page with form and image.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "shadcn",
+        "block",
+        "signup",
+        "04",
+        "forms",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/blocks",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "cn"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Official block: copy and adapt to your tokens; it pulls the shadcn/ui components it needs"
+      ],
+      "registry_url": "https://ui.shadcn.com/r/styles/new-york-v4/signup-04.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add signup-04",
+      "quality": 87
+    },
+    {
+      "id": "shadcn-forms-signup-05",
+      "name": "shadcn/ui Block Signup 05",
+      "source": "shadcn/ui",
+      "entry_type": "block",
+      "category": "forms",
+      "description": "A simple signup form with social providers.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "shadcn",
+        "block",
+        "signup",
+        "05",
+        "forms",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/blocks",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "cn"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Official block: copy and adapt to your tokens; it pulls the shadcn/ui components it needs"
+      ],
+      "registry_url": "https://ui.shadcn.com/r/styles/new-york-v4/signup-05.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add signup-05",
+      "quality": 87
+    },
+    {
+      "id": "shadcn-forms-slider",
+      "name": "shadcn/ui Slider",
+      "source": "shadcn/ui",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Accessible Slider primitive from shadcn/ui (copy-source, built on Base UI/Radix).",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "shadcn",
+        "radix",
+        "base-ui",
+        "slider",
+        "forms",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/docs/components/base/slider",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "class-variance-authority",
+        "lucide-react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "registry_url": "https://ui.shadcn.com/r/styles/base-nova/slider.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add slider",
+      "quality": 92
+    },
+    {
+      "id": "shadcn-forms-switch",
+      "name": "shadcn/ui Switch",
+      "source": "shadcn/ui",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Accessible Switch primitive from shadcn/ui (copy-source, built on Base UI/Radix).",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "shadcn",
+        "radix",
+        "base-ui",
+        "switch",
+        "forms",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/docs/components/base/switch",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "class-variance-authority",
+        "lucide-react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "registry_url": "https://ui.shadcn.com/r/styles/base-nova/switch.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add switch",
+      "quality": 92
+    },
+    {
+      "id": "shadcn-forms-textarea",
+      "name": "shadcn/ui Textarea",
+      "source": "shadcn/ui",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Accessible Textarea primitive from shadcn/ui (copy-source, built on Base UI/Radix).",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "shadcn",
+        "radix",
+        "base-ui",
+        "textarea",
+        "forms",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/docs/components/base/textarea",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "class-variance-authority",
+        "lucide-react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "registry_url": "https://ui.shadcn.com/r/styles/base-nova/textarea.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add textarea",
+      "quality": 92
+    },
+    {
+      "id": "shadcn-forms-toggle",
+      "name": "shadcn/ui Toggle",
+      "source": "shadcn/ui",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Accessible Toggle primitive from shadcn/ui (copy-source, built on Base UI/Radix).",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "shadcn",
+        "radix",
+        "base-ui",
+        "toggle",
+        "forms",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/docs/components/base/toggle",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "class-variance-authority",
+        "lucide-react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "registry_url": "https://ui.shadcn.com/r/styles/base-nova/toggle.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add toggle",
+      "quality": 92
+    },
+    {
+      "id": "shadcn-forms-toggle-group",
+      "name": "shadcn/ui Toggle Group",
+      "source": "shadcn/ui",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Accessible Toggle Group primitive from shadcn/ui (copy-source, built on Base UI/Radix).",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "shadcn",
+        "radix",
+        "base-ui",
+        "toggle",
+        "group",
+        "forms",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/docs/components/base/toggle-group",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "class-variance-authority",
+        "lucide-react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "registry_url": "https://ui.shadcn.com/r/styles/base-nova/toggle-group.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add toggle-group",
+      "quality": 92
+    },
+    {
+      "id": "shadcn-layout-aspect-ratio",
+      "name": "shadcn/ui Aspect Ratio",
+      "source": "shadcn/ui",
+      "entry_type": "component",
+      "category": "layout",
+      "description": "Accessible Aspect Ratio primitive from shadcn/ui (copy-source, built on Base UI/Radix).",
+      "use_case": "Structure the page: dividers, footers, headers and empty states.",
+      "search_tags": [
+        "shadcn",
+        "radix",
+        "base-ui",
+        "aspect",
+        "ratio",
+        "layout",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/docs/components/base/aspect-ratio",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "class-variance-authority",
+        "lucide-react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "registry_url": "https://ui.shadcn.com/r/styles/base-nova/aspect-ratio.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add aspect-ratio",
+      "quality": 92
+    },
+    {
+      "id": "shadcn-layout-empty",
+      "name": "shadcn/ui Empty",
+      "source": "shadcn/ui",
+      "entry_type": "component",
+      "category": "layout",
+      "description": "Accessible Empty primitive from shadcn/ui (copy-source, built on Base UI/Radix).",
+      "use_case": "Structure the page: dividers, footers, headers and empty states.",
+      "search_tags": [
+        "shadcn",
+        "radix",
+        "base-ui",
+        "empty",
+        "layout",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/docs/components/base/empty",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "class-variance-authority",
+        "lucide-react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "registry_url": "https://ui.shadcn.com/r/styles/base-nova/empty.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add empty",
+      "quality": 92
+    },
+    {
+      "id": "shadcn-layout-resizable",
+      "name": "shadcn/ui Resizable",
+      "source": "shadcn/ui",
+      "entry_type": "component",
+      "category": "layout",
+      "description": "Accessible Resizable primitive from shadcn/ui (copy-source, built on Base UI/Radix).",
+      "use_case": "Structure the page: dividers, footers, headers and empty states.",
+      "search_tags": [
+        "shadcn",
+        "radix",
+        "base-ui",
+        "resizable",
+        "layout",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/docs/components/base/resizable",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "class-variance-authority",
+        "lucide-react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "registry_url": "https://ui.shadcn.com/r/styles/base-nova/resizable.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add resizable",
+      "quality": 92
+    },
+    {
+      "id": "shadcn-layout-scroll-area",
+      "name": "shadcn/ui Scroll Area",
+      "source": "shadcn/ui",
+      "entry_type": "component",
+      "category": "layout",
+      "description": "Accessible Scroll Area primitive from shadcn/ui (copy-source, built on Base UI/Radix).",
+      "use_case": "Structure the page: dividers, footers, headers and empty states.",
+      "search_tags": [
+        "shadcn",
+        "radix",
+        "base-ui",
+        "scroll",
+        "area",
+        "layout",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/docs/components/base/scroll-area",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "class-variance-authority",
+        "lucide-react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "registry_url": "https://ui.shadcn.com/r/styles/base-nova/scroll-area.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add scroll-area",
+      "quality": 92
+    },
+    {
+      "id": "shadcn-layout-separator",
+      "name": "shadcn/ui Separator",
+      "source": "shadcn/ui",
+      "entry_type": "component",
+      "category": "layout",
+      "description": "Accessible Separator primitive from shadcn/ui (copy-source, built on Base UI/Radix).",
+      "use_case": "Structure the page: dividers, footers, headers and empty states.",
+      "search_tags": [
+        "shadcn",
+        "radix",
+        "base-ui",
+        "separator",
+        "layout",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/docs/components/base/separator",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "class-variance-authority",
+        "lucide-react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "registry_url": "https://ui.shadcn.com/r/styles/base-nova/separator.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add separator",
+      "quality": 92
+    },
+    {
+      "id": "shadcn-media-carousel",
+      "name": "shadcn/ui Carousel",
+      "source": "shadcn/ui",
+      "entry_type": "component",
+      "category": "media",
+      "description": "Accessible Carousel primitive from shadcn/ui (copy-source, built on Base UI/Radix).",
+      "use_case": "Display images, video, carousels and device mockups.",
+      "search_tags": [
+        "shadcn",
+        "radix",
+        "base-ui",
+        "carousel",
+        "media",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/docs/components/base/carousel",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "class-variance-authority",
+        "lucide-react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "registry_url": "https://ui.shadcn.com/r/styles/base-nova/carousel.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add carousel",
+      "quality": 92
+    },
+    {
+      "id": "shadcn-micro-interactions-accordion",
+      "name": "shadcn/ui Accordion",
+      "source": "shadcn/ui",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "Accessible Accordion primitive from shadcn/ui (copy-source, built on Base UI/Radix).",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "shadcn",
+        "radix",
+        "base-ui",
+        "accordion",
+        "micro-interactions",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/docs/components/base/accordion",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "class-variance-authority",
+        "lucide-react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "registry_url": "https://ui.shadcn.com/r/styles/base-nova/accordion.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add accordion",
+      "quality": 92
+    },
+    {
+      "id": "shadcn-micro-interactions-button",
+      "name": "shadcn/ui Button",
+      "source": "shadcn/ui",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "Accessible Button primitive from shadcn/ui (copy-source, built on Base UI/Radix).",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "shadcn",
+        "radix",
+        "base-ui",
+        "button",
+        "micro-interactions",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/docs/components/base/button",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "class-variance-authority",
+        "lucide-react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "registry_url": "https://ui.shadcn.com/r/styles/base-nova/button.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add button",
+      "quality": 92
+    },
+    {
+      "id": "shadcn-micro-interactions-button-group",
+      "name": "shadcn/ui Button Group",
+      "source": "shadcn/ui",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "Accessible Button Group primitive from shadcn/ui (copy-source, built on Base UI/Radix).",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "shadcn",
+        "radix",
+        "base-ui",
+        "button",
+        "group",
+        "micro-interactions",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/docs/components/base/button-group",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "class-variance-authority",
+        "lucide-react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "registry_url": "https://ui.shadcn.com/r/styles/base-nova/button-group.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add button-group",
+      "quality": 92
+    },
+    {
+      "id": "shadcn-micro-interactions-collapsible",
+      "name": "shadcn/ui Collapsible",
+      "source": "shadcn/ui",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "Accessible Collapsible primitive from shadcn/ui (copy-source, built on Base UI/Radix).",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "shadcn",
+        "radix",
+        "base-ui",
+        "collapsible",
+        "micro-interactions",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/docs/components/base/collapsible",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "class-variance-authority",
+        "lucide-react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "registry_url": "https://ui.shadcn.com/r/styles/base-nova/collapsible.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add collapsible",
+      "quality": 92
+    },
+    {
+      "id": "shadcn-micro-interactions-direction",
+      "name": "shadcn/ui Direction",
+      "source": "shadcn/ui",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "Accessible Direction primitive from shadcn/ui (copy-source, built on Base UI/Radix).",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "shadcn",
+        "radix",
+        "base-ui",
+        "direction",
+        "micro-interactions",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/docs/components/base/direction",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "class-variance-authority",
+        "lucide-react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "registry_url": "https://ui.shadcn.com/r/styles/base-nova/direction.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add direction",
+      "quality": 92
+    },
+    {
+      "id": "shadcn-navigation-breadcrumb",
+      "name": "shadcn/ui Breadcrumb",
+      "source": "shadcn/ui",
+      "entry_type": "component",
+      "category": "navigation",
+      "description": "Accessible Breadcrumb primitive from shadcn/ui (copy-source, built on Base UI/Radix).",
+      "use_case": "Build site and app navigation structures that stay clear at any depth.",
+      "search_tags": [
+        "shadcn",
+        "radix",
+        "base-ui",
+        "breadcrumb",
+        "navigation",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/docs/components/base/breadcrumb",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "class-variance-authority",
+        "lucide-react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "registry_url": "https://ui.shadcn.com/r/styles/base-nova/breadcrumb.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add breadcrumb",
+      "quality": 92
+    },
+    {
+      "id": "shadcn-navigation-menubar",
+      "name": "shadcn/ui Menubar",
+      "source": "shadcn/ui",
+      "entry_type": "component",
+      "category": "navigation",
+      "description": "Accessible Menubar primitive from shadcn/ui (copy-source, built on Base UI/Radix).",
+      "use_case": "Build site and app navigation structures that stay clear at any depth.",
+      "search_tags": [
+        "shadcn",
+        "radix",
+        "base-ui",
+        "menubar",
+        "navigation",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/docs/components/base/menubar",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "class-variance-authority",
+        "lucide-react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "registry_url": "https://ui.shadcn.com/r/styles/base-nova/menubar.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add menubar",
+      "quality": 92
+    },
+    {
+      "id": "shadcn-navigation-navigation-menu",
+      "name": "shadcn/ui Navigation Menu",
+      "source": "shadcn/ui",
+      "entry_type": "component",
+      "category": "navigation",
+      "description": "Accessible Navigation Menu primitive from shadcn/ui (copy-source, built on Base UI/Radix).",
+      "use_case": "Build site and app navigation structures that stay clear at any depth.",
+      "search_tags": [
+        "shadcn",
+        "radix",
+        "base-ui",
+        "navigation",
+        "menu",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/docs/components/base/navigation-menu",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "class-variance-authority",
+        "lucide-react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "registry_url": "https://ui.shadcn.com/r/styles/base-nova/navigation-menu.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add navigation-menu",
+      "quality": 92
+    },
+    {
+      "id": "shadcn-navigation-pagination",
+      "name": "shadcn/ui Pagination",
+      "source": "shadcn/ui",
+      "entry_type": "component",
+      "category": "navigation",
+      "description": "Accessible Pagination primitive from shadcn/ui (copy-source, built on Base UI/Radix).",
+      "use_case": "Build site and app navigation structures that stay clear at any depth.",
+      "search_tags": [
+        "shadcn",
+        "radix",
+        "base-ui",
+        "pagination",
+        "navigation",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/docs/components/base/pagination",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "class-variance-authority",
+        "lucide-react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "registry_url": "https://ui.shadcn.com/r/styles/base-nova/pagination.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add pagination",
+      "quality": 92
+    },
+    {
+      "id": "shadcn-navigation-sidebar",
+      "name": "shadcn/ui Sidebar",
+      "source": "shadcn/ui",
+      "entry_type": "component",
+      "category": "navigation",
+      "description": "Accessible Sidebar primitive from shadcn/ui (copy-source, built on Base UI/Radix).",
+      "use_case": "Build site and app navigation structures that stay clear at any depth.",
+      "search_tags": [
+        "shadcn",
+        "radix",
+        "base-ui",
+        "sidebar",
+        "navigation",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/docs/components/base/sidebar",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "class-variance-authority",
+        "lucide-react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "registry_url": "https://ui.shadcn.com/r/styles/base-nova/sidebar.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add sidebar",
+      "quality": 92
+    },
+    {
+      "id": "shadcn-navigation-sidebar-01",
+      "name": "shadcn/ui Block Sidebar 01",
+      "source": "shadcn/ui",
+      "entry_type": "block",
+      "category": "navigation",
+      "description": "A simple sidebar with navigation grouped by section.",
+      "use_case": "Build site and app navigation structures that stay clear at any depth.",
+      "search_tags": [
+        "shadcn",
+        "block",
+        "sidebar",
+        "01",
+        "navigation",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/blocks",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Official block: copy and adapt to your tokens; it pulls the shadcn/ui components it needs"
+      ],
+      "registry_url": "https://ui.shadcn.com/r/styles/new-york-v4/sidebar-01.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add sidebar-01",
+      "quality": 90
+    },
+    {
+      "id": "shadcn-navigation-sidebar-02",
+      "name": "shadcn/ui Block Sidebar 02",
+      "source": "shadcn/ui",
+      "entry_type": "block",
+      "category": "navigation",
+      "description": "A sidebar with collapsible sections.",
+      "use_case": "Build site and app navigation structures that stay clear at any depth.",
+      "search_tags": [
+        "shadcn",
+        "block",
+        "sidebar",
+        "02",
+        "navigation",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/blocks",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Official block: copy and adapt to your tokens; it pulls the shadcn/ui components it needs"
+      ],
+      "registry_url": "https://ui.shadcn.com/r/styles/new-york-v4/sidebar-02.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add sidebar-02",
+      "quality": 90
+    },
+    {
+      "id": "shadcn-navigation-sidebar-03",
+      "name": "shadcn/ui Block Sidebar 03",
+      "source": "shadcn/ui",
+      "entry_type": "block",
+      "category": "navigation",
+      "description": "A sidebar with submenus.",
+      "use_case": "Build site and app navigation structures that stay clear at any depth.",
+      "search_tags": [
+        "shadcn",
+        "block",
+        "sidebar",
+        "03",
+        "navigation",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/blocks",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Official block: copy and adapt to your tokens; it pulls the shadcn/ui components it needs"
+      ],
+      "registry_url": "https://ui.shadcn.com/r/styles/new-york-v4/sidebar-03.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add sidebar-03",
+      "quality": 90
+    },
+    {
+      "id": "shadcn-navigation-sidebar-04",
+      "name": "shadcn/ui Block Sidebar 04",
+      "source": "shadcn/ui",
+      "entry_type": "block",
+      "category": "navigation",
+      "description": "A floating sidebar with submenus.",
+      "use_case": "Build site and app navigation structures that stay clear at any depth.",
+      "search_tags": [
+        "shadcn",
+        "block",
+        "sidebar",
+        "04",
+        "navigation",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/blocks",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Official block: copy and adapt to your tokens; it pulls the shadcn/ui components it needs"
+      ],
+      "registry_url": "https://ui.shadcn.com/r/styles/new-york-v4/sidebar-04.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add sidebar-04",
+      "quality": 90
+    },
+    {
+      "id": "shadcn-navigation-sidebar-05",
+      "name": "shadcn/ui Block Sidebar 05",
+      "source": "shadcn/ui",
+      "entry_type": "block",
+      "category": "navigation",
+      "description": "A sidebar with collapsible submenus.",
+      "use_case": "Build site and app navigation structures that stay clear at any depth.",
+      "search_tags": [
+        "shadcn",
+        "block",
+        "sidebar",
+        "05",
+        "navigation",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/blocks",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Official block: copy and adapt to your tokens; it pulls the shadcn/ui components it needs"
+      ],
+      "registry_url": "https://ui.shadcn.com/r/styles/new-york-v4/sidebar-05.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add sidebar-05",
+      "quality": 90
+    },
+    {
+      "id": "shadcn-navigation-sidebar-06",
+      "name": "shadcn/ui Block Sidebar 06",
+      "source": "shadcn/ui",
+      "entry_type": "block",
+      "category": "navigation",
+      "description": "A sidebar with submenus as dropdowns.",
+      "use_case": "Build site and app navigation structures that stay clear at any depth.",
+      "search_tags": [
+        "shadcn",
+        "block",
+        "sidebar",
+        "06",
+        "navigation",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/blocks",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Official block: copy and adapt to your tokens; it pulls the shadcn/ui components it needs"
+      ],
+      "registry_url": "https://ui.shadcn.com/r/styles/new-york-v4/sidebar-06.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add sidebar-06",
+      "quality": 90
+    },
+    {
+      "id": "shadcn-navigation-sidebar-07",
+      "name": "shadcn/ui Block Sidebar 07",
+      "source": "shadcn/ui",
+      "entry_type": "block",
+      "category": "navigation",
+      "description": "A sidebar that collapses to icons.",
+      "use_case": "Build site and app navigation structures that stay clear at any depth.",
+      "search_tags": [
+        "shadcn",
+        "block",
+        "sidebar",
+        "07",
+        "navigation",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/blocks",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Official block: copy and adapt to your tokens; it pulls the shadcn/ui components it needs"
+      ],
+      "registry_url": "https://ui.shadcn.com/r/styles/new-york-v4/sidebar-07.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add sidebar-07",
+      "quality": 90
+    },
+    {
+      "id": "shadcn-navigation-sidebar-08",
+      "name": "shadcn/ui Block Sidebar 08",
+      "source": "shadcn/ui",
+      "entry_type": "block",
+      "category": "navigation",
+      "description": "An inset sidebar with secondary navigation.",
+      "use_case": "Build site and app navigation structures that stay clear at any depth.",
+      "search_tags": [
+        "shadcn",
+        "block",
+        "sidebar",
+        "08",
+        "navigation",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/blocks",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Official block: copy and adapt to your tokens; it pulls the shadcn/ui components it needs"
+      ],
+      "registry_url": "https://ui.shadcn.com/r/styles/new-york-v4/sidebar-08.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add sidebar-08",
+      "quality": 90
+    },
+    {
+      "id": "shadcn-navigation-sidebar-09",
+      "name": "shadcn/ui Block Sidebar 09",
+      "source": "shadcn/ui",
+      "entry_type": "block",
+      "category": "navigation",
+      "description": "Collapsible nested sidebars.",
+      "use_case": "Build site and app navigation structures that stay clear at any depth.",
+      "search_tags": [
+        "shadcn",
+        "block",
+        "sidebar",
+        "09",
+        "navigation",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/blocks",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Official block: copy and adapt to your tokens; it pulls the shadcn/ui components it needs"
+      ],
+      "registry_url": "https://ui.shadcn.com/r/styles/new-york-v4/sidebar-09.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add sidebar-09",
+      "quality": 90
+    },
+    {
+      "id": "shadcn-navigation-sidebar-10",
+      "name": "shadcn/ui Block Sidebar 10",
+      "source": "shadcn/ui",
+      "entry_type": "block",
+      "category": "navigation",
+      "description": "A sidebar in a popover.",
+      "use_case": "Build site and app navigation structures that stay clear at any depth.",
+      "search_tags": [
+        "shadcn",
+        "block",
+        "sidebar",
+        "10",
+        "navigation",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/blocks",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Official block: copy and adapt to your tokens; it pulls the shadcn/ui components it needs"
+      ],
+      "registry_url": "https://ui.shadcn.com/r/styles/new-york-v4/sidebar-10.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add sidebar-10",
+      "quality": 90
+    },
+    {
+      "id": "shadcn-navigation-sidebar-11",
+      "name": "shadcn/ui Block Sidebar 11",
+      "source": "shadcn/ui",
+      "entry_type": "block",
+      "category": "navigation",
+      "description": "A sidebar with a collapsible file tree.",
+      "use_case": "Build site and app navigation structures that stay clear at any depth.",
+      "search_tags": [
+        "shadcn",
+        "block",
+        "sidebar",
+        "11",
+        "navigation",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/blocks",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Official block: copy and adapt to your tokens; it pulls the shadcn/ui components it needs"
+      ],
+      "registry_url": "https://ui.shadcn.com/r/styles/new-york-v4/sidebar-11.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add sidebar-11",
+      "quality": 90
+    },
+    {
+      "id": "shadcn-navigation-sidebar-12",
+      "name": "shadcn/ui Block Sidebar 12",
+      "source": "shadcn/ui",
+      "entry_type": "block",
+      "category": "navigation",
+      "description": "A sidebar with a calendar.",
+      "use_case": "Build site and app navigation structures that stay clear at any depth.",
+      "search_tags": [
+        "shadcn",
+        "block",
+        "sidebar",
+        "12",
+        "navigation",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/blocks",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Official block: copy and adapt to your tokens; it pulls the shadcn/ui components it needs"
+      ],
+      "registry_url": "https://ui.shadcn.com/r/styles/new-york-v4/sidebar-12.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add sidebar-12",
+      "quality": 90
+    },
+    {
+      "id": "shadcn-navigation-sidebar-13",
+      "name": "shadcn/ui Block Sidebar 13",
+      "source": "shadcn/ui",
+      "entry_type": "block",
+      "category": "navigation",
+      "description": "A sidebar in a dialog.",
+      "use_case": "Build site and app navigation structures that stay clear at any depth.",
+      "search_tags": [
+        "shadcn",
+        "block",
+        "sidebar",
+        "13",
+        "navigation",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/blocks",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Official block: copy and adapt to your tokens; it pulls the shadcn/ui components it needs"
+      ],
+      "registry_url": "https://ui.shadcn.com/r/styles/new-york-v4/sidebar-13.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add sidebar-13",
+      "quality": 90
+    },
+    {
+      "id": "shadcn-navigation-sidebar-14",
+      "name": "shadcn/ui Block Sidebar 14",
+      "source": "shadcn/ui",
+      "entry_type": "block",
+      "category": "navigation",
+      "description": "A sidebar on the right.",
+      "use_case": "Build site and app navigation structures that stay clear at any depth.",
+      "search_tags": [
+        "shadcn",
+        "block",
+        "sidebar",
+        "14",
+        "navigation",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/blocks",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Official block: copy and adapt to your tokens; it pulls the shadcn/ui components it needs"
+      ],
+      "registry_url": "https://ui.shadcn.com/r/styles/new-york-v4/sidebar-14.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add sidebar-14",
+      "quality": 90
+    },
+    {
+      "id": "shadcn-navigation-sidebar-15",
+      "name": "shadcn/ui Block Sidebar 15",
+      "source": "shadcn/ui",
+      "entry_type": "block",
+      "category": "navigation",
+      "description": "A left and right sidebar.",
+      "use_case": "Build site and app navigation structures that stay clear at any depth.",
+      "search_tags": [
+        "shadcn",
+        "block",
+        "sidebar",
+        "15",
+        "navigation",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/blocks",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Official block: copy and adapt to your tokens; it pulls the shadcn/ui components it needs"
+      ],
+      "registry_url": "https://ui.shadcn.com/r/styles/new-york-v4/sidebar-15.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add sidebar-15",
+      "quality": 90
+    },
+    {
+      "id": "shadcn-navigation-sidebar-16",
+      "name": "shadcn/ui Block Sidebar 16",
+      "source": "shadcn/ui",
+      "entry_type": "block",
+      "category": "navigation",
+      "description": "A sidebar with a sticky site header.",
+      "use_case": "Build site and app navigation structures that stay clear at any depth.",
+      "search_tags": [
+        "shadcn",
+        "block",
+        "sidebar",
+        "16",
+        "navigation",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/blocks",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Official block: copy and adapt to your tokens; it pulls the shadcn/ui components it needs"
+      ],
+      "registry_url": "https://ui.shadcn.com/r/styles/new-york-v4/sidebar-16.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add sidebar-16",
+      "quality": 90
+    },
+    {
+      "id": "shadcn-navigation-tabs",
+      "name": "shadcn/ui Tabs",
+      "source": "shadcn/ui",
+      "entry_type": "component",
+      "category": "navigation",
+      "description": "Accessible Tabs primitive from shadcn/ui (copy-source, built on Base UI/Radix).",
+      "use_case": "Build site and app navigation structures that stay clear at any depth.",
+      "search_tags": [
+        "shadcn",
+        "radix",
+        "base-ui",
+        "tabs",
+        "navigation",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/docs/components/base/tabs",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "class-variance-authority",
+        "lucide-react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "registry_url": "https://ui.shadcn.com/r/styles/base-nova/tabs.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add tabs",
+      "quality": 92
+    },
+    {
+      "id": "shadcn-overlay-alert-dialog",
+      "name": "shadcn/ui Alert Dialog",
+      "source": "shadcn/ui",
+      "entry_type": "component",
+      "category": "overlay",
+      "description": "Accessible Alert Dialog primitive from shadcn/ui (copy-source, built on Base UI/Radix).",
+      "use_case": "Present dialogs, drawers and popovers without leaving the page.",
+      "search_tags": [
+        "shadcn",
+        "radix",
+        "base-ui",
+        "alert",
+        "dialog",
+        "overlay",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/docs/components/base/alert-dialog",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "class-variance-authority",
+        "lucide-react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "registry_url": "https://ui.shadcn.com/r/styles/base-nova/alert-dialog.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add alert-dialog",
+      "quality": 92
+    },
+    {
+      "id": "shadcn-overlay-command",
+      "name": "shadcn/ui Command",
+      "source": "shadcn/ui",
+      "entry_type": "component",
+      "category": "overlay",
+      "description": "Accessible Command primitive from shadcn/ui (copy-source, built on Base UI/Radix).",
+      "use_case": "Present dialogs, drawers and popovers without leaving the page.",
+      "search_tags": [
+        "shadcn",
+        "radix",
+        "base-ui",
+        "command",
+        "overlay",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/docs/components/base/command",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "class-variance-authority",
+        "lucide-react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "registry_url": "https://ui.shadcn.com/r/styles/base-nova/command.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add command",
+      "quality": 92
+    },
+    {
+      "id": "shadcn-overlay-context-menu",
+      "name": "shadcn/ui Context Menu",
+      "source": "shadcn/ui",
+      "entry_type": "component",
+      "category": "overlay",
+      "description": "Accessible Context Menu primitive from shadcn/ui (copy-source, built on Base UI/Radix).",
+      "use_case": "Present dialogs, drawers and popovers without leaving the page.",
+      "search_tags": [
+        "shadcn",
+        "radix",
+        "base-ui",
+        "context",
+        "menu",
+        "overlay",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/docs/components/base/context-menu",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "class-variance-authority",
+        "lucide-react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "registry_url": "https://ui.shadcn.com/r/styles/base-nova/context-menu.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add context-menu",
+      "quality": 92
+    },
+    {
+      "id": "shadcn-overlay-dialog",
+      "name": "shadcn/ui Dialog",
+      "source": "shadcn/ui",
+      "entry_type": "component",
+      "category": "overlay",
+      "description": "Accessible Dialog primitive from shadcn/ui (copy-source, built on Base UI/Radix).",
+      "use_case": "Present dialogs, drawers and popovers without leaving the page.",
+      "search_tags": [
+        "shadcn",
+        "radix",
+        "base-ui",
+        "dialog",
+        "overlay",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/docs/components/base/dialog",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "class-variance-authority",
+        "lucide-react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "registry_url": "https://ui.shadcn.com/r/styles/base-nova/dialog.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add dialog",
+      "quality": 92
+    },
+    {
+      "id": "shadcn-overlay-drawer",
+      "name": "shadcn/ui Drawer",
+      "source": "shadcn/ui",
+      "entry_type": "component",
+      "category": "overlay",
+      "description": "Accessible Drawer primitive from shadcn/ui (copy-source, built on Base UI/Radix).",
+      "use_case": "Present dialogs, drawers and popovers without leaving the page.",
+      "search_tags": [
+        "shadcn",
+        "radix",
+        "base-ui",
+        "drawer",
+        "overlay",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/docs/components/base/drawer",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "class-variance-authority",
+        "lucide-react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "registry_url": "https://ui.shadcn.com/r/styles/base-nova/drawer.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add drawer",
+      "quality": 92
+    },
+    {
+      "id": "shadcn-overlay-dropdown-menu",
+      "name": "shadcn/ui Dropdown Menu",
+      "source": "shadcn/ui",
+      "entry_type": "component",
+      "category": "overlay",
+      "description": "Accessible Dropdown Menu primitive from shadcn/ui (copy-source, built on Base UI/Radix).",
+      "use_case": "Present dialogs, drawers and popovers without leaving the page.",
+      "search_tags": [
+        "shadcn",
+        "radix",
+        "base-ui",
+        "dropdown",
+        "menu",
+        "overlay",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/docs/components/base/dropdown-menu",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "class-variance-authority",
+        "lucide-react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "registry_url": "https://ui.shadcn.com/r/styles/base-nova/dropdown-menu.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add dropdown-menu",
+      "quality": 92
+    },
+    {
+      "id": "shadcn-overlay-hover-card",
+      "name": "shadcn/ui Hover Card",
+      "source": "shadcn/ui",
+      "entry_type": "component",
+      "category": "overlay",
+      "description": "Accessible Hover Card primitive from shadcn/ui (copy-source, built on Base UI/Radix).",
+      "use_case": "Present dialogs, drawers and popovers without leaving the page.",
+      "search_tags": [
+        "shadcn",
+        "radix",
+        "base-ui",
+        "hover",
+        "card",
+        "overlay",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/docs/components/base/hover-card",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "class-variance-authority",
+        "lucide-react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "registry_url": "https://ui.shadcn.com/r/styles/base-nova/hover-card.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add hover-card",
+      "quality": 92
+    },
+    {
+      "id": "shadcn-overlay-popover",
+      "name": "shadcn/ui Popover",
+      "source": "shadcn/ui",
+      "entry_type": "component",
+      "category": "overlay",
+      "description": "Accessible Popover primitive from shadcn/ui (copy-source, built on Base UI/Radix).",
+      "use_case": "Present dialogs, drawers and popovers without leaving the page.",
+      "search_tags": [
+        "shadcn",
+        "radix",
+        "base-ui",
+        "popover",
+        "overlay",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/docs/components/base/popover",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "class-variance-authority",
+        "lucide-react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "registry_url": "https://ui.shadcn.com/r/styles/base-nova/popover.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add popover",
+      "quality": 92
+    },
+    {
+      "id": "shadcn-overlay-sheet",
+      "name": "shadcn/ui Sheet",
+      "source": "shadcn/ui",
+      "entry_type": "component",
+      "category": "overlay",
+      "description": "Accessible Sheet primitive from shadcn/ui (copy-source, built on Base UI/Radix).",
+      "use_case": "Present dialogs, drawers and popovers without leaving the page.",
+      "search_tags": [
+        "shadcn",
+        "radix",
+        "base-ui",
+        "sheet",
+        "overlay",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/docs/components/base/sheet",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "class-variance-authority",
+        "lucide-react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "registry_url": "https://ui.shadcn.com/r/styles/base-nova/sheet.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add sheet",
+      "quality": 92
+    },
+    {
+      "id": "shadcn-template-dashboard-01",
+      "name": "shadcn/ui Block Dashboard 01",
+      "source": "shadcn/ui",
+      "entry_type": "block",
+      "category": "template",
+      "description": "A dashboard with sidebar, charts and data table.",
+      "use_case": "Start from a complete page template and adapt it to the product.",
+      "search_tags": [
+        "shadcn",
+        "block",
+        "dashboard",
+        "01",
+        "template",
+        "shadcn/ui"
+      ],
+      "docs_url": "https://ui.shadcn.com/blocks",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "@dnd-kit/core",
+        "@dnd-kit/modifiers",
+        "@dnd-kit/sortable",
+        "@dnd-kit/utilities",
+        "@tabler/icons-react",
+        "@tanstack/react-table",
+        "zod"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Official block: copy and adapt to your tokens; it pulls the shadcn/ui components it needs"
+      ],
+      "registry_url": "https://ui.shadcn.com/r/styles/new-york-v4/dashboard-01.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add dashboard-01",
+      "quality": 80
+    }
+  ]
+}

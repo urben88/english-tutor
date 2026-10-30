@@ -1,0 +1,5283 @@
+{
+  "schema_version": "1.0",
+  "source_id": "arcui",
+  "source_name": "Arc UI",
+  "source_url": "https://uiarc.dev",
+  "catalog_url": "https://uiarc.dev",
+  "license_summary": "MIT (free source; Pro components have additional restrictions and are not indexed)",
+  "granularity": "complete (registry:ui + registry:block, all marked free)",
+  "extraction": {
+    "channel": "registry-json",
+    "method": "Node script downloading the public shadcn-compatible registry",
+    "evidence_url": "https://uiarc.dev/r/registry.json"
+  },
+  "generated_at": "2026-10-04",
+  "entries": [
+    {
+      "id": "arcui-ai-surfaces-chat-thread",
+      "name": "Arc UI Chat Thread",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "ai-surfaces",
+      "description": "A chat thread with grouped messages, reactions, read receipts, typing, and a composer with attachments.",
+      "use_case": "Build agent and AI conversation interfaces (chat, thinking, tools, streaming).",
+      "search_tags": [
+        "arcui",
+        "chat",
+        "thread",
+        "ai-surfaces",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/chat-thread",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/chat-thread.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/chat-thread",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/chat-thread"
+      ],
+      "quality": 86
+    },
+    {
+      "id": "arcui-cta-cta-section",
+      "name": "Arc UI CTA Section",
+      "source": "Arc UI",
+      "entry_type": "block",
+      "category": "cta",
+      "description": "A call to action as a centered closing section, a split beside a setup card that completes itself, or a dismissible banner.",
+      "use_case": "Prompt the next user action with focused, high-contrast sections.",
+      "search_tags": [
+        "arcui",
+        "cta",
+        "section",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/blocks/cta-section",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/cta-section.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/cta-section",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/blocks/cta-section"
+      ],
+      "quality": 86
+    },
+    {
+      "id": "arcui-cta-newsletter-signup",
+      "name": "Arc UI Newsletter Signup",
+      "source": "Arc UI",
+      "entry_type": "block",
+      "category": "cta",
+      "description": "An email signup framed by a stack of past issues; subscribing drops the next issue, addressed to you, onto the front.",
+      "use_case": "Prompt the next user action with focused, high-contrast sections.",
+      "search_tags": [
+        "arcui",
+        "newsletter",
+        "signup",
+        "cta",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/blocks/newsletter-signup",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/newsletter-signup.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/newsletter-signup",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/blocks/newsletter-signup"
+      ],
+      "quality": 86
+    },
+    {
+      "id": "arcui-data-display-activity-heatmap",
+      "name": "Arc UI Activity Heatmap",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "See a year of activity at a glance, one square per day.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "arcui",
+        "activity",
+        "heatmap",
+        "data-display",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/activity-heatmap",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/activity-heatmap.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/activity-heatmap",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/activity-heatmap"
+      ],
+      "quality": 81
+    },
+    {
+      "id": "arcui-data-display-avatar",
+      "name": "Arc UI Avatar",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "A compact identity marker for people and accounts.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "arcui",
+        "avatar",
+        "data-display",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/avatar",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/avatar.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/avatar",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/avatar"
+      ],
+      "quality": 81
+    },
+    {
+      "id": "arcui-data-display-avatar-group",
+      "name": "Arc UI Avatar Group",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Show a team or set of contributors in a small space.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "arcui",
+        "avatar",
+        "group",
+        "data-display",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/avatar-group",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/avatar-group.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/avatar-group",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/avatar-group"
+      ],
+      "quality": 81
+    },
+    {
+      "id": "arcui-data-display-badge",
+      "name": "Arc UI Badge",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "A small label for status, category, or metadata.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "arcui",
+        "badge",
+        "data-display",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/badge",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/badge.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/badge",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/badge"
+      ],
+      "quality": 81
+    },
+    {
+      "id": "arcui-data-display-bar-chart",
+      "name": "Arc UI Bar Chart",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Compare one measure across days and scrub any bar for its value.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "arcui",
+        "bar",
+        "chart",
+        "data-display",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/bar-chart",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/bar-chart.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/bar-chart",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/bar-chart"
+      ],
+      "quality": 86
+    },
+    {
+      "id": "arcui-data-display-blog-grid",
+      "name": "Arc UI Blog Grid",
+      "source": "Arc UI",
+      "entry_type": "block",
+      "category": "data-display",
+      "description": "A blog index with a featured post, category filter, post cards, pagination and an in-place reader.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "arcui",
+        "blog",
+        "grid",
+        "data-display",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/blocks/blog-grid",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/blog-grid.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/blog-grid",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/blocks/blog-grid"
+      ],
+      "quality": 86
+    },
+    {
+      "id": "arcui-data-display-brush-chart",
+      "name": "Arc UI Brush Chart",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "A dense time series with an overview strip: drag a window to zoom, resize it by its handles, and read events in place.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "arcui",
+        "brush",
+        "chart",
+        "data-display",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/brush-chart",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/brush-chart.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/brush-chart",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/brush-chart"
+      ],
+      "quality": 86
+    },
+    {
+      "id": "arcui-data-display-card",
+      "name": "Arc UI Card",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "A contained group of related content and actions.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "arcui",
+        "card",
+        "data-display",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/card",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "@radix-ui/react-dialog",
+        "lucide-react",
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/card.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/card",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/card"
+      ],
+      "quality": 78
+    },
+    {
+      "id": "arcui-data-display-card-stack",
+      "name": "Arc UI Card Stack",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Review a deck one card at a time, with a throw and an undo.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "arcui",
+        "card",
+        "stack",
+        "data-display",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/card-stack",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/card-stack.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/card-stack",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/card-stack"
+      ],
+      "quality": 81
+    },
+    {
+      "id": "arcui-data-display-changelog-feed",
+      "name": "Arc UI Changelog Feed",
+      "source": "Arc UI",
+      "entry_type": "block",
+      "category": "data-display",
+      "description": "Release notes you can filter, open in place, and scroll through month by month.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "arcui",
+        "changelog",
+        "feed",
+        "data-display",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/blocks/changelog-feed",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/changelog-feed.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/changelog-feed",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/blocks/changelog-feed"
+      ],
+      "quality": 86
+    },
+    {
+      "id": "arcui-data-display-code-block",
+      "name": "Arc UI Code Block",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Present code with legible hierarchy and copy access.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "arcui",
+        "code",
+        "block",
+        "data-display",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/code-block",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/code-block.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/code-block",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/code-block"
+      ],
+      "quality": 81
+    },
+    {
+      "id": "arcui-data-display-comment-thread",
+      "name": "Arc UI Comment Thread",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Threaded comments with replies, reactions, mentions, inline edit, and resolve.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "arcui",
+        "comment",
+        "thread",
+        "data-display",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/comment-thread",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/comment-thread.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/comment-thread",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/comment-thread"
+      ],
+      "quality": 86
+    },
+    {
+      "id": "arcui-data-display-donut-chart",
+      "name": "Arc UI Donut Chart",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "A donut whose arcs morph between datasets, with the active value rolling into the center.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "arcui",
+        "donut",
+        "chart",
+        "data-display",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/donut-chart",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/donut-chart.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/donut-chart",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/donut-chart"
+      ],
+      "quality": 86
+    },
+    {
+      "id": "arcui-data-display-empty-state",
+      "name": "Arc UI Empty State",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "A useful next step when there is nothing to show yet.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "arcui",
+        "empty",
+        "state",
+        "data-display",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/empty-state",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/empty-state.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/empty-state",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/empty-state"
+      ],
+      "quality": 81
+    },
+    {
+      "id": "arcui-data-display-expandable-card",
+      "name": "Arc UI Expandable Card",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Give a dense card more room when requested.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "arcui",
+        "expandable",
+        "card",
+        "data-display",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/expandable-card",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/expandable-card.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/expandable-card",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/expandable-card"
+      ],
+      "quality": 81
+    },
+    {
+      "id": "arcui-data-display-filter-toolbar",
+      "name": "Arc UI Filter Toolbar",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Keep collection filters close and easy to reset.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "arcui",
+        "filter",
+        "toolbar",
+        "data-display",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/filter-toolbar",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/filter-toolbar.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/filter-toolbar",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/filter-toolbar"
+      ],
+      "quality": 81
+    },
+    {
+      "id": "arcui-data-display-gauge",
+      "name": "Arc UI Gauge",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Show a value against a known range.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "arcui",
+        "gauge",
+        "data-display",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/gauge",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/gauge.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/gauge",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/gauge"
+      ],
+      "quality": 81
+    },
+    {
+      "id": "arcui-data-display-json-viewer",
+      "name": "Arc UI JSON Viewer",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "A collapsible JSON tree with search, paging for long arrays, and copy value or path.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "arcui",
+        "json",
+        "viewer",
+        "data-display",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/json-viewer",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/json-viewer.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/json-viewer",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/json-viewer"
+      ],
+      "quality": 86
+    },
+    {
+      "id": "arcui-data-display-line-chart",
+      "name": "Arc UI Line Chart",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "A multi-series line chart with a gliding crosshair, legend toggles, and paths that morph between ranges.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "arcui",
+        "line",
+        "chart",
+        "data-display",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/line-chart",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/line-chart.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/line-chart",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/line-chart"
+      ],
+      "quality": 86
+    },
+    {
+      "id": "arcui-data-display-metric-card",
+      "name": "Arc UI Metric Card",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "A compact summary for a number that needs context.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "arcui",
+        "metric",
+        "card",
+        "data-display",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/metric-card",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/metric-card.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/metric-card",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/metric-card"
+      ],
+      "quality": 81
+    },
+    {
+      "id": "arcui-data-display-notification-center",
+      "name": "Arc UI Notification Center",
+      "source": "Arc UI",
+      "entry_type": "block",
+      "category": "data-display",
+      "description": "A home for updates with read state, grouped information, and animated disclosure.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "arcui",
+        "notification",
+        "center",
+        "data-display",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/blocks/notification-center",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "@radix-ui/react-popover",
+        "lucide-react",
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/notification-center.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/notification-center",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/blocks/notification-center"
+      ],
+      "quality": 83
+    },
+    {
+      "id": "arcui-data-display-ridgeline",
+      "name": "Arc UI Ridgeline",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Overlapping distributions, one ridge per group: hover to lift a ridge and read its quartiles, switch datasets and every curve morphs.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "arcui",
+        "ridgeline",
+        "data-display",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/ridgeline",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/ridgeline.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/ridgeline",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/ridgeline"
+      ],
+      "quality": 86
+    },
+    {
+      "id": "arcui-data-display-slope-chart",
+      "name": "Arc UI Slope Chart",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Before and after on two axes: lines draw in, rank moves sit beside each value, and switching datasets slides every line to its new slope.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "arcui",
+        "slope",
+        "chart",
+        "data-display",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/slope-chart",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/slope-chart.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/slope-chart",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/slope-chart"
+      ],
+      "quality": 86
+    },
+    {
+      "id": "arcui-data-display-sortable-data-table",
+      "name": "Arc UI Sortable Data Table",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Compare structured records with sortable columns.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "arcui",
+        "sortable",
+        "data",
+        "table",
+        "data-display",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/sortable-data-table",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/sortable-data-table.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/sortable-data-table",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/sortable-data-table"
+      ],
+      "quality": 81
+    },
+    {
+      "id": "arcui-data-display-sparkline",
+      "name": "Arc UI Sparkline",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Show a compact trend beside a value.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "arcui",
+        "sparkline",
+        "data-display",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/sparkline",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/sparkline.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/sparkline",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/sparkline"
+      ],
+      "quality": 81
+    },
+    {
+      "id": "arcui-data-display-streamgraph",
+      "name": "Arc UI Streamgraph",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Layered streams on a wiggle baseline that morph between ranges, with a layer you can isolate and read week by week.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "arcui",
+        "streamgraph",
+        "data-display",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/streamgraph",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/streamgraph.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/streamgraph",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/streamgraph"
+      ],
+      "quality": 86
+    },
+    {
+      "id": "arcui-data-display-timeline",
+      "name": "Arc UI Timeline",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Follow what happened, newest first, grouped by day.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "arcui",
+        "timeline",
+        "data-display",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/timeline",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/timeline.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/timeline",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/timeline"
+      ],
+      "quality": 81
+    },
+    {
+      "id": "arcui-data-display-tree-view",
+      "name": "Arc UI Tree View",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Navigate nested folders and structured content.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "arcui",
+        "tree",
+        "view",
+        "data-display",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/tree-view",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/tree-view.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/tree-view",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/tree-view"
+      ],
+      "quality": 81
+    },
+    {
+      "id": "arcui-data-display-treemap",
+      "name": "Arc UI Treemap",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "A squarified treemap: click to drill and the tiles grow to fill the view, with a breadcrumb back and metrics that morph every tile.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "arcui",
+        "treemap",
+        "data-display",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/treemap",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/treemap.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/treemap",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/treemap"
+      ],
+      "quality": 86
+    },
+    {
+      "id": "arcui-data-display-waffle-chart",
+      "name": "Arc UI Waffle Chart",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "A ten by ten unit chart where every cell is one percent, and cells fly to their new group when the data changes.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "arcui",
+        "waffle",
+        "chart",
+        "data-display",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/waffle-chart",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/waffle-chart.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/waffle-chart",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/waffle-chart"
+      ],
+      "quality": 86
+    },
+    {
+      "id": "arcui-faq-faq-section",
+      "name": "Arc UI FAQ Section",
+      "source": "Arc UI",
+      "entry_type": "block",
+      "category": "faq",
+      "description": "FAQs as an accordion, a topic rail, or a searchable list that highlights matches.",
+      "use_case": "Answer recurring questions and reduce support friction.",
+      "search_tags": [
+        "arcui",
+        "faq",
+        "section",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/blocks/faq-section",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/faq-section.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/faq-section",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/blocks/faq-section"
+      ],
+      "quality": 86
+    },
+    {
+      "id": "arcui-feedback-alert",
+      "name": "Arc UI Alert",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "feedback",
+      "description": "A persistent message that helps people recover or continue.",
+      "use_case": "Communicate system status: alerts, loaders, progress and notifications.",
+      "search_tags": [
+        "arcui",
+        "alert",
+        "feedback",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/alert",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/alert.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/alert",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/alert"
+      ],
+      "quality": 81
+    },
+    {
+      "id": "arcui-feedback-announcement-bar",
+      "name": "Arc UI Announcement Bar",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "feedback",
+      "description": "A top banner that rotates messages, counts down, and collapses smoothly when dismissed.",
+      "use_case": "Communicate system status: alerts, loaders, progress and notifications.",
+      "search_tags": [
+        "arcui",
+        "announcement",
+        "bar",
+        "feedback",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/announcement-bar",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/announcement-bar.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/announcement-bar",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/announcement-bar"
+      ],
+      "quality": 86
+    },
+    {
+      "id": "arcui-feedback-progress",
+      "name": "Arc UI Progress",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "feedback",
+      "description": "Show how much of a known task is complete.",
+      "use_case": "Communicate system status: alerts, loaders, progress and notifications.",
+      "search_tags": [
+        "arcui",
+        "progress",
+        "feedback",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/progress",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/progress.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/progress",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/progress"
+      ],
+      "quality": 81
+    },
+    {
+      "id": "arcui-feedback-skeleton",
+      "name": "Arc UI Skeleton",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "feedback",
+      "description": "Reserve space while content is still loading.",
+      "use_case": "Communicate system status: alerts, loaders, progress and notifications.",
+      "search_tags": [
+        "arcui",
+        "skeleton",
+        "feedback",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/skeleton",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/skeleton.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/skeleton",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/skeleton"
+      ],
+      "quality": 81
+    },
+    {
+      "id": "arcui-feedback-toast",
+      "name": "Arc UI Toast",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "feedback",
+      "description": "Brief confirmation for a completed background action.",
+      "use_case": "Communicate system status: alerts, loaders, progress and notifications.",
+      "search_tags": [
+        "arcui",
+        "toast",
+        "feedback",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/toast",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/toast.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/toast",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/toast"
+      ],
+      "quality": 81
+    },
+    {
+      "id": "arcui-feedback-toast-stack",
+      "name": "Arc UI Toast Stack",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "feedback",
+      "description": "Stack short results at the edge until you reach for them.",
+      "use_case": "Communicate system status: alerts, loaders, progress and notifications.",
+      "search_tags": [
+        "arcui",
+        "toast",
+        "stack",
+        "feedback",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/toast-stack",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/toast-stack.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/toast-stack",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/toast-stack"
+      ],
+      "quality": 81
+    },
+    {
+      "id": "arcui-feedback-tooltip",
+      "name": "Arc UI Tooltip",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "feedback",
+      "description": "Short supporting text for unfamiliar controls.",
+      "use_case": "Communicate system status: alerts, loaders, progress and notifications.",
+      "search_tags": [
+        "arcui",
+        "tooltip",
+        "feedback",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/tooltip",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "@radix-ui/react-tooltip",
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/tooltip.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/tooltip",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/tooltip"
+      ],
+      "quality": 81
+    },
+    {
+      "id": "arcui-feedback-usage-meter",
+      "name": "Arc UI Usage Meter",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "feedback",
+      "description": "Show what fills an allowance and how close it is to the limit.",
+      "use_case": "Communicate system status: alerts, loaders, progress and notifications.",
+      "search_tags": [
+        "arcui",
+        "usage",
+        "meter",
+        "feedback",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/usage-meter",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/usage-meter.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/usage-meter",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/usage-meter"
+      ],
+      "quality": 86
+    },
+    {
+      "id": "arcui-forms-calendar",
+      "name": "Arc UI Calendar",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Browse dates in a clear, compact month view.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "arcui",
+        "calendar",
+        "forms",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/calendar",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/calendar.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/calendar",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/calendar"
+      ],
+      "quality": 81
+    },
+    {
+      "id": "arcui-forms-checkbox",
+      "name": "Arc UI Checkbox",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "A binary choice with a precise, legible state.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "arcui",
+        "checkbox",
+        "forms",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/checkbox",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "@radix-ui/react-checkbox",
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/checkbox.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/checkbox",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/checkbox"
+      ],
+      "quality": 81
+    },
+    {
+      "id": "arcui-forms-chip-group",
+      "name": "Arc UI Chip Group",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Filter by a few facets with chips that morph as you pick them.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "arcui",
+        "chip",
+        "group",
+        "forms",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/chip-group",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/chip-group.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/chip-group",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/chip-group"
+      ],
+      "quality": 86
+    },
+    {
+      "id": "arcui-forms-color-picker",
+      "name": "Arc UI Color Picker",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "A swatch that grows into a picker with format morphing, eyedropper, saved swatches, and contrast readout.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "arcui",
+        "color",
+        "picker",
+        "forms",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/color-picker",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/color-picker.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/color-picker",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/color-picker"
+      ],
+      "quality": 86
+    },
+    {
+      "id": "arcui-forms-combobox",
+      "name": "Arc UI Combobox",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Search and select from a list without leaving the field.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "arcui",
+        "combobox",
+        "forms",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/combobox",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/combobox.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/combobox",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/combobox"
+      ],
+      "quality": 81
+    },
+    {
+      "id": "arcui-forms-contact-section",
+      "name": "Arc UI Contact Section",
+      "source": "Arc UI",
+      "entry_type": "block",
+      "category": "forms",
+      "description": "A validated contact form that morphs into a confirmation, support channels, and office cards with local times.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "arcui",
+        "contact",
+        "section",
+        "forms",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/blocks/contact-section",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/contact-section.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/contact-section",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/blocks/contact-section"
+      ],
+      "quality": 86
+    },
+    {
+      "id": "arcui-forms-date-picker",
+      "name": "Arc UI Date Picker",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Choose a date without losing context.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "arcui",
+        "date",
+        "picker",
+        "forms",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/date-picker",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/date-picker.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/date-picker",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/date-picker"
+      ],
+      "quality": 81
+    },
+    {
+      "id": "arcui-forms-date-range-picker",
+      "name": "Arc UI Date Range Picker",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "A range picker that grows from its trigger into two months with presets and a stretching range highlight.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "arcui",
+        "date",
+        "range",
+        "picker",
+        "forms",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/date-range-picker",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/date-range-picker.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/date-range-picker",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/date-range-picker"
+      ],
+      "quality": 86
+    },
+    {
+      "id": "arcui-forms-expanding-search",
+      "name": "Arc UI Expanding Search",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "An icon that morphs into a search field with results beneath it.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "arcui",
+        "expanding",
+        "search",
+        "forms",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/expanding-search",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/expanding-search.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/expanding-search",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/expanding-search"
+      ],
+      "quality": 86
+    },
+    {
+      "id": "arcui-forms-file-dropzone",
+      "name": "Arc UI File Dropzone",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "A generous target for dropping one or more files.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "arcui",
+        "file",
+        "dropzone",
+        "forms",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/file-dropzone",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/file-dropzone.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/file-dropzone",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/file-dropzone"
+      ],
+      "quality": 81
+    },
+    {
+      "id": "arcui-forms-file-upload",
+      "name": "Arc UI File Upload",
+      "source": "Arc UI",
+      "entry_type": "block",
+      "category": "forms",
+      "description": "A complete file selection flow with constraints, progress, and error feedback.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "arcui",
+        "file",
+        "upload",
+        "forms",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/blocks/file-upload",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/file-upload.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/file-upload",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/blocks/file-upload"
+      ],
+      "quality": 86
+    },
+    {
+      "id": "arcui-forms-inline-edit",
+      "name": "Arc UI Inline Edit",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Rename in place: the text becomes a field without moving.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "arcui",
+        "inline",
+        "edit",
+        "forms",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/inline-edit",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/inline-edit.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/inline-edit",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/inline-edit"
+      ],
+      "quality": 81
+    },
+    {
+      "id": "arcui-forms-input",
+      "name": "Arc UI Input",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "A single line field with clear labels and useful states.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "arcui",
+        "input",
+        "forms",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/input",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/input.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/input",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/input"
+      ],
+      "quality": 81
+    },
+    {
+      "id": "arcui-forms-login-centered",
+      "name": "Arc UI Centered Login",
+      "source": "Arc UI",
+      "entry_type": "block",
+      "category": "forms",
+      "description": "A passkey-first login card on a quiet ring backdrop that morphs through email and code.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "arcui",
+        "centered",
+        "login",
+        "forms",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/blocks/login-centered",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/login-centered.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/login-centered",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/blocks/login-centered"
+      ],
+      "quality": 86
+    },
+    {
+      "id": "arcui-forms-mention-input",
+      "name": "Arc UI Mention Input",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "A textarea with @people and #channel mentions that act as single tokens, with suggestions at the caret.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "arcui",
+        "mention",
+        "input",
+        "forms",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/mention-input",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/mention-input.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/mention-input",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/mention-input"
+      ],
+      "quality": 86
+    },
+    {
+      "id": "arcui-forms-money-input",
+      "name": "Arc UI Money Input",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "A currency field with live grouping, stable width, rolling digits, and minor-unit output.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "arcui",
+        "money",
+        "input",
+        "forms",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/money-input",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/money-input.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/money-input",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/money-input"
+      ],
+      "quality": 86
+    },
+    {
+      "id": "arcui-forms-multi-select",
+      "name": "Arc UI Multi Select",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Select several values while keeping the field readable.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "arcui",
+        "multi",
+        "select",
+        "forms",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/multi-select",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/multi-select.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/multi-select",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/multi-select"
+      ],
+      "quality": 81
+    },
+    {
+      "id": "arcui-forms-number-field",
+      "name": "Arc UI Number Field",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Enter a bounded number with clear increment controls.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "arcui",
+        "number",
+        "field",
+        "forms",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/number-field",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/number-field.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/number-field",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/number-field"
+      ],
+      "quality": 81
+    },
+    {
+      "id": "arcui-forms-otp-input",
+      "name": "Arc UI OTP Input",
+      "source": "Arc UI",
+      "entry_type": "block",
+      "category": "forms",
+      "description": "A six digit verification flow with paste support and keyboard navigation.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "arcui",
+        "otp",
+        "input",
+        "forms",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/blocks/otp-input",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/otp-input.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/otp-input",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/blocks/otp-input"
+      ],
+      "quality": 86
+    },
+    {
+      "id": "arcui-forms-password-field",
+      "name": "Arc UI Password Field",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Capture sensitive text with a visible reveal control.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "arcui",
+        "password",
+        "field",
+        "forms",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/password-field",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/password-field.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/password-field",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/password-field"
+      ],
+      "quality": 81
+    },
+    {
+      "id": "arcui-forms-phone-input",
+      "name": "Arc UI Phone Input",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "A phone field with a country picker, formatting as you type, and E.164 output.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "arcui",
+        "phone",
+        "input",
+        "forms",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/phone-input",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/phone-input.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/phone-input",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/phone-input"
+      ],
+      "quality": 86
+    },
+    {
+      "id": "arcui-forms-radio-cards",
+      "name": "Arc UI Radio Cards",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Selectable option cards with a sliding selection ring, price and description slots, and radio keyboard behavior.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "arcui",
+        "radio",
+        "cards",
+        "forms",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/radio-cards",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/radio-cards.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/radio-cards",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/radio-cards"
+      ],
+      "quality": 86
+    },
+    {
+      "id": "arcui-forms-radio-group",
+      "name": "Arc UI Radio Group",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Choose one option from a visible set.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "arcui",
+        "radio",
+        "group",
+        "forms",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/radio-group",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/radio-group.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/radio-group",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/radio-group"
+      ],
+      "quality": 81
+    },
+    {
+      "id": "arcui-forms-search-field",
+      "name": "Arc UI Search Field",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "A recognizable search entry point with clear affordances.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "arcui",
+        "search",
+        "field",
+        "forms",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/search-field",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/search-field.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/search-field",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/search-field"
+      ],
+      "quality": 81
+    },
+    {
+      "id": "arcui-forms-segmented-control",
+      "name": "Arc UI Segmented Control",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Switch between a small set of related views.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "arcui",
+        "segmented",
+        "control",
+        "forms",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/segmented-control",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/segmented-control.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/segmented-control",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/segmented-control"
+      ],
+      "quality": 81
+    },
+    {
+      "id": "arcui-forms-select",
+      "name": "Arc UI Select",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "A compact choice field with a keyboard friendly menu.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "arcui",
+        "select",
+        "forms",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/select",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "@radix-ui/react-select",
+        "lucide-react",
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/select.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/select",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/select"
+      ],
+      "quality": 78
+    },
+    {
+      "id": "arcui-forms-shortcut-recorder",
+      "name": "Arc UI Shortcut Recorder",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Record key combinations into key caps, with conflict warnings, Kbd, and a searchable cheatsheet.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "arcui",
+        "shortcut",
+        "recorder",
+        "forms",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/shortcut-recorder",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/shortcut-recorder.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/shortcut-recorder",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/shortcut-recorder"
+      ],
+      "quality": 86
+    },
+    {
+      "id": "arcui-forms-sign-in",
+      "name": "Arc UI Sign In",
+      "source": "Arc UI",
+      "entry_type": "block",
+      "category": "forms",
+      "description": "A sign in card that morphs from email to a six digit code to your account.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "arcui",
+        "sign",
+        "in",
+        "forms",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/blocks/sign-in",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/sign-in.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/sign-in",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/blocks/sign-in"
+      ],
+      "quality": 86
+    },
+    {
+      "id": "arcui-forms-signature-pad",
+      "name": "Arc UI Signature Pad",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Smooth ink that thins with speed, with undo, replay, and PNG or SVG export.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "arcui",
+        "signature",
+        "pad",
+        "forms",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/signature-pad",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/signature-pad.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/signature-pad",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/signature-pad"
+      ],
+      "quality": 86
+    },
+    {
+      "id": "arcui-forms-signup-form",
+      "name": "Arc UI Sign Up Form",
+      "source": "Arc UI",
+      "entry_type": "block",
+      "category": "forms",
+      "description": "An account creation flow with field validation, password strength, and a clear completion state.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "arcui",
+        "sign",
+        "up",
+        "form",
+        "forms",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/blocks/signup-form",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/signup-form.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/signup-form",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/blocks/signup-form"
+      ],
+      "quality": 86
+    },
+    {
+      "id": "arcui-forms-switch",
+      "name": "Arc UI Switch",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "A tactile toggle for settings that take effect immediately.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "arcui",
+        "switch",
+        "forms",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/switch",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "@radix-ui/react-switch",
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/switch.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/switch",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/switch"
+      ],
+      "quality": 81
+    },
+    {
+      "id": "arcui-forms-tag-input",
+      "name": "Arc UI Tag Input",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Turn short text values into removable tags.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "arcui",
+        "tag",
+        "input",
+        "forms",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/tag-input",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/tag-input.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/tag-input",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/tag-input"
+      ],
+      "quality": 81
+    },
+    {
+      "id": "arcui-forms-textarea",
+      "name": "Arc UI Textarea",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "A multiline field for notes, descriptions, and longer text.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "arcui",
+        "textarea",
+        "forms",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/textarea",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/textarea.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/textarea",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/textarea"
+      ],
+      "quality": 81
+    },
+    {
+      "id": "arcui-forms-theme-switch",
+      "name": "Arc UI Theme Switcher",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Four smooth ways to move between light and dark appearance.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "arcui",
+        "theme",
+        "switcher",
+        "forms",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/theme-switch",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/theme-switch.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/theme-switch",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/theme-switch"
+      ],
+      "quality": 81
+    },
+    {
+      "id": "arcui-forms-theme-switch-eclipse",
+      "name": "Arc UI Eclipse",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "The next appearance crosses the page like an eclipse.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "arcui",
+        "eclipse",
+        "forms",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/theme-switch-eclipse",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/theme-switch-eclipse.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/theme-switch-eclipse",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/theme-switch-eclipse"
+      ],
+      "quality": 81
+    },
+    {
+      "id": "arcui-forms-theme-switch-rise",
+      "name": "Arc UI Rise",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "The next appearance rises into place.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "arcui",
+        "rise",
+        "forms",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/theme-switch-rise",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/theme-switch-rise.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/theme-switch-rise",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/theme-switch-rise"
+      ],
+      "quality": 81
+    },
+    {
+      "id": "arcui-forms-theme-switch-split",
+      "name": "Arc UI Split",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "The next appearance opens from a slim center seam.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "arcui",
+        "split",
+        "forms",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/theme-switch-split",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/theme-switch-split.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/theme-switch-split",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/theme-switch-split"
+      ],
+      "quality": 81
+    },
+    {
+      "id": "arcui-forms-time-picker",
+      "name": "Arc UI Time Picker",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Choose a time with sensible keyboard behavior.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "arcui",
+        "time",
+        "picker",
+        "forms",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/time-picker",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/time-picker.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/time-picker",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/time-picker"
+      ],
+      "quality": 81
+    },
+    {
+      "id": "arcui-hero-hero-section",
+      "name": "Arc UI Hero Section",
+      "source": "Arc UI",
+      "entry_type": "block",
+      "category": "hero",
+      "description": "Three full screen SaaS heroes: a live dashboard rising from the bottom edge over a drifting mesh, a workflow graph that routes sample events node by node, and editorial type over a mesh gradient.",
+      "use_case": "Create above-the-fold sections that communicate the value proposition immediately.",
+      "search_tags": [
+        "arcui",
+        "hero",
+        "section",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/blocks/hero-section",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/hero-section.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/hero-section",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/blocks/hero-section"
+      ],
+      "quality": 86
+    },
+    {
+      "id": "arcui-layout-empty-states",
+      "name": "Arc UI Empty States",
+      "source": "Arc UI",
+      "entry_type": "block",
+      "category": "layout",
+      "description": "Four empty states in one illustration whose shapes morph between scenes as you switch tabs.",
+      "use_case": "Structure the page: dividers, footers, headers and empty states.",
+      "search_tags": [
+        "arcui",
+        "empty",
+        "states",
+        "layout",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/blocks/empty-states",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/empty-states.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/empty-states",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/blocks/empty-states"
+      ],
+      "quality": 86
+    },
+    {
+      "id": "arcui-layout-page-header",
+      "name": "Arc UI Page Header",
+      "source": "Arc UI",
+      "entry_type": "block",
+      "category": "layout",
+      "description": "A project page header that folds into a compact bar as you scroll, with tabs whose counts roll.",
+      "use_case": "Structure the page: dividers, footers, headers and empty states.",
+      "search_tags": [
+        "arcui",
+        "page",
+        "header",
+        "layout",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/blocks/page-header",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "@radix-ui/react-dropdown-menu",
+        "@radix-ui/react-tabs",
+        "lucide-react",
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/page-header.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/page-header",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/blocks/page-header"
+      ],
+      "quality": 83
+    },
+    {
+      "id": "arcui-layout-resizable-panels",
+      "name": "Arc UI Resizable Panels",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "layout",
+      "description": "Trade space between panes by dragging the divider between them.",
+      "use_case": "Structure the page: dividers, footers, headers and empty states.",
+      "search_tags": [
+        "arcui",
+        "resizable",
+        "panels",
+        "layout",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/resizable-panels",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/resizable-panels.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/resizable-panels",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/resizable-panels"
+      ],
+      "quality": 86
+    },
+    {
+      "id": "arcui-layout-scroll-area",
+      "name": "Arc UI Scroll Area",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "layout",
+      "description": "A native scroll container with thin overlay scrollbars and edge fades that appear only when content overflows.",
+      "use_case": "Structure the page: dividers, footers, headers and empty states.",
+      "search_tags": [
+        "arcui",
+        "scroll",
+        "area",
+        "layout",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/scroll-area",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/scroll-area.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/scroll-area",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/scroll-area"
+      ],
+      "quality": 89
+    },
+    {
+      "id": "arcui-layout-site-footer",
+      "name": "Arc UI Site Footer",
+      "source": "Arc UI",
+      "entry_type": "block",
+      "category": "layout",
+      "description": "A website footer with link columns and newsletter, a minimal layout, and a large fading Arc mark.",
+      "use_case": "Structure the page: dividers, footers, headers and empty states.",
+      "search_tags": [
+        "arcui",
+        "site",
+        "footer",
+        "layout",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/blocks/site-footer",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/site-footer.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/site-footer",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/blocks/site-footer"
+      ],
+      "quality": 86
+    },
+    {
+      "id": "arcui-layout-stats-band",
+      "name": "Arc UI Stats Band",
+      "source": "Arc UI",
+      "entry_type": "block",
+      "category": "layout",
+      "description": "Headline numbers that count up in view, each with a tiny visual that proves it and a context line on hover, plain or in a hairline grid.",
+      "use_case": "Structure the page: dividers, footers, headers and empty states.",
+      "search_tags": [
+        "arcui",
+        "stats",
+        "band",
+        "layout",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/blocks/stats-band",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/stats-band.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/stats-band",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/blocks/stats-band"
+      ],
+      "quality": 86
+    },
+    {
+      "id": "arcui-media-carousel",
+      "name": "Arc UI Carousel",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "media",
+      "description": "Browse a row of slides by dragging, flicking, or arrowing through them.",
+      "use_case": "Display images, video, carousels and device mockups.",
+      "search_tags": [
+        "arcui",
+        "carousel",
+        "media",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/carousel",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/carousel.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/carousel",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/carousel"
+      ],
+      "quality": 86
+    },
+    {
+      "id": "arcui-media-image-compare",
+      "name": "Arc UI Image Compare",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "media",
+      "description": "Drag a divider across two images to see what changed.",
+      "use_case": "Display images, video, carousels and device mockups.",
+      "search_tags": [
+        "arcui",
+        "image",
+        "compare",
+        "media",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/image-compare",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/image-compare.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/image-compare",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/image-compare"
+      ],
+      "quality": 81
+    },
+    {
+      "id": "arcui-media-slider",
+      "name": "Arc UI Slider",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "media",
+      "description": "Pick a value or a range on a track that follows your finger.",
+      "use_case": "Display images, video, carousels and device mockups.",
+      "search_tags": [
+        "arcui",
+        "slider",
+        "media",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/slider",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/slider.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/slider",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/slider"
+      ],
+      "quality": 86
+    },
+    {
+      "id": "arcui-micro-interactions-accordion",
+      "name": "Arc UI Accordion",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "Progressively reveal supporting information in place.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "arcui",
+        "accordion",
+        "micro-interactions",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/accordion",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "@radix-ui/react-accordion",
+        "lucide-react",
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/accordion.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/accordion",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/accordion"
+      ],
+      "quality": 78
+    },
+    {
+      "id": "arcui-micro-interactions-action-button",
+      "name": "Arc UI Action Button",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "A compact button for frequent toolbar actions.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "arcui",
+        "action",
+        "button",
+        "micro-interactions",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/action-button",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/action-button.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/action-button",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/action-button"
+      ],
+      "quality": 81
+    },
+    {
+      "id": "arcui-micro-interactions-billing-toggle",
+      "name": "Arc UI Billing Toggle",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "A monthly and yearly switch with a savings badge and prices that roll to the new amount.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "arcui",
+        "billing",
+        "toggle",
+        "micro-interactions",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/billing-toggle",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/billing-toggle.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/billing-toggle",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/billing-toggle"
+      ],
+      "quality": 86
+    },
+    {
+      "id": "arcui-micro-interactions-button",
+      "name": "Arc UI Button",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "A clear, responsive action with quiet secondary states.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "arcui",
+        "button",
+        "micro-interactions",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/button",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/button.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/button",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/button"
+      ],
+      "quality": 81
+    },
+    {
+      "id": "arcui-micro-interactions-button-group",
+      "name": "Arc UI Button Group",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "Related actions joined into one surface with hairline dividers: a hover highlight glides between segments, the pressed one answers in place, and an attached menu can close the row.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "arcui",
+        "button",
+        "group",
+        "micro-interactions",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/button-group",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "@radix-ui/react-dropdown-menu",
+        "lucide-react",
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/button-group.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/button-group",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/button-group"
+      ],
+      "quality": 83
+    },
+    {
+      "id": "arcui-micro-interactions-confirm-morph",
+      "name": "Arc UI Confirm Morph",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "A destructive button that morphs into an inline confirmation, a spinner, and a result with undo.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "arcui",
+        "confirm",
+        "morph",
+        "micro-interactions",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/confirm-morph",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/confirm-morph.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/confirm-morph",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/confirm-morph"
+      ],
+      "quality": 86
+    },
+    {
+      "id": "arcui-micro-interactions-copy-button",
+      "name": "Arc UI Copy Button",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "Copy a value with immediate confirmation.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "arcui",
+        "copy",
+        "button",
+        "micro-interactions",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/copy-button",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/copy-button.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/copy-button",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/copy-button"
+      ],
+      "quality": 81
+    },
+    {
+      "id": "arcui-micro-interactions-expanding-button-group",
+      "name": "Arc UI Expanding Button Group",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "Icon buttons in a compact group: the one you point at or focus grows to reveal its label while its neighbours slide aside, and an action confirms in place.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "arcui",
+        "expanding",
+        "button",
+        "group",
+        "micro-interactions",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/expanding-button-group",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/expanding-button-group.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/expanding-button-group",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/expanding-button-group"
+      ],
+      "quality": 86
+    },
+    {
+      "id": "arcui-micro-interactions-floating-button-group",
+      "name": "Arc UI Floating Button Group",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "Separate soft buttons in a quiet tray, with one shared highlight that morphs from button to button as you move, and a pressed state that settles in place.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "arcui",
+        "floating",
+        "button",
+        "group",
+        "micro-interactions",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/floating-button-group",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "@radix-ui/react-tooltip",
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/floating-button-group.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/floating-button-group",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/floating-button-group"
+      ],
+      "quality": 86
+    },
+    {
+      "id": "arcui-micro-interactions-hold-to-confirm",
+      "name": "Arc UI Hold To Confirm",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "Confirm a destructive action by holding, not tapping.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "arcui",
+        "hold",
+        "to",
+        "confirm",
+        "micro-interactions",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/hold-to-confirm",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/hold-to-confirm.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/hold-to-confirm",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/hold-to-confirm"
+      ],
+      "quality": 81
+    },
+    {
+      "id": "arcui-micro-interactions-split-button",
+      "name": "Arc UI Split Button",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "A primary action with a menu of nearby alternatives.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "arcui",
+        "split",
+        "button",
+        "micro-interactions",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/split-button",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "@radix-ui/react-dropdown-menu",
+        "lucide-react",
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/split-button.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/split-button",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/split-button"
+      ],
+      "quality": 78
+    },
+    {
+      "id": "arcui-micro-interactions-swipe-actions",
+      "name": "Arc UI Swipe Actions",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "Reveal row actions with a swipe, or from the same actions in a menu.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "arcui",
+        "swipe",
+        "actions",
+        "micro-interactions",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/swipe-actions",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "@radix-ui/react-dropdown-menu",
+        "lucide-react",
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/swipe-actions.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/swipe-actions",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/swipe-actions"
+      ],
+      "quality": 83
+    },
+    {
+      "id": "arcui-navigation-breadcrumb",
+      "name": "Arc UI Breadcrumb",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "navigation",
+      "description": "Show where a page sits in a hierarchy.",
+      "use_case": "Build site and app navigation structures that stay clear at any depth.",
+      "search_tags": [
+        "arcui",
+        "breadcrumb",
+        "navigation",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/breadcrumb",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/breadcrumb.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/breadcrumb",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/breadcrumb"
+      ],
+      "quality": 81
+    },
+    {
+      "id": "arcui-navigation-command-palette",
+      "name": "Arc UI Command Palette",
+      "source": "Arc UI",
+      "entry_type": "block",
+      "category": "navigation",
+      "description": "A complete keyboard driven action surface with search, grouped results, and shortcuts.",
+      "use_case": "Build site and app navigation structures that stay clear at any depth.",
+      "search_tags": [
+        "arcui",
+        "command",
+        "palette",
+        "navigation",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/blocks/command-palette",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/command-palette.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/command-palette",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/blocks/command-palette"
+      ],
+      "quality": 86
+    },
+    {
+      "id": "arcui-navigation-dropdown-menu",
+      "name": "Arc UI Dropdown Menu",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "navigation",
+      "description": "A focused list of actions anchored to a trigger.",
+      "use_case": "Build site and app navigation structures that stay clear at any depth.",
+      "search_tags": [
+        "arcui",
+        "dropdown",
+        "menu",
+        "navigation",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/dropdown-menu",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "@radix-ui/react-dropdown-menu",
+        "lucide-react",
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/dropdown-menu.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/dropdown-menu",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/dropdown-menu"
+      ],
+      "quality": 78
+    },
+    {
+      "id": "arcui-navigation-pagination",
+      "name": "Arc UI Pagination",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "navigation",
+      "description": "Move through a long collection with clear bounds.",
+      "use_case": "Build site and app navigation structures that stay clear at any depth.",
+      "search_tags": [
+        "arcui",
+        "pagination",
+        "navigation",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/pagination",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/pagination.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/pagination",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/pagination"
+      ],
+      "quality": 81
+    },
+    {
+      "id": "arcui-navigation-site-header",
+      "name": "Arc UI Site Header",
+      "source": "Arc UI",
+      "entry_type": "block",
+      "category": "navigation",
+      "description": "A sticky website header that turns solid on scroll, with a gliding active link, mega menu panels, and a mobile sheet.",
+      "use_case": "Build site and app navigation structures that stay clear at any depth.",
+      "search_tags": [
+        "arcui",
+        "site",
+        "header",
+        "navigation",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/blocks/site-header",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/site-header.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/site-header",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/blocks/site-header"
+      ],
+      "quality": 86
+    },
+    {
+      "id": "arcui-navigation-stepper",
+      "name": "Arc UI Stepper",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "navigation",
+      "description": "Show where a person is in a multi-step flow and what is done.",
+      "use_case": "Build site and app navigation structures that stay clear at any depth.",
+      "search_tags": [
+        "arcui",
+        "stepper",
+        "navigation",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/stepper",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/stepper.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/stepper",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/stepper"
+      ],
+      "quality": 86
+    },
+    {
+      "id": "arcui-navigation-tabs",
+      "name": "Arc UI Tabs",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "navigation",
+      "description": "Switch between related content in the same context.",
+      "use_case": "Build site and app navigation structures that stay clear at any depth.",
+      "search_tags": [
+        "arcui",
+        "tabs",
+        "navigation",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/tabs",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "@radix-ui/react-tabs",
+        "lucide-react",
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/tabs.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/tabs",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/tabs"
+      ],
+      "quality": 78
+    },
+    {
+      "id": "arcui-navigation-user-menu",
+      "name": "Arc UI User Menu",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "navigation",
+      "description": "Your account, settings, theme, and sign out behind the avatar. Opens as a bottom sheet on phones.",
+      "use_case": "Build site and app navigation structures that stay clear at any depth.",
+      "search_tags": [
+        "arcui",
+        "user",
+        "menu",
+        "navigation",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/user-menu",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/user-menu.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/user-menu",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/user-menu"
+      ],
+      "quality": 86
+    },
+    {
+      "id": "arcui-overlay-bottom-sheet",
+      "name": "Arc UI Bottom Sheet",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "overlay",
+      "description": "A sheet that rests at a peek or full height and follows your finger.",
+      "use_case": "Present dialogs, drawers and popovers without leaving the page.",
+      "search_tags": [
+        "arcui",
+        "bottom",
+        "sheet",
+        "overlay",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/bottom-sheet",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "@radix-ui/react-dialog",
+        "lucide-react",
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/bottom-sheet.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/bottom-sheet",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/bottom-sheet"
+      ],
+      "quality": 83
+    },
+    {
+      "id": "arcui-overlay-context-menu",
+      "name": "Arc UI Context Menu",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "overlay",
+      "description": "Secondary actions kept close to the selected object.",
+      "use_case": "Present dialogs, drawers and popovers without leaving the page.",
+      "search_tags": [
+        "arcui",
+        "context",
+        "menu",
+        "overlay",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/context-menu",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/context-menu.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/context-menu",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/context-menu"
+      ],
+      "quality": 81
+    },
+    {
+      "id": "arcui-overlay-dialog",
+      "name": "Arc UI Dialog",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "overlay",
+      "description": "A focused surface for decisions that need attention.",
+      "use_case": "Present dialogs, drawers and popovers without leaving the page.",
+      "search_tags": [
+        "arcui",
+        "dialog",
+        "overlay",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/dialog",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "@radix-ui/react-dialog",
+        "lucide-react",
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/dialog.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/dialog",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/dialog"
+      ],
+      "quality": 78
+    },
+    {
+      "id": "arcui-overlay-drawer",
+      "name": "Arc UI Drawer",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "overlay",
+      "description": "A temporary side surface for focused work.",
+      "use_case": "Present dialogs, drawers and popovers without leaving the page.",
+      "search_tags": [
+        "arcui",
+        "drawer",
+        "overlay",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/drawer",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "@radix-ui/react-dialog",
+        "lucide-react",
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/drawer.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/drawer",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/drawer"
+      ],
+      "quality": 78
+    },
+    {
+      "id": "arcui-overlay-hover-card",
+      "name": "Arc UI Hover Card",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "overlay",
+      "description": "Preview a person or link on hover or focus without leaving the page.",
+      "use_case": "Present dialogs, drawers and popovers without leaving the page.",
+      "search_tags": [
+        "arcui",
+        "hover",
+        "card",
+        "overlay",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/hover-card",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "@radix-ui/react-popover",
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/hover-card.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/hover-card",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/hover-card"
+      ],
+      "quality": 86
+    },
+    {
+      "id": "arcui-overlay-popover",
+      "name": "Arc UI Popover",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "overlay",
+      "description": "A small anchored surface for contextual information.",
+      "use_case": "Present dialogs, drawers and popovers without leaving the page.",
+      "search_tags": [
+        "arcui",
+        "popover",
+        "overlay",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/popover",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "@radix-ui/react-popover"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/popover.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/popover",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/popover"
+      ],
+      "quality": 81
+    },
+    {
+      "id": "arcui-pricing-comparison-table",
+      "name": "Arc UI Comparison Table",
+      "source": "Arc UI",
+      "entry_type": "block",
+      "category": "pricing",
+      "description": "An us versus them table with a sticky header, a highlighted column, and a stacked phone view.",
+      "use_case": "Present plans and comparisons to drive conversion decisions.",
+      "search_tags": [
+        "arcui",
+        "comparison",
+        "table",
+        "pricing",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/blocks/comparison-table",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/comparison-table.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/comparison-table",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/blocks/comparison-table"
+      ],
+      "quality": 86
+    },
+    {
+      "id": "arcui-pricing-plan-comparison",
+      "name": "Arc UI Plan Comparison",
+      "source": "Arc UI",
+      "entry_type": "block",
+      "category": "pricing",
+      "description": "Compare meaningful differences between plans and billing periods.",
+      "use_case": "Present plans and comparisons to drive conversion decisions.",
+      "search_tags": [
+        "arcui",
+        "plan",
+        "comparison",
+        "pricing",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/blocks/plan-comparison",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/plan-comparison.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/plan-comparison",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/blocks/plan-comparison"
+      ],
+      "quality": 86
+    },
+    {
+      "id": "arcui-testimonials-logo-marquee",
+      "name": "Arc UI Logo Marquee",
+      "source": "Arc UI",
+      "entry_type": "block",
+      "category": "testimonials",
+      "description": "A quiet, continuously moving row of brand marks with a pause control.",
+      "use_case": "Reinforce trust with social proof from customers and partners.",
+      "search_tags": [
+        "arcui",
+        "logo",
+        "marquee",
+        "testimonials",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/blocks/logo-marquee",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/logo-marquee.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/logo-marquee",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/blocks/logo-marquee"
+      ],
+      "quality": 86
+    },
+    {
+      "id": "arcui-text-animated-counter",
+      "name": "Arc UI Animated Counter",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "text",
+      "description": "Give changing totals a clear sense of movement.",
+      "use_case": "Animate or emphasize typography for key messages.",
+      "search_tags": [
+        "arcui",
+        "animated",
+        "counter",
+        "text",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/animated-counter",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/animated-counter.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/animated-counter",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/animated-counter"
+      ],
+      "quality": 81
+    },
+    {
+      "id": "arcui-text-in-view-title",
+      "name": "Arc UI In View Title",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "text",
+      "description": "Bring a section title in as it scrolls into view.",
+      "use_case": "Animate or emphasize typography for key messages.",
+      "search_tags": [
+        "arcui",
+        "in",
+        "view",
+        "title",
+        "text",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/in-view-title",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/in-view-title.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/in-view-title",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/in-view-title"
+      ],
+      "quality": 81
+    },
+    {
+      "id": "arcui-text-password-strength",
+      "name": "Arc UI Password Strength",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "text",
+      "description": "Show how strong a new password is while it is typed.",
+      "use_case": "Animate or emphasize typography for key messages.",
+      "search_tags": [
+        "arcui",
+        "password",
+        "strength",
+        "text",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/password-strength",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/password-strength.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/password-strength",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/password-strength"
+      ],
+      "quality": 81
+    },
+    {
+      "id": "arcui-text-rich-text-editor",
+      "name": "Arc UI Rich Text Editor",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "text",
+      "description": "A lightweight editor with markdown shortcuts, a floating toolbar, a slash menu, and HTML and markdown output.",
+      "use_case": "Animate or emphasize typography for key messages.",
+      "search_tags": [
+        "arcui",
+        "rich",
+        "text",
+        "editor",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/rich-text-editor",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/rich-text-editor.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/rich-text-editor",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/rich-text-editor"
+      ],
+      "quality": 86
+    },
+    {
+      "id": "arcui-text-slot-text",
+      "name": "Arc UI Slot Text",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "text",
+      "description": "Text and numbers that spin into their new value on staggered slot machine reels.",
+      "use_case": "Animate or emphasize typography for key messages.",
+      "search_tags": [
+        "arcui",
+        "slot",
+        "text",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/slot-text",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/slot-text.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/slot-text",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/slot-text"
+      ],
+      "quality": 86
+    },
+    {
+      "id": "arcui-text-text-morph",
+      "name": "Arc UI Text Morph",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "text",
+      "description": "Morph a label into its next state, letter by letter.",
+      "use_case": "Animate or emphasize typography for key messages.",
+      "search_tags": [
+        "arcui",
+        "text",
+        "morph",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/text-morph",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/text-morph.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/text-morph",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/text-morph"
+      ],
+      "quality": 81
+    },
+    {
+      "id": "arcui-text-text-reveal",
+      "name": "Arc UI Text Reveal",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "text",
+      "description": "Reveal a short piece of content with restrained motion.",
+      "use_case": "Animate or emphasize typography for key messages.",
+      "search_tags": [
+        "arcui",
+        "text",
+        "reveal",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/text-reveal",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/text-reveal.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/text-reveal",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/text-reveal"
+      ],
+      "quality": 84
+    },
+    {
+      "id": "arcui-text-text-shimmer",
+      "name": "Arc UI Text Shimmer",
+      "source": "Arc UI",
+      "entry_type": "component",
+      "category": "text",
+      "description": "Show ongoing work with a calm light across the words.",
+      "use_case": "Animate or emphasize typography for key messages.",
+      "search_tags": [
+        "arcui",
+        "text",
+        "shimmer",
+        "arc-ui"
+      ],
+      "docs_url": "https://uiarc.dev/components/text-shimmer",
+      "stack": [
+        "react",
+        "css-modules",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Calm motion built in; every item depends on the shared arc-foundation item (design and motion tokens)",
+        "Styled with CSS modules, not Tailwind: map your tokens into arc-foundation",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://uiarc.dev/r/text-shimmer.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @uiarc/text-shimmer",
+      "manual_steps": [
+        "Or copy the source from https://uiarc.dev/components/text-shimmer"
+      ],
+      "quality": 81
+    }
+  ]
+}

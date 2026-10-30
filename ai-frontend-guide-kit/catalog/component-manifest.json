@@ -1,0 +1,404 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-10-04",
+  "totals": {
+    "sources": 34,
+    "entries": 4287,
+    "categories": {
+      "micro-interactions": 780,
+      "forms": 689,
+      "data-display": 671,
+      "feedback": 330,
+      "navigation": 303,
+      "ai-surfaces": 238,
+      "overlay": 208,
+      "backgrounds-effects": 200,
+      "text": 147,
+      "layout": 140,
+      "blocks-sections": 131,
+      "media": 122,
+      "features": 54,
+      "testimonials": 53,
+      "hero": 50,
+      "cta": 48,
+      "pricing": 44,
+      "faq": 42,
+      "design-system": 28,
+      "assets": 7,
+      "template": 2
+    }
+  },
+  "taxonomy": [
+    "navigation",
+    "hero",
+    "features",
+    "pricing",
+    "cta",
+    "testimonials",
+    "faq",
+    "forms",
+    "data-display",
+    "feedback",
+    "overlay",
+    "layout",
+    "backgrounds-effects",
+    "micro-interactions",
+    "text",
+    "media",
+    "blocks-sections",
+    "ai-surfaces",
+    "design-system",
+    "template",
+    "assets"
+  ],
+  "usage": {
+    "find": "node tools/find.mjs --category <category> [--stack react] [--license MIT] [--commercial] [--free] [--source <id>] [--text <query>]",
+    "get": "node tools/get.mjs <entry-id>",
+    "detail": "sources/<source_id>.json",
+    "guides": "guides/00-START-HERE.md",
+    "installGuides": "install-guides.md",
+    "reuseRule": "Consult this catalog before writing any component from scratch (see guides/06-REUSE.md)."
+  },
+  "sources": [
+    {
+      "source_id": "21stdev",
+      "source_name": "21st.dev",
+      "source_url": "https://21st.dev",
+      "catalog_url": "https://21st.dev/community/components",
+      "entry_count": 785,
+      "license_summary": "Varies per component (MIT frequent; some unknown)",
+      "granularity": "curated: top 30 per tag across 40 tags",
+      "file": "sources/21stdev.json"
+    },
+    {
+      "source_id": "aceternity",
+      "source_name": "Aceternity UI",
+      "source_url": "https://ui.aceternity.com",
+      "catalog_url": "https://ui.aceternity.com/components",
+      "entry_count": 112,
+      "license_summary": "Proprietary (free tier; commercial use allowed, no redistribution)",
+      "granularity": "complete free registry:ui set (premium detected via HTTP 401)",
+      "file": "sources/aceternity.json"
+    },
+    {
+      "source_id": "agentskit",
+      "source_name": "Agents Kit",
+      "source_url": "https://agents-ui.github.io/agents-kit/",
+      "catalog_url": "https://agents-ui.github.io/agents-kit/components",
+      "entry_count": 224,
+      "license_summary": "Non-commercial for original families; MIT/Apache-2.0 for ported collections",
+      "granularity": "complete (224 registry blocks)",
+      "file": "sources/agentskit.json"
+    },
+    {
+      "source_id": "aicss",
+      "source_name": "aicss.dev",
+      "source_url": "https://www.aicss.dev",
+      "catalog_url": "https://www.aicss.dev",
+      "entry_count": 13,
+      "license_summary": "MIT (free components); Pro under a custom one-time license",
+      "granularity": "complete for the 13 free components (Pro excluded by design)",
+      "file": "sources/aicss.json"
+    },
+    {
+      "source_id": "animateui",
+      "source_name": "Animate UI",
+      "source_url": "https://animate-ui.com",
+      "catalog_url": "https://animate-ui.com/docs/components",
+      "entry_count": 414,
+      "license_summary": "MIT + Commons Clause (use in products; no resale of the components)",
+      "granularity": "complete (all registry:ui items)",
+      "file": "sources/animateui.json"
+    },
+    {
+      "source_id": "antd",
+      "source_name": "Ant Design",
+      "source_url": "https://ant.design",
+      "catalog_url": "https://ant.design/components/overview",
+      "entry_count": 68,
+      "license_summary": "MIT",
+      "granularity": "components of antd (docs URLs verified)",
+      "file": "sources/antd.json"
+    },
+    {
+      "source_id": "arcui",
+      "source_name": "Arc UI",
+      "source_url": "https://uiarc.dev",
+      "catalog_url": "https://uiarc.dev",
+      "entry_count": 127,
+      "license_summary": "MIT (free source; Pro components have additional restrictions and are not indexed)",
+      "granularity": "complete (registry:ui + registry:block, all marked free)",
+      "file": "sources/arcui.json"
+    },
+    {
+      "source_id": "baseui",
+      "source_name": "Base UI",
+      "source_url": "https://base-ui.com",
+      "catalog_url": "https://base-ui.com/react/overview/quick-start",
+      "entry_count": 38,
+      "license_summary": "MIT",
+      "granularity": "complete (components of @base-ui/react)",
+      "file": "sources/baseui.json"
+    },
+    {
+      "source_id": "chakra",
+      "source_name": "Chakra UI",
+      "source_url": "https://chakra-ui.com",
+      "catalog_url": "https://chakra-ui.com/docs/components/concepts/overview",
+      "entry_count": 82,
+      "license_summary": "MIT",
+      "granularity": "components of @chakra-ui/react v3 (docs URLs verified)",
+      "file": "sources/chakra.json"
+    },
+    {
+      "source_id": "coss",
+      "source_name": "coss ui / Origin UI",
+      "source_url": "https://coss.com/ui",
+      "catalog_url": "https://coss.com/ui",
+      "entry_count": 76,
+      "license_summary": "MIT for component directories (apps/ui and apps/origin); AGPL elsewhere in the repo",
+      "granularity": "coss ui complete; legacy Origin indexed at base-component level (30 categories, ~604 variants upstream)",
+      "file": "sources/coss.json"
+    },
+    {
+      "source_id": "cultui",
+      "source_name": "cult/ui",
+      "source_url": "https://www.cult-ui.com",
+      "catalog_url": "https://www.cult-ui.com/docs/components",
+      "entry_count": 155,
+      "license_summary": "MIT (open-source components); Pro blocks have a separate license",
+      "granularity": "complete (registry:ui + registry:component)",
+      "file": "sources/cultui.json"
+    },
+    {
+      "source_id": "daisyui",
+      "source_name": "DaisyUI",
+      "source_url": "https://daisyui.com",
+      "catalog_url": "https://daisyui.com/components/",
+      "entry_count": 68,
+      "license_summary": "MIT (library); templates/charts/Figma assets sold separately",
+      "granularity": "complete (68 components)",
+      "file": "sources/daisyui.json"
+    },
+    {
+      "source_id": "dsr",
+      "source_name": "Design Systems Repo",
+      "source_url": "https://designsystemsrepo.ai",
+      "catalog_url": "https://designsystemsrepo.ai/design-systems",
+      "entry_count": 26,
+      "license_summary": "Directory has no declared content license; each indexed system keeps its own",
+      "granularity": "complete (26 design systems)",
+      "file": "sources/dsr.json"
+    },
+    {
+      "source_id": "floatui",
+      "source_name": "Float UI",
+      "source_url": "https://floatui.com",
+      "catalog_url": "https://floatui.com/components",
+      "entry_count": 198,
+      "license_summary": "Custom Float UI license (not MIT/OSI; commercial end products allowed)",
+      "granularity": "complete (192 components)",
+      "file": "sources/floatui.json"
+    },
+    {
+      "source_id": "flowbite",
+      "source_name": "Flowbite",
+      "source_url": "https://flowbite.com",
+      "catalog_url": "https://flowbite.com/docs/getting-started/introduction/",
+      "entry_count": 44,
+      "license_summary": "MIT (open-source components); Flowbite Pro blocks/templates and part of Flowbite Blocks are paid",
+      "granularity": "components of the open-source Flowbite docs (docs URLs verified)",
+      "file": "sources/flowbite.json"
+    },
+    {
+      "source_id": "headlessui",
+      "source_name": "Headless UI",
+      "source_url": "https://headlessui.com",
+      "catalog_url": "https://headlessui.com/react/menu",
+      "entry_count": 16,
+      "license_summary": "MIT",
+      "granularity": "public components of @headlessui/react (docs URLs verified)",
+      "file": "sources/headlessui.json"
+    },
+    {
+      "source_id": "hover",
+      "source_name": "Hover.dev",
+      "source_url": "https://www.hover.dev",
+      "catalog_url": "https://www.hover.dev/components",
+      "entry_count": 53,
+      "license_summary": "Proprietary custom license (free tier commercially usable, no attribution)",
+      "granularity": "complete free set only (58 free of 153; paid requires Pro)",
+      "file": "sources/hover.json"
+    },
+    {
+      "source_id": "hyperui",
+      "source_name": "HyperUI",
+      "source_url": "https://www.hyperui.dev",
+      "catalog_url": "https://www.hyperui.dev",
+      "entry_count": 266,
+      "license_summary": "MIT",
+      "granularity": "curated: top 5 per category (540 total in source)",
+      "file": "sources/hyperui.json"
+    },
+    {
+      "source_id": "kiboui",
+      "source_name": "Kibo UI",
+      "source_url": "https://www.kibo-ui.com",
+      "catalog_url": "https://www.kibo-ui.com/components",
+      "entry_count": 40,
+      "license_summary": "MIT (verified from the shadcnblocks/kibo repo license.md)",
+      "granularity": "complete (all registry:ui items)",
+      "file": "sources/kiboui.json"
+    },
+    {
+      "source_id": "magicui",
+      "source_name": "Magic UI",
+      "source_url": "https://magicui.design",
+      "catalog_url": "https://magicui.design/docs/components",
+      "entry_count": 78,
+      "license_summary": "MIT (components); Pro templates have a separate license",
+      "granularity": "complete (all registry:ui items)",
+      "file": "sources/magicui.json"
+    },
+    {
+      "source_id": "mantine",
+      "source_name": "Mantine",
+      "source_url": "https://mantine.dev",
+      "catalog_url": "https://mantine.dev/core/getting-started/",
+      "entry_count": 108,
+      "license_summary": "MIT",
+      "granularity": "complete (components of @mantine/core)",
+      "file": "sources/mantine.json"
+    },
+    {
+      "source_id": "mantineui",
+      "source_name": "Mantine UI",
+      "source_url": "https://ui.mantine.dev",
+      "catalog_url": "https://ui.mantine.dev",
+      "entry_count": 24,
+      "license_summary": "MIT",
+      "granularity": "one entry per category (about 120 variants inside)",
+      "file": "sources/mantineui.json"
+    },
+    {
+      "source_id": "motionprimitives",
+      "source_name": "Motion Primitives",
+      "source_url": "https://motion-primitives.com",
+      "catalog_url": "https://motion-primitives.com/docs",
+      "entry_count": 33,
+      "license_summary": "MIT (core); Pro sections have a separate paid license",
+      "granularity": "complete (33 components)",
+      "file": "sources/motionprimitives.json"
+    },
+    {
+      "source_id": "mui",
+      "source_name": "Material UI",
+      "source_url": "https://mui.com/material-ui/",
+      "catalog_url": "https://mui.com/material-ui/all-components/",
+      "entry_count": 57,
+      "license_summary": "MIT (core); MUI X Pro/Premium and templates are paid",
+      "granularity": "main components of @mui/material (sub-parts folded into their parent, docs URLs verified)",
+      "file": "sources/mui.json"
+    },
+    {
+      "source_id": "preline",
+      "source_name": "Preline UI",
+      "source_url": "https://preline.co",
+      "catalog_url": "https://preline.co/docs/components.html",
+      "entry_count": 85,
+      "license_summary": "MIT + Preline UI Fair Use License (dual)",
+      "granularity": "complete at page level (component docs pages with variant headings)",
+      "file": "sources/preline.json"
+    },
+    {
+      "source_id": "radix",
+      "source_name": "Radix Primitives",
+      "source_url": "https://www.radix-ui.com/primitives",
+      "catalog_url": "https://www.radix-ui.com/primitives/docs/overview/introduction",
+      "entry_count": 30,
+      "license_summary": "MIT",
+      "granularity": "public primitives of Radix (docs URLs verified)",
+      "file": "sources/radix.json"
+    },
+    {
+      "source_id": "reactaria",
+      "source_name": "React Aria Components",
+      "source_url": "https://react-spectrum.adobe.com/react-aria/",
+      "catalog_url": "https://react-spectrum.adobe.com/react-aria/components.html",
+      "entry_count": 51,
+      "license_summary": "Apache-2.0",
+      "granularity": "complete (react-aria-components source files)",
+      "file": "sources/reactaria.json"
+    },
+    {
+      "source_id": "reactbits",
+      "source_name": "React Bits",
+      "source_url": "https://reactbits.dev",
+      "catalog_url": "https://reactbits.dev",
+      "entry_count": 213,
+      "license_summary": "MIT + Commons Clause (use in products; no resale of the components)",
+      "granularity": "complete (one entry per component, TS + Tailwind variant)",
+      "file": "sources/reactbits.json"
+    },
+    {
+      "source_id": "resources",
+      "source_name": "Curated resources",
+      "source_url": "https://github.com/urben88/ai-frontend-guide-kit",
+      "catalog_url": "https://github.com/urben88/ai-frontend-guide-kit",
+      "entry_count": 11,
+      "license_summary": "Per resource: icon sets MIT/ISC, illustrations with custom terms, paid kits proprietary. See each entry.",
+      "granularity": "curated: icon sets, illustrations, design-tool libraries and paid UI kits (reference level)",
+      "file": "sources/resources.json"
+    },
+    {
+      "source_id": "shadcn",
+      "source_name": "shadcn/ui",
+      "source_url": "https://ui.shadcn.com",
+      "catalog_url": "https://ui.shadcn.com/docs/components",
+      "entry_count": 160,
+      "license_summary": "MIT",
+      "granularity": "complete (registry:ui items + official registry:block items)",
+      "file": "sources/shadcn.json"
+    },
+    {
+      "source_id": "shadcnsvelte",
+      "source_name": "shadcn-svelte",
+      "source_url": "https://shadcn-svelte.com",
+      "catalog_url": "https://shadcn-svelte.com/docs/components",
+      "entry_count": 203,
+      "license_summary": "MIT",
+      "granularity": "complete (registry:ui + registry:block)",
+      "file": "sources/shadcnsvelte.json"
+    },
+    {
+      "source_id": "shadcnvue",
+      "source_name": "shadcn-vue",
+      "source_url": "https://www.shadcn-vue.com",
+      "catalog_url": "https://www.shadcn-vue.com/docs/components",
+      "entry_count": 66,
+      "license_summary": "MIT",
+      "granularity": "complete (registry:ui)",
+      "file": "sources/shadcnvue.json"
+    },
+    {
+      "source_id": "tailblocks",
+      "source_name": "Tailblocks",
+      "source_url": "https://github.com/mertJF/tailblocks",
+      "catalog_url": "https://tailblocks.cc",
+      "entry_count": 63,
+      "license_summary": "MIT",
+      "granularity": "complete (all 63 free blocks)",
+      "file": "sources/tailblocks.json"
+    },
+    {
+      "source_id": "uiverse",
+      "source_name": "Uiverse",
+      "source_url": "https://uiverse.io",
+      "catalog_url": "https://uiverse.io/elements",
+      "entry_count": 300,
+      "license_summary": "MIT (all community elements; author copyright notices apply)",
+      "granularity": "curated: top 30 per category across 10 categories (~4.268 elements upstream)",
+      "file": "sources/uiverse.json"
+    }
+  ]
+}

@@ -1,0 +1,2969 @@
+{
+  "schema_version": "1.0",
+  "source_id": "magicui",
+  "source_name": "Magic UI",
+  "source_url": "https://magicui.design",
+  "catalog_url": "https://magicui.design/docs/components",
+  "license_summary": "MIT (components); Pro templates have a separate license",
+  "granularity": "complete (all registry:ui items)",
+  "extraction": {
+    "channel": "registry-json",
+    "method": "Node script downloading the official shadcn registry",
+    "evidence_url": "https://magicui.design/r/registry.json"
+  },
+  "generated_at": "2026-10-02",
+  "entries": [
+    {
+      "id": "magicui-backgrounds-effects-animated-beam",
+      "name": "Magic UI Animated Beam",
+      "source": "Magic UI",
+      "entry_type": "component",
+      "category": "backgrounds-effects",
+      "description": "An animated beam of light which travels along a path. Useful for showcasing the integration features of a website.",
+      "use_case": "Add decorative depth to a section; use sparingly (1â€“2 per view).",
+      "search_tags": [
+        "magicui",
+        "animated",
+        "beam",
+        "backgrounds-effects",
+        "magic-ui"
+      ],
+      "docs_url": "https://magicui.design/docs/components/animated-beam",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Requires Motion; see 08-PHILOSOPHY for animation limits"
+      ],
+      "registry_url": "https://magicui.design/r/animated-beam.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @magicui/animated-beam",
+      "manual_steps": [
+        "Or copy the source from https://magicui.design/docs/components/animated-beam"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "magicui-backgrounds-effects-animated-grid-pattern",
+      "name": "Magic UI Animated Grid Pattern",
+      "source": "Magic UI",
+      "entry_type": "component",
+      "category": "backgrounds-effects",
+      "description": "A animated background grid pattern made with SVGs, fully customizable using Tailwind CSS.",
+      "use_case": "Add decorative depth to a section; use sparingly (1â€“2 per view).",
+      "search_tags": [
+        "magicui",
+        "animated",
+        "grid",
+        "pattern",
+        "backgrounds-effects",
+        "magic-ui"
+      ],
+      "docs_url": "https://magicui.design/docs/components/animated-grid-pattern",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Requires Motion; see 08-PHILOSOPHY for animation limits"
+      ],
+      "registry_url": "https://magicui.design/r/animated-grid-pattern.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @magicui/animated-grid-pattern",
+      "manual_steps": [
+        "Or copy the source from https://magicui.design/docs/components/animated-grid-pattern"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "magicui-backgrounds-effects-border-beam",
+      "name": "Magic UI Border Beam",
+      "source": "Magic UI",
+      "entry_type": "component",
+      "category": "backgrounds-effects",
+      "description": "An animated beam of light which travels along the border of its container.",
+      "use_case": "Add decorative depth to a section; use sparingly (1â€“2 per view).",
+      "search_tags": [
+        "magicui",
+        "border",
+        "beam",
+        "backgrounds-effects",
+        "magic-ui"
+      ],
+      "docs_url": "https://magicui.design/docs/components/border-beam",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Requires Motion; see 08-PHILOSOPHY for animation limits"
+      ],
+      "registry_url": "https://magicui.design/r/border-beam.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @magicui/border-beam",
+      "manual_steps": [
+        "Or copy the source from https://magicui.design/docs/components/border-beam"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "magicui-backgrounds-effects-dot-pattern",
+      "name": "Magic UI Dot Pattern",
+      "source": "Magic UI",
+      "entry_type": "component",
+      "category": "backgrounds-effects",
+      "description": "A background dot pattern made with SVGs, fully customizable using Tailwind CSS.",
+      "use_case": "Add decorative depth to a section; use sparingly (1â€“2 per view).",
+      "search_tags": [
+        "magicui",
+        "dot",
+        "pattern",
+        "backgrounds-effects",
+        "magic-ui"
+      ],
+      "docs_url": "https://magicui.design/docs/components/dot-pattern",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Requires Motion; see 08-PHILOSOPHY for animation limits"
+      ],
+      "registry_url": "https://magicui.design/r/dot-pattern.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @magicui/dot-pattern",
+      "manual_steps": [
+        "Or copy the source from https://magicui.design/docs/components/dot-pattern"
+      ],
+      "quality": 93
+    },
+    {
+      "id": "magicui-backgrounds-effects-flickering-grid",
+      "name": "Magic UI Flickering Grid",
+      "source": "Magic UI",
+      "entry_type": "component",
+      "category": "backgrounds-effects",
+      "description": "A flickering grid background made with SVGs, fully customizable using Tailwind CSS.",
+      "use_case": "Add decorative depth to a section; use sparingly (1â€“2 per view).",
+      "search_tags": [
+        "magicui",
+        "flickering",
+        "grid",
+        "backgrounds-effects",
+        "magic-ui"
+      ],
+      "docs_url": "https://magicui.design/docs/components/flickering-grid",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Requires Motion; see 08-PHILOSOPHY for animation limits"
+      ],
+      "registry_url": "https://magicui.design/r/flickering-grid.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @magicui/flickering-grid",
+      "manual_steps": [
+        "Or copy the source from https://magicui.design/docs/components/flickering-grid"
+      ],
+      "quality": 93
+    },
+    {
+      "id": "magicui-backgrounds-effects-floating-3d-particles",
+      "name": "Magic UI Floating 3D Particles",
+      "source": "Magic UI",
+      "entry_type": "component",
+      "category": "backgrounds-effects",
+      "description": "A canvas-based pseudo-3D particle field with perspective projection, continuous rotation and buoyant drift.",
+      "use_case": "Add decorative depth to a section; use sparingly (1â€“2 per view).",
+      "search_tags": [
+        "magicui",
+        "floating",
+        "3d",
+        "particles",
+        "backgrounds-effects",
+        "magic-ui"
+      ],
+      "docs_url": "https://magicui.design/docs/components/floating-3d-particles",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Requires Motion; see 08-PHILOSOPHY for animation limits"
+      ],
+      "registry_url": "https://magicui.design/r/floating-3d-particles.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @magicui/floating-3d-particles",
+      "manual_steps": [
+        "Or copy the source from https://magicui.design/docs/components/floating-3d-particles"
+      ],
+      "quality": 93
+    },
+    {
+      "id": "magicui-backgrounds-effects-grid-pattern",
+      "name": "Magic UI Grid Pattern",
+      "source": "Magic UI",
+      "entry_type": "component",
+      "category": "backgrounds-effects",
+      "description": "A background grid pattern made with SVGs, fully customizable using Tailwind CSS.",
+      "use_case": "Add decorative depth to a section; use sparingly (1â€“2 per view).",
+      "search_tags": [
+        "magicui",
+        "grid",
+        "pattern",
+        "backgrounds-effects",
+        "magic-ui"
+      ],
+      "docs_url": "https://magicui.design/docs/components/grid-pattern",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Requires Motion; see 08-PHILOSOPHY for animation limits"
+      ],
+      "registry_url": "https://magicui.design/r/grid-pattern.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @magicui/grid-pattern",
+      "manual_steps": [
+        "Or copy the source from https://magicui.design/docs/components/grid-pattern"
+      ],
+      "quality": 93
+    },
+    {
+      "id": "magicui-backgrounds-effects-interactive-grid-pattern",
+      "name": "Magic UI Interactive Grid Pattern",
+      "source": "Magic UI",
+      "entry_type": "component",
+      "category": "backgrounds-effects",
+      "description": "A interactive background grid pattern made with SVGs, fully customizable using Tailwind CSS.",
+      "use_case": "Add decorative depth to a section; use sparingly (1â€“2 per view).",
+      "search_tags": [
+        "magicui",
+        "interactive",
+        "grid",
+        "pattern",
+        "backgrounds-effects",
+        "magic-ui"
+      ],
+      "docs_url": "https://magicui.design/docs/components/interactive-grid-pattern",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Requires Motion; see 08-PHILOSOPHY for animation limits"
+      ],
+      "registry_url": "https://magicui.design/r/interactive-grid-pattern.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @magicui/interactive-grid-pattern",
+      "manual_steps": [
+        "Or copy the source from https://magicui.design/docs/components/interactive-grid-pattern"
+      ],
+      "quality": 93
+    },
+    {
+      "id": "magicui-backgrounds-effects-light-rays",
+      "name": "Magic UI Light Rays",
+      "source": "Magic UI",
+      "entry_type": "component",
+      "category": "backgrounds-effects",
+      "description": "A component with animated light rays which shine down from above.",
+      "use_case": "Add decorative depth to a section; use sparingly (1â€“2 per view).",
+      "search_tags": [
+        "magicui",
+        "light",
+        "rays",
+        "backgrounds-effects",
+        "magic-ui"
+      ],
+      "docs_url": "https://magicui.design/docs/components/light-rays",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Requires Motion; see 08-PHILOSOPHY for animation limits"
+      ],
+      "registry_url": "https://magicui.design/r/light-rays.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @magicui/light-rays",
+      "manual_steps": [
+        "Or copy the source from https://magicui.design/docs/components/light-rays"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "magicui-backgrounds-effects-meteors",
+      "name": "Magic UI Meteors",
+      "source": "Magic UI",
+      "entry_type": "component",
+      "category": "backgrounds-effects",
+      "description": "A meteor shower effect.",
+      "use_case": "Add decorative depth to a section; use sparingly (1â€“2 per view).",
+      "search_tags": [
+        "magicui",
+        "meteors",
+        "backgrounds-effects",
+        "magic-ui"
+      ],
+      "docs_url": "https://magicui.design/docs/components/meteors",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Requires Motion; see 08-PHILOSOPHY for animation limits"
+      ],
+      "registry_url": "https://magicui.design/r/meteors.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @magicui/meteors",
+      "manual_steps": [
+        "Or copy the source from https://magicui.design/docs/components/meteors"
+      ],
+      "quality": 88
+    },
+    {
+      "id": "magicui-backgrounds-effects-orbiting-circles",
+      "name": "Magic UI Orbiting Circles",
+      "source": "Magic UI",
+      "entry_type": "component",
+      "category": "backgrounds-effects",
+      "description": "A collection of circles which move in orbit along a circular path",
+      "use_case": "Add decorative depth to a section; use sparingly (1â€“2 per view).",
+      "search_tags": [
+        "magicui",
+        "orbiting",
+        "circles",
+        "backgrounds-effects",
+        "magic-ui"
+      ],
+      "docs_url": "https://magicui.design/docs/components/orbiting-circles",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Requires Motion; see 08-PHILOSOPHY for animation limits"
+      ],
+      "registry_url": "https://magicui.design/r/orbiting-circles.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @magicui/orbiting-circles",
+      "manual_steps": [
+        "Or copy the source from https://magicui.design/docs/components/orbiting-circles"
+      ],
+      "quality": 93
+    },
+    {
+      "id": "magicui-backgrounds-effects-particles",
+      "name": "Magic UI Particles",
+      "source": "Magic UI",
+      "entry_type": "component",
+      "category": "backgrounds-effects",
+      "description": "Particles are a fun way to add some visual flair to your website. They can be used to create a sense of depth, movement, and interactivity.",
+      "use_case": "Add decorative depth to a section; use sparingly (1â€“2 per view).",
+      "search_tags": [
+        "magicui",
+        "particles",
+        "backgrounds-effects",
+        "magic-ui"
+      ],
+      "docs_url": "https://magicui.design/docs/components/particles",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Requires Motion; see 08-PHILOSOPHY for animation limits"
+      ],
+      "registry_url": "https://magicui.design/r/particles.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @magicui/particles",
+      "manual_steps": [
+        "Or copy the source from https://magicui.design/docs/components/particles"
+      ],
+      "quality": 93
+    },
+    {
+      "id": "magicui-backgrounds-effects-retro-grid",
+      "name": "Magic UI Retro Grid",
+      "source": "Magic UI",
+      "entry_type": "component",
+      "category": "backgrounds-effects",
+      "description": "An animated scrolling retro grid effect",
+      "use_case": "Add decorative depth to a section; use sparingly (1â€“2 per view).",
+      "search_tags": [
+        "magicui",
+        "retro",
+        "grid",
+        "backgrounds-effects",
+        "magic-ui"
+      ],
+      "docs_url": "https://magicui.design/docs/components/retro-grid",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Requires Motion; see 08-PHILOSOPHY for animation limits"
+      ],
+      "registry_url": "https://magicui.design/r/retro-grid.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @magicui/retro-grid",
+      "manual_steps": [
+        "Or copy the source from https://magicui.design/docs/components/retro-grid"
+      ],
+      "quality": 88
+    },
+    {
+      "id": "magicui-backgrounds-effects-striped-pattern",
+      "name": "Magic UI Striped Pattern",
+      "source": "Magic UI",
+      "entry_type": "component",
+      "category": "backgrounds-effects",
+      "description": "A background striped pattern made with SVGs, fully customizable using Tailwind CSS.",
+      "use_case": "Add decorative depth to a section; use sparingly (1â€“2 per view).",
+      "search_tags": [
+        "magicui",
+        "striped",
+        "pattern",
+        "backgrounds-effects",
+        "magic-ui"
+      ],
+      "docs_url": "https://magicui.design/docs/components/striped-pattern",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Requires Motion; see 08-PHILOSOPHY for animation limits"
+      ],
+      "registry_url": "https://magicui.design/r/striped-pattern.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @magicui/striped-pattern",
+      "manual_steps": [
+        "Or copy the source from https://magicui.design/docs/components/striped-pattern"
+      ],
+      "quality": 93
+    },
+    {
+      "id": "magicui-backgrounds-effects-warp-background",
+      "name": "Magic UI Warp Background",
+      "source": "Magic UI",
+      "entry_type": "component",
+      "category": "backgrounds-effects",
+      "description": "A card with a time warping background effect.",
+      "use_case": "Add decorative depth to a section; use sparingly (1â€“2 per view).",
+      "search_tags": [
+        "magicui",
+        "warp",
+        "background",
+        "backgrounds-effects",
+        "magic-ui"
+      ],
+      "docs_url": "https://magicui.design/docs/components/warp-background",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Requires Motion; see 08-PHILOSOPHY for animation limits"
+      ],
+      "registry_url": "https://magicui.design/r/warp-background.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @magicui/warp-background",
+      "manual_steps": [
+        "Or copy the source from https://magicui.design/docs/components/warp-background"
+      ],
+      "quality": 85
+    },
+    {
+      "id": "magicui-data-display-avatar-circles",
+      "name": "Magic UI Avatar Circles",
+      "source": "Magic UI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Overlapping circles of avatars.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "magicui",
+        "avatar",
+        "circles",
+        "data-display",
+        "magic-ui"
+      ],
+      "docs_url": "https://magicui.design/docs/components/avatar-circles",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Requires Motion; see 08-PHILOSOPHY for animation limits"
+      ],
+      "registry_url": "https://magicui.design/r/avatar-circles.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @magicui/avatar-circles",
+      "manual_steps": [
+        "Or copy the source from https://magicui.design/docs/components/avatar-circles"
+      ],
+      "quality": 88
+    },
+    {
+      "id": "magicui-features-bento-grid",
+      "name": "Magic UI Bento Grid",
+      "source": "Magic UI",
+      "entry_type": "block",
+      "category": "features",
+      "description": "Bento grid is a layout used to showcase the features of a product in a simple and elegant way.",
+      "use_case": "Explain product capabilities with structured, scannable sections.",
+      "search_tags": [
+        "magicui",
+        "bento",
+        "grid",
+        "features",
+        "magic-ui"
+      ],
+      "docs_url": "https://magicui.design/docs/components/bento-grid",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "@radix-ui/react-icons"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Requires Motion; see 08-PHILOSOPHY for animation limits"
+      ],
+      "registry_url": "https://magicui.design/r/bento-grid.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @magicui/bento-grid",
+      "manual_steps": [
+        "Or copy the source from https://magicui.design/docs/components/bento-grid"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "magicui-feedback-animated-circular-progress-bar",
+      "name": "Magic UI Animated Circular Progress Bar",
+      "source": "Magic UI",
+      "entry_type": "component",
+      "category": "feedback",
+      "description": "Animated Circular Progress Bar is a component that displays a circular gauge with a percentage value.",
+      "use_case": "Communicate system status: alerts, loaders, progress and notifications.",
+      "search_tags": [
+        "magicui",
+        "animated",
+        "circular",
+        "progress",
+        "bar",
+        "feedback",
+        "magic-ui"
+      ],
+      "docs_url": "https://magicui.design/docs/components/animated-circular-progress-bar",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Requires Motion; see 08-PHILOSOPHY for animation limits"
+      ],
+      "registry_url": "https://magicui.design/r/animated-circular-progress-bar.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @magicui/animated-circular-progress-bar",
+      "manual_steps": [
+        "Or copy the source from https://magicui.design/docs/components/animated-circular-progress-bar"
+      ],
+      "quality": 93
+    },
+    {
+      "id": "magicui-feedback-scroll-progress",
+      "name": "Magic UI Scroll Progress",
+      "source": "Magic UI",
+      "entry_type": "component",
+      "category": "feedback",
+      "description": "Animated Scroll Progress for your pages",
+      "use_case": "Communicate system status: alerts, loaders, progress and notifications.",
+      "search_tags": [
+        "magicui",
+        "scroll",
+        "progress",
+        "feedback",
+        "magic-ui"
+      ],
+      "docs_url": "https://magicui.design/docs/components/scroll-progress",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Requires Motion; see 08-PHILOSOPHY for animation limits"
+      ],
+      "registry_url": "https://magicui.design/r/scroll-progress.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @magicui/scroll-progress",
+      "manual_steps": [
+        "Or copy the source from https://magicui.design/docs/components/scroll-progress"
+      ],
+      "quality": 85
+    },
+    {
+      "id": "magicui-media-android",
+      "name": "Magic UI Android",
+      "source": "Magic UI",
+      "entry_type": "component",
+      "category": "media",
+      "description": "A mockup of an Android device.",
+      "use_case": "Display images, video, carousels and device mockups.",
+      "search_tags": [
+        "magicui",
+        "android",
+        "media",
+        "magic-ui"
+      ],
+      "docs_url": "https://magicui.design/docs/components/android",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Requires Motion; see 08-PHILOSOPHY for animation limits"
+      ],
+      "registry_url": "https://magicui.design/r/android.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @magicui/android",
+      "manual_steps": [
+        "Or copy the source from https://magicui.design/docs/components/android"
+      ],
+      "quality": 88
+    },
+    {
+      "id": "magicui-media-file-tree",
+      "name": "Magic UI File Tree",
+      "source": "Magic UI",
+      "entry_type": "component",
+      "category": "media",
+      "description": "A component used to showcase the folder and file structure of a directory.",
+      "use_case": "Display images, video, carousels and device mockups.",
+      "search_tags": [
+        "magicui",
+        "file",
+        "tree",
+        "media",
+        "magic-ui"
+      ],
+      "docs_url": "https://magicui.design/docs/components/file-tree",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Requires Motion; see 08-PHILOSOPHY for animation limits"
+      ],
+      "registry_url": "https://magicui.design/r/file-tree.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @magicui/file-tree",
+      "manual_steps": [
+        "Or copy the source from https://magicui.design/docs/components/file-tree"
+      ],
+      "quality": 93
+    },
+    {
+      "id": "magicui-media-globe",
+      "name": "Magic UI Globe",
+      "source": "Magic UI",
+      "entry_type": "component",
+      "category": "media",
+      "description": "An autorotating, interactive, and highly performant globe made using WebGL.",
+      "use_case": "Display images, video, carousels and device mockups.",
+      "search_tags": [
+        "magicui",
+        "globe",
+        "media",
+        "magic-ui"
+      ],
+      "docs_url": "https://magicui.design/docs/components/globe",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "cobe@^0.6.4",
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Requires Motion; see 08-PHILOSOPHY for animation limits"
+      ],
+      "registry_url": "https://magicui.design/r/globe.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @magicui/globe",
+      "manual_steps": [
+        "Or copy the source from https://magicui.design/docs/components/globe"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "magicui-media-hero-video-dialog",
+      "name": "Magic UI Hero Video Dialog",
+      "source": "Magic UI",
+      "entry_type": "block",
+      "category": "media",
+      "description": "A hero video dialog component.",
+      "use_case": "Display images, video, carousels and device mockups.",
+      "search_tags": [
+        "magicui",
+        "hero",
+        "video",
+        "dialog",
+        "media",
+        "magic-ui"
+      ],
+      "docs_url": "https://magicui.design/docs/components/hero-video-dialog",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Requires Motion; see 08-PHILOSOPHY for animation limits"
+      ],
+      "registry_url": "https://magicui.design/r/hero-video-dialog.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @magicui/hero-video-dialog",
+      "manual_steps": [
+        "Or copy the source from https://magicui.design/docs/components/hero-video-dialog"
+      ],
+      "quality": 85
+    },
+    {
+      "id": "magicui-media-icon-cloud",
+      "name": "Magic UI Icon Cloud",
+      "source": "Magic UI",
+      "entry_type": "component",
+      "category": "media",
+      "description": "An interactive 3D tag cloud component",
+      "use_case": "Display images, video, carousels and device mockups.",
+      "search_tags": [
+        "magicui",
+        "icon",
+        "cloud",
+        "media",
+        "magic-ui"
+      ],
+      "docs_url": "https://magicui.design/docs/components/icon-cloud",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Requires Motion; see 08-PHILOSOPHY for animation limits"
+      ],
+      "registry_url": "https://magicui.design/r/icon-cloud.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @magicui/icon-cloud",
+      "manual_steps": [
+        "Or copy the source from https://magicui.design/docs/components/icon-cloud"
+      ],
+      "quality": 85
+    },
+    {
+      "id": "magicui-media-iphone",
+      "name": "Magic UI iPhone",
+      "source": "Magic UI",
+      "entry_type": "component",
+      "category": "media",
+      "description": "A mockup of the iPhone",
+      "use_case": "Display images, video, carousels and device mockups.",
+      "search_tags": [
+        "magicui",
+        "iphone",
+        "media",
+        "magic-ui"
+      ],
+      "docs_url": "https://magicui.design/docs/components/iphone",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Requires Motion; see 08-PHILOSOPHY for animation limits"
+      ],
+      "registry_url": "https://magicui.design/r/iphone.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @magicui/iphone",
+      "manual_steps": [
+        "Or copy the source from https://magicui.design/docs/components/iphone"
+      ],
+      "quality": 88
+    },
+    {
+      "id": "magicui-media-lens",
+      "name": "Magic UI Lens",
+      "source": "Magic UI",
+      "entry_type": "component",
+      "category": "media",
+      "description": "A interactive component that enables zooming into images, videos and other elements.",
+      "use_case": "Display images, video, carousels and device mockups.",
+      "search_tags": [
+        "magicui",
+        "lens",
+        "media",
+        "magic-ui"
+      ],
+      "docs_url": "https://magicui.design/docs/components/lens",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Requires Motion; see 08-PHILOSOPHY for animation limits"
+      ],
+      "registry_url": "https://magicui.design/r/lens.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @magicui/lens",
+      "manual_steps": [
+        "Or copy the source from https://magicui.design/docs/components/lens"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "magicui-media-safari",
+      "name": "Magic UI Safari",
+      "source": "Magic UI",
+      "entry_type": "component",
+      "category": "media",
+      "description": "A safari browser mockup to showcase your website.",
+      "use_case": "Display images, video, carousels and device mockups.",
+      "search_tags": [
+        "magicui",
+        "safari",
+        "media",
+        "magic-ui"
+      ],
+      "docs_url": "https://magicui.design/docs/components/safari",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Requires Motion; see 08-PHILOSOPHY for animation limits"
+      ],
+      "registry_url": "https://magicui.design/r/safari.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @magicui/safari",
+      "manual_steps": [
+        "Or copy the source from https://magicui.design/docs/components/safari"
+      ],
+      "quality": 88
+    },
+    {
+      "id": "magicui-media-terminal",
+      "name": "Magic UI Terminal",
+      "source": "Magic UI",
+      "entry_type": "component",
+      "category": "media",
+      "description": "A terminal component",
+      "use_case": "Display images, video, carousels and device mockups.",
+      "search_tags": [
+        "magicui",
+        "terminal",
+        "media",
+        "magic-ui"
+      ],
+      "docs_url": "https://magicui.design/docs/components/terminal",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Requires Motion; see 08-PHILOSOPHY for animation limits"
+      ],
+      "registry_url": "https://magicui.design/r/terminal.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @magicui/terminal",
+      "manual_steps": [
+        "Or copy the source from https://magicui.design/docs/components/terminal"
+      ],
+      "quality": 88
+    },
+    {
+      "id": "magicui-micro-interactions-animated-list",
+      "name": "Magic UI Animated List",
+      "source": "Magic UI",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "A list that animates each item in sequence with a delay. Used to showcase notifications or events on your landing page.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "magicui",
+        "animated",
+        "list",
+        "micro-interactions",
+        "magic-ui"
+      ],
+      "docs_url": "https://magicui.design/docs/components/animated-list",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Requires Motion; see 08-PHILOSOPHY for animation limits"
+      ],
+      "registry_url": "https://magicui.design/r/animated-list.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @magicui/animated-list",
+      "manual_steps": [
+        "Or copy the source from https://magicui.design/docs/components/animated-list"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "magicui-micro-interactions-animated-theme-toggler",
+      "name": "Magic UI Theme Toggler",
+      "source": "Magic UI",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "Theme toggle with View Transitions and animated clip-path masks (circle, polygons, star), optional viewport-centered origin.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "magicui",
+        "theme",
+        "toggler",
+        "micro-interactions",
+        "magic-ui"
+      ],
+      "docs_url": "https://magicui.design/docs/components/animated-theme-toggler",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Requires Motion; see 08-PHILOSOPHY for animation limits"
+      ],
+      "registry_url": "https://magicui.design/r/animated-theme-toggler.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @magicui/animated-theme-toggler",
+      "manual_steps": [
+        "Or copy the source from https://magicui.design/docs/components/animated-theme-toggler"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "magicui-micro-interactions-backlight",
+      "name": "Magic UI Backlight",
+      "source": "Magic UI",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "A backlight glow effect for videos, images, and SVGs.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "magicui",
+        "backlight",
+        "micro-interactions",
+        "magic-ui"
+      ],
+      "docs_url": "https://magicui.design/docs/components/backlight",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Requires Motion; see 08-PHILOSOPHY for animation limits"
+      ],
+      "registry_url": "https://magicui.design/r/backlight.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @magicui/backlight",
+      "manual_steps": [
+        "Or copy the source from https://magicui.design/docs/components/backlight"
+      ],
+      "quality": 88
+    },
+    {
+      "id": "magicui-micro-interactions-blur-fade",
+      "name": "Magic UI Blur Fade",
+      "source": "Magic UI",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "Blur fade in and out animation. Used to smoothly fade in and out content.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "magicui",
+        "blur",
+        "fade",
+        "micro-interactions",
+        "magic-ui"
+      ],
+      "docs_url": "https://magicui.design/docs/components/blur-fade",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Requires Motion; see 08-PHILOSOPHY for animation limits"
+      ],
+      "registry_url": "https://magicui.design/r/blur-fade.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @magicui/blur-fade",
+      "manual_steps": [
+        "Or copy the source from https://magicui.design/docs/components/blur-fade"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "magicui-micro-interactions-client-tweet-card",
+      "name": "Magic UI Client Tweet Card",
+      "source": "Magic UI",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "A client-side version of the tweet card that displays a tweet with the author's name, handle, and profile picture.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "magicui",
+        "client",
+        "tweet",
+        "card",
+        "micro-interactions",
+        "magic-ui"
+      ],
+      "docs_url": "https://magicui.design/docs/components/client-tweet-card",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "react-tweet"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Requires Motion; see 08-PHILOSOPHY for animation limits"
+      ],
+      "registry_url": "https://magicui.design/r/client-tweet-card.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @magicui/client-tweet-card",
+      "manual_steps": [
+        "Or copy the source from https://magicui.design/docs/components/client-tweet-card"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "magicui-micro-interactions-code-comparison",
+      "name": "Magic UI Code Comparison",
+      "source": "Magic UI",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "A component which compares two code snippets.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "magicui",
+        "code",
+        "comparison",
+        "micro-interactions",
+        "magic-ui"
+      ],
+      "docs_url": "https://magicui.design/docs/components/code-comparison",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "shiki",
+        "next-themes"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Requires Motion; see 08-PHILOSOPHY for animation limits"
+      ],
+      "registry_url": "https://magicui.design/r/code-comparison.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @magicui/code-comparison",
+      "manual_steps": [
+        "Or copy the source from https://magicui.design/docs/components/code-comparison"
+      ],
+      "quality": 85
+    },
+    {
+      "id": "magicui-micro-interactions-confetti",
+      "name": "Magic UI Confetti",
+      "source": "Magic UI",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "Confetti animations are best used to delight your users when something special happens",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "magicui",
+        "confetti",
+        "micro-interactions",
+        "magic-ui"
+      ],
+      "docs_url": "https://magicui.design/docs/components/confetti",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "canvas-confetti",
+        "@types/canvas-confetti"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Requires Motion; see 08-PHILOSOPHY for animation limits"
+      ],
+      "registry_url": "https://magicui.design/r/confetti.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @magicui/confetti",
+      "manual_steps": [
+        "Or copy the source from https://magicui.design/docs/components/confetti"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "magicui-micro-interactions-cool-mode",
+      "name": "Magic UI Cool Mode",
+      "source": "Magic UI",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "Cool mode effect for buttons, links, and other DOMs",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "magicui",
+        "cool",
+        "mode",
+        "micro-interactions",
+        "magic-ui"
+      ],
+      "docs_url": "https://magicui.design/docs/components/cool-mode",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Requires Motion; see 08-PHILOSOPHY for animation limits"
+      ],
+      "registry_url": "https://magicui.design/r/cool-mode.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @magicui/cool-mode",
+      "manual_steps": [
+        "Or copy the source from https://magicui.design/docs/components/cool-mode"
+      ],
+      "quality": 88
+    },
+    {
+      "id": "magicui-micro-interactions-dock",
+      "name": "Magic UI Dock",
+      "source": "Magic UI",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "An implementation of the MacOS dock using react + tailwindcss + motion",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "magicui",
+        "dock",
+        "micro-interactions",
+        "magic-ui"
+      ],
+      "docs_url": "https://magicui.design/docs/components/dock",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Requires Motion; see 08-PHILOSOPHY for animation limits"
+      ],
+      "registry_url": "https://magicui.design/r/dock.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @magicui/dock",
+      "manual_steps": [
+        "Or copy the source from https://magicui.design/docs/components/dock"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "magicui-micro-interactions-dotted-map",
+      "name": "Magic UI Dotted Map",
+      "source": "Magic UI",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "A component with a dotted map.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "magicui",
+        "dotted",
+        "map",
+        "micro-interactions",
+        "magic-ui"
+      ],
+      "docs_url": "https://magicui.design/docs/components/dotted-map",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "svg-dotted-map"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Requires Motion; see 08-PHILOSOPHY for animation limits"
+      ],
+      "registry_url": "https://magicui.design/r/dotted-map.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @magicui/dotted-map",
+      "manual_steps": [
+        "Or copy the source from https://magicui.design/docs/components/dotted-map"
+      ],
+      "quality": 85
+    },
+    {
+      "id": "magicui-micro-interactions-glare-hover",
+      "name": "Magic UI Glare Hover",
+      "source": "Magic UI",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "A diagonal glare on hover using a ::before gradient and CSS variables (angle, size, duration, color).",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "magicui",
+        "glare",
+        "hover",
+        "micro-interactions",
+        "magic-ui"
+      ],
+      "docs_url": "https://magicui.design/docs/components/glare-hover",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Requires Motion; see 08-PHILOSOPHY for animation limits"
+      ],
+      "registry_url": "https://magicui.design/r/glare-hover.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @magicui/glare-hover",
+      "manual_steps": [
+        "Or copy the source from https://magicui.design/docs/components/glare-hover"
+      ],
+      "quality": 93
+    },
+    {
+      "id": "magicui-micro-interactions-glyph-matrix",
+      "name": "Magic UI Glyph Matrix",
+      "source": "Magic UI",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "An animated grid of subtly shifting glyphs with fade effect and theme support.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "magicui",
+        "glyph",
+        "matrix",
+        "micro-interactions",
+        "magic-ui"
+      ],
+      "docs_url": "https://magicui.design/docs/components/glyph-matrix",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Requires Motion; see 08-PHILOSOPHY for animation limits"
+      ],
+      "registry_url": "https://magicui.design/r/glyph-matrix.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @magicui/glyph-matrix",
+      "manual_steps": [
+        "Or copy the source from https://magicui.design/docs/components/glyph-matrix"
+      ],
+      "quality": 93
+    },
+    {
+      "id": "magicui-micro-interactions-hexagon-pattern",
+      "name": "Magic UI Hexagon Pattern",
+      "source": "Magic UI",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "A background hexagon pattern made with SVGs, fully customizable using Tailwind CSS.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "magicui",
+        "hexagon",
+        "pattern",
+        "micro-interactions",
+        "magic-ui"
+      ],
+      "docs_url": "https://magicui.design/docs/components/hexagon-pattern",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Requires Motion; see 08-PHILOSOPHY for animation limits"
+      ],
+      "registry_url": "https://magicui.design/r/hexagon-pattern.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @magicui/hexagon-pattern",
+      "manual_steps": [
+        "Or copy the source from https://magicui.design/docs/components/hexagon-pattern"
+      ],
+      "quality": 93
+    },
+    {
+      "id": "magicui-micro-interactions-highlighter",
+      "name": "Magic UI Highlighter",
+      "source": "Magic UI",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "A text highlighter that mimics the effect of a human-drawn marker stroke.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "magicui",
+        "highlighter",
+        "micro-interactions",
+        "magic-ui"
+      ],
+      "docs_url": "https://magicui.design/docs/components/highlighter",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion",
+        "rough-notation"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Requires Motion; see 08-PHILOSOPHY for animation limits"
+      ],
+      "registry_url": "https://magicui.design/r/highlighter.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @magicui/highlighter",
+      "manual_steps": [
+        "Or copy the source from https://magicui.design/docs/components/highlighter"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "magicui-micro-interactions-interactive-hover-button",
+      "name": "Magic UI Interactive Hover Button",
+      "source": "Magic UI",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "Interactive Hover Button animated component from Magic UI.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "magicui",
+        "interactive",
+        "hover",
+        "button",
+        "micro-interactions",
+        "magic-ui"
+      ],
+      "docs_url": "https://magicui.design/docs/components/interactive-hover-button",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Requires Motion; see 08-PHILOSOPHY for animation limits"
+      ],
+      "registry_url": "https://magicui.design/r/interactive-hover-button.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @magicui/interactive-hover-button",
+      "manual_steps": [
+        "Or copy the source from https://magicui.design/docs/components/interactive-hover-button"
+      ],
+      "quality": 88
+    },
+    {
+      "id": "magicui-micro-interactions-magic-card",
+      "name": "Magic UI Magic Card",
+      "source": "Magic UI",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "A spotlight effect that follows your mouse cursor and highlights borders on hover.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "magicui",
+        "magic",
+        "card",
+        "micro-interactions",
+        "magic-ui"
+      ],
+      "docs_url": "https://magicui.design/docs/components/magic-card",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion",
+        "next-themes"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Requires Motion; see 08-PHILOSOPHY for animation limits"
+      ],
+      "registry_url": "https://magicui.design/r/magic-card.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @magicui/magic-card",
+      "manual_steps": [
+        "Or copy the source from https://magicui.design/docs/components/magic-card"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "magicui-micro-interactions-marquee",
+      "name": "Magic UI Marquee",
+      "source": "Magic UI",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "An infinite scrolling component that can be used to display text, images, or videos.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "magicui",
+        "marquee",
+        "micro-interactions",
+        "magic-ui"
+      ],
+      "docs_url": "https://magicui.design/docs/components/marquee",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Requires Motion; see 08-PHILOSOPHY for animation limits"
+      ],
+      "registry_url": "https://magicui.design/r/marquee.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @magicui/marquee",
+      "manual_steps": [
+        "Or copy the source from https://magicui.design/docs/components/marquee"
+      ],
+      "quality": 93
+    },
+    {
+      "id": "magicui-micro-interactions-neon-gradient-card",
+      "name": "Magic UI Neon Gradient Card",
+      "source": "Magic UI",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "A beautiful neon card effect",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "magicui",
+        "neon",
+        "gradient",
+        "card",
+        "micro-interactions",
+        "magic-ui"
+      ],
+      "docs_url": "https://magicui.design/docs/components/neon-gradient-card",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Requires Motion; see 08-PHILOSOPHY for animation limits"
+      ],
+      "registry_url": "https://magicui.design/r/neon-gradient-card.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @magicui/neon-gradient-card",
+      "manual_steps": [
+        "Or copy the source from https://magicui.design/docs/components/neon-gradient-card"
+      ],
+      "quality": 88
+    },
+    {
+      "id": "magicui-micro-interactions-pixel-image",
+      "name": "Magic UI Pixel Image",
+      "source": "Magic UI",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "A component that displays an image with a pixelated effect, creating a retro aesthetic.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "magicui",
+        "pixel",
+        "image",
+        "micro-interactions",
+        "magic-ui"
+      ],
+      "docs_url": "https://magicui.design/docs/components/pixel-image",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Requires Motion; see 08-PHILOSOPHY for animation limits"
+      ],
+      "registry_url": "https://magicui.design/r/pixel-image.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @magicui/pixel-image",
+      "manual_steps": [
+        "Or copy the source from https://magicui.design/docs/components/pixel-image"
+      ],
+      "quality": 93
+    },
+    {
+      "id": "magicui-micro-interactions-pointer",
+      "name": "Magic UI Pointer",
+      "source": "Magic UI",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "A component that displays a pointer when hovering over an element",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "magicui",
+        "pointer",
+        "micro-interactions",
+        "magic-ui"
+      ],
+      "docs_url": "https://magicui.design/docs/components/pointer",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Requires Motion; see 08-PHILOSOPHY for animation limits"
+      ],
+      "registry_url": "https://magicui.design/r/pointer.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @magicui/pointer",
+      "manual_steps": [
+        "Or copy the source from https://magicui.design/docs/components/pointer"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "magicui-micro-interactions-progressive-blur",
+      "name": "Magic UI Progressive Blur",
+      "source": "Magic UI",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "The Progressive Blur component adds a smooth blur gradient effect to scrollable content, indicating more content below or above.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "magicui",
+        "progressive",
+        "blur",
+        "micro-interactions",
+        "magic-ui"
+      ],
+      "docs_url": "https://magicui.design/docs/components/progressive-blur",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Requires Motion; see 08-PHILOSOPHY for animation limits"
+      ],
+      "registry_url": "https://magicui.design/r/progressive-blur.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @magicui/progressive-blur",
+      "manual_steps": [
+        "Or copy the source from https://magicui.design/docs/components/progressive-blur"
+      ],
+      "quality": 93
+    },
+    {
+      "id": "magicui-micro-interactions-pulsating-button",
+      "name": "Magic UI Pulsating Button",
+      "source": "Magic UI",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "An animated pulsating button useful for capturing attention of users.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "magicui",
+        "pulsating",
+        "button",
+        "micro-interactions",
+        "magic-ui"
+      ],
+      "docs_url": "https://magicui.design/docs/components/pulsating-button",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Requires Motion; see 08-PHILOSOPHY for animation limits"
+      ],
+      "registry_url": "https://magicui.design/r/pulsating-button.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @magicui/pulsating-button",
+      "manual_steps": [
+        "Or copy the source from https://magicui.design/docs/components/pulsating-button"
+      ],
+      "quality": 93
+    },
+    {
+      "id": "magicui-micro-interactions-rainbow-button",
+      "name": "Magic UI Rainbow Button",
+      "source": "Magic UI",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "An animated button with a rainbow effect.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "magicui",
+        "rainbow",
+        "button",
+        "micro-interactions",
+        "magic-ui"
+      ],
+      "docs_url": "https://magicui.design/docs/components/rainbow-button",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Requires Motion; see 08-PHILOSOPHY for animation limits"
+      ],
+      "registry_url": "https://magicui.design/r/rainbow-button.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @magicui/rainbow-button",
+      "manual_steps": [
+        "Or copy the source from https://magicui.design/docs/components/rainbow-button"
+      ],
+      "quality": 88
+    },
+    {
+      "id": "magicui-micro-interactions-ripple",
+      "name": "Magic UI Ripple",
+      "source": "Magic UI",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "An animated ripple effect typically used behind elements to emphasize them.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "magicui",
+        "ripple",
+        "micro-interactions",
+        "magic-ui"
+      ],
+      "docs_url": "https://magicui.design/docs/components/ripple",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Requires Motion; see 08-PHILOSOPHY for animation limits"
+      ],
+      "registry_url": "https://magicui.design/r/ripple.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @magicui/ripple",
+      "manual_steps": [
+        "Or copy the source from https://magicui.design/docs/components/ripple"
+      ],
+      "quality": 93
+    },
+    {
+      "id": "magicui-micro-interactions-ripple-button",
+      "name": "Magic UI Ripple Button",
+      "source": "Magic UI",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "An animated button with ripple useful for user engagement.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "magicui",
+        "ripple",
+        "button",
+        "micro-interactions",
+        "magic-ui"
+      ],
+      "docs_url": "https://magicui.design/docs/components/ripple-button",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Requires Motion; see 08-PHILOSOPHY for animation limits"
+      ],
+      "registry_url": "https://magicui.design/r/ripple-button.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @magicui/ripple-button",
+      "manual_steps": [
+        "Or copy the source from https://magicui.design/docs/components/ripple-button"
+      ],
+      "quality": 88
+    },
+    {
+      "id": "magicui-micro-interactions-shine-border",
+      "name": "Magic UI Shine Border",
+      "source": "Magic UI",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "Shine border is an animated background border effect.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "magicui",
+        "shine",
+        "border",
+        "micro-interactions",
+        "magic-ui"
+      ],
+      "docs_url": "https://magicui.design/docs/components/shine-border",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Requires Motion; see 08-PHILOSOPHY for animation limits"
+      ],
+      "registry_url": "https://magicui.design/r/shine-border.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @magicui/shine-border",
+      "manual_steps": [
+        "Or copy the source from https://magicui.design/docs/components/shine-border"
+      ],
+      "quality": 88
+    },
+    {
+      "id": "magicui-micro-interactions-smooth-cursor",
+      "name": "Magic UI Smooth Cursor",
+      "source": "Magic UI",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "A customizable, physics-based smooth cursor animation component with spring animations and rotation effects",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "magicui",
+        "smooth",
+        "cursor",
+        "micro-interactions",
+        "magic-ui"
+      ],
+      "docs_url": "https://magicui.design/docs/components/smooth-cursor",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Requires Motion; see 08-PHILOSOPHY for animation limits"
+      ],
+      "registry_url": "https://magicui.design/r/smooth-cursor.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @magicui/smooth-cursor",
+      "manual_steps": [
+        "Or copy the source from https://magicui.design/docs/components/smooth-cursor"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "magicui-micro-interactions-tweet-card",
+      "name": "Magic UI Tweet Card",
+      "source": "Magic UI",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "A card that displays a tweet with the author's name, handle, and profile picture.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "magicui",
+        "tweet",
+        "card",
+        "micro-interactions",
+        "magic-ui"
+      ],
+      "docs_url": "https://magicui.design/docs/components/tweet-card",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "react-tweet"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Requires Motion; see 08-PHILOSOPHY for animation limits"
+      ],
+      "registry_url": "https://magicui.design/r/tweet-card.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @magicui/tweet-card",
+      "manual_steps": [
+        "Or copy the source from https://magicui.design/docs/components/tweet-card"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "magicui-text-animated-gradient-text",
+      "name": "Magic UI Animated Gradient Text",
+      "source": "Magic UI",
+      "entry_type": "component",
+      "category": "text",
+      "description": "An animated gradient background which transitions between colors for text.",
+      "use_case": "Animate or emphasize typography for key messages.",
+      "search_tags": [
+        "magicui",
+        "animated",
+        "gradient",
+        "text",
+        "magic-ui"
+      ],
+      "docs_url": "https://magicui.design/docs/components/animated-gradient-text",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Requires Motion; see 08-PHILOSOPHY for animation limits"
+      ],
+      "registry_url": "https://magicui.design/r/animated-gradient-text.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @magicui/animated-gradient-text",
+      "manual_steps": [
+        "Or copy the source from https://magicui.design/docs/components/animated-gradient-text"
+      ],
+      "quality": 93
+    },
+    {
+      "id": "magicui-text-animated-shiny-text",
+      "name": "Magic UI Animated Shiny Text",
+      "source": "Magic UI",
+      "entry_type": "component",
+      "category": "text",
+      "description": "A light glare effect which pans across text making it appear as if it is shimmering.",
+      "use_case": "Animate or emphasize typography for key messages.",
+      "search_tags": [
+        "magicui",
+        "animated",
+        "shiny",
+        "text",
+        "magic-ui"
+      ],
+      "docs_url": "https://magicui.design/docs/components/animated-shiny-text",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Requires Motion; see 08-PHILOSOPHY for animation limits"
+      ],
+      "registry_url": "https://magicui.design/r/animated-shiny-text.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @magicui/animated-shiny-text",
+      "manual_steps": [
+        "Or copy the source from https://magicui.design/docs/components/animated-shiny-text"
+      ],
+      "quality": 93
+    },
+    {
+      "id": "magicui-text-aurora-text",
+      "name": "Magic UI Aurora Text",
+      "source": "Magic UI",
+      "entry_type": "component",
+      "category": "text",
+      "description": "A beautiful aurora text effect",
+      "use_case": "Animate or emphasize typography for key messages.",
+      "search_tags": [
+        "magicui",
+        "aurora",
+        "text",
+        "magic-ui"
+      ],
+      "docs_url": "https://magicui.design/docs/components/aurora-text",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Requires Motion; see 08-PHILOSOPHY for animation limits"
+      ],
+      "registry_url": "https://magicui.design/r/aurora-text.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @magicui/aurora-text",
+      "manual_steps": [
+        "Or copy the source from https://magicui.design/docs/components/aurora-text"
+      ],
+      "quality": 88
+    },
+    {
+      "id": "magicui-text-comic-text",
+      "name": "Magic UI Comic Text",
+      "source": "Magic UI",
+      "entry_type": "component",
+      "category": "text",
+      "description": "Comic text animation",
+      "use_case": "Animate or emphasize typography for key messages.",
+      "search_tags": [
+        "magicui",
+        "comic",
+        "text",
+        "magic-ui"
+      ],
+      "docs_url": "https://magicui.design/docs/components/comic-text",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Requires Motion; see 08-PHILOSOPHY for animation limits"
+      ],
+      "registry_url": "https://magicui.design/r/comic-text.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @magicui/comic-text",
+      "manual_steps": [
+        "Or copy the source from https://magicui.design/docs/components/comic-text"
+      ],
+      "quality": 85
+    },
+    {
+      "id": "magicui-text-dia-text-reveal",
+      "name": "Magic UI Dia Text Reveal",
+      "source": "Magic UI",
+      "entry_type": "component",
+      "category": "text",
+      "description": "A horizontal color band sweeps across text, revealing a gradient shine before settling on the base color.",
+      "use_case": "Animate or emphasize typography for key messages.",
+      "search_tags": [
+        "magicui",
+        "dia",
+        "text",
+        "reveal",
+        "magic-ui"
+      ],
+      "docs_url": "https://magicui.design/docs/components/dia-text-reveal",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Requires Motion; see 08-PHILOSOPHY for animation limits"
+      ],
+      "registry_url": "https://magicui.design/r/dia-text-reveal.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @magicui/dia-text-reveal",
+      "manual_steps": [
+        "Or copy the source from https://magicui.design/docs/components/dia-text-reveal"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "magicui-text-hyper-text",
+      "name": "Magic UI Hyper Text",
+      "source": "Magic UI",
+      "entry_type": "component",
+      "category": "text",
+      "description": "A text animation that scrambles letters before revealing the final text.",
+      "use_case": "Animate or emphasize typography for key messages.",
+      "search_tags": [
+        "magicui",
+        "hyper",
+        "text",
+        "magic-ui"
+      ],
+      "docs_url": "https://magicui.design/docs/components/hyper-text",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Requires Motion; see 08-PHILOSOPHY for animation limits"
+      ],
+      "registry_url": "https://magicui.design/r/hyper-text.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @magicui/hyper-text",
+      "manual_steps": [
+        "Or copy the source from https://magicui.design/docs/components/hyper-text"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "magicui-text-kinetic-text",
+      "name": "Magic UI Kinetic Text",
+      "source": "Magic UI",
+      "entry_type": "component",
+      "category": "text",
+      "description": "A text component that animates font weight of characters on hover.",
+      "use_case": "Animate or emphasize typography for key messages.",
+      "search_tags": [
+        "magicui",
+        "kinetic",
+        "text",
+        "magic-ui"
+      ],
+      "docs_url": "https://magicui.design/docs/components/kinetic-text",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Requires Motion; see 08-PHILOSOPHY for animation limits"
+      ],
+      "registry_url": "https://magicui.design/r/kinetic-text.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @magicui/kinetic-text",
+      "manual_steps": [
+        "Or copy the source from https://magicui.design/docs/components/kinetic-text"
+      ],
+      "quality": 93
+    },
+    {
+      "id": "magicui-text-line-shadow-text",
+      "name": "Magic UI Line Shadow Text",
+      "source": "Magic UI",
+      "entry_type": "component",
+      "category": "text",
+      "description": "A text component with a moving line shadow.",
+      "use_case": "Animate or emphasize typography for key messages.",
+      "search_tags": [
+        "magicui",
+        "line",
+        "shadow",
+        "text",
+        "magic-ui"
+      ],
+      "docs_url": "https://magicui.design/docs/components/line-shadow-text",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Requires Motion; see 08-PHILOSOPHY for animation limits"
+      ],
+      "registry_url": "https://magicui.design/r/line-shadow-text.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @magicui/line-shadow-text",
+      "manual_steps": [
+        "Or copy the source from https://magicui.design/docs/components/line-shadow-text"
+      ],
+      "quality": 85
+    },
+    {
+      "id": "magicui-text-morphing-text",
+      "name": "Magic UI Morphing Text",
+      "source": "Magic UI",
+      "entry_type": "component",
+      "category": "text",
+      "description": "A dynamic text morphing component for Magic UI.",
+      "use_case": "Animate or emphasize typography for key messages.",
+      "search_tags": [
+        "magicui",
+        "morphing",
+        "text",
+        "magic-ui"
+      ],
+      "docs_url": "https://magicui.design/docs/components/morphing-text",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Requires Motion; see 08-PHILOSOPHY for animation limits"
+      ],
+      "registry_url": "https://magicui.design/r/morphing-text.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @magicui/morphing-text",
+      "manual_steps": [
+        "Or copy the source from https://magicui.design/docs/components/morphing-text"
+      ],
+      "quality": 88
+    },
+    {
+      "id": "magicui-text-noise-texture",
+      "name": "Magic UI Noise Texture",
+      "source": "Magic UI",
+      "entry_type": "component",
+      "category": "text",
+      "description": "An SVG fractal noise layer using feTurbulence, desaturation, and contrast controls for subtle texture overlays.",
+      "use_case": "Animate or emphasize typography for key messages.",
+      "search_tags": [
+        "magicui",
+        "noise",
+        "texture",
+        "text",
+        "magic-ui"
+      ],
+      "docs_url": "https://magicui.design/docs/components/noise-texture",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Requires Motion; see 08-PHILOSOPHY for animation limits"
+      ],
+      "registry_url": "https://magicui.design/r/noise-texture.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @magicui/noise-texture",
+      "manual_steps": [
+        "Or copy the source from https://magicui.design/docs/components/noise-texture"
+      ],
+      "quality": 93
+    },
+    {
+      "id": "magicui-text-number-ticker",
+      "name": "Magic UI Number Ticker",
+      "source": "Magic UI",
+      "entry_type": "component",
+      "category": "text",
+      "description": "Animate numbers to count up or down to a target number",
+      "use_case": "Animate or emphasize typography for key messages.",
+      "search_tags": [
+        "magicui",
+        "number",
+        "ticker",
+        "text",
+        "magic-ui"
+      ],
+      "docs_url": "https://magicui.design/docs/components/number-ticker",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Requires Motion; see 08-PHILOSOPHY for animation limits"
+      ],
+      "registry_url": "https://magicui.design/r/number-ticker.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @magicui/number-ticker",
+      "manual_steps": [
+        "Or copy the source from https://magicui.design/docs/components/number-ticker"
+      ],
+      "quality": 85
+    },
+    {
+      "id": "magicui-text-scroll-based-velocity",
+      "name": "Magic UI Scroll Based Velocity",
+      "source": "Magic UI",
+      "entry_type": "component",
+      "category": "text",
+      "description": "Scrolling text whose speed changes based on scroll speed",
+      "use_case": "Animate or emphasize typography for key messages.",
+      "search_tags": [
+        "magicui",
+        "scroll",
+        "based",
+        "velocity",
+        "text",
+        "magic-ui"
+      ],
+      "docs_url": "https://magicui.design/docs/components/scroll-based-velocity",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Requires Motion; see 08-PHILOSOPHY for animation limits"
+      ],
+      "registry_url": "https://magicui.design/r/scroll-based-velocity.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @magicui/scroll-based-velocity",
+      "manual_steps": [
+        "Or copy the source from https://magicui.design/docs/components/scroll-based-velocity"
+      ],
+      "quality": 85
+    },
+    {
+      "id": "magicui-text-shimmer-button",
+      "name": "Magic UI Shimmer Button",
+      "source": "Magic UI",
+      "entry_type": "component",
+      "category": "text",
+      "description": "A button with a shimmering light which travels around the perimeter.",
+      "use_case": "Animate or emphasize typography for key messages.",
+      "search_tags": [
+        "magicui",
+        "shimmer",
+        "button",
+        "text",
+        "magic-ui"
+      ],
+      "docs_url": "https://magicui.design/docs/components/shimmer-button",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Requires Motion; see 08-PHILOSOPHY for animation limits"
+      ],
+      "registry_url": "https://magicui.design/r/shimmer-button.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @magicui/shimmer-button",
+      "manual_steps": [
+        "Or copy the source from https://magicui.design/docs/components/shimmer-button"
+      ],
+      "quality": 93
+    },
+    {
+      "id": "magicui-text-shiny-button",
+      "name": "Magic UI Shiny Button",
+      "source": "Magic UI",
+      "entry_type": "component",
+      "category": "text",
+      "description": "A shiny button component with dynamic styles in the dark mode or light mode.",
+      "use_case": "Animate or emphasize typography for key messages.",
+      "search_tags": [
+        "magicui",
+        "shiny",
+        "button",
+        "text",
+        "magic-ui"
+      ],
+      "docs_url": "https://magicui.design/docs/components/shiny-button",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Requires Motion; see 08-PHILOSOPHY for animation limits"
+      ],
+      "registry_url": "https://magicui.design/r/shiny-button.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @magicui/shiny-button",
+      "manual_steps": [
+        "Or copy the source from https://magicui.design/docs/components/shiny-button"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "magicui-text-sparkles-text",
+      "name": "Magic UI Sparkles Text",
+      "source": "Magic UI",
+      "entry_type": "component",
+      "category": "text",
+      "description": "A dynamic text that generates continuous sparkles with smooth transitions, perfect for highlighting text with animated stars.",
+      "use_case": "Animate or emphasize typography for key messages.",
+      "search_tags": [
+        "magicui",
+        "sparkles",
+        "text",
+        "magic-ui"
+      ],
+      "docs_url": "https://magicui.design/docs/components/sparkles-text",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Requires Motion; see 08-PHILOSOPHY for animation limits"
+      ],
+      "registry_url": "https://magicui.design/r/sparkles-text.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @magicui/sparkles-text",
+      "manual_steps": [
+        "Or copy the source from https://magicui.design/docs/components/sparkles-text"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "magicui-text-spinning-text",
+      "name": "Magic UI Spinning Text",
+      "source": "Magic UI",
+      "entry_type": "component",
+      "category": "text",
+      "description": "The Spinning Text component animates text in a circular motion with customizable speed, direction, color, and transitions for dynamic and engaging effects.",
+      "use_case": "Animate or emphasize typography for key messages.",
+      "search_tags": [
+        "magicui",
+        "spinning",
+        "text",
+        "magic-ui"
+      ],
+      "docs_url": "https://magicui.design/docs/components/spinning-text",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Requires Motion; see 08-PHILOSOPHY for animation limits"
+      ],
+      "registry_url": "https://magicui.design/r/spinning-text.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @magicui/spinning-text",
+      "manual_steps": [
+        "Or copy the source from https://magicui.design/docs/components/spinning-text"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "magicui-text-text-3d-flip",
+      "name": "Magic UI Text 3D Flip",
+      "source": "Magic UI",
+      "entry_type": "component",
+      "category": "text",
+      "description": "A text effect that flips each letter in 3D with a staggered animation on hover.",
+      "use_case": "Animate or emphasize typography for key messages.",
+      "search_tags": [
+        "magicui",
+        "text",
+        "3d",
+        "flip",
+        "magic-ui"
+      ],
+      "docs_url": "https://magicui.design/docs/components/text-3d-flip",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Requires Motion; see 08-PHILOSOPHY for animation limits"
+      ],
+      "registry_url": "https://magicui.design/r/text-3d-flip.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @magicui/text-3d-flip",
+      "manual_steps": [
+        "Or copy the source from https://magicui.design/docs/components/text-3d-flip"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "magicui-text-text-animate",
+      "name": "Magic UI Text Animate",
+      "source": "Magic UI",
+      "entry_type": "component",
+      "category": "text",
+      "description": "A text animation component that animates text using a variety of different animations.",
+      "use_case": "Animate or emphasize typography for key messages.",
+      "search_tags": [
+        "magicui",
+        "text",
+        "animate",
+        "magic-ui"
+      ],
+      "docs_url": "https://magicui.design/docs/components/text-animate",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Requires Motion; see 08-PHILOSOPHY for animation limits"
+      ],
+      "registry_url": "https://magicui.design/r/text-animate.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @magicui/text-animate",
+      "manual_steps": [
+        "Or copy the source from https://magicui.design/docs/components/text-animate"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "magicui-text-text-reveal",
+      "name": "Magic UI Text Reveal",
+      "source": "Magic UI",
+      "entry_type": "component",
+      "category": "text",
+      "description": "Fade in text as you scroll down the page.",
+      "use_case": "Animate or emphasize typography for key messages.",
+      "search_tags": [
+        "magicui",
+        "text",
+        "reveal",
+        "magic-ui"
+      ],
+      "docs_url": "https://magicui.design/docs/components/text-reveal",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Requires Motion; see 08-PHILOSOPHY for animation limits"
+      ],
+      "registry_url": "https://magicui.design/r/text-reveal.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @magicui/text-reveal",
+      "manual_steps": [
+        "Or copy the source from https://magicui.design/docs/components/text-reveal"
+      ],
+      "quality": 85
+    },
+    {
+      "id": "magicui-text-typing-animation",
+      "name": "Magic UI Typing Animation",
+      "source": "Magic UI",
+      "entry_type": "component",
+      "category": "text",
+      "description": "Characters appearing in typed animation",
+      "use_case": "Animate or emphasize typography for key messages.",
+      "search_tags": [
+        "magicui",
+        "typing",
+        "animation",
+        "text",
+        "magic-ui"
+      ],
+      "docs_url": "https://magicui.design/docs/components/typing-animation",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Requires Motion; see 08-PHILOSOPHY for animation limits"
+      ],
+      "registry_url": "https://magicui.design/r/typing-animation.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @magicui/typing-animation",
+      "manual_steps": [
+        "Or copy the source from https://magicui.design/docs/components/typing-animation"
+      ],
+      "quality": 85
+    },
+    {
+      "id": "magicui-text-video-text",
+      "name": "Magic UI Video Text",
+      "source": "Magic UI",
+      "entry_type": "component",
+      "category": "text",
+      "description": "A component that displays text with a video playing in the background.",
+      "use_case": "Animate or emphasize typography for key messages.",
+      "search_tags": [
+        "magicui",
+        "video",
+        "text",
+        "magic-ui"
+      ],
+      "docs_url": "https://magicui.design/docs/components/video-text",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Requires Motion; see 08-PHILOSOPHY for animation limits"
+      ],
+      "registry_url": "https://magicui.design/r/video-text.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @magicui/video-text",
+      "manual_steps": [
+        "Or copy the source from https://magicui.design/docs/components/video-text"
+      ],
+      "quality": 93
+    },
+    {
+      "id": "magicui-text-word-rotate",
+      "name": "Magic UI Word Rotate",
+      "source": "Magic UI",
+      "entry_type": "component",
+      "category": "text",
+      "description": "A vertical rotation of words",
+      "use_case": "Animate or emphasize typography for key messages.",
+      "search_tags": [
+        "magicui",
+        "word",
+        "rotate",
+        "text",
+        "magic-ui"
+      ],
+      "docs_url": "https://magicui.design/docs/components/word-rotate",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Requires Motion; see 08-PHILOSOPHY for animation limits"
+      ],
+      "registry_url": "https://magicui.design/r/word-rotate.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add @magicui/word-rotate",
+      "manual_steps": [
+        "Or copy the source from https://magicui.design/docs/components/word-rotate"
+      ],
+      "quality": 85
+    }
+  ]
+}

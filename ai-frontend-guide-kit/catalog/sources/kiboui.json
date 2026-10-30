@@ -1,0 +1,1598 @@
+{
+  "schema_version": "1.0",
+  "source_id": "kiboui",
+  "source_name": "Kibo UI",
+  "source_url": "https://www.kibo-ui.com",
+  "catalog_url": "https://www.kibo-ui.com/components",
+  "license_summary": "MIT (verified from the shadcnblocks/kibo repo license.md)",
+  "granularity": "complete (all registry:ui items)",
+  "extraction": {
+    "channel": "registry-json",
+    "method": "Node script downloading the public shadcn-compatible registry",
+    "evidence_url": "https://www.kibo-ui.com/r/registry.json"
+  },
+  "generated_at": "2026-10-04",
+  "entries": [
+    {
+      "id": "kiboui-data-display-choicebox",
+      "name": "Kibo UI Choicebox",
+      "source": "Kibo UI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Choiceboxes are a great way to show radio or checkbox options with a card style.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "kiboui",
+        "choicebox",
+        "data-display",
+        "kibo-ui"
+      ],
+      "docs_url": "https://www.kibo-ui.com/components/choicebox",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "radix-ui"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Compound components built on shadcn/ui — good for data-heavy product UI (kanban, gantt, table, editor, AI blocks)",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://www.kibo-ui.com/r/choicebox.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://www.kibo-ui.com/r/choicebox.json",
+      "manual_steps": [
+        "Or copy the source from https://www.kibo-ui.com/components/choicebox"
+      ],
+      "quality": 87
+    },
+    {
+      "id": "kiboui-data-display-code-block",
+      "name": "Kibo UI Code Block",
+      "source": "Kibo UI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Provides syntax highlighting, line numbers, and copy to clipboard functionality for code blocks.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "kiboui",
+        "code",
+        "block",
+        "data-display",
+        "kibo-ui"
+      ],
+      "docs_url": "https://www.kibo-ui.com/components/code-block",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "@radix-ui/react-use-controllable-state",
+        "@shikijs/transformers",
+        "lucide-react",
+        "react-icons",
+        "shiki"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Compound components built on shadcn/ui — good for data-heavy product UI (kanban, gantt, table, editor, AI blocks)",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://www.kibo-ui.com/r/code-block.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://www.kibo-ui.com/r/code-block.json",
+      "manual_steps": [
+        "Or copy the source from https://www.kibo-ui.com/components/code-block"
+      ],
+      "quality": 80
+    },
+    {
+      "id": "kiboui-data-display-comparison",
+      "name": "Kibo UI Comparison",
+      "source": "Kibo UI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "A slider-based component for comparing two items in an overlay.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "kiboui",
+        "comparison",
+        "data-display",
+        "kibo-ui"
+      ],
+      "docs_url": "https://www.kibo-ui.com/components/comparison",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Compound components built on shadcn/ui — good for data-heavy product UI (kanban, gantt, table, editor, AI blocks)",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://www.kibo-ui.com/r/comparison.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://www.kibo-ui.com/r/comparison.json",
+      "manual_steps": [
+        "Or copy the source from https://www.kibo-ui.com/components/comparison"
+      ],
+      "quality": 87
+    },
+    {
+      "id": "kiboui-data-display-contribution-graph",
+      "name": "Kibo UI Contribution Graph",
+      "source": "Kibo UI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "A GitHub-style contribution graph component that displays activity levels over time.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "kiboui",
+        "contribution",
+        "graph",
+        "data-display",
+        "kibo-ui"
+      ],
+      "docs_url": "https://www.kibo-ui.com/components/contribution-graph",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "date-fns"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Compound components built on shadcn/ui — good for data-heavy product UI (kanban, gantt, table, editor, AI blocks)",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://www.kibo-ui.com/r/contribution-graph.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://www.kibo-ui.com/r/contribution-graph.json",
+      "manual_steps": [
+        "Or copy the source from https://www.kibo-ui.com/components/contribution-graph"
+      ],
+      "quality": 87
+    },
+    {
+      "id": "kiboui-data-display-credit-card",
+      "name": "Kibo UI Credit Card",
+      "source": "Kibo UI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Credit card components for displaying and validating credit card information.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "kiboui",
+        "credit",
+        "card",
+        "data-display",
+        "kibo-ui"
+      ],
+      "docs_url": "https://www.kibo-ui.com/components/credit-card",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "react-svg-credit-card-payment-icons"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Compound components built on shadcn/ui — good for data-heavy product UI (kanban, gantt, table, editor, AI blocks)",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://www.kibo-ui.com/r/credit-card.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://www.kibo-ui.com/r/credit-card.json",
+      "manual_steps": [
+        "Or copy the source from https://www.kibo-ui.com/components/credit-card"
+      ],
+      "quality": 87
+    },
+    {
+      "id": "kiboui-data-display-deck",
+      "name": "Kibo UI Deck",
+      "source": "Kibo UI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "A Tinder-like swipeable card stack component with smooth animations.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "kiboui",
+        "deck",
+        "data-display",
+        "kibo-ui"
+      ],
+      "docs_url": "https://www.kibo-ui.com/components/deck",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "@radix-ui/react-use-controllable-state",
+        "lucide-react",
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Compound components built on shadcn/ui — good for data-heavy product UI (kanban, gantt, table, editor, AI blocks)",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://www.kibo-ui.com/r/deck.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://www.kibo-ui.com/r/deck.json",
+      "manual_steps": [
+        "Or copy the source from https://www.kibo-ui.com/components/deck"
+      ],
+      "quality": 84
+    },
+    {
+      "id": "kiboui-data-display-gantt",
+      "name": "Kibo UI Gantt",
+      "source": "Kibo UI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "The Gantt chart is a powerful tool for visualizing project schedules and tracking the progress of tasks. It provides a clear, hierarchical view of tasks, allowing you to easily identify manage project timelines.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "kiboui",
+        "gantt",
+        "data-display",
+        "kibo-ui"
+      ],
+      "docs_url": "https://www.kibo-ui.com/components/gantt",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "@dnd-kit/core",
+        "@dnd-kit/modifiers",
+        "@uidotdev/usehooks",
+        "date-fns",
+        "jotai",
+        "lodash.throttle",
+        "lucide-react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Compound components built on shadcn/ui — good for data-heavy product UI (kanban, gantt, table, editor, AI blocks)",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://www.kibo-ui.com/r/gantt.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://www.kibo-ui.com/r/gantt.json",
+      "manual_steps": [
+        "Or copy the source from https://www.kibo-ui.com/components/gantt"
+      ],
+      "quality": 80
+    },
+    {
+      "id": "kiboui-data-display-glimpse",
+      "name": "Kibo UI Glimpse",
+      "source": "Kibo UI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "A component that shows a preview of a URL when hovering over a link.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "kiboui",
+        "glimpse",
+        "data-display",
+        "kibo-ui"
+      ],
+      "docs_url": "https://www.kibo-ui.com/components/glimpse",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Compound components built on shadcn/ui — good for data-heavy product UI (kanban, gantt, table, editor, AI blocks)",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://www.kibo-ui.com/r/glimpse.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://www.kibo-ui.com/r/glimpse.json",
+      "manual_steps": [
+        "Or copy the source from https://www.kibo-ui.com/components/glimpse"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "kiboui-data-display-kanban",
+      "name": "Kibo UI Kanban",
+      "source": "Kibo UI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "A kanban board is a visual tool that helps you manage and visualize your work. It is a board with columns, and each column represents a status, e.g. \"Backlog\", \"In Progress\", \"Done\".",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "kiboui",
+        "kanban",
+        "data-display",
+        "kibo-ui"
+      ],
+      "docs_url": "https://www.kibo-ui.com/components/kanban",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "@dnd-kit/core",
+        "@dnd-kit/sortable",
+        "@dnd-kit/utilities",
+        "tunnel-rat"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Compound components built on shadcn/ui — good for data-heavy product UI (kanban, gantt, table, editor, AI blocks)",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://www.kibo-ui.com/r/kanban.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://www.kibo-ui.com/r/kanban.json",
+      "manual_steps": [
+        "Or copy the source from https://www.kibo-ui.com/components/kanban"
+      ],
+      "quality": 84
+    },
+    {
+      "id": "kiboui-data-display-list",
+      "name": "Kibo UI List",
+      "source": "Kibo UI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "List views are a great way to show a list of tasks grouped by status and ranked by priority.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "kiboui",
+        "list",
+        "data-display",
+        "kibo-ui"
+      ],
+      "docs_url": "https://www.kibo-ui.com/components/list",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "@dnd-kit/core",
+        "@dnd-kit/modifiers"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Compound components built on shadcn/ui — good for data-heavy product UI (kanban, gantt, table, editor, AI blocks)",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://www.kibo-ui.com/r/list.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://www.kibo-ui.com/r/list.json",
+      "manual_steps": [
+        "Or copy the source from https://www.kibo-ui.com/components/list"
+      ],
+      "quality": 87
+    },
+    {
+      "id": "kiboui-data-display-marquee",
+      "name": "Kibo UI Marquee",
+      "source": "Kibo UI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Marquees are a great way to show a list of items in a horizontal scrolling motion.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "kiboui",
+        "marquee",
+        "data-display",
+        "kibo-ui"
+      ],
+      "docs_url": "https://www.kibo-ui.com/components/marquee",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "react-fast-marquee"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Compound components built on shadcn/ui — good for data-heavy product UI (kanban, gantt, table, editor, AI blocks)",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://www.kibo-ui.com/r/marquee.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://www.kibo-ui.com/r/marquee.json",
+      "manual_steps": [
+        "Or copy the source from https://www.kibo-ui.com/components/marquee"
+      ],
+      "quality": 87
+    },
+    {
+      "id": "kiboui-data-display-pill",
+      "name": "Kibo UI Pill",
+      "source": "Kibo UI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "A flexible badge component designed for a variety of use cases.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "kiboui",
+        "pill",
+        "data-display",
+        "kibo-ui"
+      ],
+      "docs_url": "https://www.kibo-ui.com/components/pill",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Compound components built on shadcn/ui — good for data-heavy product UI (kanban, gantt, table, editor, AI blocks)",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://www.kibo-ui.com/r/pill.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://www.kibo-ui.com/r/pill.json",
+      "manual_steps": [
+        "Or copy the source from https://www.kibo-ui.com/components/pill"
+      ],
+      "quality": 87
+    },
+    {
+      "id": "kiboui-data-display-qr-code",
+      "name": "Kibo UI Qr Code",
+      "source": "Kibo UI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "QR Code is a component that generates a QR code from a string.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "kiboui",
+        "qr",
+        "code",
+        "data-display",
+        "kibo-ui"
+      ],
+      "docs_url": "https://www.kibo-ui.com/components/qr-code",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "culori",
+        "qrcode"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Compound components built on shadcn/ui — good for data-heavy product UI (kanban, gantt, table, editor, AI blocks)",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://www.kibo-ui.com/r/qr-code.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://www.kibo-ui.com/r/qr-code.json",
+      "manual_steps": [
+        "Or copy the source from https://www.kibo-ui.com/components/qr-code"
+      ],
+      "quality": 87
+    },
+    {
+      "id": "kiboui-data-display-reel",
+      "name": "Kibo UI Reel",
+      "source": "Kibo UI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "A composable Reel component that looks like Instagram Stories - a full-height, 9:16 aspect ratio container with video playback and progress indicators.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "kiboui",
+        "reel",
+        "data-display",
+        "kibo-ui"
+      ],
+      "docs_url": "https://www.kibo-ui.com/components/reel",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "@radix-ui/react-use-controllable-state",
+        "lucide-react",
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Compound components built on shadcn/ui — good for data-heavy product UI (kanban, gantt, table, editor, AI blocks)",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://www.kibo-ui.com/r/reel.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://www.kibo-ui.com/r/reel.json",
+      "manual_steps": [
+        "Or copy the source from https://www.kibo-ui.com/components/reel"
+      ],
+      "quality": 84
+    },
+    {
+      "id": "kiboui-data-display-relative-time",
+      "name": "Kibo UI Relative Time",
+      "source": "Kibo UI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "A component that displays time in various timezones.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "kiboui",
+        "relative",
+        "time",
+        "data-display",
+        "kibo-ui"
+      ],
+      "docs_url": "https://www.kibo-ui.com/components/relative-time",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "@radix-ui/react-use-controllable-state"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Compound components built on shadcn/ui — good for data-heavy product UI (kanban, gantt, table, editor, AI blocks)",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://www.kibo-ui.com/r/relative-time.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://www.kibo-ui.com/r/relative-time.json",
+      "manual_steps": [
+        "Or copy the source from https://www.kibo-ui.com/components/relative-time"
+      ],
+      "quality": 82
+    },
+    {
+      "id": "kiboui-data-display-sandbox",
+      "name": "Kibo UI Sandbox",
+      "source": "Kibo UI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "The sandbox component allows you to preview and test components in a sandboxed environment.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "kiboui",
+        "sandbox",
+        "data-display",
+        "kibo-ui"
+      ],
+      "docs_url": "https://www.kibo-ui.com/components/sandbox",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "@codesandbox/sandpack-react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Compound components built on shadcn/ui — good for data-heavy product UI (kanban, gantt, table, editor, AI blocks)",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://www.kibo-ui.com/r/sandbox.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://www.kibo-ui.com/r/sandbox.json",
+      "manual_steps": [
+        "Or copy the source from https://www.kibo-ui.com/components/sandbox"
+      ],
+      "quality": 87
+    },
+    {
+      "id": "kiboui-data-display-snippet",
+      "name": "Kibo UI Snippet",
+      "source": "Kibo UI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Snippet is a component that allows you to display and copy code in a tabbed interface.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "kiboui",
+        "snippet",
+        "data-display",
+        "kibo-ui"
+      ],
+      "docs_url": "https://www.kibo-ui.com/components/snippet",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Compound components built on shadcn/ui — good for data-heavy product UI (kanban, gantt, table, editor, AI blocks)",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://www.kibo-ui.com/r/snippet.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://www.kibo-ui.com/r/snippet.json",
+      "manual_steps": [
+        "Or copy the source from https://www.kibo-ui.com/components/snippet"
+      ],
+      "quality": 87
+    },
+    {
+      "id": "kiboui-data-display-stories",
+      "name": "Kibo UI Stories",
+      "source": "Kibo UI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "A composable Stories component - a carousel of individual video cards like you'd see on Facebook.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "kiboui",
+        "stories",
+        "data-display",
+        "kibo-ui"
+      ],
+      "docs_url": "https://www.kibo-ui.com/components/stories",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Compound components built on shadcn/ui — good for data-heavy product UI (kanban, gantt, table, editor, AI blocks)",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://www.kibo-ui.com/r/stories.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://www.kibo-ui.com/r/stories.json",
+      "manual_steps": [
+        "Or copy the source from https://www.kibo-ui.com/components/stories"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "kiboui-data-display-table",
+      "name": "Kibo UI Table",
+      "source": "Kibo UI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Table views are used to display data in a tabular format. They are useful for displaying large amounts of data in a structured way.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "kiboui",
+        "table",
+        "data-display",
+        "kibo-ui"
+      ],
+      "docs_url": "https://www.kibo-ui.com/components/table",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "@tanstack/react-table",
+        "jotai",
+        "lucide-react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Compound components built on shadcn/ui — good for data-heavy product UI (kanban, gantt, table, editor, AI blocks)",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://www.kibo-ui.com/r/table.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://www.kibo-ui.com/r/table.json",
+      "manual_steps": [
+        "Or copy the source from https://www.kibo-ui.com/components/table"
+      ],
+      "quality": 84
+    },
+    {
+      "id": "kiboui-data-display-tree",
+      "name": "Kibo UI Tree",
+      "source": "Kibo UI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "A composable tree component with animated expand/collapse and customizable nodes.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "kiboui",
+        "tree",
+        "data-display",
+        "kibo-ui"
+      ],
+      "docs_url": "https://www.kibo-ui.com/components/tree",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion",
+        "lucide-react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Compound components built on shadcn/ui — good for data-heavy product UI (kanban, gantt, table, editor, AI blocks)",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://www.kibo-ui.com/r/tree.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://www.kibo-ui.com/r/tree.json",
+      "manual_steps": [
+        "Or copy the source from https://www.kibo-ui.com/components/tree"
+      ],
+      "quality": 87
+    },
+    {
+      "id": "kiboui-feedback-announcement",
+      "name": "Kibo UI Announcement",
+      "source": "Kibo UI",
+      "entry_type": "component",
+      "category": "feedback",
+      "description": "A compound badge designed to display an announcement.",
+      "use_case": "Communicate system status: alerts, loaders, progress and notifications.",
+      "search_tags": [
+        "kiboui",
+        "announcement",
+        "feedback",
+        "kibo-ui"
+      ],
+      "docs_url": "https://www.kibo-ui.com/components/announcement",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Compound components built on shadcn/ui — good for data-heavy product UI (kanban, gantt, table, editor, AI blocks)",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://www.kibo-ui.com/r/announcement.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://www.kibo-ui.com/r/announcement.json",
+      "manual_steps": [
+        "Or copy the source from https://www.kibo-ui.com/components/announcement"
+      ],
+      "quality": 85
+    },
+    {
+      "id": "kiboui-feedback-banner",
+      "name": "Kibo UI Banner",
+      "source": "Kibo UI",
+      "entry_type": "component",
+      "category": "feedback",
+      "description": "A banner is a full-width component that can be used to show a message and action to the user.",
+      "use_case": "Communicate system status: alerts, loaders, progress and notifications.",
+      "search_tags": [
+        "kiboui",
+        "banner",
+        "feedback",
+        "kibo-ui"
+      ],
+      "docs_url": "https://www.kibo-ui.com/components/banner",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "@radix-ui/react-use-controllable-state",
+        "lucide-react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Compound components built on shadcn/ui — good for data-heavy product UI (kanban, gantt, table, editor, AI blocks)",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://www.kibo-ui.com/r/banner.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://www.kibo-ui.com/r/banner.json",
+      "manual_steps": [
+        "Or copy the source from https://www.kibo-ui.com/components/banner"
+      ],
+      "quality": 87
+    },
+    {
+      "id": "kiboui-feedback-spinner",
+      "name": "Kibo UI Spinner",
+      "source": "Kibo UI",
+      "entry_type": "component",
+      "category": "feedback",
+      "description": "A spinner is a visual indicator that shows progress or activity.",
+      "use_case": "Communicate system status: alerts, loaders, progress and notifications.",
+      "search_tags": [
+        "kiboui",
+        "spinner",
+        "feedback",
+        "kibo-ui"
+      ],
+      "docs_url": "https://www.kibo-ui.com/components/spinner",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Compound components built on shadcn/ui — good for data-heavy product UI (kanban, gantt, table, editor, AI blocks)",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://www.kibo-ui.com/r/spinner.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://www.kibo-ui.com/r/spinner.json",
+      "manual_steps": [
+        "Or copy the source from https://www.kibo-ui.com/components/spinner"
+      ],
+      "quality": 87
+    },
+    {
+      "id": "kiboui-feedback-status",
+      "name": "Kibo UI Status",
+      "source": "Kibo UI",
+      "entry_type": "component",
+      "category": "feedback",
+      "description": "Status components are used to display the uptime of a service.",
+      "use_case": "Communicate system status: alerts, loaders, progress and notifications.",
+      "search_tags": [
+        "kiboui",
+        "status",
+        "feedback",
+        "kibo-ui"
+      ],
+      "docs_url": "https://www.kibo-ui.com/components/status",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Compound components built on shadcn/ui — good for data-heavy product UI (kanban, gantt, table, editor, AI blocks)",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://www.kibo-ui.com/r/status.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://www.kibo-ui.com/r/status.json",
+      "manual_steps": [
+        "Or copy the source from https://www.kibo-ui.com/components/status"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "kiboui-forms-calendar",
+      "name": "Kibo UI Calendar",
+      "source": "Kibo UI",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "The calendar view displays features on a grid calendar. Specifically it shows the end date of each feature, and groups features by day.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "kiboui",
+        "calendar",
+        "forms",
+        "kibo-ui"
+      ],
+      "docs_url": "https://www.kibo-ui.com/components/calendar",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "date-fns",
+        "jotai",
+        "lucide-react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Compound components built on shadcn/ui — good for data-heavy product UI (kanban, gantt, table, editor, AI blocks)",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://www.kibo-ui.com/r/calendar.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://www.kibo-ui.com/r/calendar.json",
+      "manual_steps": [
+        "Or copy the source from https://www.kibo-ui.com/components/calendar"
+      ],
+      "quality": 84
+    },
+    {
+      "id": "kiboui-forms-color-picker",
+      "name": "Kibo UI Color Picker",
+      "source": "Kibo UI",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Allows users to select a color. Modeled after the color picker in Figma.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "kiboui",
+        "color",
+        "picker",
+        "forms",
+        "kibo-ui"
+      ],
+      "docs_url": "https://www.kibo-ui.com/components/color-picker",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "color",
+        "lucide-react",
+        "radix-ui"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Compound components built on shadcn/ui — good for data-heavy product UI (kanban, gantt, table, editor, AI blocks)",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://www.kibo-ui.com/r/color-picker.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://www.kibo-ui.com/r/color-picker.json",
+      "manual_steps": [
+        "Or copy the source from https://www.kibo-ui.com/components/color-picker"
+      ],
+      "quality": 84
+    },
+    {
+      "id": "kiboui-forms-combobox",
+      "name": "Kibo UI Combobox",
+      "source": "Kibo UI",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Autocomplete input and command palette with a list of suggestions.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "kiboui",
+        "combobox",
+        "forms",
+        "kibo-ui"
+      ],
+      "docs_url": "https://www.kibo-ui.com/components/combobox",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "@radix-ui/react-use-controllable-state",
+        "lucide-react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Compound components built on shadcn/ui — good for data-heavy product UI (kanban, gantt, table, editor, AI blocks)",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://www.kibo-ui.com/r/combobox.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://www.kibo-ui.com/r/combobox.json",
+      "manual_steps": [
+        "Or copy the source from https://www.kibo-ui.com/components/combobox"
+      ],
+      "quality": 87
+    },
+    {
+      "id": "kiboui-forms-dropzone",
+      "name": "Kibo UI Dropzone",
+      "source": "Kibo UI",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Allows users to drag-and-drop files into a container to upload or process them.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "kiboui",
+        "dropzone",
+        "forms",
+        "kibo-ui"
+      ],
+      "docs_url": "https://www.kibo-ui.com/components/dropzone",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "react-dropzone"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Compound components built on shadcn/ui — good for data-heavy product UI (kanban, gantt, table, editor, AI blocks)",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://www.kibo-ui.com/r/dropzone.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://www.kibo-ui.com/r/dropzone.json",
+      "manual_steps": [
+        "Or copy the source from https://www.kibo-ui.com/components/dropzone"
+      ],
+      "quality": 87
+    },
+    {
+      "id": "kiboui-forms-editor",
+      "name": "Kibo UI Editor",
+      "source": "Kibo UI",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "The Editor component is a powerful and flexible text editor that allows you to create and edit rich text content.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "kiboui",
+        "editor",
+        "forms",
+        "kibo-ui"
+      ],
+      "docs_url": "https://www.kibo-ui.com/components/editor",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "@floating-ui/dom",
+        "@tiptap/core",
+        "@tiptap/extension-code-block-lowlight",
+        "@tiptap/extension-list",
+        "@tiptap/extension-subscript",
+        "@tiptap/extension-superscript",
+        "@tiptap/extension-table",
+        "@tiptap/extension-text-style",
+        "@tiptap/extension-typography",
+        "@tiptap/extensions",
+        "@tiptap/pm",
+        "@tiptap/react",
+        "@tiptap/starter-kit",
+        "@tiptap/suggestion",
+        "fuse.js",
+        "lowlight",
+        "lucide-react",
+        "tippy.js"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Compound components built on shadcn/ui — good for data-heavy product UI (kanban, gantt, table, editor, AI blocks)",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://www.kibo-ui.com/r/editor.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://www.kibo-ui.com/r/editor.json",
+      "manual_steps": [
+        "Or copy the source from https://www.kibo-ui.com/components/editor"
+      ],
+      "quality": 80
+    },
+    {
+      "id": "kiboui-forms-mini-calendar",
+      "name": "Kibo UI Mini Calendar",
+      "source": "Kibo UI",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "A composable mini calendar component for picking dates close to today.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "kiboui",
+        "mini",
+        "calendar",
+        "forms",
+        "kibo-ui"
+      ],
+      "docs_url": "https://www.kibo-ui.com/components/mini-calendar",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "@radix-ui/react-use-controllable-state",
+        "date-fns",
+        "lucide-react",
+        "radix-ui"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Compound components built on shadcn/ui — good for data-heavy product UI (kanban, gantt, table, editor, AI blocks)",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://www.kibo-ui.com/r/mini-calendar.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://www.kibo-ui.com/r/mini-calendar.json",
+      "manual_steps": [
+        "Or copy the source from https://www.kibo-ui.com/components/mini-calendar"
+      ],
+      "quality": 84
+    },
+    {
+      "id": "kiboui-forms-rating",
+      "name": "Kibo UI Rating",
+      "source": "Kibo UI",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "A star rating component with keyboard navigation and hover effects.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "kiboui",
+        "rating",
+        "forms",
+        "kibo-ui"
+      ],
+      "docs_url": "https://www.kibo-ui.com/components/rating",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "@radix-ui/react-use-controllable-state",
+        "lucide-react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Compound components built on shadcn/ui — good for data-heavy product UI (kanban, gantt, table, editor, AI blocks)",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://www.kibo-ui.com/r/rating.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://www.kibo-ui.com/r/rating.json",
+      "manual_steps": [
+        "Or copy the source from https://www.kibo-ui.com/components/rating"
+      ],
+      "quality": 87
+    },
+    {
+      "id": "kiboui-forms-tags",
+      "name": "Kibo UI Tags",
+      "source": "Kibo UI",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Tags are a way to apply multiple labels to an item.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "kiboui",
+        "tags",
+        "forms",
+        "kibo-ui"
+      ],
+      "docs_url": "https://www.kibo-ui.com/components/tags",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Compound components built on shadcn/ui — good for data-heavy product UI (kanban, gantt, table, editor, AI blocks)",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://www.kibo-ui.com/r/tags.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://www.kibo-ui.com/r/tags.json",
+      "manual_steps": [
+        "Or copy the source from https://www.kibo-ui.com/components/tags"
+      ],
+      "quality": 82
+    },
+    {
+      "id": "kiboui-forms-theme-switcher",
+      "name": "Kibo UI Theme Switcher",
+      "source": "Kibo UI",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "A component to switch between light, dark and system theme.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "kiboui",
+        "theme",
+        "switcher",
+        "forms",
+        "kibo-ui"
+      ],
+      "docs_url": "https://www.kibo-ui.com/components/theme-switcher",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "@radix-ui/react-use-controllable-state",
+        "lucide-react",
+        "motion"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Compound components built on shadcn/ui — good for data-heavy product UI (kanban, gantt, table, editor, AI blocks)",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://www.kibo-ui.com/r/theme-switcher.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://www.kibo-ui.com/r/theme-switcher.json",
+      "manual_steps": [
+        "Or copy the source from https://www.kibo-ui.com/components/theme-switcher"
+      ],
+      "quality": 79
+    },
+    {
+      "id": "kiboui-media-avatar-stack",
+      "name": "Kibo UI Avatar Stack",
+      "source": "Kibo UI",
+      "entry_type": "component",
+      "category": "media",
+      "description": "Avatar Stack is a component that allows you to stack and overlap avatars.",
+      "use_case": "Display images, video, carousels and device mockups.",
+      "search_tags": [
+        "kiboui",
+        "avatar",
+        "stack",
+        "media",
+        "kibo-ui"
+      ],
+      "docs_url": "https://www.kibo-ui.com/components/avatar-stack",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Compound components built on shadcn/ui — good for data-heavy product UI (kanban, gantt, table, editor, AI blocks)",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://www.kibo-ui.com/r/avatar-stack.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://www.kibo-ui.com/r/avatar-stack.json",
+      "manual_steps": [
+        "Or copy the source from https://www.kibo-ui.com/components/avatar-stack"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "kiboui-media-dialog-stack",
+      "name": "Kibo UI Dialog Stack",
+      "source": "Kibo UI",
+      "entry_type": "component",
+      "category": "media",
+      "description": "Composable stacked dialogs, useful for creating a wizard, nested form or multi-step process. It provides a consistent layout and styling for each dialog, and includes navigation component.",
+      "use_case": "Display images, video, carousels and device mockups.",
+      "search_tags": [
+        "kiboui",
+        "dialog",
+        "stack",
+        "media",
+        "kibo-ui"
+      ],
+      "docs_url": "https://www.kibo-ui.com/components/dialog-stack",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "@radix-ui/react-use-controllable-state",
+        "radix-ui"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Compound components built on shadcn/ui — good for data-heavy product UI (kanban, gantt, table, editor, AI blocks)",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://www.kibo-ui.com/r/dialog-stack.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://www.kibo-ui.com/r/dialog-stack.json",
+      "manual_steps": [
+        "Or copy the source from https://www.kibo-ui.com/components/dialog-stack"
+      ],
+      "quality": 87
+    },
+    {
+      "id": "kiboui-media-image-crop",
+      "name": "Kibo UI Image Crop",
+      "source": "Kibo UI",
+      "entry_type": "component",
+      "category": "media",
+      "description": "Helps you crop images to a specific size or aspect ratio.",
+      "use_case": "Display images, video, carousels and device mockups.",
+      "search_tags": [
+        "kiboui",
+        "image",
+        "crop",
+        "media",
+        "kibo-ui"
+      ],
+      "docs_url": "https://www.kibo-ui.com/components/image-crop",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "lucide-react",
+        "radix-ui",
+        "react-image-crop"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Compound components built on shadcn/ui — good for data-heavy product UI (kanban, gantt, table, editor, AI blocks)",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://www.kibo-ui.com/r/image-crop.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://www.kibo-ui.com/r/image-crop.json",
+      "manual_steps": [
+        "Or copy the source from https://www.kibo-ui.com/components/image-crop"
+      ],
+      "quality": 79
+    },
+    {
+      "id": "kiboui-media-image-zoom",
+      "name": "Kibo UI Image Zoom",
+      "source": "Kibo UI",
+      "entry_type": "component",
+      "category": "media",
+      "description": "Image zoom is a component that allows you to zoom in on an image.",
+      "use_case": "Display images, video, carousels and device mockups.",
+      "search_tags": [
+        "kiboui",
+        "image",
+        "zoom",
+        "media",
+        "kibo-ui"
+      ],
+      "docs_url": "https://www.kibo-ui.com/components/image-zoom",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "react-medium-image-zoom"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Compound components built on shadcn/ui — good for data-heavy product UI (kanban, gantt, table, editor, AI blocks)",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://www.kibo-ui.com/r/image-zoom.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://www.kibo-ui.com/r/image-zoom.json",
+      "manual_steps": [
+        "Or copy the source from https://www.kibo-ui.com/components/image-zoom"
+      ],
+      "quality": 87
+    },
+    {
+      "id": "kiboui-media-video-player",
+      "name": "Kibo UI Video Player",
+      "source": "Kibo UI",
+      "entry_type": "component",
+      "category": "media",
+      "description": "A composable, shadcn/ui styled video player component that uses the media-chrome library.",
+      "use_case": "Display images, video, carousels and device mockups.",
+      "search_tags": [
+        "kiboui",
+        "video",
+        "player",
+        "media",
+        "kibo-ui"
+      ],
+      "docs_url": "https://www.kibo-ui.com/components/video-player",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [
+        "media-chrome"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Compound components built on shadcn/ui — good for data-heavy product UI (kanban, gantt, table, editor, AI blocks)",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://www.kibo-ui.com/r/video-player.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://www.kibo-ui.com/r/video-player.json",
+      "manual_steps": [
+        "Or copy the source from https://www.kibo-ui.com/components/video-player"
+      ],
+      "quality": 87
+    },
+    {
+      "id": "kiboui-micro-interactions-cursor",
+      "name": "Kibo UI Cursor",
+      "source": "Kibo UI",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "A cursor component, great for realtime interactive applications.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "kiboui",
+        "cursor",
+        "micro-interactions",
+        "kibo-ui"
+      ],
+      "docs_url": "https://www.kibo-ui.com/components/cursor",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Compound components built on shadcn/ui — good for data-heavy product UI (kanban, gantt, table, editor, AI blocks)",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://www.kibo-ui.com/r/cursor.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://www.kibo-ui.com/r/cursor.json",
+      "manual_steps": [
+        "Or copy the source from https://www.kibo-ui.com/components/cursor"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "kiboui-text-ticker",
+      "name": "Kibo UI Ticker",
+      "source": "Kibo UI",
+      "entry_type": "component",
+      "category": "text",
+      "description": "A composable finance ticker for displaying symbols, prices and changes.",
+      "use_case": "Animate or emphasize typography for key messages.",
+      "search_tags": [
+        "kiboui",
+        "ticker",
+        "text",
+        "kibo-ui"
+      ],
+      "docs_url": "https://www.kibo-ui.com/components/ticker",
+      "stack": [
+        "react",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Compound components built on shadcn/ui — good for data-heavy product UI (kanban, gantt, table, editor, AI blocks)",
+        "Prefer a catalog entry from a tool-free source first; see 08-PHILOSOPHY for the animation budget."
+      ],
+      "registry_url": "https://www.kibo-ui.com/r/ticker.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://www.kibo-ui.com/r/ticker.json",
+      "manual_steps": [
+        "Or copy the source from https://www.kibo-ui.com/components/ticker"
+      ],
+      "quality": 90
+    }
+  ]
+}

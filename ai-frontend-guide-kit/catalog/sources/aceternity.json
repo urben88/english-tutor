@@ -1,0 +1,4221 @@
+{
+  "schema_version": "1.0",
+  "source_id": "aceternity",
+  "source_name": "Aceternity UI",
+  "source_url": "https://ui.aceternity.com",
+  "catalog_url": "https://ui.aceternity.com/components",
+  "license_summary": "Proprietary (free tier; commercial use allowed, no redistribution)",
+  "granularity": "complete free registry:ui set (premium detected via HTTP 401)",
+  "extraction": {
+    "channel": "registry-json",
+    "method": "Node script downloading the registry and probing each item (premium items return 401)",
+    "evidence_url": "https://ui.aceternity.com/registry.json",
+    "note": "Only free components are indexed; premium blocks are excluded by design."
+  },
+  "generated_at": "2026-10-02",
+  "entries": [
+    {
+      "id": "aceternity-backgrounds-effects-3d-pin",
+      "name": "Aceternity 3d Pin",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "backgrounds-effects",
+      "description": "Free Aceternity UI backgrounds-effects component (3d Pin) with high-impact animation.",
+      "use_case": "Add decorative depth to a section; use sparingly (1–2 per view).",
+      "search_tags": [
+        "aceternity",
+        "3d",
+        "pin",
+        "backgrounds-effects",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/3d-pin",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/3d-pin.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/3d-pin.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 70
+    },
+    {
+      "id": "aceternity-backgrounds-effects-ascii-art",
+      "name": "Aceternity Ascii Art",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "backgrounds-effects",
+      "description": "Free Aceternity UI backgrounds-effects component (Ascii Art) with high-impact animation.",
+      "use_case": "Add decorative depth to a section; use sparingly (1–2 per view).",
+      "search_tags": [
+        "aceternity",
+        "ascii",
+        "art",
+        "backgrounds-effects",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/ascii-art",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/ascii-art.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/ascii-art.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 70
+    },
+    {
+      "id": "aceternity-backgrounds-effects-aurora-background",
+      "name": "Aceternity Aurora Background",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "backgrounds-effects",
+      "description": "Free Aceternity UI backgrounds-effects component (Aurora Background) with high-impact animation.",
+      "use_case": "Add decorative depth to a section; use sparingly (1–2 per view).",
+      "search_tags": [
+        "aceternity",
+        "aurora",
+        "background",
+        "backgrounds-effects",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/aurora-background",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/aurora-background.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/aurora-background.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 73
+    },
+    {
+      "id": "aceternity-backgrounds-effects-background-beams",
+      "name": "Aceternity Background Beams",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "backgrounds-effects",
+      "description": "Free Aceternity UI backgrounds-effects component (Background Beams) with high-impact animation.",
+      "use_case": "Add decorative depth to a section; use sparingly (1–2 per view).",
+      "search_tags": [
+        "aceternity",
+        "background",
+        "beams",
+        "backgrounds-effects",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/background-beams",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/background-beams.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/background-beams.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 70
+    },
+    {
+      "id": "aceternity-backgrounds-effects-background-beams-with-collision",
+      "name": "Aceternity Background Beams With Collision",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "backgrounds-effects",
+      "description": "Free Aceternity UI backgrounds-effects component (Background Beams With Collision) with high-impact animation.",
+      "use_case": "Add decorative depth to a section; use sparingly (1–2 per view).",
+      "search_tags": [
+        "aceternity",
+        "background",
+        "beams",
+        "with",
+        "collision",
+        "backgrounds-effects",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/background-beams-with-collision",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/background-beams-with-collision.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/background-beams-with-collision.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 70
+    },
+    {
+      "id": "aceternity-backgrounds-effects-background-boxes",
+      "name": "Aceternity Background Boxes",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "backgrounds-effects",
+      "description": "Free Aceternity UI backgrounds-effects component (Background Boxes) with high-impact animation.",
+      "use_case": "Add decorative depth to a section; use sparingly (1–2 per view).",
+      "search_tags": [
+        "aceternity",
+        "background",
+        "boxes",
+        "backgrounds-effects",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/background-boxes",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "mini-svg-data-uri",
+        "motion"
+      ],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/background-boxes.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/background-boxes.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 70
+    },
+    {
+      "id": "aceternity-backgrounds-effects-background-gradient",
+      "name": "Aceternity Background Gradient",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "backgrounds-effects",
+      "description": "Free Aceternity UI backgrounds-effects component (Background Gradient) with high-impact animation.",
+      "use_case": "Add decorative depth to a section; use sparingly (1–2 per view).",
+      "search_tags": [
+        "aceternity",
+        "background",
+        "gradient",
+        "backgrounds-effects",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/background-gradient",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/background-gradient.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/background-gradient.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 70
+    },
+    {
+      "id": "aceternity-backgrounds-effects-background-gradient-animation",
+      "name": "Aceternity Background Gradient Animation",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "backgrounds-effects",
+      "description": "Free Aceternity UI backgrounds-effects component (Background Gradient Animation) with high-impact animation.",
+      "use_case": "Add decorative depth to a section; use sparingly (1–2 per view).",
+      "search_tags": [
+        "aceternity",
+        "background",
+        "gradient",
+        "animation",
+        "backgrounds-effects",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/background-gradient-animation",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/background-gradient-animation.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/background-gradient-animation.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 73
+    },
+    {
+      "id": "aceternity-backgrounds-effects-background-lines",
+      "name": "Aceternity Background Lines",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "backgrounds-effects",
+      "description": "Free Aceternity UI backgrounds-effects component (Background Lines) with high-impact animation.",
+      "use_case": "Add decorative depth to a section; use sparingly (1–2 per view).",
+      "search_tags": [
+        "aceternity",
+        "background",
+        "lines",
+        "backgrounds-effects",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/background-lines",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/background-lines.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/background-lines.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 70
+    },
+    {
+      "id": "aceternity-backgrounds-effects-canvas-reveal-effect",
+      "name": "Aceternity Canvas Reveal Effect",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "backgrounds-effects",
+      "description": "Free Aceternity UI backgrounds-effects component (Canvas Reveal Effect) with high-impact animation.",
+      "use_case": "Add decorative depth to a section; use sparingly (1–2 per view).",
+      "search_tags": [
+        "aceternity",
+        "canvas",
+        "reveal",
+        "effect",
+        "backgrounds-effects",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/canvas-reveal-effect",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "three",
+        "@react-three/fiber"
+      ],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/canvas-reveal-effect.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/canvas-reveal-effect.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 70
+    },
+    {
+      "id": "aceternity-backgrounds-effects-chromatic-image",
+      "name": "Aceternity Chromatic Image",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "backgrounds-effects",
+      "description": "Free Aceternity UI backgrounds-effects component (Chromatic Image) with high-impact animation.",
+      "use_case": "Add decorative depth to a section; use sparingly (1–2 per view).",
+      "search_tags": [
+        "aceternity",
+        "chromatic",
+        "image",
+        "backgrounds-effects",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/chromatic-image",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/chromatic-image.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/chromatic-image.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 73
+    },
+    {
+      "id": "aceternity-backgrounds-effects-cloud-shader",
+      "name": "Aceternity Cloud Shader",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "backgrounds-effects",
+      "description": "Free Aceternity UI backgrounds-effects component (Cloud Shader) with high-impact animation.",
+      "use_case": "Add decorative depth to a section; use sparingly (1–2 per view).",
+      "search_tags": [
+        "aceternity",
+        "cloud",
+        "shader",
+        "backgrounds-effects",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/cloud-shader",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/cloud-shader.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/cloud-shader.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 73
+    },
+    {
+      "id": "aceternity-backgrounds-effects-code-block",
+      "name": "Aceternity Code Block",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "backgrounds-effects",
+      "description": "Free Aceternity UI backgrounds-effects component (Code Block) with high-impact animation.",
+      "use_case": "Add decorative depth to a section; use sparingly (1–2 per view).",
+      "search_tags": [
+        "aceternity",
+        "code",
+        "block",
+        "backgrounds-effects",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/code-block",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "@tabler/icons-react",
+        "react-syntax-highlighter"
+      ],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/code-block.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/code-block.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 70
+    },
+    {
+      "id": "aceternity-backgrounds-effects-compare",
+      "name": "Aceternity Compare",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "backgrounds-effects",
+      "description": "Free Aceternity UI backgrounds-effects component (Compare) with high-impact animation.",
+      "use_case": "Add decorative depth to a section; use sparingly (1–2 per view).",
+      "search_tags": [
+        "aceternity",
+        "compare",
+        "backgrounds-effects",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/compare",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "@tabler/icons-react",
+        "motion"
+      ],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/compare.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/compare.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 70
+    },
+    {
+      "id": "aceternity-backgrounds-effects-container-scroll-animation",
+      "name": "Aceternity Container Scroll Animation",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "backgrounds-effects",
+      "description": "Free Aceternity UI backgrounds-effects component (Container Scroll Animation) with high-impact animation.",
+      "use_case": "Add decorative depth to a section; use sparingly (1–2 per view).",
+      "search_tags": [
+        "aceternity",
+        "container",
+        "scroll",
+        "animation",
+        "backgrounds-effects",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/container-scroll-animation",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/container-scroll-animation.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/container-scroll-animation.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 70
+    },
+    {
+      "id": "aceternity-backgrounds-effects-cover",
+      "name": "Aceternity Cover",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "backgrounds-effects",
+      "description": "Free Aceternity UI backgrounds-effects component (Cover) with high-impact animation.",
+      "use_case": "Add decorative depth to a section; use sparingly (1–2 per view).",
+      "search_tags": [
+        "aceternity",
+        "cover",
+        "backgrounds-effects",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/cover",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/cover.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/cover.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 70
+    },
+    {
+      "id": "aceternity-backgrounds-effects-dither-shader",
+      "name": "Aceternity Dither Shader",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "backgrounds-effects",
+      "description": "Free Aceternity UI backgrounds-effects component (Dither Shader) with high-impact animation.",
+      "use_case": "Add decorative depth to a section; use sparingly (1–2 per view).",
+      "search_tags": [
+        "aceternity",
+        "dither",
+        "shader",
+        "backgrounds-effects",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/dither-shader",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/dither-shader.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/dither-shader.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 73
+    },
+    {
+      "id": "aceternity-backgrounds-effects-file-upload",
+      "name": "Aceternity File Upload",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "backgrounds-effects",
+      "description": "Free Aceternity UI backgrounds-effects component (File Upload) with high-impact animation.",
+      "use_case": "Add decorative depth to a section; use sparingly (1–2 per view).",
+      "search_tags": [
+        "aceternity",
+        "file",
+        "upload",
+        "backgrounds-effects",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/file-upload",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "@tabler/icons-react",
+        "react-dropzone",
+        "motion"
+      ],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/file-upload.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/file-upload.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 67
+    },
+    {
+      "id": "aceternity-backgrounds-effects-flip-words",
+      "name": "Aceternity Flip Words",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "backgrounds-effects",
+      "description": "Free Aceternity UI backgrounds-effects component (Flip Words) with high-impact animation.",
+      "use_case": "Add decorative depth to a section; use sparingly (1–2 per view).",
+      "search_tags": [
+        "aceternity",
+        "flip",
+        "words",
+        "backgrounds-effects",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/flip-words",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/flip-words.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/flip-words.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 70
+    },
+    {
+      "id": "aceternity-backgrounds-effects-google-gemini-effect",
+      "name": "Aceternity Google Gemini Effect",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "backgrounds-effects",
+      "description": "Free Aceternity UI backgrounds-effects component (Google Gemini Effect) with high-impact animation.",
+      "use_case": "Add decorative depth to a section; use sparingly (1–2 per view).",
+      "search_tags": [
+        "aceternity",
+        "google",
+        "gemini",
+        "effect",
+        "backgrounds-effects",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/google-gemini-effect",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/google-gemini-effect.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/google-gemini-effect.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 70
+    },
+    {
+      "id": "aceternity-backgrounds-effects-grid",
+      "name": "Aceternity Grid",
+      "source": "Aceternity UI",
+      "entry_type": "block",
+      "category": "backgrounds-effects",
+      "description": "Free Aceternity UI backgrounds-effects component (Grid) with high-impact animation.",
+      "use_case": "Add decorative depth to a section; use sparingly (1–2 per view).",
+      "search_tags": [
+        "aceternity",
+        "grid",
+        "backgrounds-effects",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/grid",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/grid.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/grid.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 73
+    },
+    {
+      "id": "aceternity-backgrounds-effects-keyboard",
+      "name": "Aceternity Keyboard",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "backgrounds-effects",
+      "description": "Free Aceternity UI backgrounds-effects component (Keyboard) with high-impact animation.",
+      "use_case": "Add decorative depth to a section; use sparingly (1–2 per view).",
+      "search_tags": [
+        "aceternity",
+        "keyboard",
+        "backgrounds-effects",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/keyboard",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "@tabler/icons-react",
+        "motion/react"
+      ],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/keyboard.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/keyboard.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 70
+    },
+    {
+      "id": "aceternity-backgrounds-effects-label",
+      "name": "Aceternity Label",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "backgrounds-effects",
+      "description": "Free Aceternity UI backgrounds-effects component (Label) with high-impact animation.",
+      "use_case": "Add decorative depth to a section; use sparingly (1–2 per view).",
+      "search_tags": [
+        "aceternity",
+        "label",
+        "backgrounds-effects",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/label",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "@radix-ui/react-label"
+      ],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/label.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/label.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 70
+    },
+    {
+      "id": "aceternity-backgrounds-effects-lamp",
+      "name": "Aceternity Lamp",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "backgrounds-effects",
+      "description": "Free Aceternity UI backgrounds-effects component (Lamp) with high-impact animation.",
+      "use_case": "Add decorative depth to a section; use sparingly (1–2 per view).",
+      "search_tags": [
+        "aceternity",
+        "lamp",
+        "backgrounds-effects",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/lamp",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/lamp.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/lamp.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 70
+    },
+    {
+      "id": "aceternity-backgrounds-effects-layout-grid",
+      "name": "Aceternity Layout Grid",
+      "source": "Aceternity UI",
+      "entry_type": "block",
+      "category": "backgrounds-effects",
+      "description": "Free Aceternity UI backgrounds-effects component (Layout Grid) with high-impact animation.",
+      "use_case": "Add decorative depth to a section; use sparingly (1–2 per view).",
+      "search_tags": [
+        "aceternity",
+        "layout",
+        "grid",
+        "backgrounds-effects",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/layout-grid",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/layout-grid.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/layout-grid.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 70
+    },
+    {
+      "id": "aceternity-backgrounds-effects-link-preview",
+      "name": "Aceternity Link Preview",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "backgrounds-effects",
+      "description": "Free Aceternity UI backgrounds-effects component (Link Preview) with high-impact animation.",
+      "use_case": "Add decorative depth to a section; use sparingly (1–2 per view).",
+      "search_tags": [
+        "aceternity",
+        "link",
+        "preview",
+        "backgrounds-effects",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/link-preview",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "@radix-ui/react-hover-card",
+        "qss",
+        "motion"
+      ],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/link-preview.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/link-preview.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 67
+    },
+    {
+      "id": "aceternity-backgrounds-effects-macbook-scroll",
+      "name": "Aceternity Macbook Scroll",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "backgrounds-effects",
+      "description": "Free Aceternity UI backgrounds-effects component (Macbook Scroll) with high-impact animation.",
+      "use_case": "Add decorative depth to a section; use sparingly (1–2 per view).",
+      "search_tags": [
+        "aceternity",
+        "macbook",
+        "scroll",
+        "backgrounds-effects",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/macbook-scroll",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "@tabler/icons-react",
+        "motion"
+      ],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/macbook-scroll.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/macbook-scroll.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 70
+    },
+    {
+      "id": "aceternity-backgrounds-effects-meteors",
+      "name": "Aceternity Meteors",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "backgrounds-effects",
+      "description": "Free Aceternity UI backgrounds-effects component (Meteors) with high-impact animation.",
+      "use_case": "Add decorative depth to a section; use sparingly (1–2 per view).",
+      "search_tags": [
+        "aceternity",
+        "meteors",
+        "backgrounds-effects",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/meteors",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/meteors.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/meteors.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 73
+    },
+    {
+      "id": "aceternity-backgrounds-effects-moving-border",
+      "name": "Aceternity Moving Border",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "backgrounds-effects",
+      "description": "Free Aceternity UI backgrounds-effects component (Moving Border) with high-impact animation.",
+      "use_case": "Add decorative depth to a section; use sparingly (1–2 per view).",
+      "search_tags": [
+        "aceternity",
+        "moving",
+        "border",
+        "backgrounds-effects",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/moving-border",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/moving-border.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/moving-border.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 70
+    },
+    {
+      "id": "aceternity-backgrounds-effects-moving-line",
+      "name": "Aceternity Moving Line",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "backgrounds-effects",
+      "description": "Free Aceternity UI backgrounds-effects component (Moving Line) with high-impact animation.",
+      "use_case": "Add decorative depth to a section; use sparingly (1–2 per view).",
+      "search_tags": [
+        "aceternity",
+        "moving",
+        "line",
+        "backgrounds-effects",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/moving-line",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/moving-line.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/moving-line.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 70
+    },
+    {
+      "id": "aceternity-backgrounds-effects-noise-background",
+      "name": "Aceternity Noise Background",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "backgrounds-effects",
+      "description": "Free Aceternity UI backgrounds-effects component (Noise Background) with high-impact animation.",
+      "use_case": "Add decorative depth to a section; use sparingly (1–2 per view).",
+      "search_tags": [
+        "aceternity",
+        "noise",
+        "background",
+        "backgrounds-effects",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/noise-background",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/noise-background.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/noise-background.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 73
+    },
+    {
+      "id": "aceternity-backgrounds-effects-notch",
+      "name": "Aceternity Notch",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "backgrounds-effects",
+      "description": "Free Aceternity UI backgrounds-effects component (Notch) with high-impact animation.",
+      "use_case": "Add decorative depth to a section; use sparingly (1–2 per view).",
+      "search_tags": [
+        "aceternity",
+        "notch",
+        "backgrounds-effects",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/notch",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/notch.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/notch.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 70
+    },
+    {
+      "id": "aceternity-backgrounds-effects-parallax-scroll",
+      "name": "Aceternity Parallax Scroll",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "backgrounds-effects",
+      "description": "Free Aceternity UI backgrounds-effects component (Parallax Scroll) with high-impact animation.",
+      "use_case": "Add decorative depth to a section; use sparingly (1–2 per view).",
+      "search_tags": [
+        "aceternity",
+        "parallax",
+        "scroll",
+        "backgrounds-effects",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/parallax-scroll",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/parallax-scroll.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/parallax-scroll.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 70
+    },
+    {
+      "id": "aceternity-backgrounds-effects-parallax-scroll-2",
+      "name": "Aceternity Parallax Scroll 2",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "backgrounds-effects",
+      "description": "Free Aceternity UI backgrounds-effects component (Parallax Scroll 2) with high-impact animation.",
+      "use_case": "Add decorative depth to a section; use sparingly (1–2 per view).",
+      "search_tags": [
+        "aceternity",
+        "parallax",
+        "scroll",
+        "2",
+        "backgrounds-effects",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/parallax-scroll-2",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/parallax-scroll-2.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/parallax-scroll-2.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 70
+    },
+    {
+      "id": "aceternity-backgrounds-effects-pixelated-canvas",
+      "name": "Aceternity Pixelated Canvas",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "backgrounds-effects",
+      "description": "Free Aceternity UI backgrounds-effects component (Pixelated Canvas) with high-impact animation.",
+      "use_case": "Add decorative depth to a section; use sparingly (1–2 per view).",
+      "search_tags": [
+        "aceternity",
+        "pixelated",
+        "canvas",
+        "backgrounds-effects",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/pixelated-canvas",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/pixelated-canvas.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/pixelated-canvas.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 73
+    },
+    {
+      "id": "aceternity-backgrounds-effects-scales",
+      "name": "Aceternity Scales",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "backgrounds-effects",
+      "description": "Free Aceternity UI backgrounds-effects component (Scales) with high-impact animation.",
+      "use_case": "Add decorative depth to a section; use sparingly (1–2 per view).",
+      "search_tags": [
+        "aceternity",
+        "scales",
+        "backgrounds-effects",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/scales",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/scales.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/scales.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 73
+    },
+    {
+      "id": "aceternity-backgrounds-effects-shooting-stars",
+      "name": "Aceternity Shooting Stars",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "backgrounds-effects",
+      "description": "Free Aceternity UI backgrounds-effects component (Shooting Stars) with high-impact animation.",
+      "use_case": "Add decorative depth to a section; use sparingly (1–2 per view).",
+      "search_tags": [
+        "aceternity",
+        "shooting",
+        "stars",
+        "backgrounds-effects",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/shooting-stars",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/shooting-stars.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/shooting-stars.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 73
+    },
+    {
+      "id": "aceternity-backgrounds-effects-sidebar",
+      "name": "Aceternity Sidebar",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "backgrounds-effects",
+      "description": "Free Aceternity UI backgrounds-effects component (Sidebar) with high-impact animation.",
+      "use_case": "Add decorative depth to a section; use sparingly (1–2 per view).",
+      "search_tags": [
+        "aceternity",
+        "sidebar",
+        "backgrounds-effects",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/sidebar",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "@tabler/icons-react",
+        "motion"
+      ],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/sidebar.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/sidebar.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 70
+    },
+    {
+      "id": "aceternity-backgrounds-effects-sparkles",
+      "name": "Aceternity Sparkles",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "backgrounds-effects",
+      "description": "Free Aceternity UI backgrounds-effects component (Sparkles) with high-impact animation.",
+      "use_case": "Add decorative depth to a section; use sparingly (1–2 per view).",
+      "search_tags": [
+        "aceternity",
+        "sparkles",
+        "backgrounds-effects",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/sparkles",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "@tsparticles/react",
+        "@tsparticles/engine",
+        "@tsparticles/slim",
+        "motion"
+      ],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/sparkles.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/sparkles.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 67
+    },
+    {
+      "id": "aceternity-backgrounds-effects-stars-background",
+      "name": "Aceternity Stars Background",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "backgrounds-effects",
+      "description": "Free Aceternity UI backgrounds-effects component (Stars Background) with high-impact animation.",
+      "use_case": "Add decorative depth to a section; use sparingly (1–2 per view).",
+      "search_tags": [
+        "aceternity",
+        "stars",
+        "background",
+        "backgrounds-effects",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/stars-background",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/stars-background.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/stars-background.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 73
+    },
+    {
+      "id": "aceternity-backgrounds-effects-sticky-banner",
+      "name": "Aceternity Sticky Banner",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "backgrounds-effects",
+      "description": "Free Aceternity UI backgrounds-effects component (Sticky Banner) with high-impact animation.",
+      "use_case": "Add decorative depth to a section; use sparingly (1–2 per view).",
+      "search_tags": [
+        "aceternity",
+        "sticky",
+        "banner",
+        "backgrounds-effects",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/sticky-banner",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/sticky-banner.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/sticky-banner.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 73
+    },
+    {
+      "id": "aceternity-backgrounds-effects-sticky-scroll-reveal",
+      "name": "Aceternity Sticky Scroll Reveal",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "backgrounds-effects",
+      "description": "Free Aceternity UI backgrounds-effects component (Sticky Scroll Reveal) with high-impact animation.",
+      "use_case": "Add decorative depth to a section; use sparingly (1–2 per view).",
+      "search_tags": [
+        "aceternity",
+        "sticky",
+        "scroll",
+        "reveal",
+        "backgrounds-effects",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/sticky-scroll-reveal",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/sticky-scroll-reveal.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/sticky-scroll-reveal.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 70
+    },
+    {
+      "id": "aceternity-backgrounds-effects-svg-mask-effect",
+      "name": "Aceternity Svg Mask Effect",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "backgrounds-effects",
+      "description": "Free Aceternity UI backgrounds-effects component (Svg Mask Effect) with high-impact animation.",
+      "use_case": "Add decorative depth to a section; use sparingly (1–2 per view).",
+      "search_tags": [
+        "aceternity",
+        "svg",
+        "mask",
+        "effect",
+        "backgrounds-effects",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/svg-mask-effect",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/svg-mask-effect.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/svg-mask-effect.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 70
+    },
+    {
+      "id": "aceternity-backgrounds-effects-tracing-beam",
+      "name": "Aceternity Tracing Beam",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "backgrounds-effects",
+      "description": "Free Aceternity UI backgrounds-effects component (Tracing Beam) with high-impact animation.",
+      "use_case": "Add decorative depth to a section; use sparingly (1–2 per view).",
+      "search_tags": [
+        "aceternity",
+        "tracing",
+        "beam",
+        "backgrounds-effects",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/tracing-beam",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/tracing-beam.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/tracing-beam.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 70
+    },
+    {
+      "id": "aceternity-backgrounds-effects-typewriter-effect",
+      "name": "Aceternity Typewriter Effect",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "backgrounds-effects",
+      "description": "Free Aceternity UI backgrounds-effects component (Typewriter Effect) with high-impact animation.",
+      "use_case": "Add decorative depth to a section; use sparingly (1–2 per view).",
+      "search_tags": [
+        "aceternity",
+        "typewriter",
+        "effect",
+        "backgrounds-effects",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/typewriter-effect",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/typewriter-effect.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/typewriter-effect.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 70
+    },
+    {
+      "id": "aceternity-backgrounds-effects-vortex",
+      "name": "Aceternity Vortex",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "backgrounds-effects",
+      "description": "Free Aceternity UI backgrounds-effects component (Vortex) with high-impact animation.",
+      "use_case": "Add decorative depth to a section; use sparingly (1–2 per view).",
+      "search_tags": [
+        "aceternity",
+        "vortex",
+        "backgrounds-effects",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/vortex",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "simplex-noise",
+        "motion"
+      ],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/vortex.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/vortex.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 70
+    },
+    {
+      "id": "aceternity-backgrounds-effects-wavy-background",
+      "name": "Aceternity Wavy Background",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "backgrounds-effects",
+      "description": "Free Aceternity UI backgrounds-effects component (Wavy Background) with high-impact animation.",
+      "use_case": "Add decorative depth to a section; use sparingly (1–2 per view).",
+      "search_tags": [
+        "aceternity",
+        "wavy",
+        "background",
+        "backgrounds-effects",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/wavy-background",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "simplex-noise"
+      ],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/wavy-background.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/wavy-background.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 70
+    },
+    {
+      "id": "aceternity-backgrounds-effects-webcam-pixel-grid",
+      "name": "Aceternity Webcam Pixel Grid",
+      "source": "Aceternity UI",
+      "entry_type": "block",
+      "category": "backgrounds-effects",
+      "description": "Free Aceternity UI backgrounds-effects component (Webcam Pixel Grid) with high-impact animation.",
+      "use_case": "Add decorative depth to a section; use sparingly (1–2 per view).",
+      "search_tags": [
+        "aceternity",
+        "webcam",
+        "pixel",
+        "grid",
+        "backgrounds-effects",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/webcam-pixel-grid",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/webcam-pixel-grid.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/webcam-pixel-grid.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 73
+    },
+    {
+      "id": "aceternity-backgrounds-effects-world-map",
+      "name": "Aceternity World Map",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "backgrounds-effects",
+      "description": "Free Aceternity UI backgrounds-effects component (World Map) with high-impact animation.",
+      "use_case": "Add decorative depth to a section; use sparingly (1–2 per view).",
+      "search_tags": [
+        "aceternity",
+        "world",
+        "map",
+        "backgrounds-effects",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/world-map",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "dotted-map",
+        "motion"
+      ],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/world-map.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/world-map.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 70
+    },
+    {
+      "id": "aceternity-data-display-images-badge",
+      "name": "Aceternity Images Badge",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Free Aceternity UI data-display component (Images Badge) with high-impact animation.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "aceternity",
+        "images",
+        "badge",
+        "data-display",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/images-badge",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/images-badge.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/images-badge.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 73
+    },
+    {
+      "id": "aceternity-data-display-timeline",
+      "name": "Aceternity Timeline",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Free Aceternity UI data-display component (Timeline) with high-impact animation.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "aceternity",
+        "timeline",
+        "data-display",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/timeline",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/timeline.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/timeline.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 70
+    },
+    {
+      "id": "aceternity-features-bento-grid",
+      "name": "Aceternity Bento Grid",
+      "source": "Aceternity UI",
+      "entry_type": "block",
+      "category": "features",
+      "description": "Free Aceternity UI features component (Bento Grid) with high-impact animation.",
+      "use_case": "Explain product capabilities with structured, scannable sections.",
+      "search_tags": [
+        "aceternity",
+        "bento",
+        "grid",
+        "features",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/bento-grid",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "@tabler/icons-react"
+      ],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/bento-grid.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/bento-grid.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 70
+    },
+    {
+      "id": "aceternity-feedback-animated-tooltip",
+      "name": "Aceternity Animated Tooltip",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "feedback",
+      "description": "Free Aceternity UI feedback component (Animated Tooltip) with high-impact animation.",
+      "use_case": "Communicate system status: alerts, loaders, progress and notifications.",
+      "search_tags": [
+        "aceternity",
+        "animated",
+        "tooltip",
+        "feedback",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/animated-tooltip",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/animated-tooltip.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/animated-tooltip.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 70
+    },
+    {
+      "id": "aceternity-feedback-image-generation-loader",
+      "name": "Aceternity Image Generation Loader",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "feedback",
+      "description": "Free Aceternity UI feedback component (Image Generation Loader) with high-impact animation.",
+      "use_case": "Communicate system status: alerts, loaders, progress and notifications.",
+      "search_tags": [
+        "aceternity",
+        "image",
+        "generation",
+        "loader",
+        "feedback",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/image-generation-loader",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/image-generation-loader.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/image-generation-loader.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 73
+    },
+    {
+      "id": "aceternity-feedback-loader",
+      "name": "Aceternity Loader",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "feedback",
+      "description": "Free Aceternity UI feedback component (Loader) with high-impact animation.",
+      "use_case": "Communicate system status: alerts, loaders, progress and notifications.",
+      "search_tags": [
+        "aceternity",
+        "loader",
+        "feedback",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/loader",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/loader.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/loader.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 73
+    },
+    {
+      "id": "aceternity-feedback-multi-step-loader",
+      "name": "Aceternity Multi Step Loader",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "feedback",
+      "description": "Free Aceternity UI feedback component (Multi Step Loader) with high-impact animation.",
+      "use_case": "Communicate system status: alerts, loaders, progress and notifications.",
+      "search_tags": [
+        "aceternity",
+        "multi",
+        "step",
+        "loader",
+        "feedback",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/multi-step-loader",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "@tabler/icons-react",
+        "motion"
+      ],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/multi-step-loader.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/multi-step-loader.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 70
+    },
+    {
+      "id": "aceternity-forms-gooey-input",
+      "name": "Aceternity Gooey Input",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Free Aceternity UI forms component (Gooey Input) with high-impact animation.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "aceternity",
+        "gooey",
+        "input",
+        "forms",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/gooey-input",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/gooey-input.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/gooey-input.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 70
+    },
+    {
+      "id": "aceternity-forms-input",
+      "name": "Aceternity Input",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Free Aceternity UI forms component (Input) with high-impact animation.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "aceternity",
+        "input",
+        "forms",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/input",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/input.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/input.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 70
+    },
+    {
+      "id": "aceternity-forms-placeholders-and-vanish-input",
+      "name": "Aceternity Placeholders And Vanish Input",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Free Aceternity UI forms component (Placeholders And Vanish Input) with high-impact animation.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "aceternity",
+        "placeholders",
+        "and",
+        "vanish",
+        "input",
+        "forms",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/placeholders-and-vanish-input",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/placeholders-and-vanish-input.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/placeholders-and-vanish-input.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 70
+    },
+    {
+      "id": "aceternity-hero-hero-highlight",
+      "name": "Aceternity Hero Highlight",
+      "source": "Aceternity UI",
+      "entry_type": "block",
+      "category": "hero",
+      "description": "Free Aceternity UI hero component (Hero Highlight) with high-impact animation.",
+      "use_case": "Create above-the-fold sections that communicate the value proposition immediately.",
+      "search_tags": [
+        "aceternity",
+        "hero",
+        "highlight",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/hero-highlight",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "mini-svg-data-uri",
+        "motion"
+      ],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/hero-highlight.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/hero-highlight.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 70
+    },
+    {
+      "id": "aceternity-hero-hero-parallax",
+      "name": "Aceternity Hero Parallax",
+      "source": "Aceternity UI",
+      "entry_type": "block",
+      "category": "hero",
+      "description": "Free Aceternity UI hero component (Hero Parallax) with high-impact animation.",
+      "use_case": "Create above-the-fold sections that communicate the value proposition immediately.",
+      "search_tags": [
+        "aceternity",
+        "hero",
+        "parallax",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/hero-parallax",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/hero-parallax.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/hero-parallax.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 70
+    },
+    {
+      "id": "aceternity-hero-parallax-hero-images",
+      "name": "Aceternity Parallax Hero Images",
+      "source": "Aceternity UI",
+      "entry_type": "block",
+      "category": "hero",
+      "description": "Free Aceternity UI hero component (Parallax Hero Images) with high-impact animation.",
+      "use_case": "Create above-the-fold sections that communicate the value proposition immediately.",
+      "search_tags": [
+        "aceternity",
+        "parallax",
+        "hero",
+        "images",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/parallax-hero-images",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/parallax-hero-images.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/parallax-hero-images.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 70
+    },
+    {
+      "id": "aceternity-media-3d-globe",
+      "name": "Aceternity 3d Globe",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "media",
+      "description": "Free Aceternity UI media component (3d Globe) with high-impact animation.",
+      "use_case": "Display images, video, carousels and device mockups.",
+      "search_tags": [
+        "aceternity",
+        "3d",
+        "globe",
+        "media",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/3d-globe",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "three",
+        "@react-three/fiber",
+        "@react-three/drei"
+      ],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/3d-globe.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/3d-globe.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 67
+    },
+    {
+      "id": "aceternity-media-carousel",
+      "name": "Aceternity Carousel",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "media",
+      "description": "Free Aceternity UI media component (Carousel) with high-impact animation.",
+      "use_case": "Display images, video, carousels and device mockups.",
+      "search_tags": [
+        "aceternity",
+        "carousel",
+        "media",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/carousel",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "@tabler/icons-react"
+      ],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/carousel.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/carousel.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 70
+    },
+    {
+      "id": "aceternity-media-globe",
+      "name": "Aceternity Globe",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "media",
+      "description": "Free Aceternity UI media component (Globe) with high-impact animation.",
+      "use_case": "Display images, video, carousels and device mockups.",
+      "search_tags": [
+        "aceternity",
+        "globe",
+        "media",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/globe",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "three",
+        "three-globe",
+        "@react-three/fiber@alpha",
+        "@react-three/drei"
+      ],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/globe.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/globe.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 67
+    },
+    {
+      "id": "aceternity-media-images-slider",
+      "name": "Aceternity Images Slider",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "media",
+      "description": "Free Aceternity UI media component (Images Slider) with high-impact animation.",
+      "use_case": "Display images, video, carousels and device mockups.",
+      "search_tags": [
+        "aceternity",
+        "images",
+        "slider",
+        "media",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/images-slider",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/images-slider.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/images-slider.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 70
+    },
+    {
+      "id": "aceternity-media-lens",
+      "name": "Aceternity Lens",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "media",
+      "description": "Free Aceternity UI media component (Lens) with high-impact animation.",
+      "use_case": "Display images, video, carousels and device mockups.",
+      "search_tags": [
+        "aceternity",
+        "lens",
+        "media",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/lens",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/lens.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/lens.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 70
+    },
+    {
+      "id": "aceternity-media-terminal",
+      "name": "Aceternity Terminal",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "media",
+      "description": "Free Aceternity UI media component (Terminal) with high-impact animation.",
+      "use_case": "Display images, video, carousels and device mockups.",
+      "search_tags": [
+        "aceternity",
+        "terminal",
+        "media",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/terminal",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/terminal.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/terminal.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 73
+    },
+    {
+      "id": "aceternity-micro-interactions-3d-card",
+      "name": "Aceternity 3d Card",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "Free Aceternity UI micro-interactions component (3d Card) with high-impact animation.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "aceternity",
+        "3d",
+        "card",
+        "micro-interactions",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/3d-card",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/3d-card.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/3d-card.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 73
+    },
+    {
+      "id": "aceternity-micro-interactions-3d-marquee",
+      "name": "Aceternity 3d Marquee",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "Free Aceternity UI micro-interactions component (3d Marquee) with high-impact animation.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "aceternity",
+        "3d",
+        "marquee",
+        "micro-interactions",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/3d-marquee",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/3d-marquee.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/3d-marquee.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 73
+    },
+    {
+      "id": "aceternity-micro-interactions-apple-cards-carousel",
+      "name": "Aceternity Apple Cards Carousel",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "Free Aceternity UI micro-interactions component (Apple Cards Carousel) with high-impact animation.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "aceternity",
+        "apple",
+        "cards",
+        "carousel",
+        "micro-interactions",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/apple-cards-carousel",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "@tabler/icons-react",
+        "motion"
+      ],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/apple-cards-carousel.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/apple-cards-carousel.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 70
+    },
+    {
+      "id": "aceternity-micro-interactions-background-ripple-effect",
+      "name": "Aceternity Background Ripple Effect",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "Free Aceternity UI micro-interactions component (Background Ripple Effect) with high-impact animation.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "aceternity",
+        "background",
+        "ripple",
+        "effect",
+        "micro-interactions",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/background-ripple-effect",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/background-ripple-effect.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/background-ripple-effect.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 70
+    },
+    {
+      "id": "aceternity-micro-interactions-card-hover-effect",
+      "name": "Aceternity Card Hover Effect",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "Free Aceternity UI micro-interactions component (Card Hover Effect) with high-impact animation.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "aceternity",
+        "card",
+        "hover",
+        "effect",
+        "micro-interactions",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/card-hover-effect",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/card-hover-effect.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/card-hover-effect.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 70
+    },
+    {
+      "id": "aceternity-micro-interactions-card-spotlight",
+      "name": "Aceternity Card Spotlight",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "Free Aceternity UI micro-interactions component (Card Spotlight) with high-impact animation.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "aceternity",
+        "card",
+        "spotlight",
+        "micro-interactions",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/card-spotlight",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/card-spotlight.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/card-spotlight.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 70
+    },
+    {
+      "id": "aceternity-micro-interactions-card-stack",
+      "name": "Aceternity Card Stack",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "Free Aceternity UI micro-interactions component (Card Stack) with high-impact animation.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "aceternity",
+        "card",
+        "stack",
+        "micro-interactions",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/card-stack",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/card-stack.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/card-stack.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 70
+    },
+    {
+      "id": "aceternity-micro-interactions-comet-card",
+      "name": "Aceternity Comet Card",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "Free Aceternity UI micro-interactions component (Comet Card) with high-impact animation.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "aceternity",
+        "comet",
+        "card",
+        "micro-interactions",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/comet-card",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/comet-card.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/comet-card.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 73
+    },
+    {
+      "id": "aceternity-micro-interactions-direction-aware-hover",
+      "name": "Aceternity Direction Aware Hover",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "Free Aceternity UI micro-interactions component (Direction Aware Hover) with high-impact animation.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "aceternity",
+        "direction",
+        "aware",
+        "hover",
+        "micro-interactions",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/direction-aware-hover",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/direction-aware-hover.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/direction-aware-hover.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 70
+    },
+    {
+      "id": "aceternity-micro-interactions-dotted-glow-background",
+      "name": "Aceternity Dotted Glow Background",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "Free Aceternity UI micro-interactions component (Dotted Glow Background) with high-impact animation.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "aceternity",
+        "dotted",
+        "glow",
+        "background",
+        "micro-interactions",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/dotted-glow-background",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/dotted-glow-background.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/dotted-glow-background.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 73
+    },
+    {
+      "id": "aceternity-micro-interactions-draggable-card",
+      "name": "Aceternity Draggable Card",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "Free Aceternity UI micro-interactions component (Draggable Card) with high-impact animation.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "aceternity",
+        "draggable",
+        "card",
+        "micro-interactions",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/draggable-card",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/draggable-card.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/draggable-card.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 73
+    },
+    {
+      "id": "aceternity-micro-interactions-evervault-card",
+      "name": "Aceternity Evervault Card",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "Free Aceternity UI micro-interactions component (Evervault Card) with high-impact animation.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "aceternity",
+        "evervault",
+        "card",
+        "micro-interactions",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/evervault-card",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/evervault-card.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/evervault-card.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 70
+    },
+    {
+      "id": "aceternity-micro-interactions-floating-dock",
+      "name": "Aceternity Floating Dock",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "Free Aceternity UI micro-interactions component (Floating Dock) with high-impact animation.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "aceternity",
+        "floating",
+        "dock",
+        "micro-interactions",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/floating-dock",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "@tabler/icons-react",
+        "motion"
+      ],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/floating-dock.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/floating-dock.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 70
+    },
+    {
+      "id": "aceternity-micro-interactions-focus-cards",
+      "name": "Aceternity Focus Cards",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "Free Aceternity UI micro-interactions component (Focus Cards) with high-impact animation.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "aceternity",
+        "focus",
+        "cards",
+        "micro-interactions",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/focus-cards",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/focus-cards.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/focus-cards.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 73
+    },
+    {
+      "id": "aceternity-micro-interactions-following-pointer",
+      "name": "Aceternity Following Pointer",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "Free Aceternity UI micro-interactions component (Following Pointer) with high-impact animation.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "aceternity",
+        "following",
+        "pointer",
+        "micro-interactions",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/following-pointer",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/following-pointer.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/following-pointer.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 70
+    },
+    {
+      "id": "aceternity-micro-interactions-glare-card",
+      "name": "Aceternity Glare Card",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "Free Aceternity UI micro-interactions component (Glare Card) with high-impact animation.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "aceternity",
+        "glare",
+        "card",
+        "micro-interactions",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/glare-card",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/glare-card.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/glare-card.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 73
+    },
+    {
+      "id": "aceternity-micro-interactions-glowing-effect",
+      "name": "Aceternity Glowing Effect",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "Free Aceternity UI micro-interactions component (Glowing Effect) with high-impact animation.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "aceternity",
+        "glowing",
+        "effect",
+        "micro-interactions",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/glowing-effect",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "lucide-react"
+      ],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/glowing-effect.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/glowing-effect.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 70
+    },
+    {
+      "id": "aceternity-micro-interactions-glowing-stars",
+      "name": "Aceternity Glowing Stars",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "Free Aceternity UI micro-interactions component (Glowing Stars) with high-impact animation.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "aceternity",
+        "glowing",
+        "stars",
+        "micro-interactions",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/glowing-stars",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/glowing-stars.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/glowing-stars.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 70
+    },
+    {
+      "id": "aceternity-micro-interactions-hover-border-gradient",
+      "name": "Aceternity Hover Border Gradient",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "Free Aceternity UI micro-interactions component (Hover Border Gradient) with high-impact animation.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "aceternity",
+        "hover",
+        "border",
+        "gradient",
+        "micro-interactions",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/hover-border-gradient",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/hover-border-gradient.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/hover-border-gradient.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 70
+    },
+    {
+      "id": "aceternity-micro-interactions-infinite-moving-cards",
+      "name": "Aceternity Infinite Moving Cards",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "Free Aceternity UI micro-interactions component (Infinite Moving Cards) with high-impact animation.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "aceternity",
+        "infinite",
+        "moving",
+        "cards",
+        "micro-interactions",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/infinite-moving-cards",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/infinite-moving-cards.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/infinite-moving-cards.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 73
+    },
+    {
+      "id": "aceternity-micro-interactions-magnetic-button",
+      "name": "Aceternity Magnetic Button",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "Free Aceternity UI micro-interactions component (Magnetic Button) with high-impact animation.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "aceternity",
+        "magnetic",
+        "button",
+        "micro-interactions",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/magnetic-button",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/magnetic-button.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/magnetic-button.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 70
+    },
+    {
+      "id": "aceternity-micro-interactions-pointer-highlight",
+      "name": "Aceternity Pointer Highlight",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "Free Aceternity UI micro-interactions component (Pointer Highlight) with high-impact animation.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "aceternity",
+        "pointer",
+        "highlight",
+        "micro-interactions",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/pointer-highlight",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/pointer-highlight.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/pointer-highlight.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 73
+    },
+    {
+      "id": "aceternity-micro-interactions-spotlight",
+      "name": "Aceternity Spotlight",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "Free Aceternity UI micro-interactions component (Spotlight) with high-impact animation.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "aceternity",
+        "spotlight",
+        "micro-interactions",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/spotlight",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/spotlight.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/spotlight.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 73
+    },
+    {
+      "id": "aceternity-micro-interactions-spotlight-new",
+      "name": "Aceternity Spotlight New",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "Free Aceternity UI micro-interactions component (Spotlight New) with high-impact animation.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "aceternity",
+        "spotlight",
+        "new",
+        "micro-interactions",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/spotlight-new",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/spotlight-new.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/spotlight-new.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 73
+    },
+    {
+      "id": "aceternity-micro-interactions-stateful-button",
+      "name": "Aceternity Stateful Button",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "Free Aceternity UI micro-interactions component (Stateful Button) with high-impact animation.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "aceternity",
+        "stateful",
+        "button",
+        "micro-interactions",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/stateful-button",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/stateful-button.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/stateful-button.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 73
+    },
+    {
+      "id": "aceternity-micro-interactions-tailwindcss-buttons",
+      "name": "Aceternity Tailwindcss Buttons",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "Free Aceternity UI micro-interactions component (Tailwindcss Buttons) with high-impact animation.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "aceternity",
+        "tailwindcss",
+        "buttons",
+        "micro-interactions",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/tailwindcss-buttons",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "@tabler/icons-react"
+      ],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/tailwindcss-buttons.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/tailwindcss-buttons.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 70
+    },
+    {
+      "id": "aceternity-micro-interactions-tooltip-card",
+      "name": "Aceternity Tooltip Card",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "Free Aceternity UI micro-interactions component (Tooltip Card) with high-impact animation.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "aceternity",
+        "tooltip",
+        "card",
+        "micro-interactions",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/tooltip-card",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/tooltip-card.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/tooltip-card.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 73
+    },
+    {
+      "id": "aceternity-micro-interactions-wobble-card",
+      "name": "Aceternity Wobble Card",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "Free Aceternity UI micro-interactions component (Wobble Card) with high-impact animation.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "aceternity",
+        "wobble",
+        "card",
+        "micro-interactions",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/wobble-card",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/wobble-card.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/wobble-card.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 70
+    },
+    {
+      "id": "aceternity-navigation-floating-navbar",
+      "name": "Aceternity Floating Navbar",
+      "source": "Aceternity UI",
+      "entry_type": "block",
+      "category": "navigation",
+      "description": "Free Aceternity UI navigation component (Floating Navbar) with high-impact animation.",
+      "use_case": "Build site and app navigation structures that stay clear at any depth.",
+      "search_tags": [
+        "aceternity",
+        "floating",
+        "navbar",
+        "navigation",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/floating-navbar",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/floating-navbar.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/floating-navbar.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 70
+    },
+    {
+      "id": "aceternity-navigation-navbar-menu",
+      "name": "Aceternity Navbar Menu",
+      "source": "Aceternity UI",
+      "entry_type": "block",
+      "category": "navigation",
+      "description": "Free Aceternity UI navigation component (Navbar Menu) with high-impact animation.",
+      "use_case": "Build site and app navigation structures that stay clear at any depth.",
+      "search_tags": [
+        "aceternity",
+        "navbar",
+        "menu",
+        "navigation",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/navbar-menu",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/navbar-menu.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/navbar-menu.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 70
+    },
+    {
+      "id": "aceternity-navigation-resizable-navbar",
+      "name": "Aceternity Resizable Navbar",
+      "source": "Aceternity UI",
+      "entry_type": "block",
+      "category": "navigation",
+      "description": "Free Aceternity UI navigation component (Resizable Navbar) with high-impact animation.",
+      "use_case": "Build site and app navigation structures that stay clear at any depth.",
+      "search_tags": [
+        "aceternity",
+        "resizable",
+        "navbar",
+        "navigation",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/resizable-navbar",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/resizable-navbar.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/resizable-navbar.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 73
+    },
+    {
+      "id": "aceternity-navigation-tabs",
+      "name": "Aceternity Tabs",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "navigation",
+      "description": "Free Aceternity UI navigation component (Tabs) with high-impact animation.",
+      "use_case": "Build site and app navigation structures that stay clear at any depth.",
+      "search_tags": [
+        "aceternity",
+        "tabs",
+        "navigation",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/tabs",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "@radix-ui/react-tabs"
+      ],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/tabs.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/tabs.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 70
+    },
+    {
+      "id": "aceternity-overlay-animated-modal",
+      "name": "Aceternity Animated Modal",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "overlay",
+      "description": "Free Aceternity UI overlay component (Animated Modal) with high-impact animation.",
+      "use_case": "Present dialogs, drawers and popovers without leaving the page.",
+      "search_tags": [
+        "aceternity",
+        "animated",
+        "modal",
+        "overlay",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/animated-modal",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/animated-modal.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/animated-modal.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 70
+    },
+    {
+      "id": "aceternity-testimonials-animated-testimonials",
+      "name": "Aceternity Animated Testimonials",
+      "source": "Aceternity UI",
+      "entry_type": "block",
+      "category": "testimonials",
+      "description": "Free Aceternity UI testimonials component (Animated Testimonials) with high-impact animation.",
+      "use_case": "Reinforce trust with social proof from customers and partners.",
+      "search_tags": [
+        "aceternity",
+        "animated",
+        "testimonials",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/animated-testimonials",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "@tabler/icons-react",
+        "motion"
+      ],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/animated-testimonials.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/animated-testimonials.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 70
+    },
+    {
+      "id": "aceternity-text-canvas-text",
+      "name": "Aceternity Canvas Text",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "text",
+      "description": "Free Aceternity UI text component (Canvas Text) with high-impact animation.",
+      "use_case": "Animate or emphasize typography for key messages.",
+      "search_tags": [
+        "aceternity",
+        "canvas",
+        "text",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/canvas-text",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/canvas-text.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/canvas-text.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 73
+    },
+    {
+      "id": "aceternity-text-colourful-text",
+      "name": "Aceternity Colourful Text",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "text",
+      "description": "Free Aceternity UI text component (Colourful Text) with high-impact animation.",
+      "use_case": "Animate or emphasize typography for key messages.",
+      "search_tags": [
+        "aceternity",
+        "colourful",
+        "text",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/colourful-text",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/colourful-text.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/colourful-text.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 73
+    },
+    {
+      "id": "aceternity-text-container-text-flip",
+      "name": "Aceternity Container Text Flip",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "text",
+      "description": "Free Aceternity UI text component (Container Text Flip) with high-impact animation.",
+      "use_case": "Animate or emphasize typography for key messages.",
+      "search_tags": [
+        "aceternity",
+        "container",
+        "text",
+        "flip",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/container-text-flip",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/container-text-flip.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/container-text-flip.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 73
+    },
+    {
+      "id": "aceternity-text-encrypted-text",
+      "name": "Aceternity Encrypted Text",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "text",
+      "description": "Free Aceternity UI text component (Encrypted Text) with high-impact animation.",
+      "use_case": "Animate or emphasize typography for key messages.",
+      "search_tags": [
+        "aceternity",
+        "encrypted",
+        "text",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/encrypted-text",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/encrypted-text.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/encrypted-text.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 70
+    },
+    {
+      "id": "aceternity-text-layout-text-flip",
+      "name": "Aceternity Layout Text Flip",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "text",
+      "description": "Free Aceternity UI text component (Layout Text Flip) with high-impact animation.",
+      "use_case": "Animate or emphasize typography for key messages.",
+      "search_tags": [
+        "aceternity",
+        "layout",
+        "text",
+        "flip",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/layout-text-flip",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/layout-text-flip.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/layout-text-flip.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 70
+    },
+    {
+      "id": "aceternity-text-squiggly-text",
+      "name": "Aceternity Squiggly Text",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "text",
+      "description": "Free Aceternity UI text component (Squiggly Text) with high-impact animation.",
+      "use_case": "Animate or emphasize typography for key messages.",
+      "search_tags": [
+        "aceternity",
+        "squiggly",
+        "text",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/squiggly-text",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/squiggly-text.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/squiggly-text.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 73
+    },
+    {
+      "id": "aceternity-text-text-flipping-board",
+      "name": "Aceternity Text Flipping Board",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "text",
+      "description": "Free Aceternity UI text component (Text Flipping Board) with high-impact animation.",
+      "use_case": "Animate or emphasize typography for key messages.",
+      "search_tags": [
+        "aceternity",
+        "text",
+        "flipping",
+        "board",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/text-flipping-board",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/text-flipping-board.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/text-flipping-board.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 70
+    },
+    {
+      "id": "aceternity-text-text-generate-effect",
+      "name": "Aceternity Text Generate Effect",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "text",
+      "description": "Free Aceternity UI text component (Text Generate Effect) with high-impact animation.",
+      "use_case": "Animate or emphasize typography for key messages.",
+      "search_tags": [
+        "aceternity",
+        "text",
+        "generate",
+        "effect",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/text-generate-effect",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/text-generate-effect.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/text-generate-effect.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 70
+    },
+    {
+      "id": "aceternity-text-text-hover-effect",
+      "name": "Aceternity Text Hover Effect",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "text",
+      "description": "Free Aceternity UI text component (Text Hover Effect) with high-impact animation.",
+      "use_case": "Animate or emphasize typography for key messages.",
+      "search_tags": [
+        "aceternity",
+        "text",
+        "hover",
+        "effect",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/text-hover-effect",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/text-hover-effect.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/text-hover-effect.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 70
+    },
+    {
+      "id": "aceternity-text-text-reveal-card",
+      "name": "Aceternity Text Reveal Card",
+      "source": "Aceternity UI",
+      "entry_type": "component",
+      "category": "text",
+      "description": "Free Aceternity UI text component (Text Reveal Card) with high-impact animation.",
+      "use_case": "Animate or emphasize typography for key messages.",
+      "search_tags": [
+        "aceternity",
+        "text",
+        "reveal",
+        "card",
+        "aceternity-ui"
+      ],
+      "docs_url": "https://ui.aceternity.com/components/text-reveal-card",
+      "stack": [
+        "react",
+        "tailwind",
+        "motion"
+      ],
+      "dependencies": [
+        "motion"
+      ],
+      "license_type": "proprietary",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Limit to 1–2 high-impact effects per view",
+        "Requires Motion"
+      ],
+      "registry_url": "https://ui.aceternity.com/registry/text-reveal-card.json",
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn@latest add https://ui.aceternity.com/registry/text-reveal-card.json",
+      "limits": "Free tier usable in commercial client projects; reselling/redistributing components as a competing library is not allowed. Premium blocks/templates need the All-Access plan.",
+      "quality": 70
+    }
+  ]
+}

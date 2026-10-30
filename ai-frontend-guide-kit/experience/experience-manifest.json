@@ -1,0 +1,3386 @@
+{
+  "version": "1.0.0",
+  "generated": "2026-10-02",
+  "description": "Experience direction manifest for the local Laya decision engine. Same entry shape as the component catalog (id/name/description/use_case/search_tags) plus kind-specific fields. Facts come from here; Laya only scores semantic fit.",
+  "entry_schema": {
+    "id": "exp-<kind>-<slug> | q<NN>-<slug>",
+    "kind": "archetype | philosophy | style | page-type | navigation-model | question",
+    "required": [
+      "id",
+      "kind",
+      "name",
+      "category",
+      "description",
+      "use_case",
+      "search_tags",
+      "source",
+      "license_type",
+      "commercial_use"
+    ]
+  },
+  "entries": [
+    {
+      "id": "exp-archetype-explainer",
+      "kind": "archetype",
+      "name": "Explainer",
+      "category": "experience-archetype",
+      "description": "Explain something complex with clarity.",
+      "use_case": "Choose when the user must understand before acting; progressive explanation, diagrams and narrative.",
+      "search_tags": [
+        "explain",
+        "complex",
+        "understand",
+        "diagram",
+        "storytelling"
+      ],
+      "navigation_model": "single-page-anchors",
+      "map_template": "one-page",
+      "philosophy_hints": [
+        "functional-clarity",
+        "technical-depth"
+      ],
+      "patterns": [
+        "storytelling",
+        "progressive-disclosure",
+        "diagrams"
+      ],
+      "risks": [
+        "very long scroll",
+        "animation hiding information"
+      ],
+      "not_for": [
+        "frequent-task tools"
+      ],
+      "source": "experience-direction",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "exp-archetype-converter",
+      "kind": "archetype",
+      "name": "Converter",
+      "category": "experience-archetype",
+      "description": "Drive one clear action with trust and low friction.",
+      "use_case": "Landing pages, campaigns, sign-up or demo requests where a single conversion matters.",
+      "search_tags": [
+        "convert",
+        "cta",
+        "signup",
+        "demo",
+        "lead"
+      ],
+      "navigation_model": "single-page-anchors",
+      "map_template": "one-page",
+      "philosophy_hints": [
+        "conversion-frictionless",
+        "trust-authority"
+      ],
+      "patterns": [
+        "cta-focus",
+        "social-proof",
+        "friction-removal",
+        "proof-before-cta"
+      ],
+      "risks": [
+        "dark patterns",
+        "weak SEO depth"
+      ],
+      "not_for": [
+        "exploratory content sites"
+      ],
+      "source": "experience-direction",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "exp-archetype-explorer",
+      "kind": "archetype",
+      "name": "Explorer",
+      "category": "experience-archetype",
+      "description": "Let people discover content they did not know they wanted.",
+      "use_case": "Catalogs, media, knowledge bases with many entities and lateral exploration.",
+      "search_tags": [
+        "discover",
+        "browse",
+        "categories",
+        "filters",
+        "search"
+      ],
+      "navigation_model": "hub",
+      "map_template": "hub",
+      "philosophy_hints": [
+        "discovery",
+        "visual-exploration"
+      ],
+      "patterns": [
+        "categories",
+        "search-and-filter",
+        "related-content",
+        "previews"
+      ],
+      "risks": [
+        "choice overload",
+        "weak curation"
+      ],
+      "not_for": [
+        "single-purpose task pages"
+      ],
+      "source": "experience-direction",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "exp-archetype-operator",
+      "kind": "archetype",
+      "name": "Operator",
+      "category": "experience-archetype",
+      "description": "Support frequent task execution with speed and control.",
+      "use_case": "Dashboards, admin panels and tools used daily by professionals.",
+      "search_tags": [
+        "dashboard",
+        "tool",
+        "admin",
+        "productivity",
+        "shortcuts"
+      ],
+      "navigation_model": "console",
+      "map_template": "console",
+      "philosophy_hints": [
+        "operational-efficiency",
+        "professional-control"
+      ],
+      "patterns": [
+        "dashboard",
+        "keyboard-shortcuts",
+        "bulk-actions",
+        "persistent-nav"
+      ],
+      "risks": [
+        "overwhelming for newcomers"
+      ],
+      "not_for": [
+        "one-off visitors"
+      ],
+      "source": "experience-direction",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "exp-archetype-configurator",
+      "kind": "archetype",
+      "name": "Configurator",
+      "category": "experience-archetype",
+      "description": "Let the user choose and personalize with a live preview.",
+      "use_case": "Product configurators, pricing builders, integration wizards.",
+      "search_tags": [
+        "configure",
+        "personalize",
+        "wizard",
+        "options",
+        "preview"
+      ],
+      "navigation_model": "linear-wizard",
+      "map_template": "flow",
+      "philosophy_hints": [
+        "progressive-simplicity",
+        "professional-control"
+      ],
+      "patterns": [
+        "wizard",
+        "live-preview",
+        "defaults",
+        "save-and-resume"
+      ],
+      "risks": [
+        "too many steps",
+        "no way back"
+      ],
+      "not_for": [
+        "content reading"
+      ],
+      "source": "experience-direction",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "exp-archetype-comparator",
+      "kind": "archetype",
+      "name": "Comparator",
+      "category": "experience-archetype",
+      "description": "Help choose between alternatives with evidence.",
+      "use_case": "Pricing comparisons, product matrices, plan selection.",
+      "search_tags": [
+        "compare",
+        "table",
+        "pricing",
+        "differences",
+        "choose"
+      ],
+      "navigation_model": "catalog",
+      "map_template": "catalog",
+      "philosophy_hints": [
+        "trust-authority",
+        "functional-clarity"
+      ],
+      "patterns": [
+        "comparison-table",
+        "filters",
+        "differences",
+        "recommendation"
+      ],
+      "risks": [
+        "table overload on mobile"
+      ],
+      "not_for": [
+        "emotional brand stories"
+      ],
+      "source": "experience-direction",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "exp-archetype-educator",
+      "kind": "archetype",
+      "name": "Educator",
+      "category": "experience-archetype",
+      "description": "Teach step by step with visible progress.",
+      "use_case": "Courses, tutorials, onboarding academies, guided setup.",
+      "search_tags": [
+        "teach",
+        "learn",
+        "lessons",
+        "steps",
+        "progress"
+      ],
+      "navigation_model": "linear-wizard",
+      "map_template": "flow",
+      "philosophy_hints": [
+        "progressive-simplicity",
+        "functional-clarity"
+      ],
+      "patterns": [
+        "lessons",
+        "stepper",
+        "examples",
+        "progress"
+      ],
+      "risks": [
+        "rigid linearity",
+        "content maintenance"
+      ],
+      "not_for": [
+        "experts needing reference lookup"
+      ],
+      "source": "experience-direction",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "exp-archetype-reference",
+      "kind": "archetype",
+      "name": "Reference",
+      "category": "experience-archetype",
+      "description": "Consult information with precision and speed.",
+      "use_case": "Documentation, knowledge bases, API references, guides.",
+      "search_tags": [
+        "reference",
+        "documentation",
+        "index",
+        "search",
+        "precise"
+      ],
+      "navigation_model": "hub",
+      "map_template": "hub",
+      "philosophy_hints": [
+        "functional-clarity",
+        "technical-depth"
+      ],
+      "patterns": [
+        "in-page-navigation",
+        "search",
+        "breadcrumbs",
+        "sidebar"
+      ],
+      "risks": [
+        "content dumps",
+        "stale structure"
+      ],
+      "not_for": [
+        "persuasion pages"
+      ],
+      "source": "experience-direction",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "exp-archetype-storyteller",
+      "kind": "archetype",
+      "name": "Storyteller",
+      "category": "experience-archetype",
+      "description": "Create a memorable narrative experience.",
+      "use_case": "Launches, brand moments, product stories, portfolios.",
+      "search_tags": [
+        "story",
+        "narrative",
+        "scroll",
+        "memorable",
+        "emotion"
+      ],
+      "navigation_model": "single-page-anchors",
+      "map_template": "one-page",
+      "philosophy_hints": [
+        "narrative-emotion",
+        "visual-exploration"
+      ],
+      "patterns": [
+        "scrollytelling",
+        "chapters",
+        "pacing",
+        "media"
+      ],
+      "risks": [
+        "performance",
+        "reduced-motion",
+        "SEO depth"
+      ],
+      "not_for": [
+        "repeated tasks"
+      ],
+      "source": "experience-direction",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "exp-archetype-community",
+      "kind": "archetype",
+      "name": "Community",
+      "category": "experience-archetype",
+      "description": "Create value through participation.",
+      "use_case": "Forums, social products, collaborative platforms.",
+      "search_tags": [
+        "community",
+        "profiles",
+        "feed",
+        "comments",
+        "reputation"
+      ],
+      "navigation_model": "hub",
+      "map_template": "hub",
+      "philosophy_hints": [
+        "community",
+        "personalization"
+      ],
+      "patterns": [
+        "profiles",
+        "feed",
+        "threads",
+        "moderation"
+      ],
+      "risks": [
+        "empty community",
+        "moderation cost"
+      ],
+      "not_for": [
+        "single-player tools"
+      ],
+      "source": "experience-direction",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "exp-archetype-marketplace",
+      "kind": "archetype",
+      "name": "Marketplace",
+      "category": "experience-archetype",
+      "description": "Find, evaluate and choose among many listings.",
+      "use_case": "Marketplaces, directories, classifieds, travel booking.",
+      "search_tags": [
+        "marketplace",
+        "listings",
+        "ranking",
+        "filters",
+        "booking"
+      ],
+      "navigation_model": "catalog",
+      "map_template": "catalog",
+      "philosophy_hints": [
+        "discovery",
+        "trust-authority"
+      ],
+      "patterns": [
+        "search-and-filter",
+        "listings",
+        "ranking",
+        "reviews"
+      ],
+      "risks": [
+        "trust gaps",
+        "messy supply"
+      ],
+      "not_for": [
+        "single-product pages"
+      ],
+      "source": "experience-direction",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "exp-archetype-monitor",
+      "kind": "archetype",
+      "name": "Monitor",
+      "category": "experience-archetype",
+      "description": "Watch state and changes with control.",
+      "use_case": "Observability, operations, support consoles, IoT gateways.",
+      "search_tags": [
+        "monitor",
+        "metrics",
+        "alerts",
+        "realtime",
+        "health"
+      ],
+      "navigation_model": "console",
+      "map_template": "console",
+      "philosophy_hints": [
+        "professional-control",
+        "transparency"
+      ],
+      "patterns": [
+        "metrics",
+        "alerts",
+        "history",
+        "status"
+      ],
+      "risks": [
+        "alarm fatigue",
+        "data density"
+      ],
+      "not_for": [
+        "marketing pages"
+      ],
+      "source": "experience-direction",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "exp-archetype-workflow",
+      "kind": "archetype",
+      "name": "Workflow",
+      "category": "experience-archetype",
+      "description": "Complete a process calmly, step by step.",
+      "use_case": "Onboarding, checkout, applications, multi-step forms.",
+      "search_tags": [
+        "workflow",
+        "process",
+        "wizard",
+        "steps",
+        "validation"
+      ],
+      "navigation_model": "linear-wizard",
+      "map_template": "flow",
+      "philosophy_hints": [
+        "progressive-simplicity",
+        "functional-clarity"
+      ],
+      "patterns": [
+        "stepper",
+        "validation",
+        "save-and-resume",
+        "review"
+      ],
+      "risks": [
+        "abandonment",
+        "unclear recovery"
+      ],
+      "not_for": [
+        "free exploration"
+      ],
+      "source": "experience-direction",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "exp-archetype-portfolio",
+      "kind": "archetype",
+      "name": "Portfolio",
+      "category": "experience-archetype",
+      "description": "Prove capability through the work itself.",
+      "use_case": "Studios, freelancers, case-study archives.",
+      "search_tags": [
+        "portfolio",
+        "cases",
+        "work",
+        "showcase"
+      ],
+      "navigation_model": "hub",
+      "map_template": "hub",
+      "philosophy_hints": [
+        "visual-exploration",
+        "editorial"
+      ],
+      "patterns": [
+        "case-studies",
+        "galleries",
+        "visual-narrative"
+      ],
+      "risks": [
+        "style over substance",
+        "slow media"
+      ],
+      "not_for": [
+        "transactional flows"
+      ],
+      "source": "experience-direction",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "exp-archetype-editorial",
+      "kind": "archetype",
+      "name": "Editorial",
+      "category": "experience-archetype",
+      "description": "Read and explore ideas through typographic rhythm.",
+      "use_case": "Magazines, long-form media, thought-leadership hubs.",
+      "search_tags": [
+        "editorial",
+        "reading",
+        "articles",
+        "typography"
+      ],
+      "navigation_model": "tree",
+      "map_template": "tree",
+      "philosophy_hints": [
+        "editorial",
+        "trust-authority"
+      ],
+      "patterns": [
+        "columns",
+        "related-reads",
+        "in-page-nav",
+        "hierarchy"
+      ],
+      "risks": [
+        "mobile typography",
+        "content velocity"
+      ],
+      "not_for": [
+        "data-dense tools"
+      ],
+      "source": "experience-direction",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "exp-philosophy-functional-clarity",
+      "kind": "philosophy",
+      "name": "Functional clarity",
+      "category": "ux-philosophy",
+      "description": "Understand and act with minimal effort.",
+      "use_case": "Tools, docs and high-frequency interfaces where confusion is costly.",
+      "search_tags": [
+        "clarity",
+        "simple",
+        "efficient",
+        "usable"
+      ],
+      "structure": "obvious hierarchy, one primary action per screen",
+      "navigation": "simple, task-labeled",
+      "density": "medium",
+      "emotion": "confidence",
+      "pros": [
+        "low confusion",
+        "fast to build"
+      ],
+      "risks": [
+        "flat",
+        "undifferentiated"
+      ],
+      "not_for": [
+        "brand-led experiences"
+      ],
+      "source": "experience-direction",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "exp-philosophy-operational-efficiency",
+      "kind": "philosophy",
+      "name": "Operational efficiency",
+      "category": "ux-philosophy",
+      "description": "Do frequent tasks fast.",
+      "use_case": "Dashboards, back office, operations consoles.",
+      "search_tags": [
+        "efficiency",
+        "dashboard",
+        "shortcuts",
+        "productivity"
+      ],
+      "structure": "shell + panels + shortcuts + bulk actions",
+      "navigation": "persistent, role-based",
+      "density": "high",
+      "emotion": "control",
+      "pros": [
+        "speed",
+        "productivity"
+      ],
+      "risks": [
+        "steep learning curve for newcomers"
+      ],
+      "not_for": [
+        "one-off visitors"
+      ],
+      "source": "experience-direction",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "exp-philosophy-discovery",
+      "kind": "philosophy",
+      "name": "Discovery",
+      "category": "ux-philosophy",
+      "description": "Find things you did not know you wanted.",
+      "use_case": "Catalogs, marketplaces, media libraries.",
+      "search_tags": [
+        "discovery",
+        "explore",
+        "curation",
+        "filters"
+      ],
+      "structure": "collections + related items",
+      "navigation": "faceted and exploratory",
+      "density": "medium",
+      "emotion": "curiosity",
+      "pros": [
+        "engagement",
+        "depth"
+      ],
+      "risks": [
+        "choice overload"
+      ],
+      "not_for": [
+        "single-purpose pages"
+      ],
+      "source": "experience-direction",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "exp-philosophy-trust-authority",
+      "kind": "philosophy",
+      "name": "Trust and authority",
+      "category": "ux-philosophy",
+      "description": "Be believed through evidence.",
+      "use_case": "High-price or complex offers, regulated domains.",
+      "search_tags": [
+        "trust",
+        "proof",
+        "authority",
+        "credibility"
+      ],
+      "structure": "evidence-first (proof, numbers, sources, people)",
+      "navigation": "restricted to reduce doubt",
+      "density": "medium",
+      "emotion": "security",
+      "pros": [
+        "converts complex offers"
+      ],
+      "risks": [
+        "dry, slow",
+        "proof must be real"
+      ],
+      "not_for": [
+        "playful consumer products"
+      ],
+      "source": "experience-direction",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "exp-philosophy-narrative-emotion",
+      "kind": "philosophy",
+      "name": "Narrative and emotion",
+      "category": "ux-philosophy",
+      "description": "Make the experience memorable.",
+      "use_case": "Launches, brand pages, product stories.",
+      "search_tags": [
+        "narrative",
+        "emotion",
+        "story",
+        "memorable"
+      ],
+      "structure": "pacing, chapters, reveals",
+      "navigation": "guided scroll or story steps",
+      "density": "low-medium",
+      "emotion": "awe, empathy",
+      "pros": [
+        "differentiation",
+        "recall"
+      ],
+      "risks": [
+        "performance",
+        "accessibility",
+        "SEO"
+      ],
+      "not_for": [
+        "dashboards and repeated tasks"
+      ],
+      "source": "experience-direction",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "exp-philosophy-transparency",
+      "kind": "philosophy",
+      "name": "Transparency",
+      "category": "ux-philosophy",
+      "description": "Show exactly what happens, when and why.",
+      "use_case": "Tools, AI surfaces, pricing, automation.",
+      "search_tags": [
+        "transparency",
+        "states",
+        "logs",
+        "honest"
+      ],
+      "structure": "states, history, logs, clear pricing",
+      "navigation": "explicit",
+      "density": "medium-high",
+      "emotion": "control",
+      "pros": [
+        "trust in complex systems"
+      ],
+      "risks": [
+        "noise without information design"
+      ],
+      "not_for": [
+        "brand moments"
+      ],
+      "source": "experience-direction",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "exp-philosophy-professional-control",
+      "kind": "philosophy",
+      "name": "Professional control",
+      "category": "ux-philosophy",
+      "description": "Expert users feel in command.",
+      "use_case": "Developer tools, editing suites, operations.",
+      "search_tags": [
+        "control",
+        "power users",
+        "keyboard",
+        "commands"
+      ],
+      "structure": "dense panels, customization, commands",
+      "navigation": "hubs plus in-page",
+      "density": "high",
+      "emotion": "mastery",
+      "pros": [
+        "power users love it"
+      ],
+      "risks": [
+        "steep learning curve"
+      ],
+      "not_for": [
+        "general public"
+      ],
+      "source": "experience-direction",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "exp-philosophy-progressive-simplicity",
+      "kind": "philosophy",
+      "name": "Progressive simplicity",
+      "category": "ux-philosophy",
+      "description": "Reveal complexity only when needed.",
+      "use_case": "Products that must serve novices and experts.",
+      "search_tags": [
+        "progressive",
+        "defaults",
+        "simple",
+        "onboarding"
+      ],
+      "structure": "essentials first, advanced hidden",
+      "navigation": "shallow first levels",
+      "density": "low to medium",
+      "emotion": "ease",
+      "pros": [
+        "approachable power"
+      ],
+      "risks": [
+        "hidden features get lost"
+      ],
+      "not_for": [
+        "expert-first consoles without shortcuts"
+      ],
+      "source": "experience-direction",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "exp-philosophy-personalization",
+      "kind": "philosophy",
+      "name": "Personalization",
+      "category": "ux-philosophy",
+      "description": "Adapt to the person or context.",
+      "use_case": "Platforms with user data and repeated sessions.",
+      "search_tags": [
+        "personalization",
+        "preferences",
+        "adaptive"
+      ],
+      "structure": "dynamic sections, saved preferences",
+      "navigation": "personalized shortcuts",
+      "density": "variable",
+      "emotion": "relevance",
+      "pros": [
+        "engagement"
+      ],
+      "risks": [
+        "filter bubbles",
+        "privacy",
+        "cold start"
+      ],
+      "not_for": [
+        "anonymous low-data contexts"
+      ],
+      "source": "experience-direction",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "exp-philosophy-technical-depth",
+      "kind": "philosophy",
+      "name": "Technical depth",
+      "category": "ux-philosophy",
+      "description": "Be precise and verifiable for technical users.",
+      "use_case": "Dev tools, APIs, engineering products.",
+      "search_tags": [
+        "technical",
+        "specs",
+        "docs",
+        "precise"
+      ],
+      "structure": "specs, diagrams, references, code, versions",
+      "navigation": "sidebar, in-page, search",
+      "density": "high",
+      "emotion": "credibility",
+      "pros": [
+        "wins technical audiences"
+      ],
+      "risks": [
+        "alienates non-technical buyers"
+      ],
+      "not_for": [
+        "consumer marketing"
+      ],
+      "source": "experience-direction",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "exp-philosophy-community",
+      "kind": "philosophy",
+      "name": "Community",
+      "category": "ux-philosophy",
+      "description": "Belonging and contribution.",
+      "use_case": "Social products, forums, collaborative platforms.",
+      "search_tags": [
+        "community",
+        "social",
+        "contribution",
+        "moderation"
+      ],
+      "structure": "profiles, feeds, threads, reputation",
+      "navigation": "hub",
+      "density": "medium",
+      "emotion": "connection",
+      "pros": [
+        "retention",
+        "UGC"
+      ],
+      "risks": [
+        "empty community",
+        "moderation cost"
+      ],
+      "not_for": [
+        "single-player tools"
+      ],
+      "source": "experience-direction",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "exp-philosophy-conversion-frictionless",
+      "kind": "philosophy",
+      "name": "Conversion without friction",
+      "category": "ux-philosophy",
+      "description": "One clear yes with no competing actions.",
+      "use_case": "Landing pages, campaigns, trial sign-ups.",
+      "search_tags": [
+        "conversion",
+        "cta",
+        "friction",
+        "landing"
+      ],
+      "structure": "single action, no competing CTAs",
+      "navigation": "removed or minimal",
+      "density": "low",
+      "emotion": "readiness",
+      "pros": [
+        "measurable"
+      ],
+      "risks": [
+        "dark patterns",
+        "brand erosion"
+      ],
+      "not_for": [
+        "exploratory content"
+      ],
+      "source": "experience-direction",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "exp-philosophy-visual-exploration",
+      "kind": "philosophy",
+      "name": "Visual exploration",
+      "category": "ux-philosophy",
+      "description": "Let the work or content speak first.",
+      "use_case": "Portfolios, galleries, media, fashion.",
+      "search_tags": [
+        "visual",
+        "gallery",
+        "showcase",
+        "images"
+      ],
+      "structure": "galleries, full-bleed media, minimal chrome",
+      "navigation": "visual and filter-driven",
+      "density": "low",
+      "emotion": "admiration",
+      "pros": [
+        "impact"
+      ],
+      "risks": [
+        "accessibility",
+        "performance",
+        "hidden info"
+      ],
+      "not_for": [
+        "data-heavy tools"
+      ],
+      "source": "experience-direction",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "exp-philosophy-editorial",
+      "kind": "philosophy",
+      "name": "Editorial",
+      "category": "ux-philosophy",
+      "description": "Reading as an experience.",
+      "use_case": "Media, blogs, thought leadership.",
+      "search_tags": [
+        "editorial",
+        "reading",
+        "typography",
+        "immersion"
+      ],
+      "structure": "grid, columns, typographic rhythm",
+      "navigation": "categories and internal links",
+      "density": "medium",
+      "emotion": "immersion",
+      "pros": [
+        "authority and depth"
+      ],
+      "risks": [
+        "needs content velocity",
+        "mobile typography"
+      ],
+      "not_for": [
+        "transactional flows"
+      ],
+      "source": "experience-direction",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "exp-philosophy-experimental-controlled",
+      "kind": "philosophy",
+      "name": "Experimental (controlled)",
+      "category": "ux-philosophy",
+      "description": "Be different without being confusing.",
+      "use_case": "Brand moments, creative showcases, launches.",
+      "search_tags": [
+        "experimental",
+        "bold",
+        "novel",
+        "memorable"
+      ],
+      "structure": "one unusual idea anchored in familiar rest",
+      "navigation": "reimagined but labeled",
+      "density": "variable",
+      "emotion": "surprise",
+      "pros": [
+        "memorability"
+      ],
+      "risks": [
+        "comprehension",
+        "accessibility",
+        "budget"
+      ],
+      "not_for": [
+        "high-stakes repeated tasks"
+      ],
+      "source": "experience-direction",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "exp-style-minimalist-functional",
+      "kind": "style",
+      "name": "Minimalist functional",
+      "category": "visual-style",
+      "description": "Whitespace, one typeface, one accent, a single speaking CTA.",
+      "use_case": "Tools, docs and high-frequency interfaces.",
+      "search_tags": [
+        "minimal",
+        "clean",
+        "whitespace",
+        "functional"
+      ],
+      "fits_when": "the product is used often and clarity wins",
+      "avoid_when": "the brand needs warmth or spectacle",
+      "risks": [
+        "anonymous if spacing/type craft is weak"
+      ],
+      "source": "superdesign",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "exp-style-editorial",
+      "kind": "style",
+      "name": "Editorial",
+      "category": "visual-style",
+      "description": "Magazine typography: serif headings, sans body, generous grid.",
+      "use_case": "Content, stories, brands with a voice.",
+      "search_tags": [
+        "magazine",
+        "serif",
+        "typography",
+        "columns"
+      ],
+      "fits_when": "reading and authority matter",
+      "avoid_when": "dense data workflows",
+      "risks": [
+        "needs real typographic skill and content"
+      ],
+      "source": "superdesign",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "exp-style-swiss",
+      "kind": "style",
+      "name": "Swiss / typographic grid",
+      "category": "visual-style",
+      "description": "Rigorous grid, strong type hierarchy, restrained color.",
+      "use_case": "Systems, architecture, technical references.",
+      "search_tags": [
+        "swiss",
+        "grid",
+        "typography",
+        "rational"
+      ],
+      "fits_when": "order and precision are the message",
+      "avoid_when": "playful or emotional brands",
+      "risks": [
+        "cold if over-applied"
+      ],
+      "source": "superdesign",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "exp-style-brutalism",
+      "kind": "style",
+      "name": "Brutalism",
+      "category": "visual-style",
+      "description": "Raw structure exposed: mono fonts, hard borders, zero decoration.",
+      "use_case": "Statements, dev culture, art projects.",
+      "search_tags": [
+        "brutalism",
+        "raw",
+        "mono",
+        "borders"
+      ],
+      "fits_when": "the message is anti-polish",
+      "avoid_when": "usability is critical",
+      "risks": [
+        "polarizing",
+        "usability friction"
+      ],
+      "source": "designbinders",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "exp-style-neubrutalism",
+      "kind": "style",
+      "name": "Neubrutalism",
+      "category": "visual-style",
+      "description": "Bold colors, thick black borders, hard shadows, no radii.",
+      "use_case": "Startups, creative tools, playful products.",
+      "search_tags": [
+        "neubrutalism",
+        "bold",
+        "borders",
+        "shadows"
+      ],
+      "fits_when": "personality matters more than calm",
+      "avoid_when": "regulated or luxury domains",
+      "risks": [
+        "visual stress",
+        "can date quickly"
+      ],
+      "source": "stylekit",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "exp-style-bento-grid",
+      "kind": "style",
+      "name": "Bento grid",
+      "category": "visual-style",
+      "description": "Modular compartments of varied sizes in one grid.",
+      "use_case": "Feature overviews, product summaries, portfolios.",
+      "search_tags": [
+        "bento",
+        "grid",
+        "modular",
+        "cards"
+      ],
+      "fits_when": "content can be atomized into meaningful blocks",
+      "avoid_when": "there is no hierarchy to encode",
+      "risks": [
+        "becomes decoration; Apple-style default"
+      ],
+      "source": "superdesign",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "exp-style-glassmorphism",
+      "kind": "style",
+      "name": "Glassmorphism",
+      "category": "visual-style",
+      "description": "Frosted translucent panels over colorful backdrops.",
+      "use_case": "Dark heroes, overlays, modern tech feel.",
+      "search_tags": [
+        "glass",
+        "blur",
+        "translucent",
+        "dark"
+      ],
+      "fits_when": "depth and layering communicate something",
+      "avoid_when": "text legibility on varied backgrounds",
+      "risks": [
+        "contrast failures",
+        "GPU cost"
+      ],
+      "source": "superdesign",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "exp-style-neumorphism",
+      "kind": "style",
+      "name": "Neumorphism",
+      "category": "visual-style",
+      "description": "Soft molded surfaces with dual shadows.",
+      "use_case": "Small widgets, playful demos, audio controls.",
+      "search_tags": [
+        "neumorphism",
+        "soft",
+        "shadows",
+        "molded"
+      ],
+      "fits_when": "the interface is simple and light",
+      "avoid_when": "text-heavy or accessible-critical UI",
+      "risks": [
+        "contrast trap"
+      ],
+      "source": "superdesign",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "exp-style-claymorphism",
+      "kind": "style",
+      "name": "Claymorphism",
+      "category": "visual-style",
+      "description": "Inflated clay shapes with pastel fills.",
+      "use_case": "Kids, wellness, casual education.",
+      "search_tags": [
+        "clay",
+        "pastel",
+        "friendly",
+        "3d"
+      ],
+      "fits_when": "friendliness is the core",
+      "avoid_when": "serious or regulated domains",
+      "risks": [
+        "childish"
+      ],
+      "source": "superdesign",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "exp-style-maximalism",
+      "kind": "style",
+      "name": "Maximalism",
+      "category": "visual-style",
+      "description": "Rich, layered, expressive composition.",
+      "use_case": "Fashion, culture, launches, editorials.",
+      "search_tags": [
+        "maximalism",
+        "rich",
+        "layers",
+        "expressive"
+      ],
+      "fits_when": "abundance is part of the message",
+      "avoid_when": "task efficiency matters",
+      "risks": [
+        "performance and focus costs"
+      ],
+      "source": "designbinders",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "exp-style-retro-y2k",
+      "kind": "style",
+      "name": "Retro / Y2K",
+      "category": "visual-style",
+      "description": "Beveled chrome, scanlines, starfields, nostalgic UI.",
+      "use_case": "Campaigns, games, cultural products.",
+      "search_tags": [
+        "retro",
+        "y2k",
+        "nostalgia",
+        "chrome"
+      ],
+      "fits_when": "nostalgia is the concept",
+      "avoid_when": "legibility or trust is critical",
+      "risks": [
+        "dated, ironic distance"
+      ],
+      "source": "designbinders",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "exp-style-terminal-dev",
+      "kind": "style",
+      "name": "Terminal / developer",
+      "category": "visual-style",
+      "description": "Monospace, command-line aesthetics, density with precision.",
+      "use_case": "Dev tools, APIs, dashboards, AI consoles.",
+      "search_tags": [
+        "terminal",
+        "mono",
+        "developer",
+        "cli"
+      ],
+      "fits_when": "the audience lives in CLIs",
+      "avoid_when": "non-technical customers",
+      "risks": [
+        "alienates general audiences"
+      ],
+      "source": "stylekit",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "exp-style-industrial-technical",
+      "kind": "style",
+      "name": "Industrial / technical",
+      "category": "visual-style",
+      "description": "Rugged, reliable, state-first control surfaces.",
+      "use_case": "IoT, manufacturing, field tools, gateways.",
+      "search_tags": [
+        "industrial",
+        "technical",
+        "iot",
+        "rugged"
+      ],
+      "fits_when": "operators need status at a glance",
+      "avoid_when": "consumer marketing",
+      "risks": [
+        "dense without hierarchy"
+      ],
+      "source": "experience-direction",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "exp-style-data-dense",
+      "kind": "style",
+      "name": "Data-dense",
+      "category": "visual-style",
+      "description": "High information density with strict typographic hierarchy.",
+      "use_case": "Analytics, operations, monitoring.",
+      "search_tags": [
+        "data",
+        "dense",
+        "tables",
+        "metrics"
+      ],
+      "fits_when": "experts scan many values",
+      "avoid_when": "casual audiences",
+      "risks": [
+        "overload",
+        "accessibility"
+      ],
+      "source": "experience-direction",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "exp-style-luxury-premium",
+      "kind": "style",
+      "name": "Luxury / premium",
+      "category": "visual-style",
+      "description": "Restrained layouts, refined type, generous negative space.",
+      "use_case": "High-price services, fashion, hospitality.",
+      "search_tags": [
+        "luxury",
+        "premium",
+        "refined",
+        "exclusive"
+      ],
+      "fits_when": "exclusivity and craft are the promise",
+      "avoid_when": "utility tools",
+      "risks": [
+        "empty without craft; slow conversion"
+      ],
+      "source": "designbinders",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "exp-style-organic-natural",
+      "kind": "style",
+      "name": "Organic / natural",
+      "category": "visual-style",
+      "description": "Warm colors, soft shapes, human imagery.",
+      "use_case": "Health, food, sustainability, community.",
+      "search_tags": [
+        "organic",
+        "natural",
+        "warm",
+        "human"
+      ],
+      "fits_when": "trust comes from warmth",
+      "avoid_when": "technical precision products",
+      "risks": [
+        "vagueness without real content"
+      ],
+      "source": "designbinders",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "exp-style-playful-friendly",
+      "kind": "style",
+      "name": "Playful / friendly",
+      "category": "visual-style",
+      "description": "Rounded, colorful, expressive microcopy and illustrations.",
+      "use_case": "Consumer, education, onboarding.",
+      "search_tags": [
+        "playful",
+        "friendly",
+        "colorful",
+        "illustration"
+      ],
+      "fits_when": "lowering anxiety is the goal",
+      "avoid_when": "regulated or premium domains",
+      "risks": [
+        "undermines trust in serious contexts"
+      ],
+      "source": "stylekit",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "exp-style-dark-technical",
+      "kind": "style",
+      "name": "Dark technical",
+      "category": "visual-style",
+      "description": "Designed dark system: surface tiers, off-white text, desaturated accents.",
+      "use_case": "Dev tools, dashboards, monitoring, AI.",
+      "search_tags": [
+        "dark",
+        "technical",
+        "contrast",
+        "night"
+      ],
+      "fits_when": "long sessions and focus matter",
+      "avoid_when": "daylight, low-quality screens or print-like reading",
+      "risks": [
+        "not a simple inversion; contrast discipline required"
+      ],
+      "source": "superdesign",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "exp-page-home",
+      "kind": "page-type",
+      "name": "Home",
+      "category": "page-type",
+      "description": "Entry point that sets the pace and routes to the main jobs.",
+      "use_case": "All sites; adapts logged-in/out and archetype.",
+      "search_tags": [
+        "home",
+        "entry",
+        "first impression"
+      ],
+      "job": "orient and route",
+      "primary_action": "depends on archetype (start, search, browse, sign up)",
+      "states": "personalized vs anonymous",
+      "archetype_hints": [
+        "all"
+      ],
+      "source": "experience-direction",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "exp-page-landing",
+      "kind": "page-type",
+      "name": "Landing",
+      "category": "page-type",
+      "description": "One message, one action, zero distractions.",
+      "use_case": "Campaigns, ads, launches.",
+      "search_tags": [
+        "landing",
+        "campaign",
+        "cta"
+      ],
+      "job": "convert",
+      "primary_action": "the single yes",
+      "states": "variants per audience when needed",
+      "archetype_hints": [
+        "converter",
+        "explainer"
+      ],
+      "source": "experience-direction",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "exp-page-product-detail",
+      "kind": "page-type",
+      "name": "Product detail",
+      "category": "page-type",
+      "description": "Clear the path to decision: media, specs, price, CTA.",
+      "use_case": "Commerce and product marketing.",
+      "search_tags": [
+        "product",
+        "detail",
+        "price",
+        "buy"
+      ],
+      "job": "decide",
+      "primary_action": "add to cart / request / start",
+      "states": "out of stock, price change, variants",
+      "archetype_hints": [
+        "comparator",
+        "converter"
+      ],
+      "source": "experience-direction",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "exp-page-search-results",
+      "kind": "page-type",
+      "name": "Search results",
+      "category": "page-type",
+      "description": "Keep the query visible, reassure and reveal relevant results.",
+      "use_case": "Catalogs, docs, marketplaces.",
+      "search_tags": [
+        "search",
+        "results",
+        "query",
+        "filters"
+      ],
+      "job": "find",
+      "primary_action": "open a result",
+      "states": "no results, loading, suggestions",
+      "archetype_hints": [
+        "explorer",
+        "reference",
+        "marketplace"
+      ],
+      "source": "experience-direction",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "exp-page-registration",
+      "kind": "page-type",
+      "name": "Registration / auth",
+      "category": "page-type",
+      "description": "Fast, unobtrusive commitment with fallback options.",
+      "use_case": "All products with accounts.",
+      "search_tags": [
+        "signup",
+        "login",
+        "auth",
+        "sso"
+      ],
+      "job": "commit",
+      "primary_action": "create account / log in",
+      "states": "social/SSO fallback, errors, locked account",
+      "archetype_hints": [
+        "workflow"
+      ],
+      "source": "experience-direction",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "exp-page-article",
+      "kind": "page-type",
+      "name": "Article / long-form",
+      "category": "page-type",
+      "description": "Hold attention with rhythm, hierarchy and spacing.",
+      "use_case": "Media, blogs, docs essays.",
+      "search_tags": [
+        "article",
+        "reading",
+        "longform",
+        "typography"
+      ],
+      "job": "read",
+      "primary_action": "continue reading / related content",
+      "states": "in-page nav, reading position",
+      "archetype_hints": [
+        "editorial",
+        "educator"
+      ],
+      "source": "experience-direction",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "exp-page-dashboard",
+      "kind": "page-type",
+      "name": "Dashboard",
+      "category": "page-type",
+      "description": "Personal metrics and status for repeated use.",
+      "use_case": "Tools, analytics, operations.",
+      "search_tags": [
+        "dashboard",
+        "metrics",
+        "status",
+        "kpi"
+      ],
+      "job": "operate / monitor",
+      "primary_action": "act on the most urgent signal",
+      "states": "empty, loading, partial data, alerts",
+      "archetype_hints": [
+        "operator",
+        "monitor"
+      ],
+      "source": "experience-direction",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "exp-page-catalog",
+      "kind": "page-type",
+      "name": "Catalog / listing",
+      "category": "page-type",
+      "description": "Browse and filter a collection with ranking.",
+      "use_case": "Marketplaces, ecommerce, directories.",
+      "search_tags": [
+        "catalog",
+        "listing",
+        "filters",
+        "grid"
+      ],
+      "job": "explore",
+      "primary_action": "open an item",
+      "states": "zero results, pagination, sort",
+      "archetype_hints": [
+        "explorer",
+        "marketplace"
+      ],
+      "source": "experience-direction",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "exp-page-configurator",
+      "kind": "page-type",
+      "name": "Configurator",
+      "category": "page-type",
+      "description": "Choose options with a live preview and clear consequences.",
+      "use_case": "Product/pricing builders, integrations.",
+      "search_tags": [
+        "configurator",
+        "options",
+        "preview",
+        "wizard"
+      ],
+      "job": "personalize",
+      "primary_action": "complete configuration",
+      "states": "incompatible options, summary",
+      "archetype_hints": [
+        "configurator"
+      ],
+      "source": "experience-direction",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "exp-page-checkout",
+      "kind": "page-type",
+      "name": "Cart / checkout",
+      "category": "page-type",
+      "description": "Confirm choices and reduce hesitation until completion.",
+      "use_case": "Commerce and paid flows.",
+      "search_tags": [
+        "cart",
+        "checkout",
+        "payment",
+        "order"
+      ],
+      "job": "complete",
+      "primary_action": "pay",
+      "states": "payment failure, out of stock, saved cart",
+      "archetype_hints": [
+        "workflow"
+      ],
+      "source": "experience-direction",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "exp-page-reference-doc",
+      "kind": "page-type",
+      "name": "Documentation / reference",
+      "category": "page-type",
+      "description": "Precise lookup with in-page navigation and cross-links.",
+      "use_case": "Docs, knowledge bases, APIs.",
+      "search_tags": [
+        "documentation",
+        "reference",
+        "guide",
+        "index"
+      ],
+      "job": "consult",
+      "primary_action": "find the exact answer",
+      "states": "no results, versions",
+      "archetype_hints": [
+        "reference"
+      ],
+      "source": "experience-direction",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "exp-page-profile-settings",
+      "kind": "page-type",
+      "name": "Profile / settings",
+      "category": "page-type",
+      "description": "Manage account, preferences and data with clear consequences.",
+      "use_case": "All products with accounts.",
+      "search_tags": [
+        "settings",
+        "profile",
+        "preferences",
+        "account"
+      ],
+      "job": "administer",
+      "primary_action": "save changes",
+      "states": "unsaved changes, destructive confirmations",
+      "archetype_hints": [
+        "operator"
+      ],
+      "source": "experience-direction",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "exp-page-error",
+      "kind": "page-type",
+      "name": "Error / 404",
+      "category": "page-type",
+      "description": "Recovery surface: reorient instead of apologizing.",
+      "use_case": "All sites.",
+      "search_tags": [
+        "error",
+        "404",
+        "recovery",
+        "offline"
+      ],
+      "job": "recover",
+      "primary_action": "back to a useful path",
+      "states": "offline, not found, permission denied",
+      "archetype_hints": [
+        "all"
+      ],
+      "source": "experience-direction",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "exp-page-contact",
+      "kind": "page-type",
+      "name": "Contact / lead",
+      "category": "page-type",
+      "description": "Frictionless reach-out that reinforces trust.",
+      "use_case": "Services, B2B, agencies.",
+      "search_tags": [
+        "contact",
+        "lead",
+        "form",
+        "support"
+      ],
+      "job": "reach out",
+      "primary_action": "send message / book",
+      "states": "success confirmation, validation errors",
+      "archetype_hints": [
+        "converter"
+      ],
+      "source": "experience-direction",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "exp-page-stats",
+      "kind": "page-type",
+      "name": "Stats / analytics",
+      "category": "page-type",
+      "description": "Turn data into a personal, scannable story.",
+      "use_case": "Products with activity metrics.",
+      "search_tags": [
+        "stats",
+        "analytics",
+        "charts",
+        "trends"
+      ],
+      "job": "understand",
+      "primary_action": "act on insight",
+      "states": "no data yet, partial ranges",
+      "archetype_hints": [
+        "monitor",
+        "operator"
+      ],
+      "source": "experience-direction",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "exp-page-pricing",
+      "kind": "page-type",
+      "name": "Pricing",
+      "category": "page-type",
+      "description": "Make the choice obvious without hiding costs.",
+      "use_case": "SaaS, services, subscriptions.",
+      "search_tags": [
+        "pricing",
+        "plans",
+        "comparison",
+        "billing"
+      ],
+      "job": "decide",
+      "primary_action": "choose a plan",
+      "states": "annual/monthly, custom, enterprise",
+      "archetype_hints": [
+        "comparator",
+        "converter"
+      ],
+      "source": "experience-direction",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "exp-nav-single-page-anchors",
+      "kind": "navigation-model",
+      "name": "Single-page anchors",
+      "category": "navigation-model",
+      "description": "One scrolling page with anchored sections and an in-page menu.",
+      "use_case": "Narrative, landing and explainer experiences.",
+      "search_tags": [
+        "one page",
+        "anchors",
+        "scroll",
+        "sections"
+      ],
+      "map_template": "one-page",
+      "layout": "vertical spine of section nodes with labeled anchors",
+      "fits_when": "the message is a sequence",
+      "source": "experience-direction",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "exp-nav-linear-wizard",
+      "kind": "navigation-model",
+      "name": "Linear / wizard",
+      "category": "navigation-model",
+      "description": "Step-by-step guided completion with branches.",
+      "use_case": "Onboarding, checkout, configurators, workflows.",
+      "search_tags": [
+        "wizard",
+        "steps",
+        "linear",
+        "process"
+      ],
+      "map_template": "flow",
+      "layout": "left-to-right steps with decision diamonds and dashed optional paths",
+      "fits_when": "order and completion matter",
+      "source": "experience-direction",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "exp-nav-hub",
+      "kind": "navigation-model",
+      "name": "Hub",
+      "category": "navigation-model",
+      "description": "A central surface routes to clusters of related content or tools.",
+      "use_case": "Apps, docs, knowledge bases, communities.",
+      "search_tags": [
+        "hub",
+        "dashboard",
+        "sidebar",
+        "clusters"
+      ],
+      "map_template": "hub",
+      "layout": "start node plus clusters by area in columns",
+      "fits_when": "several areas share one entry point",
+      "source": "experience-direction",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "exp-nav-catalog",
+      "kind": "navigation-model",
+      "name": "Catalog",
+      "category": "navigation-model",
+      "description": "Discovery loop: search/browse, compare, select, transact, return.",
+      "use_case": "Marketplaces, ecommerce, directories.",
+      "search_tags": [
+        "catalog",
+        "search",
+        "filters",
+        "commerce"
+      ],
+      "map_template": "catalog",
+      "layout": "discovery → decision → transaction areas with return loops",
+      "fits_when": "many entities and evaluation",
+      "source": "experience-direction",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "exp-nav-console",
+      "kind": "navigation-model",
+      "name": "Console",
+      "category": "navigation-model",
+      "description": "Persistent shell with modules, panels and states.",
+      "use_case": "Operations, monitoring, admin tools.",
+      "search_tags": [
+        "console",
+        "dashboard",
+        "panels",
+        "monitoring"
+      ],
+      "map_template": "console",
+      "layout": "modules/panels by area with persistent navigation",
+      "fits_when": "repeated task execution",
+      "source": "experience-direction",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "exp-nav-tree",
+      "kind": "navigation-model",
+      "name": "Tree",
+      "category": "navigation-model",
+      "description": "Hierarchical site with depth by section and breadcrumbs.",
+      "use_case": "Marketing sites, editorial, documentation.",
+      "search_tags": [
+        "tree",
+        "hierarchy",
+        "breadcrumbs",
+        "sections"
+      ],
+      "map_template": "tree",
+      "layout": "home → sections by depth",
+      "fits_when": "content organized by category hierarchy",
+      "source": "experience-direction",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "q01-what",
+      "kind": "question",
+      "name": "What are we building?",
+      "category": "question",
+      "phase": 1,
+      "description": "What are we building?",
+      "use_case": "Phase 1 context; unlocks product shape and archetype questions.",
+      "options": [
+        "marketing site",
+        "web app",
+        "tool/dashboard",
+        "commerce",
+        "docs/content",
+        "hybrid"
+      ],
+      "depends_on": [],
+      "search_tags": [
+        "context",
+        "product",
+        "scope"
+      ],
+      "source": "question-bank",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "q02-who",
+      "kind": "question",
+      "name": "Who uses it?",
+      "category": "question",
+      "phase": 1,
+      "description": "Who uses it?",
+      "use_case": "Phase 1 audience; unlocks philosophy and density questions.",
+      "options": [
+        "daily professionals",
+        "occasional customers",
+        "general public",
+        "internal team"
+      ],
+      "depends_on": [],
+      "search_tags": [
+        "audience",
+        "users",
+        "context"
+      ],
+      "source": "question-bank",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "q03-goal",
+      "kind": "question",
+      "name": "Main goal of the site?",
+      "category": "question",
+      "phase": 1,
+      "description": "Main goal of the site?",
+      "use_case": "Phase 1; unlocks success metric and archetype.",
+      "options": [
+        "convert/sell",
+        "explain/inform",
+        "complete a task",
+        "community/grow",
+        "teach",
+        "monitor/operate"
+      ],
+      "depends_on": [],
+      "search_tags": [
+        "goal",
+        "objective",
+        "conversion"
+      ],
+      "source": "question-bank",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "q04-success",
+      "kind": "question",
+      "name": "What action proves success?",
+      "category": "question",
+      "phase": 1,
+      "description": "What action proves success?",
+      "use_case": "Phase 1; anchors measurement and primary action.",
+      "options": [
+        "sign up",
+        "buy",
+        "contact/lead",
+        "finish a task",
+        "return/learn"
+      ],
+      "depends_on": [
+        "q03-goal"
+      ],
+      "search_tags": [
+        "success",
+        "metric",
+        "action"
+      ],
+      "source": "question-bank",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "q05-frequency",
+      "kind": "question",
+      "name": "How often will they use it?",
+      "category": "question",
+      "phase": 1,
+      "description": "How often will they use it?",
+      "use_case": "Phase 1; decides density, onboarding and shell.",
+      "options": [
+        "once",
+        "occasionally",
+        "weekly",
+        "daily"
+      ],
+      "depends_on": [
+        "q02-who"
+      ],
+      "search_tags": [
+        "frequency",
+        "usage",
+        "retention"
+      ],
+      "source": "question-bank",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "q06-existing",
+      "kind": "question",
+      "name": "Starting point?",
+      "category": "question",
+      "phase": 1,
+      "description": "Starting point?",
+      "use_case": "Phase 1; decides from-scratch vs redesign path.",
+      "options": [
+        "from scratch",
+        "redesign",
+        "add a new area"
+      ],
+      "depends_on": [],
+      "search_tags": [
+        "redesign",
+        "greenfield",
+        "scope"
+      ],
+      "source": "question-bank",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "q07-pace",
+      "kind": "question",
+      "name": "Fast and direct, or exploratory and memorable?",
+      "category": "question",
+      "phase": 2,
+      "description": "Fast and direct, or exploratory and memorable?",
+      "use_case": "Phase 2 philosophy; feeds Laya direction ranking.",
+      "options": [
+        "fast/direct",
+        "balanced",
+        "exploratory"
+      ],
+      "depends_on": [
+        "q03-goal"
+      ],
+      "search_tags": [
+        "pace",
+        "philosophy",
+        "efficiency",
+        "exploration"
+      ],
+      "source": "question-bank",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "q08-priority",
+      "kind": "question",
+      "name": "What should the experience prioritize?",
+      "category": "question",
+      "phase": 2,
+      "description": "What should the experience prioritize?",
+      "use_case": "Phase 2 philosophy core.",
+      "options": [
+        "efficiency",
+        "trust",
+        "emotion",
+        "discovery",
+        "conversion"
+      ],
+      "depends_on": [],
+      "search_tags": [
+        "priority",
+        "philosophy",
+        "values"
+      ],
+      "source": "question-bank",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "q09-feel",
+      "kind": "question",
+      "name": "What should it feel like?",
+      "category": "question",
+      "phase": 2,
+      "description": "What should it feel like?",
+      "use_case": "Phase 2; metaphor for the experience.",
+      "options": [
+        "tool",
+        "magazine",
+        "catalog",
+        "laboratory",
+        "story"
+      ],
+      "depends_on": [
+        "q08-priority"
+      ],
+      "search_tags": [
+        "feel",
+        "metaphor",
+        "personality"
+      ],
+      "source": "question-bank",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "q10-understand",
+      "kind": "question",
+      "name": "Understand in seconds, or discover gradually?",
+      "category": "question",
+      "phase": 2,
+      "description": "Understand in seconds, or discover gradually?",
+      "use_case": "Phase 2; pacing and progressive disclosure.",
+      "options": [
+        "seconds",
+        "progressive discovery"
+      ],
+      "depends_on": [],
+      "search_tags": [
+        "understand",
+        "pacing",
+        "clarity"
+      ],
+      "source": "question-bank",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "q11-familiarity",
+      "kind": "question",
+      "name": "Conventional or experimental?",
+      "category": "question",
+      "phase": 2,
+      "description": "Conventional or experimental?",
+      "use_case": "Phase 2; risk appetite of the direction.",
+      "options": [
+        "familiar",
+        "distinctive",
+        "experimental (controlled)"
+      ],
+      "depends_on": [
+        "q25-risk"
+      ],
+      "search_tags": [
+        "familiar",
+        "experimental",
+        "risk"
+      ],
+      "source": "question-bank",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "q12-personality",
+      "kind": "question",
+      "name": "Brand personality?",
+      "category": "question",
+      "phase": 2,
+      "description": "Brand personality?",
+      "use_case": "Phase 2; tone and visual brief.",
+      "options": [
+        "technical",
+        "human",
+        "premium",
+        "rebel",
+        "institutional",
+        "playful",
+        "scientific"
+      ],
+      "depends_on": [],
+      "search_tags": [
+        "brand",
+        "personality",
+        "tone"
+      ],
+      "source": "question-bank",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "q13-areas",
+      "kind": "question",
+      "name": "How many main areas?",
+      "category": "question",
+      "phase": 3,
+      "description": "How many main areas?",
+      "use_case": "Phase 3 IA; unlocks navigation model.",
+      "options": [
+        "1-3",
+        "4-6",
+        "many"
+      ],
+      "depends_on": [
+        "q01-what"
+      ],
+      "search_tags": [
+        "areas",
+        "ia",
+        "navigation"
+      ],
+      "source": "question-bank",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "q14-order",
+      "kind": "question",
+      "name": "Guided order or free exploration?",
+      "category": "question",
+      "phase": 3,
+      "description": "Must users follow an order, or explore freely?",
+      "use_case": "Phase 3; decides linear vs hub.",
+      "options": [
+        "guided order",
+        "free exploration",
+        "mixed"
+      ],
+      "depends_on": [
+        "q03-goal"
+      ],
+      "search_tags": [
+        "linear",
+        "exploration",
+        "navigation"
+      ],
+      "source": "question-bank",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "q15-main-task",
+      "kind": "question",
+      "name": "Is there a dominant task?",
+      "category": "question",
+      "phase": 3,
+      "description": "Is there a dominant task that should own the interface?",
+      "use_case": "Phase 3; primary action and shell.",
+      "options": [
+        "yes",
+        "no",
+        "not sure"
+      ],
+      "depends_on": [],
+      "search_tags": [
+        "task",
+        "primary action",
+        "focus"
+      ],
+      "source": "question-bank",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "q16-organization",
+      "kind": "question",
+      "name": "How should content be organized?",
+      "category": "question",
+      "phase": 3,
+      "description": "How should content be organized?",
+      "use_case": "Phase 3; taxonomy.",
+      "options": [
+        "categories",
+        "time",
+        "location",
+        "hierarchy",
+        "user type",
+        "workflow"
+      ],
+      "depends_on": [
+        "q13-areas"
+      ],
+      "search_tags": [
+        "organization",
+        "taxonomy",
+        "categories"
+      ],
+      "source": "question-bank",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "q17-search",
+      "kind": "question",
+      "name": "Will they search, filter or compare?",
+      "category": "question",
+      "phase": 3,
+      "description": "Will they search, filter or compare?",
+      "use_case": "Phase 3; search/filter patterns and map loops.",
+      "options": [
+        "no",
+        "search",
+        "filters",
+        "compare"
+      ],
+      "depends_on": [
+        "q16-organization"
+      ],
+      "search_tags": [
+        "search",
+        "filters",
+        "compare"
+      ],
+      "source": "question-bank",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "q18-persistence",
+      "kind": "question",
+      "name": "Do they need save/resume/history?",
+      "category": "question",
+      "phase": 3,
+      "description": "Do they need save/resume/history?",
+      "use_case": "Phase 3; persistence and empty states.",
+      "options": [
+        "no",
+        "save/resume",
+        "history/activity"
+      ],
+      "depends_on": [],
+      "search_tags": [
+        "save",
+        "resume",
+        "history",
+        "states"
+      ],
+      "source": "question-bank",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "q19-page-job",
+      "kind": "question",
+      "name": "Explain a proposal or do a task?",
+      "category": "question",
+      "phase": 4,
+      "description": "Does the main page explain a proposal or let them do a task?",
+      "use_case": "Phase 4 archetype; explainer vs operator/workflow.",
+      "options": [
+        "explain",
+        "do a task",
+        "both"
+      ],
+      "depends_on": [
+        "q03-goal"
+      ],
+      "search_tags": [
+        "explain",
+        "task",
+        "archetype"
+      ],
+      "source": "question-bank",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "q20-shape",
+      "kind": "question",
+      "name": "Closest shape?",
+      "category": "question",
+      "phase": 4,
+      "description": "Closest shape?",
+      "use_case": "Phase 4; strong archetype signal for Laya.",
+      "options": [
+        "landing",
+        "dashboard",
+        "catalog",
+        "documentation",
+        "configurator"
+      ],
+      "depends_on": [
+        "q01-what"
+      ],
+      "search_tags": [
+        "shape",
+        "landing",
+        "dashboard",
+        "catalog",
+        "docs"
+      ],
+      "source": "question-bank",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "q21-behavior",
+      "kind": "question",
+      "name": "What will they mostly do?",
+      "category": "question",
+      "phase": 4,
+      "description": "What will they mostly do?",
+      "use_case": "Phase 4; archetype and patterns.",
+      "options": [
+        "read",
+        "explore",
+        "compare",
+        "input data",
+        "visualize",
+        "control"
+      ],
+      "depends_on": [
+        "q03-goal"
+      ],
+      "search_tags": [
+        "behavior",
+        "read",
+        "explore",
+        "compare"
+      ],
+      "source": "question-bank",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "q22-linearity",
+      "kind": "question",
+      "name": "Linear or non-linear journey?",
+      "category": "question",
+      "phase": 4,
+      "description": "Linear or non-linear journey?",
+      "use_case": "Phase 4; map template confirmation.",
+      "options": [
+        "linear",
+        "non-linear",
+        "mixed"
+      ],
+      "depends_on": [
+        "q14-order"
+      ],
+      "search_tags": [
+        "linear",
+        "journey",
+        "map"
+      ],
+      "source": "question-bank",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "q23-realtime",
+      "kind": "question",
+      "name": "Does it show live state, alerts or progress?",
+      "category": "question",
+      "phase": 4,
+      "description": "Does it show live state, alerts or progress?",
+      "use_case": "Phase 4; console/monitor archetype and states.",
+      "options": [
+        "no",
+        "some states",
+        "real-time"
+      ],
+      "depends_on": [
+        "q21-behavior"
+      ],
+      "search_tags": [
+        "realtime",
+        "alerts",
+        "progress",
+        "states"
+      ],
+      "source": "question-bank",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "q24-content-vs-ui",
+      "kind": "question",
+      "name": "Content or interaction dominant?",
+      "category": "question",
+      "phase": 4,
+      "description": "What dominates: content or interaction?",
+      "use_case": "Phase 4; editorial/reference vs tool.",
+      "options": [
+        "content",
+        "interaction",
+        "balanced"
+      ],
+      "depends_on": [],
+      "search_tags": [
+        "content",
+        "interaction",
+        "balance"
+      ],
+      "source": "question-bank",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "q25-risk",
+      "kind": "question",
+      "name": "How bold should the proposals be?",
+      "category": "question",
+      "phase": 5,
+      "description": "How bold should the proposals be?",
+      "use_case": "Phase 5 creative control; unlocks familiarity and motion.",
+      "options": [
+        "conservative",
+        "innovative",
+        "radical"
+      ],
+      "depends_on": [
+        "q08-priority"
+      ],
+      "search_tags": [
+        "risk",
+        "bold",
+        "conservative",
+        "radical"
+      ],
+      "source": "question-bank",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "q26-avoid",
+      "kind": "question",
+      "name": "Anything to avoid?",
+      "category": "question",
+      "phase": 5,
+      "description": "Anything to avoid?",
+      "use_case": "Phase 5; anti-generic list for the brief.",
+      "options": [
+        "gradients/cards cliché",
+        "playful",
+        "corporate",
+        "dense",
+        "animated"
+      ],
+      "depends_on": [],
+      "search_tags": [
+        "avoid",
+        "anti-generic",
+        "taste"
+      ],
+      "source": "question-bank",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "q27-generic",
+      "kind": "question",
+      "name": "Avoid the classic hero + 3 cards + testimonials?",
+      "category": "question",
+      "phase": 5,
+      "description": "Avoid the classic hero + 3 cards + testimonials?",
+      "use_case": "Phase 5; explicit anti-default confirmation.",
+      "options": [
+        "yes",
+        "no preference"
+      ],
+      "depends_on": [],
+      "search_tags": [
+        "generic",
+        "template",
+        "hero",
+        "cards"
+      ],
+      "source": "question-bank",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "q28-motion",
+      "kind": "question",
+      "name": "Acceptable motion level?",
+      "category": "question",
+      "phase": 5,
+      "description": "Acceptable motion level?",
+      "use_case": "Phase 5; motion budget for the brief.",
+      "options": [
+        "none/subtle",
+        "moderate",
+        "rich (with purpose)"
+      ],
+      "depends_on": [
+        "q25-risk"
+      ],
+      "search_tags": [
+        "motion",
+        "animation",
+        "budget"
+      ],
+      "source": "question-bank",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "q29-creativity",
+      "kind": "question",
+      "name": "Where should creativity live?",
+      "category": "question",
+      "phase": 5,
+      "description": "Where should creativity live?",
+      "use_case": "Phase 5; axis for the three directions.",
+      "options": [
+        "composition",
+        "navigation",
+        "content",
+        "interaction"
+      ],
+      "depends_on": [
+        "q25-risk"
+      ],
+      "search_tags": [
+        "creativity",
+        "composition",
+        "navigation",
+        "interaction"
+      ],
+      "source": "question-bank",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "q30-fixed",
+      "kind": "question",
+      "name": "What must not change?",
+      "category": "question",
+      "phase": 5,
+      "description": "What must not change across proposals?",
+      "use_case": "Phase 5; constraints for the directions.",
+      "options": [
+        "brand",
+        "copy",
+        "structure",
+        "nothing"
+      ],
+      "depends_on": [],
+      "search_tags": [
+        "constraints",
+        "brand",
+        "fixed"
+      ],
+      "source": "question-bank",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "q31-devices",
+      "kind": "question",
+      "name": "Priority devices?",
+      "category": "question",
+      "phase": 6,
+      "description": "Priority devices?",
+      "use_case": "Phase 6; responsive priorities.",
+      "options": [
+        "desktop",
+        "mobile",
+        "both"
+      ],
+      "depends_on": [],
+      "search_tags": [
+        "devices",
+        "mobile",
+        "desktop",
+        "responsive"
+      ],
+      "source": "question-bank",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "q32-a11y",
+      "kind": "question",
+      "name": "Accessibility needs beyond WCAG AA?",
+      "category": "question",
+      "phase": 6,
+      "description": "Accessibility needs beyond WCAG AA?",
+      "use_case": "Phase 6; accessibility requirements.",
+      "options": [
+        "no",
+        "keyboard/screen reader",
+        "motor/vision",
+        "low literacy"
+      ],
+      "depends_on": [],
+      "search_tags": [
+        "accessibility",
+        "a11y",
+        "wcag"
+      ],
+      "source": "question-bank",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "q33-connectivity",
+      "kind": "question",
+      "name": "Offline or poor connectivity?",
+      "category": "question",
+      "phase": 6,
+      "description": "Offline or poor connectivity?",
+      "use_case": "Phase 6; performance and offline states.",
+      "options": [
+        "no",
+        "sometimes",
+        "yes"
+      ],
+      "depends_on": [],
+      "search_tags": [
+        "offline",
+        "connectivity",
+        "performance"
+      ],
+      "source": "question-bank",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "q34-environment",
+      "kind": "question",
+      "name": "Special environment?",
+      "category": "question",
+      "phase": 6,
+      "description": "Special environment?",
+      "use_case": "Phase 6; touch, gloves, kiosk, low light.",
+      "options": [
+        "no",
+        "industrial/gloves",
+        "touch/kiosk",
+        "low light"
+      ],
+      "depends_on": [],
+      "search_tags": [
+        "industrial",
+        "touch",
+        "kiosk",
+        "environment"
+      ],
+      "source": "question-bank",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "q35-wcag",
+      "kind": "question",
+      "name": "WCAG target?",
+      "category": "question",
+      "phase": 6,
+      "description": "WCAG target?",
+      "use_case": "Phase 6; contrast and interaction targets.",
+      "options": [
+        "AA",
+        "AAA where possible",
+        "not defined"
+      ],
+      "depends_on": [],
+      "search_tags": [
+        "wcag",
+        "contrast",
+        "compliance"
+      ],
+      "source": "question-bank",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "q36-limits",
+      "kind": "question",
+      "name": "Biggest constraint?",
+      "category": "question",
+      "phase": 6,
+      "description": "Biggest constraint?",
+      "use_case": "Phase 6; scope and risk.",
+      "options": [
+        "time",
+        "budget",
+        "content",
+        "stack"
+      ],
+      "depends_on": [],
+      "search_tags": [
+        "constraints",
+        "time",
+        "budget",
+        "content"
+      ],
+      "source": "question-bank",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "exp-style-liquid-glass",
+      "kind": "style",
+      "name": "Liquid glass",
+      "category": "visual-style",
+      "description": "Translucent layered surfaces with soft refraction and fluid shading.",
+      "use_case": "Overlays, media-led apps, premium consumer products on Apple-like platforms.",
+      "search_tags": [
+        "glass",
+        "translucent",
+        "blur",
+        "apple",
+        "depth"
+      ],
+      "fits_when": "content is visual and sits behind controls",
+      "avoid_when": "text-heavy or low-contrast contexts",
+      "risks": [
+        "legibility and contrast failures",
+        "GPU cost",
+        "looks dated if copied without purpose"
+      ],
+      "source": "style-trends-2026",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "exp-style-kinetic-typography",
+      "kind": "style",
+      "name": "Kinetic typography",
+      "category": "visual-style",
+      "description": "Variable fonts and type that move with scroll or pointer; type is the identity.",
+      "use_case": "Brand sites, campaigns, portfolios, editorial openers.",
+      "search_tags": [
+        "kinetic",
+        "variable-font",
+        "type",
+        "scroll",
+        "motion"
+      ],
+      "fits_when": "the message is short and the brand has a voice",
+      "avoid_when": "dense reading or data screens",
+      "risks": [
+        "motion sickness and reduced-motion handling",
+        "layout shift (CLS)",
+        "unreadable at small sizes"
+      ],
+      "source": "style-trends-2026",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "exp-style-hand-drawn",
+      "kind": "style",
+      "name": "Hand-drawn / sketch",
+      "category": "visual-style",
+      "description": "Scribbles, rough illustration and handwritten accents that signal human authorship.",
+      "use_case": "Creative tools, education, indie products, explainers.",
+      "search_tags": [
+        "sketch",
+        "hand-drawn",
+        "human",
+        "illustration",
+        "rough"
+      ],
+      "fits_when": "warmth and approachability matter",
+      "avoid_when": "serious regulated or financial contexts",
+      "risks": [
+        "inconsistent quality",
+        "weak accessibility for handwritten fonts"
+      ],
+      "source": "style-trends-2026",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "exp-style-anti-design",
+      "kind": "style",
+      "name": "Anti-design",
+      "category": "visual-style",
+      "description": "Deliberately raw, unpolished layouts that break grid and polish conventions.",
+      "use_case": "Culture, art, music, statements, memorable launches.",
+      "search_tags": [
+        "anti-design",
+        "raw",
+        "experimental",
+        "brutal",
+        "irreverent"
+      ],
+      "fits_when": "standing out matters more than efficiency",
+      "avoid_when": "conversion-critical or high-frequency tools",
+      "risks": [
+        "usability friction",
+        "polarizing",
+        "hard to maintain"
+      ],
+      "source": "style-trends-2026",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "exp-style-tactile-skeuomorphic",
+      "kind": "style",
+      "name": "Tactile / soft skeuomorphism",
+      "category": "visual-style",
+      "description": "Physical-feeling buttons, textures and shadows with real affordance.",
+      "use_case": "Audio and creative tools, hardware companions, playful consumer apps.",
+      "search_tags": [
+        "tactile",
+        "skeuomorphic",
+        "physical",
+        "texture",
+        "affordance"
+      ],
+      "fits_when": "physical metaphors help understanding",
+      "avoid_when": "minimal data or enterprise screens",
+      "risks": [
+        "visual noise",
+        "dated if overdone",
+        "performance of heavy shadows"
+      ],
+      "source": "style-trends-2026",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "exp-style-monochrome-bold-type",
+      "kind": "style",
+      "name": "Monochrome bold type",
+      "category": "visual-style",
+      "description": "One colour, oversized headlines and strict spacing; type and layout carry the design.",
+      "use_case": "Studios, portfolios, product launches, editorial pages.",
+      "search_tags": [
+        "monochrome",
+        "bold",
+        "typography",
+        "oversized",
+        "minimal"
+      ],
+      "fits_when": "the copy is strong and the brand is confident",
+      "avoid_when": "products that need colour-coded states",
+      "risks": [
+        "cold or anonymous without craft",
+        "state colour conflicts"
+      ],
+      "source": "style-trends-2026",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "exp-archetype-assistant",
+      "kind": "archetype",
+      "name": "Assistant",
+      "category": "experience-archetype",
+      "description": "Converse with or delegate to an AI that acts on the user's behalf.",
+      "use_case": "Copilots, agent consoles, support bots, search with generated answers.",
+      "search_tags": [
+        "ai",
+        "chat",
+        "copilot",
+        "agent",
+        "conversation"
+      ],
+      "navigation_model": "console",
+      "map_template": "console",
+      "philosophy_hints": [
+        "transparency",
+        "professional-control"
+      ],
+      "patterns": [
+        "streaming",
+        "citations",
+        "confirm-before-action",
+        "history",
+        "sample-prompts"
+      ],
+      "risks": [
+        "hallucinations without sources",
+        "irreversible actions",
+        "chat used where a form is better"
+      ],
+      "not_for": [
+        "content-only sites"
+      ],
+      "source": "experience-direction",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "exp-archetype-activator",
+      "kind": "archetype",
+      "name": "Activator",
+      "category": "experience-archetype",
+      "description": "Take a new user to their first success quickly.",
+      "use_case": "Onboarding, trials, empty-state-led first run, setup wizards.",
+      "search_tags": [
+        "onboarding",
+        "activation",
+        "first-run",
+        "setup",
+        "trial"
+      ],
+      "navigation_model": "flow",
+      "map_template": "flow",
+      "philosophy_hints": [
+        "progressive-simplicity",
+        "conversion-frictionless"
+      ],
+      "patterns": [
+        "checklist",
+        "empty-states",
+        "sample-data",
+        "progress",
+        "skip-and-resume"
+      ],
+      "risks": [
+        "forced tours",
+        "asking for too much data up front"
+      ],
+      "not_for": [
+        "returning power users"
+      ],
+      "source": "experience-direction",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "exp-archetype-scheduler",
+      "kind": "archetype",
+      "name": "Scheduler",
+      "category": "experience-archetype",
+      "description": "Pick a time, slot or resource and confirm it.",
+      "use_case": "Bookings, appointments, reservations, shift planning.",
+      "search_tags": [
+        "booking",
+        "calendar",
+        "slots",
+        "reservation",
+        "availability"
+      ],
+      "navigation_model": "flow",
+      "map_template": "flow",
+      "philosophy_hints": [
+        "functional-clarity",
+        "trust-authority"
+      ],
+      "patterns": [
+        "calendar",
+        "slot-picker",
+        "timezone",
+        "confirmation",
+        "reschedule"
+      ],
+      "risks": [
+        "timezone errors",
+        "no clear confirmation or cancellation path"
+      ],
+      "not_for": [
+        "content browsing"
+      ],
+      "source": "experience-direction",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "exp-page-onboarding",
+      "kind": "page-type",
+      "name": "Onboarding / first run",
+      "category": "page-type",
+      "description": "Guided first session that leads to the first success.",
+      "use_case": "Apps and tools with a setup step.",
+      "search_tags": [
+        "onboarding",
+        "first run",
+        "setup"
+      ],
+      "job": "reach first value",
+      "primary_action": "complete the next step",
+      "states": "empty, in-progress, skipped, done",
+      "archetype_hints": [
+        "activator",
+        "workflow"
+      ],
+      "source": "experience-direction",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "exp-page-chat-assistant",
+      "kind": "page-type",
+      "name": "Chat / assistant",
+      "category": "page-type",
+      "description": "Conversation surface with input, streaming output, sources and actions.",
+      "use_case": "AI features inside a product or as the product.",
+      "search_tags": [
+        "chat",
+        "ai",
+        "assistant",
+        "streaming"
+      ],
+      "job": "get help or delegate a task",
+      "primary_action": "send a message",
+      "states": "empty, streaming, error, stopped, needs confirmation",
+      "archetype_hints": [
+        "assistant"
+      ],
+      "source": "experience-direction",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "exp-page-auth",
+      "kind": "page-type",
+      "name": "Sign in / account access",
+      "category": "page-type",
+      "description": "Login, sign-up and recovery without cognitive tests.",
+      "use_case": "Any product with accounts.",
+      "search_tags": [
+        "login",
+        "sign in",
+        "auth",
+        "password"
+      ],
+      "job": "get in safely and quickly",
+      "primary_action": "sign in",
+      "states": "error, locked, reset, SSO",
+      "archetype_hints": [
+        "all"
+      ],
+      "source": "experience-direction",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "exp-page-pricing-comparison",
+      "kind": "page-type",
+      "name": "Plan comparison",
+      "category": "page-type",
+      "description": "Compare plans with honest totals and a reversible choice.",
+      "use_case": "SaaS and subscriptions (extends the pricing page).",
+      "search_tags": [
+        "plans",
+        "compare",
+        "billing"
+      ],
+      "job": "choose a plan with confidence",
+      "primary_action": "select a plan",
+      "states": "monthly/annual, current plan, downgrade",
+      "archetype_hints": [
+        "converter",
+        "comparator"
+      ],
+      "source": "experience-direction",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "exp-page-legal-consent",
+      "kind": "page-type",
+      "name": "Consent and privacy",
+      "category": "page-type",
+      "description": "Cookie, data and permission requests with equal-weight choices.",
+      "use_case": "Sites and apps that process personal data.",
+      "search_tags": [
+        "consent",
+        "cookies",
+        "privacy",
+        "gdpr"
+      ],
+      "job": "inform and record a choice",
+      "primary_action": "accept or reject",
+      "states": "first visit, changed choice",
+      "archetype_hints": [
+        "all"
+      ],
+      "source": "experience-direction",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "exp-page-empty-state",
+      "kind": "page-type",
+      "name": "Empty / zero state",
+      "category": "page-type",
+      "description": "Explains why nothing is shown and offers the next action.",
+      "use_case": "Lists, search, dashboards, first run.",
+      "search_tags": [
+        "empty",
+        "zero",
+        "no results"
+      ],
+      "job": "recover or begin",
+      "primary_action": "create or change the query",
+      "states": "first-use, no-results, filtered-out, error",
+      "archetype_hints": [
+        "all"
+      ],
+      "source": "experience-direction",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "q37-ai-features",
+      "kind": "question",
+      "name": "Does the product include AI features?",
+      "category": "question",
+      "phase": 6,
+      "description": "Does the product include AI features?",
+      "use_case": "Phase 6; triggers the Assistant archetype and Shape of AI patterns.",
+      "options": [
+        "no",
+        "assistive (suggestions)",
+        "conversational",
+        "agentic (acts on its own)"
+      ],
+      "depends_on": [],
+      "search_tags": [
+        "ai",
+        "assistant",
+        "agent"
+      ],
+      "source": "question-bank",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "q38-languages",
+      "kind": "question",
+      "name": "Languages and regions?",
+      "category": "question",
+      "phase": 6,
+      "description": "Languages and regions?",
+      "use_case": "Phase 6; text expansion, RTL and date/number formats.",
+      "options": [
+        "one language",
+        "several languages",
+        "RTL needed",
+        "not sure"
+      ],
+      "depends_on": [],
+      "search_tags": [
+        "i18n",
+        "locale",
+        "rtl"
+      ],
+      "source": "question-bank",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "q39-performance",
+      "kind": "question",
+      "name": "Performance budget?",
+      "category": "question",
+      "phase": 6,
+      "description": "Performance budget?",
+      "use_case": "Phase 6; limits effects and media.",
+      "options": [
+        "standard (Core Web Vitals good)",
+        "strict (low-end devices)",
+        "effects allowed if justified",
+        "not defined"
+      ],
+      "depends_on": [],
+      "search_tags": [
+        "performance",
+        "cwv",
+        "budget"
+      ],
+      "source": "question-bank",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "q40-theme",
+      "kind": "question",
+      "name": "Light, dark or both?",
+      "category": "question",
+      "phase": 6,
+      "description": "Light, dark or both?",
+      "use_case": "Phase 6; token structure and contrast checks.",
+      "options": [
+        "light only",
+        "dark only",
+        "both (system)",
+        "both (user switch)"
+      ],
+      "depends_on": [],
+      "search_tags": [
+        "theme",
+        "dark mode",
+        "tokens"
+      ],
+      "source": "question-bank",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "q41-consent-legal",
+      "kind": "question",
+      "name": "Personal data, payments or regulation involved?",
+      "category": "question",
+      "phase": 6,
+      "description": "Personal data, payments or regulation involved?",
+      "use_case": "Phase 6; consent page, trust signals and deceptive-pattern audit.",
+      "options": [
+        "no",
+        "personal data/cookies",
+        "payments",
+        "regulated sector (health, finance, public)"
+      ],
+      "depends_on": [],
+      "search_tags": [
+        "privacy",
+        "consent",
+        "legal",
+        "regulated"
+      ],
+      "source": "question-bank",
+      "license_type": "n/a",
+      "commercial_use": true
+    },
+    {
+      "id": "q42-content-ready",
+      "kind": "question",
+      "name": "Do real content and brand assets exist?",
+      "category": "question",
+      "phase": 1,
+      "description": "Do real content and brand assets exist?",
+      "use_case": "Phase 1; avoids fake testimonials, metrics and logos.",
+      "options": [
+        "yes, all",
+        "partly",
+        "no, placeholders needed",
+        "AI-generated allowed"
+      ],
+      "depends_on": [],
+      "search_tags": [
+        "content",
+        "assets",
+        "brand"
+      ],
+      "source": "question-bank",
+      "license_type": "n/a",
+      "commercial_use": true
+    }
+  ]
+}

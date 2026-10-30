@@ -1,0 +1,2609 @@
+{
+  "schema_version": "1.0",
+  "source_id": "daisyui",
+  "source_name": "DaisyUI",
+  "source_url": "https://daisyui.com",
+  "catalog_url": "https://daisyui.com/components/",
+  "license_summary": "MIT (library); templates/charts/Figma assets sold separately",
+  "granularity": "complete (68 components)",
+  "extraction": {
+    "channel": "docs-structured",
+    "method": "Node script parsing daisyUI llms.txt plus the documented category map",
+    "evidence_url": "https://daisyui.com/llms.txt"
+  },
+  "generated_at": "2026-10-02",
+  "entries": [
+    {
+      "id": "daisyui-ai-surfaces-chat",
+      "name": "DaisyUI Chat bubble",
+      "source": "DaisyUI",
+      "entry_type": "component",
+      "category": "ai-surfaces",
+      "description": "daisyUI Chat bubble component: semantic CSS classes for Tailwind CSS 4, zero JavaScript dependency, themeable via data-theme.",
+      "use_case": "Build agent and AI conversation interfaces (chat, thinking, tools, streaming).",
+      "search_tags": [
+        "daisyui",
+        "css",
+        "chat",
+        "ai-surfaces"
+      ],
+      "docs_url": "https://daisyui.com/components/chat/",
+      "stack": [
+        "html",
+        "css",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Pure CSS: works in React, Vue, Svelte, Astro or plain HTML",
+        "Theme with daisyUI semantic color tokens"
+      ],
+      "install_method": "copy-paste",
+      "install_command": "npm i -D daisyui@latest",
+      "manual_steps": [
+        "Add `@import \"tailwindcss\";` and `@plugin \"daisyui\";` to your CSS file (Tailwind v4).",
+        "Copy the markup for Chat bubble from the docs page (classes like .btn, .card, .modal…).",
+        "Optional CDN: https://cdn.jsdelivr.net/npm/daisyui@5"
+      ],
+      "quality": 83
+    },
+    {
+      "id": "daisyui-backgrounds-effects-aura",
+      "name": "DaisyUI Aura",
+      "source": "DaisyUI",
+      "entry_type": "component",
+      "category": "backgrounds-effects",
+      "description": "daisyUI Aura component: semantic CSS classes for Tailwind CSS 4, zero JavaScript dependency, themeable via data-theme.",
+      "use_case": "Add decorative depth to a section; use sparingly (1–2 per view).",
+      "search_tags": [
+        "daisyui",
+        "css",
+        "aura",
+        "backgrounds-effects"
+      ],
+      "docs_url": "https://daisyui.com/components/aura/",
+      "stack": [
+        "html",
+        "css",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Pure CSS: works in React, Vue, Svelte, Astro or plain HTML",
+        "Theme with daisyUI semantic color tokens"
+      ],
+      "install_method": "copy-paste",
+      "install_command": "npm i -D daisyui@latest",
+      "manual_steps": [
+        "Add `@import \"tailwindcss\";` and `@plugin \"daisyui\";` to your CSS file (Tailwind v4).",
+        "Copy the markup for Aura from the docs page (classes like .btn, .card, .modal…).",
+        "Optional CDN: https://cdn.jsdelivr.net/npm/daisyui@5"
+      ],
+      "quality": 83
+    },
+    {
+      "id": "daisyui-data-display-avatar",
+      "name": "DaisyUI Avatar",
+      "source": "DaisyUI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "daisyUI Avatar component: semantic CSS classes for Tailwind CSS 4, zero JavaScript dependency, themeable via data-theme.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "daisyui",
+        "css",
+        "avatar",
+        "data-display"
+      ],
+      "docs_url": "https://daisyui.com/components/avatar/",
+      "stack": [
+        "html",
+        "css",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Pure CSS: works in React, Vue, Svelte, Astro or plain HTML",
+        "Theme with daisyUI semantic color tokens"
+      ],
+      "install_method": "copy-paste",
+      "install_command": "npm i -D daisyui@latest",
+      "manual_steps": [
+        "Add `@import \"tailwindcss\";` and `@plugin \"daisyui\";` to your CSS file (Tailwind v4).",
+        "Copy the markup for Avatar from the docs page (classes like .btn, .card, .modal…).",
+        "Optional CDN: https://cdn.jsdelivr.net/npm/daisyui@5"
+      ],
+      "quality": 83
+    },
+    {
+      "id": "daisyui-data-display-badge",
+      "name": "DaisyUI Badge",
+      "source": "DaisyUI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "daisyUI Badge component: semantic CSS classes for Tailwind CSS 4, zero JavaScript dependency, themeable via data-theme.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "daisyui",
+        "css",
+        "badge",
+        "data-display"
+      ],
+      "docs_url": "https://daisyui.com/components/badge/",
+      "stack": [
+        "html",
+        "css",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Pure CSS: works in React, Vue, Svelte, Astro or plain HTML",
+        "Theme with daisyUI semantic color tokens"
+      ],
+      "install_method": "copy-paste",
+      "install_command": "npm i -D daisyui@latest",
+      "manual_steps": [
+        "Add `@import \"tailwindcss\";` and `@plugin \"daisyui\";` to your CSS file (Tailwind v4).",
+        "Copy the markup for Badge from the docs page (classes like .btn, .card, .modal…).",
+        "Optional CDN: https://cdn.jsdelivr.net/npm/daisyui@5"
+      ],
+      "quality": 83
+    },
+    {
+      "id": "daisyui-data-display-card",
+      "name": "DaisyUI Card",
+      "source": "DaisyUI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "daisyUI Card component: semantic CSS classes for Tailwind CSS 4, zero JavaScript dependency, themeable via data-theme.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "daisyui",
+        "css",
+        "card",
+        "data-display"
+      ],
+      "docs_url": "https://daisyui.com/components/card/",
+      "stack": [
+        "html",
+        "css",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Pure CSS: works in React, Vue, Svelte, Astro or plain HTML",
+        "Theme with daisyUI semantic color tokens"
+      ],
+      "install_method": "copy-paste",
+      "install_command": "npm i -D daisyui@latest",
+      "manual_steps": [
+        "Add `@import \"tailwindcss\";` and `@plugin \"daisyui\";` to your CSS file (Tailwind v4).",
+        "Copy the markup for Card from the docs page (classes like .btn, .card, .modal…).",
+        "Optional CDN: https://cdn.jsdelivr.net/npm/daisyui@5"
+      ],
+      "quality": 83
+    },
+    {
+      "id": "daisyui-data-display-countdown",
+      "name": "DaisyUI Countdown",
+      "source": "DaisyUI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "daisyUI Countdown component: semantic CSS classes for Tailwind CSS 4, zero JavaScript dependency, themeable via data-theme.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "daisyui",
+        "css",
+        "countdown",
+        "data-display"
+      ],
+      "docs_url": "https://daisyui.com/components/countdown/",
+      "stack": [
+        "html",
+        "css",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Pure CSS: works in React, Vue, Svelte, Astro or plain HTML",
+        "Theme with daisyUI semantic color tokens"
+      ],
+      "install_method": "copy-paste",
+      "install_command": "npm i -D daisyui@latest",
+      "manual_steps": [
+        "Add `@import \"tailwindcss\";` and `@plugin \"daisyui\";` to your CSS file (Tailwind v4).",
+        "Copy the markup for Countdown from the docs page (classes like .btn, .card, .modal…).",
+        "Optional CDN: https://cdn.jsdelivr.net/npm/daisyui@5"
+      ],
+      "quality": 83
+    },
+    {
+      "id": "daisyui-data-display-indicator",
+      "name": "DaisyUI Indicator",
+      "source": "DaisyUI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "daisyUI Indicator component: semantic CSS classes for Tailwind CSS 4, zero JavaScript dependency, themeable via data-theme.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "daisyui",
+        "css",
+        "indicator",
+        "data-display"
+      ],
+      "docs_url": "https://daisyui.com/components/indicator/",
+      "stack": [
+        "html",
+        "css",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Pure CSS: works in React, Vue, Svelte, Astro or plain HTML",
+        "Theme with daisyUI semantic color tokens"
+      ],
+      "install_method": "copy-paste",
+      "install_command": "npm i -D daisyui@latest",
+      "manual_steps": [
+        "Add `@import \"tailwindcss\";` and `@plugin \"daisyui\";` to your CSS file (Tailwind v4).",
+        "Copy the markup for Indicator from the docs page (classes like .btn, .card, .modal…).",
+        "Optional CDN: https://cdn.jsdelivr.net/npm/daisyui@5"
+      ],
+      "quality": 83
+    },
+    {
+      "id": "daisyui-data-display-kbd",
+      "name": "DaisyUI Kbd",
+      "source": "DaisyUI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "daisyUI Kbd component: semantic CSS classes for Tailwind CSS 4, zero JavaScript dependency, themeable via data-theme.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "daisyui",
+        "css",
+        "kbd",
+        "data-display"
+      ],
+      "docs_url": "https://daisyui.com/components/kbd/",
+      "stack": [
+        "html",
+        "css",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Pure CSS: works in React, Vue, Svelte, Astro or plain HTML",
+        "Theme with daisyUI semantic color tokens"
+      ],
+      "install_method": "copy-paste",
+      "install_command": "npm i -D daisyui@latest",
+      "manual_steps": [
+        "Add `@import \"tailwindcss\";` and `@plugin \"daisyui\";` to your CSS file (Tailwind v4).",
+        "Copy the markup for Kbd from the docs page (classes like .btn, .card, .modal…).",
+        "Optional CDN: https://cdn.jsdelivr.net/npm/daisyui@5"
+      ],
+      "quality": 83
+    },
+    {
+      "id": "daisyui-data-display-list",
+      "name": "DaisyUI List",
+      "source": "DaisyUI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "daisyUI List component: semantic CSS classes for Tailwind CSS 4, zero JavaScript dependency, themeable via data-theme.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "daisyui",
+        "css",
+        "list",
+        "data-display"
+      ],
+      "docs_url": "https://daisyui.com/components/list/",
+      "stack": [
+        "html",
+        "css",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Pure CSS: works in React, Vue, Svelte, Astro or plain HTML",
+        "Theme with daisyUI semantic color tokens"
+      ],
+      "install_method": "copy-paste",
+      "install_command": "npm i -D daisyui@latest",
+      "manual_steps": [
+        "Add `@import \"tailwindcss\";` and `@plugin \"daisyui\";` to your CSS file (Tailwind v4).",
+        "Copy the markup for List from the docs page (classes like .btn, .card, .modal…).",
+        "Optional CDN: https://cdn.jsdelivr.net/npm/daisyui@5"
+      ],
+      "quality": 83
+    },
+    {
+      "id": "daisyui-data-display-stat",
+      "name": "DaisyUI Stat",
+      "source": "DaisyUI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "daisyUI Stat component: semantic CSS classes for Tailwind CSS 4, zero JavaScript dependency, themeable via data-theme.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "daisyui",
+        "css",
+        "stat",
+        "data-display"
+      ],
+      "docs_url": "https://daisyui.com/components/stat/",
+      "stack": [
+        "html",
+        "css",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Pure CSS: works in React, Vue, Svelte, Astro or plain HTML",
+        "Theme with daisyUI semantic color tokens"
+      ],
+      "install_method": "copy-paste",
+      "install_command": "npm i -D daisyui@latest",
+      "manual_steps": [
+        "Add `@import \"tailwindcss\";` and `@plugin \"daisyui\";` to your CSS file (Tailwind v4).",
+        "Copy the markup for Stat from the docs page (classes like .btn, .card, .modal…).",
+        "Optional CDN: https://cdn.jsdelivr.net/npm/daisyui@5"
+      ],
+      "quality": 83
+    },
+    {
+      "id": "daisyui-data-display-table",
+      "name": "DaisyUI Table",
+      "source": "DaisyUI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "daisyUI Table component: semantic CSS classes for Tailwind CSS 4, zero JavaScript dependency, themeable via data-theme.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "daisyui",
+        "css",
+        "table",
+        "data-display"
+      ],
+      "docs_url": "https://daisyui.com/components/table/",
+      "stack": [
+        "html",
+        "css",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Pure CSS: works in React, Vue, Svelte, Astro or plain HTML",
+        "Theme with daisyUI semantic color tokens"
+      ],
+      "install_method": "copy-paste",
+      "install_command": "npm i -D daisyui@latest",
+      "manual_steps": [
+        "Add `@import \"tailwindcss\";` and `@plugin \"daisyui\";` to your CSS file (Tailwind v4).",
+        "Copy the markup for Table from the docs page (classes like .btn, .card, .modal…).",
+        "Optional CDN: https://cdn.jsdelivr.net/npm/daisyui@5"
+      ],
+      "quality": 83
+    },
+    {
+      "id": "daisyui-data-display-timeline",
+      "name": "DaisyUI Timeline",
+      "source": "DaisyUI",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "daisyUI Timeline component: semantic CSS classes for Tailwind CSS 4, zero JavaScript dependency, themeable via data-theme.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "daisyui",
+        "css",
+        "timeline",
+        "data-display"
+      ],
+      "docs_url": "https://daisyui.com/components/timeline/",
+      "stack": [
+        "html",
+        "css",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Pure CSS: works in React, Vue, Svelte, Astro or plain HTML",
+        "Theme with daisyUI semantic color tokens"
+      ],
+      "install_method": "copy-paste",
+      "install_command": "npm i -D daisyui@latest",
+      "manual_steps": [
+        "Add `@import \"tailwindcss\";` and `@plugin \"daisyui\";` to your CSS file (Tailwind v4).",
+        "Copy the markup for Timeline from the docs page (classes like .btn, .card, .modal…).",
+        "Optional CDN: https://cdn.jsdelivr.net/npm/daisyui@5"
+      ],
+      "quality": 83
+    },
+    {
+      "id": "daisyui-feedback-alert",
+      "name": "DaisyUI Alert",
+      "source": "DaisyUI",
+      "entry_type": "component",
+      "category": "feedback",
+      "description": "daisyUI Alert component: semantic CSS classes for Tailwind CSS 4, zero JavaScript dependency, themeable via data-theme.",
+      "use_case": "Communicate system status: alerts, loaders, progress and notifications.",
+      "search_tags": [
+        "daisyui",
+        "css",
+        "alert",
+        "feedback"
+      ],
+      "docs_url": "https://daisyui.com/components/alert/",
+      "stack": [
+        "html",
+        "css",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Pure CSS: works in React, Vue, Svelte, Astro or plain HTML",
+        "Theme with daisyUI semantic color tokens"
+      ],
+      "install_method": "copy-paste",
+      "install_command": "npm i -D daisyui@latest",
+      "manual_steps": [
+        "Add `@import \"tailwindcss\";` and `@plugin \"daisyui\";` to your CSS file (Tailwind v4).",
+        "Copy the markup for Alert from the docs page (classes like .btn, .card, .modal…).",
+        "Optional CDN: https://cdn.jsdelivr.net/npm/daisyui@5"
+      ],
+      "quality": 83
+    },
+    {
+      "id": "daisyui-feedback-loading",
+      "name": "DaisyUI Loading",
+      "source": "DaisyUI",
+      "entry_type": "component",
+      "category": "feedback",
+      "description": "daisyUI Loading component: semantic CSS classes for Tailwind CSS 4, zero JavaScript dependency, themeable via data-theme.",
+      "use_case": "Communicate system status: alerts, loaders, progress and notifications.",
+      "search_tags": [
+        "daisyui",
+        "css",
+        "loading",
+        "feedback"
+      ],
+      "docs_url": "https://daisyui.com/components/loading/",
+      "stack": [
+        "html",
+        "css",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Pure CSS: works in React, Vue, Svelte, Astro or plain HTML",
+        "Theme with daisyUI semantic color tokens"
+      ],
+      "install_method": "copy-paste",
+      "install_command": "npm i -D daisyui@latest",
+      "manual_steps": [
+        "Add `@import \"tailwindcss\";` and `@plugin \"daisyui\";` to your CSS file (Tailwind v4).",
+        "Copy the markup for Loading from the docs page (classes like .btn, .card, .modal…).",
+        "Optional CDN: https://cdn.jsdelivr.net/npm/daisyui@5"
+      ],
+      "quality": 83
+    },
+    {
+      "id": "daisyui-feedback-progress",
+      "name": "DaisyUI Progress",
+      "source": "DaisyUI",
+      "entry_type": "component",
+      "category": "feedback",
+      "description": "daisyUI Progress component: semantic CSS classes for Tailwind CSS 4, zero JavaScript dependency, themeable via data-theme.",
+      "use_case": "Communicate system status: alerts, loaders, progress and notifications.",
+      "search_tags": [
+        "daisyui",
+        "css",
+        "progress",
+        "feedback"
+      ],
+      "docs_url": "https://daisyui.com/components/progress/",
+      "stack": [
+        "html",
+        "css",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Pure CSS: works in React, Vue, Svelte, Astro or plain HTML",
+        "Theme with daisyUI semantic color tokens"
+      ],
+      "install_method": "copy-paste",
+      "install_command": "npm i -D daisyui@latest",
+      "manual_steps": [
+        "Add `@import \"tailwindcss\";` and `@plugin \"daisyui\";` to your CSS file (Tailwind v4).",
+        "Copy the markup for Progress from the docs page (classes like .btn, .card, .modal…).",
+        "Optional CDN: https://cdn.jsdelivr.net/npm/daisyui@5"
+      ],
+      "quality": 83
+    },
+    {
+      "id": "daisyui-feedback-radial-progress",
+      "name": "DaisyUI Radial progress",
+      "source": "DaisyUI",
+      "entry_type": "component",
+      "category": "feedback",
+      "description": "daisyUI Radial progress component: semantic CSS classes for Tailwind CSS 4, zero JavaScript dependency, themeable via data-theme.",
+      "use_case": "Communicate system status: alerts, loaders, progress and notifications.",
+      "search_tags": [
+        "daisyui",
+        "css",
+        "radial",
+        "progress",
+        "feedback"
+      ],
+      "docs_url": "https://daisyui.com/components/radial-progress/",
+      "stack": [
+        "html",
+        "css",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Pure CSS: works in React, Vue, Svelte, Astro or plain HTML",
+        "Theme with daisyUI semantic color tokens"
+      ],
+      "install_method": "copy-paste",
+      "install_command": "npm i -D daisyui@latest",
+      "manual_steps": [
+        "Add `@import \"tailwindcss\";` and `@plugin \"daisyui\";` to your CSS file (Tailwind v4).",
+        "Copy the markup for Radial progress from the docs page (classes like .btn, .card, .modal…).",
+        "Optional CDN: https://cdn.jsdelivr.net/npm/daisyui@5"
+      ],
+      "quality": 83
+    },
+    {
+      "id": "daisyui-feedback-skeleton",
+      "name": "DaisyUI Skeleton",
+      "source": "DaisyUI",
+      "entry_type": "component",
+      "category": "feedback",
+      "description": "daisyUI Skeleton component: semantic CSS classes for Tailwind CSS 4, zero JavaScript dependency, themeable via data-theme.",
+      "use_case": "Communicate system status: alerts, loaders, progress and notifications.",
+      "search_tags": [
+        "daisyui",
+        "css",
+        "skeleton",
+        "feedback"
+      ],
+      "docs_url": "https://daisyui.com/components/skeleton/",
+      "stack": [
+        "html",
+        "css",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Pure CSS: works in React, Vue, Svelte, Astro or plain HTML",
+        "Theme with daisyUI semantic color tokens"
+      ],
+      "install_method": "copy-paste",
+      "install_command": "npm i -D daisyui@latest",
+      "manual_steps": [
+        "Add `@import \"tailwindcss\";` and `@plugin \"daisyui\";` to your CSS file (Tailwind v4).",
+        "Copy the markup for Skeleton from the docs page (classes like .btn, .card, .modal…).",
+        "Optional CDN: https://cdn.jsdelivr.net/npm/daisyui@5"
+      ],
+      "quality": 83
+    },
+    {
+      "id": "daisyui-feedback-status",
+      "name": "DaisyUI Status",
+      "source": "DaisyUI",
+      "entry_type": "component",
+      "category": "feedback",
+      "description": "daisyUI Status component: semantic CSS classes for Tailwind CSS 4, zero JavaScript dependency, themeable via data-theme.",
+      "use_case": "Communicate system status: alerts, loaders, progress and notifications.",
+      "search_tags": [
+        "daisyui",
+        "css",
+        "status",
+        "feedback"
+      ],
+      "docs_url": "https://daisyui.com/components/status/",
+      "stack": [
+        "html",
+        "css",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Pure CSS: works in React, Vue, Svelte, Astro or plain HTML",
+        "Theme with daisyUI semantic color tokens"
+      ],
+      "install_method": "copy-paste",
+      "install_command": "npm i -D daisyui@latest",
+      "manual_steps": [
+        "Add `@import \"tailwindcss\";` and `@plugin \"daisyui\";` to your CSS file (Tailwind v4).",
+        "Copy the markup for Status from the docs page (classes like .btn, .card, .modal…).",
+        "Optional CDN: https://cdn.jsdelivr.net/npm/daisyui@5"
+      ],
+      "quality": 83
+    },
+    {
+      "id": "daisyui-feedback-toast",
+      "name": "DaisyUI Toast",
+      "source": "DaisyUI",
+      "entry_type": "component",
+      "category": "feedback",
+      "description": "daisyUI Toast component: semantic CSS classes for Tailwind CSS 4, zero JavaScript dependency, themeable via data-theme.",
+      "use_case": "Communicate system status: alerts, loaders, progress and notifications.",
+      "search_tags": [
+        "daisyui",
+        "css",
+        "toast",
+        "feedback"
+      ],
+      "docs_url": "https://daisyui.com/components/toast/",
+      "stack": [
+        "html",
+        "css",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Pure CSS: works in React, Vue, Svelte, Astro or plain HTML",
+        "Theme with daisyUI semantic color tokens"
+      ],
+      "install_method": "copy-paste",
+      "install_command": "npm i -D daisyui@latest",
+      "manual_steps": [
+        "Add `@import \"tailwindcss\";` and `@plugin \"daisyui\";` to your CSS file (Tailwind v4).",
+        "Copy the markup for Toast from the docs page (classes like .btn, .card, .modal…).",
+        "Optional CDN: https://cdn.jsdelivr.net/npm/daisyui@5"
+      ],
+      "quality": 83
+    },
+    {
+      "id": "daisyui-feedback-tooltip",
+      "name": "DaisyUI Tooltip",
+      "source": "DaisyUI",
+      "entry_type": "component",
+      "category": "feedback",
+      "description": "daisyUI Tooltip component: semantic CSS classes for Tailwind CSS 4, zero JavaScript dependency, themeable via data-theme.",
+      "use_case": "Communicate system status: alerts, loaders, progress and notifications.",
+      "search_tags": [
+        "daisyui",
+        "css",
+        "tooltip",
+        "feedback"
+      ],
+      "docs_url": "https://daisyui.com/components/tooltip/",
+      "stack": [
+        "html",
+        "css",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Pure CSS: works in React, Vue, Svelte, Astro or plain HTML",
+        "Theme with daisyUI semantic color tokens"
+      ],
+      "install_method": "copy-paste",
+      "install_command": "npm i -D daisyui@latest",
+      "manual_steps": [
+        "Add `@import \"tailwindcss\";` and `@plugin \"daisyui\";` to your CSS file (Tailwind v4).",
+        "Copy the markup for Tooltip from the docs page (classes like .btn, .card, .modal…).",
+        "Optional CDN: https://cdn.jsdelivr.net/npm/daisyui@5"
+      ],
+      "quality": 83
+    },
+    {
+      "id": "daisyui-forms-calendar",
+      "name": "DaisyUI Calendar",
+      "source": "DaisyUI",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "daisyUI Calendar component: semantic CSS classes for Tailwind CSS 4, zero JavaScript dependency, themeable via data-theme.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "daisyui",
+        "css",
+        "calendar",
+        "forms"
+      ],
+      "docs_url": "https://daisyui.com/components/calendar/",
+      "stack": [
+        "html",
+        "css",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Pure CSS: works in React, Vue, Svelte, Astro or plain HTML",
+        "Theme with daisyUI semantic color tokens"
+      ],
+      "install_method": "copy-paste",
+      "install_command": "npm i -D daisyui@latest",
+      "manual_steps": [
+        "Add `@import \"tailwindcss\";` and `@plugin \"daisyui\";` to your CSS file (Tailwind v4).",
+        "Copy the markup for Calendar from the docs page (classes like .btn, .card, .modal…).",
+        "Optional CDN: https://cdn.jsdelivr.net/npm/daisyui@5"
+      ],
+      "quality": 83
+    },
+    {
+      "id": "daisyui-forms-checkbox",
+      "name": "DaisyUI Checkbox",
+      "source": "DaisyUI",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "daisyUI Checkbox component: semantic CSS classes for Tailwind CSS 4, zero JavaScript dependency, themeable via data-theme.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "daisyui",
+        "css",
+        "checkbox",
+        "forms"
+      ],
+      "docs_url": "https://daisyui.com/components/checkbox/",
+      "stack": [
+        "html",
+        "css",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Pure CSS: works in React, Vue, Svelte, Astro or plain HTML",
+        "Theme with daisyUI semantic color tokens"
+      ],
+      "install_method": "copy-paste",
+      "install_command": "npm i -D daisyui@latest",
+      "manual_steps": [
+        "Add `@import \"tailwindcss\";` and `@plugin \"daisyui\";` to your CSS file (Tailwind v4).",
+        "Copy the markup for Checkbox from the docs page (classes like .btn, .card, .modal…).",
+        "Optional CDN: https://cdn.jsdelivr.net/npm/daisyui@5"
+      ],
+      "quality": 83
+    },
+    {
+      "id": "daisyui-forms-fieldset",
+      "name": "DaisyUI Fieldset",
+      "source": "DaisyUI",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "daisyUI Fieldset component: semantic CSS classes for Tailwind CSS 4, zero JavaScript dependency, themeable via data-theme.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "daisyui",
+        "css",
+        "fieldset",
+        "forms"
+      ],
+      "docs_url": "https://daisyui.com/components/fieldset/",
+      "stack": [
+        "html",
+        "css",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Pure CSS: works in React, Vue, Svelte, Astro or plain HTML",
+        "Theme with daisyUI semantic color tokens"
+      ],
+      "install_method": "copy-paste",
+      "install_command": "npm i -D daisyui@latest",
+      "manual_steps": [
+        "Add `@import \"tailwindcss\";` and `@plugin \"daisyui\";` to your CSS file (Tailwind v4).",
+        "Copy the markup for Fieldset from the docs page (classes like .btn, .card, .modal…).",
+        "Optional CDN: https://cdn.jsdelivr.net/npm/daisyui@5"
+      ],
+      "quality": 83
+    },
+    {
+      "id": "daisyui-forms-file-input",
+      "name": "DaisyUI File Input",
+      "source": "DaisyUI",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "daisyUI File Input component: semantic CSS classes for Tailwind CSS 4, zero JavaScript dependency, themeable via data-theme.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "daisyui",
+        "css",
+        "file",
+        "input",
+        "forms"
+      ],
+      "docs_url": "https://daisyui.com/components/file-input/",
+      "stack": [
+        "html",
+        "css",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Pure CSS: works in React, Vue, Svelte, Astro or plain HTML",
+        "Theme with daisyUI semantic color tokens"
+      ],
+      "install_method": "copy-paste",
+      "install_command": "npm i -D daisyui@latest",
+      "manual_steps": [
+        "Add `@import \"tailwindcss\";` and `@plugin \"daisyui\";` to your CSS file (Tailwind v4).",
+        "Copy the markup for File Input from the docs page (classes like .btn, .card, .modal…).",
+        "Optional CDN: https://cdn.jsdelivr.net/npm/daisyui@5"
+      ],
+      "quality": 83
+    },
+    {
+      "id": "daisyui-forms-filter",
+      "name": "DaisyUI Filter",
+      "source": "DaisyUI",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "daisyUI Filter component: semantic CSS classes for Tailwind CSS 4, zero JavaScript dependency, themeable via data-theme.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "daisyui",
+        "css",
+        "filter",
+        "forms"
+      ],
+      "docs_url": "https://daisyui.com/components/filter/",
+      "stack": [
+        "html",
+        "css",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Pure CSS: works in React, Vue, Svelte, Astro or plain HTML",
+        "Theme with daisyUI semantic color tokens"
+      ],
+      "install_method": "copy-paste",
+      "install_command": "npm i -D daisyui@latest",
+      "manual_steps": [
+        "Add `@import \"tailwindcss\";` and `@plugin \"daisyui\";` to your CSS file (Tailwind v4).",
+        "Copy the markup for Filter from the docs page (classes like .btn, .card, .modal…).",
+        "Optional CDN: https://cdn.jsdelivr.net/npm/daisyui@5"
+      ],
+      "quality": 83
+    },
+    {
+      "id": "daisyui-forms-input",
+      "name": "DaisyUI Input",
+      "source": "DaisyUI",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "daisyUI Input component: semantic CSS classes for Tailwind CSS 4, zero JavaScript dependency, themeable via data-theme.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "daisyui",
+        "css",
+        "input",
+        "forms"
+      ],
+      "docs_url": "https://daisyui.com/components/input/",
+      "stack": [
+        "html",
+        "css",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Pure CSS: works in React, Vue, Svelte, Astro or plain HTML",
+        "Theme with daisyUI semantic color tokens"
+      ],
+      "install_method": "copy-paste",
+      "install_command": "npm i -D daisyui@latest",
+      "manual_steps": [
+        "Add `@import \"tailwindcss\";` and `@plugin \"daisyui\";` to your CSS file (Tailwind v4).",
+        "Copy the markup for Input from the docs page (classes like .btn, .card, .modal…).",
+        "Optional CDN: https://cdn.jsdelivr.net/npm/daisyui@5"
+      ],
+      "quality": 83
+    },
+    {
+      "id": "daisyui-forms-label",
+      "name": "DaisyUI Label",
+      "source": "DaisyUI",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "daisyUI Label component: semantic CSS classes for Tailwind CSS 4, zero JavaScript dependency, themeable via data-theme.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "daisyui",
+        "css",
+        "label",
+        "forms"
+      ],
+      "docs_url": "https://daisyui.com/components/label/",
+      "stack": [
+        "html",
+        "css",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Pure CSS: works in React, Vue, Svelte, Astro or plain HTML",
+        "Theme with daisyUI semantic color tokens"
+      ],
+      "install_method": "copy-paste",
+      "install_command": "npm i -D daisyui@latest",
+      "manual_steps": [
+        "Add `@import \"tailwindcss\";` and `@plugin \"daisyui\";` to your CSS file (Tailwind v4).",
+        "Copy the markup for Label from the docs page (classes like .btn, .card, .modal…).",
+        "Optional CDN: https://cdn.jsdelivr.net/npm/daisyui@5"
+      ],
+      "quality": 83
+    },
+    {
+      "id": "daisyui-forms-otp",
+      "name": "DaisyUI OTP",
+      "source": "DaisyUI",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "daisyUI OTP component: semantic CSS classes for Tailwind CSS 4, zero JavaScript dependency, themeable via data-theme.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "daisyui",
+        "css",
+        "otp",
+        "forms"
+      ],
+      "docs_url": "https://daisyui.com/components/otp/",
+      "stack": [
+        "html",
+        "css",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Pure CSS: works in React, Vue, Svelte, Astro or plain HTML",
+        "Theme with daisyUI semantic color tokens"
+      ],
+      "install_method": "copy-paste",
+      "install_command": "npm i -D daisyui@latest",
+      "manual_steps": [
+        "Add `@import \"tailwindcss\";` and `@plugin \"daisyui\";` to your CSS file (Tailwind v4).",
+        "Copy the markup for OTP from the docs page (classes like .btn, .card, .modal…).",
+        "Optional CDN: https://cdn.jsdelivr.net/npm/daisyui@5"
+      ],
+      "quality": 83
+    },
+    {
+      "id": "daisyui-forms-radio",
+      "name": "DaisyUI Radio",
+      "source": "DaisyUI",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "daisyUI Radio component: semantic CSS classes for Tailwind CSS 4, zero JavaScript dependency, themeable via data-theme.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "daisyui",
+        "css",
+        "radio",
+        "forms"
+      ],
+      "docs_url": "https://daisyui.com/components/radio/",
+      "stack": [
+        "html",
+        "css",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Pure CSS: works in React, Vue, Svelte, Astro or plain HTML",
+        "Theme with daisyUI semantic color tokens"
+      ],
+      "install_method": "copy-paste",
+      "install_command": "npm i -D daisyui@latest",
+      "manual_steps": [
+        "Add `@import \"tailwindcss\";` and `@plugin \"daisyui\";` to your CSS file (Tailwind v4).",
+        "Copy the markup for Radio from the docs page (classes like .btn, .card, .modal…).",
+        "Optional CDN: https://cdn.jsdelivr.net/npm/daisyui@5"
+      ],
+      "quality": 83
+    },
+    {
+      "id": "daisyui-forms-range",
+      "name": "DaisyUI Range",
+      "source": "DaisyUI",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "daisyUI Range component: semantic CSS classes for Tailwind CSS 4, zero JavaScript dependency, themeable via data-theme.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "daisyui",
+        "css",
+        "range",
+        "forms"
+      ],
+      "docs_url": "https://daisyui.com/components/range/",
+      "stack": [
+        "html",
+        "css",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Pure CSS: works in React, Vue, Svelte, Astro or plain HTML",
+        "Theme with daisyUI semantic color tokens"
+      ],
+      "install_method": "copy-paste",
+      "install_command": "npm i -D daisyui@latest",
+      "manual_steps": [
+        "Add `@import \"tailwindcss\";` and `@plugin \"daisyui\";` to your CSS file (Tailwind v4).",
+        "Copy the markup for Range from the docs page (classes like .btn, .card, .modal…).",
+        "Optional CDN: https://cdn.jsdelivr.net/npm/daisyui@5"
+      ],
+      "quality": 83
+    },
+    {
+      "id": "daisyui-forms-rating",
+      "name": "DaisyUI Rating",
+      "source": "DaisyUI",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "daisyUI Rating component: semantic CSS classes for Tailwind CSS 4, zero JavaScript dependency, themeable via data-theme.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "daisyui",
+        "css",
+        "rating",
+        "forms"
+      ],
+      "docs_url": "https://daisyui.com/components/rating/",
+      "stack": [
+        "html",
+        "css",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Pure CSS: works in React, Vue, Svelte, Astro or plain HTML",
+        "Theme with daisyUI semantic color tokens"
+      ],
+      "install_method": "copy-paste",
+      "install_command": "npm i -D daisyui@latest",
+      "manual_steps": [
+        "Add `@import \"tailwindcss\";` and `@plugin \"daisyui\";` to your CSS file (Tailwind v4).",
+        "Copy the markup for Rating from the docs page (classes like .btn, .card, .modal…).",
+        "Optional CDN: https://cdn.jsdelivr.net/npm/daisyui@5"
+      ],
+      "quality": 83
+    },
+    {
+      "id": "daisyui-forms-select",
+      "name": "DaisyUI Select",
+      "source": "DaisyUI",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "daisyUI Select component: semantic CSS classes for Tailwind CSS 4, zero JavaScript dependency, themeable via data-theme.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "daisyui",
+        "css",
+        "select",
+        "forms"
+      ],
+      "docs_url": "https://daisyui.com/components/select/",
+      "stack": [
+        "html",
+        "css",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Pure CSS: works in React, Vue, Svelte, Astro or plain HTML",
+        "Theme with daisyUI semantic color tokens"
+      ],
+      "install_method": "copy-paste",
+      "install_command": "npm i -D daisyui@latest",
+      "manual_steps": [
+        "Add `@import \"tailwindcss\";` and `@plugin \"daisyui\";` to your CSS file (Tailwind v4).",
+        "Copy the markup for Select from the docs page (classes like .btn, .card, .modal…).",
+        "Optional CDN: https://cdn.jsdelivr.net/npm/daisyui@5"
+      ],
+      "quality": 83
+    },
+    {
+      "id": "daisyui-forms-textarea",
+      "name": "DaisyUI Textarea",
+      "source": "DaisyUI",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "daisyUI Textarea component: semantic CSS classes for Tailwind CSS 4, zero JavaScript dependency, themeable via data-theme.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "daisyui",
+        "css",
+        "textarea",
+        "forms"
+      ],
+      "docs_url": "https://daisyui.com/components/textarea/",
+      "stack": [
+        "html",
+        "css",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Pure CSS: works in React, Vue, Svelte, Astro or plain HTML",
+        "Theme with daisyUI semantic color tokens"
+      ],
+      "install_method": "copy-paste",
+      "install_command": "npm i -D daisyui@latest",
+      "manual_steps": [
+        "Add `@import \"tailwindcss\";` and `@plugin \"daisyui\";` to your CSS file (Tailwind v4).",
+        "Copy the markup for Textarea from the docs page (classes like .btn, .card, .modal…).",
+        "Optional CDN: https://cdn.jsdelivr.net/npm/daisyui@5"
+      ],
+      "quality": 83
+    },
+    {
+      "id": "daisyui-forms-toggle",
+      "name": "DaisyUI Toggle",
+      "source": "DaisyUI",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "daisyUI Toggle component: semantic CSS classes for Tailwind CSS 4, zero JavaScript dependency, themeable via data-theme.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "daisyui",
+        "css",
+        "toggle",
+        "forms"
+      ],
+      "docs_url": "https://daisyui.com/components/toggle/",
+      "stack": [
+        "html",
+        "css",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Pure CSS: works in React, Vue, Svelte, Astro or plain HTML",
+        "Theme with daisyUI semantic color tokens"
+      ],
+      "install_method": "copy-paste",
+      "install_command": "npm i -D daisyui@latest",
+      "manual_steps": [
+        "Add `@import \"tailwindcss\";` and `@plugin \"daisyui\";` to your CSS file (Tailwind v4).",
+        "Copy the markup for Toggle from the docs page (classes like .btn, .card, .modal…).",
+        "Optional CDN: https://cdn.jsdelivr.net/npm/daisyui@5"
+      ],
+      "quality": 83
+    },
+    {
+      "id": "daisyui-forms-validator",
+      "name": "DaisyUI Validator",
+      "source": "DaisyUI",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "daisyUI Validator component: semantic CSS classes for Tailwind CSS 4, zero JavaScript dependency, themeable via data-theme.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "daisyui",
+        "css",
+        "validator",
+        "forms"
+      ],
+      "docs_url": "https://daisyui.com/components/validator/",
+      "stack": [
+        "html",
+        "css",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Pure CSS: works in React, Vue, Svelte, Astro or plain HTML",
+        "Theme with daisyUI semantic color tokens"
+      ],
+      "install_method": "copy-paste",
+      "install_command": "npm i -D daisyui@latest",
+      "manual_steps": [
+        "Add `@import \"tailwindcss\";` and `@plugin \"daisyui\";` to your CSS file (Tailwind v4).",
+        "Copy the markup for Validator from the docs page (classes like .btn, .card, .modal…).",
+        "Optional CDN: https://cdn.jsdelivr.net/npm/daisyui@5"
+      ],
+      "quality": 83
+    },
+    {
+      "id": "daisyui-hero-hero",
+      "name": "DaisyUI Hero",
+      "source": "DaisyUI",
+      "entry_type": "component",
+      "category": "hero",
+      "description": "daisyUI Hero component: semantic CSS classes for Tailwind CSS 4, zero JavaScript dependency, themeable via data-theme.",
+      "use_case": "Create above-the-fold sections that communicate the value proposition immediately.",
+      "search_tags": [
+        "daisyui",
+        "css",
+        "hero"
+      ],
+      "docs_url": "https://daisyui.com/components/hero/",
+      "stack": [
+        "html",
+        "css",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Pure CSS: works in React, Vue, Svelte, Astro or plain HTML",
+        "Theme with daisyUI semantic color tokens"
+      ],
+      "install_method": "copy-paste",
+      "install_command": "npm i -D daisyui@latest",
+      "manual_steps": [
+        "Add `@import \"tailwindcss\";` and `@plugin \"daisyui\";` to your CSS file (Tailwind v4).",
+        "Copy the markup for Hero from the docs page (classes like .btn, .card, .modal…).",
+        "Optional CDN: https://cdn.jsdelivr.net/npm/daisyui@5"
+      ],
+      "quality": 83
+    },
+    {
+      "id": "daisyui-layout-divider",
+      "name": "DaisyUI Divider",
+      "source": "DaisyUI",
+      "entry_type": "component",
+      "category": "layout",
+      "description": "daisyUI Divider component: semantic CSS classes for Tailwind CSS 4, zero JavaScript dependency, themeable via data-theme.",
+      "use_case": "Structure the page: dividers, footers, headers and empty states.",
+      "search_tags": [
+        "daisyui",
+        "css",
+        "divider",
+        "layout"
+      ],
+      "docs_url": "https://daisyui.com/components/divider/",
+      "stack": [
+        "html",
+        "css",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Pure CSS: works in React, Vue, Svelte, Astro or plain HTML",
+        "Theme with daisyUI semantic color tokens"
+      ],
+      "install_method": "copy-paste",
+      "install_command": "npm i -D daisyui@latest",
+      "manual_steps": [
+        "Add `@import \"tailwindcss\";` and `@plugin \"daisyui\";` to your CSS file (Tailwind v4).",
+        "Copy the markup for Divider from the docs page (classes like .btn, .card, .modal…).",
+        "Optional CDN: https://cdn.jsdelivr.net/npm/daisyui@5"
+      ],
+      "quality": 83
+    },
+    {
+      "id": "daisyui-layout-footer",
+      "name": "DaisyUI Footer",
+      "source": "DaisyUI",
+      "entry_type": "component",
+      "category": "layout",
+      "description": "daisyUI Footer component: semantic CSS classes for Tailwind CSS 4, zero JavaScript dependency, themeable via data-theme.",
+      "use_case": "Structure the page: dividers, footers, headers and empty states.",
+      "search_tags": [
+        "daisyui",
+        "css",
+        "footer",
+        "layout"
+      ],
+      "docs_url": "https://daisyui.com/components/footer/",
+      "stack": [
+        "html",
+        "css",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Pure CSS: works in React, Vue, Svelte, Astro or plain HTML",
+        "Theme with daisyUI semantic color tokens"
+      ],
+      "install_method": "copy-paste",
+      "install_command": "npm i -D daisyui@latest",
+      "manual_steps": [
+        "Add `@import \"tailwindcss\";` and `@plugin \"daisyui\";` to your CSS file (Tailwind v4).",
+        "Copy the markup for Footer from the docs page (classes like .btn, .card, .modal…).",
+        "Optional CDN: https://cdn.jsdelivr.net/npm/daisyui@5"
+      ],
+      "quality": 83
+    },
+    {
+      "id": "daisyui-layout-join",
+      "name": "DaisyUI Join",
+      "source": "DaisyUI",
+      "entry_type": "component",
+      "category": "layout",
+      "description": "daisyUI Join component: semantic CSS classes for Tailwind CSS 4, zero JavaScript dependency, themeable via data-theme.",
+      "use_case": "Structure the page: dividers, footers, headers and empty states.",
+      "search_tags": [
+        "daisyui",
+        "css",
+        "join",
+        "layout"
+      ],
+      "docs_url": "https://daisyui.com/components/join/",
+      "stack": [
+        "html",
+        "css",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Pure CSS: works in React, Vue, Svelte, Astro or plain HTML",
+        "Theme with daisyUI semantic color tokens"
+      ],
+      "install_method": "copy-paste",
+      "install_command": "npm i -D daisyui@latest",
+      "manual_steps": [
+        "Add `@import \"tailwindcss\";` and `@plugin \"daisyui\";` to your CSS file (Tailwind v4).",
+        "Copy the markup for Join from the docs page (classes like .btn, .card, .modal…).",
+        "Optional CDN: https://cdn.jsdelivr.net/npm/daisyui@5"
+      ],
+      "quality": 83
+    },
+    {
+      "id": "daisyui-layout-mask",
+      "name": "DaisyUI Mask",
+      "source": "DaisyUI",
+      "entry_type": "component",
+      "category": "layout",
+      "description": "daisyUI Mask component: semantic CSS classes for Tailwind CSS 4, zero JavaScript dependency, themeable via data-theme.",
+      "use_case": "Structure the page: dividers, footers, headers and empty states.",
+      "search_tags": [
+        "daisyui",
+        "css",
+        "mask",
+        "layout"
+      ],
+      "docs_url": "https://daisyui.com/components/mask/",
+      "stack": [
+        "html",
+        "css",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Pure CSS: works in React, Vue, Svelte, Astro or plain HTML",
+        "Theme with daisyUI semantic color tokens"
+      ],
+      "install_method": "copy-paste",
+      "install_command": "npm i -D daisyui@latest",
+      "manual_steps": [
+        "Add `@import \"tailwindcss\";` and `@plugin \"daisyui\";` to your CSS file (Tailwind v4).",
+        "Copy the markup for Mask from the docs page (classes like .btn, .card, .modal…).",
+        "Optional CDN: https://cdn.jsdelivr.net/npm/daisyui@5"
+      ],
+      "quality": 83
+    },
+    {
+      "id": "daisyui-layout-stack",
+      "name": "DaisyUI Stack",
+      "source": "DaisyUI",
+      "entry_type": "component",
+      "category": "layout",
+      "description": "daisyUI Stack component: semantic CSS classes for Tailwind CSS 4, zero JavaScript dependency, themeable via data-theme.",
+      "use_case": "Structure the page: dividers, footers, headers and empty states.",
+      "search_tags": [
+        "daisyui",
+        "css",
+        "stack",
+        "layout"
+      ],
+      "docs_url": "https://daisyui.com/components/stack/",
+      "stack": [
+        "html",
+        "css",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Pure CSS: works in React, Vue, Svelte, Astro or plain HTML",
+        "Theme with daisyUI semantic color tokens"
+      ],
+      "install_method": "copy-paste",
+      "install_command": "npm i -D daisyui@latest",
+      "manual_steps": [
+        "Add `@import \"tailwindcss\";` and `@plugin \"daisyui\";` to your CSS file (Tailwind v4).",
+        "Copy the markup for Stack from the docs page (classes like .btn, .card, .modal…).",
+        "Optional CDN: https://cdn.jsdelivr.net/npm/daisyui@5"
+      ],
+      "quality": 83
+    },
+    {
+      "id": "daisyui-media-browser",
+      "name": "DaisyUI Browser mockup",
+      "source": "DaisyUI",
+      "entry_type": "component",
+      "category": "media",
+      "description": "daisyUI Browser mockup component: semantic CSS classes for Tailwind CSS 4, zero JavaScript dependency, themeable via data-theme.",
+      "use_case": "Display images, video, carousels and device mockups.",
+      "search_tags": [
+        "daisyui",
+        "css",
+        "browser",
+        "media"
+      ],
+      "docs_url": "https://daisyui.com/components/browser/",
+      "stack": [
+        "html",
+        "css",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Pure CSS: works in React, Vue, Svelte, Astro or plain HTML",
+        "Theme with daisyUI semantic color tokens"
+      ],
+      "install_method": "copy-paste",
+      "install_command": "npm i -D daisyui@latest",
+      "manual_steps": [
+        "Add `@import \"tailwindcss\";` and `@plugin \"daisyui\";` to your CSS file (Tailwind v4).",
+        "Copy the markup for Browser mockup from the docs page (classes like .btn, .card, .modal…).",
+        "Optional CDN: https://cdn.jsdelivr.net/npm/daisyui@5"
+      ],
+      "extraction_note": "Slug not linked in current llms.txt; docs URL follows the official components index.",
+      "quality": 83
+    },
+    {
+      "id": "daisyui-media-carousel",
+      "name": "DaisyUI Carousel",
+      "source": "DaisyUI",
+      "entry_type": "component",
+      "category": "media",
+      "description": "daisyUI Carousel component: semantic CSS classes for Tailwind CSS 4, zero JavaScript dependency, themeable via data-theme.",
+      "use_case": "Display images, video, carousels and device mockups.",
+      "search_tags": [
+        "daisyui",
+        "css",
+        "carousel",
+        "media"
+      ],
+      "docs_url": "https://daisyui.com/components/carousel/",
+      "stack": [
+        "html",
+        "css",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Pure CSS: works in React, Vue, Svelte, Astro or plain HTML",
+        "Theme with daisyUI semantic color tokens"
+      ],
+      "install_method": "copy-paste",
+      "install_command": "npm i -D daisyui@latest",
+      "manual_steps": [
+        "Add `@import \"tailwindcss\";` and `@plugin \"daisyui\";` to your CSS file (Tailwind v4).",
+        "Copy the markup for Carousel from the docs page (classes like .btn, .card, .modal…).",
+        "Optional CDN: https://cdn.jsdelivr.net/npm/daisyui@5"
+      ],
+      "quality": 83
+    },
+    {
+      "id": "daisyui-media-code",
+      "name": "DaisyUI Code mockup",
+      "source": "DaisyUI",
+      "entry_type": "component",
+      "category": "media",
+      "description": "daisyUI Code mockup component: semantic CSS classes for Tailwind CSS 4, zero JavaScript dependency, themeable via data-theme.",
+      "use_case": "Display images, video, carousels and device mockups.",
+      "search_tags": [
+        "daisyui",
+        "css",
+        "code",
+        "media"
+      ],
+      "docs_url": "https://daisyui.com/components/code/",
+      "stack": [
+        "html",
+        "css",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Pure CSS: works in React, Vue, Svelte, Astro or plain HTML",
+        "Theme with daisyUI semantic color tokens"
+      ],
+      "install_method": "copy-paste",
+      "install_command": "npm i -D daisyui@latest",
+      "manual_steps": [
+        "Add `@import \"tailwindcss\";` and `@plugin \"daisyui\";` to your CSS file (Tailwind v4).",
+        "Copy the markup for Code mockup from the docs page (classes like .btn, .card, .modal…).",
+        "Optional CDN: https://cdn.jsdelivr.net/npm/daisyui@5"
+      ],
+      "extraction_note": "Slug not linked in current llms.txt; docs URL follows the official components index.",
+      "quality": 83
+    },
+    {
+      "id": "daisyui-media-diff",
+      "name": "DaisyUI Diff",
+      "source": "DaisyUI",
+      "entry_type": "component",
+      "category": "media",
+      "description": "daisyUI Diff component: semantic CSS classes for Tailwind CSS 4, zero JavaScript dependency, themeable via data-theme.",
+      "use_case": "Display images, video, carousels and device mockups.",
+      "search_tags": [
+        "daisyui",
+        "css",
+        "diff",
+        "media"
+      ],
+      "docs_url": "https://daisyui.com/components/diff/",
+      "stack": [
+        "html",
+        "css",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Pure CSS: works in React, Vue, Svelte, Astro or plain HTML",
+        "Theme with daisyUI semantic color tokens"
+      ],
+      "install_method": "copy-paste",
+      "install_command": "npm i -D daisyui@latest",
+      "manual_steps": [
+        "Add `@import \"tailwindcss\";` and `@plugin \"daisyui\";` to your CSS file (Tailwind v4).",
+        "Copy the markup for Diff from the docs page (classes like .btn, .card, .modal…).",
+        "Optional CDN: https://cdn.jsdelivr.net/npm/daisyui@5"
+      ],
+      "quality": 83
+    },
+    {
+      "id": "daisyui-media-hover-gallery",
+      "name": "DaisyUI Hover Gallery",
+      "source": "DaisyUI",
+      "entry_type": "component",
+      "category": "media",
+      "description": "daisyUI Hover Gallery component: semantic CSS classes for Tailwind CSS 4, zero JavaScript dependency, themeable via data-theme.",
+      "use_case": "Display images, video, carousels and device mockups.",
+      "search_tags": [
+        "daisyui",
+        "css",
+        "hover",
+        "gallery",
+        "media"
+      ],
+      "docs_url": "https://daisyui.com/components/hover-gallery/",
+      "stack": [
+        "html",
+        "css",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Pure CSS: works in React, Vue, Svelte, Astro or plain HTML",
+        "Theme with daisyUI semantic color tokens"
+      ],
+      "install_method": "copy-paste",
+      "install_command": "npm i -D daisyui@latest",
+      "manual_steps": [
+        "Add `@import \"tailwindcss\";` and `@plugin \"daisyui\";` to your CSS file (Tailwind v4).",
+        "Copy the markup for Hover Gallery from the docs page (classes like .btn, .card, .modal…).",
+        "Optional CDN: https://cdn.jsdelivr.net/npm/daisyui@5"
+      ],
+      "quality": 83
+    },
+    {
+      "id": "daisyui-media-phone",
+      "name": "DaisyUI Phone mockup",
+      "source": "DaisyUI",
+      "entry_type": "component",
+      "category": "media",
+      "description": "daisyUI Phone mockup component: semantic CSS classes for Tailwind CSS 4, zero JavaScript dependency, themeable via data-theme.",
+      "use_case": "Display images, video, carousels and device mockups.",
+      "search_tags": [
+        "daisyui",
+        "css",
+        "phone",
+        "media"
+      ],
+      "docs_url": "https://daisyui.com/components/phone/",
+      "stack": [
+        "html",
+        "css",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Pure CSS: works in React, Vue, Svelte, Astro or plain HTML",
+        "Theme with daisyUI semantic color tokens"
+      ],
+      "install_method": "copy-paste",
+      "install_command": "npm i -D daisyui@latest",
+      "manual_steps": [
+        "Add `@import \"tailwindcss\";` and `@plugin \"daisyui\";` to your CSS file (Tailwind v4).",
+        "Copy the markup for Phone mockup from the docs page (classes like .btn, .card, .modal…).",
+        "Optional CDN: https://cdn.jsdelivr.net/npm/daisyui@5"
+      ],
+      "extraction_note": "Slug not linked in current llms.txt; docs URL follows the official components index.",
+      "quality": 83
+    },
+    {
+      "id": "daisyui-media-window",
+      "name": "DaisyUI Window mockup",
+      "source": "DaisyUI",
+      "entry_type": "component",
+      "category": "media",
+      "description": "daisyUI Window mockup component: semantic CSS classes for Tailwind CSS 4, zero JavaScript dependency, themeable via data-theme.",
+      "use_case": "Display images, video, carousels and device mockups.",
+      "search_tags": [
+        "daisyui",
+        "css",
+        "window",
+        "media"
+      ],
+      "docs_url": "https://daisyui.com/components/window/",
+      "stack": [
+        "html",
+        "css",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Pure CSS: works in React, Vue, Svelte, Astro or plain HTML",
+        "Theme with daisyUI semantic color tokens"
+      ],
+      "install_method": "copy-paste",
+      "install_command": "npm i -D daisyui@latest",
+      "manual_steps": [
+        "Add `@import \"tailwindcss\";` and `@plugin \"daisyui\";` to your CSS file (Tailwind v4).",
+        "Copy the markup for Window mockup from the docs page (classes like .btn, .card, .modal…).",
+        "Optional CDN: https://cdn.jsdelivr.net/npm/daisyui@5"
+      ],
+      "extraction_note": "Slug not linked in current llms.txt; docs URL follows the official components index.",
+      "quality": 83
+    },
+    {
+      "id": "daisyui-micro-interactions-accordion",
+      "name": "DaisyUI Accordion",
+      "source": "DaisyUI",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "daisyUI Accordion component: semantic CSS classes for Tailwind CSS 4, zero JavaScript dependency, themeable via data-theme.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "daisyui",
+        "css",
+        "accordion",
+        "micro-interactions"
+      ],
+      "docs_url": "https://daisyui.com/components/accordion/",
+      "stack": [
+        "html",
+        "css",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Pure CSS: works in React, Vue, Svelte, Astro or plain HTML",
+        "Theme with daisyUI semantic color tokens"
+      ],
+      "install_method": "copy-paste",
+      "install_command": "npm i -D daisyui@latest",
+      "manual_steps": [
+        "Add `@import \"tailwindcss\";` and `@plugin \"daisyui\";` to your CSS file (Tailwind v4).",
+        "Copy the markup for Accordion from the docs page (classes like .btn, .card, .modal…).",
+        "Optional CDN: https://cdn.jsdelivr.net/npm/daisyui@5"
+      ],
+      "quality": 83
+    },
+    {
+      "id": "daisyui-micro-interactions-button",
+      "name": "DaisyUI Button",
+      "source": "DaisyUI",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "daisyUI Button component: semantic CSS classes for Tailwind CSS 4, zero JavaScript dependency, themeable via data-theme.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "daisyui",
+        "css",
+        "button",
+        "micro-interactions"
+      ],
+      "docs_url": "https://daisyui.com/components/button/",
+      "stack": [
+        "html",
+        "css",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Pure CSS: works in React, Vue, Svelte, Astro or plain HTML",
+        "Theme with daisyUI semantic color tokens"
+      ],
+      "install_method": "copy-paste",
+      "install_command": "npm i -D daisyui@latest",
+      "manual_steps": [
+        "Add `@import \"tailwindcss\";` and `@plugin \"daisyui\";` to your CSS file (Tailwind v4).",
+        "Copy the markup for Button from the docs page (classes like .btn, .card, .modal…).",
+        "Optional CDN: https://cdn.jsdelivr.net/npm/daisyui@5"
+      ],
+      "quality": 83
+    },
+    {
+      "id": "daisyui-micro-interactions-collapse",
+      "name": "DaisyUI Collapse",
+      "source": "DaisyUI",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "daisyUI Collapse component: semantic CSS classes for Tailwind CSS 4, zero JavaScript dependency, themeable via data-theme.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "daisyui",
+        "css",
+        "collapse",
+        "micro-interactions"
+      ],
+      "docs_url": "https://daisyui.com/components/collapse/",
+      "stack": [
+        "html",
+        "css",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Pure CSS: works in React, Vue, Svelte, Astro or plain HTML",
+        "Theme with daisyUI semantic color tokens"
+      ],
+      "install_method": "copy-paste",
+      "install_command": "npm i -D daisyui@latest",
+      "manual_steps": [
+        "Add `@import \"tailwindcss\";` and `@plugin \"daisyui\";` to your CSS file (Tailwind v4).",
+        "Copy the markup for Collapse from the docs page (classes like .btn, .card, .modal…).",
+        "Optional CDN: https://cdn.jsdelivr.net/npm/daisyui@5"
+      ],
+      "quality": 83
+    },
+    {
+      "id": "daisyui-micro-interactions-fab",
+      "name": "DaisyUI FAB / Speed Dial",
+      "source": "DaisyUI",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "daisyUI FAB / Speed Dial component: semantic CSS classes for Tailwind CSS 4, zero JavaScript dependency, themeable via data-theme.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "daisyui",
+        "css",
+        "fab",
+        "micro-interactions"
+      ],
+      "docs_url": "https://daisyui.com/components/fab/",
+      "stack": [
+        "html",
+        "css",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Pure CSS: works in React, Vue, Svelte, Astro or plain HTML",
+        "Theme with daisyUI semantic color tokens"
+      ],
+      "install_method": "copy-paste",
+      "install_command": "npm i -D daisyui@latest",
+      "manual_steps": [
+        "Add `@import \"tailwindcss\";` and `@plugin \"daisyui\";` to your CSS file (Tailwind v4).",
+        "Copy the markup for FAB / Speed Dial from the docs page (classes like .btn, .card, .modal…).",
+        "Optional CDN: https://cdn.jsdelivr.net/npm/daisyui@5"
+      ],
+      "quality": 83
+    },
+    {
+      "id": "daisyui-micro-interactions-hover-3d",
+      "name": "DaisyUI Hover 3D",
+      "source": "DaisyUI",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "daisyUI Hover 3D component: semantic CSS classes for Tailwind CSS 4, zero JavaScript dependency, themeable via data-theme.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "daisyui",
+        "css",
+        "hover",
+        "3d",
+        "micro-interactions"
+      ],
+      "docs_url": "https://daisyui.com/components/hover-3d/",
+      "stack": [
+        "html",
+        "css",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Pure CSS: works in React, Vue, Svelte, Astro or plain HTML",
+        "Theme with daisyUI semantic color tokens"
+      ],
+      "install_method": "copy-paste",
+      "install_command": "npm i -D daisyui@latest",
+      "manual_steps": [
+        "Add `@import \"tailwindcss\";` and `@plugin \"daisyui\";` to your CSS file (Tailwind v4).",
+        "Copy the markup for Hover 3D from the docs page (classes like .btn, .card, .modal…).",
+        "Optional CDN: https://cdn.jsdelivr.net/npm/daisyui@5"
+      ],
+      "quality": 83
+    },
+    {
+      "id": "daisyui-micro-interactions-swap",
+      "name": "DaisyUI Swap",
+      "source": "DaisyUI",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "daisyUI Swap component: semantic CSS classes for Tailwind CSS 4, zero JavaScript dependency, themeable via data-theme.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "daisyui",
+        "css",
+        "swap",
+        "micro-interactions"
+      ],
+      "docs_url": "https://daisyui.com/components/swap/",
+      "stack": [
+        "html",
+        "css",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Pure CSS: works in React, Vue, Svelte, Astro or plain HTML",
+        "Theme with daisyUI semantic color tokens"
+      ],
+      "install_method": "copy-paste",
+      "install_command": "npm i -D daisyui@latest",
+      "manual_steps": [
+        "Add `@import \"tailwindcss\";` and `@plugin \"daisyui\";` to your CSS file (Tailwind v4).",
+        "Copy the markup for Swap from the docs page (classes like .btn, .card, .modal…).",
+        "Optional CDN: https://cdn.jsdelivr.net/npm/daisyui@5"
+      ],
+      "quality": 83
+    },
+    {
+      "id": "daisyui-micro-interactions-theme-controller",
+      "name": "DaisyUI Theme Controller",
+      "source": "DaisyUI",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "daisyUI Theme Controller component: semantic CSS classes for Tailwind CSS 4, zero JavaScript dependency, themeable via data-theme.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "daisyui",
+        "css",
+        "theme",
+        "controller",
+        "micro-interactions"
+      ],
+      "docs_url": "https://daisyui.com/components/theme-controller/",
+      "stack": [
+        "html",
+        "css",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Pure CSS: works in React, Vue, Svelte, Astro or plain HTML",
+        "Theme with daisyUI semantic color tokens"
+      ],
+      "install_method": "copy-paste",
+      "install_command": "npm i -D daisyui@latest",
+      "manual_steps": [
+        "Add `@import \"tailwindcss\";` and `@plugin \"daisyui\";` to your CSS file (Tailwind v4).",
+        "Copy the markup for Theme Controller from the docs page (classes like .btn, .card, .modal…).",
+        "Optional CDN: https://cdn.jsdelivr.net/npm/daisyui@5"
+      ],
+      "quality": 83
+    },
+    {
+      "id": "daisyui-navigation-breadcrumbs",
+      "name": "DaisyUI Breadcrumbs",
+      "source": "DaisyUI",
+      "entry_type": "component",
+      "category": "navigation",
+      "description": "daisyUI Breadcrumbs component: semantic CSS classes for Tailwind CSS 4, zero JavaScript dependency, themeable via data-theme.",
+      "use_case": "Build site and app navigation structures that stay clear at any depth.",
+      "search_tags": [
+        "daisyui",
+        "css",
+        "breadcrumbs",
+        "navigation"
+      ],
+      "docs_url": "https://daisyui.com/components/breadcrumbs/",
+      "stack": [
+        "html",
+        "css",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Pure CSS: works in React, Vue, Svelte, Astro or plain HTML",
+        "Theme with daisyUI semantic color tokens"
+      ],
+      "install_method": "copy-paste",
+      "install_command": "npm i -D daisyui@latest",
+      "manual_steps": [
+        "Add `@import \"tailwindcss\";` and `@plugin \"daisyui\";` to your CSS file (Tailwind v4).",
+        "Copy the markup for Breadcrumbs from the docs page (classes like .btn, .card, .modal…).",
+        "Optional CDN: https://cdn.jsdelivr.net/npm/daisyui@5"
+      ],
+      "quality": 83
+    },
+    {
+      "id": "daisyui-navigation-dock",
+      "name": "DaisyUI Dock",
+      "source": "DaisyUI",
+      "entry_type": "component",
+      "category": "navigation",
+      "description": "daisyUI Dock component: semantic CSS classes for Tailwind CSS 4, zero JavaScript dependency, themeable via data-theme.",
+      "use_case": "Build site and app navigation structures that stay clear at any depth.",
+      "search_tags": [
+        "daisyui",
+        "css",
+        "dock",
+        "navigation"
+      ],
+      "docs_url": "https://daisyui.com/components/dock/",
+      "stack": [
+        "html",
+        "css",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Pure CSS: works in React, Vue, Svelte, Astro or plain HTML",
+        "Theme with daisyUI semantic color tokens"
+      ],
+      "install_method": "copy-paste",
+      "install_command": "npm i -D daisyui@latest",
+      "manual_steps": [
+        "Add `@import \"tailwindcss\";` and `@plugin \"daisyui\";` to your CSS file (Tailwind v4).",
+        "Copy the markup for Dock from the docs page (classes like .btn, .card, .modal…).",
+        "Optional CDN: https://cdn.jsdelivr.net/npm/daisyui@5"
+      ],
+      "quality": 83
+    },
+    {
+      "id": "daisyui-navigation-link",
+      "name": "DaisyUI Link",
+      "source": "DaisyUI",
+      "entry_type": "component",
+      "category": "navigation",
+      "description": "daisyUI Link component: semantic CSS classes for Tailwind CSS 4, zero JavaScript dependency, themeable via data-theme.",
+      "use_case": "Build site and app navigation structures that stay clear at any depth.",
+      "search_tags": [
+        "daisyui",
+        "css",
+        "link",
+        "navigation"
+      ],
+      "docs_url": "https://daisyui.com/components/link/",
+      "stack": [
+        "html",
+        "css",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Pure CSS: works in React, Vue, Svelte, Astro or plain HTML",
+        "Theme with daisyUI semantic color tokens"
+      ],
+      "install_method": "copy-paste",
+      "install_command": "npm i -D daisyui@latest",
+      "manual_steps": [
+        "Add `@import \"tailwindcss\";` and `@plugin \"daisyui\";` to your CSS file (Tailwind v4).",
+        "Copy the markup for Link from the docs page (classes like .btn, .card, .modal…).",
+        "Optional CDN: https://cdn.jsdelivr.net/npm/daisyui@5"
+      ],
+      "quality": 83
+    },
+    {
+      "id": "daisyui-navigation-megamenu",
+      "name": "DaisyUI Megamenu",
+      "source": "DaisyUI",
+      "entry_type": "component",
+      "category": "navigation",
+      "description": "daisyUI Megamenu component: semantic CSS classes for Tailwind CSS 4, zero JavaScript dependency, themeable via data-theme.",
+      "use_case": "Build site and app navigation structures that stay clear at any depth.",
+      "search_tags": [
+        "daisyui",
+        "css",
+        "megamenu",
+        "navigation"
+      ],
+      "docs_url": "https://daisyui.com/components/megamenu/",
+      "stack": [
+        "html",
+        "css",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Pure CSS: works in React, Vue, Svelte, Astro or plain HTML",
+        "Theme with daisyUI semantic color tokens"
+      ],
+      "install_method": "copy-paste",
+      "install_command": "npm i -D daisyui@latest",
+      "manual_steps": [
+        "Add `@import \"tailwindcss\";` and `@plugin \"daisyui\";` to your CSS file (Tailwind v4).",
+        "Copy the markup for Megamenu from the docs page (classes like .btn, .card, .modal…).",
+        "Optional CDN: https://cdn.jsdelivr.net/npm/daisyui@5"
+      ],
+      "quality": 83
+    },
+    {
+      "id": "daisyui-navigation-menu",
+      "name": "DaisyUI Menu",
+      "source": "DaisyUI",
+      "entry_type": "component",
+      "category": "navigation",
+      "description": "daisyUI Menu component: semantic CSS classes for Tailwind CSS 4, zero JavaScript dependency, themeable via data-theme.",
+      "use_case": "Build site and app navigation structures that stay clear at any depth.",
+      "search_tags": [
+        "daisyui",
+        "css",
+        "menu",
+        "navigation"
+      ],
+      "docs_url": "https://daisyui.com/components/menu/",
+      "stack": [
+        "html",
+        "css",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Pure CSS: works in React, Vue, Svelte, Astro or plain HTML",
+        "Theme with daisyUI semantic color tokens"
+      ],
+      "install_method": "copy-paste",
+      "install_command": "npm i -D daisyui@latest",
+      "manual_steps": [
+        "Add `@import \"tailwindcss\";` and `@plugin \"daisyui\";` to your CSS file (Tailwind v4).",
+        "Copy the markup for Menu from the docs page (classes like .btn, .card, .modal…).",
+        "Optional CDN: https://cdn.jsdelivr.net/npm/daisyui@5"
+      ],
+      "quality": 83
+    },
+    {
+      "id": "daisyui-navigation-navbar",
+      "name": "DaisyUI Navbar",
+      "source": "DaisyUI",
+      "entry_type": "component",
+      "category": "navigation",
+      "description": "daisyUI Navbar component: semantic CSS classes for Tailwind CSS 4, zero JavaScript dependency, themeable via data-theme.",
+      "use_case": "Build site and app navigation structures that stay clear at any depth.",
+      "search_tags": [
+        "daisyui",
+        "css",
+        "navbar",
+        "navigation"
+      ],
+      "docs_url": "https://daisyui.com/components/navbar/",
+      "stack": [
+        "html",
+        "css",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Pure CSS: works in React, Vue, Svelte, Astro or plain HTML",
+        "Theme with daisyUI semantic color tokens"
+      ],
+      "install_method": "copy-paste",
+      "install_command": "npm i -D daisyui@latest",
+      "manual_steps": [
+        "Add `@import \"tailwindcss\";` and `@plugin \"daisyui\";` to your CSS file (Tailwind v4).",
+        "Copy the markup for Navbar from the docs page (classes like .btn, .card, .modal…).",
+        "Optional CDN: https://cdn.jsdelivr.net/npm/daisyui@5"
+      ],
+      "quality": 83
+    },
+    {
+      "id": "daisyui-navigation-pagination",
+      "name": "DaisyUI Pagination",
+      "source": "DaisyUI",
+      "entry_type": "component",
+      "category": "navigation",
+      "description": "daisyUI Pagination component: semantic CSS classes for Tailwind CSS 4, zero JavaScript dependency, themeable via data-theme.",
+      "use_case": "Build site and app navigation structures that stay clear at any depth.",
+      "search_tags": [
+        "daisyui",
+        "css",
+        "pagination",
+        "navigation"
+      ],
+      "docs_url": "https://daisyui.com/components/pagination/",
+      "stack": [
+        "html",
+        "css",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Pure CSS: works in React, Vue, Svelte, Astro or plain HTML",
+        "Theme with daisyUI semantic color tokens"
+      ],
+      "install_method": "copy-paste",
+      "install_command": "npm i -D daisyui@latest",
+      "manual_steps": [
+        "Add `@import \"tailwindcss\";` and `@plugin \"daisyui\";` to your CSS file (Tailwind v4).",
+        "Copy the markup for Pagination from the docs page (classes like .btn, .card, .modal…).",
+        "Optional CDN: https://cdn.jsdelivr.net/npm/daisyui@5"
+      ],
+      "quality": 83
+    },
+    {
+      "id": "daisyui-navigation-steps",
+      "name": "DaisyUI Steps",
+      "source": "DaisyUI",
+      "entry_type": "component",
+      "category": "navigation",
+      "description": "daisyUI Steps component: semantic CSS classes for Tailwind CSS 4, zero JavaScript dependency, themeable via data-theme.",
+      "use_case": "Build site and app navigation structures that stay clear at any depth.",
+      "search_tags": [
+        "daisyui",
+        "css",
+        "steps",
+        "navigation"
+      ],
+      "docs_url": "https://daisyui.com/components/steps/",
+      "stack": [
+        "html",
+        "css",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Pure CSS: works in React, Vue, Svelte, Astro or plain HTML",
+        "Theme with daisyUI semantic color tokens"
+      ],
+      "install_method": "copy-paste",
+      "install_command": "npm i -D daisyui@latest",
+      "manual_steps": [
+        "Add `@import \"tailwindcss\";` and `@plugin \"daisyui\";` to your CSS file (Tailwind v4).",
+        "Copy the markup for Steps from the docs page (classes like .btn, .card, .modal…).",
+        "Optional CDN: https://cdn.jsdelivr.net/npm/daisyui@5"
+      ],
+      "quality": 83
+    },
+    {
+      "id": "daisyui-navigation-tab",
+      "name": "DaisyUI Tab",
+      "source": "DaisyUI",
+      "entry_type": "component",
+      "category": "navigation",
+      "description": "daisyUI Tab component: semantic CSS classes for Tailwind CSS 4, zero JavaScript dependency, themeable via data-theme.",
+      "use_case": "Build site and app navigation structures that stay clear at any depth.",
+      "search_tags": [
+        "daisyui",
+        "css",
+        "tab",
+        "navigation"
+      ],
+      "docs_url": "https://daisyui.com/components/tab/",
+      "stack": [
+        "html",
+        "css",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Pure CSS: works in React, Vue, Svelte, Astro or plain HTML",
+        "Theme with daisyUI semantic color tokens"
+      ],
+      "install_method": "copy-paste",
+      "install_command": "npm i -D daisyui@latest",
+      "manual_steps": [
+        "Add `@import \"tailwindcss\";` and `@plugin \"daisyui\";` to your CSS file (Tailwind v4).",
+        "Copy the markup for Tab from the docs page (classes like .btn, .card, .modal…).",
+        "Optional CDN: https://cdn.jsdelivr.net/npm/daisyui@5"
+      ],
+      "quality": 83
+    },
+    {
+      "id": "daisyui-overlay-drawer",
+      "name": "DaisyUI Drawer",
+      "source": "DaisyUI",
+      "entry_type": "component",
+      "category": "overlay",
+      "description": "daisyUI Drawer component: semantic CSS classes for Tailwind CSS 4, zero JavaScript dependency, themeable via data-theme.",
+      "use_case": "Present dialogs, drawers and popovers without leaving the page.",
+      "search_tags": [
+        "daisyui",
+        "css",
+        "drawer",
+        "overlay"
+      ],
+      "docs_url": "https://daisyui.com/components/drawer/",
+      "stack": [
+        "html",
+        "css",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Pure CSS: works in React, Vue, Svelte, Astro or plain HTML",
+        "Theme with daisyUI semantic color tokens"
+      ],
+      "install_method": "copy-paste",
+      "install_command": "npm i -D daisyui@latest",
+      "manual_steps": [
+        "Add `@import \"tailwindcss\";` and `@plugin \"daisyui\";` to your CSS file (Tailwind v4).",
+        "Copy the markup for Drawer from the docs page (classes like .btn, .card, .modal…).",
+        "Optional CDN: https://cdn.jsdelivr.net/npm/daisyui@5"
+      ],
+      "quality": 83
+    },
+    {
+      "id": "daisyui-overlay-dropdown",
+      "name": "DaisyUI Dropdown",
+      "source": "DaisyUI",
+      "entry_type": "component",
+      "category": "overlay",
+      "description": "daisyUI Dropdown component: semantic CSS classes for Tailwind CSS 4, zero JavaScript dependency, themeable via data-theme.",
+      "use_case": "Present dialogs, drawers and popovers without leaving the page.",
+      "search_tags": [
+        "daisyui",
+        "css",
+        "dropdown",
+        "overlay"
+      ],
+      "docs_url": "https://daisyui.com/components/dropdown/",
+      "stack": [
+        "html",
+        "css",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Pure CSS: works in React, Vue, Svelte, Astro or plain HTML",
+        "Theme with daisyUI semantic color tokens"
+      ],
+      "install_method": "copy-paste",
+      "install_command": "npm i -D daisyui@latest",
+      "manual_steps": [
+        "Add `@import \"tailwindcss\";` and `@plugin \"daisyui\";` to your CSS file (Tailwind v4).",
+        "Copy the markup for Dropdown from the docs page (classes like .btn, .card, .modal…).",
+        "Optional CDN: https://cdn.jsdelivr.net/npm/daisyui@5"
+      ],
+      "quality": 83
+    },
+    {
+      "id": "daisyui-overlay-modal",
+      "name": "DaisyUI Modal",
+      "source": "DaisyUI",
+      "entry_type": "component",
+      "category": "overlay",
+      "description": "daisyUI Modal component: semantic CSS classes for Tailwind CSS 4, zero JavaScript dependency, themeable via data-theme.",
+      "use_case": "Present dialogs, drawers and popovers without leaving the page.",
+      "search_tags": [
+        "daisyui",
+        "css",
+        "modal",
+        "overlay"
+      ],
+      "docs_url": "https://daisyui.com/components/modal/",
+      "stack": [
+        "html",
+        "css",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Pure CSS: works in React, Vue, Svelte, Astro or plain HTML",
+        "Theme with daisyUI semantic color tokens"
+      ],
+      "install_method": "copy-paste",
+      "install_command": "npm i -D daisyui@latest",
+      "manual_steps": [
+        "Add `@import \"tailwindcss\";` and `@plugin \"daisyui\";` to your CSS file (Tailwind v4).",
+        "Copy the markup for Modal from the docs page (classes like .btn, .card, .modal…).",
+        "Optional CDN: https://cdn.jsdelivr.net/npm/daisyui@5"
+      ],
+      "quality": 83
+    },
+    {
+      "id": "daisyui-text-text-rotate",
+      "name": "DaisyUI Text Rotate",
+      "source": "DaisyUI",
+      "entry_type": "component",
+      "category": "text",
+      "description": "daisyUI Text Rotate component: semantic CSS classes for Tailwind CSS 4, zero JavaScript dependency, themeable via data-theme.",
+      "use_case": "Animate or emphasize typography for key messages.",
+      "search_tags": [
+        "daisyui",
+        "css",
+        "text",
+        "rotate"
+      ],
+      "docs_url": "https://daisyui.com/components/text-rotate/",
+      "stack": [
+        "html",
+        "css",
+        "tailwind"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-02",
+      "decision_hints": [
+        "Pure CSS: works in React, Vue, Svelte, Astro or plain HTML",
+        "Theme with daisyUI semantic color tokens"
+      ],
+      "install_method": "copy-paste",
+      "install_command": "npm i -D daisyui@latest",
+      "manual_steps": [
+        "Add `@import \"tailwindcss\";` and `@plugin \"daisyui\";` to your CSS file (Tailwind v4).",
+        "Copy the markup for Text Rotate from the docs page (classes like .btn, .card, .modal…).",
+        "Optional CDN: https://cdn.jsdelivr.net/npm/daisyui@5"
+      ],
+      "quality": 83
+    }
+  ]
+}

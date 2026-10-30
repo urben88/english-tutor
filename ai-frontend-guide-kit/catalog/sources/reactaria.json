@@ -1,0 +1,1935 @@
+{
+  "schema_version": "1.0",
+  "source_id": "reactaria",
+  "source_name": "React Aria Components",
+  "source_url": "https://react-spectrum.adobe.com/react-aria/",
+  "catalog_url": "https://react-spectrum.adobe.com/react-aria/components.html",
+  "license_summary": "Apache-2.0",
+  "granularity": "complete (react-aria-components source files)",
+  "extraction": {
+    "channel": "github-contents",
+    "method": "Directory listing of packages/react-aria-components/src",
+    "evidence_url": "https://github.com/adobe/react-spectrum/tree/main/packages/react-aria-components/src"
+  },
+  "generated_at": "2026-10-04",
+  "entries": [
+    {
+      "id": "reactaria-data-display-color-swatch",
+      "name": "React Aria Components Color Swatch",
+      "source": "React Aria Components",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Color Swatch from React Aria Components: an accessible, unstyled React component with strong keyboard, focus and i18n behavior.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "reactaria",
+        "color",
+        "swatch",
+        "data-display",
+        "react-aria-components"
+      ],
+      "docs_url": "https://react-spectrum.adobe.com/react-aria/ColorSwatch.html",
+      "stack": [
+        "react",
+        "headless"
+      ],
+      "dependencies": [
+        "react-aria-components"
+      ],
+      "license_type": "Apache-2.0",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Unstyled and accessibility-first; strongest option for complex widgets (date pickers, comboboxes, tables, drag and drop)",
+        "Style with Tailwind via the tailwindcss-react-aria-components plugin or plain CSS"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i react-aria-components",
+      "manual_steps": [
+        "Docs: https://react-spectrum.adobe.com/react-aria/ColorSwatch.html"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "reactaria-data-display-color-swatch-picker",
+      "name": "React Aria Components Color Swatch Picker",
+      "source": "React Aria Components",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Color Swatch Picker from React Aria Components: an accessible, unstyled React component with strong keyboard, focus and i18n behavior.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "reactaria",
+        "color",
+        "swatch",
+        "picker",
+        "data-display",
+        "react-aria-components"
+      ],
+      "docs_url": "https://react-spectrum.adobe.com/react-aria/ColorSwatchPicker.html",
+      "stack": [
+        "react",
+        "headless"
+      ],
+      "dependencies": [
+        "react-aria-components"
+      ],
+      "license_type": "Apache-2.0",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Unstyled and accessibility-first; strongest option for complex widgets (date pickers, comboboxes, tables, drag and drop)",
+        "Style with Tailwind via the tailwindcss-react-aria-components plugin or plain CSS"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i react-aria-components",
+      "manual_steps": [
+        "Docs: https://react-spectrum.adobe.com/react-aria/ColorSwatchPicker.html"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "reactaria-data-display-color-thumb",
+      "name": "React Aria Components Color Thumb",
+      "source": "React Aria Components",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Color Thumb from React Aria Components: an accessible, unstyled React component with strong keyboard, focus and i18n behavior.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "reactaria",
+        "color",
+        "thumb",
+        "data-display",
+        "react-aria-components"
+      ],
+      "docs_url": "https://react-spectrum.adobe.com/react-aria/ColorThumb.html",
+      "stack": [
+        "react",
+        "headless"
+      ],
+      "dependencies": [
+        "react-aria-components"
+      ],
+      "license_type": "Apache-2.0",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Unstyled and accessibility-first; strongest option for complex widgets (date pickers, comboboxes, tables, drag and drop)",
+        "Style with Tailwind via the tailwindcss-react-aria-components plugin or plain CSS"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i react-aria-components",
+      "manual_steps": [
+        "Docs: https://react-spectrum.adobe.com/react-aria/ColorThumb.html"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "reactaria-data-display-grid-list",
+      "name": "React Aria Components Grid List",
+      "source": "React Aria Components",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Grid List from React Aria Components: an accessible, unstyled React component with strong keyboard, focus and i18n behavior.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "reactaria",
+        "grid",
+        "list",
+        "data-display",
+        "react-aria-components"
+      ],
+      "docs_url": "https://react-spectrum.adobe.com/react-aria/GridList.html",
+      "stack": [
+        "react",
+        "headless"
+      ],
+      "dependencies": [
+        "react-aria-components"
+      ],
+      "license_type": "Apache-2.0",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Unstyled and accessibility-first; strongest option for complex widgets (date pickers, comboboxes, tables, drag and drop)",
+        "Style with Tailwind via the tailwindcss-react-aria-components plugin or plain CSS"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i react-aria-components",
+      "manual_steps": [
+        "Docs: https://react-spectrum.adobe.com/react-aria/GridList.html"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "reactaria-data-display-list-box",
+      "name": "React Aria Components List Box",
+      "source": "React Aria Components",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "List Box from React Aria Components: an accessible, unstyled React component with strong keyboard, focus and i18n behavior.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "reactaria",
+        "list",
+        "box",
+        "data-display",
+        "react-aria-components"
+      ],
+      "docs_url": "https://react-spectrum.adobe.com/react-aria/ListBox.html",
+      "stack": [
+        "react",
+        "headless"
+      ],
+      "dependencies": [
+        "react-aria-components"
+      ],
+      "license_type": "Apache-2.0",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Unstyled and accessibility-first; strongest option for complex widgets (date pickers, comboboxes, tables, drag and drop)",
+        "Style with Tailwind via the tailwindcss-react-aria-components plugin or plain CSS"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i react-aria-components",
+      "manual_steps": [
+        "Docs: https://react-spectrum.adobe.com/react-aria/ListBox.html"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "reactaria-data-display-selection-indicator",
+      "name": "React Aria Components Selection Indicator",
+      "source": "React Aria Components",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Selection Indicator from React Aria Components: an accessible, unstyled React component with strong keyboard, focus and i18n behavior.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "reactaria",
+        "selection",
+        "indicator",
+        "data-display",
+        "react-aria-components"
+      ],
+      "docs_url": "https://react-spectrum.adobe.com/react-aria/SelectionIndicator.html",
+      "stack": [
+        "react",
+        "headless"
+      ],
+      "dependencies": [
+        "react-aria-components"
+      ],
+      "license_type": "Apache-2.0",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Unstyled and accessibility-first; strongest option for complex widgets (date pickers, comboboxes, tables, drag and drop)",
+        "Style with Tailwind via the tailwindcss-react-aria-components plugin or plain CSS"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i react-aria-components",
+      "manual_steps": [
+        "Docs: https://react-spectrum.adobe.com/react-aria/SelectionIndicator.html"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "reactaria-data-display-table",
+      "name": "React Aria Components Table",
+      "source": "React Aria Components",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Table from React Aria Components: an accessible, unstyled React component with strong keyboard, focus and i18n behavior.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "reactaria",
+        "table",
+        "data-display",
+        "react-aria-components"
+      ],
+      "docs_url": "https://react-spectrum.adobe.com/react-aria/Table.html",
+      "stack": [
+        "react",
+        "headless"
+      ],
+      "dependencies": [
+        "react-aria-components"
+      ],
+      "license_type": "Apache-2.0",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Unstyled and accessibility-first; strongest option for complex widgets (date pickers, comboboxes, tables, drag and drop)",
+        "Style with Tailwind via the tailwindcss-react-aria-components plugin or plain CSS"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i react-aria-components",
+      "manual_steps": [
+        "Docs: https://react-spectrum.adobe.com/react-aria/Table.html"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "reactaria-data-display-tag-group",
+      "name": "React Aria Components Tag Group",
+      "source": "React Aria Components",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Tag Group from React Aria Components: an accessible, unstyled React component with strong keyboard, focus and i18n behavior.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "reactaria",
+        "tag",
+        "group",
+        "data-display",
+        "react-aria-components"
+      ],
+      "docs_url": "https://react-spectrum.adobe.com/react-aria/TagGroup.html",
+      "stack": [
+        "react",
+        "headless"
+      ],
+      "dependencies": [
+        "react-aria-components"
+      ],
+      "license_type": "Apache-2.0",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Unstyled and accessibility-first; strongest option for complex widgets (date pickers, comboboxes, tables, drag and drop)",
+        "Style with Tailwind via the tailwindcss-react-aria-components plugin or plain CSS"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i react-aria-components",
+      "manual_steps": [
+        "Docs: https://react-spectrum.adobe.com/react-aria/TagGroup.html"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "reactaria-data-display-text-area",
+      "name": "React Aria Components Text Area",
+      "source": "React Aria Components",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Text Area from React Aria Components: an accessible, unstyled React component with strong keyboard, focus and i18n behavior.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "reactaria",
+        "text",
+        "area",
+        "data-display",
+        "react-aria-components"
+      ],
+      "docs_url": "https://react-spectrum.adobe.com/react-aria/TextArea.html",
+      "stack": [
+        "react",
+        "headless"
+      ],
+      "dependencies": [
+        "react-aria-components"
+      ],
+      "license_type": "Apache-2.0",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Unstyled and accessibility-first; strongest option for complex widgets (date pickers, comboboxes, tables, drag and drop)",
+        "Style with Tailwind via the tailwindcss-react-aria-components plugin or plain CSS"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i react-aria-components",
+      "manual_steps": [
+        "Docs: https://react-spectrum.adobe.com/react-aria/TextArea.html"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "reactaria-data-display-text-field",
+      "name": "React Aria Components Text Field",
+      "source": "React Aria Components",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Text Field from React Aria Components: an accessible, unstyled React component with strong keyboard, focus and i18n behavior.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "reactaria",
+        "text",
+        "field",
+        "data-display",
+        "react-aria-components"
+      ],
+      "docs_url": "https://react-spectrum.adobe.com/react-aria/TextField.html",
+      "stack": [
+        "react",
+        "headless"
+      ],
+      "dependencies": [
+        "react-aria-components"
+      ],
+      "license_type": "Apache-2.0",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Unstyled and accessibility-first; strongest option for complex widgets (date pickers, comboboxes, tables, drag and drop)",
+        "Style with Tailwind via the tailwindcss-react-aria-components plugin or plain CSS"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i react-aria-components",
+      "manual_steps": [
+        "Docs: https://react-spectrum.adobe.com/react-aria/TextField.html"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "reactaria-data-display-tree",
+      "name": "React Aria Components Tree",
+      "source": "React Aria Components",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Tree from React Aria Components: an accessible, unstyled React component with strong keyboard, focus and i18n behavior.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "reactaria",
+        "tree",
+        "data-display",
+        "react-aria-components"
+      ],
+      "docs_url": "https://react-spectrum.adobe.com/react-aria/Tree.html",
+      "stack": [
+        "react",
+        "headless"
+      ],
+      "dependencies": [
+        "react-aria-components"
+      ],
+      "license_type": "Apache-2.0",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Unstyled and accessibility-first; strongest option for complex widgets (date pickers, comboboxes, tables, drag and drop)",
+        "Style with Tailwind via the tailwindcss-react-aria-components plugin or plain CSS"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i react-aria-components",
+      "manual_steps": [
+        "Docs: https://react-spectrum.adobe.com/react-aria/Tree.html"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "reactaria-data-display-use-drag-and-drop",
+      "name": "React Aria Components Use Drag And Drop",
+      "source": "React Aria Components",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Use Drag And Drop from React Aria Components: an accessible, unstyled React component with strong keyboard, focus and i18n behavior.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "reactaria",
+        "use",
+        "drag",
+        "and",
+        "drop",
+        "data-display",
+        "react-aria-components"
+      ],
+      "docs_url": "https://react-spectrum.adobe.com/react-aria/useDragAndDrop.html",
+      "stack": [
+        "react",
+        "headless"
+      ],
+      "dependencies": [
+        "react-aria-components"
+      ],
+      "license_type": "Apache-2.0",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Unstyled and accessibility-first; strongest option for complex widgets (date pickers, comboboxes, tables, drag and drop)",
+        "Style with Tailwind via the tailwindcss-react-aria-components plugin or plain CSS"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i react-aria-components",
+      "manual_steps": [
+        "Docs: https://react-spectrum.adobe.com/react-aria/useDragAndDrop.html"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "reactaria-data-display-utils",
+      "name": "React Aria Components Utils",
+      "source": "React Aria Components",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Utils from React Aria Components: an accessible, unstyled React component with strong keyboard, focus and i18n behavior.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "reactaria",
+        "utils",
+        "data-display",
+        "react-aria-components"
+      ],
+      "docs_url": "https://react-spectrum.adobe.com/react-aria/utils.html",
+      "stack": [
+        "react",
+        "headless"
+      ],
+      "dependencies": [
+        "react-aria-components"
+      ],
+      "license_type": "Apache-2.0",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Unstyled and accessibility-first; strongest option for complex widgets (date pickers, comboboxes, tables, drag and drop)",
+        "Style with Tailwind via the tailwindcss-react-aria-components plugin or plain CSS"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i react-aria-components",
+      "manual_steps": [
+        "Docs: https://react-spectrum.adobe.com/react-aria/utils.html"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "reactaria-data-display-virtualizer",
+      "name": "React Aria Components Virtualizer",
+      "source": "React Aria Components",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Virtualizer from React Aria Components: an accessible, unstyled React component with strong keyboard, focus and i18n behavior.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "reactaria",
+        "virtualizer",
+        "data-display",
+        "react-aria-components"
+      ],
+      "docs_url": "https://react-spectrum.adobe.com/react-aria/Virtualizer.html",
+      "stack": [
+        "react",
+        "headless"
+      ],
+      "dependencies": [
+        "react-aria-components"
+      ],
+      "license_type": "Apache-2.0",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Unstyled and accessibility-first; strongest option for complex widgets (date pickers, comboboxes, tables, drag and drop)",
+        "Style with Tailwind via the tailwindcss-react-aria-components plugin or plain CSS"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i react-aria-components",
+      "manual_steps": [
+        "Docs: https://react-spectrum.adobe.com/react-aria/Virtualizer.html"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "reactaria-feedback-meter",
+      "name": "React Aria Components Meter",
+      "source": "React Aria Components",
+      "entry_type": "component",
+      "category": "feedback",
+      "description": "Meter from React Aria Components: an accessible, unstyled React component with strong keyboard, focus and i18n behavior.",
+      "use_case": "Communicate system status: alerts, loaders, progress and notifications.",
+      "search_tags": [
+        "reactaria",
+        "meter",
+        "feedback",
+        "react-aria-components"
+      ],
+      "docs_url": "https://react-spectrum.adobe.com/react-aria/Meter.html",
+      "stack": [
+        "react",
+        "headless"
+      ],
+      "dependencies": [
+        "react-aria-components"
+      ],
+      "license_type": "Apache-2.0",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Unstyled and accessibility-first; strongest option for complex widgets (date pickers, comboboxes, tables, drag and drop)",
+        "Style with Tailwind via the tailwindcss-react-aria-components plugin or plain CSS"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i react-aria-components",
+      "manual_steps": [
+        "Docs: https://react-spectrum.adobe.com/react-aria/Meter.html"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "reactaria-feedback-progress-bar",
+      "name": "React Aria Components Progress Bar",
+      "source": "React Aria Components",
+      "entry_type": "component",
+      "category": "feedback",
+      "description": "Progress Bar from React Aria Components: an accessible, unstyled React component with strong keyboard, focus and i18n behavior.",
+      "use_case": "Communicate system status: alerts, loaders, progress and notifications.",
+      "search_tags": [
+        "reactaria",
+        "progress",
+        "bar",
+        "feedback",
+        "react-aria-components"
+      ],
+      "docs_url": "https://react-spectrum.adobe.com/react-aria/ProgressBar.html",
+      "stack": [
+        "react",
+        "headless"
+      ],
+      "dependencies": [
+        "react-aria-components"
+      ],
+      "license_type": "Apache-2.0",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Unstyled and accessibility-first; strongest option for complex widgets (date pickers, comboboxes, tables, drag and drop)",
+        "Style with Tailwind via the tailwindcss-react-aria-components plugin or plain CSS"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i react-aria-components",
+      "manual_steps": [
+        "Docs: https://react-spectrum.adobe.com/react-aria/ProgressBar.html"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "reactaria-feedback-toast",
+      "name": "React Aria Components Toast",
+      "source": "React Aria Components",
+      "entry_type": "component",
+      "category": "feedback",
+      "description": "Toast from React Aria Components: an accessible, unstyled React component with strong keyboard, focus and i18n behavior.",
+      "use_case": "Communicate system status: alerts, loaders, progress and notifications.",
+      "search_tags": [
+        "reactaria",
+        "toast",
+        "feedback",
+        "react-aria-components"
+      ],
+      "docs_url": "https://react-spectrum.adobe.com/react-aria/Toast.html",
+      "stack": [
+        "react",
+        "headless"
+      ],
+      "dependencies": [
+        "react-aria-components"
+      ],
+      "license_type": "Apache-2.0",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Unstyled and accessibility-first; strongest option for complex widgets (date pickers, comboboxes, tables, drag and drop)",
+        "Style with Tailwind via the tailwindcss-react-aria-components plugin or plain CSS"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i react-aria-components",
+      "manual_steps": [
+        "Docs: https://react-spectrum.adobe.com/react-aria/Toast.html"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "reactaria-forms-autocomplete",
+      "name": "React Aria Components Autocomplete",
+      "source": "React Aria Components",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Autocomplete from React Aria Components: an accessible, unstyled React component with strong keyboard, focus and i18n behavior.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "reactaria",
+        "autocomplete",
+        "forms",
+        "react-aria-components"
+      ],
+      "docs_url": "https://react-spectrum.adobe.com/react-aria/Autocomplete.html",
+      "stack": [
+        "react",
+        "headless"
+      ],
+      "dependencies": [
+        "react-aria-components"
+      ],
+      "license_type": "Apache-2.0",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Unstyled and accessibility-first; strongest option for complex widgets (date pickers, comboboxes, tables, drag and drop)",
+        "Style with Tailwind via the tailwindcss-react-aria-components plugin or plain CSS"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i react-aria-components",
+      "manual_steps": [
+        "Docs: https://react-spectrum.adobe.com/react-aria/Autocomplete.html"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "reactaria-forms-calendar",
+      "name": "React Aria Components Calendar",
+      "source": "React Aria Components",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Calendar from React Aria Components: an accessible, unstyled React component with strong keyboard, focus and i18n behavior.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "reactaria",
+        "calendar",
+        "forms",
+        "react-aria-components"
+      ],
+      "docs_url": "https://react-spectrum.adobe.com/react-aria/Calendar.html",
+      "stack": [
+        "react",
+        "headless"
+      ],
+      "dependencies": [
+        "react-aria-components"
+      ],
+      "license_type": "Apache-2.0",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Unstyled and accessibility-first; strongest option for complex widgets (date pickers, comboboxes, tables, drag and drop)",
+        "Style with Tailwind via the tailwindcss-react-aria-components plugin or plain CSS"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i react-aria-components",
+      "manual_steps": [
+        "Docs: https://react-spectrum.adobe.com/react-aria/Calendar.html"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "reactaria-forms-checkbox",
+      "name": "React Aria Components Checkbox",
+      "source": "React Aria Components",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Checkbox from React Aria Components: an accessible, unstyled React component with strong keyboard, focus and i18n behavior.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "reactaria",
+        "checkbox",
+        "forms",
+        "react-aria-components"
+      ],
+      "docs_url": "https://react-spectrum.adobe.com/react-aria/Checkbox.html",
+      "stack": [
+        "react",
+        "headless"
+      ],
+      "dependencies": [
+        "react-aria-components"
+      ],
+      "license_type": "Apache-2.0",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Unstyled and accessibility-first; strongest option for complex widgets (date pickers, comboboxes, tables, drag and drop)",
+        "Style with Tailwind via the tailwindcss-react-aria-components plugin or plain CSS"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i react-aria-components",
+      "manual_steps": [
+        "Docs: https://react-spectrum.adobe.com/react-aria/Checkbox.html"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "reactaria-forms-color-area",
+      "name": "React Aria Components Color Area",
+      "source": "React Aria Components",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Color Area from React Aria Components: an accessible, unstyled React component with strong keyboard, focus and i18n behavior.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "reactaria",
+        "color",
+        "area",
+        "forms",
+        "react-aria-components"
+      ],
+      "docs_url": "https://react-spectrum.adobe.com/react-aria/ColorArea.html",
+      "stack": [
+        "react",
+        "headless"
+      ],
+      "dependencies": [
+        "react-aria-components"
+      ],
+      "license_type": "Apache-2.0",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Unstyled and accessibility-first; strongest option for complex widgets (date pickers, comboboxes, tables, drag and drop)",
+        "Style with Tailwind via the tailwindcss-react-aria-components plugin or plain CSS"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i react-aria-components",
+      "manual_steps": [
+        "Docs: https://react-spectrum.adobe.com/react-aria/ColorArea.html"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "reactaria-forms-color-field",
+      "name": "React Aria Components Color Field",
+      "source": "React Aria Components",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Color Field from React Aria Components: an accessible, unstyled React component with strong keyboard, focus and i18n behavior.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "reactaria",
+        "color",
+        "field",
+        "forms",
+        "react-aria-components"
+      ],
+      "docs_url": "https://react-spectrum.adobe.com/react-aria/ColorField.html",
+      "stack": [
+        "react",
+        "headless"
+      ],
+      "dependencies": [
+        "react-aria-components"
+      ],
+      "license_type": "Apache-2.0",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Unstyled and accessibility-first; strongest option for complex widgets (date pickers, comboboxes, tables, drag and drop)",
+        "Style with Tailwind via the tailwindcss-react-aria-components plugin or plain CSS"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i react-aria-components",
+      "manual_steps": [
+        "Docs: https://react-spectrum.adobe.com/react-aria/ColorField.html"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "reactaria-forms-color-picker",
+      "name": "React Aria Components Color Picker",
+      "source": "React Aria Components",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Color Picker from React Aria Components: an accessible, unstyled React component with strong keyboard, focus and i18n behavior.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "reactaria",
+        "color",
+        "picker",
+        "forms",
+        "react-aria-components"
+      ],
+      "docs_url": "https://react-spectrum.adobe.com/react-aria/ColorPicker.html",
+      "stack": [
+        "react",
+        "headless"
+      ],
+      "dependencies": [
+        "react-aria-components"
+      ],
+      "license_type": "Apache-2.0",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Unstyled and accessibility-first; strongest option for complex widgets (date pickers, comboboxes, tables, drag and drop)",
+        "Style with Tailwind via the tailwindcss-react-aria-components plugin or plain CSS"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i react-aria-components",
+      "manual_steps": [
+        "Docs: https://react-spectrum.adobe.com/react-aria/ColorPicker.html"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "reactaria-forms-color-slider",
+      "name": "React Aria Components Color Slider",
+      "source": "React Aria Components",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Color Slider from React Aria Components: an accessible, unstyled React component with strong keyboard, focus and i18n behavior.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "reactaria",
+        "color",
+        "slider",
+        "forms",
+        "react-aria-components"
+      ],
+      "docs_url": "https://react-spectrum.adobe.com/react-aria/ColorSlider.html",
+      "stack": [
+        "react",
+        "headless"
+      ],
+      "dependencies": [
+        "react-aria-components"
+      ],
+      "license_type": "Apache-2.0",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Unstyled and accessibility-first; strongest option for complex widgets (date pickers, comboboxes, tables, drag and drop)",
+        "Style with Tailwind via the tailwindcss-react-aria-components plugin or plain CSS"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i react-aria-components",
+      "manual_steps": [
+        "Docs: https://react-spectrum.adobe.com/react-aria/ColorSlider.html"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "reactaria-forms-color-wheel",
+      "name": "React Aria Components Color Wheel",
+      "source": "React Aria Components",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Color Wheel from React Aria Components: an accessible, unstyled React component with strong keyboard, focus and i18n behavior.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "reactaria",
+        "color",
+        "wheel",
+        "forms",
+        "react-aria-components"
+      ],
+      "docs_url": "https://react-spectrum.adobe.com/react-aria/ColorWheel.html",
+      "stack": [
+        "react",
+        "headless"
+      ],
+      "dependencies": [
+        "react-aria-components"
+      ],
+      "license_type": "Apache-2.0",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Unstyled and accessibility-first; strongest option for complex widgets (date pickers, comboboxes, tables, drag and drop)",
+        "Style with Tailwind via the tailwindcss-react-aria-components plugin or plain CSS"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i react-aria-components",
+      "manual_steps": [
+        "Docs: https://react-spectrum.adobe.com/react-aria/ColorWheel.html"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "reactaria-forms-date-field",
+      "name": "React Aria Components Date Field",
+      "source": "React Aria Components",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Date Field from React Aria Components: an accessible, unstyled React component with strong keyboard, focus and i18n behavior.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "reactaria",
+        "date",
+        "field",
+        "forms",
+        "react-aria-components"
+      ],
+      "docs_url": "https://react-spectrum.adobe.com/react-aria/DateField.html",
+      "stack": [
+        "react",
+        "headless"
+      ],
+      "dependencies": [
+        "react-aria-components"
+      ],
+      "license_type": "Apache-2.0",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Unstyled and accessibility-first; strongest option for complex widgets (date pickers, comboboxes, tables, drag and drop)",
+        "Style with Tailwind via the tailwindcss-react-aria-components plugin or plain CSS"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i react-aria-components",
+      "manual_steps": [
+        "Docs: https://react-spectrum.adobe.com/react-aria/DateField.html"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "reactaria-forms-date-picker",
+      "name": "React Aria Components Date Picker",
+      "source": "React Aria Components",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Date Picker from React Aria Components: an accessible, unstyled React component with strong keyboard, focus and i18n behavior.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "reactaria",
+        "date",
+        "picker",
+        "forms",
+        "react-aria-components"
+      ],
+      "docs_url": "https://react-spectrum.adobe.com/react-aria/DatePicker.html",
+      "stack": [
+        "react",
+        "headless"
+      ],
+      "dependencies": [
+        "react-aria-components"
+      ],
+      "license_type": "Apache-2.0",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Unstyled and accessibility-first; strongest option for complex widgets (date pickers, comboboxes, tables, drag and drop)",
+        "Style with Tailwind via the tailwindcss-react-aria-components plugin or plain CSS"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i react-aria-components",
+      "manual_steps": [
+        "Docs: https://react-spectrum.adobe.com/react-aria/DatePicker.html"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "reactaria-forms-drop-zone",
+      "name": "React Aria Components Drop Zone",
+      "source": "React Aria Components",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Drop Zone from React Aria Components: an accessible, unstyled React component with strong keyboard, focus and i18n behavior.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "reactaria",
+        "drop",
+        "zone",
+        "forms",
+        "react-aria-components"
+      ],
+      "docs_url": "https://react-spectrum.adobe.com/react-aria/DropZone.html",
+      "stack": [
+        "react",
+        "headless"
+      ],
+      "dependencies": [
+        "react-aria-components"
+      ],
+      "license_type": "Apache-2.0",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Unstyled and accessibility-first; strongest option for complex widgets (date pickers, comboboxes, tables, drag and drop)",
+        "Style with Tailwind via the tailwindcss-react-aria-components plugin or plain CSS"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i react-aria-components",
+      "manual_steps": [
+        "Docs: https://react-spectrum.adobe.com/react-aria/DropZone.html"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "reactaria-forms-file-trigger",
+      "name": "React Aria Components File Trigger",
+      "source": "React Aria Components",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "File Trigger from React Aria Components: an accessible, unstyled React component with strong keyboard, focus and i18n behavior.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "reactaria",
+        "file",
+        "trigger",
+        "forms",
+        "react-aria-components"
+      ],
+      "docs_url": "https://react-spectrum.adobe.com/react-aria/FileTrigger.html",
+      "stack": [
+        "react",
+        "headless"
+      ],
+      "dependencies": [
+        "react-aria-components"
+      ],
+      "license_type": "Apache-2.0",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Unstyled and accessibility-first; strongest option for complex widgets (date pickers, comboboxes, tables, drag and drop)",
+        "Style with Tailwind via the tailwindcss-react-aria-components plugin or plain CSS"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i react-aria-components",
+      "manual_steps": [
+        "Docs: https://react-spectrum.adobe.com/react-aria/FileTrigger.html"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "reactaria-forms-form",
+      "name": "React Aria Components Form",
+      "source": "React Aria Components",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Form from React Aria Components: an accessible, unstyled React component with strong keyboard, focus and i18n behavior.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "reactaria",
+        "form",
+        "forms",
+        "react-aria-components"
+      ],
+      "docs_url": "https://react-spectrum.adobe.com/react-aria/Form.html",
+      "stack": [
+        "react",
+        "headless"
+      ],
+      "dependencies": [
+        "react-aria-components"
+      ],
+      "license_type": "Apache-2.0",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Unstyled and accessibility-first; strongest option for complex widgets (date pickers, comboboxes, tables, drag and drop)",
+        "Style with Tailwind via the tailwindcss-react-aria-components plugin or plain CSS"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i react-aria-components",
+      "manual_steps": [
+        "Docs: https://react-spectrum.adobe.com/react-aria/Form.html"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "reactaria-forms-number-field",
+      "name": "React Aria Components Number Field",
+      "source": "React Aria Components",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Number Field from React Aria Components: an accessible, unstyled React component with strong keyboard, focus and i18n behavior.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "reactaria",
+        "number",
+        "field",
+        "forms",
+        "react-aria-components"
+      ],
+      "docs_url": "https://react-spectrum.adobe.com/react-aria/NumberField.html",
+      "stack": [
+        "react",
+        "headless"
+      ],
+      "dependencies": [
+        "react-aria-components"
+      ],
+      "license_type": "Apache-2.0",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Unstyled and accessibility-first; strongest option for complex widgets (date pickers, comboboxes, tables, drag and drop)",
+        "Style with Tailwind via the tailwindcss-react-aria-components plugin or plain CSS"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i react-aria-components",
+      "manual_steps": [
+        "Docs: https://react-spectrum.adobe.com/react-aria/NumberField.html"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "reactaria-forms-radio-group",
+      "name": "React Aria Components Radio Group",
+      "source": "React Aria Components",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Radio Group from React Aria Components: an accessible, unstyled React component with strong keyboard, focus and i18n behavior.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "reactaria",
+        "radio",
+        "group",
+        "forms",
+        "react-aria-components"
+      ],
+      "docs_url": "https://react-spectrum.adobe.com/react-aria/RadioGroup.html",
+      "stack": [
+        "react",
+        "headless"
+      ],
+      "dependencies": [
+        "react-aria-components"
+      ],
+      "license_type": "Apache-2.0",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Unstyled and accessibility-first; strongest option for complex widgets (date pickers, comboboxes, tables, drag and drop)",
+        "Style with Tailwind via the tailwindcss-react-aria-components plugin or plain CSS"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i react-aria-components",
+      "manual_steps": [
+        "Docs: https://react-spectrum.adobe.com/react-aria/RadioGroup.html"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "reactaria-forms-search-field",
+      "name": "React Aria Components Search Field",
+      "source": "React Aria Components",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Search Field from React Aria Components: an accessible, unstyled React component with strong keyboard, focus and i18n behavior.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "reactaria",
+        "search",
+        "field",
+        "forms",
+        "react-aria-components"
+      ],
+      "docs_url": "https://react-spectrum.adobe.com/react-aria/SearchField.html",
+      "stack": [
+        "react",
+        "headless"
+      ],
+      "dependencies": [
+        "react-aria-components"
+      ],
+      "license_type": "Apache-2.0",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Unstyled and accessibility-first; strongest option for complex widgets (date pickers, comboboxes, tables, drag and drop)",
+        "Style with Tailwind via the tailwindcss-react-aria-components plugin or plain CSS"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i react-aria-components",
+      "manual_steps": [
+        "Docs: https://react-spectrum.adobe.com/react-aria/SearchField.html"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "reactaria-forms-select",
+      "name": "React Aria Components Select",
+      "source": "React Aria Components",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Select from React Aria Components: an accessible, unstyled React component with strong keyboard, focus and i18n behavior.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "reactaria",
+        "select",
+        "forms",
+        "react-aria-components"
+      ],
+      "docs_url": "https://react-spectrum.adobe.com/react-aria/Select.html",
+      "stack": [
+        "react",
+        "headless"
+      ],
+      "dependencies": [
+        "react-aria-components"
+      ],
+      "license_type": "Apache-2.0",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Unstyled and accessibility-first; strongest option for complex widgets (date pickers, comboboxes, tables, drag and drop)",
+        "Style with Tailwind via the tailwindcss-react-aria-components plugin or plain CSS"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i react-aria-components",
+      "manual_steps": [
+        "Docs: https://react-spectrum.adobe.com/react-aria/Select.html"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "reactaria-forms-slider",
+      "name": "React Aria Components Slider",
+      "source": "React Aria Components",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Slider from React Aria Components: an accessible, unstyled React component with strong keyboard, focus and i18n behavior.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "reactaria",
+        "slider",
+        "forms",
+        "react-aria-components"
+      ],
+      "docs_url": "https://react-spectrum.adobe.com/react-aria/Slider.html",
+      "stack": [
+        "react",
+        "headless"
+      ],
+      "dependencies": [
+        "react-aria-components"
+      ],
+      "license_type": "Apache-2.0",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Unstyled and accessibility-first; strongest option for complex widgets (date pickers, comboboxes, tables, drag and drop)",
+        "Style with Tailwind via the tailwindcss-react-aria-components plugin or plain CSS"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i react-aria-components",
+      "manual_steps": [
+        "Docs: https://react-spectrum.adobe.com/react-aria/Slider.html"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "reactaria-forms-switch",
+      "name": "React Aria Components Switch",
+      "source": "React Aria Components",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Switch from React Aria Components: an accessible, unstyled React component with strong keyboard, focus and i18n behavior.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "reactaria",
+        "switch",
+        "forms",
+        "react-aria-components"
+      ],
+      "docs_url": "https://react-spectrum.adobe.com/react-aria/Switch.html",
+      "stack": [
+        "react",
+        "headless"
+      ],
+      "dependencies": [
+        "react-aria-components"
+      ],
+      "license_type": "Apache-2.0",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Unstyled and accessibility-first; strongest option for complex widgets (date pickers, comboboxes, tables, drag and drop)",
+        "Style with Tailwind via the tailwindcss-react-aria-components plugin or plain CSS"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i react-aria-components",
+      "manual_steps": [
+        "Docs: https://react-spectrum.adobe.com/react-aria/Switch.html"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "reactaria-forms-token-field",
+      "name": "React Aria Components Token Field",
+      "source": "React Aria Components",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Token Field from React Aria Components: an accessible, unstyled React component with strong keyboard, focus and i18n behavior.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "reactaria",
+        "token",
+        "field",
+        "forms",
+        "react-aria-components"
+      ],
+      "docs_url": "https://react-spectrum.adobe.com/react-aria/TokenField.html",
+      "stack": [
+        "react",
+        "headless"
+      ],
+      "dependencies": [
+        "react-aria-components"
+      ],
+      "license_type": "Apache-2.0",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Unstyled and accessibility-first; strongest option for complex widgets (date pickers, comboboxes, tables, drag and drop)",
+        "Style with Tailwind via the tailwindcss-react-aria-components plugin or plain CSS"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i react-aria-components",
+      "manual_steps": [
+        "Docs: https://react-spectrum.adobe.com/react-aria/TokenField.html"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "reactaria-layout-combo-box",
+      "name": "React Aria Components Combo Box",
+      "source": "React Aria Components",
+      "entry_type": "component",
+      "category": "layout",
+      "description": "Combo Box from React Aria Components: an accessible, unstyled React component with strong keyboard, focus and i18n behavior.",
+      "use_case": "Structure the page: dividers, footers, headers and empty states.",
+      "search_tags": [
+        "reactaria",
+        "combo",
+        "box",
+        "layout",
+        "react-aria-components"
+      ],
+      "docs_url": "https://react-spectrum.adobe.com/react-aria/ComboBox.html",
+      "stack": [
+        "react",
+        "headless"
+      ],
+      "dependencies": [
+        "react-aria-components"
+      ],
+      "license_type": "Apache-2.0",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Unstyled and accessibility-first; strongest option for complex widgets (date pickers, comboboxes, tables, drag and drop)",
+        "Style with Tailwind via the tailwindcss-react-aria-components plugin or plain CSS"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i react-aria-components",
+      "manual_steps": [
+        "Docs: https://react-spectrum.adobe.com/react-aria/ComboBox.html"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "reactaria-layout-separator",
+      "name": "React Aria Components Separator",
+      "source": "React Aria Components",
+      "entry_type": "component",
+      "category": "layout",
+      "description": "Separator from React Aria Components: an accessible, unstyled React component with strong keyboard, focus and i18n behavior.",
+      "use_case": "Structure the page: dividers, footers, headers and empty states.",
+      "search_tags": [
+        "reactaria",
+        "separator",
+        "layout",
+        "react-aria-components"
+      ],
+      "docs_url": "https://react-spectrum.adobe.com/react-aria/Separator.html",
+      "stack": [
+        "react",
+        "headless"
+      ],
+      "dependencies": [
+        "react-aria-components"
+      ],
+      "license_type": "Apache-2.0",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Unstyled and accessibility-first; strongest option for complex widgets (date pickers, comboboxes, tables, drag and drop)",
+        "Style with Tailwind via the tailwindcss-react-aria-components plugin or plain CSS"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i react-aria-components",
+      "manual_steps": [
+        "Docs: https://react-spectrum.adobe.com/react-aria/Separator.html"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "reactaria-micro-interactions-button",
+      "name": "React Aria Components Button",
+      "source": "React Aria Components",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "Button from React Aria Components: an accessible, unstyled React component with strong keyboard, focus and i18n behavior.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "reactaria",
+        "button",
+        "micro-interactions",
+        "react-aria-components"
+      ],
+      "docs_url": "https://react-spectrum.adobe.com/react-aria/Button.html",
+      "stack": [
+        "react",
+        "headless"
+      ],
+      "dependencies": [
+        "react-aria-components"
+      ],
+      "license_type": "Apache-2.0",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Unstyled and accessibility-first; strongest option for complex widgets (date pickers, comboboxes, tables, drag and drop)",
+        "Style with Tailwind via the tailwindcss-react-aria-components plugin or plain CSS"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i react-aria-components",
+      "manual_steps": [
+        "Docs: https://react-spectrum.adobe.com/react-aria/Button.html"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "reactaria-micro-interactions-disclosure",
+      "name": "React Aria Components Disclosure",
+      "source": "React Aria Components",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "Disclosure from React Aria Components: an accessible, unstyled React component with strong keyboard, focus and i18n behavior.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "reactaria",
+        "disclosure",
+        "micro-interactions",
+        "react-aria-components"
+      ],
+      "docs_url": "https://react-spectrum.adobe.com/react-aria/Disclosure.html",
+      "stack": [
+        "react",
+        "headless"
+      ],
+      "dependencies": [
+        "react-aria-components"
+      ],
+      "license_type": "Apache-2.0",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Unstyled and accessibility-first; strongest option for complex widgets (date pickers, comboboxes, tables, drag and drop)",
+        "Style with Tailwind via the tailwindcss-react-aria-components plugin or plain CSS"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i react-aria-components",
+      "manual_steps": [
+        "Docs: https://react-spectrum.adobe.com/react-aria/Disclosure.html"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "reactaria-micro-interactions-toggle-button",
+      "name": "React Aria Components Toggle Button",
+      "source": "React Aria Components",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "Toggle Button from React Aria Components: an accessible, unstyled React component with strong keyboard, focus and i18n behavior.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "reactaria",
+        "toggle",
+        "button",
+        "micro-interactions",
+        "react-aria-components"
+      ],
+      "docs_url": "https://react-spectrum.adobe.com/react-aria/ToggleButton.html",
+      "stack": [
+        "react",
+        "headless"
+      ],
+      "dependencies": [
+        "react-aria-components"
+      ],
+      "license_type": "Apache-2.0",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Unstyled and accessibility-first; strongest option for complex widgets (date pickers, comboboxes, tables, drag and drop)",
+        "Style with Tailwind via the tailwindcss-react-aria-components plugin or plain CSS"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i react-aria-components",
+      "manual_steps": [
+        "Docs: https://react-spectrum.adobe.com/react-aria/ToggleButton.html"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "reactaria-micro-interactions-toggle-button-group",
+      "name": "React Aria Components Toggle Button Group",
+      "source": "React Aria Components",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "Toggle Button Group from React Aria Components: an accessible, unstyled React component with strong keyboard, focus and i18n behavior.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "reactaria",
+        "toggle",
+        "button",
+        "group",
+        "micro-interactions",
+        "react-aria-components"
+      ],
+      "docs_url": "https://react-spectrum.adobe.com/react-aria/ToggleButtonGroup.html",
+      "stack": [
+        "react",
+        "headless"
+      ],
+      "dependencies": [
+        "react-aria-components"
+      ],
+      "license_type": "Apache-2.0",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Unstyled and accessibility-first; strongest option for complex widgets (date pickers, comboboxes, tables, drag and drop)",
+        "Style with Tailwind via the tailwindcss-react-aria-components plugin or plain CSS"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i react-aria-components",
+      "manual_steps": [
+        "Docs: https://react-spectrum.adobe.com/react-aria/ToggleButtonGroup.html"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "reactaria-navigation-breadcrumbs",
+      "name": "React Aria Components Breadcrumbs",
+      "source": "React Aria Components",
+      "entry_type": "component",
+      "category": "navigation",
+      "description": "Breadcrumbs from React Aria Components: an accessible, unstyled React component with strong keyboard, focus and i18n behavior.",
+      "use_case": "Build site and app navigation structures that stay clear at any depth.",
+      "search_tags": [
+        "reactaria",
+        "breadcrumbs",
+        "navigation",
+        "react-aria-components"
+      ],
+      "docs_url": "https://react-spectrum.adobe.com/react-aria/Breadcrumbs.html",
+      "stack": [
+        "react",
+        "headless"
+      ],
+      "dependencies": [
+        "react-aria-components"
+      ],
+      "license_type": "Apache-2.0",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Unstyled and accessibility-first; strongest option for complex widgets (date pickers, comboboxes, tables, drag and drop)",
+        "Style with Tailwind via the tailwindcss-react-aria-components plugin or plain CSS"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i react-aria-components",
+      "manual_steps": [
+        "Docs: https://react-spectrum.adobe.com/react-aria/Breadcrumbs.html"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "reactaria-navigation-tabs",
+      "name": "React Aria Components Tabs",
+      "source": "React Aria Components",
+      "entry_type": "component",
+      "category": "navigation",
+      "description": "Tabs from React Aria Components: an accessible, unstyled React component with strong keyboard, focus and i18n behavior.",
+      "use_case": "Build site and app navigation structures that stay clear at any depth.",
+      "search_tags": [
+        "reactaria",
+        "tabs",
+        "navigation",
+        "react-aria-components"
+      ],
+      "docs_url": "https://react-spectrum.adobe.com/react-aria/Tabs.html",
+      "stack": [
+        "react",
+        "headless"
+      ],
+      "dependencies": [
+        "react-aria-components"
+      ],
+      "license_type": "Apache-2.0",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Unstyled and accessibility-first; strongest option for complex widgets (date pickers, comboboxes, tables, drag and drop)",
+        "Style with Tailwind via the tailwindcss-react-aria-components plugin or plain CSS"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i react-aria-components",
+      "manual_steps": [
+        "Docs: https://react-spectrum.adobe.com/react-aria/Tabs.html"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "reactaria-navigation-toolbar",
+      "name": "React Aria Components Toolbar",
+      "source": "React Aria Components",
+      "entry_type": "component",
+      "category": "navigation",
+      "description": "Toolbar from React Aria Components: an accessible, unstyled React component with strong keyboard, focus and i18n behavior.",
+      "use_case": "Build site and app navigation structures that stay clear at any depth.",
+      "search_tags": [
+        "reactaria",
+        "toolbar",
+        "navigation",
+        "react-aria-components"
+      ],
+      "docs_url": "https://react-spectrum.adobe.com/react-aria/Toolbar.html",
+      "stack": [
+        "react",
+        "headless"
+      ],
+      "dependencies": [
+        "react-aria-components"
+      ],
+      "license_type": "Apache-2.0",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Unstyled and accessibility-first; strongest option for complex widgets (date pickers, comboboxes, tables, drag and drop)",
+        "Style with Tailwind via the tailwindcss-react-aria-components plugin or plain CSS"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i react-aria-components",
+      "manual_steps": [
+        "Docs: https://react-spectrum.adobe.com/react-aria/Toolbar.html"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "reactaria-overlay-dialog",
+      "name": "React Aria Components Dialog",
+      "source": "React Aria Components",
+      "entry_type": "component",
+      "category": "overlay",
+      "description": "Dialog from React Aria Components: an accessible, unstyled React component with strong keyboard, focus and i18n behavior.",
+      "use_case": "Present dialogs, drawers and popovers without leaving the page.",
+      "search_tags": [
+        "reactaria",
+        "dialog",
+        "overlay",
+        "react-aria-components"
+      ],
+      "docs_url": "https://react-spectrum.adobe.com/react-aria/Dialog.html",
+      "stack": [
+        "react",
+        "headless"
+      ],
+      "dependencies": [
+        "react-aria-components"
+      ],
+      "license_type": "Apache-2.0",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Unstyled and accessibility-first; strongest option for complex widgets (date pickers, comboboxes, tables, drag and drop)",
+        "Style with Tailwind via the tailwindcss-react-aria-components plugin or plain CSS"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i react-aria-components",
+      "manual_steps": [
+        "Docs: https://react-spectrum.adobe.com/react-aria/Dialog.html"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "reactaria-overlay-menu",
+      "name": "React Aria Components Menu",
+      "source": "React Aria Components",
+      "entry_type": "component",
+      "category": "overlay",
+      "description": "Menu from React Aria Components: an accessible, unstyled React component with strong keyboard, focus and i18n behavior.",
+      "use_case": "Present dialogs, drawers and popovers without leaving the page.",
+      "search_tags": [
+        "reactaria",
+        "menu",
+        "overlay",
+        "react-aria-components"
+      ],
+      "docs_url": "https://react-spectrum.adobe.com/react-aria/Menu.html",
+      "stack": [
+        "react",
+        "headless"
+      ],
+      "dependencies": [
+        "react-aria-components"
+      ],
+      "license_type": "Apache-2.0",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Unstyled and accessibility-first; strongest option for complex widgets (date pickers, comboboxes, tables, drag and drop)",
+        "Style with Tailwind via the tailwindcss-react-aria-components plugin or plain CSS"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i react-aria-components",
+      "manual_steps": [
+        "Docs: https://react-spectrum.adobe.com/react-aria/Menu.html"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "reactaria-overlay-modal",
+      "name": "React Aria Components Modal",
+      "source": "React Aria Components",
+      "entry_type": "component",
+      "category": "overlay",
+      "description": "Modal from React Aria Components: an accessible, unstyled React component with strong keyboard, focus and i18n behavior.",
+      "use_case": "Present dialogs, drawers and popovers without leaving the page.",
+      "search_tags": [
+        "reactaria",
+        "modal",
+        "overlay",
+        "react-aria-components"
+      ],
+      "docs_url": "https://react-spectrum.adobe.com/react-aria/Modal.html",
+      "stack": [
+        "react",
+        "headless"
+      ],
+      "dependencies": [
+        "react-aria-components"
+      ],
+      "license_type": "Apache-2.0",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Unstyled and accessibility-first; strongest option for complex widgets (date pickers, comboboxes, tables, drag and drop)",
+        "Style with Tailwind via the tailwindcss-react-aria-components plugin or plain CSS"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i react-aria-components",
+      "manual_steps": [
+        "Docs: https://react-spectrum.adobe.com/react-aria/Modal.html"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "reactaria-overlay-popover",
+      "name": "React Aria Components Popover",
+      "source": "React Aria Components",
+      "entry_type": "component",
+      "category": "overlay",
+      "description": "Popover from React Aria Components: an accessible, unstyled React component with strong keyboard, focus and i18n behavior.",
+      "use_case": "Present dialogs, drawers and popovers without leaving the page.",
+      "search_tags": [
+        "reactaria",
+        "popover",
+        "overlay",
+        "react-aria-components"
+      ],
+      "docs_url": "https://react-spectrum.adobe.com/react-aria/Popover.html",
+      "stack": [
+        "react",
+        "headless"
+      ],
+      "dependencies": [
+        "react-aria-components"
+      ],
+      "license_type": "Apache-2.0",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Unstyled and accessibility-first; strongest option for complex widgets (date pickers, comboboxes, tables, drag and drop)",
+        "Style with Tailwind via the tailwindcss-react-aria-components plugin or plain CSS"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i react-aria-components",
+      "manual_steps": [
+        "Docs: https://react-spectrum.adobe.com/react-aria/Popover.html"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "reactaria-overlay-tooltip",
+      "name": "React Aria Components Tooltip",
+      "source": "React Aria Components",
+      "entry_type": "component",
+      "category": "overlay",
+      "description": "Tooltip from React Aria Components: an accessible, unstyled React component with strong keyboard, focus and i18n behavior.",
+      "use_case": "Present dialogs, drawers and popovers without leaving the page.",
+      "search_tags": [
+        "reactaria",
+        "tooltip",
+        "overlay",
+        "react-aria-components"
+      ],
+      "docs_url": "https://react-spectrum.adobe.com/react-aria/Tooltip.html",
+      "stack": [
+        "react",
+        "headless"
+      ],
+      "dependencies": [
+        "react-aria-components"
+      ],
+      "license_type": "Apache-2.0",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Unstyled and accessibility-first; strongest option for complex widgets (date pickers, comboboxes, tables, drag and drop)",
+        "Style with Tailwind via the tailwindcss-react-aria-components plugin or plain CSS"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i react-aria-components",
+      "manual_steps": [
+        "Docs: https://react-spectrum.adobe.com/react-aria/Tooltip.html"
+      ],
+      "quality": 90
+    }
+  ]
+}

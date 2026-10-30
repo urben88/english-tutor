@@ -1,0 +1,1607 @@
+{
+  "schema_version": "1.0",
+  "source_id": "flowbite",
+  "source_name": "Flowbite",
+  "source_url": "https://flowbite.com",
+  "catalog_url": "https://flowbite.com/docs/getting-started/introduction/",
+  "license_summary": "MIT (open-source components); Flowbite Pro blocks/templates and part of Flowbite Blocks are paid",
+  "granularity": "components of the open-source Flowbite docs (docs URLs verified)",
+  "extraction": {
+    "channel": "github-contents",
+    "method": "Directory listing of content/components with docs URL verification",
+    "evidence_url": "https://github.com/themesberg/flowbite/tree/main/content/components"
+  },
+  "generated_at": "2026-10-04",
+  "entries": [
+    {
+      "id": "flowbite-data-display-avatar",
+      "name": "Flowbite Avatar",
+      "source": "Flowbite",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Avatar from Flowbite: a Tailwind CSS component with ready HTML plus optional JavaScript behavior.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "flowbite",
+        "avatar",
+        "data-display"
+      ],
+      "docs_url": "https://flowbite.com/docs/components/avatar/",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [
+        "flowbite"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Plain HTML + Tailwind classes; framework wrappers exist (React, Svelte, Vue)",
+        "Flowbite Pro blocks and templates are paid and are not indexed"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i flowbite (add the plugin in your Tailwind config)",
+      "manual_steps": [
+        "Docs: https://flowbite.com/docs/components/avatar/"
+      ],
+      "quality": 87
+    },
+    {
+      "id": "flowbite-data-display-badge",
+      "name": "Flowbite Badge",
+      "source": "Flowbite",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Badge from Flowbite: a Tailwind CSS component with ready HTML plus optional JavaScript behavior.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "flowbite",
+        "badge",
+        "data-display"
+      ],
+      "docs_url": "https://flowbite.com/docs/components/badge/",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [
+        "flowbite"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Plain HTML + Tailwind classes; framework wrappers exist (React, Svelte, Vue)",
+        "Flowbite Pro blocks and templates are paid and are not indexed"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i flowbite (add the plugin in your Tailwind config)",
+      "manual_steps": [
+        "Docs: https://flowbite.com/docs/components/badge/"
+      ],
+      "quality": 87
+    },
+    {
+      "id": "flowbite-data-display-banner",
+      "name": "Flowbite Banner",
+      "source": "Flowbite",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Banner from Flowbite: a Tailwind CSS component with ready HTML plus optional JavaScript behavior.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "flowbite",
+        "banner",
+        "data-display"
+      ],
+      "docs_url": "https://flowbite.com/docs/components/banner/",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [
+        "flowbite"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Plain HTML + Tailwind classes; framework wrappers exist (React, Svelte, Vue)",
+        "Flowbite Pro blocks and templates are paid and are not indexed"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i flowbite (add the plugin in your Tailwind config)",
+      "manual_steps": [
+        "Docs: https://flowbite.com/docs/components/banner/"
+      ],
+      "quality": 87
+    },
+    {
+      "id": "flowbite-data-display-card",
+      "name": "Flowbite Card",
+      "source": "Flowbite",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Card from Flowbite: a Tailwind CSS component with ready HTML plus optional JavaScript behavior.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "flowbite",
+        "card",
+        "data-display"
+      ],
+      "docs_url": "https://flowbite.com/docs/components/card/",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [
+        "flowbite"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Plain HTML + Tailwind classes; framework wrappers exist (React, Svelte, Vue)",
+        "Flowbite Pro blocks and templates are paid and are not indexed"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i flowbite (add the plugin in your Tailwind config)",
+      "manual_steps": [
+        "Docs: https://flowbite.com/docs/components/card/"
+      ],
+      "quality": 87
+    },
+    {
+      "id": "flowbite-data-display-chat-bubble",
+      "name": "Flowbite Chat Bubble",
+      "source": "Flowbite",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Chat Bubble from Flowbite: a Tailwind CSS component with ready HTML plus optional JavaScript behavior.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "flowbite",
+        "chat",
+        "bubble",
+        "data-display"
+      ],
+      "docs_url": "https://flowbite.com/docs/components/chat-bubble/",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [
+        "flowbite"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Plain HTML + Tailwind classes; framework wrappers exist (React, Svelte, Vue)",
+        "Flowbite Pro blocks and templates are paid and are not indexed"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i flowbite (add the plugin in your Tailwind config)",
+      "manual_steps": [
+        "Docs: https://flowbite.com/docs/components/chat-bubble/"
+      ],
+      "quality": 87
+    },
+    {
+      "id": "flowbite-data-display-clipboard",
+      "name": "Flowbite Clipboard",
+      "source": "Flowbite",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Clipboard from Flowbite: a Tailwind CSS component with ready HTML plus optional JavaScript behavior.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "flowbite",
+        "clipboard",
+        "data-display"
+      ],
+      "docs_url": "https://flowbite.com/docs/components/clipboard/",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [
+        "flowbite"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Plain HTML + Tailwind classes; framework wrappers exist (React, Svelte, Vue)",
+        "Flowbite Pro blocks and templates are paid and are not indexed"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i flowbite (add the plugin in your Tailwind config)",
+      "manual_steps": [
+        "Docs: https://flowbite.com/docs/components/clipboard/"
+      ],
+      "quality": 87
+    },
+    {
+      "id": "flowbite-data-display-device-mockups",
+      "name": "Flowbite Device Mockups",
+      "source": "Flowbite",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Device Mockups from Flowbite: a Tailwind CSS component with ready HTML plus optional JavaScript behavior.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "flowbite",
+        "device",
+        "mockups",
+        "data-display"
+      ],
+      "docs_url": "https://flowbite.com/docs/components/device-mockups/",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [
+        "flowbite"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Plain HTML + Tailwind classes; framework wrappers exist (React, Svelte, Vue)",
+        "Flowbite Pro blocks and templates are paid and are not indexed"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i flowbite (add the plugin in your Tailwind config)",
+      "manual_steps": [
+        "Docs: https://flowbite.com/docs/components/device-mockups/"
+      ],
+      "quality": 87
+    },
+    {
+      "id": "flowbite-data-display-footer",
+      "name": "Flowbite Footer",
+      "source": "Flowbite",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Footer from Flowbite: a Tailwind CSS component with ready HTML plus optional JavaScript behavior.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "flowbite",
+        "footer",
+        "data-display"
+      ],
+      "docs_url": "https://flowbite.com/docs/components/footer/",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [
+        "flowbite"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Plain HTML + Tailwind classes; framework wrappers exist (React, Svelte, Vue)",
+        "Flowbite Pro blocks and templates are paid and are not indexed"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i flowbite (add the plugin in your Tailwind config)",
+      "manual_steps": [
+        "Docs: https://flowbite.com/docs/components/footer/"
+      ],
+      "quality": 87
+    },
+    {
+      "id": "flowbite-data-display-indicators",
+      "name": "Flowbite Indicators",
+      "source": "Flowbite",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Indicators from Flowbite: a Tailwind CSS component with ready HTML plus optional JavaScript behavior.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "flowbite",
+        "indicators",
+        "data-display"
+      ],
+      "docs_url": "https://flowbite.com/docs/components/indicators/",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [
+        "flowbite"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Plain HTML + Tailwind classes; framework wrappers exist (React, Svelte, Vue)",
+        "Flowbite Pro blocks and templates are paid and are not indexed"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i flowbite (add the plugin in your Tailwind config)",
+      "manual_steps": [
+        "Docs: https://flowbite.com/docs/components/indicators/"
+      ],
+      "quality": 87
+    },
+    {
+      "id": "flowbite-data-display-jumbotron",
+      "name": "Flowbite Jumbotron",
+      "source": "Flowbite",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Jumbotron from Flowbite: a Tailwind CSS component with ready HTML plus optional JavaScript behavior.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "flowbite",
+        "jumbotron",
+        "data-display"
+      ],
+      "docs_url": "https://flowbite.com/docs/components/jumbotron/",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [
+        "flowbite"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Plain HTML + Tailwind classes; framework wrappers exist (React, Svelte, Vue)",
+        "Flowbite Pro blocks and templates are paid and are not indexed"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i flowbite (add the plugin in your Tailwind config)",
+      "manual_steps": [
+        "Docs: https://flowbite.com/docs/components/jumbotron/"
+      ],
+      "quality": 87
+    },
+    {
+      "id": "flowbite-data-display-kbd",
+      "name": "Flowbite Kbd",
+      "source": "Flowbite",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Kbd from Flowbite: a Tailwind CSS component with ready HTML plus optional JavaScript behavior.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "flowbite",
+        "kbd",
+        "data-display"
+      ],
+      "docs_url": "https://flowbite.com/docs/components/kbd/",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [
+        "flowbite"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Plain HTML + Tailwind classes; framework wrappers exist (React, Svelte, Vue)",
+        "Flowbite Pro blocks and templates are paid and are not indexed"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i flowbite (add the plugin in your Tailwind config)",
+      "manual_steps": [
+        "Docs: https://flowbite.com/docs/components/kbd/"
+      ],
+      "quality": 87
+    },
+    {
+      "id": "flowbite-data-display-list-group",
+      "name": "Flowbite List Group",
+      "source": "Flowbite",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "List Group from Flowbite: a Tailwind CSS component with ready HTML plus optional JavaScript behavior.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "flowbite",
+        "list",
+        "group",
+        "data-display"
+      ],
+      "docs_url": "https://flowbite.com/docs/components/list-group/",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [
+        "flowbite"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Plain HTML + Tailwind classes; framework wrappers exist (React, Svelte, Vue)",
+        "Flowbite Pro blocks and templates are paid and are not indexed"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i flowbite (add the plugin in your Tailwind config)",
+      "manual_steps": [
+        "Docs: https://flowbite.com/docs/components/list-group/"
+      ],
+      "quality": 87
+    },
+    {
+      "id": "flowbite-data-display-qr-code",
+      "name": "Flowbite Qr Code",
+      "source": "Flowbite",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Qr Code from Flowbite: a Tailwind CSS component with ready HTML plus optional JavaScript behavior.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "flowbite",
+        "qr",
+        "code",
+        "data-display"
+      ],
+      "docs_url": "https://flowbite.com/docs/components/qr-code/",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [
+        "flowbite"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Plain HTML + Tailwind classes; framework wrappers exist (React, Svelte, Vue)",
+        "Flowbite Pro blocks and templates are paid and are not indexed"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i flowbite (add the plugin in your Tailwind config)",
+      "manual_steps": [
+        "Docs: https://flowbite.com/docs/components/qr-code/"
+      ],
+      "quality": 87
+    },
+    {
+      "id": "flowbite-data-display-sidebar",
+      "name": "Flowbite Sidebar",
+      "source": "Flowbite",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Sidebar from Flowbite: a Tailwind CSS component with ready HTML plus optional JavaScript behavior.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "flowbite",
+        "sidebar",
+        "data-display"
+      ],
+      "docs_url": "https://flowbite.com/docs/components/sidebar/",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [
+        "flowbite"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Plain HTML + Tailwind classes; framework wrappers exist (React, Svelte, Vue)",
+        "Flowbite Pro blocks and templates are paid and are not indexed"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i flowbite (add the plugin in your Tailwind config)",
+      "manual_steps": [
+        "Docs: https://flowbite.com/docs/components/sidebar/"
+      ],
+      "quality": 87
+    },
+    {
+      "id": "flowbite-data-display-speed-dial",
+      "name": "Flowbite Speed Dial",
+      "source": "Flowbite",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Speed Dial from Flowbite: a Tailwind CSS component with ready HTML plus optional JavaScript behavior.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "flowbite",
+        "speed",
+        "dial",
+        "data-display"
+      ],
+      "docs_url": "https://flowbite.com/docs/components/speed-dial/",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [
+        "flowbite"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Plain HTML + Tailwind classes; framework wrappers exist (React, Svelte, Vue)",
+        "Flowbite Pro blocks and templates are paid and are not indexed"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i flowbite (add the plugin in your Tailwind config)",
+      "manual_steps": [
+        "Docs: https://flowbite.com/docs/components/speed-dial/"
+      ],
+      "quality": 87
+    },
+    {
+      "id": "flowbite-data-display-tables",
+      "name": "Flowbite Tables",
+      "source": "Flowbite",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Tables from Flowbite: a Tailwind CSS component with ready HTML plus optional JavaScript behavior.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "flowbite",
+        "tables",
+        "data-display"
+      ],
+      "docs_url": "https://flowbite.com/docs/components/tables/",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [
+        "flowbite"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Plain HTML + Tailwind classes; framework wrappers exist (React, Svelte, Vue)",
+        "Flowbite Pro blocks and templates are paid and are not indexed"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i flowbite (add the plugin in your Tailwind config)",
+      "manual_steps": [
+        "Docs: https://flowbite.com/docs/components/tables/"
+      ],
+      "quality": 87
+    },
+    {
+      "id": "flowbite-data-display-timeline",
+      "name": "Flowbite Timeline",
+      "source": "Flowbite",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Timeline from Flowbite: a Tailwind CSS component with ready HTML plus optional JavaScript behavior.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "flowbite",
+        "timeline",
+        "data-display"
+      ],
+      "docs_url": "https://flowbite.com/docs/components/timeline/",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [
+        "flowbite"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Plain HTML + Tailwind classes; framework wrappers exist (React, Svelte, Vue)",
+        "Flowbite Pro blocks and templates are paid and are not indexed"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i flowbite (add the plugin in your Tailwind config)",
+      "manual_steps": [
+        "Docs: https://flowbite.com/docs/components/timeline/"
+      ],
+      "quality": 87
+    },
+    {
+      "id": "flowbite-data-display-typography",
+      "name": "Flowbite Typography",
+      "source": "Flowbite",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Typography from Flowbite: a Tailwind CSS component with ready HTML plus optional JavaScript behavior.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "flowbite",
+        "typography",
+        "data-display"
+      ],
+      "docs_url": "https://flowbite.com/docs/components/typography/",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [
+        "flowbite"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Plain HTML + Tailwind classes; framework wrappers exist (React, Svelte, Vue)",
+        "Flowbite Pro blocks and templates are paid and are not indexed"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i flowbite (add the plugin in your Tailwind config)",
+      "manual_steps": [
+        "Docs: https://flowbite.com/docs/components/typography/"
+      ],
+      "quality": 87
+    },
+    {
+      "id": "flowbite-data-display-video",
+      "name": "Flowbite Video",
+      "source": "Flowbite",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Video from Flowbite: a Tailwind CSS component with ready HTML plus optional JavaScript behavior.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "flowbite",
+        "video",
+        "data-display"
+      ],
+      "docs_url": "https://flowbite.com/docs/components/video/",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [
+        "flowbite"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Plain HTML + Tailwind classes; framework wrappers exist (React, Svelte, Vue)",
+        "Flowbite Pro blocks and templates are paid and are not indexed"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i flowbite (add the plugin in your Tailwind config)",
+      "manual_steps": [
+        "Docs: https://flowbite.com/docs/components/video/"
+      ],
+      "quality": 87
+    },
+    {
+      "id": "flowbite-feedback-alerts",
+      "name": "Flowbite Alerts",
+      "source": "Flowbite",
+      "entry_type": "component",
+      "category": "feedback",
+      "description": "Alerts from Flowbite: a Tailwind CSS component with ready HTML plus optional JavaScript behavior.",
+      "use_case": "Communicate system status: alerts, loaders, progress and notifications.",
+      "search_tags": [
+        "flowbite",
+        "alerts",
+        "feedback"
+      ],
+      "docs_url": "https://flowbite.com/docs/components/alerts/",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [
+        "flowbite"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Plain HTML + Tailwind classes; framework wrappers exist (React, Svelte, Vue)",
+        "Flowbite Pro blocks and templates are paid and are not indexed"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i flowbite (add the plugin in your Tailwind config)",
+      "manual_steps": [
+        "Docs: https://flowbite.com/docs/components/alerts/"
+      ],
+      "quality": 87
+    },
+    {
+      "id": "flowbite-feedback-progress",
+      "name": "Flowbite Progress",
+      "source": "Flowbite",
+      "entry_type": "component",
+      "category": "feedback",
+      "description": "Progress from Flowbite: a Tailwind CSS component with ready HTML plus optional JavaScript behavior.",
+      "use_case": "Communicate system status: alerts, loaders, progress and notifications.",
+      "search_tags": [
+        "flowbite",
+        "progress",
+        "feedback"
+      ],
+      "docs_url": "https://flowbite.com/docs/components/progress/",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [
+        "flowbite"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Plain HTML + Tailwind classes; framework wrappers exist (React, Svelte, Vue)",
+        "Flowbite Pro blocks and templates are paid and are not indexed"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i flowbite (add the plugin in your Tailwind config)",
+      "manual_steps": [
+        "Docs: https://flowbite.com/docs/components/progress/"
+      ],
+      "quality": 87
+    },
+    {
+      "id": "flowbite-feedback-skeleton",
+      "name": "Flowbite Skeleton",
+      "source": "Flowbite",
+      "entry_type": "component",
+      "category": "feedback",
+      "description": "Skeleton from Flowbite: a Tailwind CSS component with ready HTML plus optional JavaScript behavior.",
+      "use_case": "Communicate system status: alerts, loaders, progress and notifications.",
+      "search_tags": [
+        "flowbite",
+        "skeleton",
+        "feedback"
+      ],
+      "docs_url": "https://flowbite.com/docs/components/skeleton/",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [
+        "flowbite"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Plain HTML + Tailwind classes; framework wrappers exist (React, Svelte, Vue)",
+        "Flowbite Pro blocks and templates are paid and are not indexed"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i flowbite (add the plugin in your Tailwind config)",
+      "manual_steps": [
+        "Docs: https://flowbite.com/docs/components/skeleton/"
+      ],
+      "quality": 87
+    },
+    {
+      "id": "flowbite-feedback-spinner",
+      "name": "Flowbite Spinner",
+      "source": "Flowbite",
+      "entry_type": "component",
+      "category": "feedback",
+      "description": "Spinner from Flowbite: a Tailwind CSS component with ready HTML plus optional JavaScript behavior.",
+      "use_case": "Communicate system status: alerts, loaders, progress and notifications.",
+      "search_tags": [
+        "flowbite",
+        "spinner",
+        "feedback"
+      ],
+      "docs_url": "https://flowbite.com/docs/components/spinner/",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [
+        "flowbite"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Plain HTML + Tailwind classes; framework wrappers exist (React, Svelte, Vue)",
+        "Flowbite Pro blocks and templates are paid and are not indexed"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i flowbite (add the plugin in your Tailwind config)",
+      "manual_steps": [
+        "Docs: https://flowbite.com/docs/components/spinner/"
+      ],
+      "quality": 87
+    },
+    {
+      "id": "flowbite-feedback-toast",
+      "name": "Flowbite Toast",
+      "source": "Flowbite",
+      "entry_type": "component",
+      "category": "feedback",
+      "description": "Toast from Flowbite: a Tailwind CSS component with ready HTML plus optional JavaScript behavior.",
+      "use_case": "Communicate system status: alerts, loaders, progress and notifications.",
+      "search_tags": [
+        "flowbite",
+        "toast",
+        "feedback"
+      ],
+      "docs_url": "https://flowbite.com/docs/components/toast/",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [
+        "flowbite"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Plain HTML + Tailwind classes; framework wrappers exist (React, Svelte, Vue)",
+        "Flowbite Pro blocks and templates are paid and are not indexed"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i flowbite (add the plugin in your Tailwind config)",
+      "manual_steps": [
+        "Docs: https://flowbite.com/docs/components/toast/"
+      ],
+      "quality": 87
+    },
+    {
+      "id": "flowbite-forms-datepicker",
+      "name": "Flowbite Datepicker",
+      "source": "Flowbite",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Datepicker from Flowbite: a Tailwind CSS component with ready HTML plus optional JavaScript behavior.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "flowbite",
+        "datepicker",
+        "forms"
+      ],
+      "docs_url": "https://flowbite.com/docs/components/datepicker/",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [
+        "flowbite"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Plain HTML + Tailwind classes; framework wrappers exist (React, Svelte, Vue)",
+        "Flowbite Pro blocks and templates are paid and are not indexed"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i flowbite (add the plugin in your Tailwind config)",
+      "manual_steps": [
+        "Docs: https://flowbite.com/docs/components/datepicker/"
+      ],
+      "quality": 87
+    },
+    {
+      "id": "flowbite-forms-forms",
+      "name": "Flowbite Forms",
+      "source": "Flowbite",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Forms from Flowbite: a Tailwind CSS component with ready HTML plus optional JavaScript behavior.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "flowbite",
+        "forms"
+      ],
+      "docs_url": "https://flowbite.com/docs/components/forms/",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [
+        "flowbite"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Plain HTML + Tailwind classes; framework wrappers exist (React, Svelte, Vue)",
+        "Flowbite Pro blocks and templates are paid and are not indexed"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i flowbite (add the plugin in your Tailwind config)",
+      "manual_steps": [
+        "Docs: https://flowbite.com/docs/components/forms/"
+      ],
+      "quality": 87
+    },
+    {
+      "id": "flowbite-media-carousel",
+      "name": "Flowbite Carousel",
+      "source": "Flowbite",
+      "entry_type": "component",
+      "category": "media",
+      "description": "Carousel from Flowbite: a Tailwind CSS component with ready HTML plus optional JavaScript behavior.",
+      "use_case": "Display images, video, carousels and device mockups.",
+      "search_tags": [
+        "flowbite",
+        "carousel",
+        "media"
+      ],
+      "docs_url": "https://flowbite.com/docs/components/carousel/",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [
+        "flowbite"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Plain HTML + Tailwind classes; framework wrappers exist (React, Svelte, Vue)",
+        "Flowbite Pro blocks and templates are paid and are not indexed"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i flowbite (add the plugin in your Tailwind config)",
+      "manual_steps": [
+        "Docs: https://flowbite.com/docs/components/carousel/"
+      ],
+      "quality": 87
+    },
+    {
+      "id": "flowbite-media-gallery",
+      "name": "Flowbite Gallery",
+      "source": "Flowbite",
+      "entry_type": "component",
+      "category": "media",
+      "description": "Gallery from Flowbite: a Tailwind CSS component with ready HTML plus optional JavaScript behavior.",
+      "use_case": "Display images, video, carousels and device mockups.",
+      "search_tags": [
+        "flowbite",
+        "gallery",
+        "media"
+      ],
+      "docs_url": "https://flowbite.com/docs/components/gallery/",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [
+        "flowbite"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Plain HTML + Tailwind classes; framework wrappers exist (React, Svelte, Vue)",
+        "Flowbite Pro blocks and templates are paid and are not indexed"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i flowbite (add the plugin in your Tailwind config)",
+      "manual_steps": [
+        "Docs: https://flowbite.com/docs/components/gallery/"
+      ],
+      "quality": 87
+    },
+    {
+      "id": "flowbite-micro-interactions-accordion",
+      "name": "Flowbite Accordion",
+      "source": "Flowbite",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "Accordion from Flowbite: a Tailwind CSS component with ready HTML plus optional JavaScript behavior.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "flowbite",
+        "accordion",
+        "micro-interactions"
+      ],
+      "docs_url": "https://flowbite.com/docs/components/accordion/",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [
+        "flowbite"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Plain HTML + Tailwind classes; framework wrappers exist (React, Svelte, Vue)",
+        "Flowbite Pro blocks and templates are paid and are not indexed"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i flowbite (add the plugin in your Tailwind config)",
+      "manual_steps": [
+        "Docs: https://flowbite.com/docs/components/accordion/"
+      ],
+      "quality": 87
+    },
+    {
+      "id": "flowbite-micro-interactions-button-group",
+      "name": "Flowbite Button Group",
+      "source": "Flowbite",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "Button Group from Flowbite: a Tailwind CSS component with ready HTML plus optional JavaScript behavior.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "flowbite",
+        "button",
+        "group",
+        "micro-interactions"
+      ],
+      "docs_url": "https://flowbite.com/docs/components/button-group/",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [
+        "flowbite"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Plain HTML + Tailwind classes; framework wrappers exist (React, Svelte, Vue)",
+        "Flowbite Pro blocks and templates are paid and are not indexed"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i flowbite (add the plugin in your Tailwind config)",
+      "manual_steps": [
+        "Docs: https://flowbite.com/docs/components/button-group/"
+      ],
+      "quality": 87
+    },
+    {
+      "id": "flowbite-micro-interactions-buttons",
+      "name": "Flowbite Buttons",
+      "source": "Flowbite",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "Buttons from Flowbite: a Tailwind CSS component with ready HTML plus optional JavaScript behavior.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "flowbite",
+        "buttons",
+        "micro-interactions"
+      ],
+      "docs_url": "https://flowbite.com/docs/components/buttons/",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [
+        "flowbite"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Plain HTML + Tailwind classes; framework wrappers exist (React, Svelte, Vue)",
+        "Flowbite Pro blocks and templates are paid and are not indexed"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i flowbite (add the plugin in your Tailwind config)",
+      "manual_steps": [
+        "Docs: https://flowbite.com/docs/components/buttons/"
+      ],
+      "quality": 87
+    },
+    {
+      "id": "flowbite-micro-interactions-rating",
+      "name": "Flowbite Rating",
+      "source": "Flowbite",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "Rating from Flowbite: a Tailwind CSS component with ready HTML plus optional JavaScript behavior.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "flowbite",
+        "rating",
+        "micro-interactions"
+      ],
+      "docs_url": "https://flowbite.com/docs/components/rating/",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [
+        "flowbite"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Plain HTML + Tailwind classes; framework wrappers exist (React, Svelte, Vue)",
+        "Flowbite Pro blocks and templates are paid and are not indexed"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i flowbite (add the plugin in your Tailwind config)",
+      "manual_steps": [
+        "Docs: https://flowbite.com/docs/components/rating/"
+      ],
+      "quality": 87
+    },
+    {
+      "id": "flowbite-navigation-bottom-navigation",
+      "name": "Flowbite Bottom Navigation",
+      "source": "Flowbite",
+      "entry_type": "component",
+      "category": "navigation",
+      "description": "Bottom Navigation from Flowbite: a Tailwind CSS component with ready HTML plus optional JavaScript behavior.",
+      "use_case": "Build site and app navigation structures that stay clear at any depth.",
+      "search_tags": [
+        "flowbite",
+        "bottom",
+        "navigation"
+      ],
+      "docs_url": "https://flowbite.com/docs/components/bottom-navigation/",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [
+        "flowbite"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Plain HTML + Tailwind classes; framework wrappers exist (React, Svelte, Vue)",
+        "Flowbite Pro blocks and templates are paid and are not indexed"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i flowbite (add the plugin in your Tailwind config)",
+      "manual_steps": [
+        "Docs: https://flowbite.com/docs/components/bottom-navigation/"
+      ],
+      "quality": 87
+    },
+    {
+      "id": "flowbite-navigation-breadcrumb",
+      "name": "Flowbite Breadcrumb",
+      "source": "Flowbite",
+      "entry_type": "component",
+      "category": "navigation",
+      "description": "Breadcrumb from Flowbite: a Tailwind CSS component with ready HTML plus optional JavaScript behavior.",
+      "use_case": "Build site and app navigation structures that stay clear at any depth.",
+      "search_tags": [
+        "flowbite",
+        "breadcrumb",
+        "navigation"
+      ],
+      "docs_url": "https://flowbite.com/docs/components/breadcrumb/",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [
+        "flowbite"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Plain HTML + Tailwind classes; framework wrappers exist (React, Svelte, Vue)",
+        "Flowbite Pro blocks and templates are paid and are not indexed"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i flowbite (add the plugin in your Tailwind config)",
+      "manual_steps": [
+        "Docs: https://flowbite.com/docs/components/breadcrumb/"
+      ],
+      "quality": 87
+    },
+    {
+      "id": "flowbite-navigation-navbar",
+      "name": "Flowbite Navbar",
+      "source": "Flowbite",
+      "entry_type": "component",
+      "category": "navigation",
+      "description": "Navbar from Flowbite: a Tailwind CSS component with ready HTML plus optional JavaScript behavior.",
+      "use_case": "Build site and app navigation structures that stay clear at any depth.",
+      "search_tags": [
+        "flowbite",
+        "navbar",
+        "navigation"
+      ],
+      "docs_url": "https://flowbite.com/docs/components/navbar/",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [
+        "flowbite"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Plain HTML + Tailwind classes; framework wrappers exist (React, Svelte, Vue)",
+        "Flowbite Pro blocks and templates are paid and are not indexed"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i flowbite (add the plugin in your Tailwind config)",
+      "manual_steps": [
+        "Docs: https://flowbite.com/docs/components/navbar/"
+      ],
+      "quality": 87
+    },
+    {
+      "id": "flowbite-navigation-pagination",
+      "name": "Flowbite Pagination",
+      "source": "Flowbite",
+      "entry_type": "component",
+      "category": "navigation",
+      "description": "Pagination from Flowbite: a Tailwind CSS component with ready HTML plus optional JavaScript behavior.",
+      "use_case": "Build site and app navigation structures that stay clear at any depth.",
+      "search_tags": [
+        "flowbite",
+        "pagination",
+        "navigation"
+      ],
+      "docs_url": "https://flowbite.com/docs/components/pagination/",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [
+        "flowbite"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Plain HTML + Tailwind classes; framework wrappers exist (React, Svelte, Vue)",
+        "Flowbite Pro blocks and templates are paid and are not indexed"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i flowbite (add the plugin in your Tailwind config)",
+      "manual_steps": [
+        "Docs: https://flowbite.com/docs/components/pagination/"
+      ],
+      "quality": 87
+    },
+    {
+      "id": "flowbite-navigation-stepper",
+      "name": "Flowbite Stepper",
+      "source": "Flowbite",
+      "entry_type": "component",
+      "category": "navigation",
+      "description": "Stepper from Flowbite: a Tailwind CSS component with ready HTML plus optional JavaScript behavior.",
+      "use_case": "Build site and app navigation structures that stay clear at any depth.",
+      "search_tags": [
+        "flowbite",
+        "stepper",
+        "navigation"
+      ],
+      "docs_url": "https://flowbite.com/docs/components/stepper/",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [
+        "flowbite"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Plain HTML + Tailwind classes; framework wrappers exist (React, Svelte, Vue)",
+        "Flowbite Pro blocks and templates are paid and are not indexed"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i flowbite (add the plugin in your Tailwind config)",
+      "manual_steps": [
+        "Docs: https://flowbite.com/docs/components/stepper/"
+      ],
+      "quality": 87
+    },
+    {
+      "id": "flowbite-navigation-tabs",
+      "name": "Flowbite Tabs",
+      "source": "Flowbite",
+      "entry_type": "component",
+      "category": "navigation",
+      "description": "Tabs from Flowbite: a Tailwind CSS component with ready HTML plus optional JavaScript behavior.",
+      "use_case": "Build site and app navigation structures that stay clear at any depth.",
+      "search_tags": [
+        "flowbite",
+        "tabs",
+        "navigation"
+      ],
+      "docs_url": "https://flowbite.com/docs/components/tabs/",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [
+        "flowbite"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Plain HTML + Tailwind classes; framework wrappers exist (React, Svelte, Vue)",
+        "Flowbite Pro blocks and templates are paid and are not indexed"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i flowbite (add the plugin in your Tailwind config)",
+      "manual_steps": [
+        "Docs: https://flowbite.com/docs/components/tabs/"
+      ],
+      "quality": 87
+    },
+    {
+      "id": "flowbite-overlay-drawer",
+      "name": "Flowbite Drawer",
+      "source": "Flowbite",
+      "entry_type": "component",
+      "category": "overlay",
+      "description": "Drawer from Flowbite: a Tailwind CSS component with ready HTML plus optional JavaScript behavior.",
+      "use_case": "Present dialogs, drawers and popovers without leaving the page.",
+      "search_tags": [
+        "flowbite",
+        "drawer",
+        "overlay"
+      ],
+      "docs_url": "https://flowbite.com/docs/components/drawer/",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [
+        "flowbite"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Plain HTML + Tailwind classes; framework wrappers exist (React, Svelte, Vue)",
+        "Flowbite Pro blocks and templates are paid and are not indexed"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i flowbite (add the plugin in your Tailwind config)",
+      "manual_steps": [
+        "Docs: https://flowbite.com/docs/components/drawer/"
+      ],
+      "quality": 87
+    },
+    {
+      "id": "flowbite-overlay-dropdowns",
+      "name": "Flowbite Dropdowns",
+      "source": "Flowbite",
+      "entry_type": "component",
+      "category": "overlay",
+      "description": "Dropdowns from Flowbite: a Tailwind CSS component with ready HTML plus optional JavaScript behavior.",
+      "use_case": "Present dialogs, drawers and popovers without leaving the page.",
+      "search_tags": [
+        "flowbite",
+        "dropdowns",
+        "overlay"
+      ],
+      "docs_url": "https://flowbite.com/docs/components/dropdowns/",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [
+        "flowbite"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Plain HTML + Tailwind classes; framework wrappers exist (React, Svelte, Vue)",
+        "Flowbite Pro blocks and templates are paid and are not indexed"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i flowbite (add the plugin in your Tailwind config)",
+      "manual_steps": [
+        "Docs: https://flowbite.com/docs/components/dropdowns/"
+      ],
+      "quality": 87
+    },
+    {
+      "id": "flowbite-overlay-mega-menu",
+      "name": "Flowbite Mega Menu",
+      "source": "Flowbite",
+      "entry_type": "component",
+      "category": "overlay",
+      "description": "Mega Menu from Flowbite: a Tailwind CSS component with ready HTML plus optional JavaScript behavior.",
+      "use_case": "Present dialogs, drawers and popovers without leaving the page.",
+      "search_tags": [
+        "flowbite",
+        "mega",
+        "menu",
+        "overlay"
+      ],
+      "docs_url": "https://flowbite.com/docs/components/mega-menu/",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [
+        "flowbite"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Plain HTML + Tailwind classes; framework wrappers exist (React, Svelte, Vue)",
+        "Flowbite Pro blocks and templates are paid and are not indexed"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i flowbite (add the plugin in your Tailwind config)",
+      "manual_steps": [
+        "Docs: https://flowbite.com/docs/components/mega-menu/"
+      ],
+      "quality": 87
+    },
+    {
+      "id": "flowbite-overlay-modal",
+      "name": "Flowbite Modal",
+      "source": "Flowbite",
+      "entry_type": "component",
+      "category": "overlay",
+      "description": "Modal from Flowbite: a Tailwind CSS component with ready HTML plus optional JavaScript behavior.",
+      "use_case": "Present dialogs, drawers and popovers without leaving the page.",
+      "search_tags": [
+        "flowbite",
+        "modal",
+        "overlay"
+      ],
+      "docs_url": "https://flowbite.com/docs/components/modal/",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [
+        "flowbite"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Plain HTML + Tailwind classes; framework wrappers exist (React, Svelte, Vue)",
+        "Flowbite Pro blocks and templates are paid and are not indexed"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i flowbite (add the plugin in your Tailwind config)",
+      "manual_steps": [
+        "Docs: https://flowbite.com/docs/components/modal/"
+      ],
+      "quality": 87
+    },
+    {
+      "id": "flowbite-overlay-popover",
+      "name": "Flowbite Popover",
+      "source": "Flowbite",
+      "entry_type": "component",
+      "category": "overlay",
+      "description": "Popover from Flowbite: a Tailwind CSS component with ready HTML plus optional JavaScript behavior.",
+      "use_case": "Present dialogs, drawers and popovers without leaving the page.",
+      "search_tags": [
+        "flowbite",
+        "popover",
+        "overlay"
+      ],
+      "docs_url": "https://flowbite.com/docs/components/popover/",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [
+        "flowbite"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Plain HTML + Tailwind classes; framework wrappers exist (React, Svelte, Vue)",
+        "Flowbite Pro blocks and templates are paid and are not indexed"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i flowbite (add the plugin in your Tailwind config)",
+      "manual_steps": [
+        "Docs: https://flowbite.com/docs/components/popover/"
+      ],
+      "quality": 87
+    },
+    {
+      "id": "flowbite-overlay-tooltips",
+      "name": "Flowbite Tooltips",
+      "source": "Flowbite",
+      "entry_type": "component",
+      "category": "overlay",
+      "description": "Tooltips from Flowbite: a Tailwind CSS component with ready HTML plus optional JavaScript behavior.",
+      "use_case": "Present dialogs, drawers and popovers without leaving the page.",
+      "search_tags": [
+        "flowbite",
+        "tooltips",
+        "overlay"
+      ],
+      "docs_url": "https://flowbite.com/docs/components/tooltips/",
+      "stack": [
+        "html",
+        "tailwind"
+      ],
+      "dependencies": [
+        "flowbite"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Plain HTML + Tailwind classes; framework wrappers exist (React, Svelte, Vue)",
+        "Flowbite Pro blocks and templates are paid and are not indexed"
+      ],
+      "install_method": "npm",
+      "install_command": "npm i flowbite (add the plugin in your Tailwind config)",
+      "manual_steps": [
+        "Docs: https://flowbite.com/docs/components/tooltips/"
+      ],
+      "quality": 87
+    }
+  ]
+}

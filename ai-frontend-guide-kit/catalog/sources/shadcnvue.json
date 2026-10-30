@@ -1,0 +1,2570 @@
+{
+  "schema_version": "1.0",
+  "source_id": "shadcnvue",
+  "source_name": "shadcn-vue",
+  "source_url": "https://www.shadcn-vue.com",
+  "catalog_url": "https://www.shadcn-vue.com/docs/components",
+  "license_summary": "MIT",
+  "granularity": "complete (registry:ui)",
+  "extraction": {
+    "channel": "registry-json",
+    "method": "Node script downloading the public registry index",
+    "evidence_url": "https://www.shadcn-vue.com/r/index.json"
+  },
+  "generated_at": "2026-10-04",
+  "entries": [
+    {
+      "id": "shadcnvue-ai-surfaces-attachment",
+      "name": "shadcn-vue Attachment",
+      "source": "shadcn-vue",
+      "entry_type": "component",
+      "category": "ai-surfaces",
+      "description": "Attachment component from shadcn-vue, the Vue port of shadcn/ui.",
+      "use_case": "Build agent and AI conversation interfaces (chat, thinking, tools, streaming).",
+      "search_tags": [
+        "shadcnvue",
+        "vue",
+        "attachment",
+        "ai-surfaces",
+        "shadcn-vue"
+      ],
+      "docs_url": "https://www.shadcn-vue.com/docs/components/attachment",
+      "stack": [
+        "vue",
+        "tailwind",
+        "reka-ui"
+      ],
+      "dependencies": [
+        "reka-ui"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Use when the project is Vue; for React prefer shadcn/ui or the React-only sources"
+      ],
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn-vue@latest add attachment",
+      "manual_steps": [
+        "Or copy the source from https://www.shadcn-vue.com/docs/components/attachment"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "shadcnvue-ai-surfaces-bubble",
+      "name": "shadcn-vue Bubble",
+      "source": "shadcn-vue",
+      "entry_type": "component",
+      "category": "ai-surfaces",
+      "description": "Bubble component from shadcn-vue, the Vue port of shadcn/ui.",
+      "use_case": "Build agent and AI conversation interfaces (chat, thinking, tools, streaming).",
+      "search_tags": [
+        "shadcnvue",
+        "vue",
+        "bubble",
+        "ai-surfaces",
+        "shadcn-vue"
+      ],
+      "docs_url": "https://www.shadcn-vue.com/docs/components/bubble",
+      "stack": [
+        "vue",
+        "tailwind",
+        "reka-ui"
+      ],
+      "dependencies": [
+        "reka-ui"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Use when the project is Vue; for React prefer shadcn/ui or the React-only sources"
+      ],
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn-vue@latest add bubble",
+      "manual_steps": [
+        "Or copy the source from https://www.shadcn-vue.com/docs/components/bubble"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "shadcnvue-ai-surfaces-marker",
+      "name": "shadcn-vue Marker",
+      "source": "shadcn-vue",
+      "entry_type": "component",
+      "category": "ai-surfaces",
+      "description": "Marker component from shadcn-vue, the Vue port of shadcn/ui.",
+      "use_case": "Build agent and AI conversation interfaces (chat, thinking, tools, streaming).",
+      "search_tags": [
+        "shadcnvue",
+        "vue",
+        "marker",
+        "ai-surfaces",
+        "shadcn-vue"
+      ],
+      "docs_url": "https://www.shadcn-vue.com/docs/components/marker",
+      "stack": [
+        "vue",
+        "tailwind",
+        "reka-ui"
+      ],
+      "dependencies": [
+        "reka-ui"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Use when the project is Vue; for React prefer shadcn/ui or the React-only sources"
+      ],
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn-vue@latest add marker",
+      "manual_steps": [
+        "Or copy the source from https://www.shadcn-vue.com/docs/components/marker"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "shadcnvue-ai-surfaces-message",
+      "name": "shadcn-vue Message",
+      "source": "shadcn-vue",
+      "entry_type": "component",
+      "category": "ai-surfaces",
+      "description": "Message component from shadcn-vue, the Vue port of shadcn/ui.",
+      "use_case": "Build agent and AI conversation interfaces (chat, thinking, tools, streaming).",
+      "search_tags": [
+        "shadcnvue",
+        "vue",
+        "message",
+        "ai-surfaces",
+        "shadcn-vue"
+      ],
+      "docs_url": "https://www.shadcn-vue.com/docs/components/message",
+      "stack": [
+        "vue",
+        "tailwind",
+        "reka-ui"
+      ],
+      "dependencies": [
+        "reka-ui"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Use when the project is Vue; for React prefer shadcn/ui or the React-only sources"
+      ],
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn-vue@latest add message",
+      "manual_steps": [
+        "Or copy the source from https://www.shadcn-vue.com/docs/components/message"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "shadcnvue-ai-surfaces-message-scroller",
+      "name": "shadcn-vue Message Scroller",
+      "source": "shadcn-vue",
+      "entry_type": "component",
+      "category": "ai-surfaces",
+      "description": "Message Scroller component from shadcn-vue, the Vue port of shadcn/ui.",
+      "use_case": "Build agent and AI conversation interfaces (chat, thinking, tools, streaming).",
+      "search_tags": [
+        "shadcnvue",
+        "vue",
+        "message",
+        "scroller",
+        "ai-surfaces",
+        "shadcn-vue"
+      ],
+      "docs_url": "https://www.shadcn-vue.com/docs/components/message-scroller",
+      "stack": [
+        "vue",
+        "tailwind",
+        "reka-ui"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Use when the project is Vue; for React prefer shadcn/ui or the React-only sources"
+      ],
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn-vue@latest add message-scroller",
+      "manual_steps": [
+        "Or copy the source from https://www.shadcn-vue.com/docs/components/message-scroller"
+      ],
+      "quality": 93
+    },
+    {
+      "id": "shadcnvue-ai-surfaces-questionnaire",
+      "name": "shadcn-vue Questionnaire",
+      "source": "shadcn-vue",
+      "entry_type": "component",
+      "category": "ai-surfaces",
+      "description": "Questionnaire component from shadcn-vue, the Vue port of shadcn/ui.",
+      "use_case": "Build agent and AI conversation interfaces (chat, thinking, tools, streaming).",
+      "search_tags": [
+        "shadcnvue",
+        "vue",
+        "questionnaire",
+        "ai-surfaces",
+        "shadcn-vue"
+      ],
+      "docs_url": "https://www.shadcn-vue.com/docs/components/questionnaire",
+      "stack": [
+        "vue",
+        "tailwind",
+        "reka-ui"
+      ],
+      "dependencies": [
+        "reka-ui"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Use when the project is Vue; for React prefer shadcn/ui or the React-only sources"
+      ],
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn-vue@latest add questionnaire",
+      "manual_steps": [
+        "Or copy the source from https://www.shadcn-vue.com/docs/components/questionnaire"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "shadcnvue-data-display-avatar",
+      "name": "shadcn-vue Avatar",
+      "source": "shadcn-vue",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Avatar component from shadcn-vue, the Vue port of shadcn/ui.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "shadcnvue",
+        "vue",
+        "avatar",
+        "data-display",
+        "shadcn-vue"
+      ],
+      "docs_url": "https://www.shadcn-vue.com/docs/components/avatar",
+      "stack": [
+        "vue",
+        "tailwind",
+        "reka-ui"
+      ],
+      "dependencies": [
+        "reka-ui",
+        "@vueuse/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Use when the project is Vue; for React prefer shadcn/ui or the React-only sources"
+      ],
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn-vue@latest add avatar",
+      "manual_steps": [
+        "Or copy the source from https://www.shadcn-vue.com/docs/components/avatar"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "shadcnvue-data-display-badge",
+      "name": "shadcn-vue Badge",
+      "source": "shadcn-vue",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Badge component from shadcn-vue, the Vue port of shadcn/ui.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "shadcnvue",
+        "vue",
+        "badge",
+        "data-display",
+        "shadcn-vue"
+      ],
+      "docs_url": "https://www.shadcn-vue.com/docs/components/badge",
+      "stack": [
+        "vue",
+        "tailwind",
+        "reka-ui"
+      ],
+      "dependencies": [
+        "reka-ui",
+        "@vueuse/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Use when the project is Vue; for React prefer shadcn/ui or the React-only sources"
+      ],
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn-vue@latest add badge",
+      "manual_steps": [
+        "Or copy the source from https://www.shadcn-vue.com/docs/components/badge"
+      ],
+      "quality": 85
+    },
+    {
+      "id": "shadcnvue-data-display-card",
+      "name": "shadcn-vue Card",
+      "source": "shadcn-vue",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Card component from shadcn-vue, the Vue port of shadcn/ui.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "shadcnvue",
+        "vue",
+        "card",
+        "data-display",
+        "shadcn-vue"
+      ],
+      "docs_url": "https://www.shadcn-vue.com/docs/components/card",
+      "stack": [
+        "vue",
+        "tailwind",
+        "reka-ui"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Use when the project is Vue; for React prefer shadcn/ui or the React-only sources"
+      ],
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn-vue@latest add card",
+      "manual_steps": [
+        "Or copy the source from https://www.shadcn-vue.com/docs/components/card"
+      ],
+      "quality": 88
+    },
+    {
+      "id": "shadcnvue-data-display-chart",
+      "name": "shadcn-vue Chart",
+      "source": "shadcn-vue",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Chart component from shadcn-vue, the Vue port of shadcn/ui.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "shadcnvue",
+        "vue",
+        "chart",
+        "data-display",
+        "shadcn-vue"
+      ],
+      "docs_url": "https://www.shadcn-vue.com/docs/components/chart",
+      "stack": [
+        "vue",
+        "tailwind",
+        "reka-ui"
+      ],
+      "dependencies": [
+        "reka-ui",
+        "@vueuse/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Use when the project is Vue; for React prefer shadcn/ui or the React-only sources"
+      ],
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn-vue@latest add chart",
+      "manual_steps": [
+        "Or copy the source from https://www.shadcn-vue.com/docs/components/chart"
+      ],
+      "quality": 85
+    },
+    {
+      "id": "shadcnvue-data-display-item",
+      "name": "shadcn-vue Item",
+      "source": "shadcn-vue",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Item component from shadcn-vue, the Vue port of shadcn/ui.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "shadcnvue",
+        "vue",
+        "item",
+        "data-display",
+        "shadcn-vue"
+      ],
+      "docs_url": "https://www.shadcn-vue.com/docs/components/item",
+      "stack": [
+        "vue",
+        "tailwind",
+        "reka-ui"
+      ],
+      "dependencies": [
+        "reka-ui"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Use when the project is Vue; for React prefer shadcn/ui or the React-only sources"
+      ],
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn-vue@latest add item",
+      "manual_steps": [
+        "Or copy the source from https://www.shadcn-vue.com/docs/components/item"
+      ],
+      "quality": 85
+    },
+    {
+      "id": "shadcnvue-data-display-kbd",
+      "name": "shadcn-vue Kbd",
+      "source": "shadcn-vue",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Kbd component from shadcn-vue, the Vue port of shadcn/ui.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "shadcnvue",
+        "vue",
+        "kbd",
+        "data-display",
+        "shadcn-vue"
+      ],
+      "docs_url": "https://www.shadcn-vue.com/docs/components/kbd",
+      "stack": [
+        "vue",
+        "tailwind",
+        "reka-ui"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Use when the project is Vue; for React prefer shadcn/ui or the React-only sources"
+      ],
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn-vue@latest add kbd",
+      "manual_steps": [
+        "Or copy the source from https://www.shadcn-vue.com/docs/components/kbd"
+      ],
+      "quality": 88
+    },
+    {
+      "id": "shadcnvue-data-display-table",
+      "name": "shadcn-vue Table",
+      "source": "shadcn-vue",
+      "entry_type": "component",
+      "category": "data-display",
+      "description": "Table component from shadcn-vue, the Vue port of shadcn/ui.",
+      "use_case": "Show structured information such as tables, stats and timelines.",
+      "search_tags": [
+        "shadcnvue",
+        "vue",
+        "table",
+        "data-display",
+        "shadcn-vue"
+      ],
+      "docs_url": "https://www.shadcn-vue.com/docs/components/table",
+      "stack": [
+        "vue",
+        "tailwind",
+        "reka-ui"
+      ],
+      "dependencies": [
+        "@vueuse/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Use when the project is Vue; for React prefer shadcn/ui or the React-only sources"
+      ],
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn-vue@latest add table",
+      "manual_steps": [
+        "Or copy the source from https://www.shadcn-vue.com/docs/components/table"
+      ],
+      "quality": 85
+    },
+    {
+      "id": "shadcnvue-feedback-alert",
+      "name": "shadcn-vue Alert",
+      "source": "shadcn-vue",
+      "entry_type": "component",
+      "category": "feedback",
+      "description": "Alert component from shadcn-vue, the Vue port of shadcn/ui.",
+      "use_case": "Communicate system status: alerts, loaders, progress and notifications.",
+      "search_tags": [
+        "shadcnvue",
+        "vue",
+        "alert",
+        "feedback",
+        "shadcn-vue"
+      ],
+      "docs_url": "https://www.shadcn-vue.com/docs/components/alert",
+      "stack": [
+        "vue",
+        "tailwind",
+        "reka-ui"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Use when the project is Vue; for React prefer shadcn/ui or the React-only sources"
+      ],
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn-vue@latest add alert",
+      "manual_steps": [
+        "Or copy the source from https://www.shadcn-vue.com/docs/components/alert"
+      ],
+      "quality": 88
+    },
+    {
+      "id": "shadcnvue-feedback-progress",
+      "name": "shadcn-vue Progress",
+      "source": "shadcn-vue",
+      "entry_type": "component",
+      "category": "feedback",
+      "description": "Progress component from shadcn-vue, the Vue port of shadcn/ui.",
+      "use_case": "Communicate system status: alerts, loaders, progress and notifications.",
+      "search_tags": [
+        "shadcnvue",
+        "vue",
+        "progress",
+        "feedback",
+        "shadcn-vue"
+      ],
+      "docs_url": "https://www.shadcn-vue.com/docs/components/progress",
+      "stack": [
+        "vue",
+        "tailwind",
+        "reka-ui"
+      ],
+      "dependencies": [
+        "reka-ui",
+        "@vueuse/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Use when the project is Vue; for React prefer shadcn/ui or the React-only sources"
+      ],
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn-vue@latest add progress",
+      "manual_steps": [
+        "Or copy the source from https://www.shadcn-vue.com/docs/components/progress"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "shadcnvue-feedback-skeleton",
+      "name": "shadcn-vue Skeleton",
+      "source": "shadcn-vue",
+      "entry_type": "component",
+      "category": "feedback",
+      "description": "Skeleton component from shadcn-vue, the Vue port of shadcn/ui.",
+      "use_case": "Communicate system status: alerts, loaders, progress and notifications.",
+      "search_tags": [
+        "shadcnvue",
+        "vue",
+        "skeleton",
+        "feedback",
+        "shadcn-vue"
+      ],
+      "docs_url": "https://www.shadcn-vue.com/docs/components/skeleton",
+      "stack": [
+        "vue",
+        "tailwind",
+        "reka-ui"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Use when the project is Vue; for React prefer shadcn/ui or the React-only sources"
+      ],
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn-vue@latest add skeleton",
+      "manual_steps": [
+        "Or copy the source from https://www.shadcn-vue.com/docs/components/skeleton"
+      ],
+      "quality": 93
+    },
+    {
+      "id": "shadcnvue-feedback-sonner",
+      "name": "shadcn-vue Sonner",
+      "source": "shadcn-vue",
+      "entry_type": "component",
+      "category": "feedback",
+      "description": "Sonner component from shadcn-vue, the Vue port of shadcn/ui.",
+      "use_case": "Communicate system status: alerts, loaders, progress and notifications.",
+      "search_tags": [
+        "shadcnvue",
+        "vue",
+        "sonner",
+        "feedback",
+        "shadcn-vue"
+      ],
+      "docs_url": "https://www.shadcn-vue.com/docs/components/sonner",
+      "stack": [
+        "vue",
+        "tailwind",
+        "reka-ui"
+      ],
+      "dependencies": [
+        "vue-sonner"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Use when the project is Vue; for React prefer shadcn/ui or the React-only sources"
+      ],
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn-vue@latest add sonner",
+      "manual_steps": [
+        "Or copy the source from https://www.shadcn-vue.com/docs/components/sonner"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "shadcnvue-feedback-spinner",
+      "name": "shadcn-vue Spinner",
+      "source": "shadcn-vue",
+      "entry_type": "component",
+      "category": "feedback",
+      "description": "Spinner component from shadcn-vue, the Vue port of shadcn/ui.",
+      "use_case": "Communicate system status: alerts, loaders, progress and notifications.",
+      "search_tags": [
+        "shadcnvue",
+        "vue",
+        "spinner",
+        "feedback",
+        "shadcn-vue"
+      ],
+      "docs_url": "https://www.shadcn-vue.com/docs/components/spinner",
+      "stack": [
+        "vue",
+        "tailwind",
+        "reka-ui"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Use when the project is Vue; for React prefer shadcn/ui or the React-only sources"
+      ],
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn-vue@latest add spinner",
+      "manual_steps": [
+        "Or copy the source from https://www.shadcn-vue.com/docs/components/spinner"
+      ],
+      "quality": 93
+    },
+    {
+      "id": "shadcnvue-feedback-tooltip",
+      "name": "shadcn-vue Tooltip",
+      "source": "shadcn-vue",
+      "entry_type": "component",
+      "category": "feedback",
+      "description": "Tooltip component from shadcn-vue, the Vue port of shadcn/ui.",
+      "use_case": "Communicate system status: alerts, loaders, progress and notifications.",
+      "search_tags": [
+        "shadcnvue",
+        "vue",
+        "tooltip",
+        "feedback",
+        "shadcn-vue"
+      ],
+      "docs_url": "https://www.shadcn-vue.com/docs/components/tooltip",
+      "stack": [
+        "vue",
+        "tailwind",
+        "reka-ui"
+      ],
+      "dependencies": [
+        "reka-ui",
+        "@vueuse/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Use when the project is Vue; for React prefer shadcn/ui or the React-only sources"
+      ],
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn-vue@latest add tooltip",
+      "manual_steps": [
+        "Or copy the source from https://www.shadcn-vue.com/docs/components/tooltip"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "shadcnvue-forms-calendar",
+      "name": "shadcn-vue Calendar",
+      "source": "shadcn-vue",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Calendar component from shadcn-vue, the Vue port of shadcn/ui.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "shadcnvue",
+        "vue",
+        "calendar",
+        "forms",
+        "shadcn-vue"
+      ],
+      "docs_url": "https://www.shadcn-vue.com/docs/components/calendar",
+      "stack": [
+        "vue",
+        "tailwind",
+        "reka-ui"
+      ],
+      "dependencies": [
+        "reka-ui",
+        "@vueuse/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Use when the project is Vue; for React prefer shadcn/ui or the React-only sources"
+      ],
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn-vue@latest add calendar",
+      "manual_steps": [
+        "Or copy the source from https://www.shadcn-vue.com/docs/components/calendar"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "shadcnvue-forms-checkbox",
+      "name": "shadcn-vue Checkbox",
+      "source": "shadcn-vue",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Checkbox component from shadcn-vue, the Vue port of shadcn/ui.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "shadcnvue",
+        "vue",
+        "checkbox",
+        "forms",
+        "shadcn-vue"
+      ],
+      "docs_url": "https://www.shadcn-vue.com/docs/components/checkbox",
+      "stack": [
+        "vue",
+        "tailwind",
+        "reka-ui"
+      ],
+      "dependencies": [
+        "reka-ui",
+        "@vueuse/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Use when the project is Vue; for React prefer shadcn/ui or the React-only sources"
+      ],
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn-vue@latest add checkbox",
+      "manual_steps": [
+        "Or copy the source from https://www.shadcn-vue.com/docs/components/checkbox"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "shadcnvue-forms-combobox",
+      "name": "shadcn-vue Combobox",
+      "source": "shadcn-vue",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Combobox component from shadcn-vue, the Vue port of shadcn/ui.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "shadcnvue",
+        "vue",
+        "combobox",
+        "forms",
+        "shadcn-vue"
+      ],
+      "docs_url": "https://www.shadcn-vue.com/docs/components/combobox",
+      "stack": [
+        "vue",
+        "tailwind",
+        "reka-ui"
+      ],
+      "dependencies": [
+        "reka-ui",
+        "@vueuse/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Use when the project is Vue; for React prefer shadcn/ui or the React-only sources"
+      ],
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn-vue@latest add combobox",
+      "manual_steps": [
+        "Or copy the source from https://www.shadcn-vue.com/docs/components/combobox"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "shadcnvue-forms-field",
+      "name": "shadcn-vue Field",
+      "source": "shadcn-vue",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Field component from shadcn-vue, the Vue port of shadcn/ui.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "shadcnvue",
+        "vue",
+        "field",
+        "forms",
+        "shadcn-vue"
+      ],
+      "docs_url": "https://www.shadcn-vue.com/docs/components/field",
+      "stack": [
+        "vue",
+        "tailwind",
+        "reka-ui"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Use when the project is Vue; for React prefer shadcn/ui or the React-only sources"
+      ],
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn-vue@latest add field",
+      "manual_steps": [
+        "Or copy the source from https://www.shadcn-vue.com/docs/components/field"
+      ],
+      "quality": 88
+    },
+    {
+      "id": "shadcnvue-forms-form",
+      "name": "shadcn-vue Form",
+      "source": "shadcn-vue",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Form component from shadcn-vue, the Vue port of shadcn/ui.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "shadcnvue",
+        "vue",
+        "form",
+        "forms",
+        "shadcn-vue"
+      ],
+      "docs_url": "https://www.shadcn-vue.com/docs/components/form",
+      "stack": [
+        "vue",
+        "tailwind",
+        "reka-ui"
+      ],
+      "dependencies": [
+        "reka-ui",
+        "vee-validate",
+        "@vee-validate/zod",
+        "zod@3.25.76"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Use when the project is Vue; for React prefer shadcn/ui or the React-only sources"
+      ],
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn-vue@latest add form",
+      "manual_steps": [
+        "Or copy the source from https://www.shadcn-vue.com/docs/components/form"
+      ],
+      "quality": 82
+    },
+    {
+      "id": "shadcnvue-forms-input",
+      "name": "shadcn-vue Input",
+      "source": "shadcn-vue",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Input component from shadcn-vue, the Vue port of shadcn/ui.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "shadcnvue",
+        "vue",
+        "input",
+        "forms",
+        "shadcn-vue"
+      ],
+      "docs_url": "https://www.shadcn-vue.com/docs/components/input",
+      "stack": [
+        "vue",
+        "tailwind",
+        "reka-ui"
+      ],
+      "dependencies": [
+        "@vueuse/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Use when the project is Vue; for React prefer shadcn/ui or the React-only sources"
+      ],
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn-vue@latest add input",
+      "manual_steps": [
+        "Or copy the source from https://www.shadcn-vue.com/docs/components/input"
+      ],
+      "quality": 85
+    },
+    {
+      "id": "shadcnvue-forms-input-group",
+      "name": "shadcn-vue Input Group",
+      "source": "shadcn-vue",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Input Group component from shadcn-vue, the Vue port of shadcn/ui.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "shadcnvue",
+        "vue",
+        "input",
+        "group",
+        "forms",
+        "shadcn-vue"
+      ],
+      "docs_url": "https://www.shadcn-vue.com/docs/components/input-group",
+      "stack": [
+        "vue",
+        "tailwind",
+        "reka-ui"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Use when the project is Vue; for React prefer shadcn/ui or the React-only sources"
+      ],
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn-vue@latest add input-group",
+      "manual_steps": [
+        "Or copy the source from https://www.shadcn-vue.com/docs/components/input-group"
+      ],
+      "quality": 93
+    },
+    {
+      "id": "shadcnvue-forms-input-otp",
+      "name": "shadcn-vue Input Otp",
+      "source": "shadcn-vue",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Input Otp component from shadcn-vue, the Vue port of shadcn/ui.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "shadcnvue",
+        "vue",
+        "input",
+        "otp",
+        "forms",
+        "shadcn-vue"
+      ],
+      "docs_url": "https://www.shadcn-vue.com/docs/components/input-otp",
+      "stack": [
+        "vue",
+        "tailwind",
+        "reka-ui"
+      ],
+      "dependencies": [
+        "vue-input-otp",
+        "@vueuse/core",
+        "reka-ui"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Use when the project is Vue; for React prefer shadcn/ui or the React-only sources"
+      ],
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn-vue@latest add input-otp",
+      "manual_steps": [
+        "Or copy the source from https://www.shadcn-vue.com/docs/components/input-otp"
+      ],
+      "quality": 87
+    },
+    {
+      "id": "shadcnvue-forms-label",
+      "name": "shadcn-vue Label",
+      "source": "shadcn-vue",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Label component from shadcn-vue, the Vue port of shadcn/ui.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "shadcnvue",
+        "vue",
+        "label",
+        "forms",
+        "shadcn-vue"
+      ],
+      "docs_url": "https://www.shadcn-vue.com/docs/components/label",
+      "stack": [
+        "vue",
+        "tailwind",
+        "reka-ui"
+      ],
+      "dependencies": [
+        "reka-ui",
+        "@vueuse/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Use when the project is Vue; for React prefer shadcn/ui or the React-only sources"
+      ],
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn-vue@latest add label",
+      "manual_steps": [
+        "Or copy the source from https://www.shadcn-vue.com/docs/components/label"
+      ],
+      "quality": 85
+    },
+    {
+      "id": "shadcnvue-forms-native-select",
+      "name": "shadcn-vue Native Select",
+      "source": "shadcn-vue",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Native Select component from shadcn-vue, the Vue port of shadcn/ui.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "shadcnvue",
+        "vue",
+        "native",
+        "select",
+        "forms",
+        "shadcn-vue"
+      ],
+      "docs_url": "https://www.shadcn-vue.com/docs/components/native-select",
+      "stack": [
+        "vue",
+        "tailwind",
+        "reka-ui"
+      ],
+      "dependencies": [
+        "reka-ui",
+        "@vueuse/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Use when the project is Vue; for React prefer shadcn/ui or the React-only sources"
+      ],
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn-vue@latest add native-select",
+      "manual_steps": [
+        "Or copy the source from https://www.shadcn-vue.com/docs/components/native-select"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "shadcnvue-forms-number-field",
+      "name": "shadcn-vue Number Field",
+      "source": "shadcn-vue",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Number Field component from shadcn-vue, the Vue port of shadcn/ui.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "shadcnvue",
+        "vue",
+        "number",
+        "field",
+        "forms",
+        "shadcn-vue"
+      ],
+      "docs_url": "https://www.shadcn-vue.com/docs/components/number-field",
+      "stack": [
+        "vue",
+        "tailwind",
+        "reka-ui"
+      ],
+      "dependencies": [
+        "reka-ui",
+        "@vueuse/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Use when the project is Vue; for React prefer shadcn/ui or the React-only sources"
+      ],
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn-vue@latest add number-field",
+      "manual_steps": [
+        "Or copy the source from https://www.shadcn-vue.com/docs/components/number-field"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "shadcnvue-forms-pin-input",
+      "name": "shadcn-vue Pin Input",
+      "source": "shadcn-vue",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Pin Input component from shadcn-vue, the Vue port of shadcn/ui.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "shadcnvue",
+        "vue",
+        "pin",
+        "input",
+        "forms",
+        "shadcn-vue"
+      ],
+      "docs_url": "https://www.shadcn-vue.com/docs/components/pin-input",
+      "stack": [
+        "vue",
+        "tailwind",
+        "reka-ui"
+      ],
+      "dependencies": [
+        "reka-ui",
+        "@vueuse/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Use when the project is Vue; for React prefer shadcn/ui or the React-only sources"
+      ],
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn-vue@latest add pin-input",
+      "manual_steps": [
+        "Or copy the source from https://www.shadcn-vue.com/docs/components/pin-input"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "shadcnvue-forms-radio-group",
+      "name": "shadcn-vue Radio Group",
+      "source": "shadcn-vue",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Radio Group component from shadcn-vue, the Vue port of shadcn/ui.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "shadcnvue",
+        "vue",
+        "radio",
+        "group",
+        "forms",
+        "shadcn-vue"
+      ],
+      "docs_url": "https://www.shadcn-vue.com/docs/components/radio-group",
+      "stack": [
+        "vue",
+        "tailwind",
+        "reka-ui"
+      ],
+      "dependencies": [
+        "reka-ui",
+        "@vueuse/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Use when the project is Vue; for React prefer shadcn/ui or the React-only sources"
+      ],
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn-vue@latest add radio-group",
+      "manual_steps": [
+        "Or copy the source from https://www.shadcn-vue.com/docs/components/radio-group"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "shadcnvue-forms-range-calendar",
+      "name": "shadcn-vue Range Calendar",
+      "source": "shadcn-vue",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Range Calendar component from shadcn-vue, the Vue port of shadcn/ui.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "shadcnvue",
+        "vue",
+        "range",
+        "calendar",
+        "forms",
+        "shadcn-vue"
+      ],
+      "docs_url": "https://www.shadcn-vue.com/docs/components/range-calendar",
+      "stack": [
+        "vue",
+        "tailwind",
+        "reka-ui"
+      ],
+      "dependencies": [
+        "reka-ui",
+        "@vueuse/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Use when the project is Vue; for React prefer shadcn/ui or the React-only sources"
+      ],
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn-vue@latest add range-calendar",
+      "manual_steps": [
+        "Or copy the source from https://www.shadcn-vue.com/docs/components/range-calendar"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "shadcnvue-forms-select",
+      "name": "shadcn-vue Select",
+      "source": "shadcn-vue",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Select component from shadcn-vue, the Vue port of shadcn/ui.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "shadcnvue",
+        "vue",
+        "select",
+        "forms",
+        "shadcn-vue"
+      ],
+      "docs_url": "https://www.shadcn-vue.com/docs/components/select",
+      "stack": [
+        "vue",
+        "tailwind",
+        "reka-ui"
+      ],
+      "dependencies": [
+        "reka-ui",
+        "@vueuse/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Use when the project is Vue; for React prefer shadcn/ui or the React-only sources"
+      ],
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn-vue@latest add select",
+      "manual_steps": [
+        "Or copy the source from https://www.shadcn-vue.com/docs/components/select"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "shadcnvue-forms-slider",
+      "name": "shadcn-vue Slider",
+      "source": "shadcn-vue",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Slider component from shadcn-vue, the Vue port of shadcn/ui.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "shadcnvue",
+        "vue",
+        "slider",
+        "forms",
+        "shadcn-vue"
+      ],
+      "docs_url": "https://www.shadcn-vue.com/docs/components/slider",
+      "stack": [
+        "vue",
+        "tailwind",
+        "reka-ui"
+      ],
+      "dependencies": [
+        "reka-ui",
+        "@vueuse/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Use when the project is Vue; for React prefer shadcn/ui or the React-only sources"
+      ],
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn-vue@latest add slider",
+      "manual_steps": [
+        "Or copy the source from https://www.shadcn-vue.com/docs/components/slider"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "shadcnvue-forms-switch",
+      "name": "shadcn-vue Switch",
+      "source": "shadcn-vue",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Switch component from shadcn-vue, the Vue port of shadcn/ui.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "shadcnvue",
+        "vue",
+        "switch",
+        "forms",
+        "shadcn-vue"
+      ],
+      "docs_url": "https://www.shadcn-vue.com/docs/components/switch",
+      "stack": [
+        "vue",
+        "tailwind",
+        "reka-ui"
+      ],
+      "dependencies": [
+        "reka-ui",
+        "@vueuse/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Use when the project is Vue; for React prefer shadcn/ui or the React-only sources"
+      ],
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn-vue@latest add switch",
+      "manual_steps": [
+        "Or copy the source from https://www.shadcn-vue.com/docs/components/switch"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "shadcnvue-forms-tags-input",
+      "name": "shadcn-vue Tags Input",
+      "source": "shadcn-vue",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Tags Input component from shadcn-vue, the Vue port of shadcn/ui.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "shadcnvue",
+        "vue",
+        "tags",
+        "input",
+        "forms",
+        "shadcn-vue"
+      ],
+      "docs_url": "https://www.shadcn-vue.com/docs/components/tags-input",
+      "stack": [
+        "vue",
+        "tailwind",
+        "reka-ui"
+      ],
+      "dependencies": [
+        "reka-ui",
+        "@vueuse/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Use when the project is Vue; for React prefer shadcn/ui or the React-only sources"
+      ],
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn-vue@latest add tags-input",
+      "manual_steps": [
+        "Or copy the source from https://www.shadcn-vue.com/docs/components/tags-input"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "shadcnvue-forms-textarea",
+      "name": "shadcn-vue Textarea",
+      "source": "shadcn-vue",
+      "entry_type": "component",
+      "category": "forms",
+      "description": "Textarea component from shadcn-vue, the Vue port of shadcn/ui.",
+      "use_case": "Capture user input with accessible, validated controls.",
+      "search_tags": [
+        "shadcnvue",
+        "vue",
+        "textarea",
+        "forms",
+        "shadcn-vue"
+      ],
+      "docs_url": "https://www.shadcn-vue.com/docs/components/textarea",
+      "stack": [
+        "vue",
+        "tailwind",
+        "reka-ui"
+      ],
+      "dependencies": [
+        "@vueuse/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Use when the project is Vue; for React prefer shadcn/ui or the React-only sources"
+      ],
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn-vue@latest add textarea",
+      "manual_steps": [
+        "Or copy the source from https://www.shadcn-vue.com/docs/components/textarea"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "shadcnvue-layout-empty",
+      "name": "shadcn-vue Empty",
+      "source": "shadcn-vue",
+      "entry_type": "component",
+      "category": "layout",
+      "description": "Empty component from shadcn-vue, the Vue port of shadcn/ui.",
+      "use_case": "Structure the page: dividers, footers, headers and empty states.",
+      "search_tags": [
+        "shadcnvue",
+        "vue",
+        "empty",
+        "layout",
+        "shadcn-vue"
+      ],
+      "docs_url": "https://www.shadcn-vue.com/docs/components/empty",
+      "stack": [
+        "vue",
+        "tailwind",
+        "reka-ui"
+      ],
+      "dependencies": [],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Use when the project is Vue; for React prefer shadcn/ui or the React-only sources"
+      ],
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn-vue@latest add empty",
+      "manual_steps": [
+        "Or copy the source from https://www.shadcn-vue.com/docs/components/empty"
+      ],
+      "quality": 88
+    },
+    {
+      "id": "shadcnvue-layout-resizable",
+      "name": "shadcn-vue Resizable",
+      "source": "shadcn-vue",
+      "entry_type": "component",
+      "category": "layout",
+      "description": "Resizable component from shadcn-vue, the Vue port of shadcn/ui.",
+      "use_case": "Structure the page: dividers, footers, headers and empty states.",
+      "search_tags": [
+        "shadcnvue",
+        "vue",
+        "resizable",
+        "layout",
+        "shadcn-vue"
+      ],
+      "docs_url": "https://www.shadcn-vue.com/docs/components/resizable",
+      "stack": [
+        "vue",
+        "tailwind",
+        "reka-ui"
+      ],
+      "dependencies": [
+        "reka-ui",
+        "@vueuse/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Use when the project is Vue; for React prefer shadcn/ui or the React-only sources"
+      ],
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn-vue@latest add resizable",
+      "manual_steps": [
+        "Or copy the source from https://www.shadcn-vue.com/docs/components/resizable"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "shadcnvue-layout-scroll-area",
+      "name": "shadcn-vue Scroll Area",
+      "source": "shadcn-vue",
+      "entry_type": "component",
+      "category": "layout",
+      "description": "Scroll Area component from shadcn-vue, the Vue port of shadcn/ui.",
+      "use_case": "Structure the page: dividers, footers, headers and empty states.",
+      "search_tags": [
+        "shadcnvue",
+        "vue",
+        "scroll",
+        "area",
+        "layout",
+        "shadcn-vue"
+      ],
+      "docs_url": "https://www.shadcn-vue.com/docs/components/scroll-area",
+      "stack": [
+        "vue",
+        "tailwind",
+        "reka-ui"
+      ],
+      "dependencies": [
+        "reka-ui",
+        "@vueuse/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Use when the project is Vue; for React prefer shadcn/ui or the React-only sources"
+      ],
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn-vue@latest add scroll-area",
+      "manual_steps": [
+        "Or copy the source from https://www.shadcn-vue.com/docs/components/scroll-area"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "shadcnvue-layout-separator",
+      "name": "shadcn-vue Separator",
+      "source": "shadcn-vue",
+      "entry_type": "component",
+      "category": "layout",
+      "description": "Separator component from shadcn-vue, the Vue port of shadcn/ui.",
+      "use_case": "Structure the page: dividers, footers, headers and empty states.",
+      "search_tags": [
+        "shadcnvue",
+        "vue",
+        "separator",
+        "layout",
+        "shadcn-vue"
+      ],
+      "docs_url": "https://www.shadcn-vue.com/docs/components/separator",
+      "stack": [
+        "vue",
+        "tailwind",
+        "reka-ui"
+      ],
+      "dependencies": [
+        "reka-ui",
+        "@vueuse/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Use when the project is Vue; for React prefer shadcn/ui or the React-only sources"
+      ],
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn-vue@latest add separator",
+      "manual_steps": [
+        "Or copy the source from https://www.shadcn-vue.com/docs/components/separator"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "shadcnvue-media-aspect-ratio",
+      "name": "shadcn-vue Aspect Ratio",
+      "source": "shadcn-vue",
+      "entry_type": "component",
+      "category": "media",
+      "description": "Aspect Ratio component from shadcn-vue, the Vue port of shadcn/ui.",
+      "use_case": "Display images, video, carousels and device mockups.",
+      "search_tags": [
+        "shadcnvue",
+        "vue",
+        "aspect",
+        "ratio",
+        "media",
+        "shadcn-vue"
+      ],
+      "docs_url": "https://www.shadcn-vue.com/docs/components/aspect-ratio",
+      "stack": [
+        "vue",
+        "tailwind",
+        "reka-ui"
+      ],
+      "dependencies": [
+        "reka-ui"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Use when the project is Vue; for React prefer shadcn/ui or the React-only sources"
+      ],
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn-vue@latest add aspect-ratio",
+      "manual_steps": [
+        "Or copy the source from https://www.shadcn-vue.com/docs/components/aspect-ratio"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "shadcnvue-media-carousel",
+      "name": "shadcn-vue Carousel",
+      "source": "shadcn-vue",
+      "entry_type": "component",
+      "category": "media",
+      "description": "Carousel component from shadcn-vue, the Vue port of shadcn/ui.",
+      "use_case": "Display images, video, carousels and device mockups.",
+      "search_tags": [
+        "shadcnvue",
+        "vue",
+        "carousel",
+        "media",
+        "shadcn-vue"
+      ],
+      "docs_url": "https://www.shadcn-vue.com/docs/components/carousel",
+      "stack": [
+        "vue",
+        "tailwind",
+        "reka-ui"
+      ],
+      "dependencies": [
+        "embla-carousel-vue",
+        "@vueuse/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Use when the project is Vue; for React prefer shadcn/ui or the React-only sources"
+      ],
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn-vue@latest add carousel",
+      "manual_steps": [
+        "Or copy the source from https://www.shadcn-vue.com/docs/components/carousel"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "shadcnvue-micro-interactions-accordion",
+      "name": "shadcn-vue Accordion",
+      "source": "shadcn-vue",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "Accordion component from shadcn-vue, the Vue port of shadcn/ui.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "shadcnvue",
+        "vue",
+        "accordion",
+        "micro-interactions",
+        "shadcn-vue"
+      ],
+      "docs_url": "https://www.shadcn-vue.com/docs/components/accordion",
+      "stack": [
+        "vue",
+        "tailwind",
+        "reka-ui"
+      ],
+      "dependencies": [
+        "reka-ui",
+        "@vueuse/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Use when the project is Vue; for React prefer shadcn/ui or the React-only sources"
+      ],
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn-vue@latest add accordion",
+      "manual_steps": [
+        "Or copy the source from https://www.shadcn-vue.com/docs/components/accordion"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "shadcnvue-micro-interactions-button",
+      "name": "shadcn-vue Button",
+      "source": "shadcn-vue",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "Button component from shadcn-vue, the Vue port of shadcn/ui.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "shadcnvue",
+        "vue",
+        "button",
+        "micro-interactions",
+        "shadcn-vue"
+      ],
+      "docs_url": "https://www.shadcn-vue.com/docs/components/button",
+      "stack": [
+        "vue",
+        "tailwind",
+        "reka-ui"
+      ],
+      "dependencies": [
+        "reka-ui"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Use when the project is Vue; for React prefer shadcn/ui or the React-only sources"
+      ],
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn-vue@latest add button",
+      "manual_steps": [
+        "Or copy the source from https://www.shadcn-vue.com/docs/components/button"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "shadcnvue-micro-interactions-button-group",
+      "name": "shadcn-vue Button Group",
+      "source": "shadcn-vue",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "Button Group component from shadcn-vue, the Vue port of shadcn/ui.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "shadcnvue",
+        "vue",
+        "button",
+        "group",
+        "micro-interactions",
+        "shadcn-vue"
+      ],
+      "docs_url": "https://www.shadcn-vue.com/docs/components/button-group",
+      "stack": [
+        "vue",
+        "tailwind",
+        "reka-ui"
+      ],
+      "dependencies": [
+        "reka-ui",
+        "@vueuse/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Use when the project is Vue; for React prefer shadcn/ui or the React-only sources"
+      ],
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn-vue@latest add button-group",
+      "manual_steps": [
+        "Or copy the source from https://www.shadcn-vue.com/docs/components/button-group"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "shadcnvue-micro-interactions-collapsible",
+      "name": "shadcn-vue Collapsible",
+      "source": "shadcn-vue",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "Collapsible component from shadcn-vue, the Vue port of shadcn/ui.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "shadcnvue",
+        "vue",
+        "collapsible",
+        "micro-interactions",
+        "shadcn-vue"
+      ],
+      "docs_url": "https://www.shadcn-vue.com/docs/components/collapsible",
+      "stack": [
+        "vue",
+        "tailwind",
+        "reka-ui"
+      ],
+      "dependencies": [
+        "reka-ui"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Use when the project is Vue; for React prefer shadcn/ui or the React-only sources"
+      ],
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn-vue@latest add collapsible",
+      "manual_steps": [
+        "Or copy the source from https://www.shadcn-vue.com/docs/components/collapsible"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "shadcnvue-micro-interactions-toggle",
+      "name": "shadcn-vue Toggle",
+      "source": "shadcn-vue",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "Toggle component from shadcn-vue, the Vue port of shadcn/ui.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "shadcnvue",
+        "vue",
+        "toggle",
+        "micro-interactions",
+        "shadcn-vue"
+      ],
+      "docs_url": "https://www.shadcn-vue.com/docs/components/toggle",
+      "stack": [
+        "vue",
+        "tailwind",
+        "reka-ui"
+      ],
+      "dependencies": [
+        "reka-ui",
+        "@vueuse/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Use when the project is Vue; for React prefer shadcn/ui or the React-only sources"
+      ],
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn-vue@latest add toggle",
+      "manual_steps": [
+        "Or copy the source from https://www.shadcn-vue.com/docs/components/toggle"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "shadcnvue-micro-interactions-toggle-group",
+      "name": "shadcn-vue Toggle Group",
+      "source": "shadcn-vue",
+      "entry_type": "component",
+      "category": "micro-interactions",
+      "description": "Toggle Group component from shadcn-vue, the Vue port of shadcn/ui.",
+      "use_case": "Add tactile feedback to interactive elements.",
+      "search_tags": [
+        "shadcnvue",
+        "vue",
+        "toggle",
+        "group",
+        "micro-interactions",
+        "shadcn-vue"
+      ],
+      "docs_url": "https://www.shadcn-vue.com/docs/components/toggle-group",
+      "stack": [
+        "vue",
+        "tailwind",
+        "reka-ui"
+      ],
+      "dependencies": [
+        "reka-ui",
+        "@vueuse/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Use when the project is Vue; for React prefer shadcn/ui or the React-only sources"
+      ],
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn-vue@latest add toggle-group",
+      "manual_steps": [
+        "Or copy the source from https://www.shadcn-vue.com/docs/components/toggle-group"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "shadcnvue-navigation-breadcrumb",
+      "name": "shadcn-vue Breadcrumb",
+      "source": "shadcn-vue",
+      "entry_type": "component",
+      "category": "navigation",
+      "description": "Breadcrumb component from shadcn-vue, the Vue port of shadcn/ui.",
+      "use_case": "Build site and app navigation structures that stay clear at any depth.",
+      "search_tags": [
+        "shadcnvue",
+        "vue",
+        "breadcrumb",
+        "navigation",
+        "shadcn-vue"
+      ],
+      "docs_url": "https://www.shadcn-vue.com/docs/components/breadcrumb",
+      "stack": [
+        "vue",
+        "tailwind",
+        "reka-ui"
+      ],
+      "dependencies": [
+        "reka-ui"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Use when the project is Vue; for React prefer shadcn/ui or the React-only sources"
+      ],
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn-vue@latest add breadcrumb",
+      "manual_steps": [
+        "Or copy the source from https://www.shadcn-vue.com/docs/components/breadcrumb"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "shadcnvue-navigation-menubar",
+      "name": "shadcn-vue Menubar",
+      "source": "shadcn-vue",
+      "entry_type": "component",
+      "category": "navigation",
+      "description": "Menubar component from shadcn-vue, the Vue port of shadcn/ui.",
+      "use_case": "Build site and app navigation structures that stay clear at any depth.",
+      "search_tags": [
+        "shadcnvue",
+        "vue",
+        "menubar",
+        "navigation",
+        "shadcn-vue"
+      ],
+      "docs_url": "https://www.shadcn-vue.com/docs/components/menubar",
+      "stack": [
+        "vue",
+        "tailwind",
+        "reka-ui"
+      ],
+      "dependencies": [
+        "reka-ui",
+        "@vueuse/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Use when the project is Vue; for React prefer shadcn/ui or the React-only sources"
+      ],
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn-vue@latest add menubar",
+      "manual_steps": [
+        "Or copy the source from https://www.shadcn-vue.com/docs/components/menubar"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "shadcnvue-navigation-navigation-menu",
+      "name": "shadcn-vue Navigation Menu",
+      "source": "shadcn-vue",
+      "entry_type": "component",
+      "category": "navigation",
+      "description": "Navigation Menu component from shadcn-vue, the Vue port of shadcn/ui.",
+      "use_case": "Build site and app navigation structures that stay clear at any depth.",
+      "search_tags": [
+        "shadcnvue",
+        "vue",
+        "navigation",
+        "menu",
+        "shadcn-vue"
+      ],
+      "docs_url": "https://www.shadcn-vue.com/docs/components/navigation-menu",
+      "stack": [
+        "vue",
+        "tailwind",
+        "reka-ui"
+      ],
+      "dependencies": [
+        "reka-ui",
+        "@vueuse/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Use when the project is Vue; for React prefer shadcn/ui or the React-only sources"
+      ],
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn-vue@latest add navigation-menu",
+      "manual_steps": [
+        "Or copy the source from https://www.shadcn-vue.com/docs/components/navigation-menu"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "shadcnvue-navigation-pagination",
+      "name": "shadcn-vue Pagination",
+      "source": "shadcn-vue",
+      "entry_type": "component",
+      "category": "navigation",
+      "description": "Pagination component from shadcn-vue, the Vue port of shadcn/ui.",
+      "use_case": "Build site and app navigation structures that stay clear at any depth.",
+      "search_tags": [
+        "shadcnvue",
+        "vue",
+        "pagination",
+        "navigation",
+        "shadcn-vue"
+      ],
+      "docs_url": "https://www.shadcn-vue.com/docs/components/pagination",
+      "stack": [
+        "vue",
+        "tailwind",
+        "reka-ui"
+      ],
+      "dependencies": [
+        "reka-ui",
+        "@vueuse/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Use when the project is Vue; for React prefer shadcn/ui or the React-only sources"
+      ],
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn-vue@latest add pagination",
+      "manual_steps": [
+        "Or copy the source from https://www.shadcn-vue.com/docs/components/pagination"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "shadcnvue-navigation-sidebar",
+      "name": "shadcn-vue Sidebar",
+      "source": "shadcn-vue",
+      "entry_type": "component",
+      "category": "navigation",
+      "description": "Sidebar component from shadcn-vue, the Vue port of shadcn/ui.",
+      "use_case": "Build site and app navigation structures that stay clear at any depth.",
+      "search_tags": [
+        "shadcnvue",
+        "vue",
+        "sidebar",
+        "navigation",
+        "shadcn-vue"
+      ],
+      "docs_url": "https://www.shadcn-vue.com/docs/components/sidebar",
+      "stack": [
+        "vue",
+        "tailwind",
+        "reka-ui"
+      ],
+      "dependencies": [
+        "reka-ui",
+        "@vueuse/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Use when the project is Vue; for React prefer shadcn/ui or the React-only sources"
+      ],
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn-vue@latest add sidebar",
+      "manual_steps": [
+        "Or copy the source from https://www.shadcn-vue.com/docs/components/sidebar"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "shadcnvue-navigation-stepper",
+      "name": "shadcn-vue Stepper",
+      "source": "shadcn-vue",
+      "entry_type": "component",
+      "category": "navigation",
+      "description": "Stepper component from shadcn-vue, the Vue port of shadcn/ui.",
+      "use_case": "Build site and app navigation structures that stay clear at any depth.",
+      "search_tags": [
+        "shadcnvue",
+        "vue",
+        "stepper",
+        "navigation",
+        "shadcn-vue"
+      ],
+      "docs_url": "https://www.shadcn-vue.com/docs/components/stepper",
+      "stack": [
+        "vue",
+        "tailwind",
+        "reka-ui"
+      ],
+      "dependencies": [
+        "reka-ui",
+        "@vueuse/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Use when the project is Vue; for React prefer shadcn/ui or the React-only sources"
+      ],
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn-vue@latest add stepper",
+      "manual_steps": [
+        "Or copy the source from https://www.shadcn-vue.com/docs/components/stepper"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "shadcnvue-navigation-tabs",
+      "name": "shadcn-vue Tabs",
+      "source": "shadcn-vue",
+      "entry_type": "component",
+      "category": "navigation",
+      "description": "Tabs component from shadcn-vue, the Vue port of shadcn/ui.",
+      "use_case": "Build site and app navigation structures that stay clear at any depth.",
+      "search_tags": [
+        "shadcnvue",
+        "vue",
+        "tabs",
+        "navigation",
+        "shadcn-vue"
+      ],
+      "docs_url": "https://www.shadcn-vue.com/docs/components/tabs",
+      "stack": [
+        "vue",
+        "tailwind",
+        "reka-ui"
+      ],
+      "dependencies": [
+        "reka-ui",
+        "@vueuse/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Use when the project is Vue; for React prefer shadcn/ui or the React-only sources"
+      ],
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn-vue@latest add tabs",
+      "manual_steps": [
+        "Or copy the source from https://www.shadcn-vue.com/docs/components/tabs"
+      ],
+      "quality": 85
+    },
+    {
+      "id": "shadcnvue-overlay-alert-dialog",
+      "name": "shadcn-vue Alert Dialog",
+      "source": "shadcn-vue",
+      "entry_type": "component",
+      "category": "overlay",
+      "description": "Alert Dialog component from shadcn-vue, the Vue port of shadcn/ui.",
+      "use_case": "Present dialogs, drawers and popovers without leaving the page.",
+      "search_tags": [
+        "shadcnvue",
+        "vue",
+        "alert",
+        "dialog",
+        "overlay",
+        "shadcn-vue"
+      ],
+      "docs_url": "https://www.shadcn-vue.com/docs/components/alert-dialog",
+      "stack": [
+        "vue",
+        "tailwind",
+        "reka-ui"
+      ],
+      "dependencies": [
+        "reka-ui",
+        "@vueuse/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Use when the project is Vue; for React prefer shadcn/ui or the React-only sources"
+      ],
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn-vue@latest add alert-dialog",
+      "manual_steps": [
+        "Or copy the source from https://www.shadcn-vue.com/docs/components/alert-dialog"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "shadcnvue-overlay-command",
+      "name": "shadcn-vue Command",
+      "source": "shadcn-vue",
+      "entry_type": "component",
+      "category": "overlay",
+      "description": "Command component from shadcn-vue, the Vue port of shadcn/ui.",
+      "use_case": "Present dialogs, drawers and popovers without leaving the page.",
+      "search_tags": [
+        "shadcnvue",
+        "vue",
+        "command",
+        "overlay",
+        "shadcn-vue"
+      ],
+      "docs_url": "https://www.shadcn-vue.com/docs/components/command",
+      "stack": [
+        "vue",
+        "tailwind",
+        "reka-ui"
+      ],
+      "dependencies": [
+        "reka-ui",
+        "@vueuse/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Use when the project is Vue; for React prefer shadcn/ui or the React-only sources"
+      ],
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn-vue@latest add command",
+      "manual_steps": [
+        "Or copy the source from https://www.shadcn-vue.com/docs/components/command"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "shadcnvue-overlay-context-menu",
+      "name": "shadcn-vue Context Menu",
+      "source": "shadcn-vue",
+      "entry_type": "component",
+      "category": "overlay",
+      "description": "Context Menu component from shadcn-vue, the Vue port of shadcn/ui.",
+      "use_case": "Present dialogs, drawers and popovers without leaving the page.",
+      "search_tags": [
+        "shadcnvue",
+        "vue",
+        "context",
+        "menu",
+        "overlay",
+        "shadcn-vue"
+      ],
+      "docs_url": "https://www.shadcn-vue.com/docs/components/context-menu",
+      "stack": [
+        "vue",
+        "tailwind",
+        "reka-ui"
+      ],
+      "dependencies": [
+        "reka-ui",
+        "@vueuse/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Use when the project is Vue; for React prefer shadcn/ui or the React-only sources"
+      ],
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn-vue@latest add context-menu",
+      "manual_steps": [
+        "Or copy the source from https://www.shadcn-vue.com/docs/components/context-menu"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "shadcnvue-overlay-dialog",
+      "name": "shadcn-vue Dialog",
+      "source": "shadcn-vue",
+      "entry_type": "component",
+      "category": "overlay",
+      "description": "Dialog component from shadcn-vue, the Vue port of shadcn/ui.",
+      "use_case": "Present dialogs, drawers and popovers without leaving the page.",
+      "search_tags": [
+        "shadcnvue",
+        "vue",
+        "dialog",
+        "overlay",
+        "shadcn-vue"
+      ],
+      "docs_url": "https://www.shadcn-vue.com/docs/components/dialog",
+      "stack": [
+        "vue",
+        "tailwind",
+        "reka-ui"
+      ],
+      "dependencies": [
+        "reka-ui",
+        "@vueuse/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Use when the project is Vue; for React prefer shadcn/ui or the React-only sources"
+      ],
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn-vue@latest add dialog",
+      "manual_steps": [
+        "Or copy the source from https://www.shadcn-vue.com/docs/components/dialog"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "shadcnvue-overlay-drawer",
+      "name": "shadcn-vue Drawer",
+      "source": "shadcn-vue",
+      "entry_type": "component",
+      "category": "overlay",
+      "description": "Drawer component from shadcn-vue, the Vue port of shadcn/ui.",
+      "use_case": "Present dialogs, drawers and popovers without leaving the page.",
+      "search_tags": [
+        "shadcnvue",
+        "vue",
+        "drawer",
+        "overlay",
+        "shadcn-vue"
+      ],
+      "docs_url": "https://www.shadcn-vue.com/docs/components/drawer",
+      "stack": [
+        "vue",
+        "tailwind",
+        "reka-ui"
+      ],
+      "dependencies": [
+        "reka-ui",
+        "@vueuse/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Use when the project is Vue; for React prefer shadcn/ui or the React-only sources"
+      ],
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn-vue@latest add drawer",
+      "manual_steps": [
+        "Or copy the source from https://www.shadcn-vue.com/docs/components/drawer"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "shadcnvue-overlay-dropdown-menu",
+      "name": "shadcn-vue Dropdown Menu",
+      "source": "shadcn-vue",
+      "entry_type": "component",
+      "category": "overlay",
+      "description": "Dropdown Menu component from shadcn-vue, the Vue port of shadcn/ui.",
+      "use_case": "Present dialogs, drawers and popovers without leaving the page.",
+      "search_tags": [
+        "shadcnvue",
+        "vue",
+        "dropdown",
+        "menu",
+        "overlay",
+        "shadcn-vue"
+      ],
+      "docs_url": "https://www.shadcn-vue.com/docs/components/dropdown-menu",
+      "stack": [
+        "vue",
+        "tailwind",
+        "reka-ui"
+      ],
+      "dependencies": [
+        "reka-ui",
+        "@vueuse/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Use when the project is Vue; for React prefer shadcn/ui or the React-only sources"
+      ],
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn-vue@latest add dropdown-menu",
+      "manual_steps": [
+        "Or copy the source from https://www.shadcn-vue.com/docs/components/dropdown-menu"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "shadcnvue-overlay-hover-card",
+      "name": "shadcn-vue Hover Card",
+      "source": "shadcn-vue",
+      "entry_type": "component",
+      "category": "overlay",
+      "description": "Hover Card component from shadcn-vue, the Vue port of shadcn/ui.",
+      "use_case": "Present dialogs, drawers and popovers without leaving the page.",
+      "search_tags": [
+        "shadcnvue",
+        "vue",
+        "hover",
+        "card",
+        "overlay",
+        "shadcn-vue"
+      ],
+      "docs_url": "https://www.shadcn-vue.com/docs/components/hover-card",
+      "stack": [
+        "vue",
+        "tailwind",
+        "reka-ui"
+      ],
+      "dependencies": [
+        "reka-ui",
+        "@vueuse/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Use when the project is Vue; for React prefer shadcn/ui or the React-only sources"
+      ],
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn-vue@latest add hover-card",
+      "manual_steps": [
+        "Or copy the source from https://www.shadcn-vue.com/docs/components/hover-card"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "shadcnvue-overlay-popover",
+      "name": "shadcn-vue Popover",
+      "source": "shadcn-vue",
+      "entry_type": "component",
+      "category": "overlay",
+      "description": "Popover component from shadcn-vue, the Vue port of shadcn/ui.",
+      "use_case": "Present dialogs, drawers and popovers without leaving the page.",
+      "search_tags": [
+        "shadcnvue",
+        "vue",
+        "popover",
+        "overlay",
+        "shadcn-vue"
+      ],
+      "docs_url": "https://www.shadcn-vue.com/docs/components/popover",
+      "stack": [
+        "vue",
+        "tailwind",
+        "reka-ui"
+      ],
+      "dependencies": [
+        "reka-ui",
+        "@vueuse/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Use when the project is Vue; for React prefer shadcn/ui or the React-only sources"
+      ],
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn-vue@latest add popover",
+      "manual_steps": [
+        "Or copy the source from https://www.shadcn-vue.com/docs/components/popover"
+      ],
+      "quality": 90
+    },
+    {
+      "id": "shadcnvue-overlay-sheet",
+      "name": "shadcn-vue Sheet",
+      "source": "shadcn-vue",
+      "entry_type": "component",
+      "category": "overlay",
+      "description": "Sheet component from shadcn-vue, the Vue port of shadcn/ui.",
+      "use_case": "Present dialogs, drawers and popovers without leaving the page.",
+      "search_tags": [
+        "shadcnvue",
+        "vue",
+        "sheet",
+        "overlay",
+        "shadcn-vue"
+      ],
+      "docs_url": "https://www.shadcn-vue.com/docs/components/sheet",
+      "stack": [
+        "vue",
+        "tailwind",
+        "reka-ui"
+      ],
+      "dependencies": [
+        "reka-ui",
+        "@vueuse/core"
+      ],
+      "license_type": "MIT",
+      "commercial_use": true,
+      "free": true,
+      "verified_at": "2026-10-04",
+      "decision_hints": [
+        "Use when the project is Vue; for React prefer shadcn/ui or the React-only sources"
+      ],
+      "install_method": "shadcn-cli",
+      "install_command": "npx shadcn-vue@latest add sheet",
+      "manual_steps": [
+        "Or copy the source from https://www.shadcn-vue.com/docs/components/sheet"
+      ],
+      "quality": 85
+    }
+  ]
+}
