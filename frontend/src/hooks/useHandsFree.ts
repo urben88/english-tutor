@@ -58,7 +58,7 @@ export function useHandsFree({ mic, enabled, muted, paused, onAudio, onError }: 
         const v = vad.current;
         if (!v || deaf.current) return;
         const r = v.push(frame);
-        setLevel(r.level);
+        setLevel(Math.round(r.level * 120) / 120); // coarse steps: no re-render per audio frame
         setHearing(r.speaking);
         if (!r.utterance) return;
         const samples = r.utterance;

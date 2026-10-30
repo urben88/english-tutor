@@ -13,9 +13,11 @@ interface Options {
   onAudio: (wav: Blob) => Promise<void>;
   onError: (message: string) => void;
   disabled?: boolean;
+  /** Muting while recording drops the recording: nothing is sent. */
+  muted?: boolean;
 }
 
-export function useHoldToTalk({ recorder, onAudio, onError, disabled = false }: Options) {
+export function useHoldToTalk({ recorder, onAudio, onError, disabled = false, muted = false }: Options) {
   const [state, setState] = useState<TalkState>("idle");
   const phase = useRef<TalkState>("idle");
   const startedAt = useRef(0);
@@ -63,6 +65,12 @@ export function useHoldToTalk({ recorder, onAudio, onError, disabled = false }: 
       set("idle");
     }
   }, [recorder]);
+
+  useEffect(() => {
+    if (!muted || phase.current !== "listening") return;
+    set("idle");
+    void starting.current?.then(() => recorder.cancel()).catch(() => {});
+  }, [muted, recorder]);
 
   useEffect(() => {
     const down = (e: KeyboardEvent) => {

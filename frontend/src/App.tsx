@@ -1,8 +1,5 @@
-import { useEffect, useMemo, useRef, useState } from "react";
-import { ConversationalAssistantView, supportsWebGL } from "../../3d/conversational-assistant/src/react";
-import type { ConversationalAssistant, ElementConfig } from "../../3d/conversational-assistant/src/types";
-import assistantConfig from "../../3d/conversational-assistant/config/element.config.json";
-import assistantModelUrl from "../../3d/conversational-assistant/assets/models/conversational-assistant.glb?url";
+import { lazy, Suspense, useCallback, useEffect, useMemo, useRef, useState } from "react";
+import type { ConversationalAssistant } from "../../3d/conversational-assistant/src/types";
 import { createApi, type TutorApi } from "./api/client";
 import type { Id, StudyItem } from "./api/types";
 import { createBrowserMic, type Mic } from "./audio/mic";
@@ -14,7 +11,7 @@ import { MobileTabs, type Area } from "./components/molecules/MobileTabs";
 import { ModeSwitch } from "./components/molecules/ModeSwitch";
 import { SessionSwitcher } from "./components/molecules/SessionSwitcher";
 import { Subtitles } from "./components/molecules/Subtitles";
-import { CharacterStage, toCharacterState } from "./components/organisms/CharacterStage";
+import { CharacterStage, StagePlaceholder, toCharacterState } from "./components/organisms/CharacterStage";
 import { Controls } from "./components/organisms/Controls";
 import { ExplanationPanel } from "./components/organisms/ExplanationPanel";
 import { StudyPanel } from "./components/organisms/StudyPanel";
@@ -28,6 +25,10 @@ import { useHoldToTalk } from "./hooks/useHoldToTalk";
 import { useMute } from "./hooks/useMute";
 import { useVoiceMode } from "./hooks/useVoiceMode";
 import { useTutor } from "./hooks/useTutor";
+import { supportsWebGL } from "./webgl";
+
+// three + the model are code-split: they download after the first paint, behind the placeholder.
+const Avatar3D = lazy(() => import("./components/organisms/Avatar3D"));
 
 interface Props {
   api?: TutorApi;
@@ -36,12 +37,11 @@ interface Props {
   player?: Player;
 }
 
-const avatarConfig = assistantConfig as unknown as ElementConfig; // module scope: stable reference, no remounts
-
 /** Container: wires the API, audio and state hooks to the presentational components. */
 export function App(props: Props) {
   const avatar = useRef<ConversationalAssistant | null>(null);
   const [avatarFailed, setAvatarFailed] = useState(false);
+  const onAvatarError = useCallback(() => setAvatarFailed(true), []);
   const api = useMemo(() => props.api ?? createApi(), [props.api]);
   const recorder = useMemo(() => props.recorder ?? createBrowserRecorder(), [props.recorder]);
   const mic = useMemo(() => props.mic ?? createBrowserMic(), [props.mic]);
@@ -64,6 +64,7 @@ export function App(props: Props) {
     onAudio: tutor.sendVoice,
     onError: tutor.setError,
     disabled: !tutor.ready || tutor.busy || muted || handsFreeMode,
+    muted,
   });
   const free = useHandsFree({
     mic,
@@ -74,17 +75,21 @@ export function App(props: Props) {
     onError: tutor.setError,
   });
 
-  const status: VoiceStatus = muted
-    ? "muted"
-    : tutor.speaking
-      ? "speaking"
-      : tutor.busy || free.processing || talk.state === "thinking"
-        ? "thinking"
+  // Mute only silences the microphone: a turn in progress (thinking, speaking) keeps showing.
+  const status: VoiceStatus = tutor.speaking
+    ? "speaking"
+    : tutor.busy || free.processing || talk.state === "thinking"
+      ? "thinking"
+      : muted
+        ? "muted"
         : free.hearing || talk.state === "listening"
           ? "hearing"
           : handsFreeMode && !free.micError
             ? "listening"
             : "idle";
+
+  const characterState = toCharacterState(status);
+  const showAvatar = useMemo(() => !avatarFailed && supportsWebGL(), [avatarFailed]);
 
   useEffect(() => {
     if (highlight === null) return;
@@ -144,15 +149,11 @@ export function App(props: Props) {
       )}
       <main className="main">
         <section className="center">
-          <CharacterStage state={toCharacterState(status)}>
-            {!avatarFailed && supportsWebGL() ? (
-              <ConversationalAssistantView
-                ref={avatar}
-                config={avatarConfig}
-                modelUrl={assistantModelUrl}
-                state={toCharacterState(status)}
-                onError={() => setAvatarFailed(true)}
-              />
+          <CharacterStage state={characterState}>
+            {showAvatar ? (
+              <Suspense fallback={<StagePlaceholder />}>
+                <Avatar3D avatarRef={avatar} state={characterState} onError={onAvatarError} />
+              </Suspense>
             ) : undefined}
           </CharacterStage>
           <Subtitles messages={tutor.messages} {...actions} />

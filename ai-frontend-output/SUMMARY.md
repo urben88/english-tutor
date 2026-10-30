@@ -1,9 +1,9 @@
 # Selection Summary
 
-Generated 2026-10-30T13:30:10.662Z · project `english-tutor`
+Generated 2026-10-30T14:27:33.488Z · project `english-tutor`
 
-- Decisions recorded: **6** (latest per block: 6)
-- Blocks covered: 6
+- Decisions recorded: **7** (latest per block: 7)
+- Blocks covered: 7
 - Combinations saved: 0
 
 ## Latest decision per screen/block
@@ -16,6 +16,7 @@ Generated 2026-10-30T13:30:10.662Z · project `english-tutor`
 | console | transcript-drawer | adapt | shadcn-overlay-drawer | shadcn/ui | MIT | — |
 | console | voice-status | build | Custom voice-status | — | — | — |
 | experience | direction | adapt | direction:video-call-subtitles | — | — | direction:video-call-subtitles |
+| stage | textures | build | CSS grain + paper panel + classroom webp image-set | — | — | — |
 
 ## Styles extracted
 
@@ -27,6 +28,7 @@ shadcn/ui (2)
 
 ## Recent decisions
 
+- 2026-10-30 · stage/textures · build · CSS grain + paper panel + classroom webp image-set
 - 2026-10-30 · console/study-panel · build · Custom study-panel
 - 2026-10-30 · console/character-stage · build · Custom character-stage
 - 2026-10-30 · console/voice-status · build · Custom voice-status

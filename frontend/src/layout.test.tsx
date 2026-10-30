@@ -49,6 +49,11 @@ describe("CharacterStage", () => {
     expect(stage).toHaveAttribute("data-state", "speaking");
   });
 
+  it("carries the classroom backdrop class (CSS image, outside the JS bundle)", () => {
+    render(<CharacterStage state="idle" />);
+    expect(screen.getByTestId("character-stage")).toHaveClass("stage-classroom");
+  });
+
   it("renders children instead of the placeholder", () => {
     render(
       <CharacterStage state="thinking">

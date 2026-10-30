@@ -139,6 +139,24 @@ describe("hold to talk", () => {
     expect(api.voiceTurn).toHaveBeenCalledWith(1, expect.any(Blob));
   });
 
+  it("muting while recording drops the recording and sends nothing", async () => {
+    const api = fakeApi();
+    const recorder = fakeRecorder();
+    render(<App api={api} recorder={recorder} player={player} />);
+    const talk = await screen.findByRole("button", { name: /hold to talk/i });
+    await waitFor(() => expect(talk).toBeEnabled());
+    fireEvent.keyDown(window, { code: "Space", key: " " });
+    await waitFor(() => expect(talk).toHaveAttribute("data-state", "listening"));
+    fireEvent.click(screen.getByRole("button", { name: /mute/i }));
+    await waitFor(() => expect(recorder.cancel).toHaveBeenCalled());
+    nowMs += 800;
+    await act(async () => {
+      fireEvent.keyUp(window, { code: "Space", key: " " });
+    });
+    expect(recorder.stop).not.toHaveBeenCalled();
+    expect(api.voiceTurn).not.toHaveBeenCalled();
+  });
+
   it("ignores Space while typing in the text input", async () => {
     const recorder = fakeRecorder();
     render(<App api={fakeApi()} recorder={recorder} player={player} />);
@@ -224,6 +242,54 @@ describe("hands-free", () => {
     expect(status()).toHaveTextContent("Listening"); // typing an m does not mute
     fireEvent.keyDown(window, { code: "KeyM", key: "m" });
     expect(status()).toHaveTextContent("Muted");
+  });
+
+  it("muting while the tutor speaks keeps the turn and the playback going (mic only)", async () => {
+    let endPlayback: () => void = () => {};
+    const slowPlayer: Player = {
+      play: vi.fn(() => new Promise<void>((r) => (endPlayback = r))),
+      stop: vi.fn(() => endPlayback()),
+    };
+    const api = fakeApi({
+      voiceTurn: vi.fn().mockResolvedValue({ user_text: "a", reply_text: "b", audio: "QUJD", sample_rate: 16000 }),
+    });
+    const { mic, say } = fakeMic();
+    render(<App api={api} recorder={fakeRecorder()} mic={mic} player={slowPlayer} />);
+    await screen.findByRole("button", { name: "world" });
+    await waitFor(() => expect(status()).toHaveTextContent("Listening"));
+    await say();
+    await waitFor(() => expect(status()).toHaveTextContent("Speaking"));
+    fireEvent.click(screen.getByRole("button", { name: /mute/i }));
+    expect(status()).toHaveTextContent("Speaking"); // still speaking, not "Muted"
+    expect(slowPlayer.stop).not.toHaveBeenCalled();
+    expect(screen.getByRole("button", { name: /stop/i })).toBeEnabled();
+    expect(screen.getByTestId("character-stage")).toHaveAttribute("data-state", "speaking");
+    await say(); // muted mic sends nothing
+    expect(api.voiceTurn).toHaveBeenCalledTimes(1);
+    await act(async () => endPlayback());
+    await waitFor(() => expect(status()).toHaveTextContent("Muted")); // done speaking: mic still muted
+  });
+
+  it("muting while the tutor thinks keeps it thinking and the reply still arrives", async () => {
+    let finish: (v: unknown) => void = () => {};
+    const api = fakeApi({
+      textTurn: vi.fn(() => new Promise((r) => (finish = r))) as unknown as TutorApi["textTurn"],
+    });
+    const { mic } = fakeMic();
+    render(<App api={api} recorder={fakeRecorder()} mic={mic} player={player} />);
+    await screen.findByRole("button", { name: "world" });
+    await waitFor(() => expect(status()).toHaveTextContent("Listening"));
+    fireEvent.change(screen.getByRole("textbox"), { target: { value: "hello" } });
+    fireEvent.submit(screen.getByRole("textbox").closest("form")!);
+    await waitFor(() => expect(status()).toHaveTextContent("Thinking"));
+    fireEvent.click(screen.getByRole("button", { name: /mute/i }));
+    expect(status()).toHaveTextContent("Thinking");
+    expect(screen.getByTestId("character-stage")).toHaveAttribute("data-state", "thinking");
+    await act(async () =>
+      finish({ user_text: "hello", reply_text: "yo", audio: "QUJD", sample_rate: 16000 }),
+    );
+    await waitFor(() => expect(player.play).toHaveBeenCalledWith("QUJD"));
+    await waitFor(() => expect(status()).toHaveTextContent("Muted"));
   });
 
   it("the mode switch persists in localStorage and releases the mic", async () => {

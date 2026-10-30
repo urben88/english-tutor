@@ -17,6 +17,15 @@ export function toCharacterState(status: VoiceStatus): CharacterState {
   }
 }
 
+/** CSS orb shown while the 3D tutor loads, or when WebGL is missing. */
+export function StagePlaceholder() {
+  return (
+    <div className="orb" data-testid="character-placeholder" aria-hidden="true">
+      <span className="orb-core" />
+    </div>
+  );
+}
+
 interface Props {
   state: CharacterState;
   /** Mount point for the 3D model: children replace the placeholder. */
@@ -26,13 +35,9 @@ interface Props {
 /** Center stage. `data-state` mirrors `state` so any renderer (CSS, canvas, 3D) can react to it. */
 export function CharacterStage({ state, children }: Props) {
   return (
-    <div className="stage" data-testid="character-stage" data-state={state}>
+    <div className="stage stage-classroom" data-testid="character-stage" data-state={state}>
       <div className="stage-mount" id="character-mount" data-testid="character-mount">
-        {children ?? (
-          <div className="orb" data-testid="character-placeholder" aria-hidden="true">
-            <span className="orb-core" />
-          </div>
-        )}
+        {children ?? <StagePlaceholder />}
       </div>
     </div>
   );

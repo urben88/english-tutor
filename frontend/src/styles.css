@@ -25,6 +25,12 @@
   --radius-lg: 16px;
   --ease: cubic-bezier(0.2, 0.8, 0.2, 1);
   --shadow: 0 8px 30px rgba(60, 35, 20, 0.18);
+  --shadow-soft: 0 1px 2px rgba(60, 35, 20, 0.08), 0 6px 18px rgba(60, 35, 20, 0.08);
+  --grain-opacity: 0.07;
+  --stage-dim: rgba(255, 244, 228, 0);
+  --stage-veil: rgba(248, 241, 231, 0.55);
+  /* Small inline noise tile (SVG feTurbulence): grain for stage, panels and background. */
+  --grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .9 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
   font-family: var(--font);
   color: var(--color-ink);
   background: var(--color-bg);
@@ -45,10 +51,17 @@
     --color-focus: #8cb8ff;
     --color-highlight: #6b4f1a;
     --shadow: 0 8px 30px rgba(0, 0, 0, 0.5);
+    --shadow-soft: 0 1px 2px rgba(0, 0, 0, 0.35), 0 6px 18px rgba(0, 0, 0, 0.3);
+    --grain-opacity: 0.12;
+    --stage-dim: rgba(14, 10, 8, 0.42);
+    --stage-veil: rgba(27, 20, 17, 0.6);
   }
 }
 * { box-sizing: border-box; }
-body { margin: 0; background: var(--color-bg); }
+body { margin: 0; background: radial-gradient(1200px 700px at 15% -10%, color-mix(in srgb, var(--color-accent) 10%, transparent), transparent 60%), radial-gradient(900px 600px at 100% 100%, color-mix(in srgb, var(--color-ok) 9%, transparent), transparent 60%), var(--color-bg); background-attachment: fixed; }
+/* Grain over everything, below interaction (pointer-events none). */
+body::after { content: ""; position: fixed; inset: 0; pointer-events: none; z-index: 50; background-image: var(--grain); opacity: var(--grain-opacity); mix-blend-mode: multiply; }
+@media (prefers-color-scheme: dark) { body::after { mix-blend-mode: screen; opacity: 0.05; } }
 h1, h2, h3 { margin: 0; }
 .muted { color: var(--color-ink-muted); }
 .error { color: var(--color-danger); }
@@ -62,11 +75,11 @@ h1, h2, h3 { margin: 0; }
 .sessions select { font: inherit; max-width: 15rem; padding: 0.4rem 0.6rem; border-radius: var(--radius-sm); border: 1px solid var(--color-border); background: var(--color-surface); color: inherit; }
 .main { flex: 1; min-height: 0; display: grid; grid-template-columns: minmax(0, 1fr) 22rem; grid-template-rows: minmax(0, 1fr) auto; grid-template-areas: "center study" "dock study"; gap: var(--space-3) var(--space-4); }
 .center { grid-area: center; min-height: 0; display: flex; flex-direction: column; gap: var(--space-3); }
-.dock { grid-area: dock; background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: var(--space-3); }
+.dock { grid-area: dock; background: linear-gradient(180deg, color-mix(in srgb, var(--color-surface) 92%, white), var(--color-surface)); border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: var(--space-3); box-shadow: var(--shadow-soft); }
 .study { grid-area: study; min-height: 0; overflow-y: auto; }
 
 /* Buttons */
-.btn { font: inherit; padding: 0.45rem 0.9rem; border: 1px solid var(--color-border); border-radius: var(--radius-sm); background: var(--color-surface); color: inherit; cursor: pointer; transition: background-color 160ms var(--ease), border-color 160ms var(--ease), transform 160ms var(--ease); }
+.btn { box-shadow: 0 1px 0 color-mix(in srgb, white 50%, transparent) inset, 0 1px 2px rgba(60, 35, 20, 0.1); font: inherit; padding: 0.45rem 0.9rem; border: 1px solid var(--color-border); border-radius: var(--radius-sm); background: var(--color-surface); color: inherit; cursor: pointer; transition: background-color 160ms var(--ease), border-color 160ms var(--ease), transform 160ms var(--ease); }
 .btn:hover:not(:disabled) { border-color: var(--color-accent); background: var(--color-surface-2); }
 .btn:active:not(:disabled) { transform: scale(0.97); }
 .btn:disabled { opacity: 0.5; cursor: default; }
@@ -75,7 +88,11 @@ h1, h2, h3 { margin: 0; }
 .btn:focus-visible, .talk:focus-visible, .composer input:focus-visible, .sessions select:focus-visible, .tab:focus-visible, .word:focus-visible { outline: 3px solid var(--color-focus); outline-offset: 2px; }
 
 /* Stage: the character is the single high-impact element. */
-.stage { flex: 1; min-height: 12rem; display: grid; place-items: center; border-radius: var(--radius-lg); background: radial-gradient(ellipse at 50% 60%, var(--color-surface-2), var(--color-bg) 70%); border: 1px solid var(--color-border); overflow: hidden; }
+.stage { position: relative; flex: 1; min-height: 12rem; display: grid; place-items: center; border-radius: var(--radius-lg); background: radial-gradient(ellipse at 50% 60%, var(--color-surface-2), var(--color-bg) 70%); border: 1px solid var(--color-border); box-shadow: var(--shadow); overflow: hidden; }
+/* Classroom backdrop (S8): lazy by nature (CSS image, not in the JS bundle), cover, centred on the character. */
+.stage-classroom { background-color: var(--color-surface-2); background-image: linear-gradient(180deg, transparent 55%, var(--stage-veil) 100%), linear-gradient(var(--stage-dim), var(--stage-dim)), url("./assets/classroom-800.webp"); background-image: linear-gradient(180deg, transparent 55%, var(--stage-veil) 100%), linear-gradient(var(--stage-dim), var(--stage-dim)), image-set(url("./assets/classroom-800.webp") type("image/webp") 1x, url("./assets/classroom-1600.webp") type("image/webp") 2x); background-size: cover; background-position: center; background-repeat: no-repeat; }
+.stage::after { content: ""; position: absolute; inset: 0; pointer-events: none; background-image: var(--grain); opacity: var(--grain-opacity); mix-blend-mode: multiply; border-radius: inherit; box-shadow: inset 0 0 90px rgba(30, 15, 5, 0.22); }
+.stage > * { position: relative; z-index: 1; }
 .stage-mount { width: 100%; height: 100%; display: grid; place-items: center; }
 .orb { width: min(14rem, 38vh); aspect-ratio: 1; border-radius: 999px; display: grid; place-items: center; background: color-mix(in srgb, var(--color-accent) 22%, transparent); transition: transform 240ms var(--ease), background-color 240ms var(--ease); animation: breathe 4s ease-in-out infinite; }
 .orb-core { width: 62%; aspect-ratio: 1; border-radius: 999px; background: var(--color-accent); box-shadow: 0 0 0 0 color-mix(in srgb, var(--color-accent) 40%, transparent); }
@@ -88,7 +105,7 @@ h1, h2, h3 { margin: 0; }
 @keyframes speak { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.1); } }
 
 /* Subtitles: large, clickable; scroll inside if long. */
-.subtitles { max-height: 28vh; overflow-y: auto; padding: var(--space-3) var(--space-4); text-align: center; }
+.subtitles { background: color-mix(in srgb, var(--color-surface) 70%, transparent); border: 1px solid var(--color-border); border-radius: var(--radius-lg); box-shadow: var(--shadow-soft); max-height: 28vh; overflow-y: auto; padding: var(--space-3) var(--space-4); text-align: center; }
 .subtitles .you { margin: 0 0 var(--space-2); color: var(--color-ink-muted); font-size: 0.9375rem; }
 .caption { font-size: clamp(1.25rem, 2.2vw, 1.75rem); line-height: 1.45; }
 .caption .bubble-text { margin: 0; overflow-wrap: anywhere; }
@@ -116,7 +133,9 @@ h1, h2, h3 { margin: 0; }
 .bubble-text { margin: 2px 0 0; line-height: 1.5; overflow-wrap: anywhere; }
 
 /* Study panel (right) */
-.panel { background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: var(--space-4); }
+.panel { background: var(--grain), linear-gradient(180deg, color-mix(in srgb, var(--color-surface) 94%, white), var(--color-surface)); background-blend-mode: multiply, normal; border: 1px solid var(--color-border); border-radius: var(--radius-lg); padding: var(--space-4); box-shadow: var(--shadow-soft); }
+/* Paper-like study panel: faint ruled lines and a warm edge. */
+.study.panel { background-image: repeating-linear-gradient(180deg, transparent 0 1.7rem, color-mix(in srgb, var(--color-border) 45%, transparent) 1.7rem calc(1.7rem + 1px)), linear-gradient(180deg, color-mix(in srgb, var(--color-surface) 94%, white), var(--color-surface)); background-attachment: local, scroll; box-shadow: var(--shadow-soft), inset 3px 0 0 color-mix(in srgb, var(--color-accent) 35%, transparent); }
 .panel-head { display: flex; justify-content: space-between; align-items: center; }
 .panel h2 { font-size: 1.125rem; }
 .study > h2 { margin-bottom: var(--space-3); }
