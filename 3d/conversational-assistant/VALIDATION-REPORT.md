@@ -73,3 +73,16 @@ All required bones and morphs are present. Every morph's default weight is 0. Wi
 - **Hand-to-chin is approximate.** The thinking pose was tuned by eye in one framing. Speaking gestures are random, not tied to the words. Wide gestures can reach the edge of a narrow tile.
 - **Visemes are inferred from loudness and brightness, not phonemes.** The TTS gives no timings.
 - **No `.vrm` export.** The reasons are in `CHARACTER-OR-ASSET-SPEC.md`.
+
+## Update 2026-10-30: mouse, click and new gestures
+
+| Check | Result |
+|---|---|
+| Head and eyes turn toward the mouse (upper-right test) | ✅ watched in Chromium |
+| Click on the canvas plays a reaction; `react()` resolves after returning to idle | ✅ 2168 ms |
+| New gestures: scratch_nose (index on nose), scratch_head, raise_finger, thumbs_up, shrug | ✅ poses tuned from screenshots |
+| Speaking: wider mouth plus brows, eyes and head on emphasis | ✅ watched in Chromium |
+| Frontend `tsc --noEmit` covers the 3D sources | ✅ 0 errors |
+| No console warnings or errors | ✅ |
+
+Not tested: touch devices. Touch pointers are ignored on purpose, so on a phone the head does not follow the finger; tapping still plays a reaction.

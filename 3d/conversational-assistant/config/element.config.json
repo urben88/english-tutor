@@ -23,7 +23,13 @@
     "viseme": 22,
     "blink": 40
   },
-  "lipSync": { "gain": 1.7, "audioGain": 6.5, "floor": 0.55 },
+  "lipSync": { "gain": 2.3, "audioGain": 7.5, "floor": 0.6, "emphasis": 1.3 },
+  "pointer": {
+    "enabled": true,
+    "eyes": [20, 14],
+    "head": [18, 10],
+    "clickGestures": ["wave", "scratch_nose", "scratch_head", "raise_finger", "thumbs_up", "shrug", "idea"]
+  },
   "idleExpression": "neutral",
   "expressions": {
     "neutral": {
@@ -183,6 +189,59 @@
         "head": [0, 8, -9]
       },
       "hold": 1.8
+    },
+    "scratch_nose": {
+      "pose": {
+        "upperarm_R": [-58, 0, 10],
+        "forearm_R": [-120, 0, 27],
+        "fingers_R": [0, 0, 165],
+        "thumb_R": [0, 0, 70],
+        "head": [6, -4, 0]
+      },
+      "hold": 1.4,
+      "oscillate": [{ "bone": "hand_R", "axis": "x", "amplitude": 10, "frequency": 4 }],
+      "morphs": { "eyeSquint": 0.5, "mouthThinking": 0.6 }
+    },
+    "scratch_head": {
+      "pose": {
+        "upperarm_R": [-20, 0, -110],
+        "forearm_R": [-15, 0, -122],
+        "hand_R": [0, -90, 20],
+        "fingers_R": [0, 0, 60],
+        "head": [6, 0, -10]
+      },
+      "hold": 1.5,
+      "oscillate": [{ "bone": "hand_R", "axis": "z", "amplitude": 12, "frequency": 3.5 }],
+      "morphs": { "mouthThinking": 0.7, "browUp_L": 0.6, "browDown_R": 0.4 }
+    },
+    "raise_finger": {
+      "pose": {
+        "upperarm_R": [-22, 0, -55],
+        "forearm_R": [-12, 0, -122],
+        "hand_R": [0, -90, 0],
+        "fingers_R": [0, 0, 165],
+        "thumb_R": [0, 0, 70]
+      },
+      "hold": 1.3,
+      "oscillate": [{ "bone": "hand_R", "axis": "z", "amplitude": 14, "frequency": 2.6 }],
+      "morphs": { "browUp_L": 0.5, "browUp_R": 0.5, "mouthSmile": 0.4 }
+    },
+    "thumbs_up": {
+      "pose": {
+        "upperarm_R": [-58, 0, -18],
+        "forearm_R": [-38, 0, 14],
+        "fingers_R": [0, 0, 165],
+        "index_R": [0, 0, 165],
+        "thumb_R": [0, 0, -10]
+      },
+      "hold": 1.3,
+      "morphs": { "mouthHappy": 0.8, "eyeSquint": 0.3 }
+    },
+    "shrug": {
+      "like": "explain",
+      "mirror": "both",
+      "hold": 1.2,
+      "morphs": { "mouthThinking": 0.5, "browUp_L": 0.8, "browUp_R": 0.8 }
     },
     "idea": {
       "pose": {

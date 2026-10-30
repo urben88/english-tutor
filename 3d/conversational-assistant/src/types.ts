@@ -51,6 +51,19 @@ export interface LipSyncConfig {
   audioGain: number;
   /** Mouth opening floor while speaking without audio, 0..1. */
   floor: number;
+  /** How much brows, eyes and head react to speech emphasis (0 = none, 1 = default). */
+  emphasis: number;
+}
+
+export interface PointerConfig {
+  /** Follow the mouse with eyes and head. Default true. */
+  enabled?: boolean;
+  /** Max eye rotation toward the pointer, [yaw, pitch] degrees. */
+  eyes?: [number, number];
+  /** Max head rotation toward the pointer, [yaw, pitch] degrees. */
+  head?: [number, number];
+  /** Gestures picked at random when the character is clicked. */
+  clickGestures?: string[];
 }
 
 export interface CameraConfig {
@@ -93,6 +106,8 @@ export interface ElementConfig {
   visemes: string[];
   /** Mouth movement strength. Defaults are used when omitted. */
   lipSync?: Partial<LipSyncConfig>;
+  /** Mouse follow and click reactions. */
+  pointer?: PointerConfig;
   /** Logical name -> morph target name in the model (for swapping in a VRM/VRoid-style model). */
   morphAliases: Record<string, string>;
   bones: {
@@ -137,6 +152,10 @@ export interface ConversationalAssistant {
   stopSpeaking(): void;
   /** Feed an external speech level 0..1 (e.g. from your own analyser). Implies speaking while > 0. */
   setSpeechLevel(level: number): void;
+  /** Point eyes and head at a spot, -1..1 around the head (+x right, +y up), or null to look ahead. */
+  lookAt(target: [number, number] | null): void;
+  /** Plays a random click reaction from `pointer.clickGestures`. */
+  react(): Promise<void>;
   show(): void;
   hide(): void;
   dispose(): void;

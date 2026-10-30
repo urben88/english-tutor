@@ -9,7 +9,7 @@ function approach(current: number, target: number, rate: number, dt: number): nu
   return current + (target - current) * (1 - Math.exp(-rate * dt));
 }
 
-const DEFAULT_LIP_SYNC: LipSyncConfig = { gain: 1.7, audioGain: 6.5, floor: 0.55 };
+const DEFAULT_LIP_SYNC: LipSyncConfig = { gain: 1.7, audioGain: 6.5, floor: 0.55, emphasis: 1 };
 
 const swapSide = (bone: string): string =>
   bone.endsWith("_R") ? `${bone.slice(0, -2)}_L` : bone.endsWith("_L") ? `${bone.slice(0, -2)}_R` : bone;
@@ -203,6 +203,11 @@ export class AssistantControls {
   private analyser: AnalyserNode | null = null;
   private readonly timeData = new Uint8Array(1024);
   private readonly freqData = new Uint8Array(512);
+  // pointer follow: target in -1..1 screen space (null = no pointer), smoothed value
+  private lookTarget: [number, number] | null = null;
+  private readonly look: [number, number] = [0, 0];
+  private lookWeight = 0;
+  private lastReaction = "";
 
   constructor(model: LoadedModel, private readonly config: ElementConfig, private readonly reducedMotion: boolean) {
     this.bones = new BoneDriver(model.bones, model.root);
@@ -238,6 +243,21 @@ export class AssistantControls {
     this.analyser = analyser;
   }
 
+  /** Pointer position relative to the character, -1..1 on each axis (+x = viewer's right, +y = up). */
+  setLookTarget(target: [number, number] | null): void {
+    this.lookTarget = target;
+  }
+
+  /** Plays a random reaction gesture (never the same twice in a row). */
+  react(): Promise<void> {
+    const list = (this.config.pointer?.clickGestures ?? []).filter((g) => this.gestures[g] && g !== this.lastReaction);
+    const pick = list[Math.floor(Math.random() * list.length)];
+    if (!pick) return Promise.resolve();
+    this.lastReaction = pick;
+    this.nextAuto = Math.max(this.nextAuto, 1.5); // let the reaction play before any automatic gesture
+    return this.gesture(pick);
+  }
+
   setSpeechLevel(level: number): void {
     this.externalLevel = Math.max(0, Math.min(1, level));
   }
@@ -270,6 +290,7 @@ export class AssistantControls {
     head.z += wobble(t, 3) * 1.6 * motion;
     const neck = this.offset(cfg.bones.neck);
     neck.y += wobble(t * 0.7, 11) * 2 * motion;
+    this.updateLook(dt, motion);
 
     this.updateGaze(dt, expr?.gaze);
     this.updateBlink(dt);
@@ -360,10 +381,27 @@ export class AssistantControls {
       this.nextSaccade = 0.8 + Math.random() * 2.4;
       this.saccade = this.speaking || Math.random() < 0.6 ? [0, 0] : [(Math.random() - 0.5) * 10, (Math.random() - 0.5) * 6];
     }
-    const yaw = (gaze?.[0] ?? 0) + this.saccade[0];
-    const pitch = (gaze?.[1] ?? 0) + this.saccade[1];
+    // Looking at the pointer replaces the expression's gaze and the random glances.
+    const lw = this.lookWeight;
+    const eyes = this.config.pointer?.eyes ?? [18, 12];
+    const yaw = ((gaze?.[0] ?? 0) + this.saccade[0]) * (1 - lw) + this.look[0] * eyes[0] * lw;
+    const pitch = ((gaze?.[1] ?? 0) + this.saccade[1]) * (1 - lw) + this.look[1] * eyes[1] * lw;
     // In three's axes a positive X rotation looks down and a positive Y rotation turns to +X (character's left).
     for (const eye of this.config.bones.eyes) this.bones.addTarget(eye, [-pitch, yaw, 0]);
+  }
+
+  private updateLook(dt: number, motion: number): void {
+    const p = this.config.pointer;
+    const on = !!this.lookTarget && p?.enabled !== false;
+    this.lookWeight = approach(this.lookWeight, on ? 1 : 0, 3, dt);
+    const [tx, ty] = on ? this.lookTarget! : [0, 0];
+    this.look[0] = approach(this.look[0], Math.max(-1, Math.min(1, tx)), 6, dt);
+    this.look[1] = approach(this.look[1], Math.max(-1, Math.min(1, ty)), 6, dt);
+    const [hy, hp] = p?.head ?? [16, 9];
+    const head = this.offset(this.config.bones.head);
+    // +Y turns to the character's left (viewer's right); -X looks up.
+    head.y += this.look[0] * hy * this.lookWeight * motion;
+    head.x -= this.look[1] * hp * this.lookWeight * motion;
   }
 
   private updateBlink(dt: number): void {
@@ -427,8 +465,14 @@ export class AssistantControls {
       this.morphs.add(v, w, cfg.smoothing.viseme);
     }
     if (talking) {
-      // Brows follow emphasis a little, which reads as engaged speech.
-      this.morphs.add("browInnerUp", this.level * 0.25, cfg.smoothing.viseme);
+      // Brows, eyes and head follow emphasis, which reads as engaged speech.
+      const e = this.lip.emphasis;
+      this.morphs.add("browInnerUp", this.level * 0.45 * e, cfg.smoothing.viseme);
+      this.morphs.add("browUp_L", Math.max(0, this.level - 0.6) * 0.8 * e, cfg.smoothing.viseme);
+      this.morphs.add("browUp_R", Math.max(0, this.level - 0.6) * 0.8 * e, cfg.smoothing.viseme);
+      this.morphs.add("eyeWide", Math.max(0, this.level - 0.75) * 0.9 * e, cfg.smoothing.viseme);
+      const motion = this.reducedMotion ? 0.35 : 1;
+      this.offset(cfg.bones.head).x += this.level * 4 * e * motion; // chin dips on each stressed syllable
     }
   }
 }

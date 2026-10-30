@@ -108,9 +108,41 @@ export function createConversationalAssistant(options: CreateOptions): Conversat
     scene.add(m.root);
     model = m;
     controls = new AssistantControls(m, config, reducedMotion);
+    if (config.pointer?.enabled !== false) attachPointer(m);
     clock.getDelta();
     loop();
   });
+
+  // Pointer: eyes and head follow the mouse anywhere on the page; a click on the character reacts.
+  let detachPointer: (() => void) | null = null;
+  const headPos = new THREE.Vector3();
+  function attachPointer(m: LoadedModel) {
+    const head = m.bones.get(config.bones.head);
+    const onMove = (e: PointerEvent) => {
+      if (!controls || e.pointerType === "touch") return;
+      const rect = canvas.getBoundingClientRect();
+      if (!rect.width || !rect.height) return;
+      // Aim from the head's position on screen, not the canvas centre.
+      if (head) head.getWorldPosition(headPos).project(camera);
+      else headPos.set(0, 0, 0);
+      const hx = rect.left + ((headPos.x + 1) / 2) * rect.width;
+      const hy = rect.top + ((1 - headPos.y) / 2) * rect.height;
+      controls.setLookTarget([(e.clientX - hx) / (rect.width / 2), (hy - e.clientY) / (rect.height / 2)]);
+    };
+    const onLeave = () => controls?.setLookTarget(null);
+    const onClick = () => void controls?.react();
+    window.addEventListener("pointermove", onMove, { passive: true });
+    document.documentElement.addEventListener("pointerleave", onLeave);
+    window.addEventListener("blur", onLeave);
+    canvas.addEventListener("click", onClick);
+    if (config.pointer?.clickGestures?.length) canvas.style.cursor = "pointer";
+    detachPointer = () => {
+      window.removeEventListener("pointermove", onMove);
+      document.documentElement.removeEventListener("pointerleave", onLeave);
+      window.removeEventListener("blur", onLeave);
+      canvas.removeEventListener("click", onClick);
+    };
+  }
   ready.catch((err) => {
     observer.disconnect();
     renderer.dispose();
@@ -171,6 +203,8 @@ export function createConversationalAssistant(options: CreateOptions): Conversat
     },
     stopSpeaking: finishSpeech,
     setSpeechLevel: (level) => controls?.setSpeechLevel(level),
+    lookAt: (target) => controls?.setLookTarget(target),
+    react: () => controls?.react() ?? Promise.resolve(),
     show() {
       canvas.style.visibility = "visible";
     },
@@ -183,6 +217,7 @@ export function createConversationalAssistant(options: CreateOptions): Conversat
       finishSpeech();
       cancelAnimationFrame(frame);
       observer.disconnect();
+      detachPointer?.();
       if (model) {
         scene.remove(model.root);
         disposeObject(model.root);
