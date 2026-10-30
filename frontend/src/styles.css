@@ -42,3 +42,20 @@ body { margin: 0; }
 .muted { color: #5b6472; }
 .error { color: #b3261e; }
 .banner { background: #fdecea; padding: 0.5rem 0.75rem; border-radius: 6px; margin: 0; }
+
+.controls-bar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.5rem; }
+.controls-actions { display: flex; gap: 0.5rem; }
+.controls .btn { min-height: 2.5rem; min-width: 2.5rem; display: inline-flex; align-items: center; justify-content: center; gap: 0.35rem; }
+.btn-on { background: var(--accent); border-color: var(--accent); color: #fff; }
+.btn:focus-visible, .talk:focus-visible, .composer input:focus-visible { outline: 3px solid #f2a900; outline-offset: 2px; }
+.status { display: flex; align-items: center; gap: 0.6rem; flex: 1; min-width: 12rem; padding: 0.4rem 0.75rem; border-radius: 999px; font-weight: 600; background: #eef1f6; color: #3a4250; }
+.status-listening { background: #e1f3e6; color: #1d6b34; }
+.status-hearing { background: #dbe7ff; color: #1a4bb8; }
+.status-thinking { background: #fff1d6; color: #8a5a00; }
+.status-speaking { background: #ece2fb; color: #5a2ea6; }
+.status-muted { background: #fdecea; color: #b3261e; }
+.meter { flex: 1; height: 0.5rem; min-width: 3rem; background: rgba(0, 0, 0, 0.12); border-radius: 999px; overflow: hidden; }
+.meter span { display: block; height: 100%; background: currentColor; transition: width 80ms linear; }
+.mode-switch { display: flex; gap: 0.5rem; }
+.mode-switch .btn { flex: 1; }
+@media (max-width: 480px) { .controls-actions { width: 100%; } .controls-actions .btn { flex: 1; } }

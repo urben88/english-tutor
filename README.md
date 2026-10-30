@@ -125,7 +125,18 @@ cd frontend && npm run build
 uv run uvicorn backend.api.app:app --port 8765 # open http://127.0.0.1:8765
 ```
 
-Hold the on-screen button (or the Space key, outside the text box) to talk, release to send. Click any word,
+**Talking.** Two modes, chosen with the switch under the text box (remembered in the browser):
+
+- **Hands-free** (default): the mic stays open. Just talk; after about 1 s of silence the phrase is sent. Phrases
+  shorter than 0.3 s are ignored. The mic is paused while the tutor thinks and speaks, and listens again when the
+  reply ends. If the mic is denied or missing, a message is shown and the text box still works.
+- **Hold to talk**: hold the on-screen button (or the Space key, outside the text box), release to send.
+
+The status pill is always visible (Listening, Hearing you, Thinking, Speaking, Muted) with a live mic level.
+**Mute** (button or the `M` key, outside the text box) stops all recording; muting mid-phrase discards it.
+**Stop** cuts the tutor's reply; in hands-free mode listening resumes right away.
+
+Click any word,
 or select a phrase and press "Explain", to get a translation, an explanation and examples in a side panel.
 Explanations are in Spanish; the examples are English. They are not saved to the conversation history.
 
