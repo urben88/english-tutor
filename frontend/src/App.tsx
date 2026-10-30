@@ -1,12 +1,19 @@
-import { useMemo } from "react";
+import { useMemo, useState } from "react";
 import { createApi, type TutorApi } from "./api/client";
 import { createBrowserMic, type Mic } from "./audio/mic";
 import { createBrowserPlayer, type Player } from "./audio/player";
 import { createBrowserRecorder, type Recorder } from "./audio/recorder";
 import { Button } from "./components/atoms/Button";
+import { MobileTabs, type Area } from "./components/molecules/MobileTabs";
+import { ModeSwitch } from "./components/molecules/ModeSwitch";
+import { SessionSwitcher } from "./components/molecules/SessionSwitcher";
+import { Subtitles } from "./components/molecules/Subtitles";
+import { CharacterStage, toCharacterState } from "./components/organisms/CharacterStage";
 import { Controls } from "./components/organisms/Controls";
 import { ExplanationPanel } from "./components/organisms/ExplanationPanel";
-import { MessageList } from "./components/organisms/MessageList";
+import { StudyPanel } from "./components/organisms/StudyPanel";
+import { TranscriptDrawer } from "./components/organisms/TranscriptDrawer";
+import { useDrawer } from "./hooks/useDrawer";
 import { useExplain } from "./hooks/useExplain";
 import type { VoiceStatus } from "./components/molecules/StatusIndicator";
 import { useHandsFree } from "./hooks/useHandsFree";
@@ -33,6 +40,8 @@ export function App(props: Props) {
   const explain = useExplain(api);
   const { mode, setMode } = useVoiceMode();
   const { muted, toggle: toggleMute } = useMute();
+  const drawer = useDrawer();
+  const [area, setArea] = useState<Area>("tutor");
   const handsFreeMode = mode === "hands-free";
   const talk = useHoldToTalk({
     recorder,
@@ -61,11 +70,26 @@ export function App(props: Props) {
             ? "listening"
             : "idle";
 
+  const transcriptOpen = drawer.open || area === "talk";
+  const closeTranscript = () => {
+    drawer.close();
+    if (area === "talk") setArea("tutor");
+  };
+
   return (
-    <div className="app">
+    <div className="app" data-area={area}>
       <header className="top">
         <h1>English Tutor</h1>
-        <Button onClick={tutor.newSession}>New session</Button>
+        <Button className="transcript-btn" aria-expanded={transcriptOpen} onClick={drawer.toggle}>
+          Transcript (T)
+        </Button>
+        <SessionSwitcher
+          sessions={tutor.sessions}
+          current={tutor.sessionId}
+          onSelect={tutor.openSession}
+          onNew={tutor.newSession}
+        />
+        <ModeSwitch mode={mode} onChange={setMode} />
       </header>
       {tutor.error && (
         <p role="alert" className="error banner">
@@ -73,8 +97,11 @@ export function App(props: Props) {
         </p>
       )}
       <main className="main">
-        <section className="chat">
-          <MessageList messages={tutor.messages} onExplain={explain.explain} />
+        <section className="center">
+          <CharacterStage state={toCharacterState(status)} />
+          <Subtitles messages={tutor.messages} onExplain={explain.explain} />
+        </section>
+        <div className="dock">
           <Controls
             mode={mode}
             status={status}
@@ -84,16 +111,21 @@ export function App(props: Props) {
             micError={handsFreeMode ? free.micError : null}
             talkState={talk.state}
             disabled={!tutor.ready || tutor.busy}
-            onModeChange={setMode}
             onToggleMute={toggleMute}
             onStop={tutor.stopSpeaking}
             onPress={talk.press}
             onRelease={talk.release}
             onSendText={tutor.sendText}
           />
-        </section>
-        <ExplanationPanel state={explain.state} onClose={explain.close} />
+        </div>
+        <StudyPanel items={[]}>
+          <ExplanationPanel state={explain.state} onClose={explain.close} />
+        </StudyPanel>
       </main>
+      {transcriptOpen && (
+        <TranscriptDrawer messages={tutor.messages} onExplain={explain.explain} onClose={closeTranscript} />
+      )}
+      <MobileTabs area={area} onChange={setArea} />
     </div>
   );
 }

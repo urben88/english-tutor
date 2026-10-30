@@ -1,6 +1,5 @@
 import type { TalkState } from "../../hooks/useHoldToTalk";
 import type { VoiceMode } from "../../hooks/useVoiceMode";
-import { ModeSwitch } from "../molecules/ModeSwitch";
 import { MuteButton } from "../molecules/MuteButton";
 import { StatusIndicator, type VoiceStatus } from "../molecules/StatusIndicator";
 import { StopButton } from "../molecules/StopButton";
@@ -16,7 +15,6 @@ interface Props {
   micError: string | null;
   talkState: TalkState;
   disabled: boolean;
-  onModeChange: (mode: VoiceMode) => void;
   onToggleMute: () => void;
   onStop: () => void;
   onPress: () => void;
@@ -49,7 +47,6 @@ export function Controls(p: Props) {
         />
       )}
       <TextComposer disabled={p.disabled || p.talkState !== "idle"} onSend={p.onSendText} />
-      <ModeSwitch mode={p.mode} onChange={p.onModeChange} />
     </div>
   );
 }

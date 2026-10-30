@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import type { TutorApi } from "../api/client";
-import type { Id, Message, TurnResponse } from "../api/types";
+import type { Id, Message, SessionSummary, TurnResponse } from "../api/types";
 import type { Player } from "../audio/player";
 
 const errMsg = (e: unknown) => (e instanceof Error ? e.message : "Something went wrong.");
@@ -9,6 +9,7 @@ const errMsg = (e: unknown) => (e instanceof Error ? e.message : "Something went
 export function useTutor(api: TutorApi, player: Player) {
   const [sessionId, setSessionId] = useState<Id | null>(null);
   const [messages, setMessages] = useState<Message[]>([]);
+  const [sessions, setSessions] = useState<SessionSummary[]>([]);
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [speaking, setSpeaking] = useState(false);
@@ -28,8 +29,9 @@ export function useTutor(api: TutorApi, player: Player) {
     booted.current = true;
     (async () => {
       try {
-        const sessions = await api.listSessions();
-        const id = sessions.length > 0 ? sessions[0].id : (await api.createSession()).id;
+        const list = await api.listSessions();
+        setSessions(list);
+        const id = list.length > 0 ? list[0].id : (await api.createSession()).id;
         await open(id);
       } catch (e) {
         setError(errMsg(e));
@@ -37,14 +39,35 @@ export function useTutor(api: TutorApi, player: Player) {
     })();
   }, [api, open]);
 
+  const refreshSessions = useCallback(async () => {
+    try {
+      setSessions(await api.listSessions());
+    } catch {
+      /* the switcher keeps its previous list */
+    }
+  }, [api]);
+
   const newSession = useCallback(async () => {
     try {
       setError(null);
       await open((await api.createSession()).id);
+      void refreshSessions();
     } catch (e) {
       setError(errMsg(e));
     }
-  }, [api, open]);
+  }, [api, open, refreshSessions]);
+
+  const openSession = useCallback(
+    async (id: Id) => {
+      try {
+        setError(null);
+        await open(id);
+      } catch (e) {
+        setError(errMsg(e));
+      }
+    },
+    [open],
+  );
 
   const finishTurn = useCallback(
     async (id: Id, res: TurnResponse) => {
@@ -56,8 +79,9 @@ export function useTutor(api: TutorApi, player: Player) {
         });
       }
       setMessages(await api.messages(id));
+      void refreshSessions();
     },
-    [api, player],
+    [api, player, refreshSessions],
   );
 
   const sendText = useCallback(
@@ -92,5 +116,5 @@ export function useTutor(api: TutorApi, player: Player) {
     [api, sessionId, finishTurn],
   );
 
-  return { messages, busy, error, setError, newSession, sendText, sendVoice, speaking, stopSpeaking, ready: sessionId !== null };
+  return { messages, sessions, sessionId, openSession, busy, error, setError, newSession, sendText, sendVoice, speaking, stopSpeaking, ready: sessionId !== null };
 }

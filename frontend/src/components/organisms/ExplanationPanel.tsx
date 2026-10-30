@@ -9,12 +9,12 @@ interface Props {
 
 export function ExplanationPanel({ state, onClose }: Props) {
   return (
-    <aside className="panel" aria-label="Explanation">
+    <section className="explain-card" aria-label="Explanation">
       <div className="panel-head">
-        <h2>Explanation</h2>
+        <h3>Explanation</h3>
         {state.status !== "idle" && <Button onClick={onClose}>Close</Button>}
       </div>
       <ExplanationView state={state} />
-    </aside>
+    </section>
   );
 }

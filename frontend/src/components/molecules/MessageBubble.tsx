@@ -8,9 +8,11 @@ interface Props {
   message: Message;
   /** `text` is the word or phrase; the message content is the context. */
   onExplain: (text: string, context: string) => void;
+  /** `caption` = large subtitle style without the role label. */
+  variant?: "bubble" | "caption";
 }
 
-export function MessageBubble({ message, onExplain }: Props) {
+export function MessageBubble({ message, onExplain, variant = "bubble" }: Props) {
   const ref = useRef<HTMLDivElement>(null);
   const [phrase, setPhrase] = useState<string | null>(null);
 
@@ -25,8 +27,12 @@ export function MessageBubble({ message, onExplain }: Props) {
   };
 
   return (
-    <div className={`bubble bubble-${message.role}`} ref={ref} onMouseUp={readSelection}>
-      <div className="bubble-role">{message.role === "user" ? "You" : "Tutor"}</div>
+    <div
+      className={variant === "caption" ? "caption" : `bubble bubble-${message.role}`}
+      ref={ref}
+      onMouseUp={readSelection}
+    >
+      {variant === "bubble" && <div className="bubble-role">{message.role === "user" ? "You" : "Tutor"}</div>}
       <p className="bubble-text">
         {tokenize(message.content).map((t, i) =>
           t.isWord ? (

@@ -33,3 +33,10 @@ export interface Explanation {
   explanation: string;
   examples: string[];
 }
+
+/** A studied word or phrase listed in the study panel (filled from the API in a later task). */
+export interface StudyItem {
+  id: Id;
+  text: string;
+  translation?: string;
+}
