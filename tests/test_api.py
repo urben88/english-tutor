@@ -25,8 +25,10 @@ class FakeSTT:
 class FakeLLM:
     def __init__(self):
         self.explain_reply = GOOD_EXPLAIN
+        self.calls = []
 
-    def generate(self, messages, *, json_schema=None):
+    def generate(self, messages, *, json_schema=None, max_tokens=None):
+        self.calls.append((messages, max_tokens))
         return self.explain_reply if json_schema else "reply here"
 
     def stream(self, messages):
@@ -83,8 +85,9 @@ def test_create_and_list_sessions(client):
     sid = client.post("/api/sessions").json()["id"]
     rows = client.get("/api/sessions").json()
     assert len(rows) == 1
-    assert set(rows[0]) == {"id", "persona", "created_at", "updated_at", "message_count"}
+    assert set(rows[0]) == {"id", "persona", "role", "created_at", "updated_at", "message_count"}
     assert rows[0]["id"] == sid and rows[0]["persona"] == "emma" and rows[0]["message_count"] == 0
+    assert rows[0]["role"] is None
 
 
 def test_messages_unknown_session_404(client):
@@ -271,3 +274,51 @@ def test_study_validation_and_unknown(client):
     assert client.post("/api/study", json={"text": " ", "source_text": "x"}).status_code == 400
     assert client.patch("/api/study/999", json={
         "translation": "a", "explanation": "b", "examples": []}).status_code == 404
+
+
+# --- study sessions: roles and deleting -----------------------------------------------------------
+
+def test_create_session_with_role_is_listed_and_used_by_the_tutor(client, parts):
+    _, llm, _ = parts
+    sid = client.post("/api/sessions", json={"role": "  waiter at a restaurant "}).json()["id"]
+    assert client.get("/api/sessions").json()[0]["role"] == "waiter at a restaurant"
+    client.post(f"/api/sessions/{sid}/turn/text", json={"text": "hello"})
+    system = llm.calls[-1][0][0].content
+    assert system.startswith("SYS") and "waiter at a restaurant" in system
+
+
+def test_session_without_role_leaves_the_tutor_prompt_untouched(client, parts):
+    _, llm, _ = parts
+    sid = client.post("/api/sessions", json={"role": "   "}).json()["id"]
+    assert client.get("/api/sessions").json()[0]["role"] is None
+    client.post(f"/api/sessions/{sid}/turn/text", json={"text": "hello"})
+    assert llm.calls[-1][0][0].content == "SYS"
+
+
+def test_create_session_rejects_an_overlong_role(client):
+    assert client.post("/api/sessions", json={"role": "x" * 201}).status_code == 400
+    assert client.get("/api/sessions").json() == []
+
+
+def test_delete_session_removes_it_and_keeps_study_items(client, parts):
+    sid = client.post("/api/sessions").json()["id"]
+    client.post(f"/api/sessions/{sid}/turn/text", json={"text": "hello"})
+    mid = client.get(f"/api/sessions/{sid}/messages").json()[1]["id"]
+    item = client.post("/api/study", json={"text": "reply", "source_text": "reply here",
+                                           "session_id": sid, "message_id": mid}).json()
+    assert client.delete(f"/api/sessions/{sid}").json() == {"deleted": sid}
+    assert client.get("/api/sessions").json() == []
+    assert client.get(f"/api/sessions/{sid}/messages").status_code == 404
+    [kept] = client.get("/api/study").json()
+    assert kept["id"] == item["id"] and kept["session_id"] is None and kept["message_id"] is None
+
+
+def test_delete_unknown_session_404(client):
+    assert client.delete("/api/sessions/99").status_code == 404
+
+
+def test_delete_study_item(client):
+    item = client.post("/api/study", json={"text": "hello"}).json()
+    assert client.delete(f"/api/study/{item['id']}").json() == {"deleted": item["id"]}
+    assert client.get("/api/study").json() == []
+    assert client.delete(f"/api/study/{item['id']}").status_code == 404

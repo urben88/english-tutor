@@ -40,8 +40,9 @@ class TextToSpeech(Protocol):
 
 @runtime_checkable
 class ConversationStore(Protocol):
-    def create_session(self, persona: str | None = None) -> int:
-        """Start a new session and return its id."""
+    def create_session(self, persona: str | None = None, role: str | None = None) -> int:
+        """Start a new session and return its id. ``role`` is an optional free-text topic or
+        role-play for the tutor (blank means none)."""
         ...
 
     def latest_session(self) -> int | None:
@@ -70,6 +71,25 @@ class ConversationStore(Protocol):
 
 
 @runtime_checkable
+class SessionAdmin(Protocol):
+    def delete_session(self, session_id: int) -> None:
+        """Delete a session and its messages. Study items linked to it are kept but detached
+        (session and message link cleared). Unknown session -> ValueError."""
+        ...
+
+
+@runtime_checkable
+class SettingsStore(Protocol):
+    def load_settings(self) -> dict[str, str]:
+        """Stored settings (only keys that were saved)."""
+        ...
+
+    def save_settings(self, values: dict[str, str]) -> None:
+        """Insert or replace the given settings."""
+        ...
+
+
+@runtime_checkable
 class StudyStore(Protocol):
     def save_study_item(self, text: str, source_text: str, session_id: int | None,
                         message_id: int | None, *, translation: str | None = None,
@@ -87,6 +107,10 @@ class StudyStore(Protocol):
 
     def get_study_item(self, item_id: int) -> StudyItem:
         """Unknown id -> ValueError."""
+        ...
+
+    def delete_study_item(self, item_id: int) -> None:
+        """Remove an item. Unknown id -> ValueError."""
         ...
 
     def list_study_items(self) -> list[StudyItem]:

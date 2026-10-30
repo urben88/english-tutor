@@ -15,6 +15,7 @@ from langgraph.graph import END, START, StateGraph
 from backend.core.context import ContextBudget, build_context
 from backend.core.models import AudioClip, ChatMessage, StoredMessage
 from backend.core.persona import Persona
+from backend.core.prompt import compose_system_prompt
 from backend.core.ports import ConversationStore, LanguageModel, SpeechToText, TextToSpeech
 from backend.core.usecases import VoiceTurn
 
@@ -42,9 +43,10 @@ class TurnState(TypedDict, total=False):
 class TurnRunner:
     def __init__(self, stt: SpeechToText, llm: LanguageModel, tts: TextToSpeech,
                  store: ConversationStore, persona: Persona, budget: ContextBudget,
-                 session_id: int) -> None:
+                 session_id: int, *, role: str | None = None) -> None:
         self._stt, self._llm, self._tts, self._store = stt, llm, tts, store
         self._persona, self._budget, self.session_id = persona, budget, session_id
+        self._system_prompt = compose_system_prompt(persona.system_prompt, role)
         self._graph = self._compile()
 
     # --- nodes -------------------------------------------------------------------------
@@ -54,7 +56,7 @@ class TurnRunner:
     def _build_context(self, s: TurnState) -> dict[str, Any]:
         summary = self._store.get_summary(self.session_id)
         history = self._store.load_messages(self.session_id, after_id=summary.summarized_upto)
-        plan = build_context(self._persona.system_prompt, summary, history, s["user_text"],
+        plan = build_context(self._system_prompt, summary, history, s["user_text"],
                              self._llm.count_tokens, self._budget)
         return {"messages": plan.messages, "fold": plan.fold}
 

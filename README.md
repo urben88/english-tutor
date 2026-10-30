@@ -147,7 +147,9 @@ speech) and "Explain again". Explanations are not added to the conversation hist
 | Endpoint | Purpose |
 |---|---|
 | `GET /api/persona` | active persona `{name, stem}` |
-| `GET /api/sessions`, `POST /api/sessions` | list sessions (newest first) / create one |
+| `GET /api/sessions` | sessions, newest first: `[{id, persona, role, created_at, updated_at, message_count}]` (`role` is `null` when none) |
+| `POST /api/sessions` | optional body `{role?}` (free text, at most 200 characters, e.g. `"waiter at a restaurant"`; blank = none; 400 if too long) -> `{id}`. The role is stored with the session and added to the tutor's system prompt for that session. No body still works |
+| `DELETE /api/sessions/{id}` | deletes the session and its messages -> `{deleted: id}` (404 if unknown). Study items that came from it are **kept** and detached (`session_id` and `message_id` become `null`); a detached item that would duplicate an existing one (same word and sentence) is merged into it, adding the listen counts |
 | `GET /api/sessions/{id}/messages` | conversation `[{id, role, content}]` (404 if unknown) |
 | `POST /api/sessions/{id}/turn` | body: WAV (`audio/wav`, 16-bit PCM) -> `{user_text, reply_text, audio (base64 WAV), sample_rate}` |
 | `POST /api/sessions/{id}/turn/text` | body `{text}` -> same response |
@@ -156,6 +158,7 @@ speech) and "Explain again". Explanations are not added to the conversation hist
 | `GET /api/study` | study items, most recently used first: `{id, text, source_text, session_id, message_id, translation, explanation, examples, listen_count, created_at, updated_at}` |
 | `POST /api/study` | body `{text, source_text?, session_id?, message_id?, translation?, explanation?, examples?}` -> the item. Adds it, or counts another listen on the same word in the same message (given explanation fields replace the stored ones) |
 | `PATCH /api/study/{id}` | body `{translation, explanation, examples}` -> the updated item (404 if unknown) |
+| `DELETE /api/study/{id}` | removes one study item -> `{deleted: id}` (404 if unknown) |
 
 ## Swap an adapter
 

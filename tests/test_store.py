@@ -157,3 +157,54 @@ def test_study_list_newest_first_and_persists(tmp_path):
     s2 = SQLiteStore(path=path)
     assert [i.text for i in s2.list_study_items()] == ["one", "two"]
     s2.close()
+
+
+# --- roles, deleting sessions and study items --------------------------------------------------
+
+def test_session_role_is_stored_trimmed_and_blank_means_none(store):
+    a = store.create_session("emma", role="  waiter at a restaurant ")
+    b = store.create_session("emma", role="   ")
+    c = store.create_session("emma")
+    roles = {s.id: s.role for s in store.list_sessions()}
+    assert roles == {a: "waiter at a restaurant", b: None, c: None}
+
+
+def test_delete_session_removes_messages_and_detaches_study_items(store):
+    sid = store.create_session("emma")
+    other = store.create_session("emma")
+    mid = store.append_message(sid, "assistant", "hello there")
+    store.append_message(other, "user", "keep me")
+    item = store.save_study_item("hello", "hello there", sid, mid)
+    store.delete_session(sid)
+    assert [s.id for s in store.list_sessions()] == [other]
+    assert store.load_messages(sid) == [] and len(store.load_messages(other)) == 1
+    kept = store.get_study_item(item.id)
+    assert kept.text == "hello" and kept.session_id is None and kept.message_id is None
+
+
+def test_delete_session_merges_study_items_that_collide_once_detached(store):
+    s1, s2 = store.create_session("emma"), store.create_session("emma")
+    m1 = store.append_message(s1, "assistant", "good morning")
+    m2 = store.append_message(s2, "assistant", "good morning")
+    a = store.save_study_item("morning", "good morning", s1, m1)
+    b = store.save_study_item("morning", "good morning", s2, m2)
+    store.delete_session(s1)
+    store.delete_session(s2)  # both detach to the same (word, no message, sentence) key
+    items = store.list_study_items()
+    assert [(i.text, i.listen_count) for i in items] == [("morning", 2)]
+    assert {a.id, b.id} >= {items[0].id}
+
+
+def test_delete_unknown_session_raises(store):
+    import pytest
+    with pytest.raises(ValueError):
+        store.delete_session(99)
+
+
+def test_delete_study_item(store):
+    item = store.save_study_item("hello", "hello there", None, None)
+    store.delete_study_item(item.id)
+    assert store.list_study_items() == []
+    import pytest
+    with pytest.raises(ValueError):
+        store.delete_study_item(item.id)

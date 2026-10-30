@@ -21,7 +21,8 @@ CREATE TABLE IF NOT EXISTS sessions (
     created_at REAL NOT NULL,
     updated_at REAL NOT NULL,
     summary TEXT NOT NULL DEFAULT '',
-    summarized_upto INTEGER NOT NULL DEFAULT 0
+    summarized_upto INTEGER NOT NULL DEFAULT 0,
+    role TEXT
 );
 CREATE TABLE IF NOT EXISTS messages (
     id INTEGER PRIMARY KEY AUTOINCREMENT,
@@ -46,7 +47,15 @@ CREATE TABLE IF NOT EXISTS study_items (
     updated_at REAL NOT NULL
 );
 CREATE UNIQUE INDEX IF NOT EXISTS idx_study_key ON study_items(text_key, message_id, source_text);
+CREATE TABLE IF NOT EXISTS settings (
+    key TEXT PRIMARY KEY,
+    value TEXT NOT NULL
+);
 """
+
+# Columns added after the first release. Existing databases get them with a guarded
+# ALTER TABLE ADD COLUMN (nothing is dropped or rewritten): (table, column, definition).
+_ADDED_COLUMNS = (("sessions", "role", "TEXT"),)
 
 _STUDY_COLS = ("id, text, source_text, session_id, message_id, translation, explanation, "
                "examples, listen_count, created_at, updated_at")
@@ -64,6 +73,15 @@ class SQLiteStore:
         # check_same_thread=False: the web API calls from worker threads (it holds one lock)
         self._db = sqlite3.connect(path, check_same_thread=False)
         self._db.executescript(_SCHEMA)
+        self._migrate()
+
+    def _migrate(self) -> None:
+        """Non-destructive upgrade of a database created by an older version."""
+        for table, column, definition in _ADDED_COLUMNS:
+            have = {row[1] for row in self._db.execute(f"PRAGMA table_info({table})")}
+            if column not in have:
+                with self._db:
+                    self._db.execute(f"ALTER TABLE {table} ADD COLUMN {column} {definition}")
 
     def close(self) -> None:
         self._db.close()
@@ -73,13 +91,40 @@ class SQLiteStore:
         if row is None:
             raise ValueError(f"unknown session id {session_id}")
 
-    def create_session(self, persona: str | None = None) -> int:
+    def create_session(self, persona: str | None = None, role: str | None = None) -> int:
         now = time.time()
         with self._db:
             cur = self._db.execute(
-                "INSERT INTO sessions (persona, created_at, updated_at) VALUES (?, ?, ?)",
-                (persona, now, now))
+                "INSERT INTO sessions (persona, created_at, updated_at, role) VALUES (?, ?, ?, ?)",
+                (persona, now, now, (role or "").strip() or None))
         return int(cur.lastrowid)
+
+    def delete_session(self, session_id: int) -> None:
+        """Delete the session and its messages. Study items stay, detached from it: their
+        session and message link are cleared. An item that would then duplicate an existing
+        detached one (same word and sentence) is merged into it."""
+        self._require_session(session_id)
+        with self._db:
+            rows = self._db.execute(
+                "SELECT id, text_key, source_text, listen_count FROM study_items "
+                "WHERE session_id = ? OR message_id IN "
+                "(SELECT id FROM messages WHERE session_id = ?)",
+                (session_id, session_id)).fetchall()
+            for item_id, key, source, count in rows:
+                twin = self._db.execute(
+                    "SELECT id FROM study_items WHERE text_key = ? AND message_id = 0 "
+                    "AND source_text = ? AND id != ?", (key, source, item_id)).fetchone()
+                if twin is None:
+                    self._db.execute(
+                        "UPDATE study_items SET session_id = NULL, message_id = 0 WHERE id = ?",
+                        (item_id,))
+                else:
+                    self._db.execute(
+                        "UPDATE study_items SET listen_count = listen_count + ? WHERE id = ?",
+                        (count, twin[0]))
+                    self._db.execute("DELETE FROM study_items WHERE id = ?", (item_id,))
+            self._db.execute("DELETE FROM messages WHERE session_id = ?", (session_id,))
+            self._db.execute("DELETE FROM sessions WHERE id = ?", (session_id,))
 
     def latest_session(self) -> int | None:
         row = self._db.execute(
@@ -118,7 +163,7 @@ class SQLiteStore:
 
     def list_sessions(self) -> list[SessionInfo]:
         rows = self._db.execute(
-            "SELECT s.id, s.persona, s.created_at, s.updated_at, COUNT(m.id) "
+            "SELECT s.id, s.persona, s.created_at, s.updated_at, COUNT(m.id), s.role "
             "FROM sessions s LEFT JOIN messages m ON m.session_id = s.id "
             "GROUP BY s.id ORDER BY s.updated_at DESC, s.id DESC").fetchall()
         return [SessionInfo(*r) for r in rows]
@@ -169,7 +214,23 @@ class SQLiteStore:
             raise ValueError(f"unknown study item id {item_id}")
         return _study_item(row)
 
+    def delete_study_item(self, item_id: int) -> None:
+        self.get_study_item(item_id)
+        with self._db:
+            self._db.execute("DELETE FROM study_items WHERE id = ?", (item_id,))
+
     def list_study_items(self) -> list[StudyItem]:
         rows = self._db.execute(
             f"SELECT {_STUDY_COLS} FROM study_items ORDER BY updated_at DESC, id DESC").fetchall()
         return [_study_item(r) for r in rows]
+
+    # --- settings ------------------------------------------------------------------------------
+
+    def load_settings(self) -> dict[str, str]:
+        return {k: v for k, v in self._db.execute("SELECT key, value FROM settings")}
+
+    def save_settings(self, values: dict[str, str]) -> None:
+        with self._db:
+            self._db.executemany(
+                "INSERT INTO settings (key, value) VALUES (?, ?) "
+                "ON CONFLICT(key) DO UPDATE SET value = excluded.value", list(values.items()))

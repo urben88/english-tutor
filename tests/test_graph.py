@@ -17,7 +17,7 @@ class FakeLLM:
     def __init__(self):
         self.calls = []
 
-    def generate(self, messages, *, json_schema=None):
+    def generate(self, messages, *, json_schema=None, max_tokens=None):
         self.calls.append(messages)
         return "SUMMARY NEW" if "summar" in messages[0].content.lower() else "reply here"
 
@@ -111,3 +111,13 @@ def test_reply_delivered_before_summarization(tmp_path):
     assert store.get_summary(sid).summarized_upto > 0
     for _, n in order:
         assert "summar" not in llm.calls[n - 1][0].content.lower()
+
+
+def test_role_is_part_of_the_system_prompt_and_counted_in_the_budget(tmp_path):
+    store = SQLiteStore(path=str(tmp_path / "r.db"))
+    sid = store.create_session("p", role="job interview")
+    llm = FakeLLM()
+    runner = TurnRunner(FakeSTT(), llm, FakeTTS(), store, PERSONA, ROOMY, sid, role="job interview")
+    runner.run_text("hi")
+    system = llm.calls[0][0].content
+    assert system.startswith("SYS") and "job interview" in system

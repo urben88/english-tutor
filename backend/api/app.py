@@ -24,9 +24,9 @@ from backend.core.context import ContextBudget
 from backend.core.explain import ExplainError, explain
 from backend.core.models import AudioClip
 from backend.core.persona import Persona
-from backend.core.models import StudyItem
+from backend.core.models import SessionInfo, StudyItem
 from backend.core.ports import (
-    ConversationStore, LanguageModel, SpeechToText, StudyStore, TextToSpeech)
+    ConversationStore, LanguageModel, SessionAdmin, SpeechToText, StudyStore, TextToSpeech)
 from backend.graph.turn import TurnRunner
 
 DEFAULT_STATIC = Path(__file__).resolve().parents[2] / "frontend" / "dist"
@@ -56,6 +56,13 @@ def build_services(config_path: str = "config.yaml") -> Services:
     return Services(stt, llm, registry.build_tts(config),
                     registry.build_store(config), load_persona(config.persona),
                     ContextBudget.for_llm(llm, config.llm.params, config.context_margin))
+
+
+MAX_ROLE_CHARS = 200
+
+
+class SessionBody(BaseModel):
+    role: str | None = None  # free-text topic / role-play, e.g. "waiter at a restaurant"
 
 
 class TextBody(BaseModel):
@@ -111,9 +118,11 @@ def create_app(services: Services | None = None, static_dir: Path | str | None =
                 holder["s"] = build_services(config_path)
             return holder["s"]
 
-    def require_session(s: Services, sid: int) -> None:
-        if sid not in {x.id for x in s.store.list_sessions()}:
-            raise HTTPException(404, f"unknown session {sid}")
+    def require_session(s: Services, sid: int) -> SessionInfo:
+        for x in s.store.list_sessions():
+            if x.id == sid:
+                return x
+        raise HTTPException(404, f"unknown session {sid}")
 
     def reply_json(turn) -> dict[str, Any]:
         return {"user_text": turn.user_text, "reply_text": turn.reply_text,
@@ -123,8 +132,9 @@ def create_app(services: Services | None = None, static_dir: Path | str | None =
     def run_turn(sid: int, clip: AudioClip | None, text: str | None) -> dict[str, Any]:
         s = svc()
         with lock:
-            require_session(s, sid)
-            runner = TurnRunner(s.stt, s.llm, s.tts, s.store, s.persona, s.budget, sid)
+            info = require_session(s, sid)
+            runner = TurnRunner(s.stt, s.llm, s.tts, s.store, s.persona, s.budget, sid,
+                                role=info.role)
             return reply_json(runner.run(clip) if clip is not None else runner.run_text(text or ""))
 
     @app.get("/health")
@@ -141,14 +151,27 @@ def create_app(services: Services | None = None, static_dir: Path | str | None =
         s = svc()
         with lock:
             rows = s.store.list_sessions()
-        return [{"id": r.id, "persona": r.persona, "created_at": r.created_at,
+        return [{"id": r.id, "persona": r.persona, "role": r.role, "created_at": r.created_at,
                  "updated_at": r.updated_at, "message_count": r.message_count} for r in rows]
 
     @app.post("/api/sessions")
-    def create_session() -> dict[str, int]:
+    def create_session(body: SessionBody | None = None) -> dict[str, int]:
+        role = ((body.role if body else None) or "").strip()
+        if len(role) > MAX_ROLE_CHARS:
+            raise HTTPException(400, f"role is longer than {MAX_ROLE_CHARS} characters")
         s = svc()
         with lock:
-            return {"id": s.store.create_session(s.persona.stem)}
+            return {"id": s.store.create_session(s.persona.stem, role or None)}
+
+    @app.delete("/api/sessions/{sid}")
+    def delete_session(sid: int) -> dict[str, int]:
+        s = svc()
+        if not isinstance(s.store, SessionAdmin):
+            raise HTTPException(501, "the configured store cannot delete sessions")
+        with lock:
+            require_session(s, sid)
+            s.store.delete_session(sid)
+        return {"deleted": sid}
 
     @app.get("/api/sessions/{sid}/messages")
     def messages(sid: int) -> list[dict[str, Any]]:
@@ -235,6 +258,16 @@ def create_app(services: Services | None = None, static_dir: Path | str | None =
             except ValueError as e:
                 raise HTTPException(404, str(e)) from e
         return study_json(item)
+
+    @app.delete("/api/study/{item_id}")
+    def study_delete(item_id: int) -> dict[str, int]:
+        store = study_store()
+        with lock:
+            try:
+                store.delete_study_item(item_id)
+            except ValueError as e:
+                raise HTTPException(404, str(e)) from e
+        return {"deleted": item_id}
 
     if static_dir is not None and (Path(static_dir) / "index.html").is_file():
         root = Path(static_dir).resolve()

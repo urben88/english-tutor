@@ -70,6 +70,7 @@ class SessionInfo:
     created_at: float  # unix seconds
     updated_at: float
     message_count: int
+    role: str | None = None  # free-text topic / role-play chosen for the session
 
 
 @dataclass(frozen=True)
