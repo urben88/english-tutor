@@ -1,12 +1,46 @@
 import * as THREE from "three";
 import type { LoadedModel } from "./loader.js";
-import type { ElementConfig, Euler3, GestureDef } from "./types.js";
+import type { ElementConfig, Euler3, GestureDef, LipSyncConfig, Oscillation, PoseMap } from "./types.js";
 
 const DEG = Math.PI / 180;
 
 /** Frame-rate independent exponential approach. */
 function approach(current: number, target: number, rate: number, dt: number): number {
   return current + (target - current) * (1 - Math.exp(-rate * dt));
+}
+
+const DEFAULT_LIP_SYNC: LipSyncConfig = { gain: 1.7, audioGain: 6.5, floor: 0.55 };
+
+const swapSide = (bone: string): string =>
+  bone.endsWith("_R") ? `${bone.slice(0, -2)}_L` : bone.endsWith("_L") ? `${bone.slice(0, -2)}_R` : bone;
+
+/** Mirrors a pose across the body's centre plane: rotations about Y and Z flip, X stays. */
+function mirrorPose(pose: PoseMap): PoseMap {
+  const out: PoseMap = {};
+  for (const [bone, d] of Object.entries(pose)) out[swapSide(bone)] = [d[0], -d[1], -d[2]];
+  return out;
+}
+
+function mirrorOscillations(list: Oscillation[]): Oscillation[] {
+  return list.map((o) => ({ ...o, bone: swapSide(o.bone), amplitude: o.axis === "x" ? o.amplitude : -o.amplitude }));
+}
+
+/** Expands `like` and `mirror` so every gesture ends up with an explicit pose. */
+export function resolveGestures(src: Record<string, GestureDef>): Record<string, GestureDef> {
+  const out: Record<string, GestureDef> = {};
+  for (const [name, def] of Object.entries(src)) {
+    const base = def.like ? src[def.like] : undefined;
+    let pose: PoseMap = { ...(def.pose ?? base?.pose ?? {}) };
+    let oscillate = def.oscillate ?? base?.oscillate ?? [];
+    if (def.mirror) {
+      const mp = mirrorPose(pose);
+      const mo = mirrorOscillations(oscillate);
+      pose = def.mirror === "left" ? mp : { ...pose, ...mp };
+      oscillate = def.mirror === "left" ? mo : [...oscillate, ...mo];
+    }
+    out[name] = { ...base, ...def, pose, oscillate };
+  }
+  return out;
 }
 
 /** Smooth value noise built from incommensurate sines: cheap, deterministic, no allocations. */
@@ -149,6 +183,12 @@ export class AssistantControls {
   private expression: string;
   private gestureActive: ActiveGesture | null = null;
   private gestureWeight = 0;
+  private readonly gestures: Record<string, GestureDef>;
+  private readonly exprWeight = new Map<string, number>();
+  private gestureBones = new Set<string>();
+  private nextAuto = 0.8;
+  private lastAuto = "";
+  private readonly lip: LipSyncConfig;
   private lastGesture: GestureDef | null = null;
   private nextBlink = 1.5;
   private blinkTimer = -1;
@@ -168,14 +208,19 @@ export class AssistantControls {
     this.bones = new BoneDriver(model.bones, model.root);
     this.morphs = new MorphDriver(model, config.morphAliases);
     this.expression = config.idleExpression;
+    this.exprWeight.set(this.expression, 1);
+    this.gestures = resolveGestures(config.gestures);
+    this.lip = { ...DEFAULT_LIP_SYNC, ...config.lipSync };
   }
 
   setExpression(name: string): void {
-    if (this.config.expressions[name]) this.expression = name;
+    if (!this.config.expressions[name] || name === this.expression) return;
+    this.expression = name;
+    this.nextAuto = 0.7;
   }
 
   gesture(name: string): Promise<void> {
-    const def = this.config.gestures[name];
+    const def = this.gestures[name];
     if (!def) return Promise.resolve();
     this.gestureActive?.resolve();
     return new Promise((resolve) => {
@@ -211,8 +256,9 @@ export class AssistantControls {
     for (const [m, w] of Object.entries(expr?.morphs ?? {})) this.morphs.add(m, w, cfg.smoothing.expression);
     if (expr?.head) this.bones.addTarget(cfg.bones.head, expr.head);
 
-    // Gesture layer.
+    // Gesture layer, then the expression's own body pose (which yields to a gesture on shared bones).
     this.updateGesture(dt);
+    this.updateExpressionBody(dt);
 
     // Idle life: breathing, head drift and an occasional glance.
     const t = this.time;
@@ -255,9 +301,10 @@ export class AssistantControls {
       }
     }
     const active = this.gestureActive;
+    if (active) this.gestureBones = new Set(Object.keys(active.def.pose ?? {}).concat((active.def.oscillate ?? []).map((o) => o.bone)));
     this.gestureWeight = approach(this.gestureWeight, active ? 1 : 0, cfg.smoothing.pose, dt);
     if (active) {
-      for (const [bone, deg] of Object.entries(active.def.pose)) this.bones.addTarget(bone, deg);
+      for (const [bone, deg] of Object.entries(active.def.pose ?? {})) this.bones.addTarget(bone, deg);
       for (const [m, w] of Object.entries(active.def.morphs ?? {})) this.morphs.add(m, w, cfg.smoothing.expression);
     }
     // Oscillations fade with the gesture weight so waving slows down instead of stopping dead.
@@ -266,6 +313,44 @@ export class AssistantControls {
     for (const o of osc) {
       const v = this.offset(o.bone);
       v[o.axis] += Math.sin(this.time * o.frequency * 2 * Math.PI) * o.amplitude * this.gestureWeight * motion;
+    }
+  }
+
+  private updateExpressionBody(dt: number): void {
+    const cfg = this.config;
+    const motion = this.reducedMotion ? 0.4 : 1;
+    const gw = this.gestureWeight;
+    this.exprWeight.set(this.expression, this.exprWeight.get(this.expression) ?? 0);
+    for (const [name, w0] of this.exprWeight) {
+      const w = approach(w0, name === this.expression ? 1 : 0, 3.5, dt);
+      if (w < 0.004 && name !== this.expression) {
+        this.exprWeight.delete(name);
+        continue;
+      }
+      this.exprWeight.set(name, w);
+      const def = cfg.expressions[name];
+      for (const [bone, deg] of Object.entries(def?.pose ?? {})) {
+        this.bones.addTarget(bone, deg, w * (this.gestureBones.has(bone) ? 1 - gw : 1));
+      }
+      for (const o of def?.oscillate ?? []) {
+        const k = w * motion * (this.gestureBones.has(o.bone) ? 1 - gw : 1);
+        this.offset(o.bone)[o.axis] += Math.sin(this.time * o.frequency * 2 * Math.PI) * o.amplitude * k;
+      }
+    }
+    // Conversational gestures: pick one at random whenever the arms are free.
+    const expr = cfg.expressions[this.expression];
+    if (expr?.gestures?.length && !this.gestureActive && !this.reducedMotion) {
+      this.nextAuto -= dt;
+      if (this.nextAuto <= 0) {
+        const [lo, hi] = expr.gestureEvery ?? [0.4, 1.4];
+        this.nextAuto = lo + Math.random() * (hi - lo);
+        const options = expr.gestures.filter((g) => g !== this.lastAuto && this.gestures[g]);
+        const pick = options[Math.floor(Math.random() * options.length)];
+        if (pick) {
+          this.lastAuto = pick;
+          void this.gesture(pick);
+        }
+      }
     }
   }
 
@@ -312,7 +397,7 @@ export class AssistantControls {
         const s = (this.timeData[i] - 128) / 128;
         sum += s * s;
       }
-      level = Math.min(1, Math.sqrt(sum / this.timeData.length) * 4.5);
+      level = Math.min(1, Math.sqrt(sum / this.timeData.length) * this.lip.audioGain);
       this.analyser.getByteFrequencyData(this.freqData);
       let num = 0;
       let den = 0;
@@ -325,7 +410,7 @@ export class AssistantControls {
       level = this.externalLevel;
     } else if (this.speaking) {
       // Procedural syllables: no audio to follow, so open and close at a speech-like rate.
-      level = 0.35 + 0.65 * Math.abs(Math.sin(this.time * 9.5)) * (0.6 + 0.4 * Math.sin(this.time * 2.3));
+      level = this.lip.floor + (1 - this.lip.floor) * Math.abs(Math.sin(this.time * 9.5)) * (0.7 + 0.3 * Math.sin(this.time * 2.3));
       brightness = 0.15 + 0.5 * (0.5 + 0.5 * Math.sin(this.time * 5.3 + 1.7));
     }
     const talking = this.speaking || this.externalLevel > 0;
@@ -338,7 +423,7 @@ export class AssistantControls {
     }
     if (!talking) this.viseme = "";
     for (const v of cfg.visemes) {
-      const w = v === this.viseme ? Math.min(1, this.level * 1.15) : 0;
+      const w = v === this.viseme ? Math.min(1, this.level * this.lip.gain) : 0;
       this.morphs.add(v, w, cfg.smoothing.viseme);
     }
     if (talking) {

@@ -13,7 +13,7 @@ A young man with voluminous wavy brown hair swept over the forehead. He has blac
 ## Style and proportions
 
 - Head ≈ 0.42 × shoulder width, short neck, rounded jaw.
-- Primitive-based shapes (ellipsoids and swept tubes), smooth shaded, flat colours. No textures.
+- Primitive-based shapes (ellipsoids and swept tubes), smooth shaded, small procedural textures (skin grain, cheek blush, shirt weave, hair streaks).
 
 ## Palette (sRGB)
 
@@ -32,9 +32,9 @@ A young man with voluminous wavy brown hair swept over the forehead. He has blac
 | | Budget | Actual |
 |---|---|---|
 | Triangles | ≤ 40 000 | 27 216 |
-| Textures | none | none |
+| Textures | small, power of two | 7 JPEG, 256-512 px |
 | Draw calls | ≤ 20 | 17 primitives |
-| File size | ≤ 2 MB | ~0.9 MB |
+| File size | ≤ 2 MB | ~1.35 MB |
 
 ## Scale, units, pivot
 

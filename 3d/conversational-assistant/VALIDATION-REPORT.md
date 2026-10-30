@@ -7,9 +7,22 @@ Date: 2026-10-30. Environment: Windows 11, Blender 5.2.2 LTS (headless), Chromiu
 `blender -b --factory-startup --python tools/validate_model.py -- assets/models/conversational-assistant.glb`
 
 ```
-VALIDATE meshes=8 triangles=27216 bones=21 morphs=20
+VALIDATE meshes=8 triangles=27216 bones=21 morphs=20 images=7 bytes=1347684
 VALIDATE PASS
 ```
+
+The validator also checks both arms and fingers, that every state's expression has an arm pose plus motion or gestures, that every bone, morph and gesture named in the config exists, at least 4 textures and a size of at most 2 MB.
+
+## Polish pass (2026-10-30)
+
+| Change | Evidence |
+|---|---|
+| Both arms animated (they already existed in the rig); camera reframed to head-waist | Chromium screenshots (scratch) |
+| Body pose per expression, random speaking gestures, left-arm mirrors | `config/element.config.json`, `src/controls.ts` |
+| Mouth: visemes about 1.7x taller (`viseme_aa` lower lip 15.5 to 27 mm), lip-sync gain 1.15 to 1.7, audio gain 4.5 to 6.5, procedural floor 0.35 to 0.55; closes fully at silence | captured open while speaking, closed after `setState("idle")` |
+| Seven procedural JPEG textures, box/front UVs | GLB 0.90 MB to 1.35 MB |
+| `tsc --noEmit` (frontend, includes the 3D code) | 0 errors |
+| frontend `npm test` / `npm run build` | 72/72 passed / built (existing chunk-size warning) |
 
 All required bones and morphs are present. Every morph's default weight is 0. Without that check, a Blender quirk exported keys at weight 1 and opened every mouth shape at once; it was caught and fixed.
 
@@ -57,6 +70,6 @@ All required bones and morphs are present. Every morph's default weight is 0. Wi
 - **Likeness is stylized.** The model is built from primitives, so it is recognizable by hair, glasses, eyes and shirt, but it is not a portrait. For closer resemblance, use VRoid Studio (see `INTEGRATION.md`).
 - **Fingers are single segments.** Point and idea read correctly from the front, but up close the curled fingers look like an "L", not a fist.
 - **`listen` raises the hand beside the head, not behind the ear.** The rigid arm cannot reach the ear without passing through the head, so the head tilt carries most of the meaning.
-- **No hand-to-chin `think` gesture.** "Thinking" is an expression (gaze up, head tilt, asymmetric brows), with `idea` (index raised) as a bonus gesture.
+- **Hand-to-chin is approximate.** The thinking pose was tuned by eye in one framing. Speaking gestures are random, not tied to the words. Wide gestures can reach the edge of a narrow tile.
 - **Visemes are inferred from loudness and brightness, not phonemes.** The TTS gives no timings.
 - **No `.vrm` export.** The reasons are in `CHARACTER-OR-ASSET-SPEC.md`.

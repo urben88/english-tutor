@@ -14,7 +14,12 @@ export interface Oscillation {
 }
 
 export interface GestureDef {
-  pose: PoseMap;
+  /** Right-arm poses are authored; use `mirror` to derive the left arm. Optional when `like` is set. */
+  pose?: PoseMap;
+  /** Reuse another gesture's pose, hold and oscillations (combine with `mirror`). */
+  like?: string;
+  /** Derive the pose for the left arm (`"left"`) or add it to the authored one (`"both"`). */
+  mirror?: "left" | "both";
   /** Seconds the pose is held before returning to idle (after the blend-in). */
   hold: number;
   oscillate?: Oscillation[];
@@ -29,6 +34,23 @@ export interface ExpressionDef {
   head?: Euler3;
   /** Eye direction: [yaw, pitch] in degrees, positive = character's left / up. */
   gaze?: [number, number];
+  /** Body pose held while this expression is active (arms, chest...). Eases in and out. */
+  pose?: PoseMap;
+  /** Continuous motion while this expression is active (sway, small nods). */
+  oscillate?: Oscillation[];
+  /** Gestures picked at random (never the same twice in a row) while this expression is active. */
+  gestures?: string[];
+  /** Pause between automatic gestures, [min, max] seconds. */
+  gestureEvery?: [number, number];
+}
+
+export interface LipSyncConfig {
+  /** Multiplier on the mouth shape weight (viseme weight = level * gain, capped at 1). */
+  gain: number;
+  /** Multiplier on the measured audio loudness. */
+  audioGain: number;
+  /** Mouth opening floor while speaking without audio, 0..1. */
+  floor: number;
 }
 
 export interface CameraConfig {
@@ -69,6 +91,8 @@ export interface ElementConfig {
   expressions: Record<string, ExpressionDef>;
   gestures: Record<string, GestureDef>;
   visemes: string[];
+  /** Mouth movement strength. Defaults are used when omitted. */
+  lipSync?: Partial<LipSyncConfig>;
   /** Logical name -> morph target name in the model (for swapping in a VRM/VRoid-style model). */
   morphAliases: Record<string, string>;
   bones: {

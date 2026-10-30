@@ -18,6 +18,7 @@ import math
 import sys
 
 import bpy
+import numpy as np
 from mathutils import Matrix, Vector
 from mathutils.bvhtree import BVHTree
 
@@ -55,17 +56,153 @@ PALETTE = {
 }
 
 
+# Procedural textures. Pixels are written in sRGB space (what a JPEG holds) and the materials
+# reference them through a plain Image Texture, which the glTF exporter keeps as-is.
+TEX_SIZE = {"skin": 256, "face": 512, "shirt": 512, "shirt_dark": 256, "collar": 256, "hair": 256, "hair_light": 256}
+
+
+def hex_rgb(hex_color):
+    h = hex_color.lstrip("#")
+    return np.array([int(h[i:i + 2], 16) / 255.0 for i in (0, 2, 4)])
+
+
+def tileable_noise(n, seed, beta=1.6, stretch=(1.0, 1.0)):
+    """Seamless noise with unit deviation. `beta` sets the roughness, `stretch` elongates it per axis."""
+    rng = np.random.default_rng(seed)
+    f = np.fft.fft2(rng.standard_normal((n, n)))
+    fy = np.fft.fftfreq(n)[:, None] * stretch[0]
+    fx = np.fft.fftfreq(n)[None, :] * stretch[1]
+    r = np.sqrt(fx ** 2 + fy ** 2)
+    r[0, 0] = 1.0
+    f = f / r ** (beta / 2)
+    f[0, 0] = 0.0
+    out = np.real(np.fft.ifft2(f))
+    return out / out.std()
+
+
+def make_image(name, rgb):
+    n = rgb.shape[0]
+    rgba = np.ones((n, n, 4))
+    rgba[..., :3] = np.clip(rgb, 0, 1)
+    img = bpy.data.images.new(name, n, n, alpha=False)
+    img.pixels.foreach_set(rgba.astype(np.float32).ravel())
+    img.pack()
+    return img
+
+
+def tex_skin(n):
+    base = hex_rgb(PALETTE["skin"][0])
+    pores = tileable_noise(n, 1, 1.0)
+    mottle = tileable_noise(n, 2, 2.4)
+    k = 1 + 0.012 * pores + 0.018 * mottle
+    return base * k[..., None] + np.array([0.012, 0.0, -0.006]) * mottle[..., None]
+
+
+def tex_face(n):
+    """Front-projected face map: u = x / 0.24 + 0.5, v = (z - 1.62) / 0.24 + 0.5."""
+    out = tex_skin(n)
+    v, u = np.mgrid[0:n, 0:n] / n
+    x = (u - 0.5) * 0.24
+    z = (v - 0.5) * 0.24 + 1.62
+
+    def blob(cx, cz, rx, rz):
+        return np.exp(-(((x - cx) / rx) ** 2 + ((z - cz) / rz) ** 2))
+
+    def tint(out, amount, color):
+        a = (amount * np.clip(color[0], 0, 1))[..., None]
+        return out * (1 - a) + hex_rgb(color[1]) * a
+
+    out = tint(out, 0.42, (blob(0.052, 1.582, 0.026, 0.019) + blob(-0.052, 1.582, 0.026, 0.019), "#E98B88"))
+    out = tint(out, 0.18, (blob(0.0, 1.575, 0.012, 0.012), "#F29C94"))
+    out = tint(out, 0.22, (blob(0.093, 1.612, 0.016, 0.03) + blob(-0.093, 1.612, 0.016, 0.03), "#E7A08F"))
+    return out
+
+
+def tex_weave(n, color):
+    """Oxford cloth: plain weave threads with slubs. One tile covers 0.08 m."""
+    base = hex_rgb(color)
+    c = n // 32
+    yy, xx = np.mgrid[0:n, 0:n]
+    over = (((xx // c) % 2) ^ ((yy // c) % 2)).astype(float)  # which thread is on top in this cell
+    warp = np.sin(np.pi * (xx % c) / c)
+    weft = np.sin(np.pi * (yy % c) / c)
+    thread = over * warp + (1 - over) * weft
+    slub = 0.012 * tileable_noise(n, 5, 0.8, (1.0, 0.25)) + 0.012 * tileable_noise(n, 6, 0.8, (0.25, 1.0))
+    k = (0.93 + 0.1 * thread + slub) * (1 + 0.02 * tileable_noise(n, 7, 2.2))
+    return base * k[..., None]
+
+
+def tex_hair(n, color, seed):
+    """Vertical strands with light and dark streaks."""
+    base = hex_rgb(color)
+    fine = tileable_noise(n, seed, 0.6, (0.06, 1.0))
+    broad = tileable_noise(n, seed + 1, 1.8, (0.2, 1.0))
+    k = 1 + 0.16 * fine + 0.08 * broad
+    return base * k[..., None] + np.array([0.03, 0.012, -0.01]) * np.clip(broad, 0, 3)[..., None] * 0.35
+
+
+TEXTURE_BUILDERS = {
+    "skin": tex_skin,
+    "face": tex_face,
+    "shirt": lambda n: tex_weave(n, PALETTE["shirt"][0]),
+    "shirt_dark": lambda n: tex_weave(n, PALETTE["shirt_dark"][0]),
+    "collar": lambda n: tex_weave(n, PALETTE["collar"][0]),
+    "hair": lambda n: tex_hair(n, PALETTE["hair"][0], 11),
+    "hair_light": lambda n: tex_hair(n, PALETTE["hair_light"][0], 21),
+}
+
+# Material -> UV mapping. ("box", size): project along the dominant face axis, `size` metres per tile.
+# ("front", size, cx, cz): planar projection from the front (+x -> u, +z -> v) centred on (cx, cz).
+UV_SPEC = {
+    "skin": ("box", 0.10),
+    "face": ("front", 0.24, 0.0, 1.62),
+    "shirt": ("box", 0.08),
+    "shirt_dark": ("box", 0.08),
+    "collar": ("box", 0.08),
+    "hair": ("box", 0.10),
+    "hair_light": ("box", 0.10),
+}
+
+
 def make_materials():
     mats = {}
-    for name, (hex_color, roughness) in PALETTE.items():
+    palette = dict(PALETTE)
+    palette["face"] = PALETTE["skin"]
+    for name, (hex_color, roughness) in palette.items():
         m = bpy.data.materials.new(name)
         m.use_nodes = True
-        bsdf = m.node_tree.nodes.get("Principled BSDF")
+        nt = m.node_tree
+        bsdf = nt.nodes.get("Principled BSDF")
         bsdf.inputs["Base Color"].default_value = srgb(hex_color)
         bsdf.inputs["Roughness"].default_value = roughness
         m.diffuse_color = srgb(hex_color)  # used by the Workbench preview
+        if name in TEXTURE_BUILDERS:
+            tex = nt.nodes.new("ShaderNodeTexImage")
+            tex.image = make_image(f"tex_{name}", TEXTURE_BUILDERS[name](TEX_SIZE[name]))
+            tex.interpolation = "Linear"
+            tex.extension = "REPEAT"
+            nt.links.new(tex.outputs["Color"], bsdf.inputs["Base Color"])
         mats[name] = m
     return mats
+
+
+def assign_uvs(mesh, mat_names):
+    """Box / front UVs per material, so textured materials need no unwrapping."""
+    layer = mesh.uv_layers.new(name="UVMap")
+    for poly in mesh.polygons:
+        spec = UV_SPEC.get(mat_names[poly.material_index])
+        n = poly.normal
+        for li in poly.loop_indices:
+            p = mesh.vertices[mesh.loops[li].vertex_index].co
+            if spec is None:
+                uv = (0.0, 0.0)
+            elif spec[0] == "front":
+                uv = ((p.x - spec[2]) / spec[1] + 0.5, (p.z - spec[3]) / spec[1] + 0.5)
+            else:
+                ax = max(range(3), key=lambda a: abs(n[a]))
+                a, b = [(1, 2), (0, 2), (0, 1)][ax]
+                uv = (p[a] / spec[1], p[b] / spec[1])
+            layer.data[li].uv = uv
 
 
 # ---------------------------------------------------------------------------
@@ -192,6 +329,8 @@ class Builder:
         for poly, mi in zip(mesh.polygons, self.face_mat):
             poly.material_index = mi
             poly.use_smooth = smooth
+        if any(m in UV_SPEC for m in self.mat_names):
+            assign_uvs(mesh, self.mat_names)
         obj = bpy.data.objects.new(self.name, mesh)
         bpy.context.scene.collection.objects.link(obj)
         for g in sorted(set(self.vgroup)):
@@ -286,16 +425,16 @@ def mouth_shape(face, width, h_up, h_low, smile=0.0, shift=0.0, seg=28):
 def build_mouth(face, mats):
     params = {
         "basis": dict(width=0.021, h_up=0.0007, h_low=0.0007, smile=0.0018),
-        "viseme_aa": dict(width=0.022, h_up=0.0055, h_low=0.0155, smile=0.0015),
-        "viseme_E": dict(width=0.027, h_up=0.0040, h_low=0.0075, smile=0.0030),
-        "viseme_I": dict(width=0.027, h_up=0.0030, h_low=0.0045, smile=0.0040),
-        "viseme_O": dict(width=0.0135, h_up=0.0070, h_low=0.0105, smile=0.0),
-        "viseme_U": dict(width=0.0100, h_up=0.0040, h_low=0.0050, smile=0.0),
+        "viseme_aa": dict(width=0.025, h_up=0.0080, h_low=0.0270, smile=0.0015),
+        "viseme_E": dict(width=0.029, h_up=0.0058, h_low=0.0135, smile=0.0030),
+        "viseme_I": dict(width=0.029, h_up=0.0042, h_low=0.0085, smile=0.0040),
+        "viseme_O": dict(width=0.0155, h_up=0.0095, h_low=0.0185, smile=0.0),
+        "viseme_U": dict(width=0.0110, h_up=0.0055, h_low=0.0095, smile=0.0),
         "viseme_PP": dict(width=0.0195, h_up=0.0002, h_low=0.0002, smile=0.0005),
-        "viseme_SS": dict(width=0.024, h_up=0.0022, h_low=0.0026, smile=0.0025),
+        "viseme_SS": dict(width=0.026, h_up=0.0030, h_low=0.0045, smile=0.0025),
         "mouthSmile": dict(width=0.027, h_up=0.0008, h_low=0.0010, smile=0.0075),
         "mouthHappy": dict(width=0.029, h_up=0.0035, h_low=0.0120, smile=0.0085),
-        "mouthSurprised": dict(width=0.0115, h_up=0.0075, h_low=0.0120, smile=0.0),
+        "mouthSurprised": dict(width=0.0125, h_up=0.0085, h_low=0.0170, smile=0.0),
         "mouthThinking": dict(width=0.017, h_up=0.0006, h_low=0.0006, smile=-0.0025, shift=0.004),
     }
 
@@ -449,14 +588,14 @@ def build_head(mats):
     verts, faces = head_geometry()
     face = Surface(verts, faces)
     b = Builder("Head")
-    b.add((verts, faces), "skin", "head")
+    b.add((verts, faces), "face", "head")
     # Nose
     nz = 1.588
-    b.add(ellipsoid(face.on(0, nz, -0.004) + Vector((0, 0, 0)), (0.0105, 0.012, 0.016), 16, 12), "skin", "head")
+    b.add(ellipsoid(face.on(0, nz, -0.004) + Vector((0, 0, 0)), (0.0105, 0.012, 0.016), 16, 12), "face", "head")
     # Ears
     for sx in (1, -1):
         rot = Matrix.Rotation(math.radians(-12 * sx), 3, "Z")
-        b.add(ellipsoid(Vector((sx * 0.091, 0.012, 1.612)), (0.011, 0.020, 0.029), 16, 12, rot), "skin", "head")
+        b.add(ellipsoid(Vector((sx * 0.091, 0.012, 1.612)), (0.011, 0.020, 0.029), 16, 12, rot), "face", "head")
     return b.build(mats), face
 
 
@@ -678,6 +817,8 @@ def main():
         export_morph_normal=True,
         export_animations=False,
         export_materials="EXPORT",
+        export_image_format="JPEG",
+        export_image_quality=82,
     )
     print("EXPORTED", args.out)
 
