@@ -20,7 +20,7 @@ Branch: `feat/phase-2-voice-loop`, stacked on `feat/phase-1-foundation` (both un
 | T1 | S1, S2, S6 (persona/store) | delegated (resolutor · Sonnet · medium — user cost rule) | done | 73c314f |
 | T2 | S3, S4, S6 (policy/graph) | delegated (same worker, SendMessage) | done | 851d3a6 |
 | T3 | S5, S6, S7 | delegated (same worker) | done | bd9829c |
-| T4 | verify S1–S7 | analista · Haiku · medium (Risk item 5: new deps langgraph, sounddevice, pynput) | done | (next commit) |
+| T4 | verify S1–S7 | analista · Haiku · medium (Risk item 5: new deps langgraph, sounddevice, pynput) | done | 25c9d8b |
 
 ## Log
 
