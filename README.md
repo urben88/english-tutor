@@ -82,6 +82,15 @@ system prompt, the running summary (if any), the most recent turns that fit, and
 turns that no longer fit are folded into the summary by one extra LLM call, made after the reply has been
 spoken so normal turns pay no extra latency.
 
+## Shared models
+
+english-tutor stays independent but never loads a second copy of a model another tool already serves.
+
+- **LLM (Ollama, port 11434).** Before each request the adapter asks `GET /api/ps`. If the model is already
+  loaded, the request uses that instance's context window (so Ollama does not reload it) and a keep-alive that
+  never shortens its lifetime; the prompt budget follows that window. If it is not loaded (or `/api/ps`
+  fails), `num_ctx` and the optional `keep_alive` from `config.yaml` apply.
+
 ## Web UI
 
 Prerequisites as for the voice loop (whisper-server optional: without it text turns and explanations still work).

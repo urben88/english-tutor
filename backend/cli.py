@@ -62,10 +62,11 @@ def hold_settings(cli_cfg: dict[str, Any]) -> tuple[str, float]:
 def build_runner(config: AppConfig, args: argparse.Namespace) -> tuple[TurnRunner, Any, str]:
     persona = load_persona(args.persona or config.persona)
     store = registry.build_store(config)
+    llm = registry.build_llm(config)
     runner = TurnRunner(
-        None if args.text else registry.build_stt(config), registry.build_llm(config),
+        None if args.text else registry.build_stt(config), llm,
         registry.build_tts(config), store, persona,
-        ContextBudget.from_params(config.llm.params, config.context_margin),
+        ContextBudget.for_llm(llm, config.llm.params, config.context_margin),
         select_session(store, args.new, persona.stem))
     return runner, store, persona.name
 

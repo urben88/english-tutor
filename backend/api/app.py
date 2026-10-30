@@ -50,9 +50,10 @@ def build_services(config_path: str = "config.yaml") -> Services:
         stt = registry.build_stt(config)
     except Exception:  # noqa: BLE001 - STT may be unavailable; text turns and explain still work
         stt = None
-    return Services(stt, registry.build_llm(config), registry.build_tts(config),
+    llm = registry.build_llm(config)
+    return Services(stt, llm, registry.build_tts(config),
                     registry.build_store(config), load_persona(config.persona),
-                    ContextBudget.from_params(config.llm.params, config.context_margin))
+                    ContextBudget.for_llm(llm, config.llm.params, config.context_margin))
 
 
 class TextBody(BaseModel):

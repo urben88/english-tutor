@@ -8,7 +8,7 @@ turns that fit + the latest user turn (always). Older turns that do not fit are 
 from __future__ import annotations
 
 from collections.abc import Callable
-from dataclasses import dataclass, field
+from dataclasses import dataclass, field, replace
 from typing import Any
 
 from backend.core.models import ChatMessage, StoredMessage, Summary
@@ -33,6 +33,18 @@ class ContextBudget:
         """Read num_ctx / num_predict from the llm adapter params in config.yaml."""
         return cls(int(llm_params.get("num_ctx", 4096)),
                    int(llm_params.get("num_predict", 256)), margin)
+
+    @classmethod
+    def for_llm(cls, llm: Any, llm_params: dict[str, Any],
+                margin: int = DEFAULT_MARGIN) -> "ContextBudget":
+        """Like ``from_params``, but follows the adapter's effective context window.
+
+        An adapter that shares a model loaded by another tool may run with a different
+        window than configured; it reports it through an optional ``context_size()``.
+        """
+        budget = cls.from_params(llm_params, margin)
+        size = getattr(llm, "context_size", None)
+        return replace(budget, num_ctx=int(size())) if callable(size) else budget
 
 
 @dataclass

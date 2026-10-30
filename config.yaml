@@ -17,7 +17,11 @@ llm:
   params:
     model: "MobiusDevelopment/gemma-4-E2B-it-qat-q4_0-gguf:latest"
     base_url: http://localhost:11434
+    # Shared with other tools: if this model is already loaded in Ollama, its context window is
+    # used instead of num_ctx (so Ollama never reloads it) and its lifetime is never shortened.
+    # num_ctx and keep_alive only apply when the model is not loaded yet.
     num_ctx: 4096
+    # keep_alive: 30m           # optional; omit to use Ollama's default
     temperature: 0.7
     num_predict: 256
     think: false
@@ -38,7 +42,7 @@ store:
   params:
     path: data/history.db
 
-# Tokens kept free on top of llm num_predict: prompt budget = num_ctx - num_predict - margin.
+# Tokens kept free on top of llm num_predict: prompt budget = effective num_ctx - num_predict - margin.
 context_margin: 256
 
 # Terminal voice loop (python -m backend.cli).
