@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { encodeWav } from "../audio/wav";
 import type { Recorder } from "../audio/recorder";
+import { isTyping } from "./isTyping";
 
 export type TalkState = "idle" | "listening" | "thinking";
 
@@ -13,10 +14,6 @@ interface Options {
   onError: (message: string) => void;
   disabled?: boolean;
 }
-
-const isTyping = (t: EventTarget | null) =>
-  t instanceof HTMLElement &&
-  (t.tagName === "INPUT" || t.tagName === "TEXTAREA" || t.tagName === "SELECT" || t.isContentEditable);
 
 export function useHoldToTalk({ recorder, onAudio, onError, disabled = false }: Options) {
   const [state, setState] = useState<TalkState>("idle");

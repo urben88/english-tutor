@@ -11,7 +11,9 @@ export function useTutor(api: TutorApi, player: Player) {
   const [messages, setMessages] = useState<Message[]>([]);
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [speaking, setSpeaking] = useState(false);
   const booted = useRef(false);
+  const playToken = useRef(0);
 
   const open = useCallback(
     async (id: Id) => {
@@ -46,7 +48,13 @@ export function useTutor(api: TutorApi, player: Player) {
 
   const finishTurn = useCallback(
     async (id: Id, res: TurnResponse) => {
-      if (res.audio) player.play(res.audio);
+      if (res.audio) {
+        const token = ++playToken.current;
+        setSpeaking(true);
+        void Promise.resolve(player.play(res.audio)).finally(() => {
+          if (token === playToken.current) setSpeaking(false);
+        });
+      }
       setMessages(await api.messages(id));
     },
     [api, player],
@@ -68,6 +76,12 @@ export function useTutor(api: TutorApi, player: Player) {
     [api, sessionId, finishTurn],
   );
 
+  const stopSpeaking = useCallback(() => {
+    player.stop();
+    playToken.current++;
+    setSpeaking(false);
+  }, [player]);
+
   /** Throws on failure so the hold-to-talk hook can report it. */
   const sendVoice = useCallback(
     async (wav: Blob) => {
@@ -78,5 +92,5 @@ export function useTutor(api: TutorApi, player: Player) {
     [api, sessionId, finishTurn],
   );
 
-  return { messages, busy, error, setError, newSession, sendText, sendVoice, ready: sessionId !== null };
+  return { messages, busy, error, setError, newSession, sendText, sendVoice, speaking, stopSpeaking, ready: sessionId !== null };
 }

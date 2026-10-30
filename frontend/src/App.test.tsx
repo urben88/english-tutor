@@ -37,7 +37,7 @@ function fakeRecorder(): Recorder {
   };
 }
 
-const player: Player = { play: vi.fn() };
+const player: Player = { play: vi.fn().mockResolvedValue(undefined), stop: vi.fn() };
 
 describe("click to explain", () => {
   it("clicking a word calls explain with the word and the message as context", async () => {
