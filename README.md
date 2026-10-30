@@ -55,7 +55,7 @@ CPU fallback: in `config.yaml` set the `stt` block to `adapter: whisper_cpp` (se
 uv run python -m backend.bench                 # latency table for TTS, STT and LLM
 uv run pytest -m "not integration"             # unit tests, no models needed
 uv run pytest -m integration                   # real adapters; skipped if a model/service is missing
-uv run uvicorn backend.api.app:app             # web API (see Web UI), GET /health
+uv run uvicorn backend.api.app:app --port 8765  # web API (see Web UI), GET /health
 ```
 
 ## Voice loop (terminal)
@@ -103,18 +103,26 @@ Servers started this way are **not** stopped when english-tutor exits, so other 
 To stop them: end `whisper-server.exe` and the `python` process running `backend.services.tts_server` in Task Manager,
 or `taskkill /IM whisper-server.exe /F` for the first one. Ollama is never started or stopped by this app.
 
+## Launcher (double click)
+
+`Iniciar.cmd` starts everything for you: it needs `uv` (and Node.js/`npm` the first time, to build the UI),
+runs the server on port 8765, opens http://127.0.0.1:8765 in your browser once it answers, and keeps the
+console open with the server log (close it or press Ctrl+C to stop). If the app is already running it only
+opens the browser. It warns if Ollama is not reachable; it never starts Ollama. Whisper and TTS servers are
+started on demand by the app (see Shared models).
+
 ## Web UI
 
 Prerequisites as for the voice loop (whisper-server optional: without it text turns and explanations still work).
 
 ```
-# dev: API on :8000 + Vite dev server (proxies /api and /health to 127.0.0.1:8000)
-uv run uvicorn backend.api.app:app
+# dev: API on :8765 + Vite dev server (proxies /api and /health to 127.0.0.1:8765)
+uv run uvicorn backend.api.app:app --port 8765
 cd frontend && npm install && npm run dev
 
 # prod: build once, then uvicorn serves frontend/dist at /
 cd frontend && npm run build
-uv run uvicorn backend.api.app:app             # open http://127.0.0.1:8000
+uv run uvicorn backend.api.app:app --port 8765 # open http://127.0.0.1:8765
 ```
 
 Hold the on-screen button (or the Space key, outside the text box) to talk, release to send. Click any word,

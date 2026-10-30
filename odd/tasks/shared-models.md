@@ -19,7 +19,7 @@ Branch: `feat/shared-models`, stacked on `feat/phase-3-web-ui` (unpushed) · Del
   - `config.yaml` switches `tts.adapter` to `supertonic_server` (port 8179); the in-process `supertonic` adapter stays available.
   - Reuse the existing WAV encode/decode helpers (`backend/api/wav.py`) and the process-start/wait helper shared with S2 — one helper, not two copies.
 - **S4 — Double-click launcher.** User (L3): "genera un launcher en CMD para darle doble clic y poder arrancarlo directamente."
-  - `Iniciar.cmd` at the repo root, runnable by double click from Explorer (it `cd`s to its own folder). Checks `uv` is installed (clear message and pause if not). If `frontend\dist\index.html` is missing, builds the UI (`npm install` if `node_modules` is missing, then `npm run build`; clear message and pause if `npm` is missing). Starts `uv run uvicorn backend.api.app:app --host 127.0.0.1 --port 8000`, opens `http://127.0.0.1:8000` in the default browser once `/health` answers, and keeps the console open showing the server log. If port 8000 is already serving english-tutor, just open the browser.
+  - `Iniciar.cmd` at the repo root, runnable by double click from Explorer (it `cd`s to its own folder). Checks `uv` is installed (clear message and pause if not). If `frontend\dist\index.html` is missing, builds the UI (`npm install` if `node_modules` is missing, then `npm run build`; clear message and pause if `npm` is missing). Starts `uv run uvicorn backend.api.app:app --host 127.0.0.1 --port 8765`, opens `http://127.0.0.1:8765` in the default browser once `/health` answers, and keeps the console open showing the server log. If port 8765 is already serving english-tutor, just open the browser.
   - Ollama itself is not started by the launcher (it is the user's shared service); if it is not reachable, the launcher prints a one-line warning.
 - **S5 — Tests.** No real models, processes or network: `httpx.MockTransport` (or equivalent fakes) for `/api/ps` adoption (loaded with other `context_length` → that value is sent; not loaded → configured `num_ctx`; `/api/ps` error → configured), keep-alive never shortened, effective context feeds the budget; STT/TTS "reachable → no process started", "unreachable + autostart → starts once with the expected argv, then uses it", "start fails → clear error" (STT) / "→ in-process fallback" (TTS) with the process launcher injected/mocked; TTS server `/synthesize` with a fake TTS through FastAPI `TestClient` (WAV round-trip). Existing tests keep passing; the core forbidden-import test still passes.
 - **S6 — Docs.** README: short "Shared models" section (what is reused, what is started and left running, ports 11434/8178/8179, how to stop the shared servers) and how to use `Iniciar.cmd`. Update config comments.
@@ -29,8 +29,8 @@ Branch: `feat/shared-models`, stacked on `feat/phase-3-web-ui` (unpushed) · Del
 | ID | Specs | Route | Status | Commit |
 |---|---|---|---|---|
 | T1 | S1, S5, S6 | delegated (resolutor, context backstop + cost rule) | done | 95377ae |
-| T2 | S2, S3, S5, S6 | delegated (same resolutor, sequential) | done | (T2 commit) |
-| T3 | S4, S6 | delegated (same resolutor, sequential) | pending | |
+| T2 | S2, S3, S5, S6 | delegated (same resolutor, sequential) | done | df7711a |
+| T3 | S4, S6 | delegated (same resolutor, sequential) | done | (T3 commit) |
 
 ## Log
 
@@ -40,3 +40,5 @@ Branch: `feat/shared-models`, stacked on `feat/phase-3-web-ui` (unpushed) · Del
 - **L4 (analysis):** Ollama is already shared; it reloads a model when a request's `num_ctx` differs from the loaded one. Handy (asistente-voz-local) loads Whisper in-process and exposes no transcription endpoint (its settings only have `selected_model`, `transcribe_accelerator`, `transcribe_gpu_device`), so english-tutor cannot share Handy's Whisper; it shares any running whisper-server instead. The `lector` loads Supertonic in-process; it can share the new TTS server only if it is changed to call it (out of scope, asistente-voz-local stays independent).
 - **L5 (T1 evidence):** RED: 7 new tests failed before the change; GREEN: `uv run pytest -m "not integration" -q` 92 passed. Budget follows `llm.context_size()` via `ContextBudget.for_llm` (API and CLI); it is computed once at startup.
 - **L6 (T2 evidence):** RED: test module failed to import before the code; GREEN: 107 passed. One shared helper `backend/adapters/process.py` (`ensure_running`, `spawn_detached`) used by STT and TTS. STT probes in the constructor (autostart) and keeps the clear ConnectionError on failure. `tests/test_registry.py` now expects `supertonic_server` as the repo default TTS.
+- **L7 (2026-10-30, user):** "el puerto de 8000 creo que ya lo tengo en uso entonces pongo otro" -> web port 8765 (S4, Iniciar.cmd, Vite proxy, README). 8178 and 8179 unchanged.
+- **L8 (T3 evidence):** `Iniciar.cmd` (CRLF) written and read back; branches checked structurally (uv missing -> message+pause, already running -> open browser, UI build, Ollama warning, background browser opener). Not double-clicked or run end to end.
