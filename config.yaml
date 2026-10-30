@@ -20,7 +20,9 @@ llm:
   adapter: ollama
   params:
     model: "MobiusDevelopment/gemma-4-E2B-it-qat-q4_0-gguf:latest"
-    base_url: http://localhost:11434
+    # 127.0.0.1, never "localhost": on Windows the name resolves to ::1 first and every
+    # request pays a ~2 s IPv6 fallback before reaching Ollama.
+    base_url: http://127.0.0.1:11434
     # Shared with other tools: if this model is already loaded in Ollama, its context window is
     # used instead of num_ctx (so Ollama never reloads it) and its lifetime is never shortened.
     # num_ctx and keep_alive only apply when the model is not loaded yet.

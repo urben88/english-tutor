@@ -9,7 +9,7 @@ const CONTEXT = "Hello, world! It's nice.";
 
 function fakeApi(overrides: Partial<TutorApi> = {}): TutorApi {
   const turn = { user_text: "hi", reply_text: "yo", audio: "", sample_rate: 16000 };
-  return {
+  const api = {
     persona: vi.fn().mockResolvedValue({ name: "Tutor", stem: "tutor" }),
     listSessions: vi
       .fn()
@@ -36,7 +36,19 @@ function fakeApi(overrides: Partial<TutorApi> = {}): TutorApi {
     saveSettings: vi.fn().mockImplementation(async (p) => ({ answer_length: "medium", context_tokens: 0, ...p })),
     analyze: vi.fn().mockResolvedValue({ text: "", message_id: null, structure: "", tokens: [] }),
     ...overrides,
-  };
+  } as unknown as TutorApi;
+  if (!overrides.streamTurn) {
+    api.streamTurn = async (id, body, onEvent) => {
+      const res = "wav" in body
+        ? await api.voiceTurn(id, body.wav)
+        : await api.textTurn(id, body.text);
+      if (res.audio) {
+        onEvent({ type: "reply", text: res.reply_text, audio: res.audio, sample_rate: res.sample_rate });
+      }
+      onEvent({ type: "done", reply_text: res.reply_text });
+    };
+  }
+  return api;
 }
 
 function fakeRecorder(): Recorder {
@@ -293,7 +305,7 @@ describe("hands-free", () => {
     await act(async () =>
       finish({ user_text: "hello", reply_text: "yo", audio: "QUJD", sample_rate: 16000 }),
     );
-    await waitFor(() => expect(player.play).toHaveBeenCalledWith("QUJD"));
+    await waitFor(() => expect(player.play).toHaveBeenCalledWith("QUJD", false));
     await waitFor(() => expect(status()).toHaveTextContent("Muted"));
   });
 

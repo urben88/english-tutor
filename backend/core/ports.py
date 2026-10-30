@@ -24,8 +24,10 @@ class LanguageModel(Protocol):
         ``max_tokens`` overrides the adapter's configured reply limit for this call."""
         ...
 
-    def stream(self, messages: list[ChatMessage]) -> Iterator[str]:
-        """Yield the reply in text chunks as they are produced."""
+    def stream(self, messages: list[ChatMessage], *,
+               max_tokens: int | None = None) -> Iterator[str]:
+        """Yield the reply in text chunks as they are produced. ``max_tokens`` overrides the
+        adapter's configured reply limit for this call, exactly like ``generate``."""
         ...
 
     def count_tokens(self, text: str) -> int:

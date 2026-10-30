@@ -54,7 +54,7 @@ def keep_alive_seconds(value: int | float | str) -> float:
 
 
 class OllamaLLM:
-    def __init__(self, model: str, base_url: str = "http://localhost:11434",
+    def __init__(self, model: str, base_url: str = "http://127.0.0.1:11434",
                  num_ctx: int = 4096, temperature: float = 0.7, num_predict: int = 256,
                  think: bool = False, timeout: float = 120.0,
                  keep_alive: int | float | str | None = None) -> None:
@@ -136,9 +136,10 @@ class OllamaLLM:
         resp.raise_for_status()
         return resp.json()["message"]["content"]
 
-    def stream(self, messages: list[ChatMessage]) -> Iterator[str]:
+    def stream(self, messages: list[ChatMessage], *,
+               max_tokens: int | None = None) -> Iterator[str]:
         with self._client.stream("POST", self._url,
-                                 json=self._payload(messages, True, None)) as resp:
+                                 json=self._payload(messages, True, None, max_tokens)) as resp:
             resp.raise_for_status()
             for line in resp.iter_lines():
                 if not line:

@@ -10,7 +10,7 @@ import { StudyPanel } from "./components/organisms/StudyPanel";
 const turn = { user_text: "hi", reply_text: "yo", audio: "", sample_rate: 16000 };
 
 function fakeApi(): TutorApi {
-  return {
+  const api = {
     persona: vi.fn().mockResolvedValue({ name: "Tutor", stem: "tutor" }),
     listSessions: vi.fn().mockResolvedValue([
       { id: 1, persona: "tutor", created_at: "2026-10-30T10:00:00", updated_at: "2026-10-30T10:05:00", message_count: 2 },
@@ -37,7 +37,17 @@ function fakeApi(): TutorApi {
     getSettings: vi.fn().mockResolvedValue({ answer_length: "medium", context_tokens: 0 }),
     saveSettings: vi.fn().mockImplementation(async (p) => ({ answer_length: "medium", context_tokens: 0, ...p })),
     analyze: vi.fn().mockResolvedValue({ text: "", message_id: null, structure: "", tokens: [] }),
+  } as unknown as TutorApi;
+  api.streamTurn = async (id, body, onEvent) => {
+    const res = "wav" in body
+      ? await api.voiceTurn(id, body.wav)
+      : await api.textTurn(id, body.text);
+    if (res.audio) {
+      onEvent({ type: "reply", text: res.reply_text, audio: res.audio, sample_rate: res.sample_rate });
+    }
+    onEvent({ type: "done", reply_text: res.reply_text });
   };
+  return api;
 }
 const recorder: Recorder = { start: vi.fn(), stop: vi.fn(), cancel: vi.fn() };
 const mic: Mic = { start: vi.fn().mockResolvedValue(16000), stop: vi.fn() };

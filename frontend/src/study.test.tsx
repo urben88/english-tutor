@@ -28,7 +28,7 @@ const item = (over: Partial<StudyItem> = {}): StudyItem => ({
 
 function fakeApi(over: Partial<TutorApi> = {}): TutorApi {
   const turn = { user_text: "hi", reply_text: "yo", audio: "", sample_rate: 16000 };
-  return {
+  const api = {
     persona: vi.fn().mockResolvedValue({ name: "Tutor", stem: "tutor" }),
     listSessions: vi.fn().mockResolvedValue([
       { id: 1, persona: "tutor", created_at: "", updated_at: "", message_count: 2 },
@@ -56,7 +56,19 @@ function fakeApi(over: Partial<TutorApi> = {}): TutorApi {
     saveSettings: vi.fn().mockImplementation(async (p) => ({ answer_length: "medium", context_tokens: 0, ...p })),
     analyze: vi.fn().mockResolvedValue({ text: "", message_id: null, structure: "", tokens: [] }),
     ...over,
-  };
+  } as unknown as TutorApi;
+  if (!over.streamTurn) {
+    api.streamTurn = async (id, body, onEvent) => {
+      const res = "wav" in body
+        ? await api.voiceTurn(id, body.wav)
+        : await api.textTurn(id, body.text);
+      if (res.audio) {
+        onEvent({ type: "reply", text: res.reply_text, audio: res.audio, sample_rate: res.sample_rate });
+      }
+      onEvent({ type: "done", reply_text: res.reply_text });
+    };
+  }
+  return api;
 }
 
 const recorder: Recorder = { start: vi.fn(), stop: vi.fn(), cancel: vi.fn() };
@@ -79,7 +91,7 @@ describe("word click: listen first", () => {
     mount(api);
     fireEvent.click((await subtitles()).getByRole("button", { name: "world" }));
     await waitFor(() => expect(api.tts).toHaveBeenCalledWith("world", 1));
-    await waitFor(() => expect(player.play).toHaveBeenCalledWith("QUJD"));
+    await waitFor(() => expect(player.play).toHaveBeenCalledWith("QUJD", false));
     expect(api.saveStudy).toHaveBeenCalledWith({
       text: "world",
       source_text: SENTENCE,
@@ -189,7 +201,7 @@ describe("tutor message actions", () => {
     mount(api);
     fireEvent.click((await subtitles()).getByRole("button", { name: "Read again" }));
     await waitFor(() => expect(api.tts).toHaveBeenCalledWith(SENTENCE, 1));
-    await waitFor(() => expect(player.play).toHaveBeenCalledWith("QUJD"));
+    await waitFor(() => expect(player.play).toHaveBeenCalledWith("QUJD", false));
     expect(api.saveStudy).not.toHaveBeenCalled(); // not a study item
   });
 

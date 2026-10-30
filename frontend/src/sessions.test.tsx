@@ -54,7 +54,7 @@ const word: StudyItem = {
 
 function fakeApi(over: Partial<TutorApi> = {}): TutorApi {
   const turn = { user_text: "hi", reply_text: "yo", audio: "", sample_rate: 16000 };
-  return {
+  const api = {
     persona: vi.fn().mockResolvedValue({ name: "Tutor", stem: "tutor" }),
     listSessions: vi.fn().mockResolvedValue([session(1, "job interview"), session(0)]),
     createSession: vi.fn().mockResolvedValue({ id: 2 }),
@@ -75,7 +75,19 @@ function fakeApi(over: Partial<TutorApi> = {}): TutorApi {
     saveSettings: vi.fn().mockImplementation(async (p) => ({ answer_length: "medium", context_tokens: 0, ...p })),
     analyze: vi.fn().mockResolvedValue(ANALYSIS),
     ...over,
-  };
+  } as unknown as TutorApi;
+  if (!over.streamTurn) {
+    api.streamTurn = async (id, body, onEvent) => {
+      const res = "wav" in body
+        ? await api.voiceTurn(id, body.wav)
+        : await api.textTurn(id, body.text);
+      if (res.audio) {
+        onEvent({ type: "reply", text: res.reply_text, audio: res.audio, sample_rate: res.sample_rate });
+      }
+      onEvent({ type: "done", reply_text: res.reply_text });
+    };
+  }
+  return api;
 }
 
 let frames: (v: number) => void = () => {};

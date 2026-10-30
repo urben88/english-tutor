@@ -8,14 +8,16 @@ are only loaded on the first request that needs them. One lock serializes model 
 from __future__ import annotations
 
 import base64
+import json
 import threading
+from collections.abc import Iterator
 from dataclasses import asdict, dataclass
 from pathlib import Path
 from typing import Any
 
 from fastapi import FastAPI, HTTPException, Request
 from fastapi.concurrency import run_in_threadpool
-from fastapi.responses import FileResponse
+from fastapi.responses import FileResponse, StreamingResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 
@@ -120,7 +122,10 @@ def study_json(i: StudyItem) -> dict[str, Any]:
 def create_app(services: Services | None = None, static_dir: Path | str | None = DEFAULT_STATIC,
                config_path: str = "config.yaml") -> FastAPI:
     app = FastAPI(title="English Tutor")
-    lock = threading.RLock()  # serializes model and store access (single local user)
+    # Serializes model and store access (single local user). A plain Lock, not an RLock:
+    # the NDJSON generator acquires it in one worker thread and is closed in another, and
+    # only a plain lock may be released by a different thread than the one that took it.
+    lock = threading.Lock()
     holder: dict[str, Services] = {}
     if services is not None:
         holder["s"] = services
@@ -154,6 +159,36 @@ def create_app(services: Services | None = None, static_dir: Path | str | None =
             runner = TurnRunner(s.stt, s.llm, s.tts, s.store, s.persona, s.budget, sid,
                                 role=info.role, settings=current_settings(s))
             return reply_json(runner.run(clip) if clip is not None else runner.run_text(text or ""))
+
+    def ndjson(event: dict[str, Any]) -> str:
+        return json.dumps(event, ensure_ascii=False) + "\n"
+
+    def require_known_session(s: Services, sid: int) -> None:
+        with lock:
+            require_session(s, sid)
+
+    def stream_lines(s: Services, sid: int, clip: AudioClip | None,
+                     text: str | None) -> Iterator[str]:
+        """NDJSON lines for one turn. The lock is held for the whole stream and released
+        when the generator finishes, fails or is closed (client disconnect)."""
+        with lock:
+            try:
+                info = require_session(s, sid)
+                runner = TurnRunner(s.stt, s.llm, s.tts, s.store, s.persona, s.budget, sid,
+                                    role=info.role, settings=current_settings(s))
+                for event in runner.stream(audio=clip, text=text):
+                    if event["type"] == "sentence":
+                        audio = event["audio"]
+                        yield ndjson({
+                            "type": "reply", "text": event["text"],
+                            "audio": base64.b64encode(encode_wav(audio)).decode("ascii"),
+                            "sample_rate": audio.sample_rate})
+                    elif event["type"] == "done":
+                        yield ndjson({"type": "done", "reply_text": event["reply_text"]})
+                    else:
+                        yield ndjson(event)
+            except Exception as e:  # noqa: BLE001 - the HTTP status is already 200 here
+                yield ndjson({"type": "error", "message": str(e)})
 
     @app.get("/health")
     def health() -> dict[str, str]:
@@ -240,6 +275,30 @@ def create_app(services: Services | None = None, static_dir: Path | str | None =
         if not body.text.strip():
             raise HTTPException(400, "text is empty")
         return run_turn(sid, None, body.text.strip())
+
+    @app.post("/api/sessions/{sid}/turn/stream")
+    async def voice_turn_stream(sid: int, request: Request) -> StreamingResponse:
+        try:
+            clip = decode_wav(await request.body())
+        except ValueError as e:
+            raise HTTPException(400, str(e)) from e
+        s = await run_in_threadpool(svc)
+        if s.stt is None:
+            raise HTTPException(503, "speech-to-text is unavailable (is whisper-server running?); "
+                                     "use /turn/text/stream")
+        await run_in_threadpool(require_known_session, s, sid)
+        return StreamingResponse(stream_lines(s, sid, clip, None),
+                                 media_type="application/x-ndjson")
+
+    @app.post("/api/sessions/{sid}/turn/text/stream")
+    async def text_turn_stream(sid: int, body: TextBody) -> StreamingResponse:
+        text = body.text.strip()
+        if not text:
+            raise HTTPException(400, "text is empty")
+        s = await run_in_threadpool(svc)
+        await run_in_threadpool(require_known_session, s, sid)
+        return StreamingResponse(stream_lines(s, sid, None, text),
+                                 media_type="application/x-ndjson")
 
     @app.post("/api/explain")
     def explain_endpoint(body: ExplainBody) -> dict[str, Any]:

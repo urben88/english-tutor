@@ -22,6 +22,13 @@ export interface Message {
   content: string;
 }
 
+/** One line of the NDJSON turn stream (POST /api/sessions/{id}/turn[/text]/stream). */
+export type TurnEvent =
+  | { type: "user"; text: string }
+  | { type: "reply"; text: string; audio: string; sample_rate: number }
+  | { type: "done"; reply_text: string }
+  | { type: "error"; message: string };
+
 export interface TurnResponse {
   user_text: string;
   reply_text: string;

@@ -14,15 +14,18 @@ class FakeSTT:
 
 
 class FakeLLM:
-    def __init__(self):
+    def __init__(self, chunks=("x",)):
         self.calls = []
+        self.chunks = list(chunks)
+        self.stream_calls = []
 
     def generate(self, messages, *, json_schema=None, max_tokens=None):
         self.calls.append(messages)
         return "SUMMARY NEW" if "summar" in messages[0].content.lower() else "reply here"
 
-    def stream(self, messages):
-        yield "x"
+    def stream(self, messages, *, max_tokens=None):
+        self.stream_calls.append((messages, max_tokens))
+        yield from self.chunks
 
     def count_tokens(self, text):
         return len(text.split())
@@ -111,6 +114,55 @@ def test_reply_delivered_before_summarization(tmp_path):
     assert store.get_summary(sid).summarized_upto > 0
     for _, n in order:
         assert "summar" not in llm.calls[n - 1][0].content.lower()
+
+
+def test_stream_emits_user_then_sentences_then_done(tmp_path):
+    store = SQLiteStore(path=str(tmp_path / "s.db"))
+    sid = store.create_session("p")
+    chunks = ["Hi. ", "This is a longer second sentence that goes comfortably past sixty."]
+    llm, tts = FakeLLM(chunks), FakeTTS()
+    runner = TurnRunner(FakeSTT(), llm, tts, store, PERSONA, ROOMY, sid)
+
+    events = list(runner.stream(text="typed"))
+
+    sentences = ["Hi.", "This is a longer second sentence that goes comfortably past sixty."]
+    assert [e["type"] for e in events] == ["user", "sentence", "sentence", "done"]
+    assert events[0] == {"type": "user", "text": ""}  # no STT in a text turn
+    assert [e["text"] for e in events[1:3]] == sentences
+    assert [clip for clip in tts.calls] == [(s, "F2") for s in sentences]
+    assert events[-1]["reply_text"] == " ".join(sentences)
+    assert [(m.role, m.content) for m in store.load_messages(sid)] == [
+        ("user", "typed"), ("assistant", " ".join(sentences))]
+    # the reply limit is forwarded only when the settings set one (medium here)
+    streamed_messages, max_tokens = llm.stream_calls[0]
+    assert max_tokens is None and streamed_messages[0].content == "SYS"
+
+
+def test_stream_from_audio_yields_stt_text_first(tmp_path):
+    runner, store, sid, _, _ = make(tmp_path, ROOMY)
+    events = list(runner.stream(audio=CLIP))
+    assert events[0] == {"type": "user", "text": "heard text"}
+    assert events[-1]["type"] == "done"
+
+
+def test_stream_summarizes_after_done(tmp_path):
+    store = SQLiteStore(path=str(tmp_path / "f.db"))
+    sid = store.create_session("p")
+    for content in ("one two three four five six seven", "six seven eight nine ten eleven twelve",
+                    "eleven twelve thirteen fourteen fifteen sixteen seventeen"):
+        store.append_message(sid, "user", content)
+    llm, tts = FakeLLM(["Hi. ", "A second sentence that is long enough to be spoken on its own."]), FakeTTS()
+    runner = TurnRunner(FakeSTT(), llm, tts, store, PERSONA, TIGHT, sid)
+
+    stream = runner.stream(text="new turn")
+    seen = []
+    for event in stream:
+        seen.append(event)
+        if event["type"] == "done":
+            break
+    assert store.get_summary(sid).text == ""  # summary runs only after `done`
+    list(stream)  # resume: summarization happens now
+    assert store.get_summary(sid).text == "SUMMARY NEW"
 
 
 def test_role_is_part_of_the_system_prompt_and_counted_in_the_budget(tmp_path):

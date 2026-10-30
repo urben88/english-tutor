@@ -26,13 +26,14 @@ class FakeLLM:
     def __init__(self):
         self.explain_reply = GOOD_EXPLAIN
         self.calls = []
+        self.chunks = ["x"]
 
     def generate(self, messages, *, json_schema=None, max_tokens=None):
         self.calls.append((messages, max_tokens))
         return self.explain_reply if json_schema else "reply here"
 
-    def stream(self, messages):
-        yield "x"
+    def stream(self, messages, *, max_tokens=None):
+        yield from self.chunks
 
     def count_tokens(self, text):
         return len(text.split())
@@ -124,6 +125,61 @@ def test_voice_turn(client):
                     headers={"Content-Type": "audio/wav"})
     assert r.status_code == 200
     assert r.json()["user_text"] == "heard text" and r.json()["reply_text"] == "reply here"
+
+
+def ndjson_lines(resp):
+    return [json.loads(line) for line in resp.text.splitlines() if line.strip()]
+
+
+def test_text_turn_stream_is_ndjson_with_user_reply_and_done(client, parts):
+    sid = client.post("/api/sessions").json()["id"]
+    r = client.post(f"/api/sessions/{sid}/turn/text/stream", json={"text": "hello"})
+    assert r.status_code == 200
+    assert r.headers["content-type"].startswith("application/x-ndjson")
+    events = ndjson_lines(r)
+    assert [e["type"] for e in events] == ["user", "reply", "done"]
+    assert events[0] == {"type": "user", "text": ""}  # text turn: no STT transcript
+    assert events[1]["text"] == "x"
+    clip = decode_wav(base64.b64decode(events[1]["audio"]))
+    assert clip.sample_rate == 24000 and len(clip.samples) == 160
+    assert events[2]["reply_text"] == "x"
+    msgs = client.get(f"/api/sessions/{sid}/messages").json()
+    assert [(m["role"], m["content"]) for m in msgs] == [("user", "hello"), ("assistant", "x")]
+
+
+def test_voice_turn_stream_uses_stt_before_the_stream(client):
+    sid = client.post("/api/sessions").json()["id"]
+    r = client.post(f"/api/sessions/{sid}/turn/stream", content=wav_bytes(),
+                    headers={"Content-Type": "audio/wav"})
+    assert r.status_code == 200
+    events = ndjson_lines(r)
+    assert events[0] == {"type": "user", "text": "heard text"}
+    assert [e["type"] for e in events[1:]] == ["reply", "done"]
+
+
+def test_turn_stream_rejects_unknown_session_and_empty_text_before_streaming(client):
+    assert client.post("/api/sessions/99/turn/text/stream",
+                       json={"text": "hi"}).status_code == 404
+    sid = client.post("/api/sessions").json()["id"]
+    assert client.post(f"/api/sessions/{sid}/turn/text/stream",
+                       json={"text": "  "}).status_code == 400
+    r = client.post("/api/sessions/99/turn/stream", content=wav_bytes(),
+                    headers={"Content-Type": "audio/wav"})
+    assert r.status_code == 404
+
+
+def test_turn_stream_reports_mid_stream_errors_as_an_error_line(client, parts):
+    def boom(messages, *, max_tokens=None):
+        raise RuntimeError("model died")
+
+    parts[1].stream = boom
+    sid = client.post("/api/sessions").json()["id"]
+    r = client.post(f"/api/sessions/{sid}/turn/text/stream", json={"text": "hello"})
+    assert r.status_code == 200
+    events = ndjson_lines(r)
+    assert events[0]["type"] == "user" and events[-1] == {
+        "type": "error", "message": "model died"}
+    assert client.get(f"/api/sessions/{sid}/messages").json() == []
 
 
 @pytest.mark.parametrize("body", [b"", b"not a wav file", wav_bytes(samples=0), wav_bytes(width=1)])

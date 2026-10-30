@@ -9,6 +9,7 @@ import type {
   SpeechResponse,
   StudyDraft,
   StudyItem,
+  TurnEvent,
   TurnResponse,
 } from "./types";
 
@@ -21,6 +22,16 @@ export interface TutorApi {
   messages(sessionId: Id): Promise<Message[]>;
   voiceTurn(sessionId: Id, wav: Blob): Promise<TurnResponse>;
   textTurn(sessionId: Id, text: string): Promise<TurnResponse>;
+  /**
+   * Streams one turn as NDJSON events (`user`, `reply`, `done`) and calls `onEvent` per line.
+   * Throws `ApiError` on a non-2xx response or on an `error` event. Resolves at the end of
+   * the stream (after `done`).
+   */
+  streamTurn(
+    sessionId: Id,
+    body: { wav: Blob } | { text: string },
+    onEvent: (e: TurnEvent) => void,
+  ): Promise<void>;
   explain(text: string, context: string, simpler?: boolean): Promise<Explanation>;
   /** Speech for a word, phrase or message. `speed` < 1 is slower (0.25 to 2). */
   tts(text: string, speed?: number): Promise<SpeechResponse>;
@@ -39,17 +50,19 @@ export class ApiError extends Error {}
 
 type Fetch = typeof fetch;
 
-async function parse<T>(res: Response): Promise<T> {
-  if (!res.ok) {
-    let detail = `Request failed (${res.status})`;
-    try {
-      const body = await res.json();
-      if (typeof body?.detail === "string") detail = body.detail;
-    } catch {
-      /* keep default message */
-    }
-    throw new ApiError(detail);
+async function errorFrom(res: Response): Promise<ApiError> {
+  let detail = `Request failed (${res.status})`;
+  try {
+    const body = await res.json();
+    if (typeof body?.detail === "string") detail = body.detail;
+  } catch {
+    /* keep default message */
   }
+  return new ApiError(detail);
+}
+
+async function parse<T>(res: Response): Promise<T> {
+  if (!res.ok) throw await errorFrom(res);
   return (await res.json()) as T;
 }
 
@@ -80,6 +93,37 @@ export function createApi(fetchFn: Fetch = (...a) => fetch(...a)): TutorApi {
       fetchFn(`/api/sessions/${sid(id)}/turn/text`, json({ text })).then((r) =>
         parse<TurnResponse>(r),
       ),
+    streamTurn: async (id, body, onEvent) => {
+      const isWav = "wav" in body;
+      const res = await fetchFn(
+        `/api/sessions/${sid(id)}/turn${isWav ? "" : "/text"}/stream`,
+        isWav
+          ? { method: "POST", headers: { "Content-Type": "audio/wav" }, body: body.wav }
+          : { ...json({ text: body.text }) },
+      );
+      if (!res.ok) throw await errorFrom(res);
+      if (!res.body) throw new ApiError("The server returned no stream");
+      const reader = res.body.getReader();
+      const decoder = new TextDecoder();
+      let buffer = "";
+      const handle = (line: string) => {
+        if (!line.trim()) return;
+        const event = JSON.parse(line) as TurnEvent;
+        if (event.type === "error") throw new ApiError(event.message);
+        onEvent(event);
+      };
+      for (;;) {
+        const { done, value } = await reader.read();
+        if (done) break;
+        buffer += decoder.decode(value, { stream: true });
+        for (let i = buffer.indexOf("\n"); i >= 0; i = buffer.indexOf("\n")) {
+          handle(buffer.slice(0, i));
+          buffer = buffer.slice(i + 1);
+        }
+      }
+      buffer += decoder.decode();
+      handle(buffer);
+    },
     explain: (text, context, simpler = false) =>
       fetchFn("/api/explain", json(simpler ? { text, context, simpler } : { text, context })).then((r) =>
         parse<Explanation>(r),

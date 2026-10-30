@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import type { TutorApi } from "../api/client";
-import type { Id, Message, SessionSummary, TurnResponse } from "../api/types";
+import type { Id, Message, SessionSummary, TurnEvent } from "../api/types";
 import type { Player } from "../audio/player";
 
 const errMsg = (e: unknown) => (e instanceof Error ? e.message : "Something went wrong.");
@@ -15,6 +15,8 @@ export function useTutor(api: TutorApi, player: Player) {
   const [speaking, setSpeaking] = useState(false);
   const booted = useRef(false);
   const playToken = useRef(0);
+  const streamToken = useRef(0);
+  const stoppedTurn = useRef(0);
 
   const open = useCallback(
     async (id: Id) => {
@@ -90,22 +92,34 @@ export function useTutor(api: TutorApi, player: Player) {
     [open],
   );
 
+  /** `append` queues the clip behind the previous one; `speaking` clears after the last. */
   const playAudio = useCallback(
-    (audio: string) => {
+    (audio: string, append = false) => {
       const token = ++playToken.current;
       setSpeaking(true);
-      void Promise.resolve(player.play(audio)).finally(() => {
+      void Promise.resolve(player.play(audio, append)).finally(() => {
         if (token === playToken.current) setSpeaking(false);
       });
     },
     [player],
   );
 
-  const finishTurn = useCallback(
-    async (id: Id, res: TurnResponse) => {
-      if (res.audio) playAudio(res.audio);
-      setMessages(await api.messages(id));
-      void refreshSessions();
+  /** Streams one turn: every reply clip is played as soon as it arrives. */
+  const runTurnStream = useCallback(
+    async (id: Id, body: { wav: Blob } | { text: string }, turn: number) => {
+      let append = false;
+      await api.streamTurn(id, body, (event: TurnEvent) => {
+        if (turn !== streamToken.current) return;
+        if (event.type === "reply") {
+          // a Stop silences this turn: later clips are dropped instead of restarting audio
+          if (turn === stoppedTurn.current) return;
+          playAudio(event.audio, append);
+          append = true;
+        } else if (event.type === "done") {
+          void api.messages(id).then(setMessages).catch(() => {});
+          void refreshSessions();
+        }
+      });
     },
     [api, playAudio, refreshSessions],
   );
@@ -126,20 +140,22 @@ export function useTutor(api: TutorApi, player: Player) {
   const sendText = useCallback(
     async (text: string) => {
       if (sessionId === null || !text.trim()) return;
+      const turn = ++streamToken.current;
       setBusy(true);
       setError(null);
       try {
-        await finishTurn(sessionId, await api.textTurn(sessionId, text.trim()));
+        await runTurnStream(sessionId, { text: text.trim() }, turn);
       } catch (e) {
         setError(errMsg(e));
       } finally {
         setBusy(false);
       }
     },
-    [api, sessionId, finishTurn],
+    [sessionId, runTurnStream],
   );
 
   const stopSpeaking = useCallback(() => {
+    stoppedTurn.current = streamToken.current;
     player.stop();
     playToken.current++;
     setSpeaking(false);
@@ -149,10 +165,11 @@ export function useTutor(api: TutorApi, player: Player) {
   const sendVoice = useCallback(
     async (wav: Blob) => {
       if (sessionId === null) throw new Error("No session yet.");
+      const turn = ++streamToken.current;
       setError(null);
-      await finishTurn(sessionId, await api.voiceTurn(sessionId, wav));
+      await runTurnStream(sessionId, { wav }, turn);
     },
-    [api, sessionId, finishTurn],
+    [sessionId, runTurnStream],
   );
 
   return { messages, sessions, sessionId, openSession, removeSession, busy, error, setError, newSession, sendText, sendVoice, speak, speaking, stopSpeaking, ready: sessionId !== null };

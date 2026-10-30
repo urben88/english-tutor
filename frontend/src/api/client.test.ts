@@ -1,4 +1,5 @@
 import { ApiError, createApi } from "./client";
+import type { TurnEvent } from "./types";
 
 function fakeFetch(body: unknown = {}, status = 200) {
   return vi.fn().mockResolvedValue(new Response(JSON.stringify(body), { status }));
@@ -48,5 +49,45 @@ describe("api client: sessions, study, settings and analysis", () => {
   it("surfaces the server's detail when analysis fails (502)", async () => {
     const f = fakeFetch({ detail: "The model returned unusable output" }, 502);
     await expect(createApi(f).analyze("Hi")).rejects.toThrow(new ApiError("The model returned unusable output"));
+  });
+});
+
+describe("api client: turn streaming", () => {
+  const ndjson = (events: TurnEvent[]) => events.map((e) => JSON.stringify(e)).join("\n") + "\n";
+
+  it("streamTurn posts text and yields every NDJSON line in order", async () => {
+    const events: TurnEvent[] = [
+      { type: "user", text: "hi" },
+      { type: "reply", text: "Hello.", audio: "QUJD", sample_rate: 24000 },
+      { type: "done", reply_text: "Hello." },
+    ];
+    const f = vi.fn().mockResolvedValue(new Response(ndjson(events), { status: 200 }));
+    const seen: TurnEvent[] = [];
+    await createApi(f).streamTurn(1, { text: "hi" }, (e) => seen.push(e));
+    expect(seen).toEqual(events);
+    expect(call(f)).toEqual({ url: "/api/sessions/1/turn/text/stream", method: "POST", body: { text: "hi" } });
+  });
+
+  it("streamTurn posts a WAV to the voice stream endpoint", async () => {
+    const f = vi.fn().mockResolvedValue(new Response(ndjson([{ type: "done", reply_text: "x" }]), { status: 200 }));
+    const wav = new Blob(["wav"], { type: "audio/wav" });
+    await createApi(f).streamTurn(3, { wav }, () => {});
+    const [url, init] = f.mock.calls[0] as [string, RequestInit];
+    expect(url).toBe("/api/sessions/3/turn/stream");
+    expect(init.headers).toEqual({ "Content-Type": "audio/wav" });
+    expect(init.body).toBe(wav);
+  });
+
+  it("streamTurn rejects on a non-2xx response and on an error event", async () => {
+    const f = fakeFetch({ detail: "unknown session 99" }, 404);
+    await expect(createApi(f).streamTurn(99, { text: "hi" }, () => {})).rejects.toThrow(
+      new ApiError("unknown session 99"),
+    );
+    const g = vi.fn().mockResolvedValue(
+      new Response(ndjson([{ type: "error", message: "model died" }]), { status: 200 }),
+    );
+    await expect(createApi(g).streamTurn(1, { text: "hi" }, () => {})).rejects.toThrow(
+      new ApiError("model died"),
+    );
   });
 });

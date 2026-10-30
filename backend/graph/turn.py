@@ -7,7 +7,7 @@ audio is already produced and normal turns pay no extra latency.
 
 from __future__ import annotations
 
-from collections.abc import Callable
+from collections.abc import Callable, Iterator
 from typing import Any, TypedDict
 
 from langgraph.graph import END, START, StateGraph
@@ -16,6 +16,7 @@ from backend.core.context import ContextBudget, build_context
 from backend.core.models import AudioClip, ChatMessage, StoredMessage
 from backend.core.persona import Persona
 from backend.core.prompt import compose_system_prompt
+from backend.core.sentences import iter_sentences
 from backend.core.settings import Settings
 from backend.core.ports import ConversationStore, LanguageModel, SpeechToText, TextToSpeech
 from backend.core.usecases import VoiceTurn
@@ -61,17 +62,23 @@ class TurnRunner:
     def _transcribe(self, s: TurnState) -> dict[str, Any]:
         return {"user_text": self._stt.transcribe(s["audio"]).text}
 
-    def _build_context(self, s: TurnState) -> dict[str, Any]:
+    def _context(self, user_text: str) -> tuple[list[ChatMessage], list[StoredMessage]]:
         summary = self._store.get_summary(self.session_id)
         history = self._store.load_messages(self.session_id, after_id=summary.summarized_upto)
-        plan = build_context(self._system_prompt, summary, history, s["user_text"],
+        plan = build_context(self._system_prompt, summary, history, user_text,
                              self._llm.count_tokens, self._budget)
-        return {"messages": plan.messages, "fold": plan.fold}
+        return plan.messages, plan.fold
+
+    def _build_context(self, s: TurnState) -> dict[str, Any]:
+        messages, fold = self._context(s["user_text"])
+        return {"messages": messages, "fold": fold}
+
+    def _reply_limits(self) -> dict[str, int]:
+        # max_tokens is passed only when the answer length sets one: the default call is unchanged
+        return {"max_tokens": self._settings.max_tokens} if self._settings.max_tokens else {}
 
     def _generate(self, s: TurnState) -> dict[str, Any]:
-        # max_tokens is passed only when the answer length sets one: the default call is unchanged
-        extra = {"max_tokens": self._settings.max_tokens} if self._settings.max_tokens else {}
-        return {"reply_text": self._llm.generate(s["messages"], **extra)}
+        return {"reply_text": self._llm.generate(s["messages"], **self._reply_limits())}
 
     def _speak(self, s: TurnState) -> dict[str, Any]:
         audio = self._tts.synthesize(s["reply_text"], voice=self._persona.voice)
@@ -129,6 +136,44 @@ class TurnRunner:
                                 ["summarize", END])
         g.add_edge("summarize", END)
         return g.compile()
+
+    # --- streaming ---------------------------------------------------------------------
+    def stream(self, audio: AudioClip | None = None, text: str | None = None
+               ) -> Iterator[dict[str, Any]]:
+        """One turn as events: ``user``, then one ``sentence`` per synthesized piece
+        (text + audio), then ``done`` after both messages are persisted.
+
+        The first sentence is synthesized as soon as the model produces a boundary, so the
+        caller can play it while the rest is still being generated. Summarization runs
+        after ``done``: it never delays the reply or its audio.
+        """
+        if text is not None:
+            user_text = text
+        elif audio is not None:
+            user_text = self._stt.transcribe(audio).text
+        else:
+            raise ValueError("stream() needs audio or text")
+        # The event carries the transcript; a text turn has no STT, so it is empty (the
+        # caller already knows the text) but the event is still emitted for a stable shape.
+        yield {"type": "user", "text": user_text if audio is not None else ""}
+
+        messages, fold = self._context(user_text)
+        raw: list[str] = []
+
+        def chunks() -> Iterator[str]:
+            for chunk in self._llm.stream(messages, **self._reply_limits()):
+                raw.append(chunk)
+                yield chunk
+
+        for sentence in iter_sentences(chunks()):
+            clip = self._tts.synthesize(sentence, voice=self._persona.voice)
+            yield {"type": "sentence", "text": sentence, "audio": clip}
+
+        reply_text = "".join(raw).strip()
+        self._persist({"user_text": user_text, "reply_text": reply_text})
+        yield {"type": "done", "reply_text": reply_text}
+        if fold:
+            self._summarize({"fold": fold})
 
     def _run(self, state: TurnState) -> VoiceTurn:
         out = self._graph.invoke(state)
