@@ -4,7 +4,8 @@ A fully local English conversation tutor. The backend is hexagonal: speech-to-te
 and text-to-speech are swappable ports, so a local model can later be replaced by an API-backed one
 without touching the core.
 
-Phase 1 (this repo state): ports, local adapters, config-driven selection, latency benchmark.
+Phase 1: ports, local adapters, config-driven selection, latency benchmark.
+Phase 2 (this repo state): terminal voice loop with a persona, SQLite history and token-budgeted context.
 
 | Port | Local adapter | Engine |
 |---|---|---|
@@ -54,6 +55,32 @@ uv run pytest -m integration                   # real adapters; skipped if a mod
 uv run uvicorn backend.api.app:app             # empty API, GET /health
 ```
 
+## Voice loop (terminal)
+
+Prerequisites: the whisper-server running (see above) and Ollama with the model pulled.
+
+```
+uv run python -m backend.cli                   # resume the latest session
+uv run python -m backend.cli --new             # start a new session
+uv run python -m backend.cli --persona emma    # override the persona from config.yaml
+uv run python -m backend.cli --text            # type lines instead of using the mic (reply is still spoken)
+```
+
+Hold the talk key (default Right Ctrl), speak, release to send. Presses shorter than 0.3 s are ignored.
+Ctrl+C exits. Change the key in `config.yaml` under `cli:` (`hold_key`, `min_press_seconds`).
+The key is read with `pynput`, which listens **globally**: it sees the key even when another window has
+focus (and may need extra permissions on some systems). The mic and speakers are the system defaults.
+
+**Personas.** One YAML file per persona in `personas/` with `name`, `voice` (TTS voice id) and
+`system_prompt`. `persona: <file stem>` in `config.yaml` selects it; an unknown stem lists the available ones.
+
+**History.** Stored in SQLite at `data/history.db` (git-ignored; path set under `store:` in `config.yaml`).
+
+**Context budget.** The prompt budget is `num_ctx - num_predict - context_margin` tokens. Each turn sends the
+system prompt, the running summary (if any), the most recent turns that fit, and your new message. Older
+turns that no longer fit are folded into the summary by one extra LLM call, made after the reply has been
+spoken so normal turns pay no extra latency.
+
 ## Swap an adapter
 
 `config.yaml` selects one adapter per port by name and passes its `params` to the constructor:
@@ -72,9 +99,12 @@ unknown name fails with the list of valid options.
 ## Layout
 
 ```
-backend/core/       models, ports, use cases (no adapter or model-library imports)
-backend/adapters/   stt/ llm/ tts/ and registry.py
+backend/core/       models, ports, context policy, persona loader, use cases (no adapter imports)
+backend/adapters/   stt/ llm/ tts/ store/ and registry.py
+backend/graph/      LangGraph turn graph over the ports
+backend/cli.py      terminal hold-to-talk loop
 backend/api/        FastAPI app
-personas/           tutor personas (later phases)
+personas/           tutor personas (YAML)
+data/               conversation history (git-ignored)
 tests/
 ```

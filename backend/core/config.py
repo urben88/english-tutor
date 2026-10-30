@@ -29,6 +29,7 @@ class AppConfig:
     store: AdapterSelection
     persona: str = DEFAULT_PERSONA  # stem of personas/<stem>.yaml
     context_margin: int = DEFAULT_CONTEXT_MARGIN
+    cli: dict[str, Any] = field(default_factory=dict)  # terminal loop: hold_key, min_press_seconds
 
 
 def parse_config(data: dict[str, Any]) -> AppConfig:
@@ -48,7 +49,8 @@ def parse_config(data: dict[str, Any]) -> AppConfig:
     margin = data.get("context_margin", DEFAULT_CONTEXT_MARGIN)
     if not isinstance(margin, int) or margin < 0:
         raise ValueError("config: 'context_margin' must be a non-negative integer")
-    return AppConfig(**selections, persona=persona, context_margin=margin)
+    return AppConfig(**selections, persona=persona, context_margin=margin,
+                     cli=dict(data.get("cli") or {}))
 
 
 def load_config(path: str | Path = "config.yaml") -> AppConfig:

@@ -65,3 +65,8 @@ def test_context_margin_config():
     assert cfg.context_margin == 256
     with pytest.raises(ValueError, match="context_margin"):
         parse_config({**{p: {"adapter": "a"} for p in ("stt", "llm", "tts")}, "context_margin": -1})
+
+
+def test_cli_section_in_config():
+    assert load_config("config.yaml").cli["hold_key"] == "ctrl_r"
+    assert parse_config({p: {"adapter": "a"} for p in ("stt", "llm", "tts")}).cli == {}

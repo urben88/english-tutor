@@ -40,3 +40,8 @@ store:
 
 # Tokens kept free on top of llm num_predict: prompt budget = num_ctx - num_predict - margin.
 context_margin: 256
+
+# Terminal voice loop (python -m backend.cli).
+cli:
+  hold_key: ctrl_r          # pynput Key name (ctrl_r, f9, ...) or one character
+  min_press_seconds: 0.3    # shorter presses are ignored
