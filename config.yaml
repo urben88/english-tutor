@@ -28,3 +28,12 @@ tts:
     model_dir: 'C:\Users\tirol\AppData\Local\asistente-voz-local\lector\modelo\supertonic'
     voice: M1
     steps: 8
+
+# Persona: stem of a file in personas/ (name, voice, system_prompt). Defaults to emma.
+persona: emma
+
+# Conversation history. The DB path is git-ignored. Optional: defaults to sqlite at data/history.db.
+store:
+  adapter: sqlite
+  params:
+    path: data/history.db

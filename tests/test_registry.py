@@ -47,3 +47,13 @@ def test_repo_config_yaml_parses():
     cfg = load_config("config.yaml")
     assert (cfg.stt.adapter, cfg.llm.adapter, cfg.tts.adapter) == (
         "whisper_server", "ollama", "supertonic")
+
+
+def test_repo_config_has_store_and_persona():
+    cfg = load_config("config.yaml")
+    assert cfg.store.adapter == "sqlite" and cfg.persona == "emma"
+
+
+def test_store_and_persona_default_when_absent():
+    cfg = parse_config({p: {"adapter": "a"} for p in ("stt", "llm", "tts")})
+    assert cfg.store.adapter == "sqlite" and cfg.persona == "emma"

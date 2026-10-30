@@ -43,3 +43,30 @@ class Transcript:
 class ChatMessage:
     role: Literal["system", "user", "assistant"]
     content: str
+
+
+@dataclass(frozen=True)
+class StoredMessage:
+    """A persisted chat message; ``id`` grows monotonically across all sessions."""
+
+    id: int
+    session_id: int
+    role: Literal["user", "assistant"]
+    content: str
+
+
+@dataclass(frozen=True)
+class Summary:
+    """Running summary of a session. Messages with ``id <= summarized_upto`` are folded into it."""
+
+    text: str = ""
+    summarized_upto: int = 0
+
+
+@dataclass(frozen=True)
+class SessionInfo:
+    id: int
+    persona: str | None
+    created_at: float  # unix seconds
+    updated_at: float
+    message_count: int

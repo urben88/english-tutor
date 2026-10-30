@@ -8,7 +8,10 @@ from typing import Any
 
 import yaml
 
-PORT_NAMES = ("stt", "llm", "tts")
+PORT_NAMES = ("stt", "llm", "tts", "store")
+# Ports that may be omitted from config.yaml (older configs): name -> (adapter, params).
+OPTIONAL_PORTS = {"store": ("sqlite", {})}
+DEFAULT_PERSONA = "emma"  # used when config.yaml has no `persona` key
 
 
 @dataclass(frozen=True)
@@ -22,16 +25,25 @@ class AppConfig:
     stt: AdapterSelection
     llm: AdapterSelection
     tts: AdapterSelection
+    store: AdapterSelection
+    persona: str = DEFAULT_PERSONA  # stem of personas/<stem>.yaml
 
 
 def parse_config(data: dict[str, Any]) -> AppConfig:
     selections = {}
     for port in PORT_NAMES:
         section = data.get(port)
+        if section is None and port in OPTIONAL_PORTS:
+            name, params = OPTIONAL_PORTS[port]
+            selections[port] = AdapterSelection(name, dict(params))
+            continue
         if not isinstance(section, dict) or "adapter" not in section:
             raise ValueError(f"config: section '{port}' must define an 'adapter' name")
         selections[port] = AdapterSelection(section["adapter"], dict(section.get("params") or {}))
-    return AppConfig(**selections)
+    persona = data.get("persona", DEFAULT_PERSONA)
+    if not isinstance(persona, str) or not persona:
+        raise ValueError("config: 'persona' must be a persona file stem (e.g. emma)")
+    return AppConfig(**selections, persona=persona)
 
 
 def load_config(path: str | Path = "config.yaml") -> AppConfig:

@@ -11,7 +11,7 @@ from importlib import import_module
 from typing import Any
 
 from backend.core.config import AdapterSelection, AppConfig
-from backend.core.ports import LanguageModel, SpeechToText, TextToSpeech
+from backend.core.ports import ConversationStore, LanguageModel, SpeechToText, TextToSpeech
 
 Factory = Callable[..., Any]
 
@@ -23,6 +23,7 @@ _BUILTIN: dict[str, dict[str, str]] = {
     },
     "llm": {"ollama": "backend.adapters.llm.ollama:OllamaLLM"},
     "tts": {"supertonic": "backend.adapters.tts.supertonic:SupertonicTTS"},
+    "store": {"sqlite": "backend.adapters.store.sqlite:SQLiteStore"},
 }
 
 _custom: dict[str, dict[str, Factory]] = {port: {} for port in _BUILTIN}
@@ -72,3 +73,7 @@ def build_llm(config: AppConfig) -> LanguageModel:
 
 def build_tts(config: AppConfig) -> TextToSpeech:
     return build("tts", config.tts)
+
+
+def build_store(config: AppConfig) -> ConversationStore:
+    return build("store", config.store)
