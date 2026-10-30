@@ -52,7 +52,8 @@ def test_conversation_turn_uses_only_ports():
 
 
 def test_core_has_no_forbidden_imports():
-    forbidden = {"backend.adapters", "onnxruntime", "pywhispercpp", "httpx", "requests", "ollama"}
+    forbidden = {"backend.adapters", "onnxruntime", "pywhispercpp", "httpx", "requests", "ollama",
+                 "langgraph", "langchain", "sounddevice", "pynput"}
     for path in Path("backend/core").glob("*.py"):
         for node in ast.walk(ast.parse(path.read_text(encoding="utf-8"))):
             names = []

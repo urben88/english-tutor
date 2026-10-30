@@ -80,15 +80,27 @@ def run_text_loop(runner: TurnRunner, read: Callable[[str], str],
             return
         if not line:
             continue
-        turn = runner.run_text(line)
-        out(f"{tutor_name}: {turn.reply_text}")
-        play(turn.reply_audio)
+        def deliver(user_text: str, reply_text: str, audio: AudioClip) -> None:
+            out(f"{tutor_name}: {reply_text}")
+            play(audio)
+
+        runner.run_text(line, on_reply=deliver)
 
 
-def play_clip(clip: AudioClip) -> None:
+def play_clip(clip: AudioClip, wait: bool = True) -> None:
     import sounddevice as sd
     sd.play(clip.samples, clip.sample_rate)  # the clip's own sample rate
-    sd.wait()
+    if wait:
+        sd.wait()
+
+
+def _next_event(events: queue.Queue[str]) -> str:
+    # Poll with a timeout: a bare blocking get() may not let Ctrl+C through on Windows.
+    while True:
+        try:
+            return events.get(timeout=0.2)
+        except queue.Empty:
+            pass
 
 
 def _resolve_key(name: str):
@@ -123,13 +135,13 @@ def run_voice_loop(runner: TurnRunner, key_name: str, min_seconds: float,
     with keyboard.Listener(on_press=on_press, on_release=on_release):
         out(f"Hold {key_name} to talk, release to send. Ctrl+C to quit.")
         while True:
-            if events.get() != "down":
+            if _next_event(events) != "down":
                 continue
             chunks.clear()
             stream = sd.InputStream(samplerate=REC_RATE, channels=1, dtype="float32",
                                     callback=lambda data, *_: chunks.append(data[:, 0].copy()))
             stream.start()
-            while events.get() != "up":
+            while _next_event(events) != "up":
                 pass
             stream.stop()
             stream.close()
@@ -139,10 +151,13 @@ def run_voice_loop(runner: TurnRunner, key_name: str, min_seconds: float,
             if not long_enough(clip, min_seconds):
                 out("(too short, ignored)")
                 continue
-            turn = runner.run(clip)
-            out(f"you: {turn.user_text}")
-            out(f"{tutor_name}: {turn.reply_text}")
-            play_clip(turn.reply_audio)
+            def deliver(user_text: str, reply_text: str, audio: AudioClip) -> None:
+                out(f"you: {user_text}")
+                out(f"{tutor_name}: {reply_text}")
+                play_clip(audio, wait=False)  # summarizing (if due) overlaps playback
+
+            runner.run(clip, on_reply=deliver)
+            sd.wait()
             while not events.empty():  # drop presses made while the tutor was busy
                 events.get_nowait()
 

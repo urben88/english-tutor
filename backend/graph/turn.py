@@ -7,6 +7,7 @@ audio is already produced and normal turns pay no extra latency.
 
 from __future__ import annotations
 
+from collections.abc import Callable
 from typing import Any, TypedDict
 
 from langgraph.graph import END, START, StateGraph
@@ -23,6 +24,10 @@ SUMMARIZER_PROMPT = (
     "that keeps the learner's topics, level, recurring mistakes and any facts to remember. "
     "Reply with the summary text only.")
 
+# Called as soon as the reply audio exists (user_text, reply_text, reply_audio), before
+# persisting and summarizing, so the caller can start playback without waiting.
+OnReply = Callable[[str, str, AudioClip], None]
+
 
 class TurnState(TypedDict, total=False):
     audio: AudioClip | None
@@ -31,6 +36,7 @@ class TurnState(TypedDict, total=False):
     fold: list[StoredMessage]
     reply_text: str
     reply_audio: AudioClip
+    on_reply: OnReply | None
 
 
 class TurnRunner:
@@ -56,7 +62,10 @@ class TurnRunner:
         return {"reply_text": self._llm.generate(s["messages"])}
 
     def _speak(self, s: TurnState) -> dict[str, Any]:
-        return {"reply_audio": self._tts.synthesize(s["reply_text"], voice=self._persona.voice)}
+        audio = self._tts.synthesize(s["reply_text"], voice=self._persona.voice)
+        if s.get("on_reply"):
+            s["on_reply"](s["user_text"], s["reply_text"], audio)
+        return {"reply_audio": audio}
 
     def _persist(self, s: TurnState) -> dict[str, Any]:
         self._store.append_message(self.session_id, "user", s["user_text"])
@@ -96,10 +105,10 @@ class TurnRunner:
         out = self._graph.invoke(state)
         return VoiceTurn(out["user_text"], out["reply_text"], out["reply_audio"])
 
-    def run(self, audio: AudioClip) -> VoiceTurn:
+    def run(self, audio: AudioClip, on_reply: OnReply | None = None) -> VoiceTurn:
         """One spoken turn: audio in, spoken reply out."""
-        return self._run({"audio": audio})
+        return self._run({"audio": audio, "on_reply": on_reply})
 
-    def run_text(self, text: str) -> VoiceTurn:
+    def run_text(self, text: str, on_reply: OnReply | None = None) -> VoiceTurn:
         """Same turn from text (skips STT); for tests and debugging."""
-        return self._run({"user_text": text})
+        return self._run({"user_text": text, "on_reply": on_reply})

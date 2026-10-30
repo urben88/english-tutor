@@ -19,8 +19,8 @@ Branch: `feat/phase-2-voice-loop`, stacked on `feat/phase-1-foundation` (both un
 |---|---|---|---|---|
 | T1 | S1, S2, S6 (persona/store) | delegated (resolutor · Sonnet · medium — user cost rule) | done | 73c314f |
 | T2 | S3, S4, S6 (policy/graph) | delegated (same worker, SendMessage) | done | 851d3a6 |
-| T3 | S5, S6, S7 | delegated (same worker) | done | (next commit) |
-| T4 | verify S1–S7 | analista · Haiku · medium (Risk item 5: new deps langgraph, sounddevice, pynput) | in progress | |
+| T3 | S5, S6, S7 | delegated (same worker) | done | bd9829c |
+| T4 | verify S1–S7 | analista · Haiku · medium (Risk item 5: new deps langgraph, sounddevice, pynput) | done | (next commit) |
 
 ## Log
 
@@ -29,3 +29,4 @@ Branch: `feat/phase-2-voice-loop`, stacked on `feat/phase-1-foundation` (both un
 - L3 (2026-10-30): Decisions: LangGraph orchestrates over existing ports (keeps the swap-by-config harness); langgraph stays out of `backend/core/`; hold-to-talk needs `pynput` on Windows (msvcrt can't see key release). Live mic loop is a manual check the user must run.
 - L4 (2026-10-30): T1 done (73c314f, 34 unit passed). T2 done: langgraph 1.2.18 added; graph in backend/graph/turn.py (TurnRunner.run/run_text) over ports only; core has no langgraph import (grep); 47 unit passed (parent re-ran).
 - L5 (2026-10-30): T3 done: backend/cli.py (hold Right Ctrl via pynput 1.8.2, sounddevice 0.5.6, --text/--new/--persona/--config); 55 unit passed and --help OK (parent re-ran). Live mic loop not run yet: manual check by user.
+- L6 (2026-10-30): T4 analista: S1-S7 met, no blockers, 55 unit passed. Advisories fixed inline: reply now delivered via on_reply callback from the speak node so playback starts before summarization (RED test test_reply_delivered_before_summarization); Ctrl+C-friendly queue polling; core forbidden-import test now lists langgraph/langchain/sounddevice/pynput. 56 unit passed. Open advisory: data/history.db is relative to cwd. Pending: live mic test by the user.

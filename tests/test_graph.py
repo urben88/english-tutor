@@ -98,3 +98,16 @@ def test_unsummarized_history_excludes_folded(tmp_path):
         runner.run_text(f"user words number {i} here ok")
     reply_prompt = [c for c in llm.calls if "summar" not in c[0].content.lower()][-1]
     assert reply_prompt[0].content == "SYS"
+
+
+def test_reply_delivered_before_summarization(tmp_path):
+    runner, store, sid, llm, tts = make(tmp_path, TIGHT)
+    order = []
+    deliver = lambda user, reply, audio: order.append(("reply", len(llm.calls)))
+    for i in range(4):
+        runner.run_text(f"user words number {i} here ok", on_reply=deliver)
+    assert len(order) == 4
+    # every reply is handed over right after its generate call, before any summarize call
+    assert store.get_summary(sid).summarized_upto > 0
+    for _, n in order:
+        assert "summar" not in llm.calls[n - 1][0].content.lower()
