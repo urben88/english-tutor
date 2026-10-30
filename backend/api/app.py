@@ -24,9 +24,11 @@ from backend.core.context import ContextBudget
 from backend.core.explain import ExplainError, explain
 from backend.core.models import AudioClip
 from backend.core.persona import Persona
+from backend.core.settings import Settings
 from backend.core.models import SessionInfo, StudyItem
 from backend.core.ports import (
-    ConversationStore, LanguageModel, SessionAdmin, SpeechToText, StudyStore, TextToSpeech)
+    ConversationStore, LanguageModel, SessionAdmin, SettingsStore, SpeechToText, StudyStore,
+    TextToSpeech)
 from backend.graph.turn import TurnRunner
 
 DEFAULT_STATIC = Path(__file__).resolve().parents[2] / "frontend" / "dist"
@@ -63,6 +65,11 @@ MAX_ROLE_CHARS = 200
 
 class SessionBody(BaseModel):
     role: str | None = None  # free-text topic / role-play, e.g. "waiter at a restaurant"
+
+
+class SettingsBody(BaseModel):
+    answer_length: str | None = None  # "short" | "medium" | "long"
+    context_tokens: int | None = None  # 0 = automatic, else 256..131072
 
 
 class TextBody(BaseModel):
@@ -124,6 +131,11 @@ def create_app(services: Services | None = None, static_dir: Path | str | None =
                 return x
         raise HTTPException(404, f"unknown session {sid}")
 
+    def current_settings(s: Services) -> Settings:
+        if isinstance(s.store, SettingsStore):
+            return Settings.from_stored(s.store.load_settings())
+        return Settings()
+
     def reply_json(turn) -> dict[str, Any]:
         return {"user_text": turn.user_text, "reply_text": turn.reply_text,
                 "audio": base64.b64encode(encode_wav(turn.reply_audio)).decode("ascii"),
@@ -134,7 +146,7 @@ def create_app(services: Services | None = None, static_dir: Path | str | None =
         with lock:
             info = require_session(s, sid)
             runner = TurnRunner(s.stt, s.llm, s.tts, s.store, s.persona, s.budget, sid,
-                                role=info.role)
+                                role=info.role, settings=current_settings(s))
             return reply_json(runner.run(clip) if clip is not None else runner.run_text(text or ""))
 
     @app.get("/health")
@@ -145,6 +157,30 @@ def create_app(services: Services | None = None, static_dir: Path | str | None =
     def persona() -> dict[str, str]:
         p = svc().persona
         return {"name": p.name, "stem": p.stem}
+
+    @app.get("/api/settings")
+    def get_settings() -> dict[str, Any]:
+        s = svc()
+        with lock:
+            cur = current_settings(s)
+        return {"answer_length": cur.answer_length, "context_tokens": cur.context_tokens}
+
+    @app.put("/api/settings")
+    def put_settings(body: SettingsBody) -> dict[str, Any]:
+        s = svc()
+        if not isinstance(s.store, SettingsStore):
+            raise HTTPException(501, "the configured store cannot save settings")
+        with lock:
+            cur = current_settings(s)
+            new = Settings(
+                cur.answer_length if body.answer_length is None else body.answer_length,
+                cur.context_tokens if body.context_tokens is None else body.context_tokens)
+            try:
+                new.validated()
+            except ValueError as e:
+                raise HTTPException(400, str(e)) from e
+            s.store.save_settings(new.to_stored())
+        return {"answer_length": new.answer_length, "context_tokens": new.context_tokens}
 
     @app.get("/api/sessions")
     def sessions() -> list[dict[str, Any]]:

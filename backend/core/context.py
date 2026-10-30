@@ -22,11 +22,14 @@ class ContextBudget:
     num_ctx: int
     num_predict: int
     margin: int = DEFAULT_MARGIN
+    max_prompt: int | None = None  # optional user cap on the prompt (settings: context_tokens)
 
     @property
     def available(self) -> int:
-        """Tokens available for the prompt: num_ctx - num_predict - margin."""
-        return self.num_ctx - self.num_predict - self.margin
+        """Tokens available for the prompt: num_ctx - num_predict - margin, and at most
+        ``max_prompt`` when the user set a smaller cap."""
+        room = self.num_ctx - self.num_predict - self.margin
+        return min(room, self.max_prompt) if self.max_prompt else room
 
     @classmethod
     def from_params(cls, llm_params: dict[str, Any], margin: int = DEFAULT_MARGIN) -> "ContextBudget":

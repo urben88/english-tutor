@@ -18,8 +18,10 @@ class SpeechToText(Protocol):
 
 @runtime_checkable
 class LanguageModel(Protocol):
-    def generate(self, messages: list[ChatMessage], *, json_schema: dict | None = None) -> str:
-        """Return the full reply. With ``json_schema`` the reply must be JSON matching it."""
+    def generate(self, messages: list[ChatMessage], *, json_schema: dict | None = None,
+                 max_tokens: int | None = None) -> str:
+        """Return the full reply. With ``json_schema`` the reply must be JSON matching it.
+        ``max_tokens`` overrides the adapter's configured reply limit for this call."""
         ...
 
     def stream(self, messages: list[ChatMessage]) -> Iterator[str]:

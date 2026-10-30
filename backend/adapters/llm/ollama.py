@@ -107,9 +107,12 @@ class OllamaLLM:
             return self._keep_alive
         return max(int(math.ceil(remaining)), 1) if remaining > 0 else self._keep_alive
 
-    def _payload(self, messages: list[ChatMessage], stream: bool, schema: dict | None) -> dict:
+    def _payload(self, messages: list[ChatMessage], stream: bool, schema: dict | None,
+                 max_tokens: int | None = None) -> dict:
         entry = self._loaded()
         options = dict(self._options)
+        if max_tokens:
+            options["num_predict"] = max_tokens
         if (ctx := self._loaded_context(entry)) is not None:
             options["num_ctx"] = ctx
         payload = {
@@ -126,8 +129,10 @@ class OllamaLLM:
             payload["format"] = schema  # Ollama accepts a JSON schema here (or "json")
         return payload
 
-    def generate(self, messages: list[ChatMessage], *, json_schema: dict | None = None) -> str:
-        resp = self._client.post(self._url, json=self._payload(messages, False, json_schema))
+    def generate(self, messages: list[ChatMessage], *, json_schema: dict | None = None,
+                 max_tokens: int | None = None) -> str:
+        resp = self._client.post(
+            self._url, json=self._payload(messages, False, json_schema, max_tokens))
         resp.raise_for_status()
         return resp.json()["message"]["content"]
 

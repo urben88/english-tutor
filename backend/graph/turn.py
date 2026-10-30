@@ -16,6 +16,7 @@ from backend.core.context import ContextBudget, build_context
 from backend.core.models import AudioClip, ChatMessage, StoredMessage
 from backend.core.persona import Persona
 from backend.core.prompt import compose_system_prompt
+from backend.core.settings import Settings
 from backend.core.ports import ConversationStore, LanguageModel, SpeechToText, TextToSpeech
 from backend.core.usecases import VoiceTurn
 
@@ -24,6 +25,9 @@ SUMMARIZER_PROMPT = (
     "Merge the previous summary with the new turns into one concise summary (under 120 words) "
     "that keeps the learner's topics, level, recurring mistakes and any facts to remember. "
     "Reply with the summary text only.")
+
+SUMMARY_WRAPPER_TOKENS = 40  # the "Previous summary / New turns" labels around a summarizer call
+MIN_CHUNK_TOKENS = 64  # smallest slice of old turns sent to the summarizer at once
 
 # Called as soon as the reply audio exists (user_text, reply_text, reply_audio), before
 # persisting and summarizing, so the caller can start playback without waiting.
@@ -43,10 +47,14 @@ class TurnState(TypedDict, total=False):
 class TurnRunner:
     def __init__(self, stt: SpeechToText, llm: LanguageModel, tts: TextToSpeech,
                  store: ConversationStore, persona: Persona, budget: ContextBudget,
-                 session_id: int, *, role: str | None = None) -> None:
+                 session_id: int, *, role: str | None = None,
+                 settings: Settings | None = None) -> None:
         self._stt, self._llm, self._tts, self._store = stt, llm, tts, store
-        self._persona, self._budget, self.session_id = persona, budget, session_id
-        self._system_prompt = compose_system_prompt(persona.system_prompt, role)
+        self._persona, self.session_id = persona, session_id
+        self._settings = settings or Settings()
+        self._budget = self._settings.budget(budget)  # answer length and user cap applied
+        self._system_prompt = compose_system_prompt(
+            persona.system_prompt, role, self._settings.answer_length)
         self._graph = self._compile()
 
     # --- nodes -------------------------------------------------------------------------
@@ -61,7 +69,9 @@ class TurnRunner:
         return {"messages": plan.messages, "fold": plan.fold}
 
     def _generate(self, s: TurnState) -> dict[str, Any]:
-        return {"reply_text": self._llm.generate(s["messages"])}
+        # max_tokens is passed only when the answer length sets one: the default call is unchanged
+        extra = {"max_tokens": self._settings.max_tokens} if self._settings.max_tokens else {}
+        return {"reply_text": self._llm.generate(s["messages"], **extra)}
 
     def _speak(self, s: TurnState) -> dict[str, Any]:
         audio = self._tts.synthesize(s["reply_text"], voice=self._persona.voice)
@@ -75,14 +85,31 @@ class TurnRunner:
         return {}
 
     def _summarize(self, s: TurnState) -> dict[str, Any]:
-        fold = s["fold"]
-        previous = self._store.get_summary(self.session_id).text or "(none)"
-        turns = "\n".join(f"{m.role}: {m.content}" for m in fold)
-        text = self._llm.generate([
-            ChatMessage("system", SUMMARIZER_PROMPT),
-            ChatMessage("user", f"Previous summary:\n{previous}\n\nNew turns:\n{turns}"),
-        ])
-        self._store.set_summary(self.session_id, text.strip(), fold[-1].id)
+        """Fold the turns into the stored summary in chunks that each fit the window, saving
+        progress after every chunk. The stored summary is the cache: folded turns are never
+        summarized again, and a very long unsummarized history cannot overflow the model."""
+        count = self._llm.count_tokens
+        base = count(SUMMARIZER_PROMPT) + SUMMARY_WRAPPER_TOKENS
+        pending = list(s["fold"])
+        while pending:
+            previous = self._store.get_summary(self.session_id).text or "(none)"
+            room = max(self._budget.available - base - count(previous), MIN_CHUNK_TOKENS)
+            chunk, used = [], 0
+            for m in pending:
+                cost = count(m.content)
+                if chunk and used + cost > room:
+                    break
+                chunk.append(m)
+                used += cost
+            pending = pending[len(chunk):]
+            turns = "\n".join(
+                f"{m.role}: {m.content if count(m.content) <= room else m.content[:room * 3]}"
+                for m in chunk)
+            text = self._llm.generate([
+                ChatMessage("system", SUMMARIZER_PROMPT),
+                ChatMessage("user", f"Previous summary:\n{previous}\n\nNew turns:\n{turns}"),
+            ])
+            self._store.set_summary(self.session_id, text.strip(), chunk[-1].id)
         return {}
 
     # --- graph -------------------------------------------------------------------------

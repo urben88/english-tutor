@@ -159,6 +159,40 @@ speech) and "Explain again". Explanations are not added to the conversation hist
 | `POST /api/study` | body `{text, source_text?, session_id?, message_id?, translation?, explanation?, examples?}` -> the item. Adds it, or counts another listen on the same word in the same message (given explanation fields replace the stored ones) |
 | `PATCH /api/study/{id}` | body `{translation, explanation, examples}` -> the updated item (404 if unknown) |
 | `DELETE /api/study/{id}` | removes one study item -> `{deleted: id}` (404 if unknown) |
+| `GET /api/settings` | `{answer_length, context_tokens}` (defaults `"medium"` and `0`) |
+| `PUT /api/settings` | body `{answer_length?, context_tokens?}` (omitted fields keep their value) -> the full settings. 400 if invalid. Saved in the SQLite store and applied to the next turn of every session |
+
+### Settings and context window
+
+- `answer_length`: `"short"` (one short sentence, reply limit 128 tokens), `"medium"` (default: the persona prompt and
+  the `num_predict` from `config.yaml`, exactly as before) or `"long"` (a short paragraph, reply limit 512 tokens).
+  It is added to the tutor's system prompt and sent to the model as `max_tokens` (the LLM port's optional
+  `generate(..., max_tokens=)`; only sent when the length sets one).
+- `context_tokens`: `0` (default, automatic) or 256-131072. The prompt budget of each turn is the model window minus the
+  reply limit minus `context_margin`; this value caps it further.
+- Each turn the LLM receives: persona prompt + session role + answer-length note, the stored running summary, the
+  most recent turns that fit the budget, and the new message (token counts are estimated, about 4 characters per
+  token). Older turns are folded into the running summary by the LLM; the summary is stored with the session, so
+  turns already folded are never summarized again. A long never-summarized history is folded in chunks that each fit
+  the window.
+
+### Sentence analysis
+
+`POST /api/analyze` (body `{text, message_id?}`; `text` at most 1000 characters; 400 if empty or too long; 502 if the
+model returns unusable JSON). Explanations are in Spanish. `message_id` is only echoed back so the UI can match the
+answer to a message. Response:
+
+```json
+{"text": "She has been living here for years.", "message_id": 12,
+ "structure": "Sujeto + present perfect continuous + lugar + for + tiempo.",
+ "tokens": [
+   {"text": "She", "translation": "ella", "explanation": "Pronombre sujeto.",
+    "part_of_speech": "pronoun", "tense": null, "notes": ""},
+   {"text": "has been living", "translation": "ha estado viviendo", "explanation": "Acción que empezó en el pasado y sigue.",
+    "part_of_speech": "verb", "tense": "present perfect continuous", "notes": "have/has + been + -ing"}]}
+```
+
+`tense` is `null` when it does not apply; `part_of_speech` is in English (noun, verb, ...); `notes` may be empty.
 
 ## Swap an adapter
 
