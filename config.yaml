@@ -1,0 +1,23 @@
+# One adapter per port, chosen by name. Params are passed to the adapter constructor.
+stt:
+  adapter: whisper_cpp
+  params:
+    model_path: 'C:\Users\tirol\AppData\Roaming\com.pais.handy\models\ggml-large-v3-turbo-q8_0.bin'
+    language: en
+    n_threads: 4
+
+llm:
+  adapter: ollama
+  params:
+    model: "MobiusDevelopment/gemma-4-E2B-it-qat-q4_0-gguf:latest"
+    base_url: http://localhost:11434
+    num_ctx: 4096
+    temperature: 0.7
+    num_predict: 256
+
+tts:
+  adapter: supertonic
+  params:
+    model_dir: 'C:\Users\tirol\AppData\Local\asistente-voz-local\lector\modelo\supertonic'
+    voice: M1
+    steps: 8
