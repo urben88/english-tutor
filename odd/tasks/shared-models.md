@@ -30,7 +30,7 @@ Branch: `feat/shared-models`, stacked on `feat/phase-3-web-ui` (unpushed) · Del
 |---|---|---|---|---|
 | T1 | S1, S5, S6 | delegated (resolutor, context backstop + cost rule) | done | 95377ae |
 | T2 | S2, S3, S5, S6 | delegated (same resolutor, sequential) | done | df7711a |
-| T3 | S4, S6 | delegated (same resolutor, sequential) | done | (T3 commit) |
+| T3 | S4, S6 | delegated (same resolutor, sequential) | done | c7750b5 |
 
 ## Log
 
