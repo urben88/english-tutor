@@ -17,9 +17,9 @@ Branch: `feat/phase-2-voice-loop`, stacked on `feat/phase-1-foundation` (both un
 
 | ID | Specs | Route | Status | Commit |
 |---|---|---|---|---|
-| T1 | S1, S2, S6 (persona/store) | delegated (resolutor · Sonnet · medium — user cost rule) | pending | |
-| T2 | S3, S4, S6 (policy/graph) | delegated (same worker, SendMessage) | pending | |
-| T3 | S5, S6, S7 | delegated (same worker) | pending | |
+| T1 | S1, S2, S6 (persona/store) | delegated (resolutor · Sonnet · medium — user cost rule) | done | 73c314f |
+| T2 | S3, S4, S6 (policy/graph) | delegated (same worker, SendMessage) | done | (next commit) |
+| T3 | S5, S6, S7 | delegated (same worker) | in progress | |
 | T4 | verify S1–S7 | analista · Haiku · medium (Risk item 5: new deps langgraph, sounddevice, pynput) | pending | |
 
 ## Log
@@ -27,3 +27,4 @@ Branch: `feat/phase-2-voice-loop`, stacked on `feat/phase-1-foundation` (both un
 - L1 (2026-10-30, user): "Continúa con el desarrollo." — next step from phase 1: "fase 2: bucle de voz con persona e historial (SQLite) y control de contexto con LangGraph". Phase 1 L1 (user): "estaría bien usar alguna librería como langgrap para tener el control total de lo que entra en el modelo local en su ventana de contexto".
 - L2 (2026-10-30, user): "la 1" — terminal push-to-talk; web API/UI deferred to phase 3.
 - L3 (2026-10-30): Decisions: LangGraph orchestrates over existing ports (keeps the swap-by-config harness); langgraph stays out of `backend/core/`; hold-to-talk needs `pynput` on Windows (msvcrt can't see key release). Live mic loop is a manual check the user must run.
+- L4 (2026-10-30): T1 done (73c314f, 34 unit passed). T2 done: langgraph 1.2.18 added; graph in backend/graph/turn.py (TurnRunner.run/run_text) over ports only; core has no langgraph import (grep); 47 unit passed (parent re-ran).

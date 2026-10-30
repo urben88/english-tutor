@@ -12,6 +12,7 @@ PORT_NAMES = ("stt", "llm", "tts", "store")
 # Ports that may be omitted from config.yaml (older configs): name -> (adapter, params).
 OPTIONAL_PORTS = {"store": ("sqlite", {})}
 DEFAULT_PERSONA = "emma"  # used when config.yaml has no `persona` key
+DEFAULT_CONTEXT_MARGIN = 256  # tokens reserved on top of num_predict (config: context_margin)
 
 
 @dataclass(frozen=True)
@@ -27,6 +28,7 @@ class AppConfig:
     tts: AdapterSelection
     store: AdapterSelection
     persona: str = DEFAULT_PERSONA  # stem of personas/<stem>.yaml
+    context_margin: int = DEFAULT_CONTEXT_MARGIN
 
 
 def parse_config(data: dict[str, Any]) -> AppConfig:
@@ -43,7 +45,10 @@ def parse_config(data: dict[str, Any]) -> AppConfig:
     persona = data.get("persona", DEFAULT_PERSONA)
     if not isinstance(persona, str) or not persona:
         raise ValueError("config: 'persona' must be a persona file stem (e.g. emma)")
-    return AppConfig(**selections, persona=persona)
+    margin = data.get("context_margin", DEFAULT_CONTEXT_MARGIN)
+    if not isinstance(margin, int) or margin < 0:
+        raise ValueError("config: 'context_margin' must be a non-negative integer")
+    return AppConfig(**selections, persona=persona, context_margin=margin)
 
 
 def load_config(path: str | Path = "config.yaml") -> AppConfig:

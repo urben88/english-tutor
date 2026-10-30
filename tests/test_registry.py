@@ -57,3 +57,11 @@ def test_repo_config_has_store_and_persona():
 def test_store_and_persona_default_when_absent():
     cfg = parse_config({p: {"adapter": "a"} for p in ("stt", "llm", "tts")})
     assert cfg.store.adapter == "sqlite" and cfg.persona == "emma"
+
+
+def test_context_margin_config():
+    assert load_config("config.yaml").context_margin == 256
+    cfg = parse_config({p: {"adapter": "a"} for p in ("stt", "llm", "tts")})
+    assert cfg.context_margin == 256
+    with pytest.raises(ValueError, match="context_margin"):
+        parse_config({**{p: {"adapter": "a"} for p in ("stt", "llm", "tts")}, "context_margin": -1})

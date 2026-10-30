@@ -37,3 +37,6 @@ store:
   adapter: sqlite
   params:
     path: data/history.db
+
+# Tokens kept free on top of llm num_predict: prompt budget = num_ctx - num_predict - margin.
+context_margin: 256
