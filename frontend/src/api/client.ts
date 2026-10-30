@@ -1,4 +1,14 @@
-import type { Explanation, Id, Message, Persona, SessionSummary, TurnResponse } from "./types";
+import type {
+  Explanation,
+  Id,
+  Message,
+  Persona,
+  SessionSummary,
+  SpeechResponse,
+  StudyDraft,
+  StudyItem,
+  TurnResponse,
+} from "./types";
 
 export interface TutorApi {
   persona(): Promise<Persona>;
@@ -7,7 +17,13 @@ export interface TutorApi {
   messages(sessionId: Id): Promise<Message[]>;
   voiceTurn(sessionId: Id, wav: Blob): Promise<TurnResponse>;
   textTurn(sessionId: Id, text: string): Promise<TurnResponse>;
-  explain(text: string, context: string): Promise<Explanation>;
+  explain(text: string, context: string, simpler?: boolean): Promise<Explanation>;
+  /** Speech for a word, phrase or message. `speed` < 1 is slower (0.25 to 2). */
+  tts(text: string, speed?: number): Promise<SpeechResponse>;
+  listStudy(): Promise<StudyItem[]>;
+  /** Adds the item, or counts another listen; given explanation fields replace the saved ones. */
+  saveStudy(draft: StudyDraft): Promise<StudyItem>;
+  updateStudy(id: Id, explanation: Pick<StudyItem, "translation" | "explanation" | "examples">): Promise<StudyItem>;
 }
 
 export class ApiError extends Error {}
@@ -51,7 +67,17 @@ export function createApi(fetchFn: Fetch = (...a) => fetch(...a)): TutorApi {
       fetchFn(`/api/sessions/${sid(id)}/turn/text`, json({ text })).then((r) =>
         parse<TurnResponse>(r),
       ),
-    explain: (text, context) =>
-      fetchFn("/api/explain", json({ text, context })).then((r) => parse<Explanation>(r)),
+    explain: (text, context, simpler = false) =>
+      fetchFn("/api/explain", json(simpler ? { text, context, simpler } : { text, context })).then((r) =>
+        parse<Explanation>(r),
+      ),
+    tts: (text, speed = 1) =>
+      fetchFn("/api/tts", json({ text, speed })).then((r) => parse<SpeechResponse>(r)),
+    listStudy: () => fetchFn("/api/study").then((r) => parse<StudyItem[]>(r)),
+    saveStudy: (draft) => fetchFn("/api/study", json(draft)).then((r) => parse<StudyItem>(r)),
+    updateStudy: (id, explanation) =>
+      fetchFn(`/api/study/${sid(id)}`, { ...json(explanation), method: "PATCH" }).then((r) =>
+        parse<StudyItem>(r),
+      ),
   };
 }

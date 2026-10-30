@@ -1,29 +1,36 @@
 import { useCallback, useRef, useState } from "react";
 import type { TutorApi } from "../api/client";
-import type { Explanation } from "../api/types";
+import type { Explanation, StudyTarget } from "../api/types";
 
 export type ExplainState =
   | { status: "idle" }
-  | { status: "loading"; query: string }
-  | { status: "error"; query: string; message: string }
-  | { status: "done"; query: string; result: Explanation };
+  | { status: "loading"; target: StudyTarget }
+  | { status: "error"; target: StudyTarget; message: string }
+  | { status: "done"; target: StudyTarget; result: Explanation };
 
-export function useExplain(api: TutorApi) {
+/** Explains a word or phrase. `onDone` runs for each successful explanation (to save it). */
+export function useExplain(api: TutorApi, onDone?: (target: StudyTarget, result: Explanation) => void) {
   const [state, setState] = useState<ExplainState>({ status: "idle" });
   const latest = useRef(0);
+  const done = useRef(onDone);
+  done.current = onDone;
 
   const explain = useCallback(
-    async (text: string, context: string) => {
+    async (target: StudyTarget, simpler = false) => {
       const call = ++latest.current;
-      setState({ status: "loading", query: text });
+      setState({ status: "loading", target });
       try {
-        const result = await api.explain(text, context);
-        if (call === latest.current) setState({ status: "done", query: text, result });
+        const result = simpler
+          ? await api.explain(target.text, target.context, true)
+          : await api.explain(target.text, target.context);
+        if (call !== latest.current) return;
+        setState({ status: "done", target, result });
+        done.current?.(target, result);
       } catch (e) {
         if (call === latest.current)
           setState({
             status: "error",
-            query: text,
+            target,
             message: e instanceof Error ? e.message : "Could not get an explanation.",
           });
       }

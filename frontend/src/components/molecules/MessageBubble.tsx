@@ -4,15 +4,24 @@ import { cleanWord, tokenize } from "../../text/tokenize";
 import { Button } from "../atoms/Button";
 import { Word } from "../atoms/Word";
 
-interface Props {
-  message: Message;
-  /** `text` is the word or phrase; the message content is the context. */
-  onExplain: (text: string, context: string) => void;
-  /** `caption` = large subtitle style without the role label. */
-  variant?: "bubble" | "caption";
+export interface MessageActions {
+  /** Say a word or phrase of the message out loud (clicking a word does this). */
+  onListen: (text: string, message: Message) => void;
+  /** Explain a word, a phrase or (tutor messages) the whole message. */
+  onExplain: (text: string, message: Message, simpler?: boolean) => void;
+  /** Replay the speech of a whole message. */
+  onReadAgain: (message: Message) => void;
 }
 
-export function MessageBubble({ message, onExplain, variant = "bubble" }: Props) {
+interface Props extends MessageActions {
+  message: Message;
+  /** `caption` = large subtitle style without the role label. */
+  variant?: "bubble" | "caption";
+  /** The study list jumped here: show it. */
+  highlighted?: boolean;
+}
+
+export function MessageBubble({ message, variant = "bubble", highlighted, onListen, onExplain, onReadAgain }: Props) {
   const ref = useRef<HTMLDivElement>(null);
   const [phrase, setPhrase] = useState<string | null>(null);
 
@@ -26,34 +35,62 @@ export function MessageBubble({ message, onExplain, variant = "bubble" }: Props)
     setPhrase(text || null);
   };
 
+  const withPhrase = (act: (text: string) => void) => () => {
+    if (!phrase) return;
+    act(phrase);
+    setPhrase(null);
+    window.getSelection()?.removeAllRanges();
+  };
+  const keepSelection = (e: { preventDefault: () => void }) => e.preventDefault();
+
+  const base = variant === "caption" ? "caption" : `bubble bubble-${message.role}`;
   return (
     <div
-      className={variant === "caption" ? "caption" : `bubble bubble-${message.role}`}
+      className={highlighted ? `${base} highlight` : base}
       ref={ref}
       onMouseUp={readSelection}
+      data-message-id={variant === "bubble" ? String(message.id) : undefined}
     >
       {variant === "bubble" && <div className="bubble-role">{message.role === "user" ? "You" : "Tutor"}</div>}
       <p className="bubble-text">
         {tokenize(message.content).map((t, i) =>
           t.isWord ? (
-            <Word key={i} text={t.text} onSelect={(w) => onExplain(cleanWord(w), message.content)} />
+            <Word key={i} text={t.text} onSelect={(w) => onListen(cleanWord(w), message)} />
           ) : (
             <span key={i}>{t.text}</span>
           ),
         )}
       </p>
       {phrase && (
-        <Button
-          className="explain-btn"
-          onMouseDown={(e) => e.preventDefault()} // keep the selection
-          onClick={() => {
-            onExplain(phrase, message.content);
-            setPhrase(null);
-            window.getSelection()?.removeAllRanges();
-          }}
-        >
-          Explain
-        </Button>
+        <div className="phrase-actions">
+          <Button
+            className="explain-btn"
+            onMouseDown={keepSelection} // keep the selection
+            onClick={withPhrase((p) => onListen(p, message))}
+          >
+            Listen
+          </Button>
+          <Button
+            className="explain-btn"
+            onMouseDown={keepSelection}
+            onClick={withPhrase((p) => onExplain(p, message))}
+          >
+            Explain
+          </Button>
+        </div>
+      )}
+      {message.role === "assistant" && (
+        <div className="message-actions">
+          <Button className="explain-btn" onClick={() => onReadAgain(message)}>
+            Read again
+          </Button>
+          <Button className="explain-btn" onClick={() => onExplain(message.content, message)}>
+            Explain again
+          </Button>
+          <Button className="explain-btn" onClick={() => onExplain(message.content, message, true)}>
+            Explain simpler
+          </Button>
+        </div>
       )}
     </div>
   );

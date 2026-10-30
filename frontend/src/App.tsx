@@ -1,9 +1,11 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { createApi, type TutorApi } from "./api/client";
+import type { Id, StudyItem } from "./api/types";
 import { createBrowserMic, type Mic } from "./audio/mic";
 import { createBrowserPlayer, type Player } from "./audio/player";
 import { createBrowserRecorder, type Recorder } from "./audio/recorder";
 import { Button } from "./components/atoms/Button";
+import type { MessageActions } from "./components/molecules/MessageBubble";
 import { MobileTabs, type Area } from "./components/molecules/MobileTabs";
 import { ModeSwitch } from "./components/molecules/ModeSwitch";
 import { SessionSwitcher } from "./components/molecules/SessionSwitcher";
@@ -15,6 +17,7 @@ import { StudyPanel } from "./components/organisms/StudyPanel";
 import { TranscriptDrawer } from "./components/organisms/TranscriptDrawer";
 import { useDrawer } from "./hooks/useDrawer";
 import { useExplain } from "./hooks/useExplain";
+import { itemTarget, useStudy } from "./hooks/useStudy";
 import type { VoiceStatus } from "./components/molecules/StatusIndicator";
 import { useHandsFree } from "./hooks/useHandsFree";
 import { useHoldToTalk } from "./hooks/useHoldToTalk";
@@ -37,7 +40,9 @@ export function App(props: Props) {
   const player = useMemo(() => props.player ?? createBrowserPlayer(), [props.player]);
 
   const tutor = useTutor(api, player);
-  const explain = useExplain(api);
+  const study = useStudy(api, tutor.speak);
+  const explain = useExplain(api, study.remember);
+  const [highlight, setHighlight] = useState<Id | null>(null);
   const { mode, setMode } = useVoiceMode();
   const { muted, toggle: toggleMute } = useMute();
   const drawer = useDrawer();
@@ -70,6 +75,36 @@ export function App(props: Props) {
             ? "listening"
             : "idle";
 
+  useEffect(() => {
+    if (highlight === null) return;
+    const t = setTimeout(() => setHighlight(null), 4000);
+    return () => clearTimeout(t);
+  }, [highlight]);
+
+  const actions: MessageActions = {
+    onListen: (text, message) => {
+      explain.close();
+      study.listen(text, message, tutor.sessionId);
+    },
+    onExplain: (text, message, simpler = false) => {
+      void explain.explain(
+        { text, context: message.content, source: { messageId: message.id, sessionId: tutor.sessionId } },
+        simpler,
+      );
+    },
+    onReadAgain: (message) => void tutor.speak(message.content),
+  };
+
+  /** Study list -> original message: open its session if needed, then the transcript on that message. */
+  const jumpTo = async (item: StudyItem) => {
+    if (item.message_id === null) return;
+    if (item.session_id !== null && String(item.session_id) !== String(tutor.sessionId))
+      await tutor.openSession(item.session_id);
+    if (area === "study") setArea("tutor");
+    drawer.show();
+    setHighlight(item.message_id);
+  };
+
   const transcriptOpen = drawer.open || area === "talk";
   const closeTranscript = () => {
     drawer.close();
@@ -99,7 +134,7 @@ export function App(props: Props) {
       <main className="main">
         <section className="center">
           <CharacterStage state={toCharacterState(status)} />
-          <Subtitles messages={tutor.messages} onExplain={explain.explain} />
+          <Subtitles messages={tutor.messages} {...actions} />
         </section>
         <div className="dock">
           <Controls
@@ -118,12 +153,26 @@ export function App(props: Props) {
             onSendText={tutor.sendText}
           />
         </div>
-        <StudyPanel items={[]}>
-          <ExplanationPanel state={explain.state} onClose={explain.close} />
+        <StudyPanel
+          items={study.items}
+          onPlay={(item, speed) => study.replay(itemTarget(item), speed)}
+          onExplain={(item) => void explain.explain(itemTarget(item))}
+          onJump={(item) => void jumpTo(item)}
+        >
+          <ExplanationPanel
+            state={explain.state}
+            focus={study.focus}
+            onPlay={study.replay}
+            onExplain={(target, simpler) => void explain.explain(target, simpler)}
+            onClose={() => {
+              explain.close();
+              study.setFocus(null);
+            }}
+          />
         </StudyPanel>
       </main>
       {transcriptOpen && (
-        <TranscriptDrawer messages={tutor.messages} onExplain={explain.explain} onClose={closeTranscript} />
+        <TranscriptDrawer messages={tutor.messages} highlightId={highlight} onClose={closeTranscript} {...actions} />
       )}
       <MobileTabs area={area} onChange={setArea} />
     </div>

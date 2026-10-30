@@ -6,6 +6,7 @@ export function useDrawer() {
   const [open, setOpen] = useState(false);
   const toggle = useCallback(() => setOpen((o) => !o), []);
   const close = useCallback(() => setOpen(false), []);
+  const show = useCallback(() => setOpen(true), []);
 
   useEffect(() => {
     const down = (e: KeyboardEvent) => {
@@ -18,5 +19,5 @@ export function useDrawer() {
     return () => window.removeEventListener("keydown", down);
   }, [toggle, close]);
 
-  return { open, toggle, close };
+  return { open, toggle, close, show };
 }

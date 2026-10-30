@@ -1,13 +1,12 @@
 import type { Message } from "../../api/types";
-import { MessageBubble } from "./MessageBubble";
+import { MessageBubble, type MessageActions } from "./MessageBubble";
 
-interface Props {
+interface Props extends MessageActions {
   messages: Message[];
-  onExplain: (text: string, context: string) => void;
 }
 
 /** Latest exchange as large captions: what you said (plain text) and the reply (clickable words). */
-export function Subtitles({ messages, onExplain }: Props) {
+export function Subtitles({ messages, ...actions }: Props) {
   let at = messages.length - 1;
   while (at >= 0 && messages[at].role === "user") at--;
   const reply = at >= 0 ? messages[at] : undefined;
@@ -18,7 +17,7 @@ export function Subtitles({ messages, onExplain }: Props) {
     <section className="subtitles" aria-label="Subtitles" aria-live="polite">
       {you && <p className="you">{you.content}</p>}
       {reply ? (
-        <MessageBubble message={reply} onExplain={onExplain} variant="caption" />
+        <MessageBubble message={reply} variant="caption" {...actions} />
       ) : (
         <p className="muted">Say hello to start the conversation.</p>
       )}

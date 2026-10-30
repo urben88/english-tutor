@@ -1,4 +1,4 @@
-import { act, fireEvent, render, screen, waitFor } from "@testing-library/react";
+import { act, fireEvent, render, screen, waitFor, within } from "@testing-library/react";
 import { App } from "./App";
 import type { TutorApi } from "./api/client";
 import type { Player } from "./audio/player";
@@ -26,6 +26,10 @@ function fakeApi(overrides: Partial<TutorApi> = {}): TutorApi {
       explanation: "Significa planeta.",
       examples: ["Hello, world."],
     }),
+    tts: vi.fn().mockResolvedValue({ audio: "", sample_rate: 24000 }),
+    listStudy: vi.fn().mockResolvedValue([]),
+    saveStudy: vi.fn().mockResolvedValue({}),
+    updateStudy: vi.fn(),
     ...overrides,
   };
 }
@@ -62,10 +66,11 @@ function fakeMic() {
 const player: Player = { play: vi.fn().mockResolvedValue(undefined), stop: vi.fn() };
 
 describe("click to explain", () => {
-  it("clicking a word calls explain with the word and the message as context", async () => {
+  it("clicking a word and pressing Explain calls explain with the word and the message as context", async () => {
     const api = fakeApi();
     render(<App api={api} recorder={fakeRecorder()} mic={fakeMic().mic} player={player} />);
     fireEvent.click(await screen.findByRole("button", { name: "world" }));
+    fireEvent.click(await screen.findByRole("button", { name: "Explain this" }));
     await waitFor(() => expect(api.explain).toHaveBeenCalledWith("world", CONTEXT));
     expect(await screen.findByText("mundo")).toBeInTheDocument();
   });
@@ -74,6 +79,7 @@ describe("click to explain", () => {
     const api = fakeApi({ explain: vi.fn().mockRejectedValue(new Error("boom")) });
     render(<App api={api} recorder={fakeRecorder()} mic={fakeMic().mic} player={player} />);
     fireEvent.click(await screen.findByRole("button", { name: "world" }));
+    fireEvent.click(await screen.findByRole("button", { name: "Explain this" }));
     expect(await screen.findByRole("alert")).toHaveTextContent("boom");
   });
 
@@ -84,7 +90,8 @@ describe("click to explain", () => {
     const second = screen.getByRole("button", { name: "world" }).firstChild!;
     window.getSelection()!.setBaseAndExtent(first, 0, second, 5);
     fireEvent.mouseUp(first.parentElement!);
-    fireEvent.click(await screen.findByRole("button", { name: "Explain" }));
+    const subs = within(screen.getByRole("region", { name: "Subtitles" }));
+    fireEvent.click(await subs.findByRole("button", { name: "Explain" }));
     await waitFor(() => expect(api.explain).toHaveBeenCalledWith("Hello, world", CONTEXT));
   });
 });

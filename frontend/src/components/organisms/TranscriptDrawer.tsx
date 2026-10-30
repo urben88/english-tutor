@@ -1,15 +1,16 @@
-import type { Message } from "../../api/types";
+import type { Id, Message } from "../../api/types";
 import { Button } from "../atoms/Button";
+import type { MessageActions } from "../molecules/MessageBubble";
 import { MessageList } from "./MessageList";
 
-interface Props {
+interface Props extends MessageActions {
   messages: Message[];
-  onExplain: (text: string, context: string) => void;
+  highlightId?: Id | null;
   onClose: () => void;
 }
 
 /** Left slide-in with the full conversation. Mounted only while open. */
-export function TranscriptDrawer({ messages, onExplain, onClose }: Props) {
+export function TranscriptDrawer({ messages, highlightId, onClose, ...actions }: Props) {
   return (
     <>
       <div className="scrim" onClick={onClose} aria-hidden="true" />
@@ -20,7 +21,7 @@ export function TranscriptDrawer({ messages, onExplain, onClose }: Props) {
             Close
           </Button>
         </div>
-        <MessageList messages={messages} onExplain={onExplain} />
+        <MessageList messages={messages} highlightId={highlightId} {...actions} />
       </aside>
     </>
   );

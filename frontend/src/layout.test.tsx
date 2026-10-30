@@ -28,6 +28,10 @@ function fakeApi(): TutorApi {
     voiceTurn: vi.fn().mockResolvedValue(turn),
     textTurn: vi.fn().mockResolvedValue(turn),
     explain: vi.fn(),
+    tts: vi.fn().mockResolvedValue({ audio: "", sample_rate: 24000 }),
+    listStudy: vi.fn().mockResolvedValue([]),
+    saveStudy: vi.fn().mockResolvedValue({}),
+    updateStudy: vi.fn(),
   };
 }
 const recorder: Recorder = { start: vi.fn(), stop: vi.fn(), cancel: vi.fn() };
@@ -67,7 +71,7 @@ describe("CharacterStage", () => {
 describe("StudyPanel", () => {
   it("shows an empty state and a slot for the explanation", () => {
     render(
-      <StudyPanel items={[]}>
+      <StudyPanel items={[]} onPlay={vi.fn()} onExplain={vi.fn()} onJump={vi.fn()}>
         <p>current explanation</p>
       </StudyPanel>,
     );
@@ -77,7 +81,8 @@ describe("StudyPanel", () => {
   });
 
   it("lists items given by the caller", () => {
-    render(<StudyPanel items={[{ id: 1, text: "world", translation: "mundo" }]} />);
+    const it = { id: 1, text: "world", source_text: "Hello, world!", session_id: 1, message_id: 2, translation: "mundo", explanation: "", examples: [], listen_count: 1, created_at: 0, updated_at: 0 };
+    render(<StudyPanel items={[it]} onPlay={vi.fn()} onExplain={vi.fn()} onJump={vi.fn()} />);
     expect(screen.getByText("world")).toBeInTheDocument();
     expect(screen.queryByText(/words you study will appear here/i)).not.toBeInTheDocument();
   });

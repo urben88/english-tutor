@@ -69,19 +69,37 @@ export function useTutor(api: TutorApi, player: Player) {
     [open],
   );
 
+  const playAudio = useCallback(
+    (audio: string) => {
+      const token = ++playToken.current;
+      setSpeaking(true);
+      void Promise.resolve(player.play(audio)).finally(() => {
+        if (token === playToken.current) setSpeaking(false);
+      });
+    },
+    [player],
+  );
+
   const finishTurn = useCallback(
     async (id: Id, res: TurnResponse) => {
-      if (res.audio) {
-        const token = ++playToken.current;
-        setSpeaking(true);
-        void Promise.resolve(player.play(res.audio)).finally(() => {
-          if (token === playToken.current) setSpeaking(false);
-        });
-      }
+      if (res.audio) playAudio(res.audio);
       setMessages(await api.messages(id));
       void refreshSessions();
     },
-    [api, player, refreshSessions],
+    [api, playAudio, refreshSessions],
+  );
+
+  /** Say any text out loud (a word, a phrase or a whole message). `speed` < 1 is slower. */
+  const speak = useCallback(
+    async (text: string, speed = 1) => {
+      try {
+        const res = await api.tts(text, speed);
+        if (res.audio) playAudio(res.audio);
+      } catch (e) {
+        setError(errMsg(e));
+      }
+    },
+    [api, playAudio],
   );
 
   const sendText = useCallback(
@@ -116,5 +134,5 @@ export function useTutor(api: TutorApi, player: Player) {
     [api, sessionId, finishTurn],
   );
 
-  return { messages, sessions, sessionId, openSession, busy, error, setError, newSession, sendText, sendVoice, speaking, stopSpeaking, ready: sessionId !== null };
+  return { messages, sessions, sessionId, openSession, busy, error, setError, newSession, sendText, sendVoice, speak, speaking, stopSpeaking, ready: sessionId !== null };
 }
