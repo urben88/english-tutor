@@ -1,10 +1,16 @@
 # One adapter per port, chosen by name. Params are passed to the adapter constructor.
 stt:
-  adapter: whisper_cpp
+  adapter: whisper_server        # GPU: connects to a running whisper-server (see README)
   params:
-    model_path: 'C:\Users\tirol\AppData\Roaming\com.pais.handy\models\ggml-large-v3-turbo-q8_0.bin'
+    host: 127.0.0.1
+    port: 8178
     language: en
-    n_threads: 4
+  # CPU fallback: replace the block above with
+  #   adapter: whisper_cpp
+  #   params:
+  #     model_path: 'C:\Users\tirol\AppData\Roaming\com.pais.handy\models\ggml-large-v3-turbo-q8_0.bin'
+  #     language: en
+  #     n_threads: 4
 
 llm:
   adapter: ollama

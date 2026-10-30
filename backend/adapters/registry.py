@@ -17,7 +17,10 @@ Factory = Callable[..., Any]
 
 # port -> adapter name -> "module:attribute" of a class/callable taking **params.
 _BUILTIN: dict[str, dict[str, str]] = {
-    "stt": {"whisper_cpp": "backend.adapters.stt.whisper_cpp:WhisperCppSTT"},
+    "stt": {
+        "whisper_server": "backend.adapters.stt.whisper_server:WhisperServerSTT",
+        "whisper_cpp": "backend.adapters.stt.whisper_cpp:WhisperCppSTT",  # CPU fallback
+    },
     "llm": {"ollama": "backend.adapters.llm.ollama:OllamaLLM"},
     "tts": {"supertonic": "backend.adapters.tts.supertonic:SupertonicTTS"},
 }

@@ -28,8 +28,18 @@ def _llm_available() -> bool:
 needs_tts = pytest.mark.skipif(
     not (Path(CFG.tts.params["model_dir"]) / "onnx" / "vocoder.onnx").is_file(),
     reason="Supertonic model dir not found")
-needs_stt = pytest.mark.skipif(
-    not Path(CFG.stt.params["model_path"]).is_file(), reason="Whisper model file not found")
+def _stt_available() -> bool:
+    if CFG.stt.adapter == "whisper_server":
+        host, port = CFG.stt.params.get("host", "127.0.0.1"), CFG.stt.params.get("port", 8178)
+        try:
+            httpx.get(f"http://{host}:{port}/", timeout=2)
+            return True
+        except Exception:
+            return False
+    return Path(CFG.stt.params.get("model_path", "")).is_file()
+
+
+needs_stt = pytest.mark.skipif(not _stt_available(), reason="STT server/model not available")
 needs_llm = pytest.mark.skipif(not _llm_available(), reason="Ollama or model not available")
 
 

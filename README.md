@@ -8,7 +8,8 @@ Phase 1 (this repo state): ports, local adapters, config-driven selection, laten
 
 | Port | Local adapter | Engine |
 |---|---|---|
-| STT | `whisper_cpp` | whisper.cpp via `pywhispercpp` (large-v3-turbo q8_0) |
+| STT | `whisper_server` (GPU, default) | whisper.cpp `whisper-server` over HTTP, CUDA build (large-v3-turbo q8_0) |
+| STT | `whisper_cpp` (CPU fallback) | whisper.cpp via `pywhispercpp` |
 | LLM | `ollama` | Ollama `/api/chat` (Gemma 4 E2B QAT q4_0) |
 | TTS | `supertonic` | Supertonic 3, voice M1, ONNX Runtime CPU |
 
@@ -26,6 +27,23 @@ Supertonic model (about 400 MB, pinned revision, sha256-checked):
 ```
 uv run python -m backend.adapters.tts.supertonic --download <model_dir>
 ```
+
+## GPU speech-to-text (whisper-server)
+
+The default STT adapter, `whisper_server`, connects to a running whisper.cpp server; it never starts it.
+Install the official CUDA build once: download `whisper-bin-win-cuda-12.4.0-x64.zip` from the
+[whisper.cpp release b5454](https://github.com/ggml-org/whisper.cpp/releases/tag/b5454) and extract it to
+`%LOCALAPPDATA%\english-tutor\whisper-cuda\` (the exe ends up in `...\whisper-cuda\Release\`).
+Start the server before running the app (keep the window open):
+
+```
+"%LOCALAPPDATA%\english-tutor\whisper-cuda\Release\whisper-server.exe" -m "<path to ggml-large-v3-turbo-q8_0.bin>" --host 127.0.0.1 --port 8178 -l en -ml 1 -sow
+```
+
+`-ml 1 -sow` is required: it gives one entry per word, which the adapter turns into word timestamps.
+If the server is down, the adapter raises an error that contains this command.
+
+CPU fallback: in `config.yaml` set the `stt` block to `adapter: whisper_cpp` (see the commented example there).
 
 ## Run
 

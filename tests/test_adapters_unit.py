@@ -74,3 +74,48 @@ def test_ollama_stream_skips_thinking_chunks():
     chunks = list(_ollama_with(handler).stream([ChatMessage(role="user", content="hi")]))
 
     assert chunks == ["Hel", "lo"]
+
+
+def test_whisper_server_parses_verbose_json_and_merges_punctuation():
+    from backend.adapters.stt.whisper_server import parse_verbose_json
+
+    data = {"segments": [
+        {"id": 0, "text": ""},
+        {"id": 1, "words": [
+            {"word": " Hello", "start": 0.52, "end": 0.52, "probability": 0.85},
+            {"word": ",", "start": 0.59, "end": 0.72, "probability": 0.79}]},
+        {"id": 2, "words": [{"word": " my", "start": 0.72, "end": 0.84, "probability": 0.95}]},
+    ]}
+    out = parse_verbose_json(data)
+    assert out.text == "Hello, my"
+    assert [(w.text, w.start, w.end) for w in out.words] == [
+        ("Hello,", 0.52, 0.72), ("my", 0.72, 0.84)]
+    assert out.words[0].confidence == pytest.approx(0.79)
+
+
+def test_whisper_server_transcribe_with_fake_http(monkeypatch):
+    import httpx
+
+    from backend.adapters.stt.whisper_server import WhisperServerSTT
+    from backend.core.models import AudioClip
+
+    def handler(request):
+        assert request.url.path == "/inference"
+        return httpx.Response(200, json={"segments": [
+            {"words": [{"word": " Hi", "start": 0.0, "end": 0.3, "probability": 0.9}]}]})
+
+    stt = WhisperServerSTT(port=9)
+    stt._client = httpx.Client(transport=httpx.MockTransport(handler))
+    out = stt.transcribe(AudioClip(np.zeros(1600, dtype=np.float32), 16000))
+    assert out.text == "Hi" and out.words[0].confidence == pytest.approx(0.9)
+
+
+def test_whisper_server_unreachable_gives_start_command():
+    from backend.adapters.stt.whisper_server import WhisperServerSTT
+    from backend.core.models import AudioClip
+
+    stt = WhisperServerSTT(port=1, timeout=2)  # nothing listens on port 1
+    with pytest.raises(ConnectionError) as e:
+        stt.transcribe(AudioClip(np.zeros(1600, dtype=np.float32), 16000))
+    msg = str(e.value)
+    assert "whisper-server.exe" in msg and "--port 1" in msg and "-ml 1 -sow" in msg
