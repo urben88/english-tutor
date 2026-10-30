@@ -208,3 +208,42 @@ def test_delete_study_item(store):
     import pytest
     with pytest.raises(ValueError):
         store.delete_study_item(item.id)
+
+
+def _two_detachable_duplicates(store, first_content, second_content):
+    s1, s2 = store.create_session("emma"), store.create_session("emma")
+    m1 = store.append_message(s1, "assistant", "good morning")
+    m2 = store.append_message(s2, "assistant", "good morning")
+    for sid, mid, content in ((s1, m1, first_content), (s2, m2, second_content)):
+        store.save_study_item("morning", "good morning", sid, mid, **content)
+    return s1, s2
+
+
+def test_merge_fills_empty_fields_from_the_removed_duplicate(store):
+    rich = dict(translation="buenos dias", explanation="saludo", examples=["Good morning!"])
+    s1, s2 = _two_detachable_duplicates(store, rich, {})
+    store.delete_session(s2)  # detaches the empty one first
+    store.delete_session(s1)  # the rich one collides with it and must not lose its content
+    [item] = store.list_study_items()
+    assert (item.translation, item.explanation, item.examples) == (
+        "buenos dias", "saludo", ["Good morning!"])
+    assert item.listen_count == 2
+
+
+def test_merge_keeps_content_of_the_most_recently_updated_when_both_have_some(store):
+    s1, s2 = _two_detachable_duplicates(
+        store, dict(translation="old", explanation="old e", examples=["old"]),
+        dict(translation="new", explanation="", examples=None))
+    store.delete_session(s1)  # older item is detached first and becomes the survivor
+    store.delete_session(s2)  # newer item (translation only) is merged into it
+    [item] = store.list_study_items()
+    assert item.translation == "new"           # both had one: the most recent wins
+    assert item.explanation == "old e"         # empty on the newer one: filled from the older
+    assert item.examples == ["old"]
+
+
+def test_delete_study_item_removes_only_that_item(store):
+    a = store.save_study_item("alpha", "alpha one", None, None, translation="a")
+    b = store.save_study_item("beta", "beta one", None, None, translation="b")
+    store.delete_study_item(a.id)
+    assert [(i.id, i.translation) for i in store.list_study_items()] == [(b.id, "b")]

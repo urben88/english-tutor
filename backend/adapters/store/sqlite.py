@@ -106,25 +106,42 @@ class SQLiteStore:
         self._require_session(session_id)
         with self._db:
             rows = self._db.execute(
-                "SELECT id, text_key, source_text, listen_count FROM study_items "
+                "SELECT id FROM study_items "
                 "WHERE session_id = ? OR message_id IN "
                 "(SELECT id FROM messages WHERE session_id = ?)",
                 (session_id, session_id)).fetchall()
-            for item_id, key, source, count in rows:
-                twin = self._db.execute(
-                    "SELECT id FROM study_items WHERE text_key = ? AND message_id = 0 "
-                    "AND source_text = ? AND id != ?", (key, source, item_id)).fetchone()
-                if twin is None:
-                    self._db.execute(
-                        "UPDATE study_items SET session_id = NULL, message_id = 0 WHERE id = ?",
-                        (item_id,))
-                else:
-                    self._db.execute(
-                        "UPDATE study_items SET listen_count = listen_count + ? WHERE id = ?",
-                        (count, twin[0]))
-                    self._db.execute("DELETE FROM study_items WHERE id = ?", (item_id,))
+            for (item_id,) in rows:
+                self._detach_study_item(item_id)
             self._db.execute("DELETE FROM messages WHERE session_id = ?", (session_id,))
             self._db.execute("DELETE FROM sessions WHERE id = ?", (session_id,))
+
+    def _detach_study_item(self, item_id: int) -> None:
+        """Clear the session/message link of an item (call inside a transaction).
+
+        If a detached item with the same word and sentence already exists, the two are merged
+        into it: listen counts add up; for each of translation, explanation and examples the
+        most recently updated item's value wins when it has one, otherwise the other's value is
+        kept, so no explanation is lost."""
+        cols = "id, text_key, source_text, listen_count, translation, explanation, examples, "                "created_at, updated_at"
+        gone = self._db.execute(f"SELECT {cols} FROM study_items WHERE id = ?", (item_id,)).fetchone()
+        twin = self._db.execute(
+            f"SELECT {cols} FROM study_items WHERE text_key = ? AND message_id = 0 "
+            "AND source_text = ? AND id != ?", (gone[1], gone[2], item_id)).fetchone()
+        if twin is None:
+            self._db.execute(
+                "UPDATE study_items SET session_id = NULL, message_id = 0 WHERE id = ?", (item_id,))
+            return
+        # newest first by (updated_at, id); empty means "" or "[]"
+        newer, older = sorted((gone, twin), key=lambda r: (r[8], r[0]), reverse=True)
+
+        def pick(i: int) -> str:
+            return newer[i] if newer[i] not in ("", "[]") else older[i]
+
+        self._db.execute(
+            "UPDATE study_items SET listen_count = ?, translation = ?, explanation = ?, "
+            "examples = ?, created_at = ?, updated_at = ? WHERE id = ?",
+            (gone[3] + twin[3], pick(4), pick(5), pick(6), min(gone[7], twin[7]), newer[8], twin[0]))
+        self._db.execute("DELETE FROM study_items WHERE id = ?", (item_id,))
 
     def latest_session(self) -> int | None:
         row = self._db.execute(
