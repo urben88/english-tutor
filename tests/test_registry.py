@@ -46,7 +46,7 @@ def test_parse_config_and_build(dummy):
 def test_repo_config_yaml_parses():
     cfg = load_config("config.yaml")
     assert (cfg.stt.adapter, cfg.llm.adapter, cfg.tts.adapter) == (
-        "whisper_server", "ollama", "supertonic")
+        "whisper_server", "ollama", "supertonic_server")
 
 
 def test_repo_config_has_store_and_persona():

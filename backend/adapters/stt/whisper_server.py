@@ -1,6 +1,8 @@
 """Speech-to-text adapter for a running whisper.cpp ``whisper-server`` (GPU build).
 
-The adapter only connects to an already running server; it never starts it. Start it with:
+If no server answers at host:port and `exe_path` + `model_path` are configured, the adapter starts
+one detached (shared: it keeps running after english-tutor exits and other tools can use it).
+Manual start:
 
     <exe_dir>\\whisper-server.exe -m <model_path> --host 127.0.0.1 --port 8178 -l en -ml 1 -sow
 
@@ -10,11 +12,14 @@ The adapter only connects to an already running server; it never starts it. Star
 from __future__ import annotations
 
 import io
+import os
+import time
 import wave
 
 import httpx
 import numpy as np
 
+from backend.adapters.process import Launcher, ensure_running, spawn_detached
 from backend.adapters.stt.whisper_cpp import WHISPER_RATE, resample
 from backend.core.models import AudioClip, Transcript, WordItem
 
@@ -63,11 +68,32 @@ def parse_verbose_json(data: dict) -> Transcript:
 
 class WhisperServerSTT:
     def __init__(self, host: str = "127.0.0.1", port: int = 8178, language: str = "en",
-                 timeout: float = 60.0) -> None:
-        self._url = f"http://{host}:{port}/inference"
+                 timeout: float = 60.0, exe_path: str | None = None,
+                 model_path: str | None = None, autostart: bool | None = None,
+                 start_timeout: float = 60.0, client: httpx.Client | None = None,
+                 launcher: Launcher = spawn_detached, sleep=time.sleep,
+                 clock=time.monotonic) -> None:
+        self._base = f"http://{host}:{port}"
+        self._url = self._base + "/inference"
         self._language = language
         self._hint = START_HINT.format(host=host, port=port)
-        self._client = httpx.Client(timeout=timeout)
+        self._client = client or httpx.Client(timeout=timeout)
+        if autostart is None:
+            autostart = bool(exe_path and model_path)
+        if autostart and exe_path and model_path:
+            argv = [os.path.expandvars(exe_path), "-m", os.path.expandvars(model_path),
+                    "--host", host, "--port", str(port), "-l", language, "-ml", "1", "-sow"]
+            # On failure transcribe() raises the clear ConnectionError with the start hint.
+            ensure_running(self._is_up, argv, launcher=launcher, timeout=start_timeout,
+                           sleep=sleep, clock=clock)
+
+    def _is_up(self) -> bool:
+        """Any HTTP answer means the server is listening (it only listens once the model loaded)."""
+        try:
+            self._client.get(self._base + "/")
+            return True
+        except httpx.TransportError:
+            return False
 
     def transcribe(self, audio: AudioClip) -> Transcript:
         try:

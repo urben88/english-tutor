@@ -13,7 +13,8 @@ Phase 3 (this repo state): web API and browser UI with click-to-explain.
 | STT | `whisper_server` (GPU, default) | whisper.cpp `whisper-server` over HTTP, CUDA build (large-v3-turbo q8_0) |
 | STT | `whisper_cpp` (CPU fallback) | whisper.cpp via `pywhispercpp` |
 | LLM | `ollama` | Ollama `/api/chat` (Gemma 4 E2B QAT q4_0) |
-| TTS | `supertonic` | Supertonic 3, voice M1, ONNX Runtime CPU |
+| TTS | `supertonic_server` (default) | shared Supertonic server (port 8179), falls back to in-process |
+| TTS | `supertonic` | Supertonic 3, voice M1, ONNX Runtime CPU, in-process |
 
 ## Install
 
@@ -32,11 +33,12 @@ uv run python -m backend.adapters.tts.supertonic --download <model_dir>
 
 ## GPU speech-to-text (whisper-server)
 
-The default STT adapter, `whisper_server`, connects to a running whisper.cpp server; it never starts it.
+The default STT adapter, `whisper_server`, uses a running whisper.cpp server and, when none answers, starts one
+itself from `exe_path`/`model_path` in `config.yaml` (see Shared models).
 Install the official CUDA build once: download `whisper-bin-win-cuda-12.4.0-x64.zip` from the
 [whisper.cpp release b5454](https://github.com/ggml-org/whisper.cpp/releases/tag/b5454) and extract it to
 `%LOCALAPPDATA%\english-tutor\whisper-cuda\` (the exe ends up in `...\whisper-cuda\Release\`).
-Start the server before running the app (keep the window open):
+To start it manually instead (keep the window open):
 
 ```
 "%LOCALAPPDATA%\english-tutor\whisper-cuda\Release\whisper-server.exe" -m "<path to ggml-large-v3-turbo-q8_0.bin>" --host 127.0.0.1 --port 8178 -l en -ml 1 -sow
@@ -90,6 +92,16 @@ english-tutor stays independent but never loads a second copy of a model another
   loaded, the request uses that instance's context window (so Ollama does not reload it) and a keep-alive that
   never shortens its lifetime; the prompt budget follows that window. If it is not loaded (or `/api/ps`
   fails), `num_ctx` and the optional `keep_alive` from `config.yaml` apply.
+- **STT (whisper-server, port 8178).** If a whisper-server answers there, it is reused. If not, and
+  `exe_path` + `model_path` are set in `config.yaml`, it is started detached (about 60 s to load) and left running.
+- **TTS (Supertonic server, port 8179).** The `supertonic_server` adapter reuses `python -m backend.services.tts_server`
+  if it runs, else starts it detached and leaves it running; if it cannot be reached it loads the model in-process
+  and logs a warning. Any local tool can use it: `GET /health`, `POST /synthesize` with JSON
+  `{"text": "...", "voice": "M1", "speed": 1.0}` returns `audio/wav`. Set `adapter: supertonic` for in-process only.
+
+Servers started this way are **not** stopped when english-tutor exits, so other tools can keep using them.
+To stop them: end `whisper-server.exe` and the `python` process running `backend.services.tts_server` in Task Manager,
+or `taskkill /IM whisper-server.exe /F` for the first one. Ollama is never started or stopped by this app.
 
 ## Web UI
 

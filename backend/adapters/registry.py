@@ -22,7 +22,10 @@ _BUILTIN: dict[str, dict[str, str]] = {
         "whisper_cpp": "backend.adapters.stt.whisper_cpp:WhisperCppSTT",  # CPU fallback
     },
     "llm": {"ollama": "backend.adapters.llm.ollama:OllamaLLM"},
-    "tts": {"supertonic": "backend.adapters.tts.supertonic:SupertonicTTS"},
+    "tts": {
+        "supertonic": "backend.adapters.tts.supertonic:SupertonicTTS",  # in-process
+        "supertonic_server": "backend.adapters.tts.supertonic_server:SupertonicServerTTS",
+    },
     "store": {"sqlite": "backend.adapters.store.sqlite:SQLiteStore"},
 }
 

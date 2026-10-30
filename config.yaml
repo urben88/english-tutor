@@ -1,10 +1,14 @@
 # One adapter per port, chosen by name. Params are passed to the adapter constructor.
 stt:
-  adapter: whisper_server        # GPU: connects to a running whisper-server (see README)
+  adapter: whisper_server        # GPU: shared whisper-server (see README)
   params:
     host: 127.0.0.1
     port: 8178
     language: en
+    # If no server answers at host:port, one is started detached with these (env vars are expanded)
+    # and left running for other tools. Remove both to only connect to a server you start yourself.
+    exe_path: '%LOCALAPPDATA%\english-tutor\whisper-cuda\Release\whisper-server.exe'
+    model_path: 'C:\Users\tirol\AppData\Roaming\com.pais.handy\models\ggml-large-v3-turbo-q8_0.bin'
   # CPU fallback: replace the block above with
   #   adapter: whisper_cpp
   #   params:
@@ -27,8 +31,13 @@ llm:
     think: false
 
 tts:
-  adapter: supertonic
+  # supertonic_server: one shared TTS server (python -m backend.services.tts_server) on port 8179.
+  # It is reused if running, else started detached and left running; if unreachable it falls back
+  # to loading the model in-process. Use "adapter: supertonic" for in-process only.
+  adapter: supertonic_server
   params:
+    host: 127.0.0.1
+    port: 8179
     model_dir: 'C:\Users\tirol\AppData\Local\asistente-voz-local\lector\modelo\supertonic'
     voice: M1
     steps: 8

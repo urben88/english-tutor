@@ -28,8 +28,8 @@ Branch: `feat/shared-models`, stacked on `feat/phase-3-web-ui` (unpushed) · Del
 
 | ID | Specs | Route | Status | Commit |
 |---|---|---|---|---|
-| T1 | S1, S5, S6 | delegated (resolutor, context backstop + cost rule) | done | (T1 commit) |
-| T2 | S2, S3, S5, S6 | delegated (same resolutor, sequential) | pending | |
+| T1 | S1, S5, S6 | delegated (resolutor, context backstop + cost rule) | done | 95377ae |
+| T2 | S2, S3, S5, S6 | delegated (same resolutor, sequential) | done | (T2 commit) |
 | T3 | S4, S6 | delegated (same resolutor, sequential) | pending | |
 
 ## Log
@@ -39,3 +39,4 @@ Branch: `feat/shared-models`, stacked on `feat/phase-3-web-ui` (unpushed) · Del
 - **L3 (2026-10-30, user):** "Exacto, compartir la ventana de contexto. Si uso una herramienta, pues la ventana de contexto usará esa herramienta. Y si no, la usará la otra. Y además quiero que ahora, como has acabado, que generes un launcher en CMD para darle doble clic y poder arrancarlo directamente."
 - **L4 (analysis):** Ollama is already shared; it reloads a model when a request's `num_ctx` differs from the loaded one. Handy (asistente-voz-local) loads Whisper in-process and exposes no transcription endpoint (its settings only have `selected_model`, `transcribe_accelerator`, `transcribe_gpu_device`), so english-tutor cannot share Handy's Whisper; it shares any running whisper-server instead. The `lector` loads Supertonic in-process; it can share the new TTS server only if it is changed to call it (out of scope, asistente-voz-local stays independent).
 - **L5 (T1 evidence):** RED: 7 new tests failed before the change; GREEN: `uv run pytest -m "not integration" -q` 92 passed. Budget follows `llm.context_size()` via `ContextBudget.for_llm` (API and CLI); it is computed once at startup.
+- **L6 (T2 evidence):** RED: test module failed to import before the code; GREEN: 107 passed. One shared helper `backend/adapters/process.py` (`ensure_running`, `spawn_detached`) used by STT and TTS. STT probes in the constructor (autostart) and keeps the clear ConnectionError on failure. `tests/test_registry.py` now expects `supertonic_server` as the repo default TTS.
