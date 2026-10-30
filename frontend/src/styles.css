@@ -1,0 +1,44 @@
+:root {
+  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+  color: #1c1f24;
+  background: #f5f6f8;
+  --accent: #2f6fed;
+}
+* { box-sizing: border-box; }
+body { margin: 0; }
+.app { max-width: 1100px; margin: 0 auto; padding: 0.75rem; min-height: 100vh; display: flex; flex-direction: column; gap: 0.75rem; }
+.top { display: flex; justify-content: space-between; align-items: center; }
+.top h1 { font-size: 1.25rem; margin: 0; }
+.main { flex: 1; display: grid; grid-template-columns: minmax(0, 2fr) minmax(0, 1fr); gap: 0.75rem; align-items: start; }
+@media (max-width: 720px) { .main { grid-template-columns: 1fr; } }
+
+.btn { font: inherit; padding: 0.4rem 0.8rem; border: 1px solid #c5cad3; border-radius: 6px; background: #fff; cursor: pointer; }
+.btn:hover:not(:disabled) { border-color: var(--accent); }
+.btn:disabled { opacity: 0.5; cursor: default; }
+
+.chat { display: flex; flex-direction: column; gap: 0.75rem; background: #fff; border-radius: 10px; padding: 0.75rem; min-height: 60vh; }
+.messages { flex: 1; display: flex; flex-direction: column; gap: 0.5rem; max-height: 60vh; overflow-y: auto; }
+.bubble { max-width: 85%; padding: 0.5rem 0.75rem; border-radius: 10px; background: #eef1f6; }
+.bubble-user { align-self: flex-end; background: #dbe7ff; }
+.bubble-role { font-size: 0.7rem; text-transform: uppercase; color: #5b6472; }
+.bubble-text { margin: 0.15rem 0 0; line-height: 1.5; overflow-wrap: anywhere; }
+.word { cursor: pointer; border-radius: 3px; }
+.word:hover, .word:focus-visible { background: #ffe58a; outline: none; }
+.explain-btn { margin-top: 0.4rem; font-size: 0.85rem; }
+
+.controls { display: flex; flex-direction: column; gap: 0.5rem; }
+.talk { font: inherit; font-size: 1rem; padding: 0.9rem; border: 0; border-radius: 10px; color: #fff; background: var(--accent); cursor: pointer; touch-action: none; user-select: none; -webkit-user-select: none; }
+.talk-listening { background: #d93838; }
+.talk-thinking { background: #7a828f; cursor: default; }
+.talk:disabled { opacity: 0.5; }
+.composer { display: flex; gap: 0.5rem; }
+.composer input { flex: 1; min-width: 0; font: inherit; padding: 0.45rem 0.6rem; border: 1px solid #c5cad3; border-radius: 6px; }
+
+.panel { background: #fff; border-radius: 10px; padding: 0.75rem; }
+.panel-head { display: flex; justify-content: space-between; align-items: center; }
+.panel h2 { font-size: 1rem; margin: 0; }
+.explanation h3 { margin: 0.5rem 0 0.2rem; }
+.translation { font-weight: 600; color: var(--accent); margin: 0 0 0.4rem; }
+.muted { color: #5b6472; }
+.error { color: #b3261e; }
+.banner { background: #fdecea; padding: 0.5rem 0.75rem; border-radius: 6px; margin: 0; }

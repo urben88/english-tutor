@@ -29,7 +29,7 @@ Branch: `feat/phase-3-web-ui`, stacked on `feat/phase-2-voice-loop` (unpushed) �
 | ID | Specs | Route | Status | Commit |
 |---|---|---|---|---|
 | T1 | S1, S3 (backend), S4 | delegated (resolutor · Sonnet · medium) — parallel unit, surface `backend/`, `tests/`, `README.md`, `pyproject.toml`/`uv.lock` | done | see L4 |
-| T2 | S2, S3 (frontend) | delegated (resolutor · Sonnet · medium) — parallel unit, surface `frontend/` only | pending | |
+| T2 | S2, S3 (frontend) | delegated (resolutor · Sonnet · medium) — parallel unit, surface `frontend/` only | done | see L5 |
 | T3 | verify S1–S4 | analista · Haiku · medium (Risk item 5: new frontend dependencies) | pending | |
 
 Route evidence: two independent units with disjoint edit surfaces, each several files of work, launched together (Writer trigger a); the API contract in S1 is the seam.
@@ -39,4 +39,5 @@ Route evidence: two independent units with disjoint edit surfaces, each several 
 - L1 (2026-10-30, user): "Continúa con la siguiente fase." — next step from phase 2: "fase 3 (API web + UI con clic en palabras)". Phase 1 L2 (user): "hacer, por ejemplo, clic en una palabra que me explique eso, poder seleccionar la frase entera".
 - L2 (2026-10-30, user): stack choice "React + Vite + TS (Recommended)".
 - L3 (2026-10-30): Defaults stated to the user and not objected: explanations in Spanish with English examples; browser hold-to-talk; same API for voice and text. Browser encodes WAV so the backend needs no ffmpeg; raw-body upload avoids a `python-multipart` dependency.
-- L4 (2026-10-30): T1 done. 81 unit passed (parent re-ran). Added `uvicorn` 0.54.0 (was not a dependency; Risk item 5). SQLite `check_same_thread=False` + one RLock in the API; one TurnRunner per request; services built lazily on first request (STT unavailable -> voice 503, text still works). Extras beyond S1: empty text 400, unknown /api/* 404 even with dist, explain `context` optional; empty explain text gives 422 (pydantic).
+- L4 (2026-10-30): T1 done. 81 unit passed (parent re-ran). Added `uvicorn` 0.54.0 (was not a dependency; Risk item 5). SQLite `check_same_thread=False` + one RLock in the API; one TurnRunner per request; services built lazily on first request (STT unavailable -> voice 503, text still works). Extras beyond S1: empty text 400, unknown /api/* 404 even with dist, explain `context` optional; empty explain text gives 422 (pydantic). Commit 0d93d28.
+- L5 (2026-10-30): T2 done. frontend/ React 19.3.1, Vite 8.3.5, TS 7.0.2, Vitest 5.0.5 (pinned). 11 tests passed (parent re-ran), build OK. Notes: messages reloaded from /messages after each turn; words are span role=button so selection spans words; ScriptProcessor recorder. Real mic/playback: manual check.
