@@ -1,4 +1,8 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
+import { ConversationalAssistantView, supportsWebGL } from "../../3d/conversational-assistant/src/react";
+import type { ConversationalAssistant, ElementConfig } from "../../3d/conversational-assistant/src/types";
+import assistantConfig from "../../3d/conversational-assistant/config/element.config.json";
+import assistantModelUrl from "../../3d/conversational-assistant/assets/models/conversational-assistant.glb?url";
 import { createApi, type TutorApi } from "./api/client";
 import type { Id, StudyItem } from "./api/types";
 import { createBrowserMic, type Mic } from "./audio/mic";
@@ -32,12 +36,19 @@ interface Props {
   player?: Player;
 }
 
+const avatarConfig = assistantConfig as unknown as ElementConfig; // module scope: stable reference, no remounts
+
 /** Container: wires the API, audio and state hooks to the presentational components. */
 export function App(props: Props) {
+  const avatar = useRef<ConversationalAssistant | null>(null);
+  const [avatarFailed, setAvatarFailed] = useState(false);
   const api = useMemo(() => props.api ?? createApi(), [props.api]);
   const recorder = useMemo(() => props.recorder ?? createBrowserRecorder(), [props.recorder]);
   const mic = useMemo(() => props.mic ?? createBrowserMic(), [props.mic]);
-  const player = useMemo(() => props.player ?? createBrowserPlayer(), [props.player]);
+  const player = useMemo(
+    () => props.player ?? createBrowserPlayer((audio) => void avatar.current?.speak({ audio })),
+    [props.player],
+  );
 
   const tutor = useTutor(api, player);
   const study = useStudy(api, tutor.speak);
@@ -133,7 +144,17 @@ export function App(props: Props) {
       )}
       <main className="main">
         <section className="center">
-          <CharacterStage state={toCharacterState(status)} />
+          <CharacterStage state={toCharacterState(status)}>
+            {!avatarFailed && supportsWebGL() ? (
+              <ConversationalAssistantView
+                ref={avatar}
+                config={avatarConfig}
+                modelUrl={assistantModelUrl}
+                state={toCharacterState(status)}
+                onError={() => setAvatarFailed(true)}
+              />
+            ) : undefined}
+          </CharacterStage>
           <Subtitles messages={tutor.messages} {...actions} />
         </section>
         <div className="dock">

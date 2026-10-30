@@ -1,0 +1,101 @@
+{
+  "name": "conversational-assistant",
+  "type": "character",
+  "model": "../assets/models/conversational-assistant.glb",
+  "label": "English tutor assistant",
+  "scale": 1,
+  "position": [0, 0, 0],
+  "rotation": [0, 0, 0],
+  "camera": {
+    "position": [0, 1.55, 1.45],
+    "target": [0, 1.5, 0],
+    "fov": 30
+  },
+  "rendering": {
+    "transparentBackground": true,
+    "antialias": true,
+    "maxPixelRatio": 2,
+    "exposure": 1.0
+  },
+  "smoothing": {
+    "pose": 7,
+    "expression": 6,
+    "viseme": 22,
+    "blink": 40
+  },
+  "idleExpression": "neutral",
+  "expressions": {
+    "neutral": { "morphs": { "mouthSmile": 0.3 } },
+    "happy": { "morphs": { "mouthHappy": 0.85, "eyeSquint": 0.25, "browUp_L": 0.3, "browUp_R": 0.3 }, "head": [-3, 0, 0] },
+    "listening": { "morphs": { "mouthSmile": 0.45, "browUp_L": 0.15, "browUp_R": 0.15 }, "head": [2, 4, -7] },
+    "thinking": { "morphs": { "mouthThinking": 0.9, "browUp_L": 0.7, "browDown_R": 0.5 }, "head": [-6, -6, 4], "gaze": [-12, 14] },
+    "surprised": { "morphs": { "mouthSurprised": 1, "eyeWide": 1, "browUp_L": 1, "browUp_R": 1 }, "head": [-4, 0, 0] },
+    "speaking": { "morphs": { "mouthSmile": 0.2, "browUp_L": 0.1, "browUp_R": 0.1 } }
+  },
+  "gestures": {
+    "wave": {
+      "pose": {
+        "upperarm_R": [0, 0, -50],
+        "forearm_R": [0, 0, -130],
+        "hand_R": [0, -90, 0]
+      },
+      "hold": 1.6,
+      "oscillate": [{ "bone": "forearm_R", "axis": "z", "amplitude": 14, "frequency": 2 }],
+      "morphs": { "mouthHappy": 0.5 }
+    },
+    "point": {
+      "pose": {
+        "upperarm_R": [-62, 0, -10],
+        "forearm_R": [-45, 0, 20],
+        "hand_R": [0, 0, 5],
+        "fingers_R": [0, 0, 165],
+        "thumb_R": [0, 0, 70]
+      },
+      "hold": 1.2
+    },
+    "explain": {
+      "pose": {
+        "upperarm_R": [-35, 0, -30],
+        "forearm_R": [-90, 0, 15],
+        "hand_R": [0, 90, 0],
+        "fingers_R": [0, 0, -15]
+      },
+      "hold": 1.8,
+      "oscillate": [{ "bone": "forearm_R", "axis": "x", "amplitude": 6, "frequency": 1.2 }]
+    },
+    "listen": {
+      "pose": {
+        "upperarm_R": [-22, 0, -50],
+        "forearm_R": [-8, 0, -140],
+        "hand_R": [0, -90, 0],
+        "fingers_R": [0, 0, 35],
+        "head": [0, 8, -9]
+      },
+      "hold": 1.8
+    },
+    "idea": {
+      "pose": {
+        "upperarm_R": [-40, 0, 5],
+        "forearm_R": [-110, 0, -10],
+        "fingers_R": [0, 0, 165],
+        "thumb_R": [0, 0, 70]
+      },
+      "hold": 1.5,
+      "morphs": { "browUp_L": 0.5, "browUp_R": 0.5 }
+    }
+  },
+  "visemes": ["viseme_aa", "viseme_E", "viseme_I", "viseme_O", "viseme_U", "viseme_PP", "viseme_SS"],
+  "morphAliases": {},
+  "bones": {
+    "head": "head",
+    "neck": "neck",
+    "chest": "chest",
+    "eyes": ["eye_L", "eye_R"]
+  },
+  "states": {
+    "idle": { "expression": "neutral" },
+    "listening": { "expression": "listening" },
+    "thinking": { "expression": "thinking" },
+    "speaking": { "expression": "speaking" }
+  }
+}

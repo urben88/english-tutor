@@ -1,0 +1,352 @@
+import * as THREE from "three";
+import type { LoadedModel } from "./loader.js";
+import type { ElementConfig, Euler3, GestureDef } from "./types.js";
+
+const DEG = Math.PI / 180;
+
+/** Frame-rate independent exponential approach. */
+function approach(current: number, target: number, rate: number, dt: number): number {
+  return current + (target - current) * (1 - Math.exp(-rate * dt));
+}
+
+/** Smooth value noise built from incommensurate sines: cheap, deterministic, no allocations. */
+function wobble(t: number, seed: number): number {
+  return Math.sin(t * 0.61 + seed) * 0.5 + Math.sin(t * 1.37 + seed * 2.3) * 0.3 + Math.sin(t * 2.71 + seed * 4.1) * 0.2;
+}
+
+/**
+ * Drives bones with rotations expressed in rest-pose world axes, so poses do not depend on how the
+ * exporter oriented each bone's local axes. Rotations compose down the chain (child after parent).
+ */
+class BoneDriver {
+  private readonly rest = new Map<string, THREE.Quaternion>();
+  private readonly parentRest = new Map<string, THREE.Quaternion>();
+  private readonly parentRestInv = new Map<string, THREE.Quaternion>();
+  private readonly current = new Map<string, THREE.Vector3>();
+  private readonly target = new Map<string, THREE.Vector3>();
+  private readonly q = new THREE.Quaternion();
+  private readonly e = new THREE.Euler();
+
+  constructor(private readonly bones: Map<string, THREE.Bone>, root: THREE.Object3D) {
+    root.updateMatrixWorld(true);
+    const rootInv = root.getWorldQuaternion(new THREE.Quaternion()).invert();
+    for (const [name, bone] of bones) {
+      this.rest.set(name, bone.quaternion.clone());
+      const pw = bone.parent ? bone.parent.getWorldQuaternion(new THREE.Quaternion()) : new THREE.Quaternion();
+      const parentInRoot = rootInv.clone().multiply(pw);
+      this.parentRest.set(name, parentInRoot);
+      this.parentRestInv.set(name, parentInRoot.clone().invert());
+      this.current.set(name, new THREE.Vector3());
+      this.target.set(name, new THREE.Vector3());
+    }
+  }
+
+  has(name: string): boolean {
+    return this.bones.has(name);
+  }
+
+  clearTargets(): void {
+    for (const t of this.target.values()) t.set(0, 0, 0);
+  }
+
+  addTarget(name: string, deg: Euler3, weight = 1): void {
+    const t = this.target.get(name);
+    if (!t) return;
+    t.x += deg[0] * weight;
+    t.y += deg[1] * weight;
+    t.z += deg[2] * weight;
+  }
+
+  /** Adds an offset that bypasses smoothing (for oscillations and noise, already smooth). */
+  update(dt: number, rate: number, offsets: Map<string, THREE.Vector3>): void {
+    for (const [name, bone] of this.bones) {
+      const cur = this.current.get(name)!;
+      const tgt = this.target.get(name)!;
+      cur.set(approach(cur.x, tgt.x, rate, dt), approach(cur.y, tgt.y, rate, dt), approach(cur.z, tgt.z, rate, dt));
+      const off = offsets.get(name);
+      const x = cur.x + (off?.x ?? 0);
+      const y = cur.y + (off?.y ?? 0);
+      const z = cur.z + (off?.z ?? 0);
+      this.e.set(x * DEG, y * DEG, z * DEG, "XYZ");
+      this.q.setFromEuler(this.e);
+      // local = parentRest^-1 * delta * parentRest * rest
+      bone.quaternion
+        .copy(this.parentRestInv.get(name)!)
+        .multiply(this.q)
+        .multiply(this.parentRest.get(name)!)
+        .multiply(this.rest.get(name)!);
+    }
+  }
+}
+
+/** Smoothed morph weights addressed by name across every mesh that has them. */
+class MorphDriver {
+  private readonly current = new Map<string, number>();
+  private readonly target = new Map<string, number>();
+  private readonly rate = new Map<string, number>();
+  private readonly slots: { mesh: THREE.Mesh; index: number; name: string }[] = [];
+
+  constructor(model: LoadedModel, private readonly aliases: Record<string, string>) {
+    for (const mesh of model.morphMeshes) {
+      for (const [name, index] of Object.entries(mesh.morphTargetDictionary!)) {
+        this.slots.push({ mesh, index, name });
+        this.current.set(name, 0);
+      }
+    }
+  }
+
+  resolve(name: string): string {
+    return this.aliases[name] ?? name;
+  }
+
+  clearTargets(): void {
+    for (const k of this.target.keys()) this.target.set(k, 0);
+  }
+
+  add(name: string, weight: number, rate: number): void {
+    const n = this.resolve(name);
+    if (!this.current.has(n)) return;
+    this.target.set(n, Math.min(1, (this.target.get(n) ?? 0) + weight));
+    this.rate.set(n, Math.max(this.rate.get(n) ?? 0, rate));
+  }
+
+  update(dt: number, defaultRate: number): void {
+    for (const [name, cur] of this.current) {
+      const rate = this.rate.get(name) ?? defaultRate;
+      this.current.set(name, approach(cur, this.target.get(name) ?? 0, rate, dt));
+    }
+    this.rate.clear();
+    for (const s of this.slots) s.mesh.morphTargetInfluences![s.index] = this.current.get(s.name) ?? 0;
+  }
+}
+
+interface ActiveGesture {
+  def: GestureDef;
+  elapsed: number;
+  resolve: () => void;
+}
+
+/** Picks a viseme from loudness and brightness of the audio frame. */
+function visemeFor(level: number, brightness: number, visemes: string[], rnd: number): string {
+  const has = (v: string) => visemes.includes(v);
+  if (level < 0.08 && has("viseme_PP")) return "viseme_PP";
+  if (brightness > 0.55 && has("viseme_SS")) return rnd < 0.5 ? "viseme_SS" : "viseme_I";
+  if (brightness > 0.38) return rnd < 0.5 ? "viseme_E" : "viseme_I";
+  if (brightness < 0.18) return rnd < 0.5 ? "viseme_O" : "viseme_U";
+  return rnd < 0.7 ? "viseme_aa" : "viseme_E";
+}
+
+/**
+ * All animation layers of the assistant: idle motion, expressions, gestures, blinking, gaze and
+ * lip-sync. Every layer writes targets each frame; the drivers smooth them, so any change, including
+ * the end of a gesture, eases back to idle instead of snapping.
+ */
+export class AssistantControls {
+  private readonly bones: BoneDriver;
+  private readonly morphs: MorphDriver;
+  private readonly offsets = new Map<string, THREE.Vector3>();
+  private time = 0;
+  private expression: string;
+  private gestureActive: ActiveGesture | null = null;
+  private gestureWeight = 0;
+  private lastGesture: GestureDef | null = null;
+  private nextBlink = 1.5;
+  private blinkTimer = -1;
+  private saccade: [number, number] = [0, 0];
+  private nextSaccade = 1;
+  // speech
+  private speaking = false;
+  private externalLevel = 0;
+  private level = 0;
+  private viseme = "";
+  private nextSyllable = 0;
+  private analyser: AnalyserNode | null = null;
+  private readonly timeData = new Uint8Array(1024);
+  private readonly freqData = new Uint8Array(512);
+
+  constructor(model: LoadedModel, private readonly config: ElementConfig, private readonly reducedMotion: boolean) {
+    this.bones = new BoneDriver(model.bones, model.root);
+    this.morphs = new MorphDriver(model, config.morphAliases);
+    this.expression = config.idleExpression;
+  }
+
+  setExpression(name: string): void {
+    if (this.config.expressions[name]) this.expression = name;
+  }
+
+  gesture(name: string): Promise<void> {
+    const def = this.config.gestures[name];
+    if (!def) return Promise.resolve();
+    this.gestureActive?.resolve();
+    return new Promise((resolve) => {
+      this.gestureActive = { def, elapsed: 0, resolve };
+      this.lastGesture = def;
+    });
+  }
+
+  setSpeaking(on: boolean): void {
+    this.speaking = on;
+    if (!on) this.analyser = null;
+  }
+
+  setAnalyser(analyser: AnalyserNode | null): void {
+    this.analyser = analyser;
+  }
+
+  setSpeechLevel(level: number): void {
+    this.externalLevel = Math.max(0, Math.min(1, level));
+  }
+
+  update(dt: number): void {
+    dt = Math.min(dt, 0.1); // a hidden tab must not cause a jump
+    this.time += dt;
+    const cfg = this.config;
+    const motion = this.reducedMotion ? 0.35 : 1;
+    this.bones.clearTargets();
+    this.morphs.clearTargets();
+    for (const o of this.offsets.values()) o.set(0, 0, 0);
+
+    // Expression layer.
+    const expr = cfg.expressions[this.expression] ?? cfg.expressions[cfg.idleExpression];
+    for (const [m, w] of Object.entries(expr?.morphs ?? {})) this.morphs.add(m, w, cfg.smoothing.expression);
+    if (expr?.head) this.bones.addTarget(cfg.bones.head, expr.head);
+
+    // Gesture layer.
+    this.updateGesture(dt);
+
+    // Idle life: breathing, head drift and an occasional glance.
+    const t = this.time;
+    this.offset(cfg.bones.chest).x += Math.sin(t * 1.5) * 1.2 * motion;
+    const speakBoost = this.speaking ? 1.6 : 1;
+    const head = this.offset(cfg.bones.head);
+    head.x += wobble(t, 1) * 2.4 * motion * speakBoost + this.level * 3.5 * motion; // nod on stress
+    head.y += wobble(t, 7) * 3.5 * motion;
+    head.z += wobble(t, 3) * 1.6 * motion;
+    const neck = this.offset(cfg.bones.neck);
+    neck.y += wobble(t * 0.7, 11) * 2 * motion;
+
+    this.updateGaze(dt, expr?.gaze);
+    this.updateBlink(dt);
+    this.updateSpeech(dt);
+
+    this.bones.update(dt, cfg.smoothing.pose, this.offsets);
+    this.morphs.update(dt, cfg.smoothing.expression);
+  }
+
+  private offset(bone: string): THREE.Vector3 {
+    let v = this.offsets.get(bone);
+    if (!v) {
+      v = new THREE.Vector3();
+      this.offsets.set(bone, v);
+    }
+    return v;
+  }
+
+  private updateGesture(dt: number): void {
+    const g = this.gestureActive;
+    const cfg = this.config;
+    if (g) {
+      g.elapsed += dt;
+      const blendIn = 3 / cfg.smoothing.pose; // ~95 % of the way to the pose
+      if (g.elapsed > blendIn + g.def.hold) {
+        this.gestureActive = null;
+        // Resolve once the pose has eased back, so callers can chain gestures cleanly.
+        setTimeout(g.resolve, (blendIn * 1000) | 0);
+      }
+    }
+    const active = this.gestureActive;
+    this.gestureWeight = approach(this.gestureWeight, active ? 1 : 0, cfg.smoothing.pose, dt);
+    if (active) {
+      for (const [bone, deg] of Object.entries(active.def.pose)) this.bones.addTarget(bone, deg);
+      for (const [m, w] of Object.entries(active.def.morphs ?? {})) this.morphs.add(m, w, cfg.smoothing.expression);
+    }
+    // Oscillations fade with the gesture weight so waving slows down instead of stopping dead.
+    const osc = (active ?? (this.gestureWeight > 0.01 ? { def: this.lastGesture } : null))?.def?.oscillate ?? [];
+    const motion = this.reducedMotion ? 0.4 : 1;
+    for (const o of osc) {
+      const v = this.offset(o.bone);
+      v[o.axis] += Math.sin(this.time * o.frequency * 2 * Math.PI) * o.amplitude * this.gestureWeight * motion;
+    }
+  }
+
+  private updateGaze(dt: number, gaze?: [number, number]): void {
+    this.nextSaccade -= dt;
+    if (this.nextSaccade <= 0) {
+      this.nextSaccade = 0.8 + Math.random() * 2.4;
+      this.saccade = this.speaking || Math.random() < 0.6 ? [0, 0] : [(Math.random() - 0.5) * 10, (Math.random() - 0.5) * 6];
+    }
+    const yaw = (gaze?.[0] ?? 0) + this.saccade[0];
+    const pitch = (gaze?.[1] ?? 0) + this.saccade[1];
+    // In three's axes a positive X rotation looks down and a positive Y rotation turns to +X (character's left).
+    for (const eye of this.config.bones.eyes) this.bones.addTarget(eye, [-pitch, yaw, 0]);
+  }
+
+  private updateBlink(dt: number): void {
+    this.nextBlink -= dt;
+    if (this.nextBlink <= 0) {
+      this.blinkTimer = 0;
+      this.nextBlink = Math.random() < 0.15 ? 0.25 : 2 + Math.random() * 4; // sometimes a double blink
+    }
+    if (this.blinkTimer >= 0) {
+      this.blinkTimer += dt;
+      const closing = this.blinkTimer < 0.09;
+      if (closing) {
+        this.morphs.add("blink_L", 1, this.config.smoothing.blink);
+        this.morphs.add("blink_R", 1, this.config.smoothing.blink);
+      }
+      if (this.blinkTimer > 0.09) this.blinkTimer = -1;
+    }
+    // Blinks use their own fast rate on the way back too.
+    this.morphs.add("blink_L", 0, this.config.smoothing.blink);
+    this.morphs.add("blink_R", 0, this.config.smoothing.blink);
+  }
+
+  private updateSpeech(dt: number): void {
+    const cfg = this.config;
+    let level = 0;
+    let brightness = 0.3;
+    if (this.analyser) {
+      this.analyser.getByteTimeDomainData(this.timeData);
+      let sum = 0;
+      for (let i = 0; i < this.timeData.length; i++) {
+        const s = (this.timeData[i] - 128) / 128;
+        sum += s * s;
+      }
+      level = Math.min(1, Math.sqrt(sum / this.timeData.length) * 4.5);
+      this.analyser.getByteFrequencyData(this.freqData);
+      let num = 0;
+      let den = 0;
+      for (let i = 0; i < this.freqData.length; i++) {
+        num += i * this.freqData[i];
+        den += this.freqData[i];
+      }
+      brightness = den > 0 ? num / den / this.freqData.length : 0;
+    } else if (this.externalLevel > 0) {
+      level = this.externalLevel;
+    } else if (this.speaking) {
+      // Procedural syllables: no audio to follow, so open and close at a speech-like rate.
+      level = 0.35 + 0.65 * Math.abs(Math.sin(this.time * 9.5)) * (0.6 + 0.4 * Math.sin(this.time * 2.3));
+      brightness = 0.15 + 0.5 * (0.5 + 0.5 * Math.sin(this.time * 5.3 + 1.7));
+    }
+    const talking = this.speaking || this.externalLevel > 0;
+    this.level = approach(this.level, talking ? level : 0, 20, dt);
+
+    this.nextSyllable -= dt;
+    if (talking && this.nextSyllable <= 0) {
+      this.nextSyllable = 0.07 + Math.random() * 0.08;
+      this.viseme = visemeFor(level, brightness, cfg.visemes, Math.random());
+    }
+    if (!talking) this.viseme = "";
+    for (const v of cfg.visemes) {
+      const w = v === this.viseme ? Math.min(1, this.level * 1.15) : 0;
+      this.morphs.add(v, w, cfg.smoothing.viseme);
+    }
+    if (talking) {
+      // Brows follow emphasis a little, which reads as engaged speech.
+      this.morphs.add("browInnerUp", this.level * 0.25, cfg.smoothing.viseme);
+    }
+  }
+}
+
+/** Exposed for tests and tooling. */
+export const _internal = { approach, visemeFor };

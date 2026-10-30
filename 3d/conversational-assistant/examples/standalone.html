@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="data:," />
+    <title>Conversational assistant · standalone</title>
+    <!-- Pinned CDN copy of three.js for this demo only; the app integration uses the npm package. -->
+    <script type="importmap">
+      {
+        "imports": {
+          "three": "https://cdn.jsdelivr.net/npm/three@0.170.0/build/three.module.js",
+          "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.170.0/examples/jsm/"
+        }
+      }
+    </script>
+    <style>
+      :root { color-scheme: light; font-family: system-ui, sans-serif; }
+      body { margin: 0; min-height: 100vh; display: grid; grid-template-rows: 1fr auto; background: #dfe9f6; }
+      #stage {
+        position: relative; min-height: 70vh;
+        background: url("../assets/reference-images/classroom-background.png") center / cover no-repeat;
+      }
+      #status { position: absolute; left: 12px; top: 12px; padding: 4px 10px; border-radius: 999px; background: #ffffffcc; font-size: 14px; }
+      .controls { display: flex; flex-wrap: wrap; gap: 6px; padding: 12px 16px; background: #ffffff; }
+      .controls span { width: 100%; font-size: 12px; color: #4a5a70; }
+      button { font: inherit; padding: 6px 12px; border-radius: 8px; border: 1px solid #b7c7dd; background: #f3f7fc; cursor: pointer; }
+      button:hover { background: #e3edf9; }
+    </style>
+  </head>
+  <body>
+    <main id="stage"><div id="status">Loading…</div></main>
+    <section class="controls" aria-label="Assistant controls">
+      <span>Expressions</span>
+      <button data-expr="neutral">neutral</button><button data-expr="happy">happy</button>
+      <button data-expr="listening">listening</button><button data-expr="thinking">thinking</button>
+      <button data-expr="surprised">surprised</button>
+      <span>Gestures</span>
+      <button data-gesture="wave">wave</button><button data-gesture="point">point</button>
+      <button data-gesture="explain">explain</button><button data-gesture="listen">listen</button>
+      <button data-gesture="idea">idea</button>
+      <span>Speech</span>
+      <button id="talk">talk 4 s (procedural)</button><button id="stop">stop</button>
+    </section>
+    <script type="module">
+      import { createConversationalAssistant } from "../dist/index.js";
+
+      const status = document.getElementById("status");
+      const config = await (await fetch("../config/element.config.json")).json();
+      const assistant = createConversationalAssistant({
+        container: document.getElementById("stage"),
+        config,
+        onError: (e) => { status.textContent = "Failed to load: " + e; console.error(e); },
+      });
+      window.assistant = assistant; // handy for the console and for automated checks
+      window.assistantConfig = config; // live-editable: poses and expressions are read every frame
+      assistant.ready.then(() => { status.textContent = "Ready"; });
+
+      document.querySelectorAll("[data-expr]").forEach((b) =>
+        b.addEventListener("click", () => assistant.setExpression(b.dataset.expr)));
+      document.querySelectorAll("[data-gesture]").forEach((b) =>
+        b.addEventListener("click", async () => {
+          status.textContent = "gesture: " + b.dataset.gesture;
+          await assistant.gesture(b.dataset.gesture);
+          status.textContent = "Ready";
+        }));
+      document.getElementById("talk").addEventListener("click", async () => {
+        status.textContent = "speaking";
+        await assistant.speak({ durationMs: 4000 });
+        status.textContent = "Ready";
+      });
+      document.getElementById("stop").addEventListener("click", () => assistant.stopSpeaking());
+    </script>
+  </body>
+</html>

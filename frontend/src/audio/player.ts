@@ -12,7 +12,8 @@ export function base64ToBlob(b64: string, type = "audio/wav"): Blob {
   return new Blob([bytes], { type });
 }
 
-export function createBrowserPlayer(): Player {
+/** `onAudio` receives each element before it plays (the 3D assistant uses it for lip-sync). */
+export function createBrowserPlayer(onAudio?: (audio: HTMLAudioElement) => void): Player {
   let current: HTMLAudioElement | null = null;
   let url: string | null = null;
   let settle: (() => void) | null = null;
@@ -36,6 +37,7 @@ export function createBrowserPlayer(): Player {
         url = URL.createObjectURL(base64ToBlob(b64));
         const audio = new Audio(url);
         current = audio;
+        onAudio?.(audio);
         audio.onended = stop;
         audio.onerror = stop;
         void audio.play().catch(stop); // autoplay may be blocked; the text reply is still shown
