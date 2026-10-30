@@ -154,6 +154,7 @@ speech) and "Explain again". Explanations are not added to the conversation hist
 | `POST /api/sessions/{id}/turn` | body: WAV (`audio/wav`, 16-bit PCM) -> `{user_text, reply_text, audio (base64 WAV), sample_rate}` |
 | `POST /api/sessions/{id}/turn/text` | body `{text}` -> same response |
 | `POST /api/explain` | body `{text, context, simpler?}` -> `{text, translation, explanation, examples}` (`explanation` = grammar/use) |
+| `POST /api/analyze` | body `{text, message_id?}` -> `{text, message_id, structure, tokens: [{text, translation, explanation, part_of_speech, tense, notes}]}` (Spanish; see Sentence analysis below; 400 empty/too long, 502 unusable model output) |
 | `POST /api/tts` | body `{text, speed?}` (0.25-2, default 1) -> `{audio (base64 WAV), sample_rate}`; used for words, phrases and "Read again" |
 | `GET /api/study` | study items, most recently used first: `{id, text, source_text, session_id, message_id, translation, explanation, examples, listen_count, created_at, updated_at}` |
 | `POST /api/study` | body `{text, source_text?, session_id?, message_id?, translation?, explanation?, examples?}` -> the item. Adds it, or counts another listen on the same word in the same message (given explanation fields replace the stored ones) |
@@ -212,7 +213,7 @@ unknown name fails with the list of valid options.
 ## Layout
 
 ```
-backend/core/       models, ports, context policy, persona loader, use cases (no adapter imports)
+backend/core/       models, ports, context policy, settings, prompt, analyze/explain, persona loader, use cases (no adapter imports)
 backend/adapters/   stt/ llm/ tts/ store/ and registry.py
 backend/graph/      LangGraph turn graph over the ports
 backend/cli.py      terminal hold-to-talk loop

@@ -9,7 +9,7 @@ from __future__ import annotations
 
 import base64
 import threading
-from dataclasses import dataclass
+from dataclasses import asdict, dataclass
 from pathlib import Path
 from typing import Any
 
@@ -20,6 +20,7 @@ from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 
 from backend.api.wav import decode_wav, encode_wav
+from backend.core.analyze import MAX_TEXT_CHARS, AnalyzeError, analyze
 from backend.core.context import ContextBudget
 from backend.core.explain import ExplainError, explain
 from backend.core.models import AudioClip
@@ -80,6 +81,11 @@ class ExplainBody(BaseModel):
     text: str
     context: str = ""
     simpler: bool = False
+
+
+class AnalyzeBody(BaseModel):
+    text: str
+    message_id: int | None = None  # echoed back so the UI can match the answer to a message
 
 
 class TtsBody(BaseModel):
@@ -247,6 +253,22 @@ def create_app(services: Services | None = None, static_dir: Path | str | None =
                 raise HTTPException(502, str(e)) from e
         return {"text": out.text, "translation": out.translation,
                 "explanation": out.explanation, "examples": out.examples}
+
+    @app.post("/api/analyze")
+    def analyze_endpoint(body: AnalyzeBody) -> dict[str, Any]:
+        text = body.text.strip()
+        if not text:
+            raise HTTPException(400, "text is empty")
+        if len(text) > MAX_TEXT_CHARS:
+            raise HTTPException(400, f"text is longer than {MAX_TEXT_CHARS} characters")
+        s = svc()
+        with lock:
+            try:
+                out = analyze(s.llm, text)
+            except AnalyzeError as e:
+                raise HTTPException(502, str(e)) from e
+        return {"text": out.text, "message_id": body.message_id, "structure": out.structure,
+                "tokens": [asdict(t) for t in out.tokens]}
 
     @app.post("/api/tts")
     def tts_endpoint(body: TtsBody) -> dict[str, Any]:
