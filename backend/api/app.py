@@ -24,7 +24,9 @@ from backend.core.context import ContextBudget
 from backend.core.explain import ExplainError, explain
 from backend.core.models import AudioClip
 from backend.core.persona import Persona
-from backend.core.ports import ConversationStore, LanguageModel, SpeechToText, TextToSpeech
+from backend.core.models import StudyItem
+from backend.core.ports import (
+    ConversationStore, LanguageModel, SpeechToText, StudyStore, TextToSpeech)
 from backend.graph.turn import TurnRunner
 
 DEFAULT_STATIC = Path(__file__).resolve().parents[2] / "frontend" / "dist"
@@ -63,6 +65,36 @@ class TextBody(BaseModel):
 class ExplainBody(BaseModel):
     text: str
     context: str = ""
+    simpler: bool = False
+
+
+class TtsBody(BaseModel):
+    text: str
+    speed: float = 1.0
+
+
+class StudyAddBody(BaseModel):
+    text: str
+    source_text: str = ""
+    session_id: int | None = None
+    message_id: int | None = None
+    translation: str | None = None
+    explanation: str | None = None
+    examples: list[str] | None = None
+
+
+class StudyUpdateBody(BaseModel):
+    translation: str
+    explanation: str
+    examples: list[str]
+
+
+def study_json(i: StudyItem) -> dict[str, Any]:
+    return {"id": i.id, "text": i.text, "source_text": i.source_text, "session_id": i.session_id,
+            "message_id": i.message_id, "translation": i.translation,
+            "explanation": i.explanation, "examples": i.examples,
+            "listen_count": i.listen_count, "created_at": i.created_at,
+            "updated_at": i.updated_at}
 
 
 def create_app(services: Services | None = None, static_dir: Path | str | None = DEFAULT_STATIC,
@@ -151,11 +183,58 @@ def create_app(services: Services | None = None, static_dir: Path | str | None =
         s = svc()
         with lock:
             try:
-                out = explain(s.llm, body.text, body.context)
+                out = explain(s.llm, body.text, body.context, simpler=body.simpler)
             except ExplainError as e:
                 raise HTTPException(502, str(e)) from e
         return {"text": out.text, "translation": out.translation,
                 "explanation": out.explanation, "examples": out.examples}
+
+    @app.post("/api/tts")
+    def tts_endpoint(body: TtsBody) -> dict[str, Any]:
+        if not body.text.strip():
+            raise HTTPException(400, "text is empty")
+        if not 0.25 <= body.speed <= 2.0:
+            raise HTTPException(400, "speed must be between 0.25 and 2")
+        s = svc()
+        with lock:
+            clip = s.tts.synthesize(body.text.strip(), speed=body.speed)
+        return {"audio": base64.b64encode(encode_wav(clip)).decode("ascii"),
+                "sample_rate": clip.sample_rate}
+
+    def study_store() -> StudyStore:
+        s = svc()
+        if not isinstance(s.store, StudyStore):
+            raise HTTPException(501, "the configured store does not support the study list")
+        return s.store
+
+    @app.get("/api/study")
+    def study_list() -> list[dict[str, Any]]:
+        store = study_store()
+        with lock:
+            return [study_json(i) for i in store.list_study_items()]
+
+    @app.post("/api/study")
+    def study_add(body: StudyAddBody) -> dict[str, Any]:
+        if not body.text.strip():
+            raise HTTPException(400, "text is empty")
+        store = study_store()
+        with lock:
+            item = store.save_study_item(
+                body.text, body.source_text, body.session_id, body.message_id,
+                translation=body.translation, explanation=body.explanation,
+                examples=body.examples)
+        return study_json(item)
+
+    @app.patch("/api/study/{item_id}")
+    def study_update(item_id: int, body: StudyUpdateBody) -> dict[str, Any]:
+        store = study_store()
+        with lock:
+            try:
+                item = store.update_study_item(
+                    item_id, body.translation, body.explanation, body.examples)
+            except ValueError as e:
+                raise HTTPException(404, str(e)) from e
+        return study_json(item)
 
     if static_dir is not None and (Path(static_dir) / "index.html").is_file():
         root = Path(static_dir).resolve()

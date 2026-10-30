@@ -6,7 +6,7 @@ from collections.abc import Iterator
 from typing import Protocol, runtime_checkable
 
 from backend.core.models import (
-    AudioClip, ChatMessage, SessionInfo, StoredMessage, Summary, Transcript)
+    AudioClip, ChatMessage, SessionInfo, StoredMessage, StudyItem, Summary, Transcript)
 
 
 @runtime_checkable
@@ -66,4 +66,29 @@ class ConversationStore(Protocol):
 
     def list_sessions(self) -> list[SessionInfo]:
         """All sessions, most recently active first."""
+        ...
+
+
+@runtime_checkable
+class StudyStore(Protocol):
+    def save_study_item(self, text: str, source_text: str, session_id: int | None,
+                        message_id: int | None, *, translation: str | None = None,
+                        explanation: str | None = None,
+                        examples: list[str] | None = None) -> StudyItem:
+        """Add a word/phrase, or touch the existing one (same text ignoring case, same message
+        and sentence): its ``listen_count`` grows. Explanation fields that are not None replace
+        the stored ones."""
+        ...
+
+    def update_study_item(self, item_id: int, translation: str, explanation: str,
+                          examples: list[str]) -> StudyItem:
+        """Replace the explanation of an item. Unknown id -> ValueError."""
+        ...
+
+    def get_study_item(self, item_id: int) -> StudyItem:
+        """Unknown id -> ValueError."""
+        ...
+
+    def list_study_items(self) -> list[StudyItem]:
+        """All items, most recently touched first."""
         ...

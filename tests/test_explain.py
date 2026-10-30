@@ -36,3 +36,12 @@ def test_parses_spanish_fields_and_passes_schema():
 def test_invalid_model_output_raises(reply):
     with pytest.raises(ExplainError):
         explain(FakeLLM(reply), "word", "ctx")
+
+
+def test_simpler_asks_for_simpler_words():
+    llm = FakeLLM(GOOD)
+    explain(llm, "play it safe", "I play it safe.", simpler=True)
+    system = llm.calls[0][0][0].content
+    assert "simpler" in system.lower() and "A1" in system
+    explain(llm, "play it safe", "I play it safe.")
+    assert "simpler" not in llm.calls[1][0][0].content.lower()

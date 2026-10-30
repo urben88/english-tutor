@@ -21,8 +21,12 @@ EXPLAIN_SCHEMA = {
 SYSTEM_PROMPT = (
     "You help a Spanish-speaking learner of English. Given a word or phrase and the message it "
     "appeared in, answer as JSON with: translation (the Spanish translation for this context), "
-    "explanation (1-2 short sentences in Spanish about its meaning and use here), and examples "
+    "explanation (1-2 short sentences in Spanish about its grammar and use here), and examples "
     "(2 short English sentences using it). Write translation and explanation in Spanish.")
+
+SIMPLER_PROMPT = (
+    " Make it simpler than a normal explanation: use very basic Spanish and A1-level English, "
+    "short sentences and no grammar jargon.")
 
 
 class ExplainError(ValueError):
@@ -37,9 +41,9 @@ class Explanation:
     examples: list[str]
 
 
-def explain(llm: LanguageModel, text: str, context: str) -> Explanation:
+def explain(llm: LanguageModel, text: str, context: str, *, simpler: bool = False) -> Explanation:
     raw = llm.generate(
-        [ChatMessage("system", SYSTEM_PROMPT),
+        [ChatMessage("system", SYSTEM_PROMPT + (SIMPLER_PROMPT if simpler else "")),
          ChatMessage("user", f"Word or phrase: {text}\nMessage: {context}")],
         json_schema=EXPLAIN_SCHEMA)
     try:

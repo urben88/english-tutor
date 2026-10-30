@@ -7,11 +7,12 @@ select unsummarized turns with ``load_messages(sid, after_id=summarized_upto)``.
 
 from __future__ import annotations
 
+import json
 import sqlite3
 import time
 from pathlib import Path
 
-from backend.core.models import SessionInfo, StoredMessage, Summary
+from backend.core.models import SessionInfo, StoredMessage, StudyItem, Summary
 
 _SCHEMA = """
 CREATE TABLE IF NOT EXISTS sessions (
@@ -30,7 +31,30 @@ CREATE TABLE IF NOT EXISTS messages (
     created_at REAL NOT NULL
 );
 CREATE INDEX IF NOT EXISTS idx_messages_session ON messages(session_id, id);
+CREATE TABLE IF NOT EXISTS study_items (
+    id INTEGER PRIMARY KEY AUTOINCREMENT,
+    text TEXT NOT NULL,
+    text_key TEXT NOT NULL,
+    source_text TEXT NOT NULL DEFAULT '',
+    session_id INTEGER,
+    message_id INTEGER NOT NULL DEFAULT 0,
+    translation TEXT NOT NULL DEFAULT '',
+    explanation TEXT NOT NULL DEFAULT '',
+    examples TEXT NOT NULL DEFAULT '[]',
+    listen_count INTEGER NOT NULL DEFAULT 1,
+    created_at REAL NOT NULL,
+    updated_at REAL NOT NULL
+);
+CREATE UNIQUE INDEX IF NOT EXISTS idx_study_key ON study_items(text_key, message_id, source_text);
 """
+
+_STUDY_COLS = ("id, text, source_text, session_id, message_id, translation, explanation, "
+               "examples, listen_count, created_at, updated_at")
+
+
+def _study_item(r) -> StudyItem:
+    return StudyItem(r[0], r[1], r[2], r[3], r[4] or None, r[5], r[6], json.loads(r[7]),
+                     r[8], r[9], r[10])
 
 
 class SQLiteStore:
@@ -98,3 +122,54 @@ class SQLiteStore:
             "FROM sessions s LEFT JOIN messages m ON m.session_id = s.id "
             "GROUP BY s.id ORDER BY s.updated_at DESC, s.id DESC").fetchall()
         return [SessionInfo(*r) for r in rows]
+
+    # --- study items ---------------------------------------------------------------------------
+
+    def save_study_item(self, text: str, source_text: str, session_id: int | None,
+                        message_id: int | None, *, translation: str | None = None,
+                        explanation: str | None = None,
+                        examples: list[str] | None = None) -> StudyItem:
+        key, mid, now = text.strip().lower(), message_id or 0, time.time()
+        row = self._db.execute(
+            "SELECT id FROM study_items WHERE text_key = ? AND message_id = ? AND source_text = ?",
+            (key, mid, source_text)).fetchone()
+        with self._db:
+            if row is None:
+                cur = self._db.execute(
+                    "INSERT INTO study_items (text, text_key, source_text, session_id, message_id, "
+                    "translation, explanation, examples, created_at, updated_at) "
+                    "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)",
+                    (text.strip(), key, source_text, session_id, mid, translation or "",
+                     explanation or "", json.dumps(examples or []), now, now))
+                item_id = int(cur.lastrowid)
+            else:
+                item_id = int(row[0])
+                self._db.execute(
+                    "UPDATE study_items SET listen_count = listen_count + 1, updated_at = ?, "
+                    "translation = COALESCE(?, translation), explanation = COALESCE(?, explanation), "
+                    "examples = COALESCE(?, examples) WHERE id = ?",
+                    (now, translation, explanation,
+                     None if examples is None else json.dumps(examples), item_id))
+        return self.get_study_item(item_id)
+
+    def update_study_item(self, item_id: int, translation: str, explanation: str,
+                          examples: list[str]) -> StudyItem:
+        self.get_study_item(item_id)
+        with self._db:
+            self._db.execute(
+                "UPDATE study_items SET translation = ?, explanation = ?, examples = ?, "
+                "updated_at = ? WHERE id = ?",
+                (translation, explanation, json.dumps(examples), time.time(), item_id))
+        return self.get_study_item(item_id)
+
+    def get_study_item(self, item_id: int) -> StudyItem:
+        row = self._db.execute(
+            f"SELECT {_STUDY_COLS} FROM study_items WHERE id = ?", (item_id,)).fetchone()
+        if row is None:
+            raise ValueError(f"unknown study item id {item_id}")
+        return _study_item(row)
+
+    def list_study_items(self) -> list[StudyItem]:
+        rows = self._db.execute(
+            f"SELECT {_STUDY_COLS} FROM study_items ORDER BY updated_at DESC, id DESC").fetchall()
+        return [_study_item(r) for r in rows]

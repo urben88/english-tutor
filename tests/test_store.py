@@ -101,3 +101,59 @@ def test_usable_from_another_thread(store):
     t.start()
     t.join()
     assert out == {"n": 1}
+
+
+# --- study items (words and phrases the user listens to or explains) ---------------------------
+
+
+def test_store_satisfies_study_port(store):
+    from backend.core.ports import StudyStore
+    assert isinstance(store, StudyStore)
+
+
+def test_study_item_round_trip(store):
+    sid = store.create_session("emma")
+    mid = store.append_message(sid, "assistant", "Hello, world!")
+    item = store.save_study_item("world", "Hello, world!", sid, mid)
+    assert (item.text, item.source_text, item.session_id, item.message_id) == (
+        "world", "Hello, world!", sid, mid)
+    assert item.listen_count == 1 and item.examples == [] and item.explanation == ""
+    assert store.list_study_items() == [item]
+    assert store.get_study_item(item.id) == item
+
+
+def test_study_save_again_counts_and_keeps_explanation(store):
+    sid = store.create_session("emma")
+    mid = store.append_message(sid, "assistant", "Hello, world!")
+    first = store.save_study_item("world", "Hello, world!", sid, mid,
+                                  translation="mundo", explanation="Planeta.", examples=["Hi."])
+    again = store.save_study_item("World", "Hello, world!", sid, mid)  # same word, other case
+    assert again.id == first.id and again.listen_count == 2
+    assert (again.translation, again.explanation, again.examples) == ("mundo", "Planeta.", ["Hi."])
+    other = store.save_study_item("world", "A new world.", sid, None)  # other source = other item
+    assert other.id != first.id
+    assert len(store.list_study_items()) == 2
+
+
+def test_study_update_and_unknown(store):
+    item = store.save_study_item("hello", "Hello there", None, None)
+    out = store.update_study_item(item.id, "hola", "Un saludo.", ["Hello!", "Hello again."])
+    assert (out.translation, out.explanation, out.examples) == (
+        "hola", "Un saludo.", ["Hello!", "Hello again."])
+    with pytest.raises(ValueError):
+        store.update_study_item(999, "x", "y", [])
+    with pytest.raises(ValueError):
+        store.get_study_item(999)
+
+
+def test_study_list_newest_first_and_persists(tmp_path):
+    path = str(tmp_path / "s.db")
+    s = SQLiteStore(path=path)
+    a = s.save_study_item("one", "one two", None, None)
+    b = s.save_study_item("two", "one two", None, None)
+    s.save_study_item("one", "one two", None, None)  # touching moves it to the top
+    assert [i.id for i in s.list_study_items()] == [a.id, b.id]
+    s.close()
+    s2 = SQLiteStore(path=path)
+    assert [i.text for i in s2.list_study_items()] == ["one", "two"]
+    s2.close()

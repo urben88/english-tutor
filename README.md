@@ -136,9 +136,13 @@ The status pill is always visible (Listening, Hearing you, Thinking, Speaking, M
 **Mute** (button or the `M` key, outside the text box) stops all recording; muting mid-phrase discards it.
 **Stop** cuts the tutor's reply; in hands-free mode listening resumes right away.
 
-Click any word,
-or select a phrase and press "Explain", to get a translation, an explanation and examples in a side panel.
-Explanations are in Spanish; the examples are English. They are not saved to the conversation history.
+**Study.** Click a word in the tutor's text (or select a phrase and press "Listen") to hear it. Press
+"Explain" in the Study panel to get the explanation once, split in tabs: Translation, Grammar, Examples
+(explanations in Spanish, examples in English). "Explain again" asks for a new one, "Simpler" for an easier one.
+Every word or phrase you listen to or explain is saved in the SQLite store with its explanation and the message it
+came from, and listed in the Study panel: each item can be played (normal or slow), explained again, and "Jump to
+message" opens the transcript on the original message. Each tutor message also has "Read again" (replays its
+speech) and "Explain again". Explanations are not added to the conversation history.
 
 | Endpoint | Purpose |
 |---|---|
@@ -147,7 +151,11 @@ Explanations are in Spanish; the examples are English. They are not saved to the
 | `GET /api/sessions/{id}/messages` | conversation `[{id, role, content}]` (404 if unknown) |
 | `POST /api/sessions/{id}/turn` | body: WAV (`audio/wav`, 16-bit PCM) -> `{user_text, reply_text, audio (base64 WAV), sample_rate}` |
 | `POST /api/sessions/{id}/turn/text` | body `{text}` -> same response |
-| `POST /api/explain` | body `{text, context}` -> `{text, translation, explanation, examples}` |
+| `POST /api/explain` | body `{text, context, simpler?}` -> `{text, translation, explanation, examples}` (`explanation` = grammar/use) |
+| `POST /api/tts` | body `{text, speed?}` (0.25-2, default 1) -> `{audio (base64 WAV), sample_rate}`; used for words, phrases and "Read again" |
+| `GET /api/study` | study items, most recently used first: `{id, text, source_text, session_id, message_id, translation, explanation, examples, listen_count, created_at, updated_at}` |
+| `POST /api/study` | body `{text, source_text?, session_id?, message_id?, translation?, explanation?, examples?}` -> the item. Adds it, or counts another listen on the same word in the same message (given explanation fields replace the stored ones) |
+| `PATCH /api/study/{id}` | body `{translation, explanation, examples}` -> the updated item (404 if unknown) |
 
 ## Swap an adapter
 

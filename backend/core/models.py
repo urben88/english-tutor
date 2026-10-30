@@ -70,3 +70,20 @@ class SessionInfo:
     created_at: float  # unix seconds
     updated_at: float
     message_count: int
+
+
+@dataclass(frozen=True)
+class StudyItem:
+    """A word or phrase the user listened to or asked to explain, with where it came from."""
+
+    id: int
+    text: str
+    source_text: str  # the sentence or message it appeared in
+    session_id: int | None
+    message_id: int | None  # the message to jump back to
+    translation: str
+    explanation: str
+    examples: list[str]
+    listen_count: int
+    created_at: float  # unix seconds
+    updated_at: float

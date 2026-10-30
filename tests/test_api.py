@@ -37,7 +37,11 @@ class FakeLLM:
 
 
 class FakeTTS:
+    def __init__(self):
+        self.calls = []
+
     def synthesize(self, text, *, voice=None, speed=1.0):
+        self.calls.append((text, speed))
         return AudioClip(np.full(160, 0.5, dtype=np.float32), 24000)
 
 
@@ -194,3 +198,76 @@ def test_explain_empty_text_400(client, parts):
     r = client.post("/api/explain", json={"text": "  ", "context": "hello there"})
     assert r.status_code == 400
     assert "empty" in r.json()["detail"]
+
+
+# --- speech for words and messages (tts) --------------------------------------------------------
+
+
+def test_tts_returns_audio_and_passes_speed(client, parts):
+    r = client.post("/api/tts", json={"text": "world", "speed": 0.7})
+    assert r.status_code == 200
+    body = r.json()
+    assert body["sample_rate"] == 24000
+    assert decode_wav(base64.b64decode(body["audio"])).sample_rate == 24000
+    assert parts[0].tts.calls == [("world", 0.7)]
+    client.post("/api/tts", json={"text": "again"})
+    assert parts[0].tts.calls[-1] == ("again", 1.0)
+
+
+@pytest.mark.parametrize("body", [{"text": "  "}, {"text": "x", "speed": 0}, {"text": "x", "speed": 3}])
+def test_tts_rejects_bad_input_400(client, body):
+    assert client.post("/api/tts", json=body).status_code == 400
+
+
+def test_explain_simpler_flag_reaches_the_prompt(client, parts):
+    seen = []
+    orig = parts[1].generate
+    parts[1].generate = lambda m, *, json_schema=None: (seen.append(m[0].content), orig(m, json_schema=json_schema))[1]
+    client.post("/api/explain", json={"text": "hi", "context": "hi there", "simpler": True})
+    assert "simpler" in seen[0].lower()
+
+
+# --- study history -------------------------------------------------------------------------------
+
+
+def make_session_with_message(client):
+    sid = client.post("/api/sessions").json()["id"]
+    client.post(f"/api/sessions/{sid}/turn/text", json={"text": "hi"})
+    mid = client.get(f"/api/sessions/{sid}/messages").json()[-1]["id"]
+    return sid, mid
+
+
+def test_study_empty_list(client):
+    assert client.get("/api/study").json() == []
+
+
+def test_study_add_list_and_update(client):
+    sid, mid = make_session_with_message(client)
+    r = client.post("/api/study", json={"text": "reply", "source_text": "reply here",
+                                        "session_id": sid, "message_id": mid})
+    assert r.status_code == 200
+    item = r.json()
+    assert item["text"] == "reply" and item["listen_count"] == 1
+    assert (item["session_id"], item["message_id"], item["source_text"]) == (sid, mid, "reply here")
+    assert item["examples"] == [] and item["translation"] == ""
+    assert client.get("/api/study").json() == [item]
+    r = client.patch(f"/api/study/{item['id']}", json={
+        "translation": "respuesta", "explanation": "Una respuesta.", "examples": ["A reply."]})
+    assert r.status_code == 200
+    assert r.json()["translation"] == "respuesta" and r.json()["examples"] == ["A reply."]
+    assert client.get("/api/study").json()[0]["explanation"] == "Una respuesta."
+
+
+def test_study_add_with_explanation_and_repeat_counts(client):
+    body = {"text": "hello", "source_text": "hello there",
+            "translation": "hola", "explanation": "Un saludo.", "examples": ["Hi!"]}
+    first = client.post("/api/study", json=body).json()
+    again = client.post("/api/study", json={"text": "hello", "source_text": "hello there"}).json()
+    assert again["id"] == first["id"] and again["listen_count"] == 2
+    assert again["translation"] == "hola" and again["examples"] == ["Hi!"]  # kept
+
+
+def test_study_validation_and_unknown(client):
+    assert client.post("/api/study", json={"text": " ", "source_text": "x"}).status_code == 400
+    assert client.patch("/api/study/999", json={
+        "translation": "a", "explanation": "b", "examples": []}).status_code == 404
