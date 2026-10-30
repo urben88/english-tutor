@@ -33,3 +33,44 @@ def test_missing_models_fail_clearly(tmp_path):
 def test_count_tokens_approximation():
     llm = OllamaLLM(model="x")
     assert llm.count_tokens("") == 0 and llm.count_tokens("abcdefgh") == 2
+
+
+def _ollama_with(handler) -> OllamaLLM:
+    import httpx
+    llm = OllamaLLM(model="m")
+    llm._client = httpx.Client(transport=httpx.MockTransport(handler))
+    return llm
+
+
+def test_ollama_disables_thinking_and_never_returns_it():
+    import httpx
+    import json as _json
+    from backend.core.models import ChatMessage
+
+    sent = []
+
+    def handler(request):
+        sent.append(_json.loads(request.content))
+        return httpx.Response(200, json={"message": {"role": "assistant", "content": "Hi!",
+                                                      "thinking": "secret reasoning"}})
+
+    reply = _ollama_with(handler).generate([ChatMessage(role="user", content="hello")])
+
+    assert sent[0]["think"] is False
+    assert reply == "Hi!"
+
+
+def test_ollama_stream_skips_thinking_chunks():
+    import httpx
+    from backend.core.models import ChatMessage
+
+    lines = ('{"message":{"thinking":"hmm"}}\n'
+             '{"message":{"content":"Hel"}}\n'
+             '{"message":{"content":"lo"},"done":true}\n')
+
+    def handler(request):
+        return httpx.Response(200, content=lines.encode())
+
+    chunks = list(_ollama_with(handler).stream([ChatMessage(role="user", content="hi")]))
+
+    assert chunks == ["Hel", "lo"]

@@ -22,6 +22,8 @@ Branch: `feat/phase-1-foundation` · Delivery: ask-on-risk · Test runner: `uv r
 - **S5 — Benchmark.** `uv run python -m backend.bench` prints a table: TTS synth time + real-time factor for a fixed English sentence; STT time on that synthesized audio + transcript; LLM time-to-first-token, total time, tokens/s for a short prompt. Missing model/service → that row reports the reason, others still run.
 - **S6 — Tests.** Unit tests for registry/config (valid selection, unknown name error) and a fake-adapter test proving core depends only on ports. Integration tests per real adapter marked `@pytest.mark.integration`, skipped automatically when the model file/service is unavailable. `uv run pytest -m "not integration"` must pass with no models present.
 - **S7 — Docs.** Short `README.md` (Spanish OK for user-facing docs is NOT required; write English): what it is, how to install (`uv sync`), how to run bench and tests, how to swap an adapter.
+- **S8 — STT on GPU.** User: "Quiero que hagas el cambio a GPU". New STT adapter `whisper_server` that talks HTTP to whisper.cpp `whisper-server.exe` from the prebuilt release asset `whisper-bin-win-cuda-12.4.0-x64.zip` (release tag `b5454`, ggml-org/whisper.cpp; driver supports CUDA 13.3). Binary lives outside the repo at `%LOCALAPPDATA%\english-tutor\whisper-cuda\`. The adapter starts the server if it is not running (configurable exe path, host, port, model path) and must return the same `Transcript` shape (per-word start, end, confidence). `config.yaml` switches STT to `whisper_server`; `whisper_cpp` stays registered as CPU fallback. Bench STT row for 5.3 s audio must show it is faster than the CPU 13.48 s, target < 1.5 s.
+- **S9 — No reasoning in Gemma.** User: "quites el razonamiento a GEMA. Lo quiero sin razonamiento". Ollama adapter default `think=False` and `config.yaml` `think: false` (already in place); add a unit test asserting the request payload sends `"think": false` by default and that `thinking` content is never returned or stored.
 
 ## Tasks
 
@@ -30,6 +32,8 @@ Branch: `feat/phase-1-foundation` · Delivery: ask-on-risk · Test runner: `uv r
 | T1 | S1, S2, S4, S6 (unit) | delegated (resolutor · Sonnet · medium — user cost rule) | done | f4f15a9 |
 | T2 | S3, S6 (integration) | delegated (same worker) | done | 21d7d10 |
 | T3 | S5, S7 | delegated (same worker) | done | eb41250 |
+| T4 | S9 | inline | done | (see L7) |
+| T5 | S8, S6, S7 | delegated (resolutor · Sonnet · medium) | blocked: user permission to download/run whisper.cpp CUDA binary | |
 
 ## Log
 
@@ -38,3 +42,5 @@ Branch: `feat/phase-1-foundation` · Delivery: ask-on-risk · Test runner: `uv r
 - L3 (2026-10-30, user): "si" — approves starting phase 1 (skeleton, three ports + local adapters, latency measurement).
 - L4: Machine: RTX 3070 8 GB, uv 0.12, Node 24, no system Python, Ollama installed with the Gemma 4 E2B QAT model pulled. Word-click / selection UI and LangGraph context control are later phases.
 - L5 (2026-10-30): T1-T3 done. Unit 14 passed (parent re-ran), integration 3 passed. Bench: TTS 1.16s synth (RTF 0.22); STT 13.48s for 5.3s clip (CPU, too slow for live turns); LLM TTFT 2.17s, ~147 tok/s. Deviation: Ollama adapter got `think` param (default false) because Gemma 4 thinking consumed num_predict. Next: decide STT speed fix (GPU build of whisper.cpp vs smaller model).
+- L6 (2026-10-30, user): "Quiero que hagas el cambio a GPU y además quites el razonamiento a GEMA. Lo quiero sin razonamiento porque al final va a ocupar mucha ventana de contexto, creo yo, y nos podríamos ahorrar." No CUDA toolkit / cmake / MSVC on the machine, so prebuilt CUDA whisper-server via HTTP instead of compiling pywhispercpp.
+- L7 (2026-10-30): S9 covered by tests pinning `"think": false` and that thinking content is never returned (generate and stream). Behavior already existed, so tests were green on first run (characterization, no RED). Downloading/running the external whisper.cpp CUDA binary was denied by the permission classifier; T5 waits for user permission.
